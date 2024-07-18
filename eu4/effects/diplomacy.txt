@@ -1,0 +1,27 @@
+new effect release = {
+	args = country_scope
+}
+new effect create_subject = {
+	args = {
+		subject_type = subject_type
+		who = country_scope
+	}
+}
+new effect create_subject = {
+	args = {
+		subject_type = subject_type
+		subject = country_scope
+	}
+}
+new effect create_vassal = {
+	args = country_scope
+}
+new effect create_march = {
+	args = country_scope
+}
+new effect add_historical_friend = {
+	args = country_scope
+}
+new effect add_historical_rival = {
+	args = country_scope
+}

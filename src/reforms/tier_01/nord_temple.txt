@@ -1,0 +1,20 @@
+governments:theocracy:reform_levels:1 += new tier_1_nord_temple = {
+	name = "Nord Temple"
+	desc = "When the nords crossed the seas to skyrim their first houses were on the rivers, but their first major settlements were on the mountains. Defensible locations, mountain temples that would protect the men from the elven threat still living on the lands. These temples continued to prosper in the protection of their mountains, and began to influence neighboring settlements. Finally forming a loose governance structure with a single temple at the peak."
+	icon = "fort"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = tier_1_nord_temple
+	}
+	trigger = {
+		has_reform = tier_1_nord_temple
+	}
+	modifiers = {
+		defensiveness = 15%
+		governing_capacity = -100
+		global_autonomy = 0.05
+	}
+	ai = {
+		factor = 1
+	}
+}

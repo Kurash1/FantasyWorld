@@ -1,0 +1,28 @@
+was_never_end_game_tag_trigger = {	#Country Scope
+	always = yes
+}
+has_dharma_elephants_trigger = {
+	always = no
+}
+highest_supply_limit_in_area = {
+	NOT = {
+		area_for_scope_province = { 
+			NOT = { province_id = prev }
+			owned_by = root
+			supply_limit = prev 
+			NOT = { prev = { supply_limit = prev } }
+		}
+	}
+}
+is_revolutionary_republic_trigger = {
+	always = no
+}
+is_absolutism_active = {
+	always = yes
+}
+is_or_was_tag = {
+	OR = {
+		tag = $tag$
+		was_tag = $tag$
+	}
+}

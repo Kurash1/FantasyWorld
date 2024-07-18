@@ -1,0 +1,41 @@
+unsorted_target = unsorted
+transpile_target = target
+map_folder = map
+gfx_folder = gfx
+selector_folder = selectors
+load_order = {
+	valley/*
+	eu4/*
+	src/functions/*
+	src/helpers/*
+	src/static_modifiers.txt
+	src/superregions.txt
+	src/regions.txt
+	src/subject_types.txt
+	src/effects.txt
+	src/triggers.txt
+	src/inheritables.txt
+	src/units.txt
+	src/governments.txt
+	src/terrains.txt
+	src/interface/*
+	src/systems/*
+	src/cultures.txt
+	src/provinces/*
+	src/advisors.txt
+	src/reforms/*
+	src/personalities.txt
+	src/countries/
+	src/global.txt
+	src/idea_groups/*
+	src/buildings.txt
+	src/on_actions.txt
+	src/policies/*
+	src/tradegoods.txt
+	src/religions/*
+	src/tradenodes.txt
+	src/content/*
+	src/random_events/
+	src/ai_personalities.txt
+}
+headers = "/replace NAND with NOT->AND"

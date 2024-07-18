@@ -1,0 +1,4 @@
+new religious_group nordic_group = {
+	name = "Nordic Group"
+	center_of_religion = black_mountain
+}

@@ -1,0 +1,118 @@
+bi_yearly_events += {
+	100 = tradegoods.1
+	100 = tradegoods.2
+	100 = tradegoods.3
+	100 = tradegoods.4
+	100 = tradegoods.5
+}
+new event_modifier poor_iron = {
+	name = "Poor Quality Iron"
+	modifier = {
+		infantry_cost = 0.1
+		cavalry_cost = 0.1
+	}
+}
+new country_event tradegoods.1 = {
+	inherit = random_event
+	title = "Poor Quality Iron"
+	desc = "Concerns have arisen regarding the quality of the iron resources within our borders. Miners and blacksmiths have noted that the iron being extracted from our mines is of notably poor quality. This revelation raises questions about the state of our arms and equipment."
+	picture = ES_SWORDS_ON_TABLE_eventPicture
+	trigger = {
+		c_metals = 1
+	}
+	options = {
+		{
+			name = "I'm sure we have enough men anyway."
+			effect = {
+				add_country_modifier = {
+					name = poor_iron
+					duration = 730
+				}
+			}
+		}
+	}
+}
+new event_modifier poor_steel = {
+	name = "Poor Quality Steel"
+	modifier = {
+		infantry_cost = 0.15
+		cavalry_cost = 0.15
+	}
+}
+new country_event tradegoods.2 = {
+	inherit = random_event
+	title = "Poor Quality Steel"
+	desc = "Concerns have arisen regarding the quality of the steel resources within our borders. Our skilled blacksmiths and craftsmen have noted that the steel being produced is of notably poor quality. This revelation raises questions about the state of our arms, armor, and industrial capabilities."
+	picture = ES_STEEL_INGOTS_eventPicture
+	trigger = {
+		c_metals = 1
+	}
+	options = {
+		{
+			name = "I'm sure we have enough men anyway."
+			effect = {
+				add_country_modifier = {
+					name = poor_steel
+					duration = 730
+				}
+			}
+		}
+	}
+}
+new country_event tradegoods.3 = {
+	inherit = random_event
+	title = "Hardy Seamen"
+	desc = "In the coastal provinces blessed with abundant fisheries, a notable development has occurred. The seamen and fishermen from these regions have demonstrated exceptional resilience and skill in navigating the tumultuous waters, strengthening our maritime capabilities."
+	picture = ES_PORT_eventPicture
+	trigger = {
+		fish = 1
+	}
+	options = {
+		{
+			name = "Good To See."
+			effect = {
+				add_years_of_owned_provinces_sailors = {
+					years = 0.2
+					trigger = {
+						has_trade_goods = fish
+					}
+					custom_tooltip = "from provinces producing fish"
+				}
+			}
+		}
+	}
+}
+new country_event tradegoods.4 = {
+	inherit = random_event
+	title = "Excellent Year"
+	desc = "In the realm's fields and farmlands, the signs are clear—a bountiful harvest has been reaped this year. The fields are abundant with golden wheat, promising prosperity and plenty for our people."
+	picture = ES_HARVEST_eventPicture
+	trigger = {
+		grain = 1
+	}
+	options = {
+		{
+			name = "Great!"
+			effect = {
+				add_years_of_income = 0.2
+			}
+		}
+	}
+}
+new country_event tradegoods.5 = {
+	inherit = random_event
+	title = "Bad Harvest"
+	desc = "Our fields have yielded disappointing results this year. The wheat harvest, upon which we rely for sustenance and prosperity, has fallen short of expectations. Infertile soil and unfavorable conditions have conspired against us."
+	picture = ES_INFERTILE_SOIL_eventPicture
+	trigger = {
+		grain = 1
+	}
+	options = {
+		{
+			name = "That is Unfortunate."
+			effect = {
+				add_years_of_income = -0.2
+			}
+		}
+	}
+}

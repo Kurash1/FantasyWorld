@@ -1,0 +1,237 @@
+new country_event global.1 = {
+	title = "Idea March"
+	desc = ""
+	picture = REPUBLICAN_DEBATES_eventPicture
+	trigger = {
+		tag = black_mountain
+	}
+	is_triggered_only = yes
+	
+	immediate = {
+		country_event = {
+			id = global.1
+			days = (365*50)
+		}
+		every_country = {
+			add_adm_tech = 3
+			add_dip_tech = 3
+			add_mil_tech = 3
+		}
+	}
+	
+	options = {
+		{
+			name = ""
+			effect = {
+				
+			}
+			ai_chance = {
+				factor = 1
+			}
+		}
+	}
+}
+new event_modifier reach_blessing = {
+	name = "Reach Blessing"
+	modifier = {
+		global_tax_income = 30
+		global_manpower = 10
+		land_forcelimit = 5
+	}
+}
+on_actions:on_dependency_gained += {
+	FROM = {
+		if [is_subject_of_type = tributary_clan] {
+			change_country_color = { country = ROOT }
+		}
+	}
+}
+on_actions:on_dependency_lost += {
+	FROM = {
+		restore_country_color = yes
+	}
+}
+on_actions:on_startup += {
+	set_allow_female_emperor = yes
+	if [NOT = { has_global_flag = on_action_set_up_global_flag }] {
+		on_initialize
+		set_global_flag = on_action_set_up_global_flag
+	}
+}
+on_actions:on_slacken_start += {
+	add_country_modifier = {
+		name = slackening_modifier
+		duration = -1
+	}
+}
+on_actions:on_slacken_stop += {
+	remove_country_modifier = slackening_modifier
+}
+on_actions:on_religion_change += {
+	if [has_heir = yes]
+	{
+		set_heir_religion = ROOT
+	}
+	if [has_regency = no]
+	{
+		set_ruler_religion = ROOT
+	}
+	if [has_dlc = "Rights of Man" has_consort = yes]
+	{
+		set_consort_religion = ROOT
+	}
+	add_country_modifier = {
+		name = recently_changed_religion_dummy
+		duration = 10
+		hidden = yes
+	}
+}
+on_actions:on_war_won += {
+}
+on_actions:on_new_monarch += {
+	if [
+		has_consort_regency = no
+		any_owned_province = {
+			has_province_modifier = domain_of_spouses_family
+		}
+	]
+	{
+		random_owned_province [has_province_modifier = domain_of_spouses_family]
+		{
+			remove_province_modifier = domain_of_spouses_family
+		}
+	}
+	if [
+		has_consort_regency = no
+		any_owned_province = {
+			has_province_modifier = home_of_consort
+		}
+	]
+	{
+		random_owned_province [has_province_modifier = home_of_consort]
+		{
+			remove_province_modifier = home_of_consort
+		}
+	}
+	if [
+		is_lesser_in_union = yes
+		NOT = {
+			government = monarchy
+		}
+	]
+	{
+		change_government = monarchy
+	}
+}
+on_actions:on_regent += {
+	if [is_emperor = yes]
+	{
+		define_ruler = {
+			religion = ROOT
+			culture = ROOT
+		}
+	}
+}
+on_actions:on_extend_regency += {
+	add_legitimacy = -10
+}
+on_actions:on_bankruptcy += {
+	add_adm_power = 100
+	add_dip_power = 100
+	add_mil_power = 100
+}
+on_actions:on_revoke_estate_land_ai += {
+	add_province_modifier = {
+		name = revoked_estate_modifier
+		duration = 5475
+	}
+}
+on_actions:on_revoke_estate_land += {
+	add_province_modifier = {
+		name = revoked_estate_modifier
+		duration = 5475
+	}
+}
+on_actions:on_revoke_estate_land_ai_post += {
+	add_local_autonomy = 25
+}
+on_actions:on_revoke_estate_land_post += {
+	add_local_autonomy = 25
+}
+on_actions:on_grant_estate_land += {
+	if [has_province_modifier = revoked_estate_modifier]
+	{
+		remove_province_modifier = revoked_estate_modifier
+	}
+}
+on_actions:on_general_recruited += {
+	add_army_professionalism = 0.01
+}
+on_actions:on_primary_culture_changed += {
+	esb_clear_opinion = yes
+	esb_change_opinion = yes
+}
+on_actions:on_colonist_boosting_colony += {
+	hidden_effect = {
+		if [
+			OR = {
+				religion = noreligion
+				variable_arithmetic_trigger = {
+					custom_tooltip = colonysize_is_larger_than_nativesize_tt
+					export_to_variable = {
+						which = vab_colonysize
+						value = trigger_value:colonysize
+					}
+					export_to_variable = {
+						which = vab_nativesize
+						value = trigger_value:native_size
+					}
+					check_variable = {
+						which = vab_colonysize
+						which = vab_nativesize
+					}
+				}
+				is_in_capital_area = yes
+			}
+		]
+		{
+			change_religion = FROM
+		}
+		if [
+			OR = {
+				`culture = noculture`
+				variable_arithmetic_trigger = {
+					custom_tooltip = colonysize_is_larger_than_nativesize_tt
+					export_to_variable = {
+						which = vab_colonysize
+						value = trigger_value:colonysize
+					}
+					export_to_variable = {
+						which = vab_nativesize
+						value = trigger_value:native_size
+					}
+					check_variable = {
+						which = vab_colonysize
+						which = vab_nativesize
+					}
+				}
+				is_in_capital_area = yes
+			}
+		]
+		{
+			change_culture = FROM
+			change_original_culture = FROM
+		}
+	}
+}
+on_actions:on_five_year_pulse += {
+	if [tag = black_mountain] {
+		every_province = {
+			limit = { 
+				is_empty = yes
+				colonysize = 1
+			}
+			add_colonysize = -1000
+		}
+	}
+}

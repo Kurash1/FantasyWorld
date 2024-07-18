@@ -1,0 +1,526 @@
+new tradegood unknown = {
+	name = "Unknown"
+	desc = ""
+	color = {
+		0.5 0.5 0.5
+	}
+	base_price = 0
+}
+new tradegood wood = {
+	name = "Lumber"
+	desc = "Lumber represents common types of wood often used for construction materials across Nirn. Whether it be Oaks, Ashes, or even Dunmeri mushroom trees all have been crucial for the development of urban and rural settlements. "
+	color = {
+		90 77 28
+	}
+	modifier = {
+		build_cost = -0.15
+	}
+	province = {
+		local_build_cost = -0.25
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_terrain = marsh
+			}
+		}
+	}
+}
+new tradegood fish = {
+	name = "Fish"
+	desc = "Fish have long served as one of the primary forms of sustenance across Nirn. Due to its wide availability and relatively inexpensive nature it has often served to be the feed of the lower rungs of culture across the world."
+	color = {
+		141 169 197
+	}
+	modifier = {
+		global_sailors_modifier = 0.25
+	}
+	province = {
+		local_sailors_modifier = 0.25
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				has_port = yes
+			}
+		}
+	}
+}
+new tradegood grain = {
+	name = "Grain"
+	desc = "Grain represents the vegetable foodstuffs that have long served as a primary source of nourishment across Nirn. This would include the edible fungi of the deeper parts of Nirn more commonly consumed by cultures like the Dwemer. Without it, civilization is likely to collapse under threats of revolt and unrest."
+	color = {
+		214 220 130
+	}
+	modifier = {
+		land_forcelimit_modifier = 0.20
+	}
+	province = {
+		land_forcelimit = 0.5
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood alcohol = {
+	name = "Alcohol"
+	desc = "Alcohol is common all across Nirn and even in some planes of Oblivion. Whether based upon hops, barley, saltrice, or some other exotic ingredient."
+	color = {
+		227 238 75
+	}
+	modifier = {
+		global_unrest = -1
+	}
+	province = {
+		local_unrest = -1
+	}
+	base_price = 2.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood paper = {
+	name = "Paper"
+	desc = "Life blood of scholars and bureaucrats alike, paper represents the product of various processes to create writing material whether it be via papyrus, parchment, even palm leaves. Paper serves as an important ingredient necessary for the management of empires or even studies of the arcane."
+	color = {
+		240 255 172
+	}
+	modifier = {
+		state_governing_cost = -0.1
+	}
+	province = {
+		local_state_maintenance_modifier = -0.1
+	}
+	base_price = 4
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood alchemical_ingredients = {
+	name = "Herbs"
+	desc = "Herbs represent the more mundane goods utilized for alchemy such as antlers, feathers, plants, or animal components. However it also represents spices utilized in the alchemy of cooking such as nutmeg, ginger, pepper, etc. "
+	color = {
+		62 149 81
+	}
+	modifier = {
+		hostile_attrition = 1
+	}
+	province = {
+		local_hostile_attrition = 1
+	}
+	base_price = 3.5
+	is_gold = no
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = marsh
+					has_terrain = hot_springs
+				}
+			}
+		}
+	}
+}
+new tradegood potions = {
+	name = "Potions"
+	desc = "Created by process of alchemy, potions are powerful ingestible drinks oft of magical nature. Prone to a variety of effects based upon the ingredients and proper distilling, potions can be used for mundane purposes like closing wounds, curing diseases, or ceasing the effects of a poison. However they are also capable of more advanced feats like granting the imbiber vampirism, purging daedra, or, according to some legends, restoring the dead to life."
+	color = {
+		253 65 71
+	}
+	modifier = {
+		manpower_recovery_speed = 0.25
+	}
+	province = {
+		local_development_cost = -0.1
+	}
+	base_price = 6.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood stone = {
+	name = "Stone"
+	desc = "Quarried from across the entirety of Nirn, whether it be granite, marble, or sandstone. Stone serves as one of the basics of construction and like lumber is commonly needed for the development of settlements. "
+	color = {
+		185 185 185
+	}
+	modifier = {
+		defensiveness = 0.2
+	}
+	province = {
+		local_fort_maintenance_modifier = -0.25
+	}
+	base_price = 2.5
+	is_gold = no
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = hot_springs
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood gems = {
+	name = "Gems"
+	desc = "Across Nirn beautiful crystals known as gems can be found, while often used for decoration and vanity some are magical in nature and highly sought by alchemists and mages alike. In addition a few rare varieties like Malachite or even more precious Ebony can be shaped into potent armaments by skilled craftsmen."
+	color = {
+		78 15 203
+	}
+	modifier = {
+		inflation_reduction = 0.05
+	}
+	province = {
+		local_tax_modifier = 0.15
+	}
+	base_price = 6
+	is_gold = no
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood gold = {
+	name = "Gold"
+	desc = "One of the most precious metals upon Nirn, it has served as the basis for nearly all forms of economy from distant Akaviri to the furthest reaches of Yukuda. Whether it show itself as Septims, Drakes, Dumacts, or Nirni-gold the worth of Gold cannot be denied."
+	color = {
+		196 215 26
+	}
+	modifier = {
+	}
+	province = {
+	}
+	base_price = 0
+	is_gold = yes
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood silver = {
+	name = "Silver"
+	desc = "While not as precious as Gold, silver has long served as a necessary mineral for civilizations across Nirn, it is not only utilized as a form of currency in some lands but primarily as a means of protection. Whether a region is overrun by Daedra or Hircine’s therianthropes it is silver that is used in weapons and armour to slay these otherwise invulnerable threats."
+	color = {
+		205 205 205
+	}
+	modifier = {
+	}
+	province = {
+		trade_goods_size_modifier = -0.5
+	}
+	base_price = 0
+	is_gold = yes
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood ebony = {
+	name = "Ebony"
+	desc = "One of the most precious minerals upon Nirn, it is largely found in Vvardenfell but deposits have been found in Solstheim, Skyrim, Cyrodiil, and even High Rock. Ebony is an extremely durable, hard, black-like substance. Also known as Godsblood, it is common belief that it is the crystallized blood of gods or a god, particularly Lorkhan. Ebony is essential to the creation of Daedric weapons and armour."
+	color = {
+		38 38 38
+	}
+	modifier = {
+		discipline = 0.05
+	}
+	province = {
+		infantry_power = 0.025
+	}
+	base_price = 8
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood c_metals = {
+	name = "Mundane Ores"
+	desc = "Mundane Metals represents the common forms of metal that can be extracted across Nirn. The most common being iron but closely followed by corundum, lead, tin, and copper. It is through refining processes that iron and corundum could be combined into steel, a stronger and more durable metal but still mundane."
+	color = {
+		204 153 51
+	}
+	modifier = {
+		global_regiment_cost = -0.05
+	}
+	province = {
+		local_build_time = -0.2
+	}
+	base_price = 3.5
+	is_gold = no
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood r_metals = {
+	name = "Rare Ores"
+	desc = "Rare Metals represent the various minerals across Nirn that are uncommon or magical in nature. Most notably Moonstone, Mithril, Adamantium, Syrabane's Steel, or even Daedric Metal. It is rare metals that often are utilized for elite warriors or prestigious items, many artifacts across Nirn have long been composed of rare metals imbued with magical gems. "
+	color = {
+		34 191 149
+	}
+	modifier = {
+		yearly_army_professionalism = 0.005
+	}
+	province = {
+		local_prosperity_growth = 0.05
+	}
+	base_price = 5
+	is_gold = no
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = hills
+					has_terrain = highlands
+				}
+			}
+		}
+	}
+}
+new tradegood fur = {
+	name = "Fur"
+	desc = "Across Nirn various animals have long been hunted for their furs especially in the colder northern reaches like Atmora, Skyrim, Highrock, Roscrea, and Solstheim. Whether for survival or a fashion statement, fur has long been utilized within the manufacturing of clothing across Nirn. It would go on to form the basis for Colovian Highland fashion in later Eras."
+	color = {
+		90 43 26
+	}
+	modifier = {
+		prestige = 0.5
+	}
+	province = {
+		province_trade_power_modifier = 0.10
+	}
+	base_price = 2.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood livestock = {
+	name = "Livestock"
+	desc = "Since the dawn of Nirn both Men and Mer have long since depended upon domesticated animals for sustenance, labour, and even companionship. Livestock represents everything from horses, chickens, silt striders, pigs, and guar to more exotic animals like ringtail wolves."
+	color = {
+		249 123 77
+	}
+	modifier = {
+		cavalry_cost = -0.1
+	}
+	province = {
+		supply_limit_modifier = 0.5
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood slaves = {
+	name = "Slaves"
+	desc = "Throughout the many eras of Nirn, the practice of enslaving another individual to serve has existed. Whether chattel, enthralled, or indentured, slavery has been practiced by the majority of cultures upon Nirn. While the practice would fall out of favour in later eras, it remained prevalent in some parts of Nirn such as the province of Morrowind."
+	color = {
+		42 42 42
+	}
+	modifier = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	province = {
+		local_missionary_strength = 0.01
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood mag_goods = {
+	name = "Magical Goods"
+	desc = "Whether it be soul gems, alchemical instruments, runestones, or any other long list of arcane instruments and magical goods found across Nirn. Arcana has always been a necessity for those civilizations known to practice the arcane arts and venerate the Magna-Ge."
+	color = {
+		51 204 255
+	}
+	modifier = {
+		all_power_cost = -0.05
+	}
+	province = {
+		tax_income = 3
+	}
+	base_price = 6
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood cloth = {
+	name = "Cloth"
+	desc = "Cloth also known as textiles is fabric produced in a variety of ways from a number of different materials. It can be found across Nirn in some form or another, often the material of choice for clothing, it is often replaced by furs in some of the colder climates. The most common means of producing cloth is through weaving which requires time and effort and often a skilled weaver."
+	color = {
+		193 21 176
+	}
+	modifier = {
+		merc_maintenance_modifier = -0.15
+	}
+	province = {
+		local_development_cost = -0.1
+	}
+	base_price = 2.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood fruits = {
+	name = "Fruits"
+	desc = "Fruits represent the various edible plant byproducts found across Nirn. Especially common in warmer climates. Some harder fruits like apples and grapes can be found in more mild regions and even berries have been known to grow in some surprisingly harsh environments such as the Jazberry which is found throughout Skyrim."
+	color = {
+		253 255 6
+	}
+	modifier = {
+		global_supply_limit_modifier = 0.10
+	}
+	province = {
+		supply_limit = 5
+	}
+	base_price = 2
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood naval_supplies = {
+	name = "Naval Supplies"
+	desc = "Naval supplies represent everything needed for shipbuilding. This can include wood reserved for Nordic longships to Breton linen for sails or even tar from Blackmarsh. Whether it be the Altmeri Navy, Maormer Pirates, or Atmoran explorers, no naval force has succeeded without access to naval supplies."
+	color = {
+		64 126 206
+	}
+	modifier = {
+		naval_forcelimit_modifier = 0.20
+	}
+	province = {
+		naval_forcelimit = 0.5
+	}
+	base_price = 3.5
+	is_gold = no
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				has_port = yes
+			}
+		}
+	}
+}
+new tradegood arms = {
+	name = "Armaments"
+	desc = "Armaments represent the tools of warriors, whether composed of bonemold, iron, or ebony. Both weapons and armour are important goods for any warrior or aspiring despot. "
+	color = {
+		154 172 175
+	}
+	modifier = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+	province = {
+		local_regiment_cost = -0.25
+	}
+	base_price = 5.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood glass = {
+	name = "Glass"
+	desc = "Not to be confused with the crystal, malachite, glass refers to the process of rendering sand and other grainy minerals into crystal by incredible applications of heat. Glass is produced at foundries and not only requires a large amount of raw material but expert craftsmen and artisans. The product of these efforts is a piece of often coloured crystal shaped in various instruments like bowls, plates, or cups, but also windows and entire walls. Glass itself is often utilized by the upper stratas of societies as a sign of wealth."
+	color = {
+		70 130 180
+	}
+	modifier = {
+		monthly_splendor = 2
+	}
+	province = {
+		local_production_efficiency = 0.1
+	}
+	base_price = 4.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}
+new tradegood wool = {
+	name = "Wool"
+	desc = "Wool came mostly from sheep that grazed in the more marginal lands not suited to other forms of agriculture. Prior to the use of cotton it was the major raw material for clothing."
+	color = {
+		211 211 211
+	}
+	modifier = {
+		global_ship_cost = -0.05
+	}
+	province = {
+		local_friendly_movement_speed = 0.10
+	}
+	base_price = 2.5
+	is_gold = no
+	chance = {
+		factor = 0
+	}
+}

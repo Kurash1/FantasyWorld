@@ -1,0 +1,9 @@
+new tradenode black_mountain = {
+	name = "Black Mountain"
+	location = black_mountain
+	areas = {
+		black_mountain
+	}
+	outgoings = {
+	}
+}

@@ -1,0 +1,35 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_estates_privileges_list_bg"
+		texturefile = "gfx/interface/estates_privileges_list_bg.dds"
+	}
+	spriteType = {
+        name = "GFX_estates_privileges_list"
+        texturefile = "gfx/interface/estates_privileges_list.dds"
+    }
+	spriteType = {
+		name = "privilege_establish_a_favor_system"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_establish_a_favor_system.dds"
+	}
+	spriteType = {
+		name = "privilege_delegate_subject_diplomacy"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_delegate_subject_diplomacy.dds"
+	}
+	spriteType = {
+		name = "privilege_army_tradition"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_army_tradition.dds"
+	}
+	spriteType = {
+		name = "privilege_land_rights"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_land_rights.dds"
+	}
+	spriteType = {
+		name = "privilege_ducats"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_ducats.dds"
+	}
+	spriteType = {
+		name = "privilege_recruit_rajput_general"
+		texturefile = "gfx/interface/privileges/eu4_base_privileges/privilege_recruit_rajput_general.dds"
+	}
+}

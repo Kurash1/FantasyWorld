@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_government_mechanics_bg"
+		texturefile = "gfx//interface/government_view/government_mechanics_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	
+	spriteType = {
+		name = "GFX_government_mechanics_bg_overlay"
+		texturefile = "gfx//interface/government_view/government_mechanics_bg_overlay.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+	
+}

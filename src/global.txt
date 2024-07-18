@@ -1,0 +1,385 @@
+new define NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
+
+new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25
+
+new named_effect free_merc_company_list = {
+	
+}
+new effect make_company_professional = {
+	args = mercenary_company
+	transpile = {
+		args:desc += "§JThis Mercenary Company costs no §YArmy Professionalism§! when recruited.§!"
+		free_merc_company_list +=! {
+			mercenary_company = args
+		}
+	}
+}
+on_actions:on_mercenary_recruited += {
+	FROM = {
+		if [
+			ROOT = {
+				NOT = {
+					OR = { 
+						free_merc_company_list
+					}
+				}
+			}
+		] {
+			add_army_professionalism = -0.05
+		}
+	}
+}
+
+new named_effect fix_blessings = {
+	foreach blessing in blessings {
+		blessing:ai_will_do +=! {
+			modifier = {
+				factor = 0
+				NOT = {
+					blessing:potential
+				}
+			}
+		}
+	}
+}
+new named_effect fix_new_diplo_actions = {
+	foreach diplo in diplomatic_actions {
+		diplo:trigger +=! {
+			if [ai = no] {
+				diplo:potential
+			}
+		}
+	}
+}
+
+new named_int MAP_WIDTH = 4096
+new named_int MAP_HEIGHT = 2816
+
+new script_variable temp = {
+	name = "Temporary Variable"
+}
+new script_variable temp_2 = {
+	name = "Temporary Variable"
+}
+
+new run_file add_all_idea_groups = {
+	type = command
+	effect = {
+		foreach $ in idea_groups [$:category != national] {
+			add_idea_group $:id __ARC.FORCE_END_LINE__
+		}
+	}
+}
+new named_effect monuments_for_plebs = {
+	foreach $m in great_projects [
+		$m:start:name != "Black Mountain"
+	] {
+		$m:start:history +=! {
+			if [NOT = { has_dlc = "Leviathan" }] {
+				quick_province_modifier = {
+					name = "{$m:name}"
+					modifier = {
+						$m:tier_1:province_modifier
+						$m:tier_1:country_modifier
+					}
+				}
+			}
+		}
+	}
+}
+
+new define NDefines.NEconomy.MAX_BUILDING_SLOTS = 16
+new localisation empty_line_tt = "	"
+new localisation  HAS_CAPITAL_FORT = "Has a non-influencing fort."
+new localisation IDEA_TAKEN_EFFECT = "$EFFECT$"
+new localisation IDEA_GROUP_REMOVED_EFFECT = "$EFFECT$"
+new custom_icon custom_mechanic_overlay = {
+	potential = {
+		NOT = {
+			open_custom_mechanic
+		}
+	}
+}
+new custom_button toggle_custom_mechanic_overlay = {
+	tooltip = "Toggle Technology Screen"
+	effect = {
+		if [has_country_flag = show_technology] {
+			clr_country_flag = show_technology
+		}
+		else {
+			set_country_flag = show_technology
+		}
+	}
+}
+new localisation HEADER_TECHNOLOGY = "Custom Mechanics"
+new event_modifier just_lost_to_rebels = {
+	name = "Rebel Victory"
+	modifier = { }
+}
+new event_modifier just_lost_to_revolutionary_rebels = {
+	name = "Revolutionary Victory"
+	modifier = { }
+}
+new event_modifier heresy = {
+	name = "Heresy"
+	modifier = {
+		local_manpower_modifier = -0.4
+		local_unrest = 2
+		local_tax_modifier = -0.33
+		local_autonomy = 0.05
+	}
+}
+new event_modifier consolidation_of_power = {
+	name = "Consolidation of Power"
+	modifier = {
+		republican_tradition = -0.1
+		global_unrest = -1
+	}
+}
+new event_modifier centralization_modifier = {
+	name = "Increased Centralization"
+	modifier = {
+		global_autonomy = -0.05
+		global_unrest = 1
+	}
+}
+new event_modifier embezzled_goods = {
+	name = "Embezzled Goods"
+	modifier = {
+		local_production_efficiency = -0.35
+	}
+}
+new event_modifier revoked_estate_modifier = {
+	name = "Local Power Vacuum"
+	modifier = {
+		local_unrest = 5
+	}
+}
+new event_modifier domain_of_spouses_family = {
+	name = "Seat of Strong Aristocrats"
+	modifier = {
+		local_autonomy = 0.1
+		local_missionary_strength = -0.05
+		local_unrest = -3
+	}
+}
+new event_modifier home_of_consort = {
+	name = "Home of Consort"
+	modifier = {
+		local_unrest = -3
+		local_production_efficiency = 0.1
+	}
+}
+new event_modifier recently_changed_religion_dummy = {
+	name = "Recently changed Religion"
+	modifier = { }
+}
+new localisation FE_TUTORIAL = "Fantasy World\nPatch 1.0.0"
+new localisation CORE_PAUSED = "ESB Paused"
+
+new localisation mage_general_personality_die_desc = "[GetHerHisCap] magical mastery will be missed by our troops."
+new localisation mage_general_personality = "Mage"
+new localisation desc_mage_general_personality = ""
+
+new localisation ui_tech_system_title = "Technology System Explanation"
+new localisation ui_tech_system_desc = "ESB does not use the vanilla technology system, rather you will be spending most of your mana on Idea Groups. 
+	The Mana cost for ideas has been increased.
+	Every 50 years you will be given 3 new idea group slots.
+	Note that this will also show messages for gaining new technology as we cannot implement it in any other way.
+This system was made to allow for players to choose what direction they want their countries to focus on."
+new bookmark old_kingdom = {
+	name = "Old Kingdom"
+	desc = ""
+	date = 2500.1.1
+	countries = {
+		black_mountain
+	}
+	easy_countries = {
+		black_mountain
+	}
+	center = black_mountain
+	default = yes
+}
+new age first_century = {
+	name = "First Century"
+	desc = ""
+	start = 2500
+	can_start = {
+		is_year = 2490
+	}
+	objectives = {
+		obj_court_mage = {
+			name = "Court Mage"
+			desc = "Have a Court Mage"
+			trigger = {
+				advisor = court_mage
+			}
+		}
+		obj_gov_rank = {
+			name = "Be a Kingdom"
+			desc = "Be a Kingdom Rank"
+			trigger = {
+				government_rank = 2
+			}
+		}
+		obj_have_development = {
+			name = "Developed Nation"
+			desc = "Reach a total of at least 250 development in your nation."
+			trigger = {
+				total_development = 250
+			}
+		}
+		obj_vikings = {
+			name = "Vikings"
+			desc = "Have at least 25% of a trade node be your privateers"
+			trigger = {
+				any_trade_node = {
+					has_privateer_share_in_trade_node = {
+						who = ROOT
+						share = 0.25
+					}
+				}
+			}
+		}
+		obj_great_ruler = {
+			name = "Great Ruler"
+			desc = "Have all ruler skills of at least 4"
+			trigger = {
+				adm = 4
+				dip = 4
+				mil = 4
+			}
+		}
+		obj_large_army = {
+			name = "Large Army"
+			desc = "Have an army of at least 50 regiments."
+			trigger = {
+				army_size = 50
+			}
+		}
+		obj_reformed_remnant = {
+			name = "Reformed Remnant"
+			desc = "Have reformed as a Remnant Country"
+			trigger = {
+				has_country_flag = reformed_remnant
+			}
+		}
+	}
+	abilities = {
+		ab_counter_atmoran_invasions = {
+			name = "Counter Atmoran Invasions"
+			modifier = {
+				own_coast_naval_combat_bonus = 1.0
+			}
+		}
+		ab_magic_organization = {
+			name = "Magic Organization"
+			modifier = {
+				idea_cost = -0.025
+			}
+		}
+		ab_founding_of_a_nation = {
+			name = "Founding of a Nation"
+			modifier = {
+				ae_impact = -0.1
+			}
+		}
+		ab_development_of_the_nation = {
+			name = "Development of the Nation"
+			modifier = {
+				development_cost = -0.1
+			}
+		}
+		ab_building_of_skyrim = {
+			name = "Building of Skyrim"
+			modifier = {
+				build_cost = -0.1
+			}
+		}
+		ab_old_glory = {
+			name = "Old Glory"
+			modifier = {
+				prestige = 0.5
+			}
+		}
+		ab_terrain_knowledge = {
+			name = "Terrain Knowledge"
+			modifier = {
+				attack_bonus_in_capital_terrain = 1
+			}
+		}
+		ab_focus_on_longships = {
+			name = "Focus on Longships"
+			modifier = {
+				allowed_galleass_fraction = 0.1
+			}
+		}
+		ab_skjoralmor_conquests = {
+			name = "Skjoralmor Conquests"
+			modifier = {
+				core_creation = -0.2
+				shock_damage_received = -0.10
+			}
+		}
+		ab_formation_of_eastmarch = {
+			name = "Formation of Eastmarch"
+			modifier = {
+				accept_vassalization_reasons = 25
+			}
+		}
+		ab_volunruud_warriors = {
+			name = "Volunruud Warriors"
+			modifier = {
+				discipline = 0.10
+			}
+		}
+	}
+}
+new age second_century = {
+	name = "Second Century"
+	desc = ""
+	start = 2600
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = future_update
+			always = no
+		}
+		is_year = 2590
+	}
+}
+new age third_century = {
+	name = "Third Century"
+	desc = ""
+	start = 2700
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = future_update
+			always = no
+		}
+		is_year = 2690
+	}
+}
+new age fourth_century = {
+	name = "Fourth Century"
+	desc = ""
+	start = 2800
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = future_update
+			always = no
+		}
+		is_year = 2790
+	}
+}
+new age fifth_century = {
+	name = "Fifth Century"
+	desc = ""
+	start = 2900
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = future_update
+			always = no
+		}
+		is_year = 2890
+	}
+}

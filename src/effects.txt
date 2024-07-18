@@ -1,0 +1,403 @@
+new effect show_event_insights = {
+	args = {
+		tooltip = string
+		event = event
+		show_options = bool
+	}
+	transpile = {
+		new_custom_tooltip = "§GEvent Insight§!
+{args:tooltip}"
+		when [args:show_options == yes] {
+			foreach $option in args:event:options {
+				new_custom_tooltip = "§T{$option:name}§!:"
+				tooltip = {
+					$option:effect
+				}
+			}
+		}
+	}
+}
+new effect preview_national_ideas = {
+	args = idea_group
+	transpile = {
+		new_custom_tooltip = "§Y{args:name} Ideas§!:
+	§YTraditions§!:
+		{modifier_to_string = args:start}
+	§Y{args:ideas:1:name}§!:
+		{modifier_to_string = args:ideas:1:modifier}
+	§Y{args:ideas:2:name}§!:
+		{modifier_to_string = args:ideas:2:modifier}
+	§Y{args:ideas:3:name}§!:
+		{modifier_to_string = args:ideas:3:modifier}
+	§Y{args:ideas:4:name}§!:
+		{modifier_to_string = args:ideas:4:modifier}
+	§Y{args:ideas:5:name}§!:
+		{modifier_to_string = args:ideas:5:modifier}
+	§Y{args:ideas:6:name}§!:
+		{modifier_to_string = args:ideas:6:modifier}
+	§Y{args:ideas:7:name}§!:
+		{modifier_to_string = args:ideas:7:modifier}
+	§YAmbition§!:
+		{modifier_to_string = args:bonus}
+"
+	}
+}
+new effect preview_idea_group = {
+	args = idea_group
+	transpile = {
+		new_custom_tooltip = "§Y{args:name} Ideas§!:
+	§Y{args:ideas:1:name}§!:
+		{modifier_to_string = args:ideas:1:modifier}
+	§Y{args:ideas:2:name}§!:
+		{modifier_to_string = args:ideas:2:modifier}
+	§Y{args:ideas:3:name}§!:
+		{modifier_to_string = args:ideas:3:modifier}
+	§Y{args:ideas:4:name}§!:
+		{modifier_to_string = args:ideas:4:modifier}
+	§Y{args:ideas:5:name}§!:
+		{modifier_to_string = args:ideas:5:modifier}
+	§Y{args:ideas:6:name}§!:
+		{modifier_to_string = args:ideas:6:modifier}
+	§Y{args:ideas:7:name}§!:
+		{modifier_to_string = args:ideas:7:modifier}
+	§YBonus§!:
+		{modifier_to_string = args:bonus}
+"
+	}
+}
+new effect form_hold = {
+	args = country
+	transpile = {
+		change_tag = args:tag
+		swap_non_generic_missions = yes
+		
+		hidden_effect = {
+			emperor = {
+				quick_country_modifier = {
+					name = "New Elector"
+					modifier = {
+						max_electors = 1
+					}
+				}
+			}
+		}
+		
+		elector = yes
+		set_government_rank = 2
+		
+		swap_free_idea_group = yes
+	}
+}
+new effect starting_ruler = {
+	args = {
+		name = text
+		dynasty = text
+		adm = int
+		dip = int
+		mil = int
+		age = int
+	}
+	transpile = {
+		monarch = {
+			name = args:name
+			dynasty = args:dynasty
+			adm = args:adm
+			dip = args:dip
+			mil = args:mil
+			birth_date = `{(2568-args:age)}.1.1`
+		}
+	}
+}
+new effect starting_consort = {
+	default = {
+		female = yes
+	}
+	args = {
+		name = text
+		dynasty = text
+		adm = int
+		dip = int
+		mil = int
+		age = int
+		female = bool
+	}
+	transpile = {
+		queen = {
+			name = args:name
+			monarch_name = args:name
+			dynasty = args:dynasty
+			adm = args:adm
+			dip = args:dip
+			mil = args:mil
+			birth_date = `{(2568-args:age)}.1.1`
+			death_date = `{(2568-args:age+100)}.1.1`
+			female = args:female
+			claim = 100
+		}
+	}
+}
+new effect starting_heir = {
+	args = {
+		name = text
+		dynasty = text
+		adm = int
+		dip = int
+		mil = int
+		age = int
+	}
+	transpile = {
+		heir = {
+			name = args:name
+			monarch_name = args:name
+			dynasty = args:dynasty
+			adm = args:adm
+			dip = args:dip
+			mil = args:mil
+			birth_date = `{(2568-args:age)}.1.1`
+			death_date = `{(2568-args:age+100)}.1.1`
+			claim = 100
+		}
+	}
+}
+new effect conditional_effect = {
+	args = {
+		tooltip = string
+		trigger = trigger
+		effect = effect
+	}
+	transpile = {
+		if [args:trigger] {
+			new_custom_tooltip = "£yes£If {args:tooltip}"
+			args:effect
+		}
+		else {
+			new_custom_tooltip = "£no£If {args:tooltip}"
+			tooltip = {
+				args:effect
+			}
+		}
+	}
+}
+new effect move_great_project = {
+	args = {
+		type = great_project
+		province = province
+		instant = bool
+	}
+}
+new effect history_owner = {
+	args = country
+	transpile = {
+		`owner = {args}`
+		`controller = {args}`
+		`add_core = {args}`
+	}
+}
+new effect cede_province = {
+	args = country_scope
+}
+new modifier land_morale = {
+	args = float
+}
+new effect add_modifier = {
+	args = {
+		modifier = event_modifier
+		years = int
+	}
+	transpile = {
+		`add_country_modifier =` {
+			`name = {args:modifier:id}`
+			`duration = {(args:years*365)}`
+		}
+	}
+}
+new effect history_trade_goods = {
+	args = tradegood
+	transpile = {
+		`trade_goods = {args}`
+	}
+}
+new effect change_culture = {
+	args = culture
+}
+new effect change_culture = {
+	args = country_scope
+}
+new effect add_permanent_power_projection = {
+	args = {
+		type = string
+		amount = int
+	}
+	transpile = {
+		add_power_projection = {
+			type = args:type
+			amount = args:amount
+		}
+		custom_tooltip = PERMANENT_POWER_PROJECTION_TT
+	}
+}
+new effect add_power_projection = {
+	args = {
+		type = string
+		amount = int
+	}
+	transpile = {
+		`add_power_projection =` {
+			`type = {args:type}`
+			`amount = {args:amount}`
+		}
+	}
+}
+new effect set_estate_privilege = {
+	args = estate_privilege
+}
+new effect remove_estate_privilege = {
+	args = estate_privilege
+}
+new effect define_advisor = {
+	args = {
+		type = advisor_type
+		name = text?
+		skill = int?
+		location = province?
+		discount = bool?
+		cost_multiplier = float?
+		female = bool?
+		culture = culture?
+		religion = religion?
+	}
+	transpile = {
+		`define_advisor =` {
+			`type = {args:type}`
+			when [exists = args:name] `name = {args:name}`
+			when [exists = args:skill] `skill = {args:skill}`
+			when [exists = args:location] `location = {args:location}`
+			when [exists = args:discount] `discount = {args:discount}`
+			when [exists = args:cost_multiplier] `cost_multiplier = {args:cost_multiplier}`
+			when [exists = args:female] `female = {args:female}`
+			when [exists = args:culture] `culture = {args:culture}`
+			when [exists = args:religion] `religion = {args:religion}`
+		}
+	}
+}
+new effect change_trade_goods = {
+	args = tradegood
+}
+new effect set_allow_female_emperor = {
+	args = bool
+}
+new effect add_opinion = {
+	args = {
+		who = country_scope
+		modifier = opinion_modifier
+	}
+}
+#new effect add_great_project_tier = {
+#	args = {
+#	type = great_project			
+#	tier = int
+#	}
+#	transpile = {
+#		`add_great_project_tier =` {
+#			`type = {args:great_project}`
+#			`tier = {args:int}`
+#		
+#		}
+#	}
+#}
+new effect set_estate_privilege = {
+	args = estate_privilege
+}
+new effect remove_estate_privilege = {
+	args = estate_privilege
+}
+new effect set_imperial_incident = {
+	args = incident
+	transpile = {
+		if [has_dlc = "Emperor"] {
+			`set_imperial_incident = {args}`
+		}
+		else {
+			emperor = {
+				args:immediate
+				args:options:1:effect
+			}
+		}
+	}
+}
+
+new effect add_historical_rival = {
+	args = country_scope
+	transpile = {
+		`add_historical_rival = {args}`
+	}
+}
+new effect vassalize = {
+	args = country_scope
+	transpile = {
+		`vassalize = {args}`
+	}
+}
+new effect change_religion = {
+	args = country_scope
+}
+new effect change_religion = {
+	args = religion 
+}
+new effect culture = {
+	args = culture
+}
+new effect culture = {
+	args = base_scope
+
+}
+new effect create_monument = {
+	args = {
+		monument = great_project
+		province = province_scope
+		backup = effect
+	}
+	transpile = {
+		if [has_dlc = "Leviathan"] {
+			new_custom_tooltip = "The monument §Y{args:monument:name}§! is created in §Y[{args:province}.GetName]§!"
+			hidden_effect = {
+				args:monument:start = {
+					move_great_project = {
+						type = args:monument
+						province = args:province
+						instant = yes
+					}
+				}
+			}
+		}
+		else {
+			args:backup
+		}
+	}
+}
+new effect create_monument = {
+	args = {
+		monument = great_project
+		province = province_scope
+	}
+	transpile = {
+		create_monument = {
+			monument = args:monument
+			province = args:province
+			backup = {
+				args:province = {
+					add_monument_as_modifier = args:monument
+				}
+			}
+		}
+	}
+}
+new effect add_monument_as_modifier = {
+	args = great_project
+	transpile = {
+		quick_province_modifier = {
+			name = args:name
+			modifier = args:tier_1:province_modifier
+		}
+	}
+}

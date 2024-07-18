@@ -1,0 +1,160 @@
+new inheritable impassible = {
+	position = {
+		1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	history = {
+	}
+	impassible = yes
+}
+new area black_mountain = {
+	name = "Black Mountain"
+	region = black_mountain
+}
+new province black_mountain = {
+	position = {
+		3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = black_mountain
+	name = "Black Mountain"
+	color = {
+		128 170 190
+	}
+	history = {
+		history_owner = black_mountain
+		culture = eastmarcher
+		religion = nordic_pantheon
+		hre = no
+		history_trade_goods = c_metals
+	
+		is_city = yes
+	}
+}
+new province imp_1 = {
+    inherit = impassible
+    color = { 6 22 3 }
+}
+new province imp_2 = {
+    inherit = impassible
+    color = { 18 6 12 }
+}
+new province imp_3 = {
+    inherit = impassible
+	color = {
+		6 9 19
+	}
+}
+new province imp_4 = {
+    inherit = impassible
+	color = {
+		8 23 28
+	}
+}
+new province imp_5 = {
+    inherit = impassible
+	color = {
+		12 9 4
+	}
+}
+new province imp_6 = {
+    inherit = impassible
+	color = {
+		5 8 14
+	}
+}
+new province imp_7 = {
+    inherit = impassible
+	color = {
+		22 18 17
+	}
+}
+new province imp_8 = {
+    inherit = impassible
+	color = {
+		8 1 11
+	}
+}
+new province imp_9 = {
+    inherit = impassible
+	color = {
+		5 27 16
+	}
+}
+new province imp_10 = {
+    inherit = impassible
+	color = {
+		15 25 2
+	}
+}
+new province imp_11 = {
+    inherit = impassible
+	color = {
+		21 27 11
+	}
+}
+new province imp_12 = {
+    inherit = impassible
+	color = {
+		6 26 2
+	}
+}
+new province imp_13 = {
+    inherit = impassible
+	color = {
+		25 11 29
+	}
+}
+new province imp_14 = {
+    inherit = impassible
+	color = {
+		7 23 7
+	}
+}
+new province imp_15 = {
+    inherit = impassible
+	color = {
+		12 4 17
+	}
+}
+new province imp_16 = {
+    inherit = impassible
+	color = {
+		22 1 19
+	}
+}
+new province imp_17 = {
+    inherit = impassible
+	color = {
+		23 17 16
+	}
+}
+new province imp_18 = {
+    inherit = impassible
+	color = {
+		8 23 21
+	}
+}
+new province imp_19 = {
+    inherit = impassible
+	color = {
+		15 14 2
+	}
+}
+new province imp_20 = {
+    inherit = impassible
+	color = {
+		5 5 24
+	}
+}

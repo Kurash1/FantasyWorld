@@ -1,0 +1,254 @@
+new class event_modifier = {
+	id = `{this:id}`
+	list = event_modifiers
+	default = {
+		name = "{this:id}"
+	}
+	args = {
+		name = string
+		desc = string?
+		modifier = named_modifier
+	}
+	simple_transpile = {
+		write_file "common/event_modifiers/arc.txt" = {
+			foreach $modifier in event_modifiers {
+				new localisation `{$modifier}` = "{$modifier:name}"
+				when [exists = $modifier:desc] {
+					new localisation `desc_{$modifier}` = "{$modifier:desc}"
+				}
+				$modifier = {
+					$modifier:modifier
+				}
+			}
+		}
+	}
+}
+new class unit = {
+	list = units
+	default = {
+		desc = ""
+	}
+	args = {
+		name = string
+		desc = string
+		
+		type = string
+		unit_type = technology_group?
+		trigger = named_trigger?
+		
+		manpower = float?
+		
+		maneuver = int?
+		offensive_morale = int?
+		defensive_morale = int?
+		offensive_fire = int?
+		defensive_fire = int?
+		offensive_shock = int?
+		defensive_shock = int?
+		
+		hull_size = int?
+		base_cannons = int?
+		blockade = int?
+		sail_speed = float?
+		sailors = int?
+		sprite_level = int?
+	}
+	simple_transpile = {
+		foreach $ in units {
+			new localisation `{$}` = `{$:name}`
+			new localisation `{$}DESCR` = `{$:desc}`
+			write_file "common/units/{$}.txt" = {
+				type = $:type
+				
+				when [exists = $:unit_type] { unit_type = $:unit_type }
+				when [exists = $:trigger] { trigger = { $:trigger } }
+				when [exists = $:manpower] { manpower = $:manpower }
+				
+				when [exists = $:maneuver] { maneuver = $:maneuver }
+				when [exists = $:offensive_morale] { offensive_morale = $:offensive_morale }
+				when [exists = $:defensive_morale] { defensive_morale = $:defensive_morale }
+				when [exists = $:offensive_fire] { offensive_fire = $:offensive_fire }
+				when [exists = $:defensive_fire] { defensive_fire = $:defensive_fire }
+				when [exists = $:offensive_shock] { offensive_shock = $:offensive_shock }
+				when [exists = $:defensive_shock] { defensive_shock = $:defensive_shock }
+				
+				when [exists = $:hull_size] { hull_size = $:hull_size }
+				when [exists = $:base_cannons] { base_cannons = $:base_cannons }
+				when [exists = $:blockade] { blockade = $:blockade }
+				when [exists = $:sail_speed] { sail_speed = $:sail_speed }
+				when [exists = $:sailors] { sailors = $:sailors }
+				when [exists = $:sprite_level] { sprite_level = $:sprite_level }
+			}
+		}
+	}
+}
+new class historical_war = {
+	list = historical_wars
+	args = {
+		name = string
+		war_goal = named_block
+		dates = named_effect
+	}
+	simple_transpile = {
+		foreach $war in historical_wars {
+			write_file "history/wars/{$war}.txt" = {
+				name = `"{$war:name}"`
+				war_goal = {
+					$war:war_goal
+				}
+				$war:dates
+			}
+		}
+	}
+}
+new class custom_text_box = {
+	id = `{this:id}`
+	list = custom_text_boxes
+	default = {
+		potential = { }
+	}
+	args = {
+		potential = named_trigger
+		name = string
+		tooltip = string?
+	}
+}
+new class custom_window = {
+	id = `{this:id}`
+	list = custom_windows
+	default = {
+		potential = { }
+	}
+	args = {
+		potential = named_trigger
+	}
+	simple_transpile = {
+		write_file "common/custom_gui/custom_windows.txt" = {
+			foreach $ in custom_windows {
+				custom_window = {
+					name = $
+					potential = {
+						$:potential
+					}
+				}
+			}
+		}
+	}
+}
+new class modifier_definition = {
+	id = `{this:id}`
+	list = modifier_definitions
+	default = {
+		is_percentage = no
+		precision = 1
+		trigger = {
+			always = yes
+		}
+	}
+	args = {
+		name = string
+		is_percentage = bool
+		trigger = named_trigger
+		base_value = string?
+		precision = int
+	}
+	on_create = {
+		when [this:is_percentage == yes] {
+			DEFINE_MODIFIER = {
+				key = `{this:id}`
+				text = `{this:name}`
+				localisation_key = `{this:id}`
+				multiplier = 100
+				percent = yes
+				is_good = true
+				is_bool = false
+				is_multiplicative = true
+				precision = this:precision
+			}
+
+		}
+		when [this:is_percentage == no] {
+			DEFINE_MODIFIER = {
+				key = `{this:id}`
+				text = `{this:name}`
+				localisation_key = `{this:id}`
+				multiplier = 1
+				percent = no
+				is_good = true
+				is_bool = false
+				is_multiplicative = true
+				precision = this:precision
+			}
+		}
+	}
+}
+new class named_float = {
+	args = float
+}
+new class named_int = {
+	args = int
+}
+new class named_bool = {
+	args = bool
+}
+new class named_string = {
+	args = string
+}
+new class named_ui_node = {
+	args = ui_node
+}
+new class naval_doctrine = {
+	id = `{this:id}`
+	list = naval_doctrines
+	default = {
+		desc = ""
+		can_select = {
+			is_primitive = no
+		}
+		cost = 0.1
+		country_modifier = { }
+		effect = { }
+		removed_effect = { }
+		button_gfx = 1
+	}
+	args = {
+		name = string
+		desc = string
+		can_select = named_trigger
+		cost = float
+		country_modifier = named_modifier
+		effect = named_effect
+		removed_effect = named_effect
+		button_gfx = int
+	}
+	on_create = {
+		new localisation `{this:id}` = `{this:name}`
+		new localisation `{this:id}_desc` = `{this:desc}`
+	}
+}
+new class script_variable = {
+	list = variables
+	default = {
+		tag = ""
+	}
+	args = {
+		initial_value = float?
+		calculate = named_effect?
+		tag = string
+		name = string
+	}
+	simple_transpile = {
+		foreach $ in variables {
+			new localisation `{$:id}` = `{$:name}`
+		}
+	}
+	init = {
+		args = bool
+		transpile = {
+			set_variable = {
+				which = this:id
+				value = this:initial_value
+			}
+		}
+	}
+}

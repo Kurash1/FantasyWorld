@@ -1,0 +1,176 @@
+new trigger exists = {
+	args = country_scope
+}
+new trigger exists = {
+	args = bool
+}
+new trigger has_discovered = {
+	args = province_scope
+}
+new trigger has_longships = {
+	args = {
+		num = int
+		backup = trigger
+	}
+	transpile = {
+		if [
+			has_dlc = "Domination"
+			ai = no #cus ai can't build them
+		] {
+			num_of_galleass = args:num
+		}
+		else {
+			args:backup
+		}
+	}
+}
+new trigger has_building_line = {
+	args = building_line
+	transpile = {
+		new localisation "has_building_line_{args}_tooltip" = "Have a §Y{args:name}§! Building"
+		custom_trigger_tooltip = {
+			tooltip = `has_building_line_{args}_tooltip`
+			OR = {
+				foreach $building in args:buildings {
+					`has_building = {$building}`
+				}
+			}
+		}
+	}
+}
+new trigger owns = {
+	args = province
+}
+new trigger province_group = {
+	args = province_group
+}
+new trigger ags = {
+	args = int
+	transpile = {
+		`is_year = {(args+2568)}`
+	}
+}
+new trigger was_tag = {
+	args = country_scope
+}
+new trigger tag = {
+	args = country_scope
+}
+new trigger development_in_provinces = {
+	args = {
+		value = int
+		trigger = trigger
+	}
+	transpile = {
+		`development_in_provinces =` {
+			`value = {args:value}`
+			args:trigger
+		}
+	}
+}
+new trigger has_terrain = {
+	args = terrain
+}
+new trigger area = {
+	args = area
+}
+new trigger primary_culture = {
+	args = culture
+}
+new trigger primary_culture = {
+	args = country_scope
+}
+new trigger has_estate_privilege = {
+	args = estate_privilege
+}
+new trigger accepted_culture = {
+	args = culture
+}
+new trigger accepted_culture = {
+	args = base_scope
+}
+new trigger is_race = {
+	args = culture_group
+	transpile = {
+		`culture_group = {args}`
+	}
+}
+new trigger is_race = {
+	args = base_scope
+	transpile = {
+		`culture_group = {args}`
+	}
+}
+new trigger culture_group = {
+	args = culture_group
+}
+new trigger culture_group = {
+	args = base_scope
+}
+new trigger culture = {
+	args = culture
+}
+new trigger culture = {
+	args = base_scope
+}
+new trigger region = {
+	args = region
+}
+new trigger controls = {
+	args = province
+}
+new trigger is_enemy = {
+	args = country_scope
+}
+new trigger has_trade_goods = {
+	args = tradegood
+	transpile = {
+		`trade_goods = {args}`
+	}
+}
+new trigger has_trade_goods = {
+	args = base_scope
+	transpile = {
+		`trade_goods = {args}`
+	}
+}
+new trigger vassal_of = {
+	args = country_scope
+	transpile = {
+		`vassal_of = {args}`
+	}
+}
+new trigger has_opinion = {
+	args = {
+		who = country_scope
+		value = int
+	}
+}
+new trigger owned_by = {
+	args = country_scope
+}
+new trigger is_claim = {
+	args = country_scope
+}
+new trigger country_or_non_sovereign_subject_holds = {
+	args = country_scope
+}
+new trigger province_id = {
+	args = province
+}
+new localisation has_level_two_ADM_advisors = "§YAdm§! advisor has skill of at least §Y2§!"
+new localisation has_level_two_DIP_advisors = "§YDip§! advisor has skill of at least §Y2§!"
+new localisation has_level_two_MIL_advisors = "§YMil§! advisor has skill of at least §Y2§!"
+new trigger has_advisor_level_two_of = {
+	args = string
+	transpile = {
+		custom_trigger_tooltip = {
+			tooltip = `has_level_two_{args}_advisors`
+			OR = {
+				foreach $advisor_type in advisor_types [$advisor_type:monarch_power == args] {
+					$advisor_type = 2
+				}
+			}
+		}
+	}
+}

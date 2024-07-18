@@ -1,0 +1,47 @@
+new country_event estate_privileges_and_agendas_events.3 = {
+	title = "The Agenda of the Diet"
+	desc = "The Estates of [Root.GetName] have proposed agendas for the summoned Diet. Favoring one of the Estates here could have large benefits in the long term.\n\n[Root.GetCachedAgendasFlavorText]"
+	picture = thinking_people_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			foreach $estate in estates {
+				if [
+					has_estate = $estate
+					NOT = {
+						has_country_flag = `{$estate}_present_agenda`
+					}
+				] {
+					set_country_flag = `{$estate}_present_agenda`
+					generate_estate_agenda = $estate
+				}
+			}
+		}
+	}
+	
+	after = {
+		foreach $estate in estates {
+			clr_country_flag = `{$estate}_present_agenda`
+		}
+		clear_estate_agenda_cache = ROOT
+	}
+	
+	options = { }
+}
+new named_effect populate_agenda_options = {
+	foreach $estate in estates {
+		events:estate_privileges_and_agendas_events.3:options += {
+			{
+				name = "The Proposal of the {$estate:name}"
+				trigger = {
+					has_country_flag = `{$estate}_present_agenda`
+				}
+				effect = {
+					start_estate_agenda = $estate
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_expedition_icon_strip" 
+		texturefile = "gfx/special/expedition_icon_strip.dds"
+		noOfFrames = 16
+	}
+	spriteType = { 
+		name = "GFX_expedition_progress_bar" 
+		texturefile = "gfx/special/expedition_progress_bar.dds"
+		noOfFrames = 101
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_recruitment_policy_icon"
+		texturefile = "gfx/special/GFX_recruitment_policy_icon.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_economic_policy_icon"
+		texturefile = "gfx/special/GFX_economic_policy_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_field_policy_icon"
+		texturefile = "gfx/special/GFX_field_policy_icon.dds"
+		noOfFrames = 6
+	}
+	spriteType = {
+		name = "GFX_scouting_company_idea"
+		texturefile = "gfx/special/GFX_scouting_company_idea.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_scouting_idea_development_cost"
+		texturefile = "gfx/interface/ideas_EU4/development_cost.dds"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_sailors_coup"
+		texturefile = "gfx//interface//disasters//sailors_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_warriors_coup"
+		texturefile = "gfx//interface//disasters//warriors_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_clans_coup"
+		texturefile = "gfx//interface//disasters//clans_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_harem_coup"
+		texturefile = "gfx//interface//disasters//harem_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_sons_coup"
+		texturefile = "gfx//interface//disasters//sons_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_tribesmen_coup"
+		texturefile = "gfx//interface//disasters//tribesmen_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_mages_coup"
+		texturefile = "gfx//interface//disasters//mages_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_priests_coup"
+		texturefile = "gfx//interface//disasters//priests_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_nobility_coup"
+		texturefile = "gfx//interface//disasters//nobility_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_tongues_coup"
+		texturefile = "gfx//interface//disasters//tongues_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_giants_coup"
+		texturefile = "gfx//interface//disasters//giants_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_estate_orcs_coup"
+		texturefile = "gfx//interface//disasters//orcs_coup.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

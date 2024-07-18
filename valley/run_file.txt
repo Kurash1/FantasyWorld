@@ -1,0 +1,26 @@
+new class run_file = {
+	list = run_files
+	default = {
+		type = effect
+	}
+	args = {
+		effect = named_effect
+		type = string
+	}
+	simple_transpile = {
+		foreach $ in run_files {
+			when [$:type == "effect"] {
+				write_file "{$}.txt" = {
+					ROOT = {
+						$:effect
+					}
+				}
+			}
+			when [$:type == "command"] {
+				write_unformatted_file "{$}.txt" = {
+					$:effect
+				}
+			}
+		}
+	}
+}
