@@ -1,0 +1,65 @@
+new idea_group backup_ideas = {
+	name = "Country"
+	category = national
+	priority = 1
+	start = {
+		
+	}
+	bonus = {
+	
+	}
+	trigger = {
+		always = yes
+	}
+	ideas = {
+		{
+			name = "Idea 1"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 2"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 3"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 4"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 5"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 6"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Idea 7"
+			desc = "No Description"
+			modifier = {
+				
+			}
+		}
+	}
+}
