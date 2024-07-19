@@ -1,3 +1,23 @@
+new custom_transpile natives = {
+	write_file "common/natives/00_natives.txt" = {
+		natives_american_inuit = {
+			graphical_culture = inuitgfx
+			color = { 0 255 255 }
+			icon = 4
+			
+			unit = nord_infantry
+			
+			provinces = {
+				foreach $ in provinces [
+					$:lake == no
+					$:sea == no
+					$:impassible == no
+				] { $ }
+			}
+		}
+	}
+}
+
 new define NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
 
 new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25

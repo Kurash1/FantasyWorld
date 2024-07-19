@@ -292,19 +292,6 @@ new effect add_opinion = {
 		modifier = opinion_modifier
 	}
 }
-#new effect add_great_project_tier = {
-#	args = {
-#	type = great_project			
-#	tier = int
-#	}
-#	transpile = {
-#		`add_great_project_tier =` {
-#			`type = {args:great_project}`
-#			`tier = {args:int}`
-#		
-#		}
-#	}
-#}
 new effect set_estate_privilege = {
 	args = estate_privilege
 }
