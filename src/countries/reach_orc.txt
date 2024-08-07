@@ -69,33 +69,3 @@ new country mor_khazgur = {
 		}
 	}
 }
-new country osh_ornim = {
-	inherit = reach_orc_country
-	tag = OOR
-	name = "Osh Ornim"
-	adj = "Osh Ornim"
-	color = { 200 200 200 }
-	capital = rakh_krazak
-	religion = ten_iron_oaths
-	primary_culture = iron_orc
-	history += {
-		2568.1.1 = {
-			starting_ruler = {
-				name = "Urblak"
-				dynasty = "Gro-Ornim"
-				adm = 3
-				dip = 2
-				mil = 5
-				age = 60
-			}
-			starting_heir = {
-				name = "Koffnag"
-				dynasty = "Gro-Ornim"
-				adm = 3
-				dip = 3
-				mil = 2
-				age = 25
-			}
-		}
-	}
-}
