@@ -3,16 +3,6 @@ new inheritable roscrean_country = {
 	religion = the_old_ways
 	primary_culture = roscrean
 	graphical_culture = greekgfx
-	history = {
-		1.1.1 = {
-			province_groups:shatter_discovery = {
-				discover_country = $tag
-			}
-			province_groups:nord_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 	starting_reform = tier_1_nord_clan
 	capital = black_mountain
 }

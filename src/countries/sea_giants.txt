@@ -3,16 +3,6 @@ new inheritable sea_giant_country = {
 	religion = sea_oath
 	primary_culture = sea_giant
 	graphical_culture = greekgfx
-	history = {
-		1.1.1 = {
-			province_groups:nord_discovery = {
-				discover_country = $tag
-			}
-			province_groups:shatter_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 	government = tribal
 	starting_reform = tier_1_sea_giant_tribe
 	capital = black_mountain

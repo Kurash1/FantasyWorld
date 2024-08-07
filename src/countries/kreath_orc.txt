@@ -5,13 +5,6 @@ new inheritable kreath_orc_country = {
 	religion = code_of_malacath
 	primary_culture = kreath_orc
 	graphical_culture = easterngfx
-	history = {
-		1.1.1 = {
-			province_groups:orc_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 }
 new country nor_lorak = {
 	inherit = kreath_orc_country

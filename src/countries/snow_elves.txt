@@ -5,13 +5,6 @@ new inheritable snow_elven_country = {
 	religion = auriels_true_way
 	primary_culture = snow_elven
 	graphical_culture = greekgfx
-	history = {
-		1.1.1 = {
-			province_groups:snow_elven_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 }
 new country geir = {
 	inherit = snow_elven_country

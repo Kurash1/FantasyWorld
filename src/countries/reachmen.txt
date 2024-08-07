@@ -5,13 +5,6 @@ new inheritable reachman_country = {
 	religion = reachman_faith
 	primary_culture = reachmen
 	graphical_culture = easterngfx
-	history = {
-		1.1.1 = {
-			province_groups:reachmen_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 }
 new country ghostsong_clan = {
 	inherit = reachman_country
@@ -360,35 +353,6 @@ new country horn_stride_clan = {
 	adj = "Horn-Stride"
 	color = { 35 63 40 }
 	capital = harmugstahl
-}
-new country winterborn_clan = {
-	inherit = reachman_country
-	tag = WNT
-	name = "Winterborn Clan"
-	adj = "Winterborn"
-	color = { 0 0 60 }
-	capital = vyhidok
-	religion = code_of_malacath
-	history += {
-		2568.1.1 = {
-			starting_ruler = {
-				name = "Nargisrel"
-				dynasty = "Winterborn"
-				adm = 3
-				dip = 2
-				mil = 4
-				age = 37
-			}
-			starting_heir = {
-				name = "Pryvul"
-				dynasty = "Winterborn"
-				adm = 1
-				dip = 4
-				mil = 1
-				age = 11
-			}
-		}
-	}
 }
 new country blood_horn_clan = {
 	inherit = reachman_country

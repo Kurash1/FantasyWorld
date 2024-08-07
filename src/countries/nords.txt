@@ -2,13 +2,6 @@ new inheritable nordic_country = {
 	technology_group = nord
 	religion = nordic_pantheon
 	graphical_culture = greekgfx
-	history = {
-		1.1.1 = {
-			province_groups:nord_discovery = {
-				discover_country = $tag
-			}
-		}
-	}
 	starting_reform = tier_1_nord_clan
 }
 new country karthald = {
@@ -1892,14 +1885,6 @@ new country winter_thorn = {
 	name = "Winter-Thorn"
 	color = { 200 200 255 }
 	capital = krakevik
-}
-new country jehanna = {
-	inherit = nordic_country
-	primary_culture = haafingarian
-	tag = JEH
-	name = "Jehanna"
-	color = { 0 148 255 }
-	capital = jehanna
 }
 
 new relation march = {

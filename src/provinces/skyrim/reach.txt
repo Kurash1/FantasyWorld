@@ -948,7 +948,6 @@ new province bthar_zel = {
 }
 new province turmilis = {
 	name = "Turmilis"
-    inherit = wrothgar_inherit
     color = { 251 218 148 }
 	history = {
 		history_owner = stag_heart_clan
@@ -1714,7 +1713,6 @@ new area melros = {
 }
 new province urlemen = {
 	name = "Urlemen"
-    inherit = wrothgar_inherit
     color = { 104 133 134 }
 	history = {
 		history_owner = blood_horn_clan
@@ -1737,7 +1735,6 @@ new province urlemen = {
 }
 new province melros = {
 	name = "Melros"
-    inherit = wrothgar_inherit
     color = { 145 115 169 }
 	history = {
 		history_owner = blood_horn_clan
@@ -1760,7 +1757,6 @@ new province melros = {
 }
 new province nhymak = {
 	name = "Nhymak"
-    inherit = wrothgar_inherit
     color = { 195 110 237 }
 	history = {
 		history_owner = blood_horn_clan

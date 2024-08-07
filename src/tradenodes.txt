@@ -573,31 +573,3 @@ new tradenode north_shatter = {
 		}
 	}
 }
-new tradenode jehanna = {
-	name = "Jehanna"
-	location = jehanna
-	areas = {
-		murtag jehanna fharun morkuldin shatul burska uvnes vyhidok
-	}
-	outgoings = {
-		{
-			node = northwatch
-			path = { jehanna coast_of_jehanna forgotten_coast northwatch }
-			control = { 1441.000000 2072.000000 1484.000000 2081.000000 1508.000000 2092.000000 }
-		}
-	}
-}
-new tradenode great_bay = {
-	name = "Great Bay"
-	location = enclave
-	areas = {
-		tumnosh mazgroth frostbreak luccin igrun enclave
-	}
-	outgoings = {
-		{
-			node = jehanna
-			path = { enclave orcish_coast coast_of_brulak coast_of_fharun coast_of_urzba jehanna }
-			control = { 1292.000000 1975.000000 1319.000000 1995.000000 1349.000000 2009.000000 1369.000000 2048.000000 1396.000000 2073.000000 }
-		}
-	}
-}
