@@ -113,6 +113,15 @@ new custom_transpile descriptor = {
 		replace_path = "tutorial"
 		tags = {
 			"Alternative History"
+			"Balance"
+			"Events"
+			"Expansion"
+			"Gameplay"
+			"Graphics"
+			"Map"
+			"Missions and Decisions"
+			"National Ideas"
+			"New Nations"
 		}
 		name = "Purple Project"
 		supported_version = "1.37.*"

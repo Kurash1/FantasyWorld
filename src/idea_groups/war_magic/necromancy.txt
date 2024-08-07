@@ -1,3 +1,25 @@
+new spell_header necromancy = {
+	name = "Necromancy"
+}
+new spell raise_the_dead = {
+	name = "Raise the Dead"
+	type = province
+	cost = 10
+	on_cast = { }
+}
+#new spell create_black_soul_gems = {
+#	name = "Create Black Soul Gems"
+#	type = country
+#	cost = 10
+#	on_cast = { }
+#}
+#new spell the_path_of_transcendence = {
+#	name = "The Path of Transcendence"
+#	type = ritual
+#	cost = 10
+#	on_cast = { }
+#}
+
 new modifier_definition manpower_from_casualties_caused = {
 	name = "Manpower from Casualties Caused"
 	is_percentage = yes
@@ -47,6 +69,7 @@ new idea_group necromancy_ideas = {
 			name = "Necromanctic Magic"
 			desc = ""
 			modifier = {
+				spells_known = 3
 				diplomatic_reputation = -4
 				ae_impact = 15%
 			}
@@ -99,6 +122,7 @@ new idea_group necromancy_ideas = {
 			desc = ""
 			modifier = {
 				global_monthly_devastation = -0.1
+				magicka_gain_modifier = 10%
 			}
 		}
 	}

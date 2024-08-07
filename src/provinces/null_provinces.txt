@@ -42,103 +42,756 @@ new province black_mountain = {
 		is_city = yes
 	}
 }
-new province imp_1 = {
+new province r399 = {
+	position = {
+		2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	name = ""
+	color = {
+		23 4 14
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province atmora = {
+	position = {
+		1877.000 2709.000 1877.000 2709.000 1877.000 2709.000 1877.000 2709.000 1877.000 2709.000 1877.000 2709.000 1877.000 2709.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Atmora"
+	color = {
+		28 29 22
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province hvitkald_peak = {
     inherit = impassible
+	name = "Hvitkald Peak"
     color = { 6 22 3 }
 }
-new province imp_2 = {
+new province frykte_peak = {
     inherit = impassible
+	name = "Frykte Peak"
     color = { 18 6 12 }
 }
-new province imp_3 = {
-    inherit = impassible
-	color = { 12 9 4 }
+new province glenschul_peak = {
+	inherit = impassible
+	name = "Glenschul Peak"
+	color = {
+		6 9 19
+	}
 }
-new province imp_4 = {
-    inherit = impassible
-	color = { 5 8 14 }
+new province r405 = {
+	position = {
+		1705.000 2398.000 1705.000 2398.000 1705.000 2398.000 1705.000 2398.000 1705.000 2398.000 1705.000 2398.000 1705.000 2398.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		8 23 28
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_5 = {
-    inherit = impassible
-	color = { 22 18 17 }
+new province r526 = {
+	position = {
+		388.000 609.000 388.000 609.000 388.000 609.000 388.000 609.000 388.000 609.000 388.000 609.000 388.000 609.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		12 9 4
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_6 = {
-    inherit = impassible
-	color = { 8 1 11 }
+new province r527 = {
+	position = {
+		2850.000 1356.000 2850.000 1356.000 2850.000 1356.000 2850.000 1356.000 2850.000 1356.000 2850.000 1356.000 2850.000 1356.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		5 8 14
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_7 = {
-    inherit = impassible
-	color = { 5 27 16 }
+new province r528 = {
+	position = {
+		1449.000 402.000 1449.000 402.000 1449.000 402.000 1449.000 402.000 1449.000 402.000 1449.000 402.000 1449.000 402.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		22 18 17
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_8 = {
-    inherit = impassible
-	color = { 15 25 2 }
+new province r529 = {
+	position = {
+		2973.000 2163.000 2973.000 2163.000 2973.000 2163.000 2973.000 2163.000 2973.000 2163.000 2973.000 2163.000 2973.000 2163.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		8 1 11
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_9 = {
-    inherit = impassible
-	color = { 21 27 11 }
+new province r530 = {
+	position = {
+		3800.000 271.000 3800.000 271.000 3800.000 271.000 3800.000 271.000 3800.000 271.000 3800.000 271.000 3800.000 271.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.384 0.384 0.384 0.384 0.384 0.384 0.384
+	}
+	name = ""
+	color = {
+		5 27 16
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_10 = {
-    inherit = impassible
-	color = { 6 26 2 }
+new province r532 = {
+	position = {
+		3665.000 780.000 3665.000 780.000 3665.000 780.000 3665.000 780.000 3665.000 780.000 3665.000 780.000 3665.000 780.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		15 25 2
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_11 = {
-    inherit = impassible
-	color = { 8 23 28 }
+new province r533 = {
+	position = {
+		351.000 2345.000 351.000 2345.000 351.000 2345.000 351.000 2345.000 351.000 2345.000 351.000 2345.000 351.000 2345.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		21 27 11
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_12 = {
-    inherit = impassible
-	color = { 12 4 17 }
+new province r534 = {
+	position = {
+		2674.000 490.000 2674.000 490.000 2674.000 490.000 2674.000 490.000 2674.000 490.000 2674.000 490.000 2674.000 490.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		6 26 2
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_13 = {
-    inherit = impassible
-	color = { 22 1 19 }
+new province tsaesci = {
+	position = {
+		3329.000 1175.000 3329.000 1175.000 3329.000 1175.000 3329.000 1175.000 3329.000 1175.000 3329.000 1175.000 3329.000 1175.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Tsaesci"
+	color = {
+		7 1 17
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_14 = {
-    inherit = impassible
-	color = { 23 17 16 }
+new province r778 = {
+	position = {
+		3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.471 0.471 0.471 0.471 0.471 0.471 0.471
+	}
+	name = ""
+	color = {
+		4 8 5
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_15 = {
-    inherit = impassible
-	color = { 8 23 21 }
+new province pyandonea = {
+	position = {
+		1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Pyandonea"
+	color = {
+		12 26 1
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_16 = {
-    inherit = impassible
-	color = { 15 14 2 }
+new province tang_mo = {
+	position = {
+		3340.000 1745.000 3340.000 1745.000 3340.000 1745.000 3340.000 1745.000 3340.000 1745.000 3340.000 1745.000 3340.000 1745.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	name = "Tang Mo"
+	color = {
+		5 8 24
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_17 = {
-    inherit = impassible
-	color = { 5 5 24 }
+new province cathnoquey = {
+	position = {
+		2923.000 1728.000 2923.000 1728.000 2923.000 1728.000 2923.000 1728.000 2923.000 1728.000 2923.000 1728.000 2923.000 1728.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Cathnoquey"
+	color = {
+		9 15 26
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_18 = {
-    inherit = impassible
-    color = { 8 5 5 }
+new province ka_po_tun = {
+	position = {
+		3683.000 1288.000 3683.000 1288.000 3683.000 1288.000 3683.000 1288.000 3683.000 1288.000 3683.000 1288.000 3683.000 1288.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	name = "Ka Po' Tun"
+	color = {
+		1 14 4
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_19 = {
-    inherit = impassible
-    color = { 14 12 24 }
+new province r783 = {
+	position = {
+		3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000 3753.000 1749.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		14 14 15
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_20 = {
-    inherit = impassible
-    color = { 21 4 10 }
+new province kamal = {
+	position = {
+		3763.000 1611.000 3763.000 1611.000 3763.000 1611.000 3763.000 1611.000 3763.000 1611.000 3763.000 1611.000 3763.000 1611.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.502 0.502 0.502 0.502 0.502 0.502 0.502
+	}
+	name = "Kamal"
+	color = {
+		18 8 3
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_21 = {
-    inherit = impassible
-    color = { 20 16 28 }
+new province esroniet = {
+	position = {
+		2925.000 931.000 2925.000 931.000 2925.000 931.000 2925.000 931.000 2925.000 931.000 2925.000 931.000 2925.000 931.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Esroniet"
+	color = {
+		13 22 24
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_22 = {
-    inherit = impassible
-    color = { 15 28 13 }
+new province nalonga = {
+	position = {
+		231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Nalonga"
+	color = {
+		5 28 8
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_23 = {
-    inherit = impassible
-    color = { 25 19 3 }
+new province valenwood = {
+	position = {
+		1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Valenwood"
+	color = {
+		17 27 18
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_24 = {
-    inherit = impassible
-    color = { 27 14 7 }
+new province elsweyr = {
+	position = {
+		1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Elsweyr"
+	color = {
+		8 8 14
+	}
+	history = {
+	}
+	impassible = yes
 }
-new province imp_25 = {
-    inherit = impassible
-    color = { 22 7 18 }
+new province morrowind = {
+	position = {
+		2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Morrowind"
+	color = {
+		24 19 17
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r1532 = {
+	position = {
+		2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	name = ""
+	color = {
+		25 11 29
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province black_marsh = {
+	position = {
+		2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	name = "Black Marsh"
+	color = {
+		10 10 15
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r1985 = {
+	position = {
+		3595.000 2575.000 3595.000 2575.000 3595.000 2575.000 3595.000 2575.000 3595.000 2575.000 3595.000 2575.000 3595.000 2575.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		7 23 7
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2003 = {
+	position = {
+		351.000 2429.000 351.000 2429.000 351.000 2429.000 351.000 2429.000 351.000 2429.000 351.000 2429.000 351.000 2429.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		12 4 17
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province cyrodiil = {
+	position = {
+		1762.000 1476.000 1762.000 1476.000 1762.000 1476.000 1762.000 1476.000 1762.000 1476.000 1762.000 1476.000 1762.000 1476.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.439 0.439 0.439 0.439 0.439 0.439 0.439
+	}
+	name = "Cyrodiil"
+	color = {
+		23 1 19
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province yokuda = {
+	position = {
+		237.000 1821.000 237.000 1821.000 237.000 1821.000 237.000 1821.000 237.000 1821.000 237.000 1821.000 237.000 1821.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Yokuda"
+	color = {
+		9 7 8
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2676 = {
+	position = {
+		358.000 2589.000 358.000 2589.000 358.000 2589.000 358.000 2589.000 358.000 2589.000 358.000 2589.000 358.000 2589.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		22 1 19
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2677 = {
+	position = {
+		3774.000 2379.000 3774.000 2379.000 3774.000 2379.000 3774.000 2379.000 3774.000 2379.000 3774.000 2379.000 3774.000 2379.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		23 17 16
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2680 = {
+	position = {
+		929.000 2434.000 929.000 2434.000 929.000 2434.000 929.000 2434.000 929.000 2434.000 929.000 2434.000 929.000 2434.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		8 23 21
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2681 = {
+	position = {
+		353.000 2022.000 353.000 2022.000 353.000 2022.000 353.000 2022.000 353.000 2022.000 353.000 2022.000 353.000 2022.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		15 14 2
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2682 = {
+	position = {
+		3234.000 2637.000 3234.000 2637.000 3234.000 2637.000 3234.000 2637.000 3234.000 2637.000 3234.000 2637.000 3234.000 2637.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		5 5 24
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province r2683 = {
+	position = {
+		3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = ""
+	color = {
+		18 6 1
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province summerset = {
+	position = {
+		1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Summerset"
+	color = {
+		27 5 1
+	}
+	history = {
+	}
+	impassible = yes
+}
+
+new province glenumbra = {
+	inherit = impassible
+	name = "Glenumbra"
+	color = { 12 21 16 }
+}
+new province rivenspire = {
+	inherit = impassible
+	name = "Rivenspire"
+	color = { 29 15 13 }
+}
+new province stormhaven = {
+	inherit = impassible
+	name = "Stormhaven"
+	color = { 21 28 10 }
+}
+new province bangkorai = {
+	inherit = impassible
+	name = "Bangkorai"
+	color = { 27 20 22 }
+}
+new province bantha = {
+	inherit = impassible
+	name = "Bantha"
+	color = {
+		19 31 6
+	}
+}
+new province alikr = {
+	inherit = impassible
+	name = "Alikr"
+	color = {
+		19 11 6
+	}
+}
+new province fallen_wastes = {
+	inherit = impassible
+	name = "Fallen Wastes"
+	color = {
+		13 17 13
+	}
+}
+new province sunforge = {
+	inherit = impassible
+	name = "Sunforge"
+	color = {
+		9 1 1
+	}
+}
+new province khefrem = {
+	inherit = impassible
+	name = "Khefrem"
+	color = {
+		28 8 29
+	}
+}
+new province brena_area = {
+	inherit = impassible
+	name = "Brena Area"
+	color = {
+		21 13 21
+	}
+}
+new province karnver = {
+	inherit = impassible
+	name = "Karnver"
+	color = {
+		26 3 1
+	}
 }

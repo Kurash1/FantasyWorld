@@ -1,0 +1,716 @@
+new area coast_of_solstheim = {
+	name = "Coast of Solstheim"
+	region = skyrim_sea
+}
+new area coast_of_the_shatter = {
+	name = "Coast of the Shatter"
+	region = skyrim_sea
+}
+new area coast_of_roscrea = {
+	name = "Coast of Roscrea"
+	region = skyrim_sea
+}
+new inheritable sea_inherit = {
+	sea = yes
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.000 0.000 1.000 0.000 0.000 0.000 0.000 }
+	history = {
+	}
+}
+new province yrrik_lost = {
+	name = "Yrrik Lost"
+	inherit = sea_inherit
+	color = { 64 88 91 }
+	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province frulcost = {
+	name = "Frulcost"
+	inherit = sea_inherit
+	color = { 38 89 96 }
+	position = { 1886.000 2411.000 1886.000 2411.000 1886.000 2411.000 1886.000 2411.000 1886.000 2411.000 1886.000 2411.000 1886.000 2411.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province drako_coast = {
+	name = "Drako Coast"
+	inherit = sea_inherit
+	color = { 92 99 80 }
+	position = { 1927.000 2395.000 1927.000 2395.000 1927.000 2395.000 1927.000 2395.000 1927.000 2395.000 1927.000 2395.000 1927.000 2395.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province sideirs_wreck = {
+	name = "Sideir's Wreck"
+	inherit = sea_inherit
+	color = { 87 87 91 }
+	position = { 1999.000 2378.000 1999.000 2378.000 1999.000 2378.000 1999.000 2378.000 1999.000 2378.000 1999.000 2378.000 1999.000 2378.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_hluris = {
+	name = "Coast of Hluris"
+	inherit = sea_inherit
+	color = { 47 57 55 }
+	position = { 1958.000 2371.000 1958.000 2371.000 1958.000 2371.000 1958.000 2371.000 1958.000 2371.000 1958.000 2371.000 1958.000 2371.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_basgral = {
+	name = "Coast of Basgral"
+	inherit = sea_inherit
+	color = { 85 61 50 }
+	position = { 2002.000 2330.000 2002.000 2330.000 2002.000 2330.000 2002.000 2330.000 2002.000 2330.000 2002.000 2330.000 2002.000 2330.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province rilrydr_bay = {
+	name = "Rilrydr Bay"
+	inherit = sea_inherit
+	color = { 70 91 80 }
+	position = { 1919.000 2306.000 1919.000 2306.000 1919.000 2306.000 1919.000 2306.000 1919.000 2306.000 1919.000 2306.000 1919.000 2306.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+	terrain = inland_ocean
+}
+new province hlalds_tale = {
+	name = "Hlald's Tale"
+	inherit = sea_inherit
+	color = { 93 73 69 }
+	position = { 1966.000 2291.000 1966.000 2291.000 1966.000 2291.000 1966.000 2291.000 1966.000 2291.000 1966.000 2291.000 1966.000 2291.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province halricks_ire = {
+	name = "Halrick's Ire"
+	inherit = sea_inherit
+	color = { 34 46 73 }
+	position = { 1932.000 2433.000 1932.000 2433.000 1932.000 2433.000 1932.000 2433.000 1932.000 2433.000 1932.000 2433.000 1932.000 2433.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_hliangryl = {
+	name = "Coast of Hliangryl"
+	inherit = sea_inherit
+	color = { 57 31 49 }
+	position = { 1875.000 2287.000 1875.000 2287.000 1875.000 2287.000 1875.000 2287.000 1875.000 2287.000 1875.000 2287.000 1875.000 2287.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_konhiedr = {
+	name = "Coast of Konhiedr"
+	inherit = sea_inherit
+	color = { 49 88 72 }
+	position = { 1845.000 2439.000 1845.000 2439.000 1845.000 2439.000 1845.000 2439.000 1845.000 2439.000 1845.000 2439.000 1845.000 2439.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province misty_sea = {
+	name = "Misty Sea"
+	inherit = sea_inherit
+	color = { 36 41 79 }
+	position = { 1891.000 2452.000 1891.000 2452.000 1891.000 2452.000 1891.000 2452.000 1891.000 2452.000 1891.000 2452.000 1891.000 2452.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province satal_bay = {
+	name = "Satal Bay"
+	inherit = sea_inherit
+	color = { 46 85 47 }
+	position = { 1763.000 2405.000 1763.000 2405.000 1763.000 2405.000 1763.000 2405.000 1763.000 2405.000 1763.000 2405.000 1763.000 2405.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+	terrain = inland_ocean
+}
+new province klet_pass = {
+	name = "Klet Pass"
+	inherit = sea_inherit
+	color = { 96 34 54 }
+	position = { 1921.000 2268.000 1921.000 2268.000 1921.000 2268.000 1921.000 2268.000 1921.000 2268.000 1921.000 2268.000 1921.000 2268.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province jylrik_sea = {
+	name = "Jylrik Sea"
+	inherit = sea_inherit
+	color = { 32 42 77 }
+	position = { 1722.000 2396.000 1722.000 2396.000 1722.000 2396.000 1722.000 2396.000 1722.000 2396.000 1722.000 2396.000 1722.000 2396.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_vomth = {
+	name = "Coast of Vomth"
+	inherit = sea_inherit
+	color = { 50 58 32 }
+	position = { 1790.000 2439.000 1790.000 2439.000 1790.000 2439.000 1790.000 2439.000 1790.000 2439.000 1790.000 2439.000 1790.000 2439.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_relren = {
+	name = "Coast of Relren"
+	inherit = sea_inherit
+	color = { 94 47 89 }
+	position = { 1742.000 2363.000 1742.000 2363.000 1742.000 2363.000 1742.000 2363.000 1742.000 2363.000 1742.000 2363.000 1742.000 2363.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province asmans_sea = {
+	name = "Asman's Sea"
+	inherit = sea_inherit
+	color = { 41 34 62 }
+	position = { 1773.000 2337.000 1773.000 2337.000 1773.000 2337.000 1773.000 2337.000 1773.000 2337.000 1773.000 2337.000 1773.000 2337.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province lost_coast = {
+	name = "Lost Coast"
+	inherit = sea_inherit
+	color = { 42 36 68 }
+	position = { 1735.000 2433.000 1735.000 2433.000 1735.000 2433.000 1735.000 2433.000 1735.000 2433.000 1735.000 2433.000 1735.000 2433.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province the_great_ghost = {
+	name = "The Great Ghost"
+	inherit = sea_inherit
+	color = { 59 75 40 }
+	position = { 1818.000 2229.000 1818.000 2229.000 1818.000 2229.000 1818.000 2229.000 1818.000 2229.000 1818.000 2229.000 1818.000 2229.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province dulgotik_bay = {
+	name = "Dulgotik Bay"
+	inherit = sea_inherit
+	color = { 95 60 79 }
+	position = { 1823.000 2338.000 1823.000 2338.000 1823.000 2338.000 1823.000 2338.000 1823.000 2338.000 1823.000 2338.000 1823.000 2338.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_orimvast = {
+	name = "Coast of Orimvast"
+	inherit = sea_inherit
+	color = { 58 74 44 }
+	position = { 1839.000 2309.000 1839.000 2309.000 1839.000 2309.000 1839.000 2309.000 1839.000 2309.000 1839.000 2309.000 1839.000 2309.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_andholm = {
+	name = "Coast of Andholm"
+	inherit = sea_inherit
+	color = { 82 57 40 }
+	position = { 1773.000 2255.000 1773.000 2255.000 1773.000 2255.000 1773.000 2255.000 1773.000 2255.000 1773.000 2255.000 1773.000 2255.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province fjaldorths_sea = {
+	name = "Flajdorth's Sea"
+	inherit = sea_inherit
+	color = { 47 52 48 }
+	position = { 1795.000 2301.000 1795.000 2301.000 1795.000 2301.000 1795.000 2301.000 1795.000 2301.000 1795.000 2301.000 1795.000 2301.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_segel = {
+	name = "Coast of Segel"
+	inherit = sea_inherit
+	color = { 53 49 36 }
+	position = { 1869.000 2246.000 1869.000 2246.000 1869.000 2246.000 1869.000 2246.000 1869.000 2246.000 1869.000 2246.000 1869.000 2246.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province pass_of_lands = {
+	name = "Pass of Lands"
+	inherit = sea_inherit
+	color = { 51 86 91 }
+	position = { 1921.000 2226.000 1921.000 2226.000 1921.000 2226.000 1921.000 2226.000 1921.000 2226.000 1921.000 2226.000 1921.000 2226.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province dark_sea = {
+	name = "Dark Sea"
+	inherit = sea_inherit
+	color = { 98 76 86 }
+	position = { 1829.000 2272.000 1829.000 2272.000 1829.000 2272.000 1829.000 2272.000 1829.000 2272.000 1829.000 2272.000 1829.000 2272.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province old_gral_sea = {
+	name = "Old Gral Sea"
+	inherit = sea_inherit
+	color = { 43 44 69 }
+	position = { 2039.000 2362.000 2039.000 2362.000 2039.000 2362.000 2039.000 2362.000 2039.000 2362.000 2039.000 2362.000 2039.000 2362.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province path_of_poets = {
+	name = "Path of Poets"
+	inherit = sea_inherit
+	color = { 54 55 53 }
+	position = { 1747.000 2292.000 1747.000 2292.000 1747.000 2292.000 1747.000 2292.000 1747.000 2292.000 1747.000 2292.000 1747.000 2292.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province sea_of_castles = {
+	name = "Sea of Castles"
+	inherit = sea_inherit
+	color = { 57 61 63 }
+	position = { 1694.000 2360.000 1694.000 2360.000 1694.000 2360.000 1694.000 2360.000 1694.000 2360.000 1694.000 2360.000 1694.000 2360.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province third_landing = {
+	name = "Third Landing"
+	inherit = sea_inherit
+	color = { 51 93 52 }
+	position = { 1720.000 2326.000 1720.000 2326.000 1720.000 2326.000 1720.000 2326.000 1720.000 2326.000 1720.000 2326.000 1720.000 2326.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_haetar = {
+	name = "Coast of Haetar"
+	inherit = sea_inherit
+	color = { 53 35 87 }
+	position = { 1431.000 2376.000 1431.000 2376.000 1431.000 2376.000 1431.000 2376.000 1431.000 2376.000 1431.000 2376.000 1431.000 2376.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province skull_sea = {
+	name = "Skull Sea"
+	inherit = sea_inherit
+	color = { 72 79 64 }
+	position = { 1872.000 2206.000 1872.000 2206.000 1872.000 2206.000 1872.000 2206.000 1872.000 2206.000 1872.000 2206.000 1872.000 2206.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province seventy_songs_sea = {
+	name = "Seventy Songs Sea"
+	inherit = sea_inherit
+	color = { 58 44 32 }
+	position = { 1808.000 2182.000 1808.000 2182.000 1808.000 2182.000 1808.000 2182.000 1808.000 2182.000 1808.000 2182.000 1808.000 2182.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province coast_of_virgold = {
+	name = "Coast of Virgold"
+	inherit = sea_inherit
+	color = { 44 39 76 }
+	position = { 1763.000 2209.000 1763.000 2209.000 1763.000 2209.000 1763.000 2209.000 1763.000 2209.000 1763.000 2209.000 1763.000 2209.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province barred_sea = {
+	name = "Barred Sea"
+	inherit = sea_inherit
+	color = { 47 49 63 }
+	position = { 1741.000 2178.000 1741.000 2178.000 1741.000 2178.000 1741.000 2178.000 1741.000 2178.000 1741.000 2178.000 1741.000 2178.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province old_land_sea = {
+	name = "Old Land Sea"
+	inherit = sea_inherit
+	color = { 64 82 74 }
+	position = { 2003.000 2174.000 2003.000 2174.000 2003.000 2174.000 2003.000 2174.000 2003.000 2174.000 2003.000 2174.000 2003.000 2174.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province coast_of_mortrag = {
+	name = "Coast of Mortrag"
+	inherit = sea_inherit
+	color = { 73 70 30 }
+	position = { 2064.000 2181.000 2064.000 2181.000 2064.000 2181.000 2064.000 2181.000 2064.000 2181.000 2064.000 2181.000 2064.000 2181.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province lake_fjalding = {
+	name = "Lake Fjalding"
+	inherit = sea_inherit
+	color = { 40 87 64 }
+	position = { 2096.000 2126.000 2096.000 2126.000 2096.000 2126.000 2096.000 2126.000 2096.000 2126.000 2096.000 2126.000 2096.000 2126.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+	terrain = inland_ocean
+}
+new province coast_of_volanlos = {
+	name = "Coast of Volanlos"
+	inherit = sea_inherit
+	color = { 35 88 33 }
+	position = { 1973.000 2211.000 1973.000 2211.000 1973.000 2211.000 1973.000 2211.000 1973.000 2211.000 1973.000 2211.000 1973.000 2211.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province white_sea = {
+	name = "White Sea"
+	inherit = sea_inherit
+	color = { 64 91 46 }
+	position = { 1973.000 2249.000 1973.000 2249.000 1973.000 2249.000 1973.000 2249.000 1973.000 2249.000 1973.000 2249.000 1973.000 2249.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province sea_of_ten_storms = {
+	name = "Sea of Ten Storms"
+	inherit = sea_inherit
+	color = { 77 93 62 }
+	position = { 2026.000 2219.000 2026.000 2219.000 2026.000 2219.000 2026.000 2219.000 2026.000 2219.000 2026.000 2219.000 2026.000 2219.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province skaal_lost = {
+	name = "Skaal Lost"
+	inherit = sea_inherit
+	color = { 43 60 88 }
+	position = { 2078.000 2226.000 2078.000 2226.000 2078.000 2226.000 2078.000 2226.000 2078.000 2226.000 2078.000 2226.000 2078.000 2226.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province broken_wood_sea = {
+	name = "Broken Wood Sea"
+	inherit = sea_inherit
+	color = { 66 39 88 }
+	position = { 2022.000 2274.000 2022.000 2274.000 2022.000 2274.000 2022.000 2274.000 2022.000 2274.000 2022.000 2274.000 2022.000 2274.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province hasruuls_sea = {
+	name = "Hasruul's Sea"
+	inherit = sea_inherit
+	color = { 44 40 32 }
+	position = { 2047.000 2317.000 2047.000 2317.000 2047.000 2317.000 2047.000 2317.000 2047.000 2317.000 2047.000 2317.000 2047.000 2317.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_roscrea
+}
+new province coast_of_domme = {
+	name = "Coast of Domme"
+	inherit = sea_inherit
+	color = { 69 48 85 }
+	position = { 2035.000 2138.000 2035.000 2138.000 2035.000 2138.000 2035.000 2138.000 2035.000 2138.000 2035.000 2138.000 2035.000 2138.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province vilthurs_sea = {
+	name = "Vilthur's Sea"
+	inherit = sea_inherit
+	color = { 97 52 68 }
+	position = { 2122.000 2186.000 2122.000 2186.000 2122.000 2186.000 2122.000 2186.000 2122.000 2186.000 2122.000 2186.000 2122.000 2186.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province coast_of_skaalara = {
+	name = "Coast of Skaalara"
+	inherit = sea_inherit
+	color = { 38 65 60 }
+	position = { 2142.000 2139.000 2142.000 2139.000 2142.000 2139.000 2142.000 2139.000 2142.000 2139.000 2142.000 2139.000 2142.000 2139.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province coast_of_valbrandr = {
+	name = "Coast of Valbrandr"
+	inherit = sea_inherit
+	color = { 64 56 90 }
+	position = { 2133.000 2089.000 2133.000 2089.000 2133.000 2089.000 2133.000 2089.000 2133.000 2089.000 2133.000 2089.000 2133.000 2089.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province coast_of_frosts = {
+	name = "Coast of Frosts"
+	inherit = sea_inherit
+	color = { 88 87 96 }
+	position = { 2110.000 2055.000 2110.000 2055.000 2110.000 2055.000 2110.000 2055.000 2110.000 2055.000 2110.000 2055.000 2110.000 2055.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province second_pass = {
+	name = "Second Pass"
+	inherit = sea_inherit
+	color = { 35 61 31 }
+	position = { 2071.000 2032.000 2071.000 2032.000 2071.000 2032.000 2071.000 2032.000 2071.000 2032.000 2071.000 2032.000 2071.000 2032.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_solstheim
+}
+new province coast_of_framth = {
+	name = "Coast of Framth"
+	inherit = sea_inherit
+	color = { 99 71 82 }
+	position = { 1692.000 2209.000 1692.000 2209.000 1692.000 2209.000 1692.000 2209.000 1692.000 2209.000 1692.000 2209.000 1692.000 2209.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province hamvir_valley = {
+	name = "Hamvir Valley"
+	inherit = sea_inherit
+	color = { 56 55 98 }
+	position = { 1704.000 2259.000 1704.000 2259.000 1704.000 2259.000 1704.000 2259.000 1704.000 2259.000 1704.000 2259.000 1704.000 2259.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+	terrain = inland_ocean
+}
+new province coast_of_brindeilg = {
+	name = "Coast of Brindeilg"
+	inherit = sea_inherit
+	color = { 60 47 34 }
+	position = { 1638.000 2217.000 1638.000 2217.000 1638.000 2217.000 1638.000 2217.000 1638.000 2217.000 1638.000 2217.000 1638.000 2217.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province mount_fyrrik = {
+	name = "Mount Fyrrik"
+	inherit = sea_inherit
+	color = { 74 55 77 }
+	position = { 1577.000 2218.000 1577.000 2218.000 1577.000 2218.000 1577.000 2218.000 1577.000 2218.000 1577.000 2218.000 1577.000 2218.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+	terrain = inland_ocean
+}
+new province lake_thanhiend = {
+	name = "Lake Thanhiend"
+	inherit = sea_inherit
+	color = { 32 90 73 }
+	position = { 1641.000 2267.000 1641.000 2267.000 1641.000 2267.000 1641.000 2267.000 1641.000 2267.000 1641.000 2267.000 1641.000 2267.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+	terrain = inland_ocean
+}
+new province first_landing = {
+	name = "First Landing"
+	inherit = sea_inherit
+	color = { 52 82 89 }
+	position = { 1691.000 2296.000 1691.000 2296.000 1691.000 2296.000 1691.000 2296.000 1691.000 2296.000 1691.000 2296.000 1691.000 2296.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province second_landing = {
+	name = "Second Landing"
+	inherit = sea_inherit
+	color = { 95 90 66 }
+	position = { 1546.000 2359.000 1546.000 2359.000 1546.000 2359.000 1546.000 2359.000 1546.000 2359.000 1546.000 2359.000 1546.000 2359.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province myrrik_coast = {
+	name = "Myrrik Coast"
+	inherit = sea_inherit
+	color = { 30 81 40 }
+	position = { 1532.000 2208.000 1532.000 2208.000 1532.000 2208.000 1532.000 2208.000 1532.000 2208.000 1532.000 2208.000 1532.000 2208.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province amors_coast = {
+	name = "Amor's Coast"
+	inherit = sea_inherit
+	color = { 86 58 65 }
+	position = { 1660.000 2328.000 1660.000 2328.000 1660.000 2328.000 1660.000 2328.000 1660.000 2328.000 1660.000 2328.000 1660.000 2328.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province coast_of_threvuhul = {
+	name = "Coast of Threvuhul"
+	inherit = sea_inherit
+	color = { 89 64 70 }
+	position = { 1525.000 2255.000 1525.000 2255.000 1525.000 2255.000 1525.000 2255.000 1525.000 2255.000 1525.000 2255.000 1525.000 2255.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province great_mountain = {
+	name = "Great Mountain"
+	inherit = sea_inherit
+	color = { 99 98 55 }
+	position = { 1580.000 2274.000 1580.000 2274.000 1580.000 2274.000 1580.000 2274.000 1580.000 2274.000 1580.000 2274.000 1580.000 2274.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+	terrain = inland_ocean
+}
+new province swamp_of_whispers = {
+	name = "Swamp of Whispers"
+	inherit = sea_inherit
+	color = { 42 84 90 }
+	position = { 1513.000 2310.000 1513.000 2310.000 1513.000 2310.000 1513.000 2310.000 1513.000 2310.000 1513.000 2310.000 1513.000 2310.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+	terrain = inland_ocean
+}
+new province jaldur_coast = {
+	name = "Jaldur Coast"
+	inherit = sea_inherit
+	color = { 41 84 70 }
+	position = { 1464.000 2275.000 1464.000 2275.000 1464.000 2275.000 1464.000 2275.000 1464.000 2275.000 1464.000 2275.000 1464.000 2275.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province coast_of_krakevik = {
+	name = "Coast of Krakevik"
+	inherit = sea_inherit
+	color = { 52 84 41 }
+	position = { 1436.000 2326.000 1436.000 2326.000 1436.000 2326.000 1436.000 2326.000 1436.000 2326.000 1436.000 2326.000 1436.000 2326.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province brunnel_lost = {
+	name = "Brunnel Lost"
+	inherit = sea_inherit
+	color = { 38 90 65 }
+	position = { 1489.000 2363.000 1489.000 2363.000 1489.000 2363.000 1489.000 2363.000 1489.000 2363.000 1489.000 2363.000 1489.000 2363.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province coast_of_frignom = {
+	name = "Coast of Frignom"
+	inherit = sea_inherit
+	color = { 72 98 51 }
+	position = { 1601.000 2321.000 1601.000 2321.000 1601.000 2321.000 1601.000 2321.000 1601.000 2321.000 1601.000 2321.000 1601.000 2321.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new province cowards_sea = {
+	name = "Coward's Sea"
+	inherit = sea_inherit
+	color = { 65 71 97 }
+	position = { 1382.000 2344.000 1382.000 2344.000 1382.000 2344.000 1382.000 2344.000 1382.000 2344.000 1382.000 2344.000 1382.000 2344.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	area = coast_of_the_shatter
+}
+new area great_bay = {
+	name = "Great Bay"
+	region = skyrim_sea
+}
+new province orcish_coast = {
+	name = "Orcish Coast"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 69 86 64 }
+	position = { 1292.000 1985.000 1292.000 1986.000 1971.000 2409.000 1292.000 1985.000 1971.000 2409.000 1292.000 1985.000 1971.000 2409.000 }
+	terrain = inland_ocean
+}
+new province coast_of_brulak = {
+	name = "Coast of Brulak"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 52 71 78 }
+	position = { 1337.000 2014.000 1337.000 2015.000 1971.000 2409.000 1337.000 2015.000 1971.000 2409.000 1337.000 2014.000 1971.000 2409.000 }
+	terrain = inland_ocean
+}
+new province coast_of_northpoint = {
+	name = "Coast of Northpoint"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 61 34 95 }
+	position = { 1294.000 2033.000 1294.000 2033.000 1971.000 2409.000 1295.000 2033.000 1971.000 2409.000 1294.000 2032.000 1971.000 2409.000 }
+	terrain = inland_ocean
+}
+new province coast_of_fharun = {
+	name = "Coast of Fharun"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 50 75 57 }
+	position = { 1368.000 2052.000 1368.000 2052.000 1971.000 2409.000 1368.000 2053.000 1971.000 2409.000 1368.000 2052.000 1971.000 2409.000 }
+}
+new province bays_exit = {
+	name = "Bay's Exit"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 98 49 53 }
+	position = { 1327.000 2058.000 1327.000 2059.000 1971.000 2409.000 1328.000 2058.000 1971.000 2409.000 1328.000 2058.000 1971.000 2409.000 }
+}
+new province coast_of_urzba = {
+	name = "Coast of Urzba"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 77 49 32 }
+	position = { 1403.000 2087.000 1403.000 2088.000 1971.000 2409.000 1403.000 2088.000 1971.000 2409.000 1402.000 2088.000 1971.000 2409.000 }
+}
+new province coast_of_jehanna = {
+	name = "Coast of Jehanna"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 55 83 43 }
+	position = { 1445.000 2073.000 1446.000 2073.000 1971.000 2409.000 1445.000 2073.000 1971.000 2409.000 1445.000 2073.000 1971.000 2409.000 }
+}
+new province forgotten_expedition = {
+	name = "Forgotten Expedition"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 76 90 40 }
+	position = { 1444.000 2112.000 1445.000 2113.000 1971.000 2409.000 1445.000 2113.000 1971.000 2409.000 1444.000 2113.000 1971.000 2409.000 }
+}
+new province grazbuls_sea = {
+	name = "Grazbul's Sea"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 75 49 89 }
+	position = { 1355.000 2096.000 1355.000 2096.000 1971.000 2409.000 1355.000 2096.000 1971.000 2409.000 1355.000 2097.000 1971.000 2409.000 }
+}
+new province hvitkolds_sea = {
+	name = "Hvitkold's Sea"
+    inherit = sea_inherit
+	area = great_bay
+    color = { 98 46 68 }
+	position = { 1398.000 2127.000 1398.000 2127.000 1971.000 2409.000 1398.000 2127.000 1971.000 2409.000 1398.000 2127.000 1971.000 2409.000 }
+}

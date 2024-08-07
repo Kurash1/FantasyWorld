@@ -1,0 +1,427 @@
+new area pinewood = {
+	name = "Pinewood"
+	region = pinewood
+}
+new province pinewood = {
+	position={
+		1638.000 1793.000 1639.000 1793.000 1674.000 1812.000 1674.000 1812.000 1638.000 1793.000 1638.000 1795.000 1674.000 1812.000 
+	}
+	rotation={
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height={
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365 
+	}
+	area = pinewood
+	terrain = forest
+	name = "Pinewood"
+	color = {
+		201 118 134
+	}
+	base_development = 15
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		center_of_trade = 1
+		history_trade_goods = wood
+	}
+}
+new province taito = {
+	position = {
+		1636.000 1779.000 1637.000 1780.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1637.000 1780.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = pinewood
+	terrain = forest
+	name = "Taito"
+	color = {
+		210 104 188
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = wood
+	}
+}
+new province antto = {
+	position = {
+		1648.000 1781.000 1647.000 1781.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1647.000 1781.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = pinewood
+	terrain = forest
+	name = "Antto"
+	color = {
+		186 242 146
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = wood
+	}
+}
+
+new area armo_valley = {
+	name = "Armo Valley"
+	region = pinewood
+}
+new province armo = {
+	position = {
+		1660.000 1803.000 1661.000 1804.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1661.000 1804.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = armo_valley
+	terrain = highlands
+	name = "Armo"
+	color = {
+		124 189 160
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}
+new province eevi = {
+	position = {
+		1650.000 1794.000 1651.000 1795.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1651.000 1795.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = armo_valley
+	terrain = forest
+	name = "Eevi"
+	color = {
+		128 231 184
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = wood
+	}
+}
+new province kaarlo = {
+	position = {
+		1644.000 1806.000 1643.000 1806.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1644.000 1807.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = armo_valley
+	terrain = highlands
+	name = "Kaarlo"
+	color = {
+		135 201 113
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}
+
+new area great_peaks = {
+	name = "Great Peaks"
+	region = pinewood
+}
+new province pekko = {
+	position = {
+		1628.000 1803.000 1628.000 1804.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1625.000 1807.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = great_peaks
+	terrain = mountain
+	name = "Pekko"
+	color = {
+		111 123 170
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+	}
+}
+new province alvari = {
+	position = {
+		1628.000 1788.000 1627.000 1788.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1627.000 1788.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = great_peaks
+	terrain = mountain
+	name = "Alvari"
+	color = {
+		169 158 139
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = gems
+	}
+}
+new province altti = {
+	position = {
+		1609.000 1784.000 1609.000 1784.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1608.000 1784.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = great_peaks
+	terrain = mountain
+	name = "Altti"
+	color = {
+		182 173 119
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}
+new province janne = {
+	position = {
+		1617.000 1797.000 1617.000 1796.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1618.000 1796.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = great_peaks
+	terrain = mountain
+	name = "Janne"
+	color = {
+		130 149 177
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = c_metals
+	}
+}
+
+new area high_forest = {
+	name = "High Forest"
+	region = pinewood
+}
+new province mainio = {
+	position = {
+		1654.000 1773.000 1654.000 1773.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1654.000 1773.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = high_forest
+	terrain = highlands
+	name = "Mainio"
+	color = {
+		198 138 164
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}
+new province teppo = {
+	position = {
+		1667.000 1781.000 1665.000 1782.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1665.000 1781.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = high_forest
+	terrain = highlands
+	name = "Teppo"
+	color = {
+		187 151 174
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = c_metals
+	}
+}
+
+new area vill_pass = {
+	name = "Vill Pass"
+	region = pinewood
+}
+new province kari = {
+	position = {
+		1627.000 1773.000 1626.000 1772.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1627.000 1772.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = vill_pass
+	terrain = forest
+	name = "Kari"
+	color = {
+		232 124 160
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}
+new province vill = {
+	position = {
+		1614.000 1764.000 1614.000 1763.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1614.000 1764.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = vill_pass
+	terrain = highlands
+	name = "Vill"
+	color = {
+		248 114 112
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		center_of_trade = 1
+		history_trade_goods = c_metals
+	}
+}
+new province aadas_peak = {
+	position = {
+		1597.000 1772.000 1597.000 1772.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1598.000 1773.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = vill_pass
+	terrain = mountain
+	name = "Aada's Peak"
+	color = {
+		152 231 187
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = c_metals
+		center_of_trade = 1
+	}
+}
+new province eerik = {
+	position = {
+		1615.000 1776.000 1614.000 1777.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1615.000 1776.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = vill_pass
+	terrain = highlands
+	name = "Eerik"
+	color = {
+		148 126 146
+	}
+	history = {
+		culture = pinewoodean
+		religion = pinewood_naturalism
+	
+		is_city = no
+		history_owner = forest_kingdom
+		history_trade_goods = stone
+	}
+}

@@ -236,7 +236,8 @@ new country_event internal_conflicts.6 = {
 			name = "Leave the nation's fate in his hands"
 			effect = {
 				random_owned_province [development = 8] {
-					pretender_rebels = 3
+					pretender_rebels = 3 
+					pretender_rebels = 3 
 				}
 				if [has_disaster = internal_conflicts] {
 					add_disaster_modifier = {

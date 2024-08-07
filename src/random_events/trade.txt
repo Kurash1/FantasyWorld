@@ -7,10 +7,8 @@ bi_yearly_events += {
 	100 = trade.6
 	100 = trade.7
 	100 = trade.8
-	100 = trade.9
 	100 = trade.10
 	100 = trade.11
-	100 = trade.12
 }
 new country_event trade.1 = {
 	inherit = random_event

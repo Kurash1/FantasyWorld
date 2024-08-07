@@ -3021,7 +3021,7 @@ new personality_trait mage = {
 	death = "Even the mysteries of the arcane unravelled could not prevent [Root.Monarch.GetHerHis] death"
 	
 	modifier = {
-		
+		monthly_magicka = 0.5
 	}
 	nation_designer_cost = 5
 }

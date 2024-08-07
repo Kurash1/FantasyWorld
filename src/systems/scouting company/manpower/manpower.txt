@@ -1,0 +1,7 @@
+new custom_text_box survey_manpower_title = {
+	name = "Scouts"
+}
+new custom_text_box survey_manpower_value = {
+	name = "[This.survey_real_manpower.GetValue]"
+	tooltip = ""
+}

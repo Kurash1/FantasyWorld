@@ -13,6 +13,14 @@ new country_event immigration.1 = {
 			has_country_flag = extra_atmoran_settlers
 		}
 		modifier = {
+			factor = 0
+			NOT = { tag = fallowfire }
+		}
+		modifier = {
+			factor = 1.5
+			tag = fallowfire
+		}
+		modifier = {
 			factor = 0.5
 			ags = 50
 		}

@@ -1,0 +1,455 @@
+new inheritable reachman_country = {
+	government = tribal
+	technology_group = reachman
+	starting_reform = tier_1_reachmen_clan
+	religion = reachman_faith
+	primary_culture = reachmen
+	graphical_culture = easterngfx
+	history = {
+		1.1.1 = {
+			province_groups:reachmen_discovery = {
+				discover_country = $tag
+			}
+		}
+	}
+}
+new country ghostsong_clan = {
+	inherit = reachman_country
+	tag = GHO
+	name = "Ghostsong Clan"
+	adj = "Ghostsong"
+	color = {
+		84 72 65
+	}
+	capital = sungard
+}
+new country dreadhorn_clan = {
+	inherit = reachman_country
+	tag = DRH
+	name = "Dreadhorn Clan"
+	adj = "Dreadhorn"
+	color = {
+		118 91 52
+	}
+	capital = horsorg
+}
+new country blackdrake_clan = {
+	inherit = reachman_country
+	tag = BLD
+	name = "Blackdrake Clan"
+	adj = "Blackdrake"
+	color = {
+		100 54 54
+	}
+	capital = reachcliff
+}
+new country shadowbloom_clan = {
+	inherit = reachman_country
+	tag = SHB
+	name = "Shadowbloom Clan"
+	adj = "Shadowbloom"
+	color = {
+		80 0 120
+	}
+	capital = lislgeth
+}
+new country cinder_heart_clan = {
+	inherit = reachman_country
+	tag = CIN
+	name = "Cinder-Heart Clan"
+	adj = "Cinder-Heart"
+	color = {
+		39 69 24
+	}
+	capital = ragnvald
+}
+new country thornroot_clan = {
+	inherit = reachman_country
+	tag = THO
+	name = "Thornroot Clan"
+	adj = "Thornroot"
+	color = {
+		134 89 26
+	}
+	capital = thelmyra
+}
+new country wildspear_clan = {
+	inherit = reachman_country
+	tag = WIL
+	name = "Wildspear Clan"
+	adj = "Wildspear"
+	color = {
+		125 125 25
+	}
+	capital = karerica
+}
+new country black_moon_clan = {
+	inherit = reachman_country
+	tag = BLM
+	name = "Black-Moon Clan"
+	adj = "Black-Moon"
+	color = {
+		25 25 25
+	}
+	capital = valthume
+}
+new country shadefeather_clan = {
+	inherit = reachman_country
+	tag = SHF
+	name = "Shadefeather Clan"
+	adj = "Shadefeather"
+	color = {
+		75 125 50
+	}
+	capital = dragon_bridge_overlook
+}
+new country crow_eye_clan = {
+	inherit = reachman_country
+	tag = CRO
+	name = "Crow-Eye Clan"
+	adj = "Crow-Eye"
+	color = {
+		0 100 100
+	}
+	capital = karthwasten
+}
+new country wildblood_clan = {
+	inherit = reachman_country
+	tag = WLD
+	name = "Wildblood Clan"
+	adj = "Wildblood"
+	color = { 115 0 0 }
+	capital = kolskeggr
+}
+new country twisted_briar_clan = {
+	inherit = reachman_country
+	tag = TWI
+	name = "Twisted Briar Clan"
+	adj = "Twisted Briar"
+	color = { 61 0 17 }
+	capital = karthspire
+}
+new country treeshade_clan = {
+	inherit = reachman_country
+	tag = TRH
+	name = "Treeshade Clan"
+	adj = "Treeshade"
+	color = { 34 61 18 }
+	capital = reach_road_turn
+}
+new country timbercrow_clan = {
+	inherit = reachman_country
+	tag = TMB
+	name = "Timbercrow Clan"
+	adj = "Timbercrow"
+	color = { 155 104 68 }
+	capital = moonstone_hill
+}
+new country timberclaw_clan = {
+	inherit = reachman_country
+	tag = TMC
+	name = "Timberclaw Clan"
+	adj = "Timberclaw"
+	color = { 112 68 32 }
+	capital = markarth
+}
+new country stonetalon_clan = {
+	inherit = reachman_country
+	tag = STT
+	name = "Stonetalon Clan"
+	adj = "Stonetalon"
+	color = { 86 102 158 }
+	capital = algerd
+}
+new country starsinger_clan = {
+	inherit = reachman_country
+	tag = STA
+	name = "Starsinger Clan"
+	adj = "Starsinger"
+	color = { 178 255 239 }
+	capital = sirgarte
+}
+new country stag_heart_clan = {
+	inherit = reachman_country
+	tag = STG
+	name = "Stag-Heart Clan"
+	adj = "Stag-Heart"
+	color = { 255 94 30 }
+	capital = bthar_zel
+}
+new country spirit_tale_clan = {
+	inherit = reachman_country
+	tag = SPI
+	name = "Spirit-Tale Clan"
+	adj = "Spirit-Tale"
+	color = { 255 112 212 }
+	capital = rock_dragon_coast
+}
+new country spiritdancer_clan = {
+	inherit = reachman_country
+	tag = SPD
+	name = "Spiritdancer Clan"
+	adj = "Spiritdancer"
+	color = { 174 76 255 }
+	capital = old_hroldan
+}
+new country spiritblood_clan = {
+	inherit = reachman_country
+	tag = SPB
+	name = "Spiritblood Clan"
+	adj = "Spiritblood"
+	color = { 255 40 112 }
+	capital = soljunds_sinkhole
+}
+new country skyweaver_clan = {
+	inherit = reachman_country
+	tag = SKW
+	name = "Skyweaver Clan"
+	adj = "Skyweaver"
+	color = { 188 227 255 }
+	capital = lost_valley_redoubt
+}
+new country six_ford_clan = {
+	inherit = reachman_country
+	tag = SIX
+	name = "Six-Ford Clan"
+	adj = "Six-Ford"
+	color = { 0 110 255 }
+	capital = beigi
+}
+new country shunned_ones = {
+	inherit = reachman_country
+	tag = SHO
+	name = "Shunned Ones"
+	adj = "Shunned"
+	color = { 50 0 100 }
+	capital = reydlgeth
+}
+new country river_elk_clan = {
+	inherit = reachman_country
+	tag = RVE
+	name = "River-Elk Clan"
+	adj = "River-Elk"
+	color = { 183 75 78 }
+	capital = igrra
+}
+new country rageclaw_clan = {
+	inherit = reachman_country
+	tag = RGC
+	name = "Rageclaw Clan"
+	adj = "Rageclaw"
+	color = { 183 33 33 }
+	capital = moldering
+}
+new country quicktalon_caln = {
+	inherit = reachman_country
+	tag = QUI
+	name = "Quicktalon Clan"
+	adj = "Quicktalon"
+	color = { 71 183 122 }
+	capital = rebels_cairn
+}
+new country mistrunner_clan = {
+	inherit = reachman_country
+	tag = MSR
+	name = "Mistrunner Clan"
+	adj = "Mistrunner"
+	color = { 167 176 183 }
+	capital = reachwater_rock
+}
+new country hillhunter_clan = {
+	inherit = reachman_country
+	tag = HLL
+	name = "Hillhunter Clan"
+	adj = "Hillhunter"
+	color = { 99 44 31 }
+	capital = left_hand_mine
+}
+new country hearteater_clan = {
+	inherit = reachman_country
+	tag = HRT
+	name = "Hearteater Clan"
+	adj = "Hearteater"
+	color = { 99 16 37 }
+	capital = gloomreach
+}
+new country grimfang_clan = {
+	inherit = reachman_country
+	tag = GRI
+	name = "Grimfang Clan"
+	adj = "Grimfang"
+	color = { 0 0 0 }
+	capital = bleeding_hill
+}
+new country eagleseer_clan = {
+	inherit = reachman_country
+	tag = EAG
+	name = "Eagleseer Clan"
+	adj = "Eagleseer"
+	color = { 6 99 80 }
+	capital = riknhild
+}
+new country doomfang_clan = {
+	inherit = reachman_country
+	tag = DOO
+	name = "Doomfang Clan"
+	adj = "Doomfang"
+	color = { 99 24 0 }
+	capital = olavete
+}
+new country deathwing_clan = {
+	inherit = reachman_country
+	tag = DEA
+	name = "Deathwing Clan"
+	adj = "Deathwing"
+	color = { 99 91 0 }
+	capital = bleakwind_bluff
+}
+new country dark_witness_clan = {
+	inherit = reachman_country
+	tag = DWI
+	name = "Dark Witness Clan"
+	adj = "Dark"
+	color = { 99 8 87 }
+	capital = purewater_ruin
+}
+new country boneshaper_clan = {
+	inherit = reachman_country
+	tag = BSH
+	name = "Boneshaper Clan"
+	adj = "Boneshaper"
+	color = { 94 99 96 }
+	capital = karthwatch
+}
+new country boldclaw_clan = {
+	inherit = reachman_country
+	tag = BDC
+	name = "Boldclaw Clan"
+	adj = "Boldclaw"
+	color = { 75 99 20 }
+	capital = brucas_leap_redoubt
+}
+new country blackoath_clan = {
+	inherit = reachman_country
+	tag = BKO
+	name = "Blackoath Clan"
+	adj = "Blackoath"
+	color = { 0 40 73 }
+	capital = khazgur_coast
+}
+new country bear_heart_clan = {
+	inherit = reachman_country
+	tag = BHE
+	name = "Bear-Heart Clan"
+	adj = "Bear-Heart"
+	color = { 73 17 29 }
+	capital = deepwood_redoubt
+}
+new country stranglehollow_clan = {
+	inherit = reachman_country
+	tag = STR
+	name = "Stranglehollow Clan"
+	adj = "Stranglehollow"
+	color = { 73 61 19 }
+	capital = elselod
+}
+new country horn_stride_clan = {
+	inherit = reachman_country
+	tag = HST
+	name = "Horn-Stride Clan"
+	adj = "Horn-Stride"
+	color = { 35 63 40 }
+	capital = harmugstahl
+}
+new country winterborn_clan = {
+	inherit = reachman_country
+	tag = WNT
+	name = "Winterborn Clan"
+	adj = "Winterborn"
+	color = { 0 0 60 }
+	capital = vyhidok
+	religion = code_of_malacath
+	history += {
+		2568.1.1 = {
+			starting_ruler = {
+				name = "Nargisrel"
+				dynasty = "Winterborn"
+				adm = 3
+				dip = 2
+				mil = 4
+				age = 37
+			}
+			starting_heir = {
+				name = "Pryvul"
+				dynasty = "Winterborn"
+				adm = 1
+				dip = 4
+				mil = 1
+				age = 11
+			}
+		}
+	}
+}
+new country blood_horn_clan = {
+	inherit = reachman_country
+	comment = "
+		https://discord.com/channels/1011657111366799391/1011657112113381398/1221703243810476053
+		name: Blood-Horn
+		religion: centered around Hircine and his daughter Daerola 
+		Culture: very militaristic,  war lusting, zealous
+		maybes: could start the game at war with the horn-stride clan
+	"
+	tag = BHC
+	name = "Blood-Horn Clan"
+	adj = "Blood-Horn"
+	color = { 60 0 0 }
+	capital = melros
+	history += {
+		2568.1.1 = {
+			starting_ruler = {
+				name = "Dus"
+				dynasty = "Blood-Horn"
+				adm = 4
+				dip = 0
+				mil = 3
+				age = 44
+			}
+			starting_heir = {
+				name = "Enuc"
+				dynasty = "Blood-Horn"
+				adm = 3
+				dip = 2
+				mil = 3
+				age = 21
+			}
+		}
+	}
+}
+new country icereach_clan = {
+	inherit = reachman_country
+	tag = ICC
+	name = "Icereach Clan"
+	adj = "Icereach"
+	color = { 72 0 255 }
+	capital = big_sister
+	history += {
+		2568.1.1 = {
+			starting_ruler = {
+				name = "Aigi"
+				dynasty = "Icereach"
+				adm = 1
+				dip = 1
+				mil = 5
+				age = 25
+			}
+			starting_heir = {
+				name = "Keia"
+				dynasty = "Icereach"
+				adm = 6
+				dip = 6
+				mil = 3
+				age = 1
+			}
+		}
+	}
+}

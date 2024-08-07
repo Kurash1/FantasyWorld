@@ -39,6 +39,7 @@ Dismissed as daydreaming landlubbers by their more seasoned crewmates, they quic
 	trigger = {
 		sailors_percentage = 0.75
 		num_of_ports = 1
+		max_sailors = 200
 		navy_size = 1
 	}
 	options = {

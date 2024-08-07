@@ -119,6 +119,10 @@ new country_event coup_in_palace_events.3 = {
 							factor = 2
 							spymaster = 3
 						}
+						modifier = {
+							factor = 2
+							ruler_has_personality = intricate_web_weaver
+						}
 					}
 					85 = {
 						custom_tooltip = coup_succeeds_tooltip

@@ -25,7 +25,8 @@ new idea_group scouting_ideas = {
 			name = "Explorer's Guild"
 			desc = "Founding an official guild dedicated to exploration and discovery attracts skilled adventurers and explorers to our cause, fostering a culture of exploration and innovation within our nation."
 			modifier = {
-				
+				scouts_maintenance_efficiency = 20%
+				scouts_survival_efficiency = 20%
 			}
 		}
 		{
@@ -40,7 +41,7 @@ new idea_group scouting_ideas = {
 			name = "Global Mapping Initiative"
 			desc = "Launching a comprehensive mapping initiative on a global scale, we aim to produce the most detailed and accurate maps ever seen, shedding light on the darkest corners of the world and cementing our legacy as pioneers of exploration."
 			modifier = {
-				
+				survey_prestige_gain = 15
 			}
 		}
 		{

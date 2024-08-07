@@ -1,0 +1,67 @@
+new inheritable snow_elven_country = {
+	technology_group = snow_elven
+	government = remnant
+	starting_reform = falmer_remnant
+	religion = auriels_true_way
+	primary_culture = snow_elven
+	graphical_culture = greekgfx
+	history = {
+		1.1.1 = {
+			province_groups:snow_elven_discovery = {
+				discover_country = $tag
+			}
+		}
+	}
+}
+new country geir = {
+	inherit = snow_elven_country
+	government_rank = 2
+	tag = GEI
+	name = "Malawend"
+	adj = "Malawend"
+	color = {
+		255 205 112
+	}
+	capital = ivarstead
+}
+new country arcwind = {
+	inherit = snow_elven_country
+	tag = ARC
+	name = "Eldtel"
+	adj = "Eldtel"
+	color = {
+		200 200 255
+	}
+	capital = arcwind
+}
+new country treva = {
+	inherit = snow_elven_country
+	tag = TRE
+	name = "Nen Tarnabye"
+	adj = "Nen"
+	color = {
+		50 0 0
+	}
+	capital = trevas_watch
+}
+new country faldar = {
+	inherit = snow_elven_country
+	tag = FLD
+	name = "Nebal"
+	adj = "Nebal"
+	color = {
+		150 0 50
+	}
+	capital = faldar
+}
+new country honnith = {
+	inherit = snow_elven_country
+	government_rank = 2
+	tag = HON
+	name = "Tarvea"
+	adj = "Tarvea"
+	color = {
+		0 50 200
+	}
+	capital = riften
+}

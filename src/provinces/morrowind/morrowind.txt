@@ -1,0 +1,17 @@
+new area morrowind = {
+	name = "Morrowind"
+	region = morrowind
+}
+new inheritable morrowind_inherit = {
+	position = {
+		2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000 2109.000 1685.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.377 0.377 0.377 0.377 0.377 0.377 0.377
+	}
+	history = { }
+	area = morrowind
+}

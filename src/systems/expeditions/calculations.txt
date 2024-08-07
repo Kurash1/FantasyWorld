@@ -1,0 +1,74 @@
+new localisation expedition_progress = "Expedition Progress"
+new effect cause_expedition_progress = {
+	args = float
+	transpile = {
+		&expedition_progress += args
+	}
+}
+new named_effect reload_expedition_progress = {
+	hidden_effect = {
+		if [&expedition_progress < 0] {
+			&expedition_progress := 0
+		}
+	
+		&expedition_percentage := expedition_progress
+		&expedition_percentage /= expedition_length
+		&expedition_percentage *= 100
+		
+		if [&expedition_progress >= expedition_length] {
+			end_expedition_effect
+		}
+	}
+}
+new named_effect expedition_province_modifiers = {
+	
+}
+new named_effect expedition_progress_pulse = {
+	export_to_variable = {
+		which = expedition_progress_temp
+		value = `modifier:global_expedition_progress`
+		who = FROM
+	}
+	expedition_province_modifiers
+	
+	export_to_variable = {
+		which = expedition_progress_temp_2
+		value = `modifier:global_expedition_speed`
+		who = FROM
+	}
+	&expedition_progress_temp *= expedition_progress_temp_2
+	
+	&expedition_progress += expedition_progress_temp
+}
+new named_effect expedition_good_event_list = {
+	
+}
+new named_effect expedition_bad_event_list = {
+	
+}
+on_actions:on_monthly_pulse += {
+	every_owned_province [
+		has_province_modifier = expedition_camp
+	] {
+		expedition_progress_pulse
+		
+		reload_expedition_progress
+		
+		random = {
+			chance = 10
+			
+			random_list = {
+				1 = {
+					random_list = {
+						expedition_good_event_list
+					}
+				}
+				1 = {
+					random_list = {
+						expedition_bad_event_list
+					}
+				}
+			}
+		}
+	}
+}

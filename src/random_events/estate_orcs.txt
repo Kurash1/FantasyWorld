@@ -1,0 +1,611 @@
+bi_yearly_events += {
+	100 = orc_estate_events.1
+	100 = orc_estate_events.2
+	100 = orc_estate_events.3
+	100 = orc_estate_events.4
+	100 = orc_estate_events.5
+	100 = orc_estate_events.6
+	100 = orc_estate_events.7
+	100 = orc_estate_events.8
+	100 = orc_estate_events.9
+	100 = orc_estate_events.10
+	100 = orc_estate_events.11
+	100 = orc_estate_events.12
+	100 = orc_estate_events.13
+	100 = orc_estate_events.14
+	100 = orc_estate_events.15
+	100 = orc_estate_events.16
+	100 = orc_estate_events.17
+	100 = orc_estate_events.18
+	100 = orc_estate_events.19
+	100 = orc_estate_events.20
+}
+new event_modifier berserker_on_the_loose = {
+	name = "Berserker on the Loose"
+	modifier = {
+		local_monthly_devastation = 0.5
+		local_unrest = 1
+	}
+}
+new country_event orc_estate_events.1 = {
+	inherit = random_event
+	title = "Berserker on the Loose"
+	desc = "A dire situation has unfolded within our realm. A rogue berserker, has gone on a rampage, wreaking havoc and spreading fear among our people."
+	picture = loose_berserker_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+		has_estate_privilege = orcs:roaming_orcs
+	}
+	options = {
+		{
+			name = "Rethink our Policy"
+			effect = {
+				remove_estate_privilege = orcs:roaming_orcs
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Force Strongholds to pay reparations"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Deal with the berserker"
+			effect = {
+				add_mil_power = -50
+			}
+		}
+		{
+			name = "Ignore it"
+			effect = {
+				random_owned_province [NOT = { has_province_modifier = berserker_on_the_loose }]
+				{
+					add_province_modifier = {
+						name = berserker_on_the_loose
+						duration = 3650
+					}
+				}
+			}
+		}
+	}
+}
+new event_modifier an_orcish_assassin = {
+	name = "An Orcish Assassin"
+	modifier = {
+		stability_cost_modifier = 0.25
+	}
+}
+new country_event orc_estate_events.2 = {
+	inherit = random_event
+	title = "An Orcish Assassin"
+	desc = "A grave threat looms within our realm, as an orcish assassin, shrouded in secrecy and unknown motives, has emerged. This shadowy figure poses a danger to our stability and demands our immediate attention."
+	picture = orc_assassin_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Force Strongholds to pay reparations"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Deal with the Assassin"
+			effect = {
+				add_adm_power = -50
+			}
+		}
+		{
+			name = "Ignore it"
+			effect = {
+				add_prestige = -20
+			}
+		}
+	}
+}
+new country_event orc_estate_events.3 = {
+	inherit = random_event
+	title = "Orc Warchief"
+	desc = "A formidable orc warchief has risen among our people, demonstrating exceptional martial prowess and leadership qualities."
+	picture = orc_captain_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.3.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+		{
+			name = "Let's make him into our general"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+				create_general = {
+					tradition = 50
+					culture = stronghold_orc
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.4 = {
+	inherit = random_event
+	title = "Orcish Champion"
+	desc = "A renowned orcish champion has emerged, capturing the admiration and attention of our people."
+	picture = orc_champion_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Why are we allowing orcs?"
+			effect = {
+				remove_estate_privilege = orcs:roaming_orcs
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "A great warrior indeed"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.4.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+		{
+			name = "Let's make him into our general"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+				create_general = {
+					tradition = 50
+					culture = stronghold_orc
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.5 = {
+	inherit = random_event
+	title = "Great Orc"
+	desc = "Among the ranks of the orc estate, a remarkable orc has risen to prominence, earning the title of 'Great Orc.' This esteemed figure stands as a symbol of orcish strength and leadership."
+	picture = orc_clansman_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.5.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.6 = {
+	inherit = random_event
+	title = "Racist Drunken Brawl"
+	desc = "Within the realm's borders, an unfortunate incident has occurred—a drunken brawl, fueled by racial tensions. This troubling event threatens to disrupt the harmony among our people."
+	picture = orc_drunk_brawl_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+		culture_group = nord
+		has_estate_privilege = orcs:roaming_orcs
+	}
+	options = {
+		{
+			name = "Investigate it further"
+			effect = {
+				add_adm_power = -50
+			}
+		}
+		{
+			name = "A brawl? This is beneath me."
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.7 = {
+	inherit = random_event
+	title = "Orc Warrior"
+	desc = "A formidable orc warrior has arisen within the ranks of the Orcs, earning recognition and respect as a symbol of orcish strength and martial prowess."
+	picture = orc_elite_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.7.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.8 = {
+	inherit = random_event
+	title = "Orc Fire Lord"
+	desc = "A powerful Orc Fire Lord has emerged within the strongholds, wielding the mystical power of flames with unparalleled skill and mastery. This extraordinary figure is a source of awe and reverence among the orcs."
+	picture = orc_fire_lord_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.8.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.9 = {
+	inherit = random_event
+	title = "Furious Orc"
+	desc = "A deeply angered and aggrieved orc has surfaced within the strongholds, consumed by rage and frustration. This volatile individual threatens to disrupt our relations with the strongholds."
+	picture = orc_fury_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.10 = {
+	inherit = random_event
+	title = "A Great Wall"
+	desc = "Among the orcs, a remarkable and exceptionally strong warrior has emerged, earning the esteemed title of 'Great Wall.' This indomitable figure is revered for their unparalleled prowess in protecting the strongholds."
+	picture = orc_gatekeeper_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.10.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.11 = {
+	inherit = random_event
+	title = "Orc Raiders"
+	desc = "A band of fierce orc raiders, led by a formidable orc horde chief, has emerged and poses a serious threat to the stability of our realm. The presence of these raiders demands swift action."
+	picture = orc_horde_chief_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Force Strongholds to pay reparations"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Ignore it"
+			effect = {
+				every_owned_province [has_province_flag = orc_stronghold]
+				{
+					add_devastation = 15
+					every_neighbor_province [owned_by = ROOT]
+					{
+						add_devastation = 15
+					}
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.12 = {
+	inherit = random_event
+	title = "Orc King"
+	desc = "A mighty orc leader, bearing the title of 'Orc King', has ascended to a position of authority and reverence within the strongholds. This prominent figure symbolizes the strength and leadership of the orcs."
+	picture = orc_king_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.12.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.13 = {
+	inherit = random_event
+	title = "An Orc General?"
+	desc = "A highly skilled and capable orc warrior has come forward, displaying exceptional qualities that make them a potential candidate for a leadership role as a general within your forces. This decision carries significance not only for the orcs but also for your realm."
+	picture = orc_legionare_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Hire them!"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.13.title
+					influence = 5
+					duration = 7300
+				}
+				create_general = {
+					tradition = 50
+					culture = stronghold_orc
+				}
+			}
+		}
+		{
+			name = "An Orc will nevel lead!"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -5
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.14 = {
+	inherit = random_event
+	title = "Orc Patrols"
+	desc = "Reports have emerged of orc patrols taking place within your realm, a development that has raised concerns and questions about their activities and intentions."
+	picture = orc_patrol_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "We cannot let them do such a thing"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -5
+				}
+			}
+		}
+		{
+			name = "Ignore it"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.14.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.15 = {
+	inherit = random_event
+	title = "Orcish Recruits"
+	desc = "A group of willing and capable orc recruits has come forward, expressing their readiness to serve in your armies. These orcish volunteers bring with them the potential to bolster your manpower and military capabilities."
+	picture = orc_recruits_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Great!"
+			effect = {
+				add_yearly_manpower = 0.5
+			}
+		}
+	}
+}
+new country_event orc_estate_events.16 = {
+	inherit = random_event
+	title = "An Orc Shaman"
+	desc = "An orc shaman, wielding mystical and spiritual powers, has emerged within the strongholds. Their presence carries significance and potential benefits for both the orcs and your realm."
+	picture = orc_shaman_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Great!"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.16.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.17 = {
+	inherit = random_event
+	title = "An Orcish Spy"
+	desc = "Reports have emerged of an orcish individual suspected of espionage within your realm. This development raises concerns and questions about the orc's intentions and activities."
+	picture = orc_spy_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "We cannot let them do such a thing"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Ignore It"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.16.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.18 = {
+	inherit = random_event
+	title = "An Orcish Adventurer"
+	desc = "An orcish adventurer, known for seeking treasures and exploring the unknown, has appeared within your realm. Their presence raises questions about their intentions and the strongholdss' role position."
+	picture = orc_treasure_seeker_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+		NOT = {
+			has_estate_privilege = orcs:roaming_orcs
+		}
+	}
+	options = {
+		{
+			name = "Force Strongholds to pay reparations"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -10
+				}
+			}
+		}
+		{
+			name = "Deal with the Adventurer"
+			effect = {
+				add_adm_power = -50
+			}
+		}
+		{
+			name = "Ignore it"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.18.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.19 = {
+	inherit = random_event
+	title = "A Big Orc"
+	desc = "A notably imposing and formidable orc has emerged within the strongholds. Their size and strength command attention and respect, potentially reshaping the dynamics between the orcs and your realm."
+	picture = bulky_orc_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "I see"
+			effect = {
+				add_estate_influence_modifier = {
+					estate = estate_orcs
+					desc = orc_estate_events.19.title
+					influence = 5
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+new country_event orc_estate_events.20 = {
+	inherit = random_event
+	title = "Orc-Hating Mage"
+	desc = "Reports have reached your court about the presence of a mage who openly expresses hostility toward orcs within your realm. This individual's actions and sentiments threaten to disrupt the harmony between your realm and the strongholds."
+	picture = orc_run_from_fire_eventPicture
+	trigger = {
+		has_estate = estate_orcs
+	}
+	options = {
+		{
+			name = "Let the strongholds deal with it"
+			effect = {
+				add_estate_loyalty = {
+					estate = estate_orcs
+					loyalty = -5
+				}
+			}
+		}
+		{
+			name = "We will deal with it"
+			effect = {
+				add_mil_power = -50
+			}
+		}
+	}
+}

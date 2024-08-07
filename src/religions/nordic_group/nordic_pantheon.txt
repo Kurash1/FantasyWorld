@@ -76,6 +76,7 @@ new personal_deity jhunal = {
 	sprite = 5
 	modifiers = {
 		prestige_decay = -0.01
+		magicka_gain_modifier = 0.25
 	}
 	potential = {
 		religion = nordic_pantheon
@@ -188,6 +189,7 @@ new personal_deity mauloch = {
 	}
 	potential = {
 		religion = nordic_pantheon
+		has_estate_privilege = orcs:redeem_mauloch
 	}
 	ai_will_do = {
 		factor = 0

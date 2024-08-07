@@ -1,0 +1,1295 @@
+new area ustengrav = {
+	name = "Ustengrav"
+	region = hjaalmarch
+}
+new area greenspring_hollow = {
+	name = "Greenspring Hollow"
+	region = hjaalmarch
+}
+new area bromjunaar = {
+	name = "Bromjunaar"
+	region = hjaalmarch
+}
+new area myrwatch = {
+	name = "Myrwatch"
+	region = hjaalmarch
+}
+new area morthal = {
+	name = "Morthal"
+	region = hjaalmarch
+}
+new area stonehills = {
+	name = "Stonehills"
+	region = hjaalmarch
+}
+new area drajkmyr_marsh = {
+	name = "Drajkmyr Marsh"
+	region = hjaalmarch
+}
+new area snowhawk = {
+	name = "Snowhawk"
+	region = hjaalmarch
+}
+new area twin_bridges = {
+	name = "Twin Bridges"
+	region = hjaalmarch
+}
+new area rivers_horn = {
+	name = "Rivers' Horn"
+	region = hjaalmarch
+}
+new area hjaal_river_passage = {
+	name = "Hjaal River Passage"
+	region = hjaalmarch
+}
+new area hjaals_teeth = {
+	name = "Hjaal's Teeth"
+	region = hjaalmarch
+}
+new province snowhawk_peak = {
+	position = {
+		1961.000 1827.000 1961.000 1827.000 1961.000 1827.000 1961.000 1827.000 1961.000 1827.000 1961.000 1827.000 1961.000 1827.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Snowhawk Peak"
+	color = {
+		9 23 1
+	}
+	history = {
+	}
+	impassible = yes
+}
+new province isle_of_sorrow = {
+	position = {
+		1691.000 2043.000 1696.000 2041.000 1691.000 2043.000 1693.000 2041.000 1691.000 2043.000 1692.000 2042.000 1691.000 2043.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Isle of Sorrow"
+	color = {
+		195 191 133
+	}
+	history = {
+		culture = hjaalmarcher
+		religion = nordic_pantheon
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province morthal = {
+	position = {
+		1686.000 2012.000 1692.000 2013.000 1688.000 2015.000 1684.000 2016.500 1688.000 2015.000 1688.000 2015.000 1688.000 2015.000
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = morthal
+	name = "Morthal"
+	base_development = 10
+	color = {
+		220 248 102
+	}
+	history = {
+		center_of_trade = 1
+		history_owner = morthal
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = potions
+	
+		is_city = yes
+	}
+}
+new province morthal_mines = {
+	position = {
+		1686.000 2003.000 1686.000 2003.000 1686.000 2003.000 1686.000 2003.000 1686.000 2003.000 1686.000 2003.000 1686.000 2003.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = morthal
+	name = "Morthal Mines"
+	color = {
+		197 212 137
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = yes
+		history_owner = morthal
+		272.1.1 = {
+			religion = nordic_pantheon
+			culture = hjaalmarcher
+		}
+	}
+}
+new province greenspring_hollow = {
+	position = {
+		1706.000 1954.000 1708.000 1955.000 1703.000 1956.000 1701.000 1948.000 1703.000 1956.000 1707.000 1955.000 1703.000 1956.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 2.815 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = greenspring_hollow
+	name = "Greenspring Hollow"
+	color = {
+		108 233 231
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = stone
+	
+		add_claim = hjaal
+		history_owner = rannveig
+	}
+}
+new province lone_hill = {
+	position = {
+		1685.000 1957.000 1685.000 1957.000 1685.000 1957.000 1685.000 1946.000 1685.000 1957.000 1685.000 1957.000 1685.000 1957.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 2.865 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = greenspring_hollow
+	name = "Lone Hill"
+	color = {
+		242 188 180
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = stone
+	
+		add_claim = hjaal
+		history_owner = rannveig
+	}
+}
+new province rannveigs_fast = {
+	position = {
+		1668.000 1965.000 1668.000 1965.000 1668.000 1965.000 1666.000 1957.000 1668.000 1965.000 1668.000 1965.000 1668.000 1965.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 2.765 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = greenspring_hollow
+	name = "Rannveig's Fast"
+	color = {
+		137 237 200
+	}
+	history = {
+		center_of_trade = 1
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = c_metals
+	
+		add_claim = hjaal
+		history_owner = rannveig
+	}
+}
+new province hjaals_tooth = {
+	position={
+		1627.000 1981.000 1628.000 1981.000 1632.000 1983.000 1629.500 1985.500 1633.000 1982.000 1629.000 1981.000 1632.000 1983.000 
+	}
+	rotation={
+		0.000 0.000 0.000 3.141 0.000 0.000 0.000 
+	}
+	height={
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365 
+	}
+	terrain = steppe
+	area = hjaals_teeth
+	name = "Hjaal's Tooth"
+	color = {
+		115 133 158
+	}
+	history = {
+		center_of_trade = 1
+		history_owner = hjaal
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	}
+}
+new province rugged_coast = {
+	position = {
+		1609.000 1995.000 1609.000 1995.000 1609.000 1995.000 1613.500 1991.500 1609.000 1995.000 1609.000 1995.000 1609.000 1995.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = steppe
+	area = hjaals_teeth
+	name = "Rugged Coast"
+	color = {
+		144 165 242
+	}
+	history = {
+		history_owner = hjaal
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		is_city = yes
+	}
+}
+new province robbers_gorge = {
+	position = {
+		1619.000 2003.000 1619.000 2003.000 1619.000 2003.000 1617.000 1997.000 1619.000 2003.000 1619.000 2003.000 1619.000 2003.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = steppe
+	area = hjaal_river_passage
+	name = "Robber's Gorge"
+	color = {
+		221 201 114
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		add_core = hjaal
+	}
+}
+new province fishermans_hangout = {
+	position = {
+		1634.000 1996.000 1634.000 1996.000 1634.000 1996.000 1637.500 1991.500 1634.000 1996.000 1634.000 1996.000 1634.000 1996.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = steppe
+	area = hjaal_river_passage
+	name = "Fisherman's Hangout"
+	color = {
+		219 249 244
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		add_core = hjaal
+	}
+}
+new province chillwind_depths = {
+	position = {
+		1600.000 2014.000 1600.000 2014.000 1600.000 2014.000 1604.000 2013.000 1600.000 2014.000 1600.000 2014.000 1600.000 2014.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -1.571 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = rivers_horn
+	name = "Chillwind Depths"
+	color = {
+		229 121 187
+	}
+	history = {
+		history_owner = chill_wind
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = c_metals
+	
+		is_city = yes
+	}
+}
+new province rivers_road = {
+	position = {
+		1603.000 2031.000 1603.000 2031.000 1603.000 2031.000 1608.000 2029.000 1603.000 2031.000 1603.000 2031.000 1603.000 2031.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -1.571 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = grasslands
+	area = rivers_horn
+	name = "River's Road"
+	color = {
+		105 131 203
+	}
+	history = {
+		history_owner = chill_wind
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		is_city = yes
+	}
+}
+new province forebears_holdout = {
+	position = {
+		1620.000 2028.000 1620.000 2028.000 1620.000 2028.000 1613.000 2029.000 1620.000 2028.000 1620.000 2028.000 1620.000 2028.000
+	}
+	rotation = {
+		0.000 0.000 0.000 1.571 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = grasslands
+	area = twin_bridges
+	name = "Forebears' Holdout"
+	color = {
+		175 237 161
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		is_city = yes
+	}
+}
+new province cliff_point = {
+	position = {
+		1610.000 2038.000 1610.000 2038.000 1610.000 2038.000 1615.500 2041.500 1610.000 2038.000 1610.000 2038.000 1610.000 2038.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = grasslands
+	area = rivers_horn
+	name = "Cliff Point"
+	color = {
+		166 132 146
+	}
+	history = {
+		history_owner = chill_wind
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = fish
+	
+		is_city = yes
+	}
+}
+new province tranquile_woods = {
+	position = {
+		1628.000 2038.000 1628.000 2038.000 1628.000 2038.000 1632.000 2042.000 1628.000 2038.000 1628.000 2038.000 1628.000 2038.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = twin_bridges
+	name = "Tranquile Woods"
+	color = {
+		229 122 192
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province snowhawk_forest = {
+	position = {
+		1637.000 2024.000 1637.000 2024.000 1637.000 2024.000 1637.000 2024.000 1637.000 2024.000 1637.000 2024.000 1637.000 2024.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = snowhawk
+	name = "Snowhawk Forest"
+	color = {
+		247 156 225
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province traitorous_swamps = {
+	position = {
+		1640.000 2033.000 1640.000 2032.000 1644.000 2035.000 1640.000 2038.000 1644.000 2035.000 1642.000 2034.000 1644.000 2035.000
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = snowhawk
+	name = "Traitorous Swamps"
+	color = {
+		251 219 179
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = alchemical_ingredients
+	
+		is_city = yes
+	}
+}
+new province apprentice_stone = {
+	position = {
+		1657.000 2048.000 1657.000 2047.000 1644.000 2035.000 1652.500 2047.500 1644.000 2035.000 1658.000 2045.000 1644.000 2035.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Apprentice Stone"
+	color = {
+		251 249 179
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+		quick_province_modifier = {
+			name = "Apprentice Stone"
+			modifier = {
+				max_general_fire = 1
+			}
+		}
+	
+		is_city = yes
+	}
+}
+new province bandits_rest = {
+	position = {
+		1631.000 2007.000 1631.000 2007.000 1631.000 2007.000 1631.000 2007.000 1631.000 2007.000 1631.000 2007.000 1631.000 2007.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = highlands
+	area = hjaal_river_passage
+	name = "Bandit's Rest"
+	color = {
+		121 250 110
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		add_core = hjaal
+	}
+}
+new province dead_mens_respite = {
+	position = {
+		1654.000 2002.000 1654.000 2002.000 1654.000 2002.000 1660.000 2000.000 1654.000 2002.000 1654.000 2002.000 1654.000 2002.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = hjaal_river_passage
+	name = "Dead Men's Respite"
+	color = {
+		106 129 184
+	}
+	history = {
+		history_owner = snow_hawk
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = mag_goods
+	
+		add_claim = hjaal
+	}
+}
+new province snowhawk = {
+	position = {
+		1659.000 2021.000 1659.000 2022.000 1659.000 2022.000 1660.000 2028.500 1659.000 2022.000 1659.000 2022.000 1659.000 2022.000
+	}
+	rotation = {
+		0.000 0.000 0.000 3.142 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = snowhawk
+	name = "Snowhawk"
+	color = {
+		243 126 232
+	}
+	base_development = 12
+	history = {
+		center_of_trade = 1
+		culture = hjaalmarcher
+		religion = nordic_pantheon
+		hre = yes
+		history_trade_goods = glass
+	
+		is_city = no
+		history_owner = snow_hawk
+	}
+}
+new province minedvild = {
+	position = {
+		1674.000 2010.000 1674.000 2010.000 1674.000 2010.000 1669.000 2016.000 1674.000 2010.000 1674.000 2010.000 1674.000 2010.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = morthal
+	name = "Minedvild"
+	color = {
+		192 143 123
+	}
+	history = {
+		history_owner = morthal
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province drajkmyr_toll = {
+	position = {
+		1668.000 2028.000 1668.000 2027.000 1672.000 2035.000 1671.000 2026.000 1672.000 2035.000 1668.000 2028.000 1672.000 2035.000
+	}
+	rotation = {
+		0.000 0.000 0.000 4.712 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Drajkmyr Toll"
+	color = {
+		251 214 146
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province central_drajkmyr = {
+	position = {
+		1675.000 2039.000 1675.000 2039.000 1672.000 2035.000 1672.000 2035.000 1672.000 2035.000 1675.000 2041.000 1672.000 2035.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Central Drajkmyr"
+	color = {
+		251 244 146
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province folgunthur = {
+	position = {
+		1670.000 2050.000 1671.000 2051.000 1665.000 2050.000 1665.000 2050.000 1665.000 2050.000 1671.000 2051.000 1665.000 2050.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Folgunthur"
+	color = {
+		115 237 244
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province cold_swamp = {
+	position = {
+		1680.000 2060.000 1679.000 2063.000 1680.000 2060.000 1683.000 2061.000 1680.000 2060.000 1682.000 2059.000 1680.000 2060.000
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Cold Swamp"
+	color = {
+		195 100 206
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province windstad = {
+	position = {
+		1708.000 2060.000 1708.000 2060.000 1708.000 2060.000 1700.000 2059.000 1708.000 2060.000 1708.000 2060.000 1708.000 2060.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = ustengrav
+	name = "Windstad"
+	color = {
+		169 127 249
+	}
+	history = {
+		history_owner = wind_caller
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = alchemical_ingredients
+	
+		is_city = yes
+	}
+}
+new province ondidreid = {
+	position = {
+		1725.000 2057.000 1725.000 2057.000 1725.000 2057.000 1725.000 2057.000 1725.000 2057.000 1725.000 2057.000 1725.000 2057.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = ustengrav
+	name = "Ondidreid"
+	color = {
+		230 225 135
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = no
+		history_owner = wind_caller
+	}
+}
+new province ustengrav = {
+	position = {
+		1713.000 2047.000 1713.000 2047.000 1713.000 2047.000 1708.000 2042.000 1713.000 2047.000 1713.000 2047.000 1713.000 2047.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = ustengrav
+	name = "Ustengrav"
+	color = {
+		145 201 179
+	}
+	history = {
+		center_of_trade = 1
+		history_owner = wind_caller
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = alchemical_ingredients
+	
+		is_city = yes
+	}
+}
+new province fistrock = {
+	position = {
+		1729.000 2041.000 1729.000 2041.000 1729.000 2041.000 1721.000 2036.000 1729.000 2041.000 1729.000 2041.000 1729.000 2041.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.785 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = ustengrav
+	name = "Fistrock"
+	color = {
+		113 186 199
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = stone
+	
+		is_city = yes
+		history_owner = wind_caller
+	}
+}
+new province snow_trail = {
+	position = {
+		1744.000 2032.000 1744.000 2032.000 1744.000 2032.000 1744.000 2032.000 1744.000 2032.000 1744.000 2032.000 1744.000 2032.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = stonehills
+	name = "Snow Trail"
+	color = {
+		118 151 202
+	}
+	history = {
+		history_owner = stone_hill
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+	
+		fort_15th = yes
+	}
+}
+new province stonehills = {
+	position = {
+		1732.000 2021.000 1732.000 2021.000 1732.000 2021.000 1732.000 2021.000 1732.000 2021.000 1732.000 2021.000 1732.000 2021.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = stonehills
+	name = "Stonehills"
+	base_development = 11
+	color = {
+		251 168 205
+	}
+	history = {
+		center_of_trade = 1
+		history_owner = stone_hill
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = c_metals
+	}
+}
+new province skyborn_altar = {
+	position = {
+		1731.000 1987.000 1731.000 1987.000 1731.000 1987.000 1731.000 1987.000 1731.000 1987.000 1731.000 1987.000 1731.000 1987.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = mountain
+	area = bromjunaar
+	name = "Skyborn Altar"
+	color = {
+		127 159 110
+	}
+	history = {
+		religion = the_old_ways
+		culture = hjaalmarcher
+		history_owner = skyborn
+		hre = yes
+		history_trade_goods = wood
+	}
+}
+new province skyborn_passage = {
+	position = {
+		1731.000 1972.000 1731.000 1972.000 1731.000 1972.000 1731.000 1972.000 1731.000 1972.000 1731.000 1972.000 1731.000 1972.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = mountain
+	area = bromjunaar
+	name = "Skyborn Passage"
+	color = {
+		132 217 230
+	}
+	history = {
+		religion = the_old_ways
+		culture = hjaalmarcher
+		history_owner = skyborn
+		hre = yes
+		history_trade_goods = stone
+	}
+}
+new province bromjunaar = {
+	position = {
+		1716.000 1990.000 1716.000 1990.000 1716.000 1990.000 1716.000 1990.000 1716.000 1990.000 1716.000 1990.000 1716.000 1990.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = mountain
+	area = bromjunaar
+	name = "Bromjunaar"
+	color = {
+		178 182 185
+	}
+	history = {
+		center_of_trade = 1
+		religion = the_old_ways
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = arms
+	
+		is_city = yes
+		history_owner = skyborn
+		
+		1.1.1 = {
+			create_expedition = {
+				id = bromjunaar
+				name = "Bromjunaar Ruins"
+				desc = ""
+				frame = 9
+				event_picture = bromjunaar_eventPicture
+				length = 100
+				on_complete = {
+					owner = {
+						#give_artifact = {
+						#	id = morokei
+						#	name = "Morokei"
+						#	modifier = {
+						#		monthly_magicka = 0.5
+						#	}
+						#}
+						#give_artifact = {
+						#	id = tulnir
+						#	name = "Tulnir"
+						#	modifier = {
+						#		fire_damage = 0.1
+						#	}
+						#}
+					}
+				}
+			}
+		}
+	}
+}
+new province bromjunaar_approach = {
+	position = {
+		1713.000 2001.000 1713.000 2001.000 1713.000 2001.000 1713.000 2001.000 1713.000 2001.000 1713.000 2001.000 1713.000 2001.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = myrwatch
+	name = "Bromjunaar Approach"
+	color = {
+		148 219 213
+	}
+	history = {
+		culture = hjaalmarcher
+		religion = nordic_pantheon
+		hre = yes
+		history_trade_goods = wood
+		history_owner = myrwatch
+	}
+}
+new province snowy_pines = {
+	position = {
+		1700.000 1993.000 1700.000 1993.000 1700.000 1993.000 1700.000 1993.000 1700.000 1993.000 1700.000 1993.000 1700.000 1993.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = hills
+	area = myrwatch
+	name = "Snowy Pines"
+	color = {
+		151 229 253
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		history_owner = rannveig
+		hre = yes
+		history_trade_goods = wood
+	}
+}
+new province abundant_mines = {
+	position = {
+		1693.000 1972.000 1693.000 1972.000 1693.000 1972.000 1693.000 1972.000 1693.000 1972.000 1693.000 1972.000 1693.000 1972.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = highlands
+	area = greenspring_hollow
+	name = "Abundant Mines"
+	color = {
+		134 143 148
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = c_metals
+	
+		add_claim = hjaal
+		history_owner = rannveig
+	}
+}
+new province myrwatch = {
+	position = {
+		1701.000 2009.000 1701.000 2009.000 1701.000 2009.000 1703.000 2016.000 1701.000 2009.000 1701.000 2009.000 1701.000 2009.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = myrwatch
+	name = "Myrwatch"
+	base_development = 8
+	color = {
+		140 212 206
+	}
+	history = {
+		history_owner = myrwatch
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = potions
+	
+		is_city = yes
+	}
+}
+new province fyrthirth = {
+	position = {
+		1719.000 2011.000 1719.000 2011.000 1719.000 2011.000 1708.000 2015.000 1719.000 2011.000 1719.000 2011.000 1719.000 2011.000
+	}
+	rotation = {
+		0.000 0.000 0.000 1.571 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = forest
+	area = stonehills
+	name = "Fyrthirth"
+	color = {
+		198 145 155
+	}
+	history = {
+		history_owner = stone_hill
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = wood
+		is_city = yes
+	}
+}
+new province folks_gathering = {
+	position = {
+		1722.000 2030.000 1724.000 2027.000 1726.000 2027.000 1725.000 2031.000 1722.000 2030.000 1722.000 2030.000 1722.000 2030.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = stonehills
+	name = "Folk's Gathering"
+	color = {
+		217 228 123
+	}
+	history = {
+		history_owner = stone_hill
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = alchemical_ingredients
+	
+		is_city = yes
+	}
+}
+new province kjenstag = {
+	position = {
+		1714.000 2023.000 1714.000 2023.000 1714.000 2023.000 1708.000 2019.000 1714.000 2023.000 1714.000 2023.000 1714.000 2023.000
+	}
+	rotation = {
+		0.000 0.000 0.000 1.571 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = stonehills
+	name = "Kjenstag"
+	color = {
+		252 167 203
+	}
+	history = {
+		history_owner = stone_hill
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = yes
+		history_trade_goods = alchemical_ingredients
+	
+		fort_14th = yes
+	}
+}
+new province rotten_trees = {
+	position = {
+		1701.000 2031.000 1701.000 2031.000 1701.000 2031.000 1697.500 2035.000 1701.000 2031.000 1701.000 2031.000 1701.000 2031.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.705 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Rotten Trees"
+	color = {
+		249 189 239
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new province morthal_colony = {
+	position = {
+		1685.000 2028.000 1685.000 2028.000 1685.000 2028.000 1684.000 2030.000 1685.000 2028.000 1685.000 2028.000 1685.000 2028.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.356 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = marsh
+	area = drajkmyr_marsh
+	name = "Morthal Colony"
+	color = {
+		219 196 224
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = hjaalmarcher
+		hre = no
+		history_trade_goods = unknown
+	
+		is_city = yes
+	}
+}
+new adjacency morthal_bridge = {
+	from = morthal
+	to = morthal_colony
+	through = coast_of_morthal
+	type = sea
+}
+new adjacency snowhawk_bridge = {
+	from = snowhawk
+	to = minedvild
+	through = coast_of_morthal
+	type = sea
+}
+new adjacency first_bridge = {
+	from = forebears_holdout
+	to = rivers_road
+	through = hjaal_river
+	type = sea
+	start_x = 1607
+	start_y = (2816-788)
+	stop_x = 1610
+	stop_y = (2816-790)
+}
+new adjacency second_bridge = {
+	from = forebears_holdout
+	to = cliff_point
+	through = hjaal_river
+	type = sea
+	start_x = 1613
+	start_y = (2816-781)
+	stop_x = 1616
+	stop_y = (2816-784)
+}
+new adjacency hjaal_bridge = {
+	from = hjaals_tooth
+	to = robbers_gorge
+	through = hjaal_river
+	type = sea
+}
+new adjacency dragon_bridge = {
+	from = dragon_bridge
+	to = rivers_road
+	through = coast_of_solitude
+	type = sea
+}
+new adjacency drajkmyr_cold_strait = {
+	from = central_drajkmyr
+	to = isle_of_sorrow
+	through = drajkmyr_marsh
+	type = sea
+}
+new adjacency drajkmyr_marsh_strait = {
+	from = morthal_colony
+	to = isle_of_sorrow
+	through = drajkmyr_marsh
+	type = sea
+}

@@ -53,6 +53,9 @@ on_actions:on_dependency_lost += {
 }
 on_actions:on_startup += {
 	set_allow_female_emperor = yes
+	every_province [has_province_flag = orc_stronghold] {
+		province_event = orc_stronghold.1
+	}
 	if [NOT = { has_global_flag = on_action_set_up_global_flag }] {
 		on_initialize
 		set_global_flag = on_action_set_up_global_flag

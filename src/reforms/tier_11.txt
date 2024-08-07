@@ -29,6 +29,6 @@ new government_reform tier_11_martial_court = {
 	modifiers = {
 		mil_advisor_cost = -0.5
 		general_cost = -0.10
-		free_leader_pool = 1
+		free_land_leader_pool = 1
 	}
 }

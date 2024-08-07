@@ -1,0 +1,1224 @@
+new area shriekwind = {
+	name = "Shriekwind"
+	region = kreath
+}
+new province shriekwind_bastion = {
+	position = {
+		1705.000 1838.000 1705.000 1838.000 1699.000 1846.000 1699.500 1853.500 1699.000 1846.000 1705.000 1838.000 1699.000 1846.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.705 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	area = shriekwind
+	name = "Shriekwind Bastion"
+	terrain = mountain
+	color = {
+		200 253 106
+	}
+	history = {
+		hre = no
+	
+		religion = code_of_malacath
+		culture = kreath_orc
+	}
+}
+new area lakeview = {
+	name = "Lakeview"
+	region = kreath
+}
+new province north_shriekwind = {
+	position = {
+		1699.000 1846.000 1699.000 1846.000 1699.000 1846.000 1699.500 1853.500 1699.000 1846.000 1699.000 1846.000 1699.000 1846.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.705 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	area = lakeview
+	name = "North Shriekwind"
+	terrain = forest
+	color = {
+		143 253 106
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = yes
+		1.1.1 = {
+			create_expedition = {
+				id = north_shriekwind
+				name = "North Shriekwind"
+				desc = ""
+				frame = 5
+				event_picture = north_shriekwind_eventPicture
+				length = 20
+				on_complete = {
+					set_province_flag = north_shriekwind_great_project
+					new_custom_tooltip = "Unlocks a Great Project §YNorth Shriekwind Bastion§! in §YNorth Shriekwind§! province"
+					
+					owner = {
+						random_list = {
+							1 = { add_treasury = 10 }
+							1 = { add_treasury = 20 }
+							1 = { add_treasury = 30 }
+							1 = { add_treasury = 40 }
+							1 = { add_treasury = 50 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+new province silvercliff = {
+	position = {
+		1717.000 1849.000 1717.000 1849.000 1717.000 1849.000 1718.000 1853.000 1717.000 1849.000 1717.000 1849.000 1717.000 1849.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.793 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	area = lakeview
+	name = "Silvercliff"
+	terrain = forest
+	color = {
+		101 130 143
+	}
+	base_development = 13
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = nor_lorak
+		history_trade_goods = wood
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new province lakeview = {
+	position = {
+		1735.000 1851.000 1735.000 1851.000 1735.000 1851.000 1730.500 1854.500 1735.000 1851.000 1735.000 1851.000 1735.000 1851.000
+	}
+	rotation = {
+		0.000 0.000 0.000 2.618 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	area = lakeview
+	name = "Lakeview"
+	terrain = forest
+	color = {
+		220 120 230
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = nor_lorak
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new area helgen_step = {
+	name = "Helgen Step"
+	region = kreath
+}
+new province copper_forest = {
+	position = {
+		1751.000 1850.000 1751.000 1850.000 1751.000 1850.000 1751.000 1850.000 1751.000 1850.000 1751.000 1850.000 1751.000 1850.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen_step
+	name = "Copper Forest"
+	terrain = forest
+	color = {
+		201 124 251
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province helgen_road = {
+	position = {
+		1762.000 1848.000 1762.000 1848.000 1762.000 1848.000 1762.000 1848.000 1762.000 1848.000 1762.000 1848.000 1762.000 1848.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen_step
+	name = "Helgen Road"
+	terrain = highlands
+	color = {
+		248 155 135
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province sky_forest = {
+	position = {
+		1777.000 1861.000 1777.000 1861.000 1777.000 1861.000 1777.000 1861.000 1777.000 1861.000 1777.000 1861.000 1777.000 1861.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen_step
+	name = "Sky Forest"
+	terrain = mountain
+	color = {
+		214 193 111
+	}
+	history = {
+		religion = nordic_pantheon
+		culture = falkrentish
+		hre = yes
+		history_trade_goods = wood
+	
+		is_city = yes
+		history_owner = skjoralmor
+	}
+}
+new area neugrad = {
+	name = "Neugrad"
+	region = kreath
+}
+new province neugrad = {
+	position = {
+		1790.000 1815.000 1790.000 1815.000 1790.000 1815.000 1790.000 1815.000 1790.000 1815.000 1790.000 1815.000 1790.000 1815.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = neugrad
+	name = "Neugrad"
+	terrain = mountain
+	color = {
+		187 194 217
+	}
+	history = {
+		center_of_trade = 1
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = jur_tarask
+		history_trade_goods = fish
+	
+		is_city = yes
+	}
+}
+new province neugrad_pass = {
+	position = {
+		1775.000 1812.000 1775.000 1812.000 1769.000 1808.000 1769.000 1808.000 1769.000 1808.000 1775.000 1813.000 1769.000 1808.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = neugrad
+	name = "Neugrad Pass"
+	terrain = mountain
+	color = {
+		121 236 150
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = jur_tarask
+		history_trade_goods = stone
+	
+		is_city = yes
+	}
+}
+new province bloodlet_peaks = {
+	position = {
+		1758.000 1800.000 1759.000 1800.000 1769.000 1808.000 1769.000 1808.000 1769.000 1808.000 1758.000 1800.000 1769.000 1808.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = neugrad
+	name = "Bloodlet Peaks"
+	terrain = mountain
+	color = {
+		243 201 186
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = jur_tarask
+		history_trade_goods = stone
+	
+		is_city = yes
+	}
+}
+new province southfringe = {
+	position = {
+		1778.000 1791.000 1779.000 1791.000 1772.000 1794.000 1772.000 1794.000 1772.000 1794.000 1779.000 1791.000 1772.000 1794.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = neugrad
+	terrain = mountain
+	name = "Southfringe"
+	color = {
+		172 232 208
+	}
+	base_development = 9
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = jur_tarask
+		history_trade_goods = stone
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new area orphan_rock = {
+	name = "Orphan Rock"
+	region = kreath
+}
+new province haemar = {
+	position = {
+		1817.000 1834.000 1817.000 1834.000 1817.000 1834.000 1817.000 1834.000 1817.000 1834.000 1817.000 1834.000 1817.000 1834.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Haemar"
+	color = {
+		255 181 247
+	}
+	terrain = mountain
+	area = orphan_rock
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = agra_granosh
+		history_trade_goods = stone
+	
+		is_city = yes
+	}
+}
+new province orphan_rock = {
+	position = {
+		1795.000 1840.000 1795.000 1840.000 1795.000 1840.000 1795.000 1840.000 1795.000 1840.000 1795.000 1840.000 1795.000 1840.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = orphan_rock
+	name = "Orphan Rock"
+	terrain = forest
+	color = {
+		140 107 214
+	}
+	base_development = 10
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = agra_granosh
+		history_trade_goods = wood
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new province neugrad_crossing = {
+	position = {
+		1779.000 1827.000 1779.000 1827.000 1779.000 1827.000 1779.000 1827.000 1779.000 1827.000 1779.000 1827.000 1779.000 1827.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = orphan_rock
+	name = "Neugrad Crossing"
+	terrain = mountain
+	color = {
+		118 157 138
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new area helgen = {
+	name = "Helgen"
+	region = kreath
+}
+new province pinewatch = {
+	position = {
+		1731.000 1832.000 1731.000 1832.000 1731.000 1832.000 1731.000 1832.000 1731.000 1832.000 1731.000 1832.000 1731.000 1832.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen
+	name = "Pinewatch"
+	terrain = forest
+	color = {
+		199 199 166
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = rakh_ubeshka
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province far_shriekwind = {
+	position = {
+		1748.000 1834.000 1748.000 1834.000 1748.000 1834.000 1748.000 1834.000 1748.000 1834.000 1748.000 1834.000 1748.000 1834.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen
+	name = "Far Shriekwind"
+	terrain = forest
+	color = {
+		229 171 249
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province bonechill = {
+	position = {
+		1745.000 1823.000 1745.000 1823.000 1751.000 1823.000 1751.000 1823.000 1751.000 1823.000 1746.000 1823.000 1751.000 1823.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen
+	terrain = highlands
+	name = "Bonechill"
+	color = {
+		123 149 112
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = silver
+	
+		is_city = yes
+		1.1.1 = {
+			create_expedition = {
+				id = bonechill
+				name = "Bonechill Cave"
+				desc = ""
+				frame = 3
+				event_picture = bonechill_pass_eventPicture
+				length = 20
+				on_complete = {
+					set_province_flag = bonechill_pass
+					new_custom_tooltip = "Unlocks a Great Project §YBonechill Pass§! in §YBonechill§! province"
+					
+					owner = {
+						random_list = {
+							1 = { add_treasury = 10 }
+							1 = { add_treasury = 20 }
+							1 = { add_treasury = 30 }
+							1 = { add_treasury = 40 }
+							1 = { add_treasury = 50 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+new province greywater = {
+	position = {
+		1760.000 1820.000 1760.000 1820.000 1751.000 1823.000 1751.000 1823.000 1751.000 1823.000 1759.000 1821.000 1751.000 1823.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen
+	terrain = highlands
+	name = "Greywater"
+	color = {
+		228 223 204
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = fur
+	
+		is_city = yes
+	}
+}
+new province helgen = {
+	position = {
+		1767.000 1833.000 1767.000 1833.000 1767.000 1833.000 1767.000 1833.000 1767.000 1833.000 1767.000 1833.000 1767.000 1833.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = helgen
+	name = "Helgen"
+	terrain = mountain
+	color = {
+		101 186 134
+	}
+	base_development = 12
+	history = {
+		center_of_trade = 1
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = or_murimush
+		history_trade_goods = stone
+	
+		is_city = no
+		set_province_flag = orc_stronghold
+	}
+}
+new area bloodlet = {
+	name = "Bloodlet"
+	region = kreath
+}
+new province ancestor_glade = {
+	position = {
+		1723.000 1816.000 1723.000 1816.000 1723.000 1816.000 1723.000 1816.000 1723.000 1816.000 1723.000 1816.000 1723.000 1816.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = bloodlet
+	name = "Ancestor Glade"
+	terrain = mountain
+	color = {
+		127 133 176
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = rakh_ubeshka
+		history_trade_goods = alchemical_ingredients
+	
+		is_city = no
+	}
+}
+new province angis_camp = {
+	position = {
+		1711.000 1804.000 1711.000 1804.000 1711.000 1804.000 1711.000 1804.000 1711.000 1804.000 1711.000 1804.000 1711.000 1804.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = bloodlet
+	name = "Angi's Camp"
+	terrain = mountain
+	color = {
+		233 154 140
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = dulg_krazak
+		history_trade_goods = stone
+	
+		is_city = no
+	}
+}
+new province grey_peak = {
+	position = {
+		1711.000 1791.000 1711.000 1792.000 1711.000 1804.000 1711.000 1804.000 1711.000 1804.000 1712.000 1792.000 1711.000 1804.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = bloodlet
+	name = "Grey Peak"
+	terrain = mountain
+	color = {
+		216 236 159
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = dulg_krazak
+		history_trade_goods = gold
+	
+		is_city = no
+	}
+}
+new province bloodlet = {
+	position = {
+		1742.000 1791.000 1742.000 1791.000 1742.000 1791.000 1732.000 1798.000 1732.000 1798.000 1742.000 1791.000 1732.000 1798.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = bloodlet
+	name = "Bloodlet"
+	terrain = mountain
+	color = {
+		126 227 158
+	}
+	base_development = 9
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = dulg_krazak
+		history_trade_goods = stone
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new province blood_peak = {
+	position = {
+		1726.000 1800.000 1726.000 1800.000 1732.000 1798.000 1732.000 1798.000 1732.000 1798.000 1726.000 1799.000 1732.000 1798.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = bloodlet
+	name = "Blood Peak"
+	terrain = mountain
+	color = {
+		125 249 241
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = dulg_krazak
+		history_trade_goods = stone
+	
+		is_city = yes
+	}
+}
+new area ancients_ascent = {
+	name = "Ancient's Ascent"
+	region = kreath
+}
+new province ancients_ascent = {
+	position = {
+		1740.000 1808.000 1740.000 1807.000 1732.000 1798.000 1732.000 1798.000 1732.000 1798.000 1741.000 1808.000 1732.000 1798.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = ancients_ascent
+	name = "Ancient's Ascent"
+	terrain = mountain
+	color = {
+		210 160 103
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+	
+		is_city = yes
+	}
+}
+new area halldir = {
+	name = "Halldir"
+	region = kreath
+}
+new province overfalk = {
+	position = {
+		1693.000 1813.000 1693.000 1813.000 1693.000 1813.000 1693.000 1813.000 1693.000 1813.000 1693.000 1813.000 1693.000 1813.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = halldir
+	name = "Overfalk"
+	terrain = highlands
+	color = {
+		122 250 106
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = rakh_ubeshka
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province halldir = {
+	position = {
+		1675.000 1809.000 1674.000 1809.000 1674.000 1812.000 1674.000 1812.000 1674.000 1812.000 1675.000 1808.000 1674.000 1812.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = halldir
+	terrain = highlands
+	name = "Halldir"
+	color = {
+		232 213 200
+	}
+	base_development = 11
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = zugra_krazak
+		history_trade_goods = wood
+	
+		is_city = no
+		set_province_flag = orc_stronghold
+	}
+}
+new area falkreath = {
+	name = "Falkreath"
+	region = kreath
+}
+new province roadside = {
+	position = {
+		1683.000 1833.000 1683.000 1833.000 1683.000 1833.000 1683.000 1833.000 1683.000 1833.000 1683.000 1833.000 1683.000 1833.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = falkreath
+	name = "Roadside"
+	terrain = forest
+	color = {
+		136 229 117
+	}
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province falkreath = {
+	position = {
+		1696.000 1825.000 1696.000 1825.000 1696.000 1825.000 1696.000 1825.000 1696.000 1825.000 1696.000 1825.000 1696.000 1825.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = falkreath
+	name = "Falkreath"
+	terrain = forest
+	color = {
+		247 121 125
+	}
+	history = {
+		center_of_trade = 1
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = rakh_ubeshka
+		history_trade_goods = wood
+	
+		is_city = no
+	}
+}
+new province peak_shade = {
+	position = {
+		1714.000 1825.000 1714.000 1825.000 1714.000 1825.000 1714.000 1825.000 1714.000 1825.000 1714.000 1825.000 1714.000 1825.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	area = falkreath
+	name = "Peak Shade"
+	terrain = forest
+	color = {
+		100 162 155
+	}
+	base_development = 20
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = rakh_ubeshka
+		history_trade_goods = wood
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+		1.1.1 = {
+			create_expedition = {
+				id = south_shriekwind
+				name = "South Shriekwind"
+				desc = ""
+				frame = 4
+				event_picture = south_shriekwind_eventPicture
+				length = 20
+				on_complete = {
+					set_province_flag = south_shriekwind_great_project
+					new_custom_tooltip = "Unlocks a Great Project §YSouth Shriekwind Bastion§! in §YPeak Shaded§! province"
+					
+					owner = {
+						random_list = {
+							1 = { add_treasury = 10 }
+							1 = { add_treasury = 20 }
+							1 = { add_treasury = 30 }
+							1 = { add_treasury = 40 }
+							1 = { add_treasury = 50 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+new area cracked_tusk = {
+	name = "Cracked Tusk"
+	region = kreath
+}
+new province bannermist = {
+	position = {
+		1659.000 1848.000 1659.000 1848.000 1659.000 1848.000 1659.000 1848.000 1659.000 1848.000 1659.000 1848.000 1659.000 1848.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Bannermist"
+	color = {
+		175 174 176
+	}
+	area = cracked_tusk
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province twilight_sepulcher = {
+	position = {
+		1651.000 1835.000 1651.000 1835.000 1651.000 1835.000 1651.000 1835.000 1651.000 1835.000 1651.000 1835.000 1651.000 1835.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Twilight Sepulcher"
+	color = {
+		143 207 196
+	}
+	area = cracked_tusk
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = no
+		57.1.1 = {
+			is_city = no
+		}
+	}
+}
+new province evergreen_grove = {
+	position = {
+		1670.000 1842.000 1670.000 1842.000 1670.000 1842.000 1670.000 1842.000 1670.000 1842.000 1670.000 1842.000 1670.000 1842.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Evergreen Grove"
+	color = {
+		206 102 178
+	}
+	area = cracked_tusk
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province cracked_tusk = {
+	position = {
+		1668.000 1826.000 1668.000 1826.000 1668.000 1826.000 1668.000 1826.000 1668.000 1826.000 1668.000 1826.000 1668.000 1826.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Cracked Tusk"
+	color = {
+		169 218 246
+	}
+	area = cracked_tusk
+	terrain = forest
+	base_development = 18
+	history = {
+		center_of_trade = 1
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vosh_urgalick
+		history_trade_goods = arms
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new area half_moon = {
+	name = "Half-Moon"
+	region = kreath
+}
+new province illinaltas_deep = {
+	position = {
+		1680.000 1876.000 1680.000 1876.000 1680.000 1876.000 1690.500 1874.500 1680.000 1876.000 1680.000 1876.000 1680.000 1876.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.262 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	name = "Illinalta's Deep"
+	color = {
+		239 117 203
+	}
+	area = half_moon
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vorkhim_uhz
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new province half_moon = {
+	position = {
+		1670.000 1862.000 1670.000 1862.000 1670.000 1862.000 1680.500 1865.500 1670.000 1862.000 1670.000 1862.000 1670.000 1862.000
+	}
+	rotation = {
+		0.000 0.000 0.000 4.276 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	name = "Half-moon"
+	color = {
+		130 185 111
+	}
+	area = half_moon
+	terrain = forest
+	base_development = 18
+	history = {
+		center_of_trade = 1
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = vorkhim_uhz
+		history_trade_goods = wood
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new province green_coast = {
+	position = {
+		1684.000 1852.000 1684.000 1852.000 1684.000 1852.000 1690.500 1857.500 1684.000 1852.000 1684.000 1852.000 1684.000 1852.000
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 7.750 0.365 0.365 0.365
+	}
+	name = "Green Coast"
+	color = {
+		252 226 174
+	}
+	area = half_moon
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		quick_province_modifier = {
+			name = "Lady Stone"
+			modifier = {
+				global_monthly_devastation = -0.05
+			}
+		}
+		history_owner = vosh_urgalick
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}
+new area bilegulch = {
+	name = "Bilegulch"
+	region = kreath
+}
+new province sunderstone_gorge = {
+	position = {
+		1647.000 1883.000 1647.000 1883.000 1647.000 1883.000 1647.000 1883.000 1647.000 1883.000 1647.000 1883.000 1647.000 1883.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Sunderstone Gorge"
+	color = {
+		107 236 196
+	}
+	area = bilegulch
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = crun_beshkar
+		history_trade_goods = silver
+	
+		is_city = no
+		57.1.1 = {
+			is_city = no
+		}
+	}
+}
+new province bilegulch = {
+	position = {
+		1634.000 1874.000 1634.000 1874.000 1634.000 1874.000 1634.000 1874.000 1634.000 1874.000 1634.000 1874.000 1634.000 1874.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Bilegulch"
+	color = {
+		235 193 205
+	}
+	area = bilegulch
+	terrain = hills
+	base_development = 14
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = crun_beshkar
+		history_trade_goods = r_metals
+	
+		is_city = yes
+		set_province_flag = orc_stronghold
+	}
+}
+new province knifepoint = {
+	position = {
+		1639.000 1855.000 1639.000 1855.000 1639.000 1855.000 1639.000 1855.000 1639.000 1855.000 1639.000 1855.000 1639.000 1855.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Knifepoint"
+	color = {
+		168 223 201
+	}
+	area = bilegulch
+	terrain = hills
+	base_development = 11
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = aht_beshkar
+		history_trade_goods = r_metals
+	
+		is_city = no
+		set_province_flag = orc_stronghold
+	}
+}
+new province hunters_rest = {
+	position = {
+		1652.000 1865.000 1652.000 1865.000 1652.000 1865.000 1652.000 1865.000 1652.000 1865.000 1652.000 1865.000 1652.000 1865.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	name = "Hunter's Rest"
+	color = {
+		209 162 118
+	}
+	area = bilegulch
+	terrain = forest
+	history = {
+		religion = code_of_malacath
+		culture = kreath_orc
+		hre = no
+		history_owner = crun_beshkar
+		history_trade_goods = wood
+	
+		is_city = yes
+	}
+}

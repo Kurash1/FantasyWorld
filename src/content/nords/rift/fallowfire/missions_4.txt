@@ -1,0 +1,101 @@
+new mission_series fallowfire_4 = {
+	slot = 4
+	ai = yes
+	potential = {
+		tag = fallowfire 
+		has_country_flag = snowy_elf
+	}
+	missions = {
+		fallowfire_push_on_to_the_tasks_end = {
+			name = "Push on to the tasks' end"
+			desc = ""
+			position = 2
+			icon = heads_impaled_mission
+			required = {
+				fallowfire_day_of_reckoning
+			}
+			trigger = {
+				rift_region = {
+					type = all
+					culture_group = ROOT
+				}
+			}
+			provinces_to_highlight = {
+				region = rift
+				NOT = { culture_group = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+			effect = {
+				add_country_modifier = {
+					name = a_land_for_nords_only
+					duration = (50*365)
+				}
+			}
+		}	
+		fallowfire_provide_food_and_wood_for_the_high_kingdom = {
+			name = "A deal for the kingdom"
+			desc = ""
+			position = 3
+			icon = trade_nord_ships_mission
+			required = {
+				fallowfire_push_on_to_the_tasks_end
+			}
+			trigger = {
+				OR = {
+					countries:windhelm = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					AND = {
+						is_enemy = windhelm
+						has_spy_network_in = {
+							who = countries:windhelm
+							value = 50
+						}
+					}
+				}
+			}
+			effect = {
+				if [countries:windhelm = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				] 
+				{ 	
+					countries:windhelm = {
+						add_historical_friend = fallowfire
+					}
+					quick_country_modifier = {
+						name = "Trading with Windhelm"
+						modifier = {
+							trade_efficiency = 0.1
+							production_efficiency = 0.1
+						}
+					}
+				}
+				else {
+					quick_country_modifier = {
+						name = "Smuggling masters"
+						modifier = {
+							spy_action_cost_modifier = -0.2	
+							spy_offence = 0.1
+						}
+					}
+				
+				}
+			}
+		}
+	}
+}		
+new event_modifier a_land_for_nords_only = {
+	name = "A land for nords only"
+	modifier = {
+		land_morale = 0.05
+		development_cost = -0.15
+		build_cost = -0.10
+	}
+}

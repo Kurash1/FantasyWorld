@@ -37,6 +37,10 @@ new government republic = {
 		republic = yes
 		duration = 4
 		has_term_election = yes
+		custom_attributes = {
+			enables_plutocratic_idea_group = yes
+			enables_aristocratic_idea_group = no
+		}
 		modifiers = {
 			max_absolutism = -50
 			max_revolutionary_zeal = 75
@@ -58,7 +62,6 @@ new government republic = {
 		12 = "Trade Policy"
 	}
 }
-new localisation tribal_mechanic = "Tribal"
 new government tribal = {
 	name = "Tribal"
 	color = { 220 165 95 }
@@ -87,7 +90,6 @@ new government tribal = {
 		12 = "Trade Policy"
 	}
 }
-new localisation native_mechanic = "Native"
 new government native = {
 	name = "Native"
 	color = { 194 127 209 }
@@ -152,7 +154,6 @@ new government theocracy = {
 		12 = "Trade Policy"
 	}
 }
-new localisation remnant_mechanic = "Remnant"
 new government remnant = {
 	name = "Remnant"
 	color = { 50 0 0 }
@@ -399,6 +400,122 @@ new inheritable default_tribal_names = {
 		1 = "Heiress"
 		2 = "Heiress"
 		3 = "Heiress"
+	}
+}
+
+new government_names sybil_theocracy = {
+	inherit = default_theocracy_names
+	ruler_female = {
+		1 = "Sybil"
+		2 = "High Sybil"
+		3 = "Great Sybil"
+	}
+	trigger = {
+		has_reform = tier_1_sybildom
+	}
+}
+new government_names remnant_monarchy = {
+	inherit = default_monarchy_names
+	ruler_male = {
+		1 = "Harbinger"
+		2 = "Harbinger"
+		3 = "Harbinger"
+	}
+	ruler_female = {
+		1 = "Harbinger"
+		2 = "Harbinger"
+		3 = "Harbinger"
+	}
+	trigger = {
+		has_reform = companion_remnant
+	}
+}
+new government_names nordic_clan_monarchy = {
+	inherit = default_monarchy_names
+	rank = {
+		1 = "Clan"
+		2 = "High Clan"
+		3 = "Great Clan"
+	}
+	ruler_male = {
+		1 = "Chief"
+		2 = "High Chief"
+		3 = "Great Chief"
+	}
+	ruler_female = {
+		1 = "Chief"
+		2 = "High Chief"
+		3 = "Great Chief"
+	}
+	consort_male = {
+		1 = "Chief Consort"
+		2 = "Chief Consort"
+		3 = "Chief Consort"
+	}
+	consort_female = {
+		1 = "Chief Consort"
+		2 = "Chief Consort"
+		3 = "Chief Consort"
+	}
+	trigger = {
+		has_reform = tier_1_nord_clan
+	}
+}
+new government_names nordic_monarchy = {
+	inherit = default_monarchy_names
+	rank = {
+		1 = "Thanedom"
+		2 = "Jarldom"
+		3 = "High Kingdom"
+	}
+	ruler_male = {
+		1 = "Thane"
+		2 = "Jarl"
+		3 = "High King"
+	}
+	ruler_female = {
+		1 = "Thane"
+		2 = "Jarl"
+		3 = "High King"
+	}
+	consort_male = {
+		1 = "Thane Consort"
+		2 = "Jarl Consort"
+		3 = "High King Consort"
+	}
+	consort_female = {
+		1 = "Thane Consort"
+		2 = "Jarl Consort"
+		3 = "High Queen Consort"
+	}
+	trigger = {
+		is_race = nord
+		government = monarchy
+	}
+}
+new government_names falmer_monarchy = {
+	inherit = default_monarchy_names
+	rank = {
+		1 = "Duchy"
+		2 = "Kingdom"
+		3 = "Empire"
+	}
+	ruler_male = {
+		1 = "Aran"
+		2 = "Amalaran"
+		3 = "Emperor"
+	}
+	ruler_female = {
+		1 = "Arana"
+		2 = "Amalarana"
+		3 = "Empress"
+	}
+	trigger = {
+		is_race = snow_elven
+		OR = {
+			government = remnant
+			government = monarchy
+		}
 	}
 }
 new government_names default_monarchy = {
