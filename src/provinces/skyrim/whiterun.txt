@@ -1292,7 +1292,7 @@ new province green_hill_road = {
 		history_trade_goods = wood
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new province bleak_falls_temple = {
@@ -1319,7 +1319,7 @@ new province bleak_falls_temple = {
 		history_trade_goods = c_metals
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new province bandit_way = {
@@ -1356,7 +1356,7 @@ new province bandit_way = {
 		history_trade_goods = stone
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new province iron_slope = {
@@ -1382,7 +1382,7 @@ new province iron_slope = {
 		history_trade_goods = c_metals
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new area anise = {
@@ -1413,7 +1413,7 @@ new province south_brittleshin = {
 		history_trade_goods = fish
 	
 		is_city = no
-		history_owner = skjoralmor
+		
 		1.1.1 = {
 			quick_province_modifier = {
 				name = "Sponsored Fortifications"
@@ -1471,7 +1471,7 @@ new province anises_cabin = {
 		history_trade_goods = alchemical_ingredients
 	
 		is_city = no
-		history_owner = skjoralmor
+		
 	}
 }
 new province treasure_coast = {
@@ -1497,7 +1497,7 @@ new province treasure_coast = {
 		history_trade_goods = wood
 	
 		is_city = no
-		history_owner = skjoralmor
+		
 	}
 }
 new area riverwood = {
@@ -1539,7 +1539,7 @@ new province riverwood = {
 		}
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new province embershard_mine = {
@@ -1573,7 +1573,7 @@ new province embershard_mine = {
 		history_trade_goods = c_metals
 	
 		is_city = yes
-		history_owner = skjoralmor
+		
 	}
 }
 new area white_river_watch = {

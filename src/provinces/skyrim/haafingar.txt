@@ -356,10 +356,6 @@ new province big_sister = {
 	}
 	terrain = coastline
 	history = {
-		history_owner = icereach_clan
-		religion = reachman_faith
-		culture = reachmen
-		
 		history_trade_goods = mag_goods
 	}
 }
@@ -380,10 +376,6 @@ new province small_sister = {
 	}
 	terrain = coastline
 	history = {
-		history_owner = icereach_clan
-		religion = reachman_faith
-		culture = reachmen
-		
 		history_trade_goods = fish
 	}
 }
@@ -912,9 +904,6 @@ new province volskygge = {
 	}
 	history = {
 		center_of_trade = 1
-		history_owner = bear_heart_clan
-		religion = reachman_faith
-		culture = reachmen
 		history_trade_goods = wood
 		
 		1.1.1 = {
@@ -960,9 +949,6 @@ new province deepwood_redoubt = {
 		187 232 173
 	}
 	history = {
-		history_owner = bear_heart_clan
-		religion = reachman_faith
-		culture = reachmen
 		history_trade_goods = wood
 	
 		is_city = yes
@@ -985,9 +971,6 @@ new province snowpeaks = {
 		161 254 127
 	}
 	history = {
-		history_owner = bear_heart_clan
-		religion = reachman_faith
-		culture = reachmen
 		history_trade_goods = wood
 	
 		is_city = yes
@@ -1041,9 +1024,6 @@ new province lost_echo_cave = {
 		history_owner = wolf_skull
 		hre = yes
 		history_trade_goods = wood
-		2568.1.1 = {
-			add_claim = skjoralmor
-		}
 	}
 }
 new province wolfskull_cave = {
