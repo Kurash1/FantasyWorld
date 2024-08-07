@@ -364,10 +364,7 @@ new age first_century = {
 		ab_skjoralmor_conquests = {
 			name = "Skjoralmor Conquests"
 			allow = {
-				OR = {
-					tag = skjoralmor
-					tag = falkreath
-				}
+				tag = skjoralmor
 			}
 			modifier = {
 				core_creation = -0.2
