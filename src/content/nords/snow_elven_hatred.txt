@@ -1,9 +1,0 @@
-on_actions:on_culture_promoted += {
-	if [
-		is_race = nord
-		accepted_culture = snow_elven
-		ai = yes
-	] {
-		remove_accepted_culture = snow_elven
-	}
-}

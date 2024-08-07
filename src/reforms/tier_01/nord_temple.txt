@@ -14,12 +14,6 @@ governments:theocracy:reform_levels:1 += new tier_1_nord_temple = {
 		governing_capacity = -100
 		global_autonomy = 0.05
 	}
-	effect = {
-		add_owned_province_modifier = organized_churches
-	}
-	removed_effect = {
-		remove_owned_province_modifier = organized_churches
-	}
 	ai = {
 		factor = 1
 	}

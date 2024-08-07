@@ -99,13 +99,6 @@ new country_event court.5 = {
 			}
 		}
 	}
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 4
-			has_estate_privilege = clans:rock_hammer_castle_rights
-		}
-	}
 }
 new event_modifier court_new_champion = {
 	name = "New Champion"

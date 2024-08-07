@@ -1,9 +1,0 @@
-new mission_series eastmarch_0 = {
-	slot = 0
-	ai = yes
-	potential = {
-		tag = windhelm
-	}
-	missions = {
-	}
-}

@@ -191,10 +191,6 @@ new country fallowfire = {
 				mil = 2
 				birth_date = 2545.1.1
 			}
-			country_event = {
-				id = fallowfire.5
-				days = 31
-			}
 			add_historical_rival = clearspring
 		}
 	}
@@ -257,7 +253,6 @@ new country solitude = {
 		255 55 55
 	}
 	capital = red_port
-	starting_reform = tier_1_three_clan_council
 	history += {
 		add_historical_friend = dawn_star
 		add_historical_rival = snow_hawk
@@ -748,7 +743,6 @@ new country hrothgar = {
 	}
 	capital = hrothgar_camp
 	government = remnant
-	starting_reform = tier_1_hrothgar_territories
 	history += {
 		2568.1.1 = {
 			monarch = {
@@ -1013,12 +1007,6 @@ new country windhelm = {
 			adm = 6
 			dip = 6
 			mil = 6
-		}
-		2500.1.1 = {
-			country_event = {
-				id = eastmarch.1
-				days = (143*365)
-			}
 		}
 	}
 }

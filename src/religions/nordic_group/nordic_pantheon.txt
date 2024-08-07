@@ -189,7 +189,6 @@ new personal_deity mauloch = {
 	}
 	potential = {
 		religion = nordic_pantheon
-		has_estate_privilege = orcs:redeem_mauloch
 	}
 	ai_will_do = {
 		factor = 0

@@ -609,19 +609,6 @@ new province shadowgreen = {
 		history_trade_goods = wood
 	
 		is_city = yes
-		
-		1.1.1 = {
-			create_expedition = {
-				id = shadowgreen
-				name = "Shadowgreen Cavern"
-				desc = "At the foot of the mountain there is an entrance to a large cavern, the locals say that it is home to a large grove filled with all kinds of alchemical ingredients, but with the problem that there is a massive population of wolves, bears, and spriggans.
-
-Previously many smaller clans, and mercenary bands had tried to subjugate the cave, hoping to make it into their home, however none could fell the natural order of the place."
-				frame = 13
-				length = 40
-				event = haafingar.4
-			}
-		}
 	}
 }
 new province gold_isle = {
@@ -979,25 +966,6 @@ new province deepwood_redoubt = {
 		history_trade_goods = wood
 	
 		is_city = yes
-		
-		1.1.1 = {
-			create_expedition = {
-				id = deepwood_vale
-				name = "Deepwood Vale"
-				desc = "A secluded valley in the mountains seperating the reach and haafingar hold, this place has for long time been home to the icereach coven of witches, here they perform rituals to their old gods, sometimes kidnapping peoples from just beyond. They mock us saying that no matter what we do, they will always hold the valley, but whose to say that must always remain so.
-
-While we are unsure what resources the valley may hold, at a minimum we can at least hope to vanquish or subjugate the icereach coven."
-				frame = 14
-				event_picture = deepwood_vale_eventPicture
-				length = 100
-				on_complete = {
-					create_monument = {
-						monument = deepwood_vale
-						province = deepwood_redoubt
-					}
-				}
-			}
-		}
 	}
 }
 new province snowpeaks = {
