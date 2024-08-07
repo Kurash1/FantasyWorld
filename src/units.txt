@@ -44,7 +44,7 @@ new unit regular_T01 = {
 	sprite_level = 1
 }
 
-new technology_group nord_tg = {
+new technology_group nord = {
 	name = "Nordic"
 }
 new technology_group regular = {
