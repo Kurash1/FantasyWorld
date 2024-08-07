@@ -1,0 +1,42 @@
+new inheritable human_empire_province = {
+	position = {
+		1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000 1823.000 1877.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	history = {
+	}
+}
+new province human_empire_1 = {
+    inherit = human_empire_province
+    color = { 203 137 209 }
+}
+
+new province human_empire_2 = {
+    inherit = human_empire_province
+    color = { 102 225 131 }
+}
+
+new province human_empire_3 = {
+    inherit = human_empire_province
+    color = { 123 187 100 }
+}
+
+new province human_empire_4 = {
+    inherit = human_empire_province
+    color = { 121 165 143 }
+}
+
+new province human_empire_5 = {
+    inherit = human_empire_province
+    color = { 185 182 205 }
+}
+
+new province human_empire_6 = {
+    inherit = human_empire_province
+    color = { 216 218 168 }
+}

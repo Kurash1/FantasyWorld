@@ -1,7 +1,0 @@
-new expedition <province> = {
-	picture = <event_picture> #Optional
-	length = <int>
-	on_complete = { #province scope
-		<effects>
-	}
-}

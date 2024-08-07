@@ -172,15 +172,6 @@ new country_event elections.3 = {
 			random_owned_province = {
 				save_event_target_as = es_theocracy_province
 			}
-			
-			random_neighbor_country = { 
-				limit = {
-					government = monarchy
-					has_regency = no
-					religion = ROOT
-				}
-				save_event_target_as = es_neighbor_country_for_theocracy
-			}
 		}
 	}
 	

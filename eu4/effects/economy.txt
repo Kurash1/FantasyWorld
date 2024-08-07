@@ -55,6 +55,15 @@ new effect add_years_of_owned_provinces_sailors = {
 		trigger = trigger
 		custom_tooltip = text
 	}
+	transpile = {
+		`add_years_of_owned_provinces_sailors` = {
+			years = args:years
+			trigger = {
+				args:trigger
+			}
+			new_custom_tooltip = args:text
+		}
+	}
 }
 new effect set_bankruptcy = {
 	args = country_scope

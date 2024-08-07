@@ -1,3 +1,0 @@
-for <key> as <int start> to <int end> {
-
-}

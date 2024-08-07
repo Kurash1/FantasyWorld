@@ -356,33 +356,6 @@ cb_independence_war = {
 }				
 
 # Holy War
-cb_crusade = {
-	valid_for_subject = no
-	
-	prerequisites_self = {
-		is_revolutionary = no
-	}
-	
-	prerequisites = {
-		always = no
-		#is_neighbor_of = FROM
-		#NOT = { religion_group = FROM }
-		#NOT = {	has_matching_religion = FROM }
-		#OR = {
-		#	AND = {
-		#		crusade_target = { tag = FROM }
-		#		religion = chimer_pantheon
-		#	}
-		#	cb_on_religious_enemies = yes
-		#	has_reform = chosen_by_the_gods
-		#	has_reform = es_crusade
-		#}
-	}
-
-	war_goal = superiority_crusade
-}
-
-# Holy War
 cb_crusade_pheasants = {
 	valid_for_subject = no
 	holy_war = yes		   
@@ -423,35 +396,6 @@ cb_defender_of_the_faith = {
 	}
 
 	war_goal = defend_country_faith
-}
-
-# Purging of Heresy
-cb_heretic = {
-	valid_for_subject = no
-	
-	prerequisites_self = {
-		is_revolutionary = no
-	}
-	
-	prerequisites = {
-		is_neighbor_of = FROM
-		OR = {
-			cb_on_religious_enemies = yes
-			FROM = { has_ruler_flag = hussite_heretic }
-		}
-		religion_group = from
-		NOT = {	has_matching_religion = FROM }
-		OR = {
-			capital_scope = { is_part_of_hre = no }
-			FROM = { capital_scope = { is_part_of_hre = no } }
-		}
-	}
-
-	allowed_provinces = {
-		always = yes
-	}
-
-	war_goal = superiority_heretic
 }
 
 # Trade War
@@ -741,39 +685,13 @@ cb_crusade = {
 
 	prerequisites_self = {
 		is_revolutionary = no
-		NOT = { has_government_attribute = has_upgraded_holy_wars }
 	}
 
 	prerequisites = {
 		is_neighbor_of = FROM
 		NOT = { religion_group = FROM }
 		NOT = {	has_matching_religion = FROM }
-		OR = {
-			AND = {
-				crusade_target = { tag = FROM }
-				religion = catholic
-			}
-			AND = {
-				FROM = {
-					NOT = {
-						religion_group = muslim 
-					}
-					any_owned_province = {
-						has_province_flag = jihad_target_province_flag
-					}
-				}
-				religion_group = muslim
-				has_global_flag = active_jihad
-				OR = {
-					has_country_flag = jihad_caller
-					any_country = {
-						has_country_flag = jihad_caller
-						religion = ROOT
-					}
-				}
-			}
-			cb_on_religious_enemies = yes
-		}
+		cb_on_religious_enemies = yes
 	}
 
 	war_goal = superiority_crusade
@@ -791,10 +709,7 @@ cb_heretic = {
 		is_neighbor_of = FROM
 		religion_group = from
 		NOT = {	has_matching_religion = FROM }
-		OR = {
-			cb_on_religious_enemies = yes
-			FROM = { has_ruler_flag = hussite_heretic }
-		}
+		cb_on_religious_enemies = yes
 		OR = {
 			NOT = { has_dlc = "Art of War" }
 			hre_religion_treaty = no

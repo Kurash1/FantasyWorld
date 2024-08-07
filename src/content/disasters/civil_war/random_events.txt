@@ -21,6 +21,12 @@ new country_event civil_war.2 = {
 			name = "Request aid from [ally_country.GetName]."
 			effect = {
 				add_dip_power = -100
+				event_target:ally_country = {
+					add_favors = {
+						who = ROOT
+						amount = 10
+					}
+				}
 			}
 			ai_chance = { factor = 40 }
 		}
@@ -99,6 +105,20 @@ new country_event civil_war.3 = {
 		}
 	}
 }
+new event_modifier deserters = {
+	name = "Deserters"
+	modifier = {
+		land_morale = -0.10
+	}
+}
+new event_modifier morale_boost = {
+	name = "Morale Boost"
+	modifier = {
+		land_morale = 0.10
+		discipline = 0.05
+		recover_army_morale_speed = 0.2
+	}
+}
 new country_event civil_war.5 = {
 	title = "Army Deserters"
 	desc = "The morale of our troops is low, and groups of deserters have been spotted joining rebel ranks. If this continues, we will soon find ourselves unable to stop the rebels from taking over the country."
@@ -164,11 +184,6 @@ new country_event civil_war.6 = {
 	
 	immediate = {
 		set_country_flag = civilwar_on_capital
-		hidden_effect = {
-			capital_scope = {
-				save_event_target_as = capital
-			}
-		}
 	}
 	
 	options = {

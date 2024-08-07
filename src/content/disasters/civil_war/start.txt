@@ -9,6 +9,7 @@ new country_event civil_war.1 = {
 		hidden_effect = {
 			set_saved_name = {
 				key = upstart_pretender
+				scope = ROOT
 				type = leader
 			}
 		}

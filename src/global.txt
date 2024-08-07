@@ -1,3 +1,226 @@
+new localisation whiterun_generic_crystalline_throne = "Crystalline Throne"
+
+new custom_transpile religious_rebels = {
+	foreach $ in religions {
+		write_file "common/rebel_types/{$}.txt" = {
+			`{$}_rebels` = {
+				color = { $:color }
+				
+				area = nation
+				government = theocracy
+				religion = $
+				defection = none
+				defect_delay = 120
+				independence = none
+				unit_transfer = no
+				gfx_type = culture_province
+				will_relocate = yes	
+				
+				resilient = no
+				reinforcing = yes
+				general = yes
+				smart = yes
+				
+				artillery = 0.0
+				infantry = 0.7
+				cavalry = 0.3
+				
+				morale = 1.1
+
+				handle_action_negotiate = yes
+				handle_action_stability = yes
+				handle_action_build_core = yes
+				handle_action_send_missionary = yes		
+				
+				spawn_chance = {
+					factor = 1
+					modifier = {
+						factor = 0.5
+						is_overseas = yes
+					}
+					modifier = {
+						factor = 0.0
+						owner = { religion = ROOT }
+					}
+					modifier = {
+						factor = 0.0
+						NOT = { religion = $ }
+					}
+					modifier = {
+						factor = 0.001
+						tolerance_to_this = 5
+					}
+					modifier = {
+						factor = 0.5
+						tolerance_to_this = 2
+					}
+					modifier = {
+						factor = 2000
+						has_missionary = yes
+					}
+					modifier = {
+						factor = 2
+						NOT = { tolerance_to_this = 1 }
+					}
+					modifier = {
+						factor = 2
+						NOT = { tolerance_to_this = -1 }
+					}
+					modifier = {
+						factor = 2
+						NOT = { tolerance_to_this = -2 }
+					}
+				}
+			 
+				movement_evaluation = {
+					factor = 1
+					modifier = {
+						factor = 0.5
+						units_in_province = 1
+					}
+					modifier = {
+						factor = 0.001
+						controlled_by = REB
+					}
+					modifier = {
+						factor = 0.0
+						religion = $
+						owner = { religion = $ }
+					}
+					modifier = {
+						factor = 2.0
+						NOT = { religion = $ }
+						any_neighbor_province = {
+							religion = $
+							NOT = { has_province_modifier = "forced_conversion" }
+						}
+					}
+					modifier = {
+						factor = 5
+						has_missionary = yes
+						religion = $
+					}
+					modifier = {
+						factor = 1.5
+						unrest = 2
+					}
+					modifier = {
+						factor = 1.5
+						unrest = 4
+					}
+					modifier = {
+						factor = 1.5
+						unrest = 6
+					}
+				}
+			 
+				# Province Scope
+				siege_won_trigger = {
+					always = yes
+				}
+				siege_won_effect = {
+					custom_tooltip = religious_rebels_seige_effect_tooltip
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									religion = $
+									is_reformation_center = yes
+									owner = { religion = $ }
+								}
+							}
+							add_province_modifier = {
+								name = "religious_violence"
+								duration = 730
+							}
+						}
+						if = {
+							limit = {
+								NOT = { religion = $ }
+								is_reformation_center = no
+								NOT = { owner = { religion = $ } }
+							}
+							change_religion = $
+							add_province_modifier = {
+								name = "forced_conversion"
+								duration = 730
+							}
+						}
+					}
+				}
+				
+				# Country scope
+				can_negotiate_trigger = {
+					OR = {
+						religion_group = $:religious_group
+						dominant_religion = $
+					}
+				}
+				
+				# Country scope
+				can_enforce_trigger = {
+					always = yes
+				}
+				
+				# Localisation for their demands
+				demands_description = "catholic_rebels_demand"
+				
+				# Country Scope	
+				demands_enforced_effect = {
+					hidden_effect = {
+						add_country_modifier = {
+							name = just_lost_to_rebels
+							duration = 10
+							hidden = yes
+						}
+					}
+					if = {
+						limit = {
+							NOT = { religion_group = $:religious_group }
+						}
+						add_prestige = -50
+						every_owned_province = {
+							limit = {
+								has_rebel_faction = REB
+							}
+							add_local_autonomy = 20
+						}
+					}
+					if = {
+						limit = {
+							religion = $
+						}
+						add_country_modifier = {
+							name = "religious_intolerance_enforced"
+							duration = 3650
+						}
+					}
+					if = {
+						limit = {
+							NOT = { religion = $ }
+							dominant_religion = $
+						}
+						change_religion = $
+						force_converted = yes
+					}
+					if = {
+						limit = {
+							NOT = { religion = $ }
+							NOT = { dominant_religion = $ }
+							NOT = { has_country_modifier = heretic_tolerance }
+							religion_group = $:religious_group
+						}
+						add_country_modifier = {
+							name = "heretic_tolerance"
+							duration = 3650
+						}
+						add_stability = -1
+					}
+				}
+			}
+		}
+	}
+}
 new custom_transpile natives = {
 	write_file "common/natives/00_natives.txt" = {
 		natives_american_inuit = {

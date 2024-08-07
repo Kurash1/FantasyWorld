@@ -152,6 +152,7 @@ new subject_type default = {
 	subject_opinion_modifier = null
 }
 
+new localisation personal_union = "Personal Union"
 new subject_type personal_union = {
 	copy_from = default
 
@@ -210,6 +211,7 @@ new subject_type personal_union = {
 	subject_opinion_modifier = in_union
 }
 
+new localisation vassal = "Vassal"
 new subject_type vassal = {
 	copy_from = default
 	
@@ -257,6 +259,9 @@ new subject_type vassal = {
 	subject_opinion_modifier = is_vassal
 }
 
+new localisation march = "March"
+new localisation MARCHTOOLARGE = "March too Large"
+new localisation MARCHTOOLARGEUS = "March too Large"
 new subject_type march = {
 	copy_from = vassal
 	
@@ -469,6 +474,7 @@ new subject_type solitude_trade_pact_member = {
 	clear_subject_modifier = yes
 }
 
+new localisation colony = "Colony"
 new subject_type colony = {
 	copy_from = default
 	
@@ -509,24 +515,18 @@ new subject_type colony = {
 	can_fight = {
 	    same_overlord = colony
 		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
 	can_rival = {
 		same_overlord = colony
 		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
 	can_ally = {
 		same_overlord = colony
 		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
 		neighboring_primitives = yes
 	}
 	
@@ -562,6 +562,7 @@ new subject_type colony = {
 	subject_opinion_modifier = colonial_relation
 }
 
+new localisation crown_colony = "Crown Colony"
 new subject_type crown_colony = {
 	copy_from = colony
 
@@ -607,6 +608,7 @@ new subject_type crown_colony = {
 	}
 }
 
+new localisation private_enterprise = "Private Enterprise"
 new subject_type private_enterprise = {
 	copy_from = colony
 
@@ -657,6 +659,7 @@ new subject_type private_enterprise = {
 	}
 }
 
+new localisation self_governing_colony = "Self Governing Colony"
 new subject_type self_governing_colony = {
 	copy_from = colony
 
@@ -707,105 +710,7 @@ new subject_type self_governing_colony = {
 	}
 }
 
-new subject_type native_reservation = {
-	copy_from = default
-	
-	# Graphics:
-	sprite = GFX_icon_federation
-	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorates
-	diplomacy_subject_sprite = GFX_diplomacy_inprotectorate
-	
-	# Properties:
-    is_voluntary = yes
-	transfer_trade_power = yes
-	transfer_trade_if_merchant_republic = yes
-	joins_overlords_wars = no
-	can_be_integrated = yes
-	uses_tariffs = yes
-	overlord_can_be_subject = yes
-	can_have_subjects_of_other_types = yes
-	takes_diplo_slot = no
-	overlord_protects_external = yes
-	overlord_enforce_peace_attacking = yes
-	gets_help_with_rebels = yes
-	allows_taking_land_without_independence = yes
-	extend_trading_range = yes
-	
-	base_liberty_desire = 5.0
-	liberty_desire_negative_prestige = 1.0
-	liberty_desire_development_ratio = 0.25
-	liberty_desire_same_dynasty = -5.0
-	
-	cities_required_for_bonuses = 5
-	
-	pays_overlord = 0.5
-	forcelimit_to_overlord = 0.0
-	military_focus = 1.0
-	
-	relative_power_class = 2
-	diplomacy_view_class = 1
-	
-	can_fight = {
-	    same_overlord = colony
-		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
-		neighboring_primitives = yes
-		colonial_region_nations = yes
-	}
-	can_rival = {
-		same_overlord = colony
-		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
-		neighboring_primitives = yes
-		colonial_region_nations = yes
-	}
-	can_ally = {
-		same_overlord = colony
-		other_overlord = colony
-		same_overlord = native_reservation
-		other_overlord = native_reservation
-		neighboring_primitives = yes
-	}
-	can_marry = {
-		independent_nations = yes
-		same_overlord = all
-		other_overlord = all
-	}
-	
-    # Subject Interactions:
-	# (continuous)
-	divert_trade = yes
-	# (immediate)
-	placate_rulers = yes
-	siphon_income = yes
-	increase_tariffs = yes
-	decrease_tariffs = yes
-	send_additional_troops = yes
-	demand_artifacts = yes
-	conscript_general = yes	
-	takeondebt = yes
-	knowledge_sharing = yes
-	
-	block_settlement_growth = yes
-	allow_settlement_growth = yes
-	
-	# Modifiers:
-	subject_modifiers = {
-		modifier = reservation_nation
-	}
-	overlord_modifiers = {
-		modifier = reservation_subject
-		trigger = {
-			num_of_cities = 10
-		}
-	}
-	
-	overlord_opinion_modifier = colonial_relation
-	subject_opinion_modifier = colonial_relation
-}
-
+new localisation tributary_state = "Tributary State"
 new subject_type tributary_state = {
 	#If similar subject added check if it needs to be added to these scripted triggers:
 	#is_subject_except_tributary_trigger
@@ -818,12 +723,7 @@ new subject_type tributary_state = {
 		NOT = { 
 			is_subject_of_type = tributary_state
 		}
-		OR = {
-		    #is_emperor = yes
-			is_emperor_of_china = yes
-			has_reform = celestial_empire
-			#is_nomad = yes
-		}
+		is_emperor_of_china = yes
 	}
 	
 	# Graphics:
@@ -928,6 +828,7 @@ new subject_type tributary_state = {
 	}
 }
 
+new localisation daimyo_vassal = "Daimyo Vassal"
 new subject_type daimyo_vassal = {
 	copy_from = vassal
 	count = vassal
@@ -938,6 +839,7 @@ new subject_type daimyo_vassal = {
 	diplomacy_subject_sprite = GFX_diplomacy_amvassal
 }
 
+new localisation client_vassal = "Client Vassal"
 new subject_type client_vassal = {
 	copy_from = vassal
 	count = vassal
@@ -955,6 +857,7 @@ new subject_type client_vassal = {
 	return_land = no
 }
 
+new localisation client_march = "Client March"
 new subject_type client_march = {
 	copy_from = march
 	count = march
@@ -972,6 +875,7 @@ new subject_type client_march = {
 	enforce_religion = no
 }
 
+new localisation dummy = "Dummy"
 new subject_type dummy = {
 	copy_from = default
 }

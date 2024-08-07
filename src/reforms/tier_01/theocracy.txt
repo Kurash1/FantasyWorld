@@ -25,15 +25,6 @@ new country_event theocracy.1 = {
 			random_owned_province = {
 				save_event_target_as = es_theocracy_province
 			}
-			
-			random_neighbor_country = { 
-				limit = {
-					government = monarchy
-					has_regency = no
-					religion = ROOT
-				}
-				save_event_target_as = es_neighbor_country_for_theocracy
-			}
 		}
 	}
 	
@@ -81,7 +72,6 @@ new country_event theocracy.1 = {
 				}
 				
 				add_corruption = -1.5
-				custom_tooltip = es_theocracy.1.b.tooltip
 				add_devotion = -15
 				add_legitimacy = -15
 			}

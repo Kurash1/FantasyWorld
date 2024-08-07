@@ -1,3 +1,0 @@
-foreach <key> in <enumerable> {
-    
-}

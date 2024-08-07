@@ -1,27 +1,3 @@
-new government_reform tier_2_wolf_army = {
-	name = "Wolf Army"
-	icon = skjoralmor_army
-	potential = {
-		has_reform = tier_2_wolf_army
-	}
-	modifier = {
-		movement_speed = 0.1
-		infantry_shock = 0.15
-		army_line = 1
-	}
-}
-new government_reform tier_2_gjukars_legacy = {
-	name = "Gjukar's Legacy"
-	icon = legacy_of_gjukar
-	potential = {
-		has_reform = tier_2_gjukars_legacy
-	}
-	modifier = {
-		infantry_power = 0.10
-		shock_damage = 0.10
-		discipline = 0.05
-	}
-}
 new government_reform tier_2_conscription = {
 	name = "Conscription"
 	desc = ""
@@ -57,19 +33,6 @@ new government_reform tier_2_mercenaries = {
 		merc_maintenance_modifier = -0.10
 	}
 }
-new government_reform tier_2_warriors = {
-	name = "Warriors Estate"
-	desc = ""
-	icon = "champion"
-	allow_normal_conversion = yes
-	potential = {
-		has_estate = estate_warriors
-	}
-	modifiers = {
-		warriors_loyalty_modifier = 0.1
-		warriors_privilege_slots = 1
-	}
-}
 new government_reform tier_2_professional_army = {
 	name = "Professional Army"
 	desc = ""
@@ -79,65 +42,6 @@ new government_reform tier_2_professional_army = {
 		drill_gain_modifier = 0.35
 		drill_decay_modifier = -0.25
 		yearly_army_professionalism = 0.0025
-	}
-}
-new government_mechanic peasant_army_mechanic = {
-	name = "Raise Peasant Army"
-	alert_icon_gfx = GFX_alerticons_government_mechanics
-	alert_icon_index = 10
-	interactions = {
-		peasant_army_button = {
-			name = "Raise Peasant Army"
-			desc = ""
-			gui = {
-				size = { x = 345 y = 50 }
-				moveable = 0
-
-				# Interaction button, graphics replaced from the interaction icon specification
-				guiButtonType = {
-					name = "government_interaction_button"
-					quadTextureSprite = "GFX_tourism_increase_button"
-					buttonFont = "vic_18"
-					clicksound = back_click
-				}
-			}
-			trigger = {
-				is_in_war = {
-					defender_leader = ROOT
-				}
-				any_owned_province = {
-					NOT = { 
-						controlled_by = ROOT 
-					}
-				}
-			}
-			effect = {
-				random_owned_province = {
-					limit = {
-						NOT = {
-							controlled_by = ROOT
-						}
-					}
-					spawn_rebels = {
-						type = anti_tax_rebels
-						size = 10
-					}
-				}
-			}
-			cooldown_years = 25
-		}
-	}
-}
-new government_reform tier_2_peasant_army = {
-	name = "Peasant Army"
-	desc = ""
-	icon = "fist_in_air"
-	allow_normal_conversion = yes
-	modifiers = {
-		global_manpower_modifier = 0.25
-	}
-	government_abilities = {
-		peasant_army_mechanic
 	}
 }
 special_units:musketeer:name := "Battlemage"
