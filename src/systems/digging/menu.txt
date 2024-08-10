@@ -225,52 +225,18 @@ new custom_button dig_button = {
 			calculate_dig_cost
 			calculate_dig_time
 			
-			remove_local_time_modifier
+			adjust_local_time_modifier
+			adjust_local_cost_modifier
 		}
 		
-		if [&dig_time < 1.001] {
-			add_building_construction = {
-				building = digging_operations
-				speed = 1
-			}
-		}
-		for i as 2 to 50 {
-			else_if [&dig_time < (i + 0.001)] {
-				add_building_construction = {
-					building = digging_operations
-					speed = i
-				}
-			}
-		}
-		else {
-			add_building_construction = {
-				building = digging_operations
-				speed = 50
-			}
+		add_building_construction = {
+			building = digging_operations
+			speed = 1
 		}
 		
-		new_custom_tooltip = "Canceling a digging operation does not refund it's cost.
-	You will spend: §Y[dig_cost.GetValue]§! Ducats"
 		hidden_effect = {
-			&temp := dig_cost
-			while [&temp >= 1000] {
-				&temp -= 1000
-				FROM->add_treasury = -1000
-			}
-			while [&temp >= 10] {
-				&temp -= 10
-				FROM->add_treasury = -10
-			}
-			while [&temp >= 0.1] {
-				&temp -= 0.1
-				FROM->add_treasury = -0.1
-			}
-			while [&temp >= 0.001] {
-				&temp -= 0.001
-				FROM->add_treasury = -0.001
-			}
-			
 			clear_local_time_modifier
+			clear_local_cost_modifier
 		}
 	}
 }
@@ -294,7 +260,7 @@ Time:
 new building digging_operations = {
 	name = "Digging Operations"
 	desc = ""
-	cost = 0
+	cost = 1
 	time = 12
 	on_built = {
 		&dig_level += 1
@@ -362,26 +328,45 @@ new script_variable dig_progress = {
 }
 
 new named_effect clear_local_time_modifier = {
-	for i as 12 to 0 {
+	for i as 15 to -1 {
 		remove_province_modifier = `DLTM_{i}`
+	}
+	for i as 12 to -1 {
 		remove_province_modifier = `DLTM_m{i}`
 	}
 }
-new named_effect remove_local_time_modifier = {
-	&temp &= modifier:local_build_time
-	&temp_2 &= {
+new named_effect adjust_local_time_modifier = {
+	&temp_2 &= modifier:local_build_time
+	&temp &= {
 		value = modifier:build_time
 		who = owner
 	}
-	&temp += temp_2
+	&temp_2 += temp
+	&temp := dig_time
+	&temp -= temp_2
+	&temp -= 1
 	
 	if [&temp >= 0.001] {
-		for i as 12 to -1 {
+		for i as 15 to -1 {
 			if [&temp >= (0.001 * (2 ^ i))] {
 				&temp -= (0.001 * (2 ^ i))
 				quick_province_modifier = {
 					name = "DLTM {i}"
 					id = `DLTM_{i}`
+					modifier = {
+						local_build_time = (0.001 * (2 ^ i))
+					}
+				}
+			}
+		}
+	}
+	else_if [&temp < 0] {
+		for i as 12 to -1 {
+			if [&temp <= (-0.001 * (2 ^ i))] {
+				&temp += (0.001 * (2 ^ i))
+				quick_province_modifier = {
+					name = "DLTM -{i}"
+					id = `DLTM_m{i}`
 					modifier = {
 						local_build_time = (-0.001 * (2 ^ i))
 					}
@@ -389,15 +374,49 @@ new named_effect remove_local_time_modifier = {
 			}
 		}
 	}
+}
+new named_effect clear_local_cost_modifier = {
+	for i as 28 to -1 {
+		remove_province_modifier = `DLCM_{i}`
+	}
+	for i as 12 to -1 {
+		remove_province_modifier = `DLCM_m{i}`
+	}
+}
+new named_effect adjust_local_cost_modifier = {
+	&temp_2 &= modifier:local_build_cost
+	&temp &= {
+		value = modifier:build_cost
+		who = owner
+	}
+	&temp_2 += temp
+	&temp := dig_cost
+	&temp -= temp_2
+	&temp -= 1
+	
+	if [&temp >= 0.001] {
+		for i as 28 to -1 {
+			if [&temp >= (0.001 * (2 ^ i))] {
+				&temp -= (0.001 * (2 ^ i))
+				quick_province_modifier = {
+					name = "DLCM {i}"
+					id = `DLCM_{i}`
+					modifier = {
+						local_build_cost = (0.001 * (2 ^ i))
+					}
+				}
+			}
+		}
+	}
 	else_if [&temp < 0] {
-		for i as 12 to 0 {
+		for i as 12 to -1 {
 			if [&temp <= (-0.001 * (2 ^ i))] {
 				&temp += (0.001 * (2 ^ i))
 				quick_province_modifier = {
-					name = "DLTM -{i}"
-					id = `DLTM_m{i}`
+					name = "DLCM -{i}"
+					id = `DLCM_m{i}`
 					modifier = {
-						local_build_time = (0.001 * (2 ^ i))
+						local_build_cost = (-0.001 * (2 ^ i))
 					}
 				}
 			}
@@ -443,7 +462,7 @@ new named_effect calculate_dig_time = {
 	}
 	&dig_total_speed := var_dig_speed
 	
-	&var_build_time &= modifier:local_build_cost
+	&var_build_time &= modifier:local_build_time
 	&temp &= {
 		value = modifier:build_time
 		who = owner
