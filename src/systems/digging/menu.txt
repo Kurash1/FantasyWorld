@@ -1,0 +1,486 @@
+new named_ui_node dig_menu = interface_files:provinceview:provinceview:province_window
+dig_menu += {
+	iconType = {
+		name = "dig_background"
+		spriteType = "diggydiggyestimate"
+		position = { x = 54 y = -27 }
+		Orientation = "UPPER_LEFT"
+		scripted = yes
+	}
+	guiButtonType = {
+		name = "dig_button"
+		position = { x = 60 y = -20 }
+		quadTextureSprite = "diggydiggygo"
+		scripted = yes
+	}
+	iconType = {
+		name = "dig_bar"
+		spriteType = "GFX_provinceView_progressbar"
+		position = { x = 155 y = -16 }
+		Orientation = "UPPER_LEFT"
+		scripted = yes
+	}
+
+	instantTextBoxType = {
+		name = "dig_cost_text"
+		position = { x= 65 y = 8 }
+		borderSize = {x = 2 y = 2}
+		alwaystransparent = yes
+		scripted = yes
+	}
+	instantTextBoxType = {
+		name = "dig_cost_value"
+		position = { x= 90 y = 8 }
+		borderSize = {x = 2 y = 2}
+		format = centre
+		alwaystransparent = yes
+		scripted = yes
+	}
+
+	instantTextBoxType = {
+		name = "dig_time_text"
+		position = { x= 65 y = 32 }
+		borderSize = {x = 2 y = 2}
+		alwaystransparent = yes
+		scripted = yes
+	}
+	instantTextBoxType = {
+		name = "dig_time_value"
+		position = { x= 90 y = 32 }
+		borderSize = {x = 2 y = 2}
+		format = centre
+		alwaystransparent = yes
+		scripted = yes
+	}
+}
+
+new event_modifier dig_0 = {
+	name = "Surface Settlement"
+	desc = "The surface-level area, with structures and settlements built directly on the ground. It features minimal underground infrastructure, if any."
+	modifier = {
+		local_development_cost = -10%
+	}
+}
+new event_modifier dig_1 = {
+	name = "Shallow Settlement"
+	desc = "This settlement starts just beneath the surface, with construction slightly underground. The infrastructure is modest, with a few stories below ground, primarily extending into shallow rock layers."
+	modifier = {
+		local_development_cost = -60%
+		
+		dig_scaled = 1
+	}
+}
+new event_modifier dig_2 = {
+	name = "Subterranean Settlement"
+	desc = "The settlement extends further underground, establishing a more extensive network of rooms and tunnels. It represents a classic underground city, integrating deeper rock formations into its layout."
+	modifier = {
+		local_development_cost = -170%
+		
+		dig_scaled = 2
+	}
+}
+new event_modifier dig_3 = {
+	name = "Cavernous Settlement"
+	desc = "The settlement begins to intersect with natural caverns, opening up larger spaces within the rock. This level incorporates these natural formations into its design, expanding the settlement’s capacity and complexity."
+	modifier = {
+		local_development_cost = -295%
+		
+		dig_scaled = 3
+	}
+}
+new event_modifier dig_4 = {
+	name = "Expansive Settlement"
+	desc = "Further expansion into the caverns allows for additional carved structures and extensive underground architecture. The settlement’s network becomes more intricate, blending seamlessly with the cavern systems."
+	modifier = {
+		local_development_cost = -450%
+		
+		dig_scaled = 4
+	}
+}
+new event_modifier dig_5 = {
+	name = "Multi-Layered Settlement"
+	desc = "The settlement develops multiple interconnected levels, with staircases, lifts, and tunnels linking various floors. The infrastructure becomes more elaborate, resembling a tiered city within the earth."
+	modifier = {
+		local_development_cost = -650%
+		
+		dig_scaled = 5
+	}
+}
+new event_modifier dig_6 = {
+	name = "Labyrinthine Settlement"
+	desc = "The settlement grows increasingly complex, with a maze-like network of passages and chambers. Navigation through the settlement becomes challenging due to its intricate and sprawling design."
+	modifier = {
+		local_development_cost = -865%
+		
+		dig_scaled = 6
+	}
+}
+new event_modifier dig_7 = {
+	name = "Abyssal Settlement"
+	desc = "The depth of the settlement reaches significant levels, with deeper, more enigmatic sections becoming accessible. The environment grows darker and more mysterious, with some parts unexplored."
+	modifier = {
+		local_development_cost = -1110%
+		
+		dig_scaled = 7
+	}
+}
+new event_modifier dig_8 = {
+	name = "Nightshade Settlement"
+	desc = "This settlement reaches such depths that natural light is no longer visible. The settlement relies on artificial or magical illumination, creating a shadowy and foreboding atmosphere."
+	modifier = {
+		local_development_cost = -1400%
+		
+		dig_scaled = 8
+	}
+}
+new event_modifier dig_9 = {
+	name = "Blackstone Settlement"
+	desc = "The settlement now delves into rare blackstone, a unique and durable material found deep underground. The structures are reinforced with this material, enhancing the settlement’s strength and resilience."
+	modifier = {
+		local_development_cost = -1705%
+		
+		dig_scaled = 9
+	}
+}
+new event_modifier dig_10 = {
+	name = "Inferno Settlement"
+	desc = "The settlement approaches regions where geothermal heat is noticeable. Some areas are extremely hot, with magma flows and heated rock influencing the design and environment."
+	modifier = {
+		local_development_cost = -2040%
+		
+		dig_scaled = 10
+	}
+}
+new event_modifier dig_11 = {
+	name = "Molten Settlement"
+	desc = "The settlement integrates magma into its infrastructure, using it for energy and forging. The environment is hostile and requires advanced protection to manage the intense heat and volcanic activity."
+	modifier = {
+		local_development_cost = -2420%
+		
+		dig_scaled = 11
+	}
+}
+new event_modifier dig_12 = {
+	name = "Core Settlement"
+	desc = "Reaching near the planet’s core, this level experiences intense geothermal heat and pressure. The settlement’s architecture adapts to these extreme conditions, with glowing walls and heat-resistant materials."
+	modifier = {
+		local_development_cost = -2815%
+		
+		dig_scaled = 12
+	}
+}
+new event_modifier dig_13 = {
+	name = "Radiant Settlement"
+	desc = "The proximity to the core creates a radiant glow throughout the settlement. The environment is both wondrous and perilous, with heat and energy harnessed for various purposes."
+	modifier = {
+		local_development_cost = -3240%
+		
+		dig_scaled = 13
+	}
+}
+new event_modifier dig_14 = {
+	name = "Abyssal Reach Settlement"
+	desc = "At this depth, the settlement nears the boundary between the material plane and otherworldly realms. The surroundings are surreal, with strange phenomena and alterations in reality occurring."
+	modifier = {
+		local_development_cost = -3710%
+		
+		dig_scaled = 14
+	}
+}
+new event_modifier dig_15 = {
+	name = "Cosmic Settlement"
+	desc = "The deepest known level, where the influence of other planes is most pronounced. The settlement exhibits bizarre and alien features, with phenomena that blur the lines between the physical and the otherworldly."
+	modifier = {
+		local_development_cost = -4195%
+		
+		dig_scaled = 15
+	}
+}
+new modifier dig_scaled = {
+	args = int
+	transpile = {
+		local_defender_dice_roll_bonus = (args / 3 - ((args / 3) % 1))
+		fort_level = args
+		local_garrison_size = (args * 0.15)
+		local_garrison_damage = (args * 0.1)
+		local_defensiveness = (args * 0.4)
+		
+		local_build_time = (args * 0.1)
+		local_build_cost = (args * 0.1)
+		
+		local_state_maintenance_modifier = (args * 0.1)
+		
+		local_tax_modifier = (args * 0.1)
+		trade_goods_size = (args / 2)
+	}
+}
+
+new custom_icon dig_background = { }
+new custom_button dig_button = {
+	trigger = {
+		NOT->has_construction = any
+	}
+	effect = {
+		hidden_effect = {
+			calculate_dig_cost
+			calculate_dig_time
+			
+			remove_local_time_modifier
+		}
+		
+		if [&dig_time < 1.001] {
+			add_building_construction = {
+				building = digging_operations
+				speed = 1
+			}
+		}
+		for i as 2 to 50 {
+			else_if [&dig_time < (i + 0.001)] {
+				add_building_construction = {
+					building = digging_operations
+					speed = i
+				}
+			}
+		}
+		else {
+			add_building_construction = {
+				building = digging_operations
+				speed = 50
+			}
+		}
+		
+		new_custom_tooltip = "Canceling a digging operation does not refund it's cost.
+	You will spend: §Y[dig_cost.GetValue]§! Ducats"
+		hidden_effect = {
+			&temp := dig_cost
+			while [&temp >= 1000] {
+				&temp -= 1000
+				FROM->add_treasury = -1000
+			}
+			while [&temp >= 10] {
+				&temp -= 10
+				FROM->add_treasury = -10
+			}
+			while [&temp >= 0.1] {
+				&temp -= 0.1
+				FROM->add_treasury = -0.1
+			}
+			while [&temp >= 0.001] {
+				&temp -= 0.001
+				FROM->add_treasury = -0.001
+			}
+			
+			clear_local_time_modifier
+		}
+	}
+}
+new custom_icon dig_bar = {
+	tooltip = "Progress: [dig_progress.GetValue]
+Current Dig Level: [dig_level.GetValue]
+Cost:
+	Base Cost: [base_dig_cost.GetValue]
+	Dig Efficiency: [var_dig_efficiency.GetValue]
+	Build Cost: [var_build_cost.GetValue]
+	Total Efficiency: [dig_total_efficiency.GetValue]
+Time:
+	Base Time: [base_dig_time.GetValue]
+	Dig Speed: [var_dig_speed.GetValue]
+	Build Time: [var_build_time.GetValue]
+	Total Speed: [dig_total_speed.GetValue]
+"
+	frame_variable = dig_progress
+}
+
+new building digging_operations = {
+	name = "Digging Operations"
+	desc = ""
+	cost = 0
+	time = 12
+	on_built = {
+		&dig_level += 1
+		
+		remove_building = digging_operations
+		
+		hidden_effect = {
+			calculate_dig_cost
+			calculate_dig_time
+		}
+	}
+}
+
+new modifier_definition digging_efficiency = {
+	name = "Digging Efficiency"
+	is_percentage = yes
+	base_value = 1
+}
+new modifier_definition digging_speed = {
+	name = "Digging Speed"
+	is_percentage = yes
+	base_value = 1
+}
+new modifier_definition max_dig_level = {
+	name = "Max Dig Level"
+}
+
+new script_variable dig_cost = {
+	name = "Digging Cost"
+}
+new script_variable base_dig_cost = {
+	name = "Base Digging Cost"
+}
+new script_variable var_dig_efficiency = {
+	name = "Digging Efficiency"
+}
+new script_variable dig_total_efficiency = {
+	name = "Total Digging Efficiency"
+}
+new script_variable var_build_cost = {
+	name = "Build Cost"
+}
+
+new script_variable dig_time = {
+	name = "Digging Time"
+}
+new script_variable base_dig_time = {
+	name = "Base Digging Time"
+}
+new script_variable var_dig_speed = {
+	name = "Digging Speed"
+}
+new script_variable dig_total_speed = {
+	name = "Total Dig Speed"
+}
+new script_variable var_build_time = {
+	name = "Build Time"
+}
+
+new script_variable dig_level = {
+	name = "Dig Level"
+}
+new script_variable dig_progress = {
+	name = "Dig Progress"
+}
+
+new named_effect clear_local_time_modifier = {
+	for i as 12 to 0 {
+		remove_province_modifier = `DLTM_{i}`
+		remove_province_modifier = `DLTM_m{i}`
+	}
+}
+new named_effect remove_local_time_modifier = {
+	&temp &= modifier:local_build_time
+	&temp_2 &= {
+		value = modifier:build_time
+		who = owner
+	}
+	&temp += temp_2
+	
+	if [&temp >= 0.001] {
+		for i as 12 to -1 {
+			if [&temp >= (0.001 * (2 ^ i))] {
+				&temp -= (0.001 * (2 ^ i))
+				quick_province_modifier = {
+					name = "DLTM {i}"
+					id = `DLTM_{i}`
+					modifier = {
+						local_build_time = (-0.001 * (2 ^ i))
+					}
+				}
+			}
+		}
+	}
+	else_if [&temp < 0] {
+		for i as 12 to 0 {
+			if [&temp <= (-0.001 * (2 ^ i))] {
+				&temp += (0.001 * (2 ^ i))
+				quick_province_modifier = {
+					name = "DLTM -{i}"
+					id = `DLTM_m{i}`
+					modifier = {
+						local_build_time = (0.001 * (2 ^ i))
+					}
+				}
+			}
+		}
+	}
+}
+
+new named_effect calculate_dig_cost = {
+	&base_dig_cost := dig_level
+	&base_dig_cost += 1
+	&base_dig_cost *= 10
+	
+	&base_dig_cost *= base_dig_cost
+	
+	&var_dig_efficiency &= {
+		value = modifier:digging_efficiency
+		who = owner
+	}
+	&dig_total_efficiency := var_dig_efficiency
+	
+	&var_build_cost &= modifier:local_build_cost
+	&temp &= {
+		value = modifier:build_cost
+		who = owner
+	}
+	&var_build_cost += temp
+	&dig_total_efficiency -= var_build_cost
+	&var_build_cost += 1
+	
+	if [&dig_total_efficiency < 0.1] { &dig_total_efficiency := 0.1 }
+	
+	&dig_cost := base_dig_cost
+	&dig_cost /= dig_total_efficiency
+}
+new named_effect calculate_dig_time = {
+	&base_dig_time := dig_level
+	&base_dig_time *= 2
+	&base_dig_time += 6
+	
+	&var_dig_speed &= {
+		value = modifier:digging_speed
+		who = owner
+	}
+	&dig_total_speed := var_dig_speed
+	
+	&var_build_time &= modifier:local_build_cost
+	&temp &= {
+		value = modifier:build_time
+		who = owner
+	}
+	&var_build_time += temp
+	&dig_total_speed -= var_build_time
+	&var_build_time += 1
+	
+	if [&dig_total_speed < 0.1] { &dig_total_speed := 0.1 }
+	
+	&dig_time := base_dig_time
+	&dig_time /= dig_total_speed
+	
+	if [&dig_time >= 50] { &dig_time := 50 }
+}
+new named_effect calculate_dig_progress = {
+	&dig_progress &= trigger_value:construction_progress
+}
+on_actions:on_monthly_pulse += {
+	if [ai = no] { #this is purely visual
+		every_owned_province [always = yes] {
+			calculate_dig_cost
+			calculate_dig_time
+			calculate_dig_progress
+		}
+	}
+}
+
+new custom_text_box dig_cost_text = {
+	name = "Total Cost:"
+}
+new custom_text_box dig_cost_value = {
+	name = "[dig_cost.GetValue]"
+}
+new custom_text_box dig_time_text = {
+	name = "Total Time:"
+}
+new custom_text_box dig_time_value = {
+	name = "[This.dig_time.GetValue]"
+}
