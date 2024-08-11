@@ -1,5 +1,10 @@
 spriteTypes = {
 	spriteType = { 
+		name = "GFX_dig_images" 
+		texturefile = "gfx/special/GFX_dig_images.dds"
+		noOfFrames = 16
+	}
+	spriteType = { 
 		name = "GFX_expedition_icon_strip" 
 		texturefile = "gfx/special/expedition_icon_strip.dds"
 		noOfFrames = 16

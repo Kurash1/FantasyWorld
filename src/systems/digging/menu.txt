@@ -1,199 +1,84 @@
 new named_ui_node dig_menu = interface_files:provinceview:provinceview:province_window
 dig_menu += {
-	iconType = {
-		name = "dig_background"
-		spriteType = "diggydiggyestimate"
-		position = { x = 54 y = -27 }
-		Orientation = "UPPER_LEFT"
+	windowType = {
+		name = "digging_window"
+		position = { x = 0 y = 0 }
 		scripted = yes
+		
+		iconType = {
+			name = "dig_terrain_background"
+			spriteType = "GFX_dig_images"
+			position = { x = 58 y = -23 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
+		iconType = {
+			name = "dig_background"
+			spriteType = "dig_window"
+			position = { x = 58 y = -25 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
+		guiButtonType = {
+			name = "dig_button"
+			position = { x = 60 y = 30 }
+			quadTextureSprite = "diggydiggygo"
+			scripted = yes
+		}
+		iconType = {
+			name = "dig_level_back"
+			position = { x = 60 y = -20 }
+			spriteType = "dig_text_back"
+		}
+		instantTextBoxType = {
 	}
-	guiButtonType = {
-		name = "dig_button"
-		position = { x = 60 y = -20 }
-		quadTextureSprite = "diggydiggygo"
-		scripted = yes
-	}
-	iconType = {
-		name = "dig_bar"
-		spriteType = "GFX_provinceView_progressbar"
-		position = { x = 155 y = -16 }
-		Orientation = "UPPER_LEFT"
-		scripted = yes
-	}
-
-	instantTextBoxType = {
-		name = "dig_cost_text"
-		position = { x= 65 y = 8 }
-		borderSize = {x = 2 y = 2}
-		alwaystransparent = yes
-		scripted = yes
-	}
-	instantTextBoxType = {
-		name = "dig_cost_value"
-		position = { x= 90 y = 8 }
-		borderSize = {x = 2 y = 2}
-		format = centre
-		alwaystransparent = yes
-		scripted = yes
-	}
-
-	instantTextBoxType = {
-		name = "dig_time_text"
-		position = { x= 65 y = 32 }
-		borderSize = {x = 2 y = 2}
-		alwaystransparent = yes
-		scripted = yes
-	}
-	instantTextBoxType = {
-		name = "dig_time_value"
-		position = { x= 90 y = 32 }
-		borderSize = {x = 2 y = 2}
-		format = centre
-		alwaystransparent = yes
+		name = "dig_level_text"
+		position = { x = 62 y = -18 }
+		maxWidth = 180
+		maxHeight = 18
 		scripted = yes
 	}
 }
 
-new event_modifier dig_0 = {
-	name = "Surface Settlement"
-	desc = "The surface-level area, with structures and settlements built directly on the ground. It features minimal underground infrastructure, if any."
-	modifier = {
-		local_development_cost = -10%
+new customizable_localization GetDigName = { }
+new customizable_localization GetDigDesc = { }
+new customizable_localization GetDigModifier = { }
+new class dig_level = {
+	list = dig_levels
+	args = {
+		name = string
+		desc = string
+		modifier = named_modifier
 	}
-}
-new event_modifier dig_1 = {
-	name = "Shallow Settlement"
-	desc = "This settlement starts just beneath the surface, with construction slightly underground. The infrastructure is modest, with a few stories below ground, primarily extending into shallow rock layers."
-	modifier = {
-		local_development_cost = -60%
-		
-		dig_scaled = 1
-	}
-}
-new event_modifier dig_2 = {
-	name = "Subterranean Settlement"
-	desc = "The settlement extends further underground, establishing a more extensive network of rooms and tunnels. It represents a classic underground city, integrating deeper rock formations into its layout."
-	modifier = {
-		local_development_cost = -170%
-		
-		dig_scaled = 2
-	}
-}
-new event_modifier dig_3 = {
-	name = "Cavernous Settlement"
-	desc = "The settlement begins to intersect with natural caverns, opening up larger spaces within the rock. This level incorporates these natural formations into its design, expanding the settlement’s capacity and complexity."
-	modifier = {
-		local_development_cost = -295%
-		
-		dig_scaled = 3
-	}
-}
-new event_modifier dig_4 = {
-	name = "Expansive Settlement"
-	desc = "Further expansion into the caverns allows for additional carved structures and extensive underground architecture. The settlement’s network becomes more intricate, blending seamlessly with the cavern systems."
-	modifier = {
-		local_development_cost = -450%
-		
-		dig_scaled = 4
-	}
-}
-new event_modifier dig_5 = {
-	name = "Multi-Layered Settlement"
-	desc = "The settlement develops multiple interconnected levels, with staircases, lifts, and tunnels linking various floors. The infrastructure becomes more elaborate, resembling a tiered city within the earth."
-	modifier = {
-		local_development_cost = -650%
-		
-		dig_scaled = 5
-	}
-}
-new event_modifier dig_6 = {
-	name = "Labyrinthine Settlement"
-	desc = "The settlement grows increasingly complex, with a maze-like network of passages and chambers. Navigation through the settlement becomes challenging due to its intricate and sprawling design."
-	modifier = {
-		local_development_cost = -865%
-		
-		dig_scaled = 6
-	}
-}
-new event_modifier dig_7 = {
-	name = "Abyssal Settlement"
-	desc = "The depth of the settlement reaches significant levels, with deeper, more enigmatic sections becoming accessible. The environment grows darker and more mysterious, with some parts unexplored."
-	modifier = {
-		local_development_cost = -1110%
-		
-		dig_scaled = 7
-	}
-}
-new event_modifier dig_8 = {
-	name = "Nightshade Settlement"
-	desc = "This settlement reaches such depths that natural light is no longer visible. The settlement relies on artificial or magical illumination, creating a shadowy and foreboding atmosphere."
-	modifier = {
-		local_development_cost = -1400%
-		
-		dig_scaled = 8
-	}
-}
-new event_modifier dig_9 = {
-	name = "Blackstone Settlement"
-	desc = "The settlement now delves into rare blackstone, a unique and durable material found deep underground. The structures are reinforced with this material, enhancing the settlement’s strength and resilience."
-	modifier = {
-		local_development_cost = -1705%
-		
-		dig_scaled = 9
-	}
-}
-new event_modifier dig_10 = {
-	name = "Inferno Settlement"
-	desc = "The settlement approaches regions where geothermal heat is noticeable. Some areas are extremely hot, with magma flows and heated rock influencing the design and environment."
-	modifier = {
-		local_development_cost = -2040%
-		
-		dig_scaled = 10
-	}
-}
-new event_modifier dig_11 = {
-	name = "Molten Settlement"
-	desc = "The settlement integrates magma into its infrastructure, using it for energy and forging. The environment is hostile and requires advanced protection to manage the intense heat and volcanic activity."
-	modifier = {
-		local_development_cost = -2420%
-		
-		dig_scaled = 11
-	}
-}
-new event_modifier dig_12 = {
-	name = "Core Settlement"
-	desc = "Reaching near the planet’s core, this level experiences intense geothermal heat and pressure. The settlement’s architecture adapts to these extreme conditions, with glowing walls and heat-resistant materials."
-	modifier = {
-		local_development_cost = -2815%
-		
-		dig_scaled = 12
-	}
-}
-new event_modifier dig_13 = {
-	name = "Radiant Settlement"
-	desc = "The proximity to the core creates a radiant glow throughout the settlement. The environment is both wondrous and perilous, with heat and energy harnessed for various purposes."
-	modifier = {
-		local_development_cost = -3240%
-		
-		dig_scaled = 13
-	}
-}
-new event_modifier dig_14 = {
-	name = "Abyssal Reach Settlement"
-	desc = "At this depth, the settlement nears the boundary between the material plane and otherworldly realms. The surroundings are surreal, with strange phenomena and alterations in reality occurring."
-	modifier = {
-		local_development_cost = -3710%
-		
-		dig_scaled = 14
-	}
-}
-new event_modifier dig_15 = {
-	name = "Cosmic Settlement"
-	desc = "The deepest known level, where the influence of other planes is most pronounced. The settlement exhibits bizarre and alien features, with phenomena that blur the lines between the physical and the otherworldly."
-	modifier = {
-		local_development_cost = -4195%
-		
-		dig_scaled = 15
+	on_create = {
+		customizable_localizations:GetDigName:texts += {
+			{
+				text = "{this:name}"
+				trigger =* {
+					&dig_level == *this:id*
+				}
+			}
+		}
+		customizable_localizations:GetDigDesc:texts += {
+			{
+				text = "{this:desc}"
+				trigger =* {
+					&dig_level == *this:id*
+				}
+			}
+		}
+		customizable_localizations:GetDigModifier:texts += {
+			{
+				text = "{modifier_to_string = this:modifier}"
+				trigger =* {
+					&dig_level == *this:id*
+				}
+			}
+		}
+		new event_modifier `dig_{this:id}` = {
+			name = "Dig Level: {this:id}"
+			modifier = this:modifier
+		}
 	}
 }
 new modifier dig_scaled = {
@@ -214,11 +99,181 @@ new modifier dig_scaled = {
 		trade_goods_size = (args / 2)
 	}
 }
+new dig_level 0 = {
+	name = "Surface Settlement"
+	desc = "The surface-level area, with structures and settlements built directly on the ground. It features minimal underground infrastructure, if any."
+	modifier = { }
+}
+new dig_level 1 = {
+	name = "Shallow Settlement"
+	desc = "This settlement starts just beneath the surface, with construction slightly underground. The infrastructure is modest, with a few stories below ground, primarily extending into shallow rock layers."
+	modifier = {
+		local_development_cost = -60%
+		
+		dig_scaled = 1
+	}
+}
+new dig_level 2 = {
+	name = "Subterranean Settlement"
+	desc = "The settlement extends further underground, establishing a more extensive network of rooms and tunnels. It represents a classic underground city, integrating deeper rock formations into its layout."
+	modifier = {
+		local_development_cost = -170%
+		
+		dig_scaled = 2
+	}
+}
+new dig_level 3 = {
+	name = "Cavernous Settlement"
+	desc = "The settlement begins to intersect with natural caverns, opening up larger spaces within the rock. This level incorporates these natural formations into its design, expanding the settlement’s capacity and complexity."
+	modifier = {
+		local_development_cost = -295%
+		
+		dig_scaled = 3
+	}
+}
+new dig_level 4 = {
+	name = "Expansive Settlement"
+	desc = "Further expansion into the caverns allows for additional carved structures and extensive underground architecture. The settlement’s network becomes more intricate, blending seamlessly with the cavern systems."
+	modifier = {
+		local_development_cost = -450%
+		
+		dig_scaled = 4
+	}
+}
+new dig_level 5 = {
+	name = "Multi-Layered Settlement"
+	desc = "The settlement develops multiple interconnected levels, with staircases, lifts, and tunnels linking various floors. The infrastructure becomes more elaborate, resembling a tiered city within the earth."
+	modifier = {
+		local_development_cost = -650%
+		
+		dig_scaled = 5
+	}
+}
+new dig_level 6 = {
+	name = "Labyrinthine Settlement"
+	desc = "The settlement grows increasingly complex, with a maze-like network of passages and chambers. Navigation through the settlement becomes challenging due to its intricate and sprawling design."
+	modifier = {
+		local_development_cost = -865%
+		
+		dig_scaled = 6
+	}
+}
+new dig_level 7 = {
+	name = "Abyssal Settlement"
+	desc = "The depth of the settlement reaches significant levels, with deeper, more enigmatic sections becoming accessible. The environment grows darker and more mysterious, with some parts unexplored."
+	modifier = {
+		local_development_cost = -1110%
+		
+		dig_scaled = 7
+	}
+}
+new dig_level 8 = {
+	name = "Nightshade Settlement"
+	desc = "This settlement reaches such depths that natural light is no longer visible. The settlement relies on artificial or magical illumination, creating a shadowy and foreboding atmosphere."
+	modifier = {
+		local_development_cost = -1400%
+		
+		dig_scaled = 8
+	}
+}
+new dig_level 9 = {
+	name = "Blackstone Settlement"
+	desc = "The settlement now delves into rare blackstone, a unique and durable material found deep underground. The structures are reinforced with this material, enhancing the settlement’s strength and resilience."
+	modifier = {
+		local_development_cost = -1705%
+		
+		dig_scaled = 9
+	}
+}
+new dig_level 10 = {
+	name = "Inferno Settlement"
+	desc = "The settlement approaches regions where geothermal heat is noticeable. Some areas are extremely hot, with magma flows and heated rock influencing the design and environment."
+	modifier = {
+		local_development_cost = -2040%
+		
+		dig_scaled = 10
+	}
+}
+new dig_level 11 = {
+	name = "Molten Settlement"
+	desc = "The settlement integrates magma into its infrastructure, using it for energy and forging. The environment is hostile and requires advanced protection to manage the intense heat and volcanic activity."
+	modifier = {
+		local_development_cost = -2420%
+		
+		dig_scaled = 11
+	}
+}
+new dig_level 12 = {
+	name = "Core Settlement"
+	desc = "Reaching near the planet’s core, this level experiences intense geothermal heat and pressure. The settlement’s architecture adapts to these extreme conditions, with glowing walls and heat-resistant materials."
+	modifier = {
+		local_development_cost = -2815%
+		
+		dig_scaled = 12
+	}
+}
+new dig_level 13 = {
+	name = "Radiant Settlement"
+	desc = "The proximity to the core creates a radiant glow throughout the settlement. The environment is both wondrous and perilous, with heat and energy harnessed for various purposes."
+	modifier = {
+		local_development_cost = -3240%
+		
+		dig_scaled = 13
+	}
+}
+new dig_level 14 = {
+	name = "Abyssal Reach Settlement"
+	desc = "At this depth, the settlement nears the boundary between the material plane and otherworldly realms. The surroundings are surreal, with strange phenomena and alterations in reality occurring."
+	modifier = {
+		local_development_cost = -3710%
+		
+		dig_scaled = 14
+	}
+}
+new dig_level 15 = {
+	name = "Cosmic Settlement"
+	desc = "The deepest known level, where the influence of other planes is most pronounced. The settlement exhibits bizarre and alien features, with phenomena that blur the lines between the physical and the otherworldly."
+	modifier = {
+		local_development_cost = -4195%
+		
+		dig_scaled = 15
+	}
+}
 
-new custom_icon dig_background = { }
+new custom_window digging_window = {
+	potential = {
+		has_dig_site
+	}
+}
+new custom_icon dig_background = {
+	tooltip = "Dig Level: §Y[dig_level.GetValue]§!
+[GetDigModifier]"
+}
+new custom_icon dig_terrain_background = {
+	frame_variable = dig_level_image
+}
+new custom_text_box dig_level_text = {
+	name = "[dig_level.GetValue]: [GetDigName]"
+	tooltip = "[GetDigDesc]"
+}
 new custom_button dig_button = {
+	potential = {
+		NOT->has_construction = digging_operations
+	}
 	trigger = {
 		NOT->has_construction = any
+		for i as 0 to 15 {
+			if [has_province_modifier = `dig_{i}`] {
+				development = (i * 10 + 30)
+				custom_trigger_tooltip = {
+					new_tooltip = "Have at least §G{(i + 1)}§! Max Dig Level"
+					owner->has_global_modifier_value = {
+						which = max_dig_level
+						value = (i + 1)
+					}
+				}
+			}
+		}
 	}
 	effect = {
 		hidden_effect = {
@@ -240,30 +295,14 @@ new custom_button dig_button = {
 		}
 	}
 }
-new custom_icon dig_bar = {
-	tooltip = "Progress: [dig_progress.GetValue]
-Current Dig Level: [dig_level.GetValue]
-Cost:
-	Base Cost: [base_dig_cost.GetValue]
-	Dig Efficiency: [var_dig_efficiency.GetValue]
-	Build Cost: [var_build_cost.GetValue]
-	Total Efficiency: [dig_total_efficiency.GetValue]
-Time:
-	Base Time: [base_dig_time.GetValue]
-	Dig Speed: [var_dig_speed.GetValue]
-	Build Time: [var_build_time.GetValue]
-	Total Speed: [dig_total_speed.GetValue]
-"
-	frame_variable = dig_progress
-}
 
 new building digging_operations = {
 	name = "Digging Operations"
 	desc = ""
 	cost = 1
-	time = 12
+	time = 1
 	on_built = {
-		&dig_level += 1
+		add_dig_level = 1
 		
 		remove_building = digging_operations
 		
@@ -323,8 +362,8 @@ new script_variable var_build_time = {
 new script_variable dig_level = {
 	name = "Dig Level"
 }
-new script_variable dig_progress = {
-	name = "Dig Progress"
+new script_variable dig_level_image = {
+	name = "Dig Level"
 }
 
 new named_effect clear_local_time_modifier = {
@@ -424,6 +463,27 @@ new named_effect adjust_local_cost_modifier = {
 	}
 }
 
+new effect add_dig_level = {
+	args = int
+	transpile = {
+		&dig_level += args
+		hidden_effect = {
+			&dig_level_image += args
+			
+			for i as 0 to 16 {
+				remove_province_modifier = `dig_{i}`
+				if [&dig_level == i] {
+					add_permanent_province_modifier = {
+						name = `dig_{i}`
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+}
+
 new named_effect calculate_dig_cost = {
 	&base_dig_cost := dig_level
 	&base_dig_cost += 1
@@ -478,28 +538,21 @@ new named_effect calculate_dig_time = {
 	
 	if [&dig_time >= 50] { &dig_time := 50 }
 }
-new named_effect calculate_dig_progress = {
-	&dig_progress &= trigger_value:construction_progress
-}
-on_actions:on_monthly_pulse += {
-	if [ai = no] { #this is purely visual
-		every_owned_province [always = yes] {
-			calculate_dig_cost
-			calculate_dig_time
-			calculate_dig_progress
-		}
-	}
+
+new named_trigger has_dig_site = {
+	has_province_flag = dig_site
 }
 
-new custom_text_box dig_cost_text = {
-	name = "Total Cost:"
-}
-new custom_text_box dig_cost_value = {
-	name = "[dig_cost.GetValue]"
-}
-new custom_text_box dig_time_text = {
-	name = "Total Time:"
-}
-new custom_text_box dig_time_value = {
-	name = "[This.dig_time.GetValue]"
+on_actions:on_startup += {
+	every_owned_province [has_dig_site] {
+		if [&dig_level < 1] {
+			&dig_level := 0
+			&dig_level_image := 1
+			add_permanent_province_modifier = {
+				name = dig_0
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
 }
