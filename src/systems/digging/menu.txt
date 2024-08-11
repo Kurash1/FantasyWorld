@@ -31,12 +31,12 @@ dig_menu += {
 			spriteType = "dig_text_back"
 		}
 		instantTextBoxType = {
-	}
-		name = "dig_level_text"
-		position = { x = 62 y = -18 }
-		maxWidth = 180
-		maxHeight = 18
-		scripted = yes
+			name = "dig_level_text"
+			position = { x = 62 y = -18 }
+			maxWidth = 180
+			maxHeight = 18
+			scripted = yes
+		}
 	}
 }
 
