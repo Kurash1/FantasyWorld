@@ -6,7 +6,7 @@ new owned_province_modifier montane_ideas_prospectors =  {
 		local_development_cost = -0.1
 	}
 }
-new owned_province_modifier montane_ideas_mines =  {
+new owned_province_modifier montane_ideas_mines = {
 	name = "Expansion of Mines"
 	trigger_tooltip = "with a Mine"
 	building = mine_manufactory

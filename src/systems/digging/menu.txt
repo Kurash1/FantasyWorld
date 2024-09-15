@@ -276,26 +276,52 @@ new custom_button dig_button = {
 		}
 	}
 	effect = {
+		province_event = digging.1
+	}
+}
+
+new province_event digging.1 = {
+	title = "Digging Operations"
+	desc = "Current Dig Level: [dig_level.GetValue]
+Base Cost: §Y[base_dig_cost.GetValue]§! Dig Efficiency: §Y[var_dig_efficiency.GetValue]§! Build Cost: §Y[var_build_cost.GetValue]§! Total Efficiency: §Y[dig_total_efficiency.GetValue]§!
+Base Time: §Y[base_dig_time.GetValue]§! Dig Speed: §Y[var_dig_speed.GetValue]§! Build Time: §Y[var_build_time.GetValue]§! Total Speed: §Y[dig_total_speed.GetValue]§!"
+	picture = dwarven_desk_eventPicture
+	immediate = {
 		hidden_effect = {
 			calculate_dig_cost
 			calculate_dig_time
-			
-			adjust_local_time_modifier
-			adjust_local_cost_modifier
 		}
-		
-		add_building_construction = {
-			building = digging_operations
-			speed = 1
-		}
-		
+	}
+	after = {
 		hidden_effect = {
 			clear_local_time_modifier
 			clear_local_cost_modifier
 		}
 	}
+	options = {
+		{
+			name = "Diggy Diggy Hole!"
+			effect = {
+				hidden_effect = {
+					adjust_local_time_modifier
+					adjust_local_cost_modifier
+					
+					add_building_construction = {
+						building = digging_operations
+						speed = 1
+					}
+				}
+				new_custom_tooltip = "This dig will cost §Y[dig_cost.GetValue]§! ducats, and take §Y[dig_time.GetValue]§! years to complete."
+			}
+		}
+		{
+			name = "On second thought."
+			effect = {
+				new_custom_tooltip = "You do not go ahead with the Digging Operations."
+			}
+		}
+	}
 }
-
 new building digging_operations = {
 	name = "Digging Operations"
 	desc = ""
@@ -305,11 +331,6 @@ new building digging_operations = {
 		add_dig_level = 1
 		
 		remove_building = digging_operations
-		
-		hidden_effect = {
-			calculate_dig_cost
-			calculate_dig_time
-		}
 	}
 }
 

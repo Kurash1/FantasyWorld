@@ -1,0 +1,51 @@
+new inheritable hobgoblin_province = {
+	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	history = {
+	}
+}
+new province hobgoblin_1 = {
+    inherit = hobgoblin_province
+    color = { 114 216 182 }
+    name = "Hobgoblin 1"
+    history = {
+        history_trade_goods = grain
+    }
+}
+
+new province hobgoblin_2 = {
+    inherit = hobgoblin_province
+    color = { 233 132 205 }
+    name = "Hobgoblin 2"
+    history = {
+        history_trade_goods = grain
+    }
+}
+
+new province hobgoblin_3 = {
+    inherit = hobgoblin_province
+    color = { 197 199 123 }
+    name = "Hobgoblin 3"
+    history = {
+        history_trade_goods = grain
+    }
+}
+
+new province hobgoblin_4 = {
+    inherit = hobgoblin_province
+    color = { 121 209 191 }
+    name = "Hobgoblin 4"
+    history = {
+        history_trade_goods = grain
+    }
+}
+
+new province hobgoblin_5 = {
+    inherit = hobgoblin_province
+    color = { 166 164 251 }
+    name = "Hobgoblin 5"
+    history = {
+        history_trade_goods = grain
+    }
+}
