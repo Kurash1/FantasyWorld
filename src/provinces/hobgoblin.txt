@@ -49,3 +49,15 @@ new province hobgoblin_5 = {
         history_trade_goods = grain
     }
 }
+new province hobgoblin_6 = {
+    inherit = hobgoblin_province
+    color = { 209 244 162 }
+    name = "hobgoblin 6"
+}
+new province hobgoblin_7 = {
+    inherit = hobgoblin_province
+    color = { 221 249 109 }
+    name = "hobgoblin 7"
+}
+
+
