@@ -59,5 +59,15 @@ new province hobgoblin_7 = {
     color = { 221 249 109 }
     name = "hobgoblin 7"
 }
+new province hobgoblin_8 = {
+    inherit = hobgoblin_province
+    color = { 163 224 127 }
+    name = "hobgoblin 8"
+}
 
+new province hobgoblin_9 = {
+    inherit = hobgoblin_province
+    color = { 159 134 218 }
+    name = "hobgoblin 9"
+}
 
