@@ -110,4 +110,45 @@ new province hobgoblin_16 = {
     color = { 163 195 145 }
     name = "hobgoblin 16"
 }
+new province hobgoblin_17 = {
+    inherit = hobgoblin_province
+    color = { 120 250 102 }
+    name = "hobgoblin 17"
+}
+
+new province hobgoblin_18 = {
+    inherit = hobgoblin_province
+    color = { 195 195 219 }
+    name = "hobgoblin 18"
+}
+
+new province hobgoblin_19 = {
+    inherit = hobgoblin_province
+    color = { 127 162 173 }
+    name = "hobgoblin 19"
+}
+
+new province hobgoblin_20 = {
+    inherit = hobgoblin_province
+    color = { 170 123 157 }
+    name = "hobgoblin 20"
+}
+
+new province hobgoblin_21 = {
+    inherit = hobgoblin_province
+    color = { 113 201 189 }
+    name = "hobgoblin 21"
+}
+
+new province hobgoblin_22 = {
+    inherit = hobgoblin_province
+    color = { 167 127 111 }
+    name = "hobgoblin 22"
+}
+
+new province hobgoblin_23 = {
+    inherit = hobgoblin_province
+    color = { 191 211 212 }
+    name = "hobgoblin 23"
+}
 
