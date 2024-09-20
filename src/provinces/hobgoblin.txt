@@ -223,5 +223,136 @@ new province hobgoblin_35 = {
     color = { 130 105 186 }
     name = "hobgoblin 35"
 }
+new province hobgoblin_36 = {
+    inherit = hobgoblin_province
+    color = { 139 163 191 }
+    name = "hobgoblin 36"
+}
+
+new province hobgoblin_37 = {
+    inherit = hobgoblin_province
+    color = { 231 166 202 }
+    name = "hobgoblin 37"
+}
+
+new province hobgoblin_38 = {
+    inherit = hobgoblin_province
+    color = { 250 142 251 }
+    name = "hobgoblin 38"
+}
+
+new province hobgoblin_39 = {
+    inherit = hobgoblin_province
+    color = { 189 107 108 }
+    name = "hobgoblin 39"
+}
+
+new province hobgoblin_40 = {
+    inherit = hobgoblin_province
+    color = { 135 229 235 }
+    name = "hobgoblin 40"
+}
+
+new province hobgoblin_41 = {
+    inherit = hobgoblin_province
+    color = { 165 254 219 }
+    name = "hobgoblin 41"
+}
+
+new province hobgoblin_42 = {
+    inherit = hobgoblin_province
+    color = { 183 159 113 }
+    name = "hobgoblin 42"
+}
+
+new province hobgoblin_43 = {
+    inherit = hobgoblin_province
+    color = { 213 196 220 }
+    name = "hobgoblin 43"
+}
+
+new province hobgoblin_44 = {
+    inherit = hobgoblin_province
+    color = { 109 110 244 }
+    name = "hobgoblin 44"
+}
+
+new province hobgoblin_45 = {
+    inherit = hobgoblin_province
+    color = { 140 162 156 }
+    name = "hobgoblin 45"
+}
+
+new province hobgoblin_46 = {
+    inherit = hobgoblin_province
+    color = { 240 250 245 }
+    name = "hobgoblin 46"
+}
+
+new province hobgoblin_47 = {
+    inherit = hobgoblin_province
+    color = { 154 233 147 }
+    name = "hobgoblin 47"
+}
+
+new province hobgoblin_48 = {
+    inherit = hobgoblin_province
+    color = { 241 110 182 }
+    name = "hobgoblin 48"
+}
+
+new province hobgoblin_49 = {
+    inherit = hobgoblin_province
+    color = { 202 219 131 }
+    name = "hobgoblin 49"
+}
+
+new province hobgoblin_50 = {
+    inherit = hobgoblin_province
+    color = { 176 238 130 }
+    name = "hobgoblin 50"
+}
+
+new province hobgoblin_51 = {
+    inherit = hobgoblin_province
+    color = { 232 123 146 }
+    name = "hobgoblin 51"
+}
+
+new province hobgoblin_52 = {
+    inherit = hobgoblin_province
+    color = { 137 132 206 }
+    name = "hobgoblin 52"
+}
+
+new province hobgoblin_53 = {
+    inherit = hobgoblin_province
+    color = { 168 121 177 }
+    name = "hobgoblin 53"
+}
+
+new province hobgoblin_54 = {
+    inherit = hobgoblin_province
+    color = { 245 153 132 }
+    name = "hobgoblin 54"
+}
+
+new province hobgoblin_55 = {
+    inherit = hobgoblin_province
+    color = { 122 166 135 }
+    name = "hobgoblin 55"
+}
+
+new province hobgoblin_56 = {
+    inherit = hobgoblin_province
+    color = { 252 129 143 }
+    name = "hobgoblin 56"
+}
+
+new province hobgoblin_57 = {
+    inherit = hobgoblin_province
+    color = { 141 244 176 }
+    name = "hobgoblin 57"
+}
 
 
