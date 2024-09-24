@@ -1775,7 +1775,7 @@ new country jojoland = {
 	}
 	graphical_culture = westerngfx
 	monarch_names = {
-		"Joseph" = 10
+		"Jos" = 10
 		"Jonathan" = 10
 		"Jolyne" = 10
 		"Josuke" = 10
