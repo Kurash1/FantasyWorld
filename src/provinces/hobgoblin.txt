@@ -299,6 +299,7 @@ new province hobgoblin_48 = {
     inherit = hobgoblin_province
     color = { 241 110 182 }
     name = "hobgoblin 48"
+    terrain = hills
 }
 
 new province hobgoblin_49 = {
@@ -355,4 +356,8 @@ new province hobgoblin_57 = {
     name = "hobgoblin 57"
 }
 
-
+new province hobgoblin_58 = {
+    inherit = hobgoblin_province
+    color = { 204 142 138 }
+    name = "hobgoblin 58"
+}
