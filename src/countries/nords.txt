@@ -1802,5 +1802,4 @@ new country jojoland = {
      
 	}
 	capital = hobgoblin_50
-	
 }
