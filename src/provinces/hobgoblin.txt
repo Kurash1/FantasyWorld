@@ -5,6 +5,7 @@ new inheritable hobgoblin_province = {
 	history = {
 	}
 }
+
 new province hobgoblin_1 = {
     inherit = hobgoblin_province
     color = { 114 216 182 }

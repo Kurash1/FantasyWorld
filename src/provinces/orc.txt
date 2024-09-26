@@ -1,0 +1,68 @@
+new inheritable orc_province = {
+	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	history = {
+	}
+}
+
+new province orc_1 = {
+    inherit = orc_province
+    color = { 133 145 151 }
+    name = "orc 1"
+}
+
+new province orc_2 = {
+    inherit = orc_province
+    color = { 187 207 204 }
+    name = "orc 2"
+}
+
+new province orc_3 = {
+    inherit = orc_province
+    color = { 219 174 131 }
+    name = "orc 3"
+}
+
+new province orc_4 = {
+    inherit = orc_province
+    color = { 222 202 139 }
+    name = "orc 4"
+}
+
+new province orc_5 = {
+    inherit = orc_province
+    color = { 212 211 203 }
+    name = "orc 5"
+}
+
+new province orc_6 = {
+    inherit = orc_province
+    color = { 182 126 164 }
+    name = "orc 6"
+}
+
+new province orc_7 = {
+    inherit = orc_province
+    color = { 162 108 134 }
+    name = "orc 7"
+}
+
+new province orc_8 = {
+    inherit = orc_province
+    color = { 182 228 253 }
+    name = "orc 8"
+}
+
+new province orc_9 = {
+    inherit = orc_province
+    color = { 115 130 230 }
+    name = "orc 9"
+}
+
+new province orc_10 = {
+    inherit = orc_province
+    color = { 157 145 149 }
+    name = "orc 10"
+}
+
