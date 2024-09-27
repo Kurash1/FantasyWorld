@@ -8,61 +8,69 @@ new inheritable orc_province = {
 
 new province orc_1 = {
     inherit = orc_province
-    color = { 133 145 151 }
+    color = { 190 220 144 }
     name = "orc 1"
 }
 
 new province orc_2 = {
     inherit = orc_province
-    color = { 187 207 204 }
+    color = { 110 173 242 }
     name = "orc 2"
 }
 
 new province orc_3 = {
     inherit = orc_province
-    color = { 219 174 131 }
+    color = { 194 193 207 }
     name = "orc 3"
 }
 
 new province orc_4 = {
     inherit = orc_province
-    color = { 222 202 139 }
+    color = { 119 131 134 }
     name = "orc 4"
 }
 
 new province orc_5 = {
     inherit = orc_province
-    color = { 212 211 203 }
+    color = { 114 187 187 }
     name = "orc 5"
 }
 
 new province orc_6 = {
     inherit = orc_province
-    color = { 182 126 164 }
+    color = { 210 113 245 }
     name = "orc 6"
 }
 
 new province orc_7 = {
     inherit = orc_province
-    color = { 162 108 134 }
+    color = { 170 124 169 }
     name = "orc 7"
 }
 
 new province orc_8 = {
     inherit = orc_province
-    color = { 182 228 253 }
+    color = { 184 122 148 }
     name = "orc 8"
 }
 
 new province orc_9 = {
     inherit = orc_province
-    color = { 115 130 230 }
+    color = { 207 168 230 }
     name = "orc 9"
 }
 
 new province orc_10 = {
     inherit = orc_province
-    color = { 157 145 149 }
+    color = { 131 255 191 }
     name = "orc 10"
 }
+
+new province orc_11 = {
+    inherit = orc_province
+    color = { 233 160 110 }
+    name = "orc 11"
+}
+
+
 
