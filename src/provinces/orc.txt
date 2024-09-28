@@ -36,12 +36,6 @@ new province orc_5 = {
     name = "orc 5"
 }
 
-new province orc_6 = {
-    inherit = orc_province
-    color = { 210 113 245 }
-    name = "orc 6"
-}
-
 new province orc_7 = {
     inherit = orc_province
     color = { 170 124 169 }
