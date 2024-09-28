@@ -72,5 +72,128 @@ new province orc_11 = {
     name = "orc 11"
 }
 
+new province orc_12 = {
+    inherit = orc_province
+    color = { 231 149 149 }
+    name = "orc 12"
+}
+
+new province orc_13 = {
+    inherit = orc_province
+    color = { 154 238 171 }
+    name = "orc 13"
+}
+
+new province orc_14 = {
+    inherit = orc_province
+    color = { 150 163 195 }
+    name = "orc 14"
+}
+
+new province orc_15 = {
+    inherit = orc_province
+    color = { 137 191 209 }
+    name = "orc 15"
+}
+
+new province orc_16 = {
+    inherit = orc_province
+    color = { 122 217 122 }
+    name = "orc 16"
+}
+
+new province orc_17 = {
+    inherit = orc_province
+    color = { 226 147 137 }
+    name = "orc 17"
+}
+
+new province orc_18 = {
+    inherit = orc_province
+    color = { 241 119 185 }
+    name = "orc 18"
+}
+
+new province orc_19 = {
+    inherit = orc_province
+    color = { 148 224 209 }
+    name = "orc 19"
+}
+
+new province orc_20 = {
+    inherit = orc_province
+    color = { 246 237 235 }
+    name = "orc 20"
+}
+
+new province orc_21 = {
+    inherit = orc_province
+    color = { 194 132 173 }
+    name = "orc 21"
+}
+
+new province orc_22 = {
+    inherit = orc_province
+    color = { 201 253 245 }
+    name = "orc 22"
+}
+
+new province orc_23 = {
+    inherit = orc_province
+    color = { 249 133 176 }
+    name = "orc 23"
+}
+
+new province orc_24 = {
+    inherit = orc_province
+    color = { 159 180 136 }
+    name = "orc 24"
+}
+
+new province orc_25 = {
+    inherit = orc_province
+    color = { 227 203 124 }
+    name = "orc 25"
+}
+
+new province orc_26 = {
+    inherit = orc_province
+    color = { 215 218 143 }
+    name = "orc 26"
+}
+
+new province orc_27 = {
+    inherit = orc_province
+    color = { 138 118 125 }
+    name = "orc 27"
+}
+
+new province orc_28 = {
+    inherit = orc_province
+    color = { 148 191 127 }
+    name = "orc 28"
+}
+
+new province orc_29 = {
+    inherit = orc_province
+    color = { 100 255 153 }
+    name = "orc 29"
+}
+
+new province orc_30 = {
+    inherit = orc_province
+    color = { 197 107 225 }
+    name = "orc 30"
+}
+
+new province orc_31 = {
+    inherit = orc_province
+    color = { 181 157 239 }
+    name = "orc 31"
+}
+
+
+
+
 
 
