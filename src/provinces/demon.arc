@@ -66,12 +66,6 @@ new province demon_10 = {
     name = "demon 10"
 }
 
-new province demon_11 = {
-    inherit = demon_province
-    color = { 141 116 105 }
-    name = "demon 11"
-}
-
 new province demon_12 = {
     inherit = demon_province
     color = { 168 198 255 }
@@ -114,12 +108,6 @@ new province demon_18 = {
     name = "demon 18"
 }
 
-new province demon_19 = {
-    inherit = demon_province
-    color = { 138 201 220 }
-    name = "demon 19"
-}
- 
 new province demon_20 = {
     inherit = demon_province
     color = { 161 153 232 }
@@ -132,34 +120,16 @@ new province demon_21 = {
     name = "demon 21"
 }
 
-new province demon_22 = {
-    inherit = demon_province
-    color = { 205 228 168 }
-    name = "demon 22"
-}
-
 new province demon_23 = {
     inherit = demon_province
     color = { 254 152 142 }
     name = "demon 23"
 }
 
-new province demon_24 = {
-    inherit = demon_province
-    color = { 224 255 195 }
-    name = "demon 24"
-}
-
 new province demon_25 = {
     inherit = demon_province
     color = { 113 248 158 }
     name = "demon 25"
-}
-
-new province demon_26 = {
-    inherit = demon_province
-    color = { 198 195 186 }
-    name = "demon 26"
 }
 
 new province demon_27 = {
@@ -172,18 +142,6 @@ new province demon_28 = {
     inherit = demon_province
     color = { 190 152 188 }
     name = "demon 28"
-}
-
-new province demon_29 = {
-    inherit = demon_province
-    color = { 238 197 253 }
-    name = "demon 29"
-}
-
-new province demon_30 = {
-    inherit = demon_province
-    color = { 201 225 153 }
-    name = "demon 30"
 }
 
 new province demon_31 = {
@@ -250,6 +208,144 @@ new province demon_41 = {
     inherit = demon_province
     color = { 169 196 230 }
     name = "demon 41"
+}
+
+new province demon_42 = {
+    inherit = demon_province
+    color = { 214 254 201 }
+    name = "demon 42"
+}
+
+new province demon_43 = {
+    inherit = demon_province
+    color = { 228 212 182 }
+    name = "demon 43"
+}
+
+new province demon_44 = {
+    inherit = demon_province
+    color = { 147 238 109 }
+    name = "demon 44"
+}
+
+new province demon_45 = {
+    inherit = demon_province
+    color = { 224 205 117 }
+    name = "demon 45"
+}
+
+new province demon_46 = {
+    inherit = demon_province
+    color = { 178 220 111 }
+    name = "demon 46"
+}
+
+new province demon_47 = {
+    inherit = demon_province
+    color = { 210 213 202 }
+    name = "demon 47"
+}
+
+new province demon_48 = {
+    inherit = demon_province
+    color = { 116 176 231 }
+    name = "demon 48"
+}
+
+new province demon_49 = {
+    inherit = demon_province
+    color = { 252 224 101 }
+    name = "demon 49"
+}
+
+new province demon_50 = {
+    inherit = demon_province
+    color = { 119 159 117 }
+    name = "demon 50"
+}
+
+new province demon_51 = {
+    inherit = demon_province
+    color = { 187 150 173 }
+    name = "demon 51"
+}
+
+new province demon_52 = {
+    inherit = demon_province
+    color = { 255 255 230 }
+    name = "demon 52"
+}
+
+new province demon_53 = {
+    inherit = demon_province
+    color = { 217 181 166 }
+    name = "demon 53"
+}
+
+new province demon_54 = {
+    inherit = demon_province
+    color = { 166 113 142 }
+    name = "demon 54"
+}
+
+new province demon_55 = {
+    inherit = demon_province
+    color = { 241 177 223 }
+    name = "demon 55"
+}
+
+new province demon_56 = {
+    inherit = demon_province
+    color = { 143 120 230 }
+    name = "demon 56"
+}
+
+new province demon_57 = {
+    inherit = demon_province
+    color = { 144 194 198 }
+    name = "demon 57"
+}
+
+new province demon_58 = {
+    inherit = demon_province
+    color = { 131 194 122 }
+    name = "demon 58"
+}
+
+new province demon_59 = {
+    inherit = demon_province
+    color = { 192 102 157 }
+    name = "demon 59"
+}
+
+new province demon_60 = {
+    inherit = demon_province
+    color = { 173 233 177 }
+    name = "demon 60"
+}
+
+new province demon_61 = {
+    inherit = demon_province
+    color = { 104 191 178 }
+    name = "demon 61"
+}
+
+new province demon_62 = {
+    inherit = demon_province
+    color = { 137 193 218 }
+    name = "demon 62"
+}
+
+new province demon_63 = {
+    inherit = demon_province
+    color = { 239 167 144 }
+    name = "demon 63"
+}
+
+new province demon_64 = {
+    inherit = demon_province
+    color = { 155 248 109 }
+    name = "demon 64"
 }
 
 
