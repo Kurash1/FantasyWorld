@@ -348,4 +348,19 @@ new province demon_64 = {
     name = "demon 64"
 }
 
+new province demon_65 = {
+    inherit = demon_province
+    color = { 161 249 148 }
+    name = "demon 65"
+}
+
+new province demon_66 = {
+    inherit = demon_province
+    color = { 112 141 172 }
+    name = "demon 66"
+}
+
+
+
+
 
