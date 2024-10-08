@@ -27,21 +27,21 @@
 		
 		(plug-in-normalmap
 			RUN-NONINTERACTIVE
-			image
-			drawable
-			0
-			0
-			50
-			1
-			0
-			0
-			0
-			0
-			0
-			1
-			0
-			0
-			drawable
+			image				
+			drawable			
+			0					
+			0					
+			50					
+			1					
+			0					
+			0					
+			0					
+			0					
+			0					
+			1					
+			0					
+			0					
+			drawable			
 		)
 		
 		(gimp-file-save RUN-NONINTERACTIVE image drawable outputname outputname)
