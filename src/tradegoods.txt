@@ -74,7 +74,10 @@ new tradegood grain = {
 }
 new tradegood alcohol = {
 	name = "Alcohol"
-	desc = "Alcohols come in four main forms. Those would be beer that is brewed out of grains, spirits often distilled out of a variety of fruits or grains, wine fermented out of grapes, berries or honey, in the latter case it would be named mead then, or liquor which is fruit juice with a spirit to make it slightly alcoholic. Alcohol is mostly handed out in taverns but also finds a role in many a temple for liturgical purposes." #Wine "Believed to be first fermented by elves, wine is a very luxurious product that saw its peak in popularity during the height of the gnomish empire. Most often wine is made from grapes but can also be made from berries. The beverage the giants of the north and the elves call mead is also among them." #Beer "The oldest form of alcholic beverage. Beer is made out of malted grain and hop and can be found readily in taverns all over the eastern half of the continent. The dwarves in the west near the dragon empire are however also known to greatly enjoy beer. In fact it is believed that they are the original inventors of beer." #Spirits "A most potent form of alcholic beverage that is distilled out of some form of fruit. Spirits are a relatively new invention compared to other alcoholic beverages and are only drunken in small quantities. They are also known to be quite expensive."
+	desc = "Alcohols come in four main forms. Those would be beer that is brewed out of grains, spirits often distilled out of a variety of fruits or grains, wine fermented out of grapes, berries or honey, in the latter case it would be named mead then, or liquor which is fruit juice with a spirit to make it slightly alcoholic. Alcohol is mostly handed out in taverns but also finds a role in many a temple for liturgical purposes."
+	#Wine "Believed to be first fermented by elves, wine is a very luxurious product that saw its peak in popularity during the height of the gnomish empire. Most often wine is made from grapes but can also be made from berries. The beverage the giants of the north and the elves call mead is also among them."
+	#Beer "The oldest form of alcholic beverage. Beer is made out of malted grain and hop and can be found readily in taverns all over the eastern half of the continent. The dwarves in the west near the dragon empire are however also known to greatly enjoy beer. In fact it is believed that they are the original inventors of beer."
+	#Spirits "A most potent form of alcholic beverage that is distilled out of some form of fruit. Spirits are a relatively new invention compared to other alcoholic beverages and are only drunken in small quantities. They are also known to be quite expensive."
 	color = {
 		227 238 75
 	}
@@ -92,7 +95,9 @@ new tradegood alcohol = {
 }
 new tradegood paper = {
 	name = "Paper"
-	desc = "Paper is a rare commodity but very important for the production of codices, scrolls, and many different informative commodities. It can either be produced out of rags which is the more common form or out of processed wood or weed." #Parchment "like paper it is used for writing purposes mainly but it is produced out of animal hides." #Papyrus "Papyrus played a big role in ancient times as it was a readily aviable writing material, that could be easily produced out of the papyrus plant. Especially in desert environments many papyri with intact writing can still be found to this day. The usage of Papyrus however has dropped significantly since the start of the medieval period when parchment and the rare paper started to slowly take its place."
+	desc = "Paper is a rare commodity but very important for the production of codices, scrolls, and many different informative commodities. It can either be produced out of rags which is the more common form or out of processed wood or weed."
+	#Parchment "like paper it is used for writing purposes mainly but it is produced out of animal hides."
+	#Papyrus "Papyrus played a big role in ancient times as it was a readily aviable writing material, that could be easily produced out of the papyrus plant. Especially in desert environments many papyri with intact writing can still be found to this day. The usage of Papyrus however has dropped significantly since the start of the medieval period when parchment and the rare paper started to slowly take its place."
 	color = {
 		240 255 172
 	}
@@ -155,7 +160,8 @@ new tradegood potions = {
 }
 new tradegood stone = {
 	name = "Stone"
-	desc = "Stones form the base of most construction in the world and come in so many different varieties that it would be hard to list them all. It can be seen in so many buidings all over the world. Especially more sturdy buildings such as fortification or temples are often constructed out of solid rock." #Bricks "Where the absence of good rock for buildings is noted often bricks come to use. Although bricks have to be first made out of mud or clay they are a useful building material as they are easily stackable and can be burnt in large furnances in great quantities or dried under the sun in more arid areas."
+	desc = "Stones form the base of most construction in the world and come in so many different varieties that it would be hard to list them all. It can be seen in so many buidings all over the world. Especially more sturdy buildings such as fortification or temples are often constructed out of solid rock."
+	#Bricks "Where the absence of good rock for buildings is noted often bricks come to use. Although bricks have to be first made out of mud or clay they are a useful building material as they are easily stackable and can be burnt in large furnances in great quantities or dried under the sun in more arid areas."
 	color = {
 		185 185 185
 	}
@@ -212,7 +218,8 @@ new tradegood gems = {
 }
 new tradegood gold = {
 	name = "Gold"
-	desc = "Basis of all currency and of jewellery and ornamentation. Even though gold actually has no real practical purpose, it is still greatly sought after just because people think it is very valuable. Gold is often greedily mined as it means that the owner of the mine or gold wash will soon be a very rich person." #Platinum "Even more valuable than gold and still rather unknown in many places of the world. Platinum makes only the finest coinage and jewellery that even many wealthy people may struggle to afford. Most people have not even ever seen a platinum coin in their entire life time."
+	desc = "Basis of all currency and of jewellery and ornamentation. Even though gold actually has no real practical purpose, it is still greatly sought after just because people think it is very valuable. Gold is often greedily mined as it means that the owner of the mine or gold wash will soon be a very rich person."
+	#Platinum "Even more valuable than gold and still rather unknown in many places of the world. Platinum makes only the finest coinage and jewellery that even many wealthy people may struggle to afford. Most people have not even ever seen a platinum coin in their entire life time."
 	color = {
 		196 215 26
 	}
@@ -238,7 +245,8 @@ new tradegood gold = {
 }
 new tradegood silver = {
 	name = "Silver"
-	desc = "Unlike gold silver actually comes with practical utilisations beyond currency and jewellery as it is used in fighting the forces of evil as well as many liturgical rituals. Therefore it is used in many weapons and often enchanted to fight ghosts, apparitions, werecreatures, demons and the such. However unlike gold silver can oxidize and must therefore be smelted out of its ore giving it an additional refinement step." #Electrum "Electrum is a naturally occuring ally out of gold and silver that the first coins were minted out of. However due to the great span of mixtures possible and the possibility of it being diluted with copper it fell out of fashion pretty quickly. Nowadays it is sparsely used in jewellery or reluctantly in coinage if there is no other source of coin metal aviable."
+	desc = "Unlike gold silver actually comes with practical utilisations beyond currency and jewellery as it is used in fighting the forces of evil as well as many liturgical rituals. Therefore it is used in many weapons and often enchanted to fight ghosts, apparitions, werecreatures, demons and the such. However unlike gold silver can oxidize and must therefore be smelted out of its ore giving it an additional refinement step."
+	#Electrum "Electrum is a naturally occuring ally out of gold and silver that the first coins were minted out of. However due to the great span of mixtures possible and the possibility of it being diluted with copper it fell out of fashion pretty quickly. Nowadays it is sparsely used in jewellery or reluctantly in coinage if there is no other source of coin metal aviable."
 	color = {
 		205 205 205
 	}
@@ -265,7 +273,7 @@ new tradegood silver = {
 }
 new tradegood ebony = {
 	name = "God's Blood"
-	desc = ""
+	desc = "The Sword-Valley has been fought over for milennia by various forces, and much blood has been shed, even divine blood. The blood of the gods descended from heaven is a supernatural substance that can be used for alchemical purposes or to smith great artifacts."
 	color = {
 		38 38 38
 	}
@@ -283,7 +291,10 @@ new tradegood ebony = {
 }
 new tradegood c_metals = {
 	name = "Mundane Ores"
-	desc = "These metals make up the more common metals of the world. Purposes range a lot by whatever metal it exactly is however." #copper "Copper is the earliest discovered metal and is used for roofs of many temples and churches but its true main purpose lays in the creation of bronze. For this process tin is also required and makes both metals to a far hardier alloy then either one of them alone could be. #Iron "Master of all metals iron became the replacement of bronze after its discovery and realisation of how to smelt it out of its ore. Iron is nowadays used in mainly tools, weapons and armour. It is therefore often associated with war gods in many cultures and the red ore it forms is a further symnbolism to this connection." #Zinc "Zinc is a metal mostly used in conjuction with copper for the creation of brass. Beyond that no other purposes are known." 
+	desc = "These metals make up the more common metals of the world. Purposes range a lot by whatever metal it exactly is however."
+	#copper "Copper is the earliest discovered metal and is used for roofs of many temples and churches but its true main purpose lays in the creation of bronze. For this process tin is also required and makes both metals to a far hardier alloy then either one of them alone could be.
+	#Iron "Master of all metals iron became the replacement of bronze after its discovery and realisation of how to smelt it out of its ore. Iron is nowadays used in mainly tools, weapons and armour. It is therefore often associated with war gods in many cultures and the red ore it forms is a further symnbolism to this connection."
+	#Zinc "Zinc is a metal mostly used in conjuction with copper for the creation of brass. Beyond that no other purposes are known." 
 	color = {
 		204 153 51
 	}
@@ -311,7 +322,11 @@ new tradegood c_metals = {
 }
 new tradegood r_metals = {
 	name = "Rare Ores"
-	desc = "These ores are truely the rarest known ores in the world. Finding them is like finding a treasure and assures a lucrative business to whoever owns such a mine." #Lead "An arcane metal that is highly resistant to all forms of magic and is therefore sought out by many important people. Lead is also used in many official religious documents where it stands in contrast to the gold used in wordly documents for a seal. These seals also known as bulls are highly respected and certify that any provided document is surely legitimate." #Tin "A very important metal as it is both used in the appropiately named tinkering and the creation of bronze. It is not as much in use as before the discovery of iron anymore but still in relatively high demand." #Antimony "The most religious of all metals antimony is exclusively used for relics and artefacts. It is a most holy of metals even outshining things such as silver and therefore a highly demanded commodity by the clergy of any given people." #Cinnabar "Quicksilver or mercury is a strange metal as it is the only metal known to be liquid. While solid in its ore state known as cinnabar once it is smelted it turns liquid instantly and stays that way even when cooled down. It is unknown whether mercury even has a solid state at all. Usages are rare however as an alchemical ingredient it is however demanded quite a bit. Ancient people believed for example that this metal could make them immortal even though it is actually quite toxic and will likely kill you as we now know. Contemporary alchemists however believe that it is the primordial metal from which all other metals were created and therefore could still be created."
+	desc = "These ores are truely the rarest known ores in the world. Finding them is like finding a treasure and assures a lucrative business to whoever owns such a mine."
+	#Lead "An arcane metal that is highly resistant to all forms of magic and is therefore sought out by many important people. Lead is also used in many official religious documents where it stands in contrast to the gold used in wordly documents for a seal. These seals also known as bulls are highly respected and certify that any provided document is surely legitimate."
+	#Tin "A very important metal as it is both used in the appropiately named tinkering and the creation of bronze. It is not as much in use as before the discovery of iron anymore but still in relatively high demand."
+	#Antimony "The most religious of all metals antimony is exclusively used for relics and artefacts. It is a most holy of metals even outshining things such as silver and therefore a highly demanded commodity by the clergy of any given people."
+	#Cinnabar "Quicksilver or mercury is a strange metal as it is the only metal known to be liquid. While solid in its ore state known as cinnabar once it is smelted it turns liquid instantly and stays that way even when cooled down. It is unknown whether mercury even has a solid state at all. Usages are rare however as an alchemical ingredient it is however demanded quite a bit. Ancient people believed for example that this metal could make them immortal even though it is actually quite toxic and will likely kill you as we now know. Contemporary alchemists however believe that it is the primordial metal from which all other metals were created and therefore could still be created."
 	color = {
 		34 191 149
 	}
