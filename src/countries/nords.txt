@@ -1801,5 +1801,5 @@ new country jojoland = {
 		}
      
 	}
-	capital = hobgoblin_50
+	capital = durmathak
 }

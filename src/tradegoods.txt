@@ -264,7 +264,7 @@ new tradegood silver = {
 	}
 }
 new tradegood ebony = {
-	name = "Ebony"
+	name = "Gods Blood"
 	desc = "One of the most precious minerals upon Nirn, it is largely found in Vvardenfell but deposits have been found in Solstheim, Skyrim, Cyrodiil, and even High Rock. Ebony is an extremely durable, hard, black-like substance. Also known as Godsblood, it is common belief that it is the crystallized blood of gods or a god, particularly Lorkhan. Ebony is essential to the creation of Daedric weapons and armour."
 	color = {
 		38 38 38
