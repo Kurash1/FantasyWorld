@@ -1,0 +1,17 @@
+new religion red_code = {
+	name = "Red Code"
+	desc = "The Red Code is the main religion among hobgoblins, rooted in their origins as an esoteric tribe of goblins who valued strategic prowess, discipline, and intellect. The faith’s inception can be traced back to a pivotal pact made between the ancient dwarves and the goblins during the exodus from the Sword-Valley. The dwarves provided weapons, armor, and sustenance, while the goblins undertook the formidable task of battling the orcish hordes in the Sword-Valley. Their success in carving out a portion of this contested land drew the attention of a wandering war god, who chose to bless them with enhanced physical attributes and a new identity as hobgoblins. This divine patron, revered as the supreme symbol of war and strategy, infused their culture with a profound reverence for martial discipline and tactical acumen. The Red Code thus emerged as a synthesis of the hobgoblins’ original esoteric beliefs and their new martial focus, emphasizing the dual values of strategic mastery and unwavering dedication to their war god. This religion governs their societal norms, guiding their martial endeavors and reinforcing their commitment to both intellectual and physical excellence in warfare."
+	icon = 1
+	color = {
+		189 8 8
+	}
+	heretic = {
+		OLD_GODS_CULT_HERETIC
+	}
+	country = {
+		discipline = 0.05
+		global_unrest = -1
+	}
+	province = { }
+	religious_group = goblin_group
+}

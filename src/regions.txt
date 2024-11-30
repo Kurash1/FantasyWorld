@@ -2,6 +2,14 @@ new region black_mountain = {
 	name = "Black Mountain"
 	superregion = black_mountain
 }
+new region ivin = {
+	name = "Ivin River"
+	superregion = sword_valley
+}
+new region ziren = {
+	name = "Ziren River"
+	superregion = sword_valley
+}
 new region eastmarch = {
 	name = "Eastmarch"
 	superregion = skyrim

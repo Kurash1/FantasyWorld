@@ -521,6 +521,40 @@ new terrain tundra = {
 		ship_recruit_speed = 0.25
 	}
 }
+new terrain red_plains = {
+	name = "Red Plains"
+	base_development = 10
+	type = plains
+	sound_type = plains
+	movement_cost = 1.15
+	color = { 222 131 131 }
+	modifier = {
+		local_development_cost = -0.30
+		supply_limit = 35
+		local_build_cost = -0.30
+		local_build_time = -0.30
+		regiment_recruit_speed = -0.30
+		ship_recruit_speed = -0.30
+	}
+}
+new terrain red_hills = {
+	name = "Red Hills"
+	base_development = 8
+	type = hills
+	sound_type = mountain
+	defence = 1
+	local_defensiveness = 0.15
+	movement_cost = 1.35
+	color = { 99 20 20 }
+	modifier = {
+		local_development_cost = -0.1
+		supply_limit = 30
+		local_build_cost = -0.1
+		local_build_time = -0.1
+		regiment_recruit_speed = -0.10
+		ship_recruit_speed = -0.10
+	}
+}
 terrain_declarations := {
 	grasslands = {
 		type = grasslands

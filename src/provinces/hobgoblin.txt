@@ -3,64 +3,70 @@ new inheritable hobgoblin_province = {
 	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
 	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
 	history = {
-		religion = red_oath
+		religion = red_code
 		culture = hobgoblin
 	}
 }
 
+new area dorn = {
+	name = "Dorn"
+	region = ivin
+}
 new province kriklax_mine = {
     inherit = hobgoblin_province
     color = { 114 216 182 }
     name = "Kriklax Mine"
+	terrain = red_hills
+	area = dorn
     history += {
         history_trade_goods = c_metals
 		history_owner = tyrren
     }
 }
-
 new province shyrlan_hills = {
     inherit = hobgoblin_province
     color = { 233 132 205 }
     name = "Shyrlan Hills"
+	terrain = red_hills
+	area = dorn
     history += {
         history_trade_goods = stone
 		history_owner = tyrren
     }
 }
-
 new province dornkeep = {
     inherit = hobgoblin_province
     color = { 197 199 123 }
     name = "Dornkeep"
+	terrain = red_plains
+	area = dorn
     history += {
         history_trade_goods = arms
 		history_owner = tyrren
     }
 }
-
-new province antvill = {
-    inherit = hobgoblin_province
-    color = { 121 209 191 }
-    name = "Antvill"
-	history += {
-        history_trade_goods = grain
-		history_owner = tyrren
-    }
-}
-
 new province koroan_cave = {
     inherit = hobgoblin_province
     color = { 166 164 251 }
     name = "Koroan Cave"
+	terrain = red_hills
+	area = dorn
 	history += {
         history_trade_goods = c_metals
 		history_owner = tyrren
     }
 }
+
+new area ivin = {
+	name = "Ivin"
+	region = ivin
+}
 new province inirsarm = {
     inherit = hobgoblin_province
     color = { 209 244 162 }
     name = "Inirsarm"
+	terrain = red_hills
+	area = ivin
 	history += {
 		history_trade_goods = grain
 		history_owner = ivin
@@ -70,6 +76,8 @@ new province ivinfiel = {
     inherit = hobgoblin_province
     color = { 221 249 109 }
     name = "Ivinfiel"
+	terrain = red_plains
+	area = ivin
 	history += {
 		history_trade_goods = grain
 		history_owner = ivin
@@ -79,132 +87,219 @@ new province torsan = {
     inherit = hobgoblin_province
     color = { 163 224 127 }
     name = "Torsan"
+	terrain = red_plains
+	area = ivin
 	history += {
 		history_trade_goods = grain
 		history_owner = ivin
 	}
 }
+new province antvill = {
+    inherit = hobgoblin_province
+    color = { 121 209 191 }
+    name = "Antvill"
+	terrain = red_plains
+	area = ivin
+	history += {
+        history_trade_goods = grain
+		history_owner = tyrren
+    }
+}
 
+new area ishtor = {
+	name = "Ishtor"
+	region = ivin
+}
 new province koneax = {
     inherit = hobgoblin_province
     color = { 159 134 218 }
     name = "Koneax"
+	terrain = red_plains
+	area = ishtor
 	history += {
 		history_trade_goods = livestock
 		history_owner = ivin
 	}
 }
-
 new province ishtor_pass = {
     inherit = hobgoblin_province
     color = { 249 228 249 }
     name = "Ishtor Pass"
+	terrain = red_hills
+	area = ishtor
 	history += {
 		history_trade_goods = stone
 		history_owner = ishtor
 	}
 }
-
 new province solorn = {
     inherit = hobgoblin_province
     color = { 117 161 168 }
     name = "Solorn"
+	terrain = red_hills
+	area = ishtor
 	history += {
 		history_trade_goods = fish
 		history_owner = ivin
 	}
 }
-new province tarnkeir = {
+
+new area arkon_pass = {
+	name = "Arkon Pass"
+	region = ivin
+}
+new province tolrbech = {
     inherit = hobgoblin_province
-    color = { 201 157 243 }
-    name = "Tarnkeir"
+    color = { 170 123 157 }
+    name = "Tolrbech"
+	terrain = red_plains
+	area = arkon_pass
 	history += {
-		history_trade_goods = c_metals
-		history_owner = ivin
+		history_trade_goods = grain
+		history_owner = arkon
+	}
+}
+new province arkon_tower = {
+    inherit = hobgoblin_province
+    color = { 113 201 189 }
+    name = "Arkon Tower"
+	terrain = red_hills
+	area = arkon_pass
+	history += {
+		history_trade_goods = mag_goods
+		history_owner = arkon
+	}
+}
+new province tossvi = {
+    inherit = hobgoblin_province
+    color = { 167 127 111 }
+    name = "Tossvi"
+	terrain = red_hills
+	area = arkon_pass
+	history += {
+		history_trade_goods = grain
+		history_owner = arkon
+	}
+}
+new province shyrenk = {
+    inherit = hobgoblin_province
+    color = { 191 211 212 }
+    name = "Shyrenk"
+	terrain = red_plains
+	area = arkon_pass
+	history += {
+		history_trade_goods = livestock
+		history_owner = arkon
 	}
 }
 
-new province hobgoblin_14 = {
-    inherit = hobgoblin_province
-    color = { 100 122 208 }
-    name = "hobgoblin 14"
+new area tosher_hills = {
+	name = "Tosher Hills"
+	region = ivin
 }
-
-new province hobgoblin_15 = {
-    inherit = hobgoblin_province
-    color = { 176 231 152 }
-    name = "hobgoblin 15"
-}
-
-new province hobgoblin_16 = {
-    inherit = hobgoblin_province
-    color = { 163 195 145 }
-    name = "hobgoblin 16"
-}
-new province hobgoblin_17 = {
-    inherit = hobgoblin_province
-    color = { 120 250 102 }
-    name = "hobgoblin 17"
-}
-
 new province tyvilshen = {
     inherit = hobgoblin_province
     color = { 195 195 219 }
     name = "Tyvilshen"
+	terrain = red_plains
+	area = tosher_hills
 	history += {
 		history_trade_goods = grain
 		history_owner = ivin
 		add_core = arkon
 	}
 }
-
+new province tarnkeir = {
+    inherit = hobgoblin_province
+    color = { 201 157 243 }
+    name = "Tarnkeir"
+	terrain = red_hills
+	area = tosher_hills
+	history += {
+		history_trade_goods = c_metals
+		history_owner = ivin
+	}
+}
+new province toshion = {
+    inherit = hobgoblin_province
+    color = { 120 250 102 }
+    name = "Toshion"
+	terrain = red_hills
+	area = tosher_hills
+	history += {
+		history_trade_goods	= grain
+		history_owner = turn
+	}
+}
 new province tallkern = {
     inherit = hobgoblin_province
     color = { 127 162 173 }
     name = "Tallkern"
-	history += {
-		history_trade_goods = grain
-		history_owner = arkon
-	}
-}
-
-new province tolrbech = {
-    inherit = hobgoblin_province
-    color = { 170 123 157 }
-    name = "Tolrbech"
-	history += {
-		history_trade_goods = grain
-		history_owner = arkon
-	}
-}
-
-new province arkon_tower = {
-    inherit = hobgoblin_province
-    color = { 113 201 189 }
-    name = "Arkon Tower"
-	history += {
-		history_trade_goods = mag_goods
-		history_owner = arkon
-	}
-}
-
-new province tossvi = {
-    inherit = hobgoblin_province
-    color = { 167 127 111 }
-    name = "Tossvi"
-	history += {
-		history_trade_goods = grain
-		history_owner = arkon
-	}
-}
-
-new province shyrenk = {
-    inherit = hobgoblin_province
-    color = { 191 211 212 }
-    name = "Shyrenk"
+	terrain = red_hills
+	area = tosher_hills
 	history += {
 		history_trade_goods = livestock
 		history_owner = arkon
+	}
+}
+
+new area shanter_peak = {
+	name = "Shanter Peak"
+	region = ziren
+}
+new province shanter_peak = {
+    inherit = hobgoblin_province
+    color = { 227 205 201 }
+    name = "Shanter Peak"
+	terrain = red_hills
+	area = shanter_peak
+	history += {
+		history_trade_goods = c_metals
+		history_owner = tolok
+	}
+}
+new province konnervir = {
+    inherit = hobgoblin_province
+    color = { 241 159 108 }
+    name = "Konnervir"
+	terrain = red_hills
+	area = shanter_peak
+	history += {
+		history_trade_goods = livestock
+		history_owner = tolok
+	}
+}
+new province tolokso = {
+    inherit = hobgoblin_province
+    color = { 176 231 152 }
+    name = "Tolokso"
+	terrain = red_hills
+	area = shanter_peak
+	history += {
+		history_trade_goods = fish
+		history_owner = tolok
+	}
+}
+new province zurenkir = {
+    inherit = hobgoblin_province
+    color = { 163 195 145 }
+    name = "Zurenkir"
+	terrain = red_plains
+	area = shanter_peak
+	history += {
+		history_trade_goods	= grain
+		history_owner = turn
+	}
+}
+
+
+new province karnde = {
+    inherit = hobgoblin_province
+    color = { 100 122 208 }
+    name = "Karnde"
+	history += {
+		history_trade_goods	= grain
+		history_owner = turn
 	}
 }
 
@@ -416,4 +511,46 @@ new province hobgoblin_58 = {
     inherit = hobgoblin_province
     color = { 204 142 138 }
     name = "hobgoblin 58"
+}
+
+new province hobgoblin_61 = {
+    inherit = hobgoblin_province
+    color = { 141 111 187 }
+    name = "hobgoblin 61"
+}
+
+new province hobgoblin_62 = {
+    inherit = hobgoblin_province
+    color = { 244 154 247 }
+	name = "Hobgoblin 62"
+}
+
+new province hobgoblin_63 = {
+    inherit = hobgoblin_province
+    color = { 196 241 147 }
+    name = "hobgoblin 63"
+}
+
+new province hobgoblin_64 = {
+    inherit = hobgoblin_province
+    color = { 151 182 150 }
+    name = "hobgoblin 64"
+}
+
+new province hobgoblin_65 = {
+    inherit = hobgoblin_province
+    color = { 194 160 177 }
+    name = "hobgoblin 65"
+}
+
+new province hobgoblin_66 = {
+    inherit = hobgoblin_province
+    color = { 128 119 123 }
+    name = "hobgoblin 66"
+}
+
+new province hobgoblin_67 = {
+    inherit = hobgoblin_province
+    color = { 203 125 133 }
+    name = "hobgoblin 67"
 }

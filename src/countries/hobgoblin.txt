@@ -1,7 +1,7 @@
 new inheritable hobgoblin_country = {
 	technology_group = nord
 	primary_culture = hobgoblin
-	religion = red_oath
+	religion = red_code
 	graphical_culture = greekgfx
 	starting_reform = tier_1_host
 }
@@ -44,6 +44,26 @@ new country ishtor = {
 		67 120 90
 	}
 	capital = ishtor_pass
+}
+new country tolok = {
+	inherit = hobgoblin_country
+	tag = TOL
+	name = "Tolok Host"
+	adj = "Tolokian"
+	color = {
+		0 0 190
+	}
+	capital = tolokso
+}
+new country turn = {
+	inherit = hobgoblin_country
+	tag = TUR
+	name = "Turn Host"
+	adj = "Turn"
+	color = {
+		0 190 70
+	}
+	capital = zurenkir
 }
 
 new relation march = {

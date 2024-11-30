@@ -194,14 +194,11 @@ new localisation desc_mage_general_personality = ""
 new bookmark old_kingdom = {
 	name = "Old Kingdom"
 	desc = ""
-	date = 2500.1.1
-	countries = {
-		black_mountain
-	}
+	date = 2568.1.1
 	easy_countries = {
 		black_mountain
 	}
-	center = whiterun
+	center = ivinfiel
 	default = yes
 }
 new age first_century = {
