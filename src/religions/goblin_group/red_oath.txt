@@ -8,7 +8,10 @@ new religion red_oath = {
 	heretic = {
 		OLD_GODS_CULT_HERETIC
 	}
-	country = { }
+	country = {
+		discipline = 0.05
+		global_unrest = -1
+	}
 	province = { }
 	religious_group = goblin_group
 }

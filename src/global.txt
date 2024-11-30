@@ -174,47 +174,23 @@ new event_modifier recently_changed_religion_dummy = {
 	name = "Recently changed Religion"
 	modifier = { }
 }
-new localisation FE_TUTORIAL = "Wolf-Crown King\nPatch 2.2.0"
-new localisation January = "§MMorning Star§!"
-new localisation February = "§MSun's Dawn§!"
-new localisation March = "§lFirst Seed§!"
-new localisation April = "§lRain's Hand§!"
-new localisation May = "§lSecond Seed§!"
-new localisation June = "§YMid Year§!"
-new localisation July = "§YSun's Height§!"
-new localisation August = "§YLast Seed§!"
-new localisation September = "§OHearthfire§!"
-new localisation October = "§OFrostfall§!"
-new localisation November = "§OSun's Dusk§!"
-new localisation December = "§MEvening Star§!"
-new localisation Monday = "Morndas"
-new localisation Tuesday = "Tirdas"
-new localisation Wednesday = "Middas"
-new localisation Thursday = "Turdas"
-new localisation Friday = "Fredas"
-new localisation Saturday = "Loredas"
-new localisation Sunday = "Sundas"
-new localisation RANK_1 = "Duchy"
-new localisation RANK_2 = "Kingdom"
-new localisation RANK_3 = "Empire"
-new localisation revoke_elector_desc = "The High King will revoke a jarl title, upsetting the other electors in the process."
-new localisation HISTORY_LEFT_EMPIRE = "Left the High Kingdom"
-new localisation HISTORY_JOINED_EMPIRE = "Joined the High Kingdom"
-new localisation DISMANTLE_HRE = "Dismantle the High Kingdom"
-new localisation HRE_EMPEROR = "The High King"
-new localisation HLR = "The High Kingdom"
-new localisation M_HRE_BUTTON = "The High Kingdom"
-new localisation HRE_HRE = "The High Kingdom"
-new localisation CORE_PAUSED = "ESB Paused"
+new localisation FE_TUTORIAL = "Beta\nPatch 0.0.0"
+new localisation January = "§MJanuary§!"
+new localisation February = "§MFebruary§!"
+new localisation March = "§lMarch§!"
+new localisation April = "§lApril§!"
+new localisation May = "§lMay§!"
+new localisation June = "§YJune§!"
+new localisation July = "§YJuly§!"
+new localisation August = "§YAugust§!"
+new localisation September = "§OSeptember§!"
+new localisation October = "§OOctober§!"
+new localisation November = "§ONovember§!"
+new localisation December = "§MDecember§!"
+new localisation CORE_PAUSED = "Paused"
 new localisation mage_general_personality_die_desc = "[GetHerHisCap] magical mastery will be missed by our troops."
 new localisation mage_general_personality = "Mage"
 new localisation desc_mage_general_personality = ""
-new localisation ui_tech_system_title = "Technology System Explanation"
-new localisation ui_tech_system_desc = "ESB does not use the vanilla technology system, rather you will be spending most of your mana on Idea Groups. 
-	The Mana cost for ideas has been increased.
-	Every 50 years you will be given 3 new idea group slots.
-	Note that this will also show messages for gaining new technology as we cannot implement it in any other way.
-This system was made to allow for players to choose what direction they want their countries to focus on."
 new bookmark old_kingdom = {
 	name = "Old Kingdom"
 	desc = ""
@@ -229,9 +205,9 @@ new bookmark old_kingdom = {
 	default = yes
 }
 new age first_century = {
-	name = "First Century"
+	name = "Age of Revival"
 	desc = ""
-	start = 2500
+	start = 2550
 	can_start = {
 		is_year = 2490
 	}
@@ -241,50 +217,35 @@ new age first_century = {
 	}
 }
 new age second_century = {
-	name = "Second Century"
+	name = "Age of Crusades"
 	desc = ""
-	start = 2600
+	start = 2650
 	can_start = {
 		custom_trigger_tooltip = {
 			tooltip = future_update
 			always = no
 		}
-		is_year = 2590
 	}
 }
 new age third_century = {
-	name = "Third Century"
+	name = "Age of Blessings"
 	desc = ""
-	start = 2700
+	start = 2750
 	can_start = {
 		custom_trigger_tooltip = {
 			tooltip = future_update
 			always = no
 		}
-		is_year = 2690
 	}
 }
 new age fourth_century = {
-	name = "Fourth Century"
+	name = "Age of Revolutions"
 	desc = ""
-	start = 2800
+	start = 2850
 	can_start = {
 		custom_trigger_tooltip = {
 			tooltip = future_update
 			always = no
 		}
-		is_year = 2790
-	}
-}
-new age fifth_century = {
-	name = "Fifth Century"
-	desc = ""
-	start = 2900
-	can_start = {
-		custom_trigger_tooltip = {
-			tooltip = future_update
-			always = no
-		}
-		is_year = 2890
 	}
 }
