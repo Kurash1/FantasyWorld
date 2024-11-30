@@ -1,0 +1,54 @@
+new inheritable hobgoblin_country = {
+	technology_group = nord
+	primary_culture = hobgoblin
+	religion = red_oath
+	graphical_culture = greekgfx
+	starting_reform = tier_1_host
+}
+new country tyrren = {
+	inherit = hobgoblin_country
+	tag = TYR
+	name = "Tyrren Host"
+	adj = "Tyrren"
+	color = {
+		190 190 190
+	}
+	capital = dornkeep
+}
+new country arkon = {
+	inherit = hobgoblin_country
+	tag = ARK
+	name = "Arkon Host"
+	adj = "Arkon"
+	color = {
+		8 79 189
+	}
+	capital = arkon_tower
+}
+new country ivin = {
+	inherit = hobgoblin_country
+	tag = IVI
+	name = "Ivin Host"
+	adj = "Iviner"
+	color = {
+		189 107 8
+	}
+	capital = ivinfiel
+}
+new country ishtor = {
+	inherit = hobgoblin_country
+	tag = ISH
+	name = "Ishtor Keep"
+	adj = "Ishtorian"
+	color = {
+		67 120 90
+	}
+	capital = ishtor_pass
+}
+
+new relation march = {
+	first = IVI
+	second = ISH
+	start_date = 2568.1.1
+	end_date = 9999.1.1
+}

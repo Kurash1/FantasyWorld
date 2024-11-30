@@ -19,6 +19,11 @@ new class gfx_folder = {
 #internal gfx_folders
 #	special
 #	flags
+new gfx_folder loading_screens = {
+	target = gfx/loadingscreens
+	restrict_type = dds
+	name = `GFX_{this}`
+}
 new gfx_folder modifiers = {
 	target = gfx/interface/ideas_EU4
 	restrict_type = dds

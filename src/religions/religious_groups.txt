@@ -2,6 +2,10 @@ new religious_group nordic_group = {
 	name = "Nordic Group"
 	center_of_religion = windhelm
 }
+new religious_group goblin_group = {
+	name = "Goblin Group"
+	center_of_religion = dornkeep
+}
 new religious_group khajiit_group = { #Here only so papacy doesn't cause crashes
 	name = "Khajiit Group"
 	center_of_religion = black_mountain

@@ -20,6 +20,18 @@ new trigger check_for_elven_race = {
 	}
 }
 
+new culture_group goblinoid = {
+	name = "Goblinoid Race"
+	graphical_culture = greekgfx
+	male_names = { }
+	female_names = { }
+	dynasty_names = { }
+}
+new culture hobgoblin = {
+	name = "Hobgoblin"
+	culture_group = goblinoid
+}
+
 new culture_group nord = {
 	name = "Nord Race"
 	graphical_culture = eastern_gfx

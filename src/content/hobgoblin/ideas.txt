@@ -1,0 +1,65 @@
+new idea_group hobgoblin_ideas = {
+	name = "Hobgoblin"
+	category = national
+	start = {
+		manpower_in_own_culture_provinces = 30%
+		build_cost = -10%
+	}
+	bonus = {
+		leader_siege = 1
+	}
+	trigger = {
+		primary_culture = hobgoblin
+	}
+	ideas = {
+		{
+			name = "Tactical Mastery"
+			desc = "Tactical Mastery reflects the hobgoblins' profound commitment to strategic planning and battlefield intelligence. This idea emphasizes their historical role as tacticians in the wars of the Sword-Valley, where their cunning strategies turned the tide against the orcish invaders. Hobgoblin commanders are renowned for their ability to outmaneuver opponents through meticulous planning and innovative tactics. This principle drives the hobgoblins to continually refine their military doctrines and adapt their strategies to evolving threats, ensuring that they remain a formidable force on the battlefield."
+			modifier = {
+				military_tactics = 0.1
+			}
+		}
+		{
+			name = "Iron Discipline"
+			desc = "Iron Discipline embodies the hobgoblins' rigorous training and unwavering adherence to military protocols. This idea originates from their early days as an esoteric tribe valuing discipline and order, which was further solidified by their transformation into hobgoblins. The imposition of strict training regimes and the cultivation of a disciplined martial culture have made hobgoblin forces exceptionally reliable and formidable. Historical victories and the successful defense of their claimed territories in the Sword-Valley underscore the effectiveness of their disciplined approach. The concept of Iron Discipline ensures that hobgoblin soldiers operate with precision and efficiency, reinforcing their reputation as elite warriors."
+			modifier = {
+				discipline = 5%
+			}
+		}
+		{
+			name = "Red War Spirit"
+			desc = "The Red War Spirit is a central tenet of hobgoblin culture, rooted in their divine patron’s blessing and the transformation from goblins to hobgoblins. This idea symbolizes their embodiment of the war god’s essence, infusing them with a relentless drive for conquest and martial excellence. The transformation, marked by the reddening of their skin and physical enhancement, is celebrated as a divine endorsement of their warlike nature. The Red War Spirit fuels their aggressive military campaigns and instills a fierce, unyielding attitude toward combat, driving hobgoblins to pursue their enemies with fervor and determination. This idea is reflected in their approach to warfare, where they embrace the chaos of battle as a sacred duty."
+			modifier = {
+				land_morale = 10%
+			}
+		}
+		{
+			name = "Forge Alliance"
+			desc = "Forge Alliance highlights the historical pact between the hobgoblins and the dwarves, which granted them the weaponry and resources necessary to thrive in the Sword-Valley. This alliance not only provided material support but also established a legacy of mutual respect and cooperation. The Forge Alliance symbolizes the hobgoblins' continued emphasis on forging strong bonds with allies and leveraging these relationships to advance their interests. This idea encourages diplomatic engagement and the establishment of strategic partnerships that enhance their military and economic capabilities. The legacy of the pact is honored through ongoing efforts to build and maintain alliances, ensuring that hobgoblins remain a significant player in regional politics."
+			modifier = {
+				shock_damage = 10%
+			}
+		}
+		{
+			name = "Ritual of the Crimson Blade"
+			desc = "The Ritual of the Crimson Blade is a sacred ceremony among the hobgoblins, marking the consecration of their weapons in honor of their war god. This ritual involves the application of a special red dye, symbolizing their divine connection and martial heritage. The practice dates back to their initial transformation and the blessing they received from the war god. During the ritual, weapons are not only blessed but also imbued with symbolic significance, reinforcing the hobgoblins' belief in their divine mandate to conquer and protect their realm. The Ritual of the Crimson Blade serves to unite hobgoblins in their shared devotion to their patron deity and their commitment to martial excellence, ensuring that their weaponry is both a tool of war and a symbol of divine favor."
+			modifier = {
+				core_creation = -10%
+			}
+		}
+		{
+			name = "Warrior’s Code"
+			desc = "Warrior’s Code is a set of ethical guidelines and honor codes that govern hobgoblin conduct in both war and peace. Rooted in their esoteric origins and enhanced by their martial transformation, this code emphasizes valor, respect, and strategic cunning. The Warrior’s Code ensures that hobgoblins maintain a high standard of conduct, fostering a sense of unity and shared purpose among their ranks. Historical events where adherence to the code led to significant victories and the consolidation of power highlight its importance. This principle not only reinforces discipline but also cultivates a culture of honor and integrity, setting the hobgoblins apart as not just ruthless conquerors but also as honorable warriors bound by a sacred code."
+			modifier = {
+				army_tradition = 0.5
+			}
+		}
+		{
+			name = "Strategic Fortifications"
+			desc = "Strategic Fortifications represents the hobgoblins' focus on constructing and maintaining impregnable defensive positions. Drawing from their experience in the Sword-Valley, where they faced constant threats from the orcs, hobgoblins have perfected the art of fortification. This idea emphasizes the importance of building robust defenses that can withstand prolonged sieges and assaults. Historical fortifications that played crucial roles in their success are celebrated as examples of their engineering prowess and strategic foresight."
+			modifier = {
+				fort_maintenance_modifier = -15%
+			}
+		}
+	}
+}
