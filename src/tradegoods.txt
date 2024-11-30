@@ -8,7 +8,7 @@ new tradegood unknown = {
 }
 new tradegood wood = {
 	name = "Lumber"
-	desc = "Lumber represents common types of wood often used for construction materials across Nirn. Whether it be Oaks, Ashes, or even Dunmeri mushroom trees all have been crucial for the development of urban and rural settlements. "
+	desc = "Also known as timber wood or lumber comes from many different species of trees such as ashes, oakes and maple trees. It is used in a wide variety of purposes such as construction of buildings, ships or even mighty engines of war. Wood however is also important for charcoal production which in the medieval period was the main form of coal production until the discovery of fossil coal."
 	color = {
 		90 77 28
 	}
@@ -32,7 +32,7 @@ new tradegood wood = {
 }
 new tradegood fish = {
 	name = "Fish"
-	desc = "Fish have long served as one of the primary forms of sustenance across Nirn. Due to its wide availability and relatively inexpensive nature it has often served to be the feed of the lower rungs of culture across the world."
+	desc = "Fish is the food of many less fortunate people. Coming in large quantities in both lakes and rivers as well as the open oceans it can be caught in large quantities. It also provides a modest income for many a fishing family while not being valuable enough to provide for anything luxurious though.A prominent example of fish would be the Nacari that natively live in the land of lakes and provide sustenance and income for many a lizard family."
 	color = {
 		141 169 197
 	}
@@ -56,7 +56,7 @@ new tradegood fish = {
 }
 new tradegood grain = {
 	name = "Grain"
-	desc = "Grain represents the vegetable foodstuffs that have long served as a primary source of nourishment across Nirn. This would include the edible fungi of the deeper parts of Nirn more commonly consumed by cultures like the Dwemer. Without it, civilization is likely to collapse under threats of revolt and unrest."
+	desc = "Grains come in many different forms and are a main staple of any societies food production. May it be rice in eastern lands or wheat and other corns in more temperate climates. Even the exotic maize can be sorted into this category of nurishment. Grain is often processed to flour in order to bake bread and other baked goods but can also be fermented for brewing beer."
 	color = {
 		214 220 130
 	}
@@ -74,7 +74,10 @@ new tradegood grain = {
 }
 new tradegood alcohol = {
 	name = "Alcohol"
-	desc = "Alcohol is common all across Nirn and even in some planes of Oblivion. Whether based upon hops, barley, saltrice, or some other exotic ingredient."
+	desc = "Alcohols come in four main forms. Those would be beer that is brewed out of grains, spirits often distilled out of a variety of fruits or grains, wine fermented out of grapes, berries or honey, in the latter case it would be named mead then, or liquor which is fruit juice with a spirit to make it slightly alcoholic. Alcohol is mostly handed out in taverns but also finds a role in many a temple for liturgical purposes."
+	#Wine "Believed to be first fermented by elves, wine is a very luxurious product that saw its peak in popularity during the height of the gnomish empire. Most often wine is made from grapes but can also be made from berries. The beverage the giants of the north and the elves call mead is also among them."
+	#Beer "The oldest form of alcholic beverage. Beer is made out of malted grain and hop and can be found readily in taverns all over the eastern half of the continent. The dwarves in the west near the dragon empire are however also known to greatly enjoy beer. In fact it is believed that they are the original inventors of beer."
+	#Spirits "A most potent form of alcholic beverage that is distilled out of some form of fruit. Spirits are a relatively new invention compared to other alcoholic beverages and are only drunken in small quantities. They are also known to be quite expensive."
 	color = {
 		227 238 75
 	}
@@ -92,7 +95,9 @@ new tradegood alcohol = {
 }
 new tradegood paper = {
 	name = "Paper"
-	desc = "Life blood of scholars and bureaucrats alike, paper represents the product of various processes to create writing material whether it be via papyrus, parchment, even palm leaves. Paper serves as an important ingredient necessary for the management of empires or even studies of the arcane."
+	desc = "Paper is a rare commodity but very important for the production of codices, scrolls, and many different informative commodities. It can either be produced out of rags which is the more common form or out of processed wood or weed."
+	#Parchment "like paper it is used for writing purposes mainly but it is produced out of animal hides."
+	#Papyrus "Papyrus played a big role in ancient times as it was a readily aviable writing material, that could be easily produced out of the papyrus plant. Especially in desert environments many papyri with intact writing can still be found to this day. The usage of Papyrus however has dropped significantly since the start of the medieval period when parchment and the rare paper started to slowly take its place."
 	color = {
 		240 255 172
 	}
@@ -110,7 +115,7 @@ new tradegood paper = {
 }
 new tradegood alchemical_ingredients = {
 	name = "Herbs"
-	desc = "Herbs represent the more mundane goods utilized for alchemy such as antlers, feathers, plants, or animal components. However it also represents spices utilized in the alchemy of cooking such as nutmeg, ginger, pepper, etc. "
+	desc = "Herbs comes in all shapes and sizes from the humble chamomile to rosemary, parsley and thyme there are many different types of herbs. Their usage ranges from seasoning to medicine and alchemical purposes. Potion brewing would be straight out impossible without the utilisation of especially arcane herbs."
 	color = {
 		62 149 81
 	}
@@ -137,7 +142,7 @@ new tradegood alchemical_ingredients = {
 }
 new tradegood potions = {
 	name = "Potions"
-	desc = "Created by process of alchemy, potions are powerful ingestible drinks oft of magical nature. Prone to a variety of effects based upon the ingredients and proper distilling, potions can be used for mundane purposes like closing wounds, curing diseases, or ceasing the effects of a poison. However they are also capable of more advanced feats like granting the imbiber vampirism, purging daedra, or, according to some legends, restoring the dead to life."
+	desc = "Made from a variety of different ingredients including herbs and some rather obscure items such as crow feet or frog eyes, potions are just as varied as their ingredients. Some of them are poisonous or do another form of harm, while others can heal the user or straight out strengthen their abilities for a duration of time. They are always in incredibly high demand especially among the ranks of the clergy and adventurers. The high demand compared to the relatively low suppply makes the price of potions quite high and every alchemist or druid selling them is bound to make a fortune."
 	color = {
 		253 65 71
 	}
@@ -155,7 +160,8 @@ new tradegood potions = {
 }
 new tradegood stone = {
 	name = "Stone"
-	desc = "Quarried from across the entirety of Nirn, whether it be granite, marble, or sandstone. Stone serves as one of the basics of construction and like lumber is commonly needed for the development of settlements. "
+	desc = "Stones form the base of most construction in the world and come in so many different varieties that it would be hard to list them all. It can be seen in so many buidings all over the world. Especially more sturdy buildings such as fortification or temples are often constructed out of solid rock."
+	#Bricks "Where the absence of good rock for buildings is noted often bricks come to use. Although bricks have to be first made out of mud or clay they are a useful building material as they are easily stackable and can be burnt in large furnances in great quantities or dried under the sun in more arid areas."
 	color = {
 		185 185 185
 	}
@@ -184,7 +190,7 @@ new tradegood stone = {
 }
 new tradegood gems = {
 	name = "Gems"
-	desc = "Across Nirn beautiful crystals known as gems can be found, while often used for decoration and vanity some are magical in nature and highly sought by alchemists and mages alike. In addition a few rare varieties like Malachite or even more precious Ebony can be shaped into potent armaments by skilled craftsmen."
+	desc = "Often hidden deep under the earth or in hard to open geodes gems are one of the most beautyful things the mines provide. They are used exclusively for arcane needs and jewellery. Their prices vary heavily as more common gems as quartz and mountains crystals exist as well as diamonds, rubies, sapphires, topazes, amethysts, rubies and many more. In more exotic lands gems may also take the form of jade which is one of the most sought out commodities in lands that do not richly possess it."
 	color = {
 		78 15 203
 	}
@@ -212,7 +218,8 @@ new tradegood gems = {
 }
 new tradegood gold = {
 	name = "Gold"
-	desc = "One of the most precious metals upon Nirn, it has served as the basis for nearly all forms of economy from distant Akaviri to the furthest reaches of Yukuda. Whether it show itself as Septims, Drakes, Dumacts, or Nirni-gold the worth of Gold cannot be denied."
+	desc = "Basis of all currency and of jewellery and ornamentation. Even though gold actually has no real practical purpose, it is still greatly sought after just because people think it is very valuable. Gold is often greedily mined as it means that the owner of the mine or gold wash will soon be a very rich person."
+	#Platinum "Even more valuable than gold and still rather unknown in many places of the world. Platinum makes only the finest coinage and jewellery that even many wealthy people may struggle to afford. Most people have not even ever seen a platinum coin in their entire life time."
 	color = {
 		196 215 26
 	}
@@ -238,7 +245,8 @@ new tradegood gold = {
 }
 new tradegood silver = {
 	name = "Silver"
-	desc = "While not as precious as Gold, silver has long served as a necessary mineral for civilizations across Nirn, it is not only utilized as a form of currency in some lands but primarily as a means of protection. Whether a region is overrun by Daedra or Hircine’s therianthropes it is silver that is used in weapons and armour to slay these otherwise invulnerable threats."
+	desc = "Unlike gold silver actually comes with practical utilisations beyond currency and jewellery as it is used in fighting the forces of evil as well as many liturgical rituals. Therefore it is used in many weapons and often enchanted to fight ghosts, apparitions, werecreatures, demons and the such. However unlike gold silver can oxidize and must therefore be smelted out of its ore giving it an additional refinement step."
+	#Electrum "Electrum is a naturally occuring ally out of gold and silver that the first coins were minted out of. However due to the great span of mixtures possible and the possibility of it being diluted with copper it fell out of fashion pretty quickly. Nowadays it is sparsely used in jewellery or reluctantly in coinage if there is no other source of coin metal aviable."
 	color = {
 		205 205 205
 	}
@@ -264,8 +272,8 @@ new tradegood silver = {
 	}
 }
 new tradegood ebony = {
-	name = "Gods Blood"
-	desc = "One of the most precious minerals upon Nirn, it is largely found in Vvardenfell but deposits have been found in Solstheim, Skyrim, Cyrodiil, and even High Rock. Ebony is an extremely durable, hard, black-like substance. Also known as Godsblood, it is common belief that it is the crystallized blood of gods or a god, particularly Lorkhan. Ebony is essential to the creation of Daedric weapons and armour."
+	name = "God's Blood"
+	desc = "The Sword-Valley has been fought over for milennia by various forces, and much blood has been shed, even divine blood. The blood of the gods descended from heaven is a supernatural substance that can be used for alchemical purposes or to smith great artifacts."
 	color = {
 		38 38 38
 	}
@@ -283,7 +291,10 @@ new tradegood ebony = {
 }
 new tradegood c_metals = {
 	name = "Mundane Ores"
-	desc = "Mundane Metals represents the common forms of metal that can be extracted across Nirn. The most common being iron but closely followed by corundum, lead, tin, and copper. It is through refining processes that iron and corundum could be combined into steel, a stronger and more durable metal but still mundane."
+	desc = "These metals make up the more common metals of the world. Purposes range a lot by whatever metal it exactly is however."
+	#copper "Copper is the earliest discovered metal and is used for roofs of many temples and churches but its true main purpose lays in the creation of bronze. For this process tin is also required and makes both metals to a far hardier alloy then either one of them alone could be.
+	#Iron "Master of all metals iron became the replacement of bronze after its discovery and realisation of how to smelt it out of its ore. Iron is nowadays used in mainly tools, weapons and armour. It is therefore often associated with war gods in many cultures and the red ore it forms is a further symnbolism to this connection."
+	#Zinc "Zinc is a metal mostly used in conjuction with copper for the creation of brass. Beyond that no other purposes are known." 
 	color = {
 		204 153 51
 	}
@@ -311,7 +322,11 @@ new tradegood c_metals = {
 }
 new tradegood r_metals = {
 	name = "Rare Ores"
-	desc = "Rare Metals represent the various minerals across Nirn that are uncommon or magical in nature. Most notably Moonstone, Mithril, Adamantium, Syrabane's Steel, or even Daedric Metal. It is rare metals that often are utilized for elite warriors or prestigious items, many artifacts across Nirn have long been composed of rare metals imbued with magical gems. "
+	desc = "These ores are truely the rarest known ores in the world. Finding them is like finding a treasure and assures a lucrative business to whoever owns such a mine."
+	#Lead "An arcane metal that is highly resistant to all forms of magic and is therefore sought out by many important people. Lead is also used in many official religious documents where it stands in contrast to the gold used in wordly documents for a seal. These seals also known as bulls are highly respected and certify that any provided document is surely legitimate."
+	#Tin "A very important metal as it is both used in the appropiately named tinkering and the creation of bronze. It is not as much in use as before the discovery of iron anymore but still in relatively high demand."
+	#Antimony "The most religious of all metals antimony is exclusively used for relics and artefacts. It is a most holy of metals even outshining things such as silver and therefore a highly demanded commodity by the clergy of any given people."
+	#Cinnabar "Quicksilver or mercury is a strange metal as it is the only metal known to be liquid. While solid in its ore state known as cinnabar once it is smelted it turns liquid instantly and stays that way even when cooled down. It is unknown whether mercury even has a solid state at all. Usages are rare however as an alchemical ingredient it is however demanded quite a bit. Ancient people believed for example that this metal could make them immortal even though it is actually quite toxic and will likely kill you as we now know. Contemporary alchemists however believe that it is the primordial metal from which all other metals were created and therefore could still be created."
 	color = {
 		34 191 149
 	}
@@ -339,7 +354,7 @@ new tradegood r_metals = {
 }
 new tradegood fur = {
 	name = "Fur"
-	desc = "Across Nirn various animals have long been hunted for their furs especially in the colder northern reaches like Atmora, Skyrim, Highrock, Roscrea, and Solstheim. Whether for survival or a fashion statement, fur has long been utilized within the manufacturing of clothing across Nirn. It would go on to form the basis for Colovian Highland fashion in later Eras."
+	desc = "Furs are an essential to endure harsh and cold winters in many colder regions. It is not surprising therefore that especially in colder climates furry animals are often hunted for their pelts. Those pelts are in quite high demand even in warmer areas as people there view them as fashionable. All these factors make the fur trade quite lucrative."
 	color = {
 		90 43 26
 	}
@@ -357,7 +372,7 @@ new tradegood fur = {
 }
 new tradegood livestock = {
 	name = "Livestock"
-	desc = "Since the dawn of Nirn both Men and Mer have long since depended upon domesticated animals for sustenance, labour, and even companionship. Livestock represents everything from horses, chickens, silt striders, pigs, and guar to more exotic animals like ringtail wolves."
+	desc = "There are quite a few animals that were domesticated by the people of the world. These animals are useful as heavy labour and for food production. For they provide many things not aviable otherwise such as eggs, feathers, milk, meat and hides. Further refinement can make parchment or leather out of hides and cheese out of milk. The exact animals serving as lifestock however differ a lot by region. The most common forms however include all forms of poultry, cattle, pigs and pack animals such as donkeys, mules, horses and cameloids."
 	color = {
 		249 123 77
 	}
@@ -375,7 +390,7 @@ new tradegood livestock = {
 }
 new tradegood slaves = {
 	name = "Slaves"
-	desc = "Throughout the many eras of Nirn, the practice of enslaving another individual to serve has existed. Whether chattel, enthralled, or indentured, slavery has been practiced by the majority of cultures upon Nirn. While the practice would fall out of favour in later eras, it remained prevalent in some parts of Nirn such as the province of Morrowind."
+	desc = "Although not as common anymore as in ancient times slavery is still existant. People are often captured to serve as cheap unpaid labour which often is found in mines or on farms. Only few luckier individuals who became slaves find themselves doing household or administrative jobs. In some cultures there are even slave armies that fight with an outmost loyalty for their ruler for whatever reason. Many cultures such as the human cultures in the east, the elves and the gnomes however utterly despise slavery with gnomes and elves straight out banning it all together within their realms."
 	color = {
 		42 42 42
 	}
@@ -393,7 +408,7 @@ new tradegood slaves = {
 }
 new tradegood mag_goods = {
 	name = "Magical Goods"
-	desc = "Whether it be soul gems, alchemical instruments, runestones, or any other long list of arcane instruments and magical goods found across Nirn. Arcana has always been a necessity for those civilizations known to practice the arcane arts and venerate the Magna-Ge."
+	desc = "These arcane necessities are most often gems but not always as they can also be other things such as enchanted paper mostly used in foliants and grimoires. These goods are highly sought after by wizards and sorcrerers alike. Even Warlocks look out after them for without them magic would be rather limited in its purposes."
 	color = {
 		51 204 255
 	}
@@ -411,7 +426,7 @@ new tradegood mag_goods = {
 }
 new tradegood cloth = {
 	name = "Cloth"
-	desc = "Cloth also known as textiles is fabric produced in a variety of ways from a number of different materials. It can be found across Nirn in some form or another, often the material of choice for clothing, it is often replaced by furs in some of the colder climates. The most common means of producing cloth is through weaving which requires time and effort and often a skilled weaver."
+	desc = "Clothes are a trade good that is even older than society. As many humanoids lack any form of pelt. Henceforth clothing is always in high demand and by now even seen in many different shapes and sizes. Some clothes are made to be fashionable while others are more on the functional side of things. No matter what the purpose all those clothes will find a well paying customer eventually."
 	color = {
 		193 21 176
 	}
@@ -429,7 +444,7 @@ new tradegood cloth = {
 }
 new tradegood fruits = {
 	name = "Fruits"
-	desc = "Fruits represent the various edible plant byproducts found across Nirn. Especially common in warmer climates. Some harder fruits like apples and grapes can be found in more mild regions and even berries have been known to grow in some surprisingly harsh environments such as the Jazberry which is found throughout Skyrim."
+	desc = "Fruits are the edible parts of plants such as apples or pears and are harvested in big orchards and on fields. They provide a substantial income boost to whoever farming family is lucky enough to have such an orchard in their possession."
 	color = {
 		253 255 6
 	}
@@ -447,7 +462,7 @@ new tradegood fruits = {
 }
 new tradegood naval_supplies = {
 	name = "Naval Supplies"
-	desc = "Naval supplies represent everything needed for shipbuilding. This can include wood reserved for Nordic longships to Breton linen for sails or even tar from Blackmarsh. Whether it be the Altmeri Navy, Maormer Pirates, or Atmoran explorers, no naval force has succeeded without access to naval supplies."
+	desc = "Anything a ship would need apart from the wood it is mainly made out of is considered to be a naval supply. That includes many things such as pitch, tar, nails, sail fabric and so on. But also provisions such as salted herrring or sauerkraut."
 	color = {
 		64 126 206
 	}
@@ -471,7 +486,7 @@ new tradegood naval_supplies = {
 }
 new tradegood arms = {
 	name = "Armaments"
-	desc = "Armaments represent the tools of warriors, whether composed of bonemold, iron, or ebony. Both weapons and armour are important goods for any warrior or aspiring despot. "
+	desc = "Weapons and tools are always in high demand no matter if there is peace or war. Without tools nothing would ever be created and without weapons no war could be fought and no hunting could be done. Their forms therefore vary as much as their purposes and the ideas behind them."
 	color = {
 		154 172 175
 	}
@@ -490,7 +505,7 @@ new tradegood arms = {
 }
 new tradegood glass = {
 	name = "Glass"
-	desc = "Not to be confused with the crystal, malachite, glass refers to the process of rendering sand and other grainy minerals into crystal by incredible applications of heat. Glass is produced at foundries and not only requires a large amount of raw material but expert craftsmen and artisans. The product of these efforts is a piece of often coloured crystal shaped in various instruments like bowls, plates, or cups, but also windows and entire walls. Glass itself is often utilized by the upper stratas of societies as a sign of wealth."
+	desc = "A most expensive of goods and until recently only the richest and the clergy could afford to buy any glass. Glass is mostly used for windows where it often is stained with different minerals to make it coloured. It however is also used to hold potions or beverages although this latter application is quite rare and only to be found in the houses of the wealthy and the nobility."
 	color = {
 		70 130 180
 	}
@@ -508,7 +523,7 @@ new tradegood glass = {
 }
 new tradegood wool = {
 	name = "Wool"
-	desc = "Wool came mostly from sheep that grazed in the more marginal lands not suited to other forms of agriculture. Prior to the use of cotton it was the major raw material for clothing."
+	desc = "Wool comes from sheep, goats and certain types of cameloids and is a warming fabric that especially poorer people heavily use in the creation of their clothes as they can often not afford finer fabrics or premade clothing. Large herds of the aforementioned livestock are herded by shepherds for this purpose in addition to the milk and meat production."
 	color = {
 		211 211 211
 	}
