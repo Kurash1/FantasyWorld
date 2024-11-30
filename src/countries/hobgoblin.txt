@@ -65,10 +65,90 @@ new country turn = {
 	}
 	capital = zurenkir
 }
+new country vrakthu = {
+	inherit = hobgoblin_country
+	tag = VRK
+	name = "Vrakthu Host"
+	adj = "Vrakthu"
+	color = {
+		80 80 0
+	}
+	capital = vrakthu
+}
+new country ahmaton = {
+	inherit = hobgoblin_country
+	tag = VRA
+	name = "Ahmaton Host"
+	adj = "Ahmaton"
+	color = {
+		255 50 50
+	}
+	capital = ahmaton
+}
+new country drakstarn = {
+	inherit = hobgoblin_country
+	tag = DRA
+	name = "Drakstarn Host"
+	adj = "Drakstarn"
+	color = {
+		80 0 0
+	}
+	capital = drakstarn
+}
+new country kalthru = {
+	inherit = hobgoblin_country
+	tag = KAL
+	name = "Kalthru Host"
+	adj = "Kalthru"
+	color = {
+		135 229 235
+	}
+	capital = kalthru
+}
+new country vrudhar = {
+	inherit = hobgoblin_country
+	tag = VRD
+	name = "Vrudhar Host"
+	adj = "Vrudhar"
+	color = {
+		130 105 186
+	}
+	capital = vrudhar
+}
+new country volkhadrek = {
+	inherit = hobgoblin_country
+	tag = VOL
+	name = "Volkhadrek Host"
+	adj = "Volkhadrek"
+	color = {
+		167 127 111
+	}
+	capital = volkhadrek
+}
+new country kroshva = {
+	inherit = hobgoblin_country
+	tag = KRO
+	name = "Kroshva Host"
+	adj = "Kroshva"
+	color = {
+		100 255 100
+	}
+	capital = kroshva
+}
+new country zurvakhol = {
+	inherit = hobgoblin_country
+	tag = ZUR
+	name = "Zurvakhol Host"
+	adj = "Zurvakhol"
+	color = {
+		50 50 50
+	}
+	capital = zurvakhol
+}
 
 new relation march = {
-	first = IVI
-	second = ISH
+	first = countries:ivin
+	second = countries:ishtor
 	start_date = 2568.1.1
 	end_date = 9999.1.1
 }

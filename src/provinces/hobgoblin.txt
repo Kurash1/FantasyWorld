@@ -1,11 +1,16 @@
 new inheritable hobgoblin_province = {
-	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
-	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
-	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	position = { }
+	rotation = { }
+	height = { }
 	history = {
 		religion = red_code
 		culture = hobgoblin
 	}
+}
+
+new area empty = {
+	name = "Empty"
+	region = black_mountain
 }
 
 new area dorn = {
@@ -15,6 +20,15 @@ new area dorn = {
 new province kriklax_mine = {
     inherit = hobgoblin_province
     color = { 114 216 182 }
+	position = {
+		2249.000 2247.000 2250.000 2247.000 3047.000 1545.000 3030.000 1546.000 3047.000 1545.000 2250.000 2244.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Kriklax Mine"
 	terrain = red_hills
 	area = dorn
@@ -26,6 +40,15 @@ new province kriklax_mine = {
 new province shyrlan_hills = {
     inherit = hobgoblin_province
     color = { 233 132 205 }
+	position = {
+		2229.000 2254.000 2229.000 2255.000 2231.000 2256.000 3016.000 1543.000 3017.000 1547.500 2231.000 2255.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 -1.134 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 0.750 0.000 0.000 0.000 0.000 
+	}
     name = "Shyrlan Hills"
 	terrain = red_hills
 	area = dorn
@@ -37,6 +60,15 @@ new province shyrlan_hills = {
 new province dornkeep = {
     inherit = hobgoblin_province
     color = { 197 199 123 }
+	position = {
+		2251.000 2257.000 2245.000 2262.000 3002.000 1548.000 2994.000 1544.000 2984.500 1549.500 2246.000 2260.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Dornkeep"
 	terrain = red_plains
 	area = dorn
@@ -48,6 +80,15 @@ new province dornkeep = {
 new province koroan_cave = {
     inherit = hobgoblin_province
     color = { 166 164 251 }
+	position = {
+		2254.000 2273.000 2258.000 2273.000 2978.000 1542.000 2983.000 1547.000 2978.000 1541.000 2257.000 2275.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Koroan Cave"
 	terrain = red_hills
 	area = dorn
@@ -64,6 +105,15 @@ new area ivin = {
 new province inirsarm = {
     inherit = hobgoblin_province
     color = { 209 244 162 }
+	position = {
+		2220.000 2301.000 2220.000 2301.000 3006.000 1499.000 3011.000 1504.000 3006.000 1499.000 2220.000 2298.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Inirsarm"
 	terrain = red_hills
 	area = ivin
@@ -75,6 +125,15 @@ new province inirsarm = {
 new province ivinfiel = {
     inherit = hobgoblin_province
     color = { 221 249 109 }
+	position = {
+		2207.000 2309.000 2208.000 2308.000 2989.000 1475.000 2994.000 1480.000 2989.000 1475.000 2206.000 2309.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Ivinfiel"
 	terrain = red_plains
 	area = ivin
@@ -86,6 +145,15 @@ new province ivinfiel = {
 new province torsan = {
     inherit = hobgoblin_province
     color = { 163 224 127 }
+	position = {
+		2191.000 2291.000 2194.000 2293.000 2973.000 1527.000 2980.000 1532.000 2986.000 1521.000 2192.000 2292.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Torsan"
 	terrain = red_plains
 	area = ivin
@@ -97,6 +165,15 @@ new province torsan = {
 new province antvill = {
     inherit = hobgoblin_province
     color = { 121 209 191 }
+	position = {
+		2241.000 2285.000 2241.000 2285.000 2240.000 2285.000 2988.000 1520.000 2987.000 1510.000 2237.000 2288.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.524 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 0.900 0.000 0.000 0.000 0.000 
+	}
     name = "Antvill"
 	terrain = red_plains
 	area = ivin
@@ -113,6 +190,15 @@ new area ishtor = {
 new province koneax = {
     inherit = hobgoblin_province
     color = { 159 134 218 }
+	position = {
+		2193.000 2276.000 2199.000 2273.000 2200.000 2270.000 2978.000 1484.000 2973.000 1479.000 2202.000 2276.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Koneax"
 	terrain = red_plains
 	area = ishtor
@@ -124,6 +210,15 @@ new province koneax = {
 new province ishtor_pass = {
     inherit = hobgoblin_province
     color = { 249 228 249 }
+	position = {
+		2180.000 2260.000 2179.000 2260.000 2182.000 2257.000 2961.000 1480.000 2956.000 1475.000 2181.000 2260.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 -0.262 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.100 0.000 0.000 0.000 0.000 
+	}
     name = "Ishtor Pass"
 	terrain = red_hills
 	area = ishtor
@@ -135,6 +230,15 @@ new province ishtor_pass = {
 new province solorn = {
     inherit = hobgoblin_province
     color = { 117 161 168 }
+	position = {
+		2179.000 2296.000 2178.000 2292.000 2948.000 1491.000 2953.000 1496.000 2948.000 1491.000 2180.000 2293.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Solorn"
 	terrain = red_hills
 	area = ishtor
@@ -151,6 +255,15 @@ new area arkon_pass = {
 new province tolrbech = {
     inherit = hobgoblin_province
     color = { 170 123 157 }
+	position = {
+		2229.000 2308.000 2234.000 2314.000 2958.000 1509.000 2963.000 1514.000 2958.000 1509.000 2233.000 2314.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tolrbech"
 	terrain = red_plains
 	area = arkon_pass
@@ -162,6 +275,15 @@ new province tolrbech = {
 new province arkon_tower = {
     inherit = hobgoblin_province
     color = { 113 201 189 }
+	position = {
+		2239.000 2332.000 2240.000 2331.000 2928.000 1475.000 2933.000 1480.000 2928.000 1475.000 2247.000 2329.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Arkon Tower"
 	terrain = red_hills
 	area = arkon_pass
@@ -173,6 +295,15 @@ new province arkon_tower = {
 new province tossvi = {
     inherit = hobgoblin_province
     color = { 167 127 111 }
+	position = {
+		2245.000 2303.000 2250.000 2302.000 2976.000 1458.000 2981.000 1463.000 2976.000 1458.000 2256.000 2303.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tossvi"
 	terrain = red_hills
 	area = arkon_pass
@@ -184,6 +315,15 @@ new province tossvi = {
 new province shyrenk = {
     inherit = hobgoblin_province
     color = { 191 211 212 }
+	position = {
+		2266.000 2319.000 2264.000 2323.000 2931.000 1491.000 2936.000 1496.000 2931.000 1491.000 2264.000 2324.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Shyrenk"
 	terrain = red_plains
 	area = arkon_pass
@@ -200,6 +340,15 @@ new area tosher_hills = {
 new province tyvilshen = {
     inherit = hobgoblin_province
     color = { 195 195 219 }
+	position = {
+		2197.000 2319.000 2204.000 2324.000 2922.000 1494.000 2922.000 1496.000 2917.000 1491.000 2201.000 2323.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tyvilshen"
 	terrain = red_plains
 	area = tosher_hills
@@ -212,6 +361,15 @@ new province tyvilshen = {
 new province tarnkeir = {
     inherit = hobgoblin_province
     color = { 201 157 243 }
+	position = {
+		2181.000 2316.000 2180.000 2318.000 3002.000 1473.000 3007.000 1478.000 3002.000 1473.000 2179.000 2317.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tarnkeir"
 	terrain = red_hills
 	area = tosher_hills
@@ -223,6 +381,15 @@ new province tarnkeir = {
 new province toshion = {
     inherit = hobgoblin_province
     color = { 120 250 102 }
+	position = {
+		2184.000 2348.000 2185.000 2344.000 2935.000 1508.000 2940.000 1513.000 2935.000 1508.000 2189.000 2342.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Toshion"
 	terrain = red_hills
 	area = tosher_hills
@@ -234,6 +401,15 @@ new province toshion = {
 new province tallkern = {
     inherit = hobgoblin_province
     color = { 127 162 173 }
+	position = {
+		2213.000 2341.000 2216.000 2348.000 2939.000 1522.000 2944.000 1527.000 2944.000 1515.000 2218.000 2344.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tallkern"
 	terrain = red_hills
 	area = tosher_hills
@@ -250,6 +426,15 @@ new area shanter_peak = {
 new province shanter_peak = {
     inherit = hobgoblin_province
     color = { 227 205 201 }
+	position = {
+		2194.000 2364.000 2195.000 2366.000 2957.000 1529.000 2962.000 1534.000 2963.000 1524.000 2193.000 2366.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Shanter Peak"
 	terrain = red_hills
 	area = shanter_peak
@@ -261,6 +446,15 @@ new province shanter_peak = {
 new province konnervir = {
     inherit = hobgoblin_province
     color = { 241 159 108 }
+	position = {
+		2212.000 2379.000 2208.000 2381.000 2908.000 1515.000 2913.000 1520.000 2908.000 1515.000 2214.000 2378.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Konnervir"
 	terrain = red_hills
 	area = shanter_peak
@@ -272,6 +466,15 @@ new province konnervir = {
 new province tolokso = {
     inherit = hobgoblin_province
     color = { 176 231 152 }
+	position = {
+		2170.000 2379.000 2180.000 2381.000 2937.000 1541.000 2942.000 1546.000 2945.000 1535.000 2182.000 2382.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tolokso"
 	terrain = red_hills
 	area = shanter_peak
@@ -283,6 +486,15 @@ new province tolokso = {
 new province zurenkir = {
     inherit = hobgoblin_province
     color = { 163 195 145 }
+	position = {
+		2150.000 2352.000 2157.000 2360.000 2938.000 1555.000 2943.000 1560.000 2938.000 1555.000 2160.000 2356.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Zurenkir"
 	terrain = red_plains
 	area = shanter_peak
@@ -299,6 +511,15 @@ new area tullen_hills = {
 new province karnde = {
     inherit = hobgoblin_province
     color = { 100 122 208 }
+	position = {
+		2151.000 2337.000 2154.000 2336.000 2928.000 1531.000 2933.000 1536.000 2928.000 1531.000 2157.000 2334.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Karnde"
 	area = tullen_hills
 	terrain = red_plains
@@ -310,31 +531,61 @@ new province karnde = {
 new province konzeir = {
     inherit = hobgoblin_province
     color = { 252 129 143 }
+	position = {
+		2119.000 2332.000 2123.000 2331.000 2918.000 1541.000 2923.000 1546.000 2915.000 1541.000 2123.000 2331.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Konzeir"
 	area = tullen_hills
 	terrain = red_plains
 	history += {
 		history_trade_goods	= grain
+		history_owner = ahmaton
 	}
 }
 new province tullen = {
     inherit = hobgoblin_province
     color = { 141 244 176 }
+	position = {
+		2104.000 2313.000 2100.000 2318.000 2907.000 1533.000 2912.000 1538.000 2907.000 1533.000 2105.000 2316.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tullen"
 	area = tullen_hills
 	terrain = red_plains
 	history += {
 		history_trade_goods	= grain
+		history_owner = ahmaton
 	}
 }
 new province ahmaton = {
     inherit = hobgoblin_province
     color = { 137 132 206 }
+	position = {
+		2075.000 2302.000 2079.000 2299.000 2916.000 1555.000 2921.000 1560.000 2916.000 1555.000 2079.000 2300.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Ahmaton"
 	area = tullen_hills
 	terrain = red_plains
 	history += {
 		history_trade_goods	= grain
+		history_owner = ahmaton
 	}
 }
 
@@ -345,6 +596,15 @@ new area morzkaal = {
 new province careal = {
     inherit = hobgoblin_province
     color = { 196 241 147 }
+	position = {
+		2141.000 2370.000 2144.000 2374.000 2833.000 1525.000 2830.500 1533.000 2833.000 1525.000 2145.000 2373.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 1.571 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Careal"
 	area = morzkaal
 	terrain = red_plains
@@ -356,6 +616,15 @@ new province careal = {
 new province tuskpasser = {
     inherit = hobgoblin_province
     color = { 151 182 150 }
+	position = {
+		2153.000 2407.000 2158.000 2410.000 2846.000 1516.000 2851.000 1521.000 2846.000 1516.000 2159.000 2406.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Tuskpasser"
 	area = morzkaal
 	terrain = red_hills
@@ -367,6 +636,15 @@ new province tuskpasser = {
 new province morzkaal = {
     inherit = hobgoblin_province
     color = { 194 160 177 }
+	position = {
+		2168.000 2401.000 2168.000 2394.000 2834.000 1512.000 2828.500 1519.500 2834.000 1512.000 2171.000 2394.000 0.000 0.000 
+	}
+	rotation = {
+		-0.960 0.000 0.000 2.356 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Morzkaal"
 	area = morzkaal
 	terrain = red_plains
@@ -378,6 +656,15 @@ new province morzkaal = {
 new province kharzadur = {
     inherit = hobgoblin_province
     color = { 128 119 123 }
+	position = {
+		2146.000 2387.000 2147.000 2387.000 2844.000 1530.000 2847.500 1540.500 2844.000 1530.000 2152.000 2388.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 2.793 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Kharzadur"
 	area = morzkaal
 	terrain = red_hills
@@ -394,6 +681,15 @@ new area durmathak = {
 new province durmathak = {
     inherit = hobgoblin_province
     color = { 122 166 135 }
+	position = {
+		2119.000 2345.000 2125.000 2352.000 2864.000 1518.000 2869.000 1523.000 2864.000 1518.000 2131.000 2352.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Durmathak"
 	area = durmathak
 	terrain = red_plains
@@ -405,16 +701,35 @@ new province durmathak = {
 new province sharnagoth = {
     inherit = hobgoblin_province
     color = { 141 111 187 }
+	position = {
+		2098.000 2351.000 2090.000 2357.000 2882.000 1537.000 2887.000 1542.000 2881.500 1535.500 2097.000 2357.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Sharnagoth"
 	area = durmathak
 	terrain = red_hills
 	history += {
 		history_trade_goods	= livestock
+		history_owner = vrakthu
 	}
 }
 new province balkiir_mine = {
     inherit = hobgoblin_province
     color = { 244 154 247 }
+	position = {
+		2122.000 2373.000 2124.000 2371.000 2887.000 1525.000 2892.000 1530.000 2887.000 1525.000 2124.000 2371.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
 	name = "Balkiir Mine"
 	area = durmathak
 	terrain = red_hills
@@ -431,209 +746,655 @@ new area vrakthu = {
 new province drovashk = {
     inherit = hobgoblin_province
     color = { 176 238 130 }
+	position = {
+		2051.000 2297.000 2053.000 2303.000 2893.000 1511.000 2898.000 1516.000 2893.000 1511.000 2054.000 2299.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Drovashk"
 	area = vrakthu
 	terrain = red_plains
 	history += {
 		history_trade_goods	= grain
+		history_owner = vrakthu
 	}
 }
 new province zhunsho_mine = {
     inherit = hobgoblin_province
     color = { 232 123 146 }
+	position = {
+		2044.000 2320.000 2048.000 2323.000 2888.000 1549.000 2893.000 1554.000 2888.000 1549.000 2053.000 2319.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Zhunsho Mine"
 	area = vrakthu
 	terrain = red_hills
 	history += {
 		history_trade_goods	= c_metals
+		history_owner = vrakthu
 	}
 }
 new province thakmorun = {
     inherit = hobgoblin_province
     color = { 168 121 177 }
+	position = {
+		2076.000 2344.000 2061.000 2343.000 2872.000 1551.000 2863.500 1549.500 2872.000 1551.000 2078.000 2342.000 0.000 0.000 
+	}
+	rotation = {
+		1.222 0.000 0.000 2.618 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Thakmorun"
 	area = vrakthu
 	terrain = red_hills
 	history += {
 		history_trade_goods	= fur
+		history_owner = vrakthu
 	}
 }
 new province vrakthu = {
     inherit = hobgoblin_province
     color = { 245 153 132 }
+	position = {
+		2074.000 2327.000 2080.000 2328.000 2880.000 1567.000 2878.500 1573.000 2880.000 1567.000 2084.000 2329.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 -4.712 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
     name = "Vrakthu"
 	area = vrakthu
 	terrain = red_plains
 	history += {
 		history_trade_goods	= grain
+		history_owner = vrakthu
 	}
 }
 
-
-new province hobgoblin_24 = {
-    inherit = hobgoblin_province
-    color = { 108 221 187 }
-    name = "hobgoblin 24"
+new area torgaldin = {
+	name = "Torgaldin"
+	region = ziren
 }
-
-new province hobgoblin_25 = {
-    inherit = hobgoblin_province
-    color = { 224 242 121 }
-    name = "hobgoblin 25"
-}
-
-new province hobgoblin_26 = {
-    inherit = hobgoblin_province
-    color = { 103 220 130 }
-    name = "hobgoblin 26"
-}
-
-new province hobgoblin_27 = {
-    inherit = hobgoblin_province
-    color = { 250 242 219 }
-    name = "hobgoblin 27"
-}
-
-new province hobgoblin_28 = {
-    inherit = hobgoblin_province
-    color = { 107 232 110 }
-    name = "hobgoblin 28"
-}
-
-new province hobgoblin_29 = {
-    inherit = hobgoblin_province
-    color = { 128 123 173 }
-    name = "hobgoblin 29"
-}
-
-new province hobgoblin_30 = {
-    inherit = hobgoblin_province
-    color = { 159 107 184 }
-    name = "hobgoblin 30"
-}
-
-new province hobgoblin_31 = {
-    inherit = hobgoblin_province
-    color = { 159 234 112 }
-    name = "hobgoblin 31"
-}
-
-new province hobgoblin_32 = {
-    inherit = hobgoblin_province
-    color = { 216 228 241 }
-    name = "hobgoblin 32"
-}
-
-new province hobgoblin_33 = {
-    inherit = hobgoblin_province
-    color = { 139 184 172 }
-    name = "hobgoblin 33"
-}
-
-new province hobgoblin_34 = {
-    inherit = hobgoblin_province
-    color = { 216 216 153 }
-    name = "hobgoblin 34"
-}
-
-new province hobgoblin_35 = {
-    inherit = hobgoblin_province
-    color = { 130 105 186 }
-    name = "hobgoblin 35"
-}
-new province hobgoblin_36 = {
-    inherit = hobgoblin_province
-    color = { 139 163 191 }
-    name = "hobgoblin 36"
-}
-
-new province hobgoblin_37 = {
-    inherit = hobgoblin_province
-    color = { 231 166 202 }
-    name = "hobgoblin 37"
-}
-
-new province hobgoblin_38 = {
-    inherit = hobgoblin_province
-    color = { 250 142 251 }
-    name = "hobgoblin 38"
-}
-
-new province hobgoblin_39 = {
-    inherit = hobgoblin_province
-    color = { 189 107 108 }
-    name = "hobgoblin 39"
-}
-
-new province hobgoblin_40 = {
-    inherit = hobgoblin_province
-    color = { 135 229 235 }
-    name = "hobgoblin 40"
-}
-
-new province hobgoblin_41 = {
-    inherit = hobgoblin_province
-    color = { 165 254 219 }
-    name = "hobgoblin 41"
-}
-
-new province hobgoblin_42 = {
-    inherit = hobgoblin_province
-    color = { 183 159 113 }
-    name = "hobgoblin 42"
-}
-
-new province hobgoblin_43 = {
-    inherit = hobgoblin_province
-    color = { 213 196 220 }
-    name = "hobgoblin 43"
-}
-
-new province hobgoblin_44 = {
-    inherit = hobgoblin_province
-    color = { 109 110 244 }
-    name = "hobgoblin 44"
-}
-
-new province hobgoblin_45 = {
+new province halkasir = {
     inherit = hobgoblin_province
     color = { 140 162 156 }
-    name = "hobgoblin 45"
+	position = {
+		1988.000 2282.000 1988.000 2280.000 1984.000 2277.000 2889.500 1564.000 2882.500 1560.000 1991.000 2282.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.087 3.491 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.500 0.000 0.000 0.000 0.000 
+	}
+    name = "Halkasir"
+	area = torgaldin
+	terrain = red_hills
+	history += {
+		history_trade_goods = grain
+		history_owner = drakstarn
+	}
 }
-
-new province hobgoblin_46 = {
-    inherit = hobgoblin_province
-    color = { 240 250 245 }
-    name = "hobgoblin 46"
-}
-
-new province hobgoblin_47 = {
+new province torgaldin = {
     inherit = hobgoblin_province
     color = { 154 233 147 }
-    name = "hobgoblin 47"
+	position = {
+		2012.000 2269.000 2010.000 2268.000 2902.000 1564.000 2894.000 1566.000 2902.000 1564.000 2014.000 2267.000 0.000 0.000 
+	}
+	rotation = {
+		0.698 0.000 0.000 -3.665 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Torgaldin"
+	area = torgaldin
+	terrain = red_hills
+	history += {
+		history_trade_goods = grain
+		history_owner = drakstarn
+	}
 }
-
-new province hobgoblin_48 = {
+new province vrudhar = {
     inherit = hobgoblin_province
     color = { 241 110 182 }
-    name = "hobgoblin 48"
-    terrain = hills
+	position = {
+		2009.000 2246.000 2014.000 2250.000 2904.000 1580.000 2898.000 1587.500 2904.000 1580.000 2015.000 2249.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 2.792 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Vrudhar"
+    area = torgaldin
+	terrain = red_hills
+	history += {
+		history_trade_goods = livestock
+		history_owner = vrudhar
+	}
 }
-
-new province hobgoblin_49 = {
+new province frothern = {
     inherit = hobgoblin_province
     color = { 202 219 131 }
-    name = "hobgoblin 49"
+	position = {
+		2039.000 2272.000 2042.000 2273.000 2941.000 1408.000 2948.000 1406.000 2941.000 1408.000 2055.000 2282.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 -6.196 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Frothern"
+	area = torgaldin
+	terrain = red_hills
+	history += {
+		history_trade_goods = stone
+		history_owner = ahmaton
+	}
 }
 
-new province hobgoblin_58 = {
+new area drakstarn = {
+	name = "Drakstarn"
+	region = ziren
+}
+new province karathzul = {
+    inherit = hobgoblin_province
+    color = { 109 110 244 }
+	position = {
+		1983.000 2298.000 1987.000 2309.000 2919.000 1399.000 2921.000 1394.000 2919.000 1399.000 1992.000 2301.000 0.000 0.000 
+	}
+	rotation = {
+		0.785 0.000 0.000 -0.088 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Karathzul"
+	area = drakstarn
+	terrain = red_hills
+	history += {
+		history_trade_goods	= r_metals
+		history_owner = drakstarn
+	}
+}
+new province drakstarn = {
+    inherit = hobgoblin_province
+    color = { 240 250 245 }
+	position = {
+		2020.000 2279.000 2021.000 2285.000 2919.000 1419.000 2924.000 1424.000 2919.000 1419.000 2029.000 2283.000 0.000 0.000 
+	}
+	rotation = {
+		0.960 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Drakstarn"
+	area = drakstarn
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = drakstarn
+	}
+}
+new province gromaksi = {
     inherit = hobgoblin_province
     color = { 204 142 138 }
-    name = "hobgoblin 58"
+	position = {
+		2024.000 2302.000 2028.000 2306.000 2938.000 1430.000 2943.000 1435.000 2938.000 1430.000 2029.000 2303.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Gromaksi"
+	area = drakstarn
+	terrain = red_hills
+	history += {
+		history_trade_goods = livestock
+		history_owner = drakstarn
+	}
 }
 
-new province hobgoblin_67 = {
+new area kalthru = {
+	name = "Kalthru"
+	region = ziren
+}
+new province kalthru = {
     inherit = hobgoblin_province
-    color = { 203 125 133 }
-    name = "hobgoblin 67"
+    color = { 135 229 235 }
+	position = {
+		1915.000 2305.000 1911.000 2308.000 2961.000 1409.000 2956.000 1402.000 2961.000 1409.000 1920.000 2303.000 0.000 0.000 
+	}
+	rotation = {
+		1.658 0.000 0.000 0.611 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Kalthru"
+	area = kalthru
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = kalthru
+	}
+}
+new province skolvarth = {
+    inherit = hobgoblin_province
+    color = { 165 254 219 }
+	position = {
+		1911.000 2289.000 1921.000 2288.000 2973.000 1405.000 2964.000 1399.000 2973.000 1405.000 1925.000 2289.000 0.000 0.000 
+	}
+	rotation = {
+		1.571 0.000 0.000 0.785 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Skolvarth"
+	area = kalthru
+	terrain = red_hills
+	history += {
+		history_trade_goods = c_metals
+		history_owner = kalthru
+	}
+}
+new province tarkozhul = {
+    inherit = hobgoblin_province
+    color = { 183 159 113 }
+	position = {
+		1953.000 2299.000 1947.000 2304.000 2967.000 1436.000 2972.000 1441.000 2967.000 1436.000 1952.000 2302.000 2967.000 1436.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Tarkozhul"
+	area = kalthru
+	terrain = red_plains
+	history += {
+		history_trade_goods = livestock
+		history_owner = kalthru
+	}
+}
+new province vograthun = {
+    inherit = hobgoblin_province
+    color = { 213 196 220 }
+	position = {
+		1948.000 2286.000 1950.000 2286.000 2975.000 1432.000 2976.000 1433.000 2979.000 1428.000 1953.000 2284.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 -1.483 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Vograthun"
+	area = kalthru
+	terrain = red_hills
+	history += {
+		history_trade_goods = r_metals
+		history_owner = kalthru
+	}
+}
+new province throzkaal = {
+    inherit = hobgoblin_province
+    color = { 189 107 108 }
+	position = {
+		1886.000 2305.000 1887.000 2311.000 2972.000 1416.000 2977.000 1421.000 2972.000 1416.000 1889.000 2308.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Throzkaal"
+	area = kalthru
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = volkhadrek
+	}
+}
+
+new area volkhadrek = {
+	name = "Volkhadrek"
+	region = ziren
+}
+new province volkhadrek = {
+    inherit = hobgoblin_province
+    color = { 231 166 202 }
+	position = {
+		1860.000 2287.000 1859.000 2294.000 0.000 0.000 0.000 0.000 0.000 0.000 1861.000 2286.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Volkhadrek"
+	area = volkhadrek
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = volkhadrek
+	}
+}
+new province baskorath = {
+    inherit = hobgoblin_province
+    color = { 250 142 251 }
+	position = {
+		1882.000 2285.000 1886.000 2289.000 3005.000 1443.000 3007.000 1432.000 3005.000 1443.000 1887.000 2285.000 0.000 0.000 
+	}
+	rotation = {
+		0.087 0.000 0.000 0.262 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Baskorath"
+	area = volkhadrek
+	terrain = red_hills
+	history += {
+		history_trade_goods = silver
+		history_owner = volkhadrek
+	}
+}
+new province branzuthir = {
+    inherit = hobgoblin_province
+    color = { 139 163 191 }
+	position = {
+		1864.000 2250.000 1859.000 2258.000 1867.000 2249.000 3002.500 1428.500 2997.500 1427.000 1868.000 2252.000 0.000 0.000 
+	}
+	rotation = {
+		-0.698 0.000 0.524 -1.047 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.050 0.000 0.000 0.000 0.000 
+	}
+    name = "Branzuthir"
+	area = volkhadrek
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = kroshva
+	}
+}
+
+new area zharnokh = {
+	name = "Zharnokh"
+	region = konner
+}
+new province tzokrandir = {
+    inherit = hobgoblin_province
+    color = { 216 228 241 }
+	position = {
+		1927.000 2235.000 1922.000 2231.000 2990.000 1415.000 2998.000 1414.500 2990.000 1415.000 1927.000 2231.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 5.498 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Tzokdrandir"
+	area = zharnokh
+	terrain = red_plains
+	history += {
+		history_trade_goods = grain
+		history_owner = kroshva
+	}
+}
+new province zharnokh = {
+    inherit = hobgoblin_province
+    color = { 139 184 172 }
+	position = {
+		1944.000 2251.000 1937.000 2252.000 2995.000 1400.000 2998.000 1406.000 2995.000 1400.000 1949.000 2249.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Zharnokh"
+	area = zharnokh
+	terrain = red_hills
+	history += {
+		history_trade_goods = livestock
+		history_owner = kroshva
+	}
+}
+new province murgothir = {
+    inherit = hobgoblin_province
+    color = { 216 216 153 }
+	position = {
+		1953.000 2230.000 1950.000 2233.000 2972.000 1388.000 2969.000 1386.000 2972.000 1388.000 1951.000 2232.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 1.134 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Murgothir"
+	area = zharnokh
+	terrain = red_hills
+	history += {
+		history_trade_goods = c_metals
+		history_owner = kroshva
+	}
+}
+new province thrungral = {
+    inherit = hobgoblin_province
+    color = { 130 105 186 }
+	position = {
+		1982.000 2240.000 1986.000 2244.000 2986.000 1393.000 2991.000 1398.000 2986.000 1393.000 1986.000 2241.000 0.000 0.000 
+	}
+	rotation = {
+		0.175 0.000 0.000 0.000 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Thrungral"
+	area = zharnokh
+	terrain = red_hills
+	history += {
+		history_trade_goods = livestock
+		history_owner = vrudhar
+	}
+}
+
+new area kroshva = {
+	name = "Kroshva"
+	region = konner
+}
+new province kroshva = {
+    inherit = hobgoblin_province
+    color = { 159 107 184 }
+	position = {
+		1887.000 2238.000 1880.000 2238.000 2985.000 1377.000 2980.000 1372.000 2985.000 1377.000 1889.000 2239.000 0.000 0.000 
+	}
+	rotation = {
+		0.436 0.000 0.000 1.134 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Kroshva"
+	area = kroshva
+	terrain = red_plains
+	history += {
+		history_trade_goods	= grain
+		history_owner = kroshva
+	}
+}
+new province zurmokho = {
+    inherit = hobgoblin_province
+    color = { 159 234 112 }
+	position = {
+		1912.000 2252.000 1907.000 2255.000 3000.000 1363.000 2995.500 1358.500 3003.000 1363.000 1915.000 2253.000 0.000 0.000 
+	}
+	rotation = {
+		2.269 0.000 0.000 1.134 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Zurmokho"
+	area = kroshva
+	terrain = red_plains
+	history += {
+		history_trade_goods	= grain
+		history_owner = kroshva
+	}
+}
+new province drakhma = {
+    inherit = hobgoblin_province
+    color = { 107 232 110 }
+	position = {
+		1875.000 2219.000 1869.000 2223.000 3009.000 1383.000 3015.500 1391.500 3009.000 1383.000 1878.000 2215.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 3.491 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Drakhma"
+	area = kroshva
+	terrain = red_plains
+	history += {
+		history_trade_goods	= c_metals
+		history_owner = kroshva
+	}
+}
+new province voraktha = {
+    inherit = hobgoblin_province
+    color = { 128 123 173 }
+	position = {
+		1899.000 2223.000 1900.000 2228.000 3026.000 1362.000 3026.000 1372.000 3031.000 1357.000 1905.000 2225.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Voraktha"
+	area = kroshva
+	terrain = red_plains
+	history += {
+		history_trade_goods	= grain
+		history_owner = kroshva
+	}
+}
+
+new area zurvakhol = {
+	name = "Zurvakhol"
+	region = konner
+}
+new province kralthor = {
+    inherit = hobgoblin_province
+    color = { 108 221 187 }
+	position = {
+		1884.000 2191.000 1880.000 2190.000 3035.000 1340.000 3030.000 1338.000 3035.000 1340.000 1883.000 2190.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 0.262 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Kralthor"
+	area = zurvakhol
+	terrain = red_hills
+	history += {
+		history_trade_goods	= c_metals
+		history_owner = zurvakhol
+	}
+}
+new province tharzga = {
+    inherit = hobgoblin_province
+    color = { 224 242 121 }
+	position = {
+		1910.000 2169.000 1904.000 2170.000 3065.000 1340.000 3084.500 1337.000 3089.000 1329.000 1912.000 2165.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 3.927 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Tharzga"
+	area = zurvakhol
+	terrain = red_hills
+	history += {
+		history_trade_goods	= livestock
+		history_owner = zurvakhol
+	}
+}
+new province mazgothu = {
+    inherit = hobgoblin_province
+    color = { 103 220 130 }
+	position = {
+		1921.000 2181.000 1917.000 2183.000 3059.000 1315.000 3058.000 1288.500 3060.000 1317.000 1924.000 2181.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.786 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Mazgothu"
+	area = zurvakhol
+	terrain = red_hills
+	history += {
+		history_trade_goods	= stone
+		history_owner = zurvakhol
+	}
+}
+new province zurvakhol = {
+    inherit = hobgoblin_province
+    color = { 250 242 219 }
+	position = {
+		1903.000 2194.000 1900.000 2198.000 3036.000 1276.000 3043.000 1280.000 3036.000 1276.000 1905.000 2192.000 0.000 0.000 
+	}
+	rotation = {
+		0.000 0.000 0.000 -1.396 0.000 0.000 0.000 
+	}
+	height = {
+		0.000 0.000 1.000 0.000 0.000 0.000 0.000 
+	}
+    name = "Zurvakhol"
+	area = zurvakhol
+	terrain = red_plains
+	history += {
+		history_trade_goods	= potions
+		history_owner = zurvakhol
+	}
 }

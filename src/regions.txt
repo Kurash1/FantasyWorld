@@ -10,6 +10,10 @@ new region ziren = {
 	name = "Ziren River"
 	superregion = sword_valley
 }
+new region konner = {
+	name = "Konner River"
+	superregion = sword_valley
+}
 new region eastmarch = {
 	name = "Eastmarch"
 	superregion = skyrim

@@ -7,6 +7,15 @@ new tradenode black_mountain = {
 	outgoings = {
 	}
 }
+new tradenode test = {
+	name = "Test"
+	location = dornkeep
+	areas = {
+		dorn ivin ishtor arkon_pass shanter_peak tullen_hills durmathak vrakthu drakstarn kalthru volkhadrek zharnokh kroshva zurvakhol tosher_hills morzkaal torgaldin
+	}
+	outgoings = {
+	}
+}
 new tradenode solitude = {
 	name = "Solitude"
 	location = solitude
