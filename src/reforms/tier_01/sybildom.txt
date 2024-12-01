@@ -40,16 +40,6 @@ new country_event theocracy.2 = {
 	}
 }
 
-on_actions:on_startup += {
-	if [has_reform = tier_1_sybildom] {
-		if [religion = nordic_pantheon] {
-			change_personal_deity = dibella
-		}
-		if [religion = the_old_ways] {
-			change_personal_deity = moth
-		}
-	}
-}
 on_actions:on_monarch_death += {
 	if [has_reform = tier_1_sybildom] {
 		if [religion = nordic_pantheon] {
@@ -71,10 +61,6 @@ governments:theocracy:reform_levels:1 += new tier_1_sybildom = {
 	}
 	trigger = {
 		has_reform = tier_1_sybildom
-		OR = {
-			religion = nordic_pantheon
-			religion = the_old_ways
-		}
 	}
 	custom_attributes = {
 		special_election = yes

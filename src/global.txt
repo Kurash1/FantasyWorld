@@ -191,14 +191,19 @@ new localisation CORE_PAUSED = "Paused"
 new localisation mage_general_personality_die_desc = "[GetHerHisCap] magical mastery will be missed by our troops."
 new localisation mage_general_personality = "Mage"
 new localisation desc_mage_general_personality = ""
-new bookmark old_kingdom = {
-	name = "Old Kingdom"
+new bookmark claimants_of_the_sword = {
+	name = "Claimants of the Sword"
 	desc = ""
 	date = 2568.1.1
-	easy_countries = {
-		black_mountain
+	countries = {
+		ivin
+		drog_khaal
+		arkon
 	}
-	center = ivinfiel
+	easy_countries = {
+		kroshva
+	}
+	center = urkathal
 	default = yes
 }
 new age first_century = {

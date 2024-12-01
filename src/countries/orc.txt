@@ -1,10 +1,17 @@
 new inheritable orc_country = {
 	technology_group = nord
 	primary_culture = sword_orc
-	religion = red_code
+	religion = orcish_pantheon
 	graphical_culture = greekgfx
 	government = tribal
 	starting_reform = tier_1_orc_stronghold
+	history = {
+		1.1.1 = {
+			Tamriel = {
+				discover_country = $tag
+			}
+		}
+	}
 }
 new country grul_khaar = {
 	inherit = orc_country
@@ -14,7 +21,7 @@ new country grul_khaar = {
 	color = {
 		2 78 47
 	}
-	capital = dornkeep
+	capital = gralthok
 }
 new country zarak_thul = {
 	inherit = orc_country
@@ -24,7 +31,7 @@ new country zarak_thul = {
 	color = {
 		195 107 215
 	}
-	capital = dornkeep
+	capital = zarhammor
 }
 new country morgothra = {
 	inherit = orc_country
@@ -34,7 +41,7 @@ new country morgothra = {
 	color = {
 		58 41 209
 	}
-	capital = dornkeep
+	capital = muldrokk
 }
 new country druk_makra = {
 	inherit = orc_country
@@ -44,7 +51,7 @@ new country druk_makra = {
 	color = {
 		72 241 75
 	}
-	capital = dornkeep
+	capital = vulkrad
 }
 new country thraal_kur = {
 	inherit = orc_country
@@ -54,7 +61,7 @@ new country thraal_kur = {
 	color = {
 		238 196 21
 	}
-	capital = dornkeep
+	capital = droknir
 }
 new country var_ghram = {
 	inherit = orc_country
@@ -64,7 +71,7 @@ new country var_ghram = {
 	color = {
 		212 123 68
 	}
-	capital = dornkeep
+	capital = thranggor
 }
 new country korr_dazhn = {
 	inherit = orc_country
@@ -74,7 +81,7 @@ new country korr_dazhn = {
 	color = {
 		221 216 249
 	}
-	capital = dornkeep
+	capital = kraghzul
 }
 new country uthrak_zor = {
 	inherit = orc_country
@@ -84,7 +91,7 @@ new country uthrak_zor = {
 	color = {
 		36 25 62
 	}
-	capital = dornkeep
+	capital = zorlokk
 }
 new country ghrash_tan = {
 	inherit = orc_country
@@ -94,7 +101,7 @@ new country ghrash_tan = {
 	color = {
 		32 6 8
 	}
-	capital = dornkeep
+	capital = broghkar
 }
 new country zar_vurth = {
 	inherit = orc_country
@@ -104,7 +111,7 @@ new country zar_vurth = {
 	color = {
 		221 20 55
 	}
-	capital = dornkeep
+	capital = tharnukk
 }
 new country kragh_dor = {
 	inherit = orc_country
@@ -114,7 +121,7 @@ new country kragh_dor = {
 	color = {
 		4 233 207
 	}
-	capital = dornkeep
+	capital = droghar
 }
 new country malthrugra = {
 	inherit = orc_country
@@ -124,7 +131,7 @@ new country malthrugra = {
 	color = {
 		67 156 246
 	}
-	capital = dornkeep
+	capital = zorgrim
 }
 new country drog_khaal = {
 	inherit = orc_country
@@ -134,7 +141,7 @@ new country drog_khaal = {
 	color = {
 		27 6 78
 	}
-	capital = dornkeep
+	capital = thraxxor
 }
 new country nathrak_zir = {
 	inherit = orc_country
@@ -144,7 +151,7 @@ new country nathrak_zir = {
 	color = {
 		194 33 43
 	}
-	capital = dornkeep
+	capital = morglur
 }
 new country gol_thurn = {
 	inherit = orc_country
@@ -154,7 +161,7 @@ new country gol_thurn = {
 	color = {
 		207 58 244
 	}
-	capital = dornkeep
+	capital = thogrun
 }
 new country brakk_zul = {
 	inherit = orc_country
@@ -164,7 +171,7 @@ new country brakk_zul = {
 	color = {
 		16 200 121
 	}
-	capital = dornkeep
+	capital = zul_thrak
 }
 new country thrazh_gul = {
 	inherit = orc_country
@@ -174,7 +181,7 @@ new country thrazh_gul = {
 	color = {
 		96 180 19
 	}
-	capital = dornkeep
+	capital = volgrath
 }
 new country zorr_khanth = {
 	inherit = orc_country
@@ -184,7 +191,7 @@ new country zorr_khanth = {
 	color = {
 		151 70 12
 	}
-	capital = dornkeep
+	capital = varkhul
 }
 new country vuur_tarak = {
 	inherit = orc_country
@@ -194,7 +201,7 @@ new country vuur_tarak = {
 	color = {
 		203 122 8
 	}
-	capital = dornkeep
+	capital = rukpas
 }
 new country khaarth_mal = {
 	inherit = orc_country
@@ -204,7 +211,7 @@ new country khaarth_mal = {
 	color = {
 		184 45 21
 	}
-	capital = dornkeep
+	capital = krathrak
 }
 new country ral_ghron = {
 	inherit = orc_country
@@ -214,7 +221,7 @@ new country ral_ghron = {
 	color = {
 		161 47 7
 	}
-	capital = dornkeep
+	capital = drogvorr
 }
 new country gron_vashn = {
 	inherit = orc_country
@@ -224,7 +231,7 @@ new country gron_vashn = {
 	color = {
 		8 109 149
 	}
-	capital = dornkeep
+	capital = vulgrokk
 }
 new country darr_kuzak = {
 	inherit = orc_country
@@ -234,7 +241,7 @@ new country darr_kuzak = {
 	color = {
 		28 41 211
 	}
-	capital = dornkeep
+	capital = skarvok
 }
 new country xor_thull = {
 	inherit = orc_country
@@ -244,7 +251,7 @@ new country xor_thull = {
 	color = {
 		236 17 218
 	}
-	capital = dornkeep
+	capital = thulkurz
 }
 new country krash_nal = {
 	inherit = orc_country
@@ -254,7 +261,7 @@ new country krash_nal = {
 	color = {
 		56 232 242
 	}
-	capital = dornkeep
+	capital = grozzhull
 }
 new country thorr_makul = {
 	inherit = orc_country
@@ -264,7 +271,7 @@ new country thorr_makul = {
 	color = {
 		1 152 95
 	}
-	capital = dornkeep
+	capital = gorrathor
 }
 new country zhol_varn = {
 	inherit = orc_country
@@ -274,7 +281,7 @@ new country zhol_varn = {
 	color = {
 		224 9 6
 	}
-	capital = dornkeep
+	capital = kravrok
 }
 new country ulth_karaz = {
 	inherit = orc_country
@@ -284,7 +291,7 @@ new country ulth_karaz = {
 	color = {
 		152 6 2
 	}
-	capital = dornkeep
+	capital = gralzur
 }
 new country nar_kazhrun = {
 	inherit = orc_country
@@ -294,5 +301,5 @@ new country nar_kazhrun = {
 	color = {
 		39 254 60
 	}
-	capital = dornkeep
+	capital = thrungar
 }

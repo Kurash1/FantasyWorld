@@ -1130,7 +1130,6 @@ new country skyborn = {
 	color = {
 		200 200 255
 	}
-	religion = the_old_ways
 }
 new country yorgrim = {
 	inherit = nordic_country
@@ -1658,43 +1657,4 @@ new country bear_warriors = {
 	color = {
 		86 47 29
 	}
-}
-new country jojoland = {
-	inherit = nordic_country
-	primary_culture = haafingarian
-	tag = JOJ
-	name = "Jojoland"
-	adj = "Jojolandian"
-	color = {
-		6 6 6
-	}
-	graphical_culture = westerngfx
-	monarch_names = {
-		"Joseph" = 10
-		"Jonathan" = 10
-		"Jolyne" = 10
-		"Josuke" = 10
-		"Giorno" = 10
-		"Jotaro" = 10
-	}
-	leader_names = {
-		Jojo
-	}
-	ship_names = {
-		Bob
-	}
-	history += {
-		2568.1.1 = {
-			starting_ruler = {
-				name = "Jonathan"
-				dynasty = "Joestar"
-				adm = 5
-				dip = 4
-				mil = 6
-				age = 18
-			}
-		}
-     
-	}
-	capital = durmathak
 }

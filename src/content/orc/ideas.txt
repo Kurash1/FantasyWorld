@@ -1,0 +1,65 @@
+new idea_group orcish_ideas = {
+	name = "Orcish"
+	category = national
+	start = {
+		morale_damage_received = -10%
+		infantry_power = 10%
+	}
+	bonus = {
+		war_exhaustion = -0.03
+	}
+	trigger = {
+		primary_culture = sword_orc
+	}
+	ideas = {
+		{
+			name = "Divine Rebirth"
+			desc = "The Divine Rebirth is the foundation of Orcish identity and power, rooted in their mythic origins when three orcish gods transformed human slaves into the first of their kind. This rebirth was marked by a surge of primal strength and ferocity, forging a race of warriors bound by divine will and brutal instincts. The legacy of this transformation is celebrated through rituals and ceremonies that honor the gods who forged the orcish race. The Orcish leaders often recount tales of their divine creators, instilling a sense of sacred duty and unyielding strength in their followers. This reverence for their origins drives the Orcs’ unrelenting aggression and their belief in their invincibility on the battlefield."
+			modifier = {
+				tolerance_own = 2
+			}
+		}
+		{
+			name = "The Brutal Path"
+			desc = "The Brutal Path epitomizes the Orcish approach to warfare and conflict, which values raw strength and ferocity over strategy and tactics. This idea emerged from the Orcish belief that might alone can conquer any foe, a doctrine established by their ancient warlords. Historical battles, such as the Siege of the Last Bastion, exemplify this philosophy, where sheer force overwhelmed well-fortified defenses. Orcish combat doctrines emphasize direct assault and overwhelming force, with little regard for tactical finesse or supply lines. Instead, they rely on their gods' favor to sustain their armies, often believing that divine intervention will keep their forces strong and their bellies full."
+			modifier = {
+				shock_damage = 15%
+			}
+		}
+		{
+			name = "Flesh of Victory"
+			desc = "The Flesh of Victory is an Orcish tradition that venerates the act of devouring the flesh of defeated enemies as a way of absorbing their strength and spirit. This practice stems from ancient rituals where the victors would consume the remains of their foes to honor their prowess and integrate their power. The belief is that by consuming the flesh of the vanquished, the Orcs gain their strength and courage, reinforcing their dominance in battle. Historical accounts, such as the Feasting of the Fallen, highlight this practice, where the victors of great battles hold grand feasts to celebrate their triumphs and solidify their bond with the divine. The Flesh of Victory is both a ritualistic act and a powerful symbol of their invincibility and superiority."
+			modifier = {
+				land_morale = 10%
+			}
+		}
+		{
+			name = "Unyielding Host"
+			desc = "The Unyielding Host reflects the Orcs’ approach to warfare, where they view their armies as an unstoppable tide of destruction. This concept is rooted in the ancient practice of summoning immense warbands that sweep across enemy lands like a tidal wave. The Orcish warlords, such as Gorrath the Immortal, who led legendary campaigns across the Sword-Valley, exemplify this principle. The Unyielding Host values relentless assault and the ability to sustain continuous pressure on adversaries, regardless of the cost. This unrelenting aggression is seen as a testament to their strength and the divine favor they believe ensures their ultimate victory."
+			modifier = {
+				land_forcelimit_modifier = 15%
+			}
+		}
+		{
+			name = "Sacred Brawl"
+			desc = "The Sacred Brawl is a ritualistic practice among the Orcs where battle and physical contest are elevated to a form of religious expression. This tradition dates back to the times when the first Orcs, infused with divine fury, fought to prove their worth and seek the favor of their gods. The Sacred Brawl is not just a test of strength but a sacred rite, with each victory and defeat seen as a direct response to the will of the gods. Ceremonial fights are held to settle disputes, honor heroes, and demonstrate the might of the Orcish people. These rites reinforce their belief in physical prowess as the ultimate measure of divine approval and societal status."
+			modifier = {
+				infantry_shock = 0.5
+			}
+		}
+		{
+			name = "The War-Monger’s Pact"
+			desc = "The War-Monger’s Pact is a solemn agreement made among Orcish leaders to prioritize warfare and conquest above all other concerns. Established after the initial conquests of the Sword-Valley, this pact enshrined the principle that the pursuit of war and dominance is central to Orcish society. Historical events, such as the Treaty of Ironclad Blades, cemented this doctrine, where different Orcish factions agreed to unify under a common goal of expanding their dominion. The pact also includes a religious component, where prayers for war are believed to grant divine support and material benefits, such as food and supplies, directly from their gods. This focus on war and conquest is seen as both a divine mandate and a societal obligation, guiding Orcish policy and culture."
+			modifier = {
+				administrative_efficiency = 5%
+			}
+		}
+		{
+			name = "The Desire for All "
+			desc = "The Desire for All embodies the Orcish drive to dominate and claim everything in their path. This idea reflects the insatiable ambition of the Orcs, who see the world as a battleground where every victory brings them closer to ultimate supremacy. This drive has its roots in the ancient conquest of the Sword-Valley, where the Orcish gods commanded their new creations to seize and control all that they could. The Desire for All is a principle deeply ingrained in Orcish culture, fostering a relentless pursuit of expansion and conquest. Every victory is seen as a step towards fulfilling their divine mandate, and this idea galvanizes Orcish armies to push beyond their borders, driven by the belief that their right to rule extends to all lands. This tenacity is evident in their willingness to wage continuous wars, expand their territory, and assimilate or annihilate any who oppose their will."
+			modifier = {
+				core_creation = -15%
+			}
+		}
+	}
+}

@@ -5,6 +5,13 @@ new inheritable hobgoblin_country = {
 	graphical_culture = greekgfx
 	government = theocracy
 	starting_reform = tier_1_host
+	history = {
+		1.1.1 = {
+			Tamriel = {
+				discover_country = $tag
+			}
+		}
+	}
 }
 new country tyrren = {
 	inherit = hobgoblin_country
@@ -145,6 +152,16 @@ new country zurvakhol = {
 		50 50 50
 	}
 	capital = zurvakhol
+}
+new country great_host = {
+	inherit = hobgoblin_country
+	tag = GRH
+	name = "Zurvakhol Host"
+	adj = "Zurvakhol"
+	color = {
+		255 0 0
+	}
+	capital = kroshva
 }
 
 new relation march = {

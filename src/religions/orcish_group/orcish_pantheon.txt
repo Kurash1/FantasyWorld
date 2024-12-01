@@ -1,0 +1,17 @@
+new religion orcish_pantheon = {
+	name = "Orcish Pantheon"
+	desc = "The Orcish Pantheon is a triad of mighty deities, revered as the primordial gods who shaped the orcish race from human slaves and imbued them with ferocious strength and indomitable will. These gods are central to the Orcish belief system, embodying the core values of strength, brutality, and divine favor that define Orcish society. According to legend, the gods descended from the heavens to forge the Orcs in their image, and their influence is evident in every aspect of Orcish life, from their fierce combat practices to their primal rituals. Each god in the pantheon represents a fundamental aspect of Orcish existence, guiding their warriors and shaping their culture with divine authority."
+	icon = 2
+	color = {
+		80 226 31
+	}
+	heretic = {
+		OLD_GODS_CULT_HERETIC
+	}
+	country = {
+		
+	}
+	province = { }
+	religious_group = orcish_group
+	declare_war_in_regency = yes
+}
