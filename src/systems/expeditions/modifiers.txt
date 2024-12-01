@@ -10,10 +10,6 @@ new modifier_definition global_expedition_speed = {
 	name = "Global Expedition Speed"
 	is_percentage = yes
 }
-new modifier_definition survey_speed = {
-	name = "Survey Speed"
-	is_percentage = yes
-}
 new modifier monthly_expedition_progress = {
 	args = {
 		amount = float

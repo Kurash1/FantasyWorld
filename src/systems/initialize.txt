@@ -1,27 +1,4 @@
 new named_effect on_initialize = {
-	if [
-		NOT = {
-			any_country = {
-				is_race = reachmen
-				ai = no
-			}
-		}
-	] {
-		random_country [
-			is_race = reachmen
-			NOT = {
-				has_country_modifier = reach_blessing
-			}
-		] {
-			log = "Reach Blessing: [This.GetName]"
-			add_country_modifier = {
-				name = reach_blessing
-				duration = (50*365)
-			}
-			change_mil = 6
-		}
-	}
-
 	every_province [is_city = no] {
 		random_list = {
 			10 = { change_native_hostileness = 1 }

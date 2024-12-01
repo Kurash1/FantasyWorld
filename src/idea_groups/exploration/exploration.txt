@@ -27,7 +27,7 @@ new idea_group exploration_ideas = {
 			name = "Map the Unknown"
 			desc = "Cartographers are a necessity on any expedition. We must count them among our ranks."
 			modifier = {
-				survey_speed = 0.5
+				
 			}
 		}
 		{
@@ -42,7 +42,6 @@ new idea_group exploration_ideas = {
 			desc = "With a dedicated scouting organisation we can find new resources far more efficiently than our competitors."
 			modifier = {
 				global_trade_goods_size_modifier = 0.1
-				survey_experience_gain = 0.1
 			}
 		}
 		{

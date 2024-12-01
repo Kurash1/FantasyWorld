@@ -34,8 +34,8 @@ new province black_mountain = {
 	}
 	history = {
 		history_owner = black_mountain
-		culture = eastmarcher
-		religion = nordic_pantheon
+		culture = hobgoblin
+		religion = red_code
 		hre = no
 		history_trade_goods = c_metals
 	
@@ -77,23 +77,6 @@ new province atmora = {
 	history = {
 	}
 	impassible = yes
-}
-new province hvitkald_peak = {
-    inherit = impassible
-	name = "Hvitkald Peak"
-    color = { 6 22 3 }
-}
-new province frykte_peak = {
-    inherit = impassible
-	name = "Frykte Peak"
-    color = { 18 6 12 }
-}
-new province glenschul_peak = {
-	inherit = impassible
-	name = "Glenschul Peak"
-	color = {
-		6 9 19
-	}
 }
 new province r405 = {
 	position = {
@@ -275,24 +258,6 @@ new province tsaesci = {
 	}
 	impassible = yes
 }
-new province r778 = {
-	position = {
-		3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000 3566.000 1187.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.471 0.471 0.471 0.471 0.471 0.471 0.471
-	}
-	name = ""
-	color = {
-		4 8 5
-	}
-	history = {
-	}
-	impassible = yes
-}
 new province pyandonea = {
 	position = {
 		1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000 1343.000 753.000
@@ -419,42 +384,6 @@ new province esroniet = {
 	}
 	impassible = yes
 }
-new province nalonga = {
-	position = {
-		231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000 231.000 1217.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.365 0.365 0.365 0.365 0.365 0.365 0.365
-	}
-	name = "Nalonga"
-	color = {
-		5 28 8
-	}
-	history = {
-	}
-	impassible = yes
-}
-new province valenwood = {
-	position = {
-		1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000 1429.000 1359.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.365 0.365 0.365 0.365 0.365 0.365 0.365
-	}
-	name = "Valenwood"
-	color = {
-		17 27 18
-	}
-	history = {
-	}
-	impassible = yes
-}
 new province elsweyr = {
 	position = {
 		1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000 1834.000 1230.000
@@ -473,24 +402,6 @@ new province elsweyr = {
 	}
 	impassible = yes
 }
-new province morrowind = {
-	position = {
-		2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000 2268.000 1927.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.365 0.365 0.365 0.365 0.365 0.365 0.365
-	}
-	name = "Morrowind"
-	color = {
-		24 19 17
-	}
-	history = {
-	}
-	impassible = yes
-}
 new province r1532 = {
 	position = {
 		2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000 2146.000 1556.000
@@ -504,24 +415,6 @@ new province r1532 = {
 	name = ""
 	color = {
 		25 11 29
-	}
-	history = {
-	}
-	impassible = yes
-}
-new province black_marsh = {
-	position = {
-		2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000 2222.000 1492.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.377 0.377 0.377 0.377 0.377 0.377 0.377
-	}
-	name = "Black Marsh"
-	color = {
-		10 10 15
 	}
 	history = {
 	}
@@ -689,24 +582,6 @@ new province r2682 = {
 	}
 	impassible = yes
 }
-new province r2683 = {
-	position = {
-		3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000 3799.000 2069.000
-	}
-	rotation = {
-		0.000 0.000 0.000 0.000 0.000 0.000 0.000
-	}
-	height = {
-		0.365 0.365 0.365 0.365 0.365 0.365 0.365
-	}
-	name = ""
-	color = {
-		18 6 1
-	}
-	history = {
-	}
-	impassible = yes
-}
 new province summerset = {
 	position = {
 		1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000 1029.000 1296.000
@@ -746,52 +621,10 @@ new province bangkorai = {
 	name = "Bangkorai"
 	color = { 27 20 22 }
 }
-new province bantha = {
-	inherit = impassible
-	name = "Bantha"
-	color = {
-		19 31 6
-	}
-}
-new province alikr = {
-	inherit = impassible
-	name = "Alikr"
-	color = {
-		19 11 6
-	}
-}
-new province fallen_wastes = {
-	inherit = impassible
-	name = "Fallen Wastes"
-	color = {
-		13 17 13
-	}
-}
-new province sunforge = {
-	inherit = impassible
-	name = "Sunforge"
-	color = {
-		9 1 1
-	}
-}
-new province khefrem = {
-	inherit = impassible
-	name = "Khefrem"
-	color = {
-		28 8 29
-	}
-}
 new province brena_area = {
 	inherit = impassible
 	name = "Brena Area"
 	color = {
 		21 13 21
-	}
-}
-new province karnver = {
-	inherit = impassible
-	name = "Karnver"
-	color = {
-		26 3 1
 	}
 }

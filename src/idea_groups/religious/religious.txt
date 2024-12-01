@@ -61,9 +61,5 @@ new idea_group religious_ideas = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 10
-			tag = solitude
-		}
 	}
 }

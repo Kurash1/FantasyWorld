@@ -46,7 +46,7 @@ new country black_mountain = {
 	}
 	government = monarchy
 	technology_group = nord
-	religion = nordic_pantheon
-	primary_culture = hjaalmarcher
+	religion = red_code
+	primary_culture = hobgoblin
 	capital = black_mountain
 }

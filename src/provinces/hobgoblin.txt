@@ -118,7 +118,7 @@ new province inirsarm = {
 	terrain = red_hills
 	area = ivin
 	history += {
-		history_trade_goods = grain
+		history_trade_goods = gold
 		history_owner = ivin
 	}
 }
@@ -994,7 +994,7 @@ new province kalthru = {
 	area = kalthru
 	terrain = red_plains
 	history += {
-		history_trade_goods = grain
+		history_trade_goods = fur
 		history_owner = kalthru
 	}
 }
@@ -1074,7 +1074,7 @@ new province throzkaal = {
 	area = kalthru
 	terrain = red_plains
 	history += {
-		history_trade_goods = grain
+		history_trade_goods = stone
 		history_owner = volkhadrek
 	}
 }
@@ -1099,7 +1099,7 @@ new province volkhadrek = {
 	area = volkhadrek
 	terrain = red_plains
 	history += {
-		history_trade_goods = grain
+		history_trade_goods = stone
 		history_owner = volkhadrek
 	}
 }
@@ -1139,7 +1139,7 @@ new province branzuthir = {
 	area = volkhadrek
 	terrain = red_plains
 	history += {
-		history_trade_goods = grain
+		history_trade_goods = paper
 		history_owner = kroshva
 	}
 }
@@ -1269,7 +1269,7 @@ new province zurmokho = {
 	area = kroshva
 	terrain = red_plains
 	history += {
-		history_trade_goods	= grain
+		history_trade_goods	= gems
 		history_owner = kroshva
 	}
 }

@@ -87,7 +87,25 @@ new named_effect monuments_for_plebs = {
 		}
 	}
 }
-
+new custom_transpile natives = {
+	write_file "common/natives/00_natives.txt" = {
+		natives_american_inuit = {
+			graphical_culture = inuitgfx
+			color = { 0 255 255 }
+			icon = 4
+			
+			unit = nord_infantry
+			
+			provinces = {
+				foreach $ in provinces [
+					$:lake == no
+					$:sea == no
+					$:impassible == no
+				] { $ }
+			}
+		}
+	}
+}
 new define NDefines.NEconomy.MAX_BUILDING_SLOTS = 16
 new localisation empty_line_tt = "	"
 new localisation  HAS_CAPITAL_FORT = "Has a non-influencing fort."
@@ -191,14 +209,24 @@ new localisation CORE_PAUSED = "Paused"
 new localisation mage_general_personality_die_desc = "[GetHerHisCap] magical mastery will be missed by our troops."
 new localisation mage_general_personality = "Mage"
 new localisation desc_mage_general_personality = ""
-new bookmark old_kingdom = {
-	name = "Old Kingdom"
+new bookmark claimants_of_the_sword = {
+	name = "Claimants of the Sword"
 	desc = ""
 	date = 2568.1.1
-	easy_countries = {
-		black_mountain
+	countries = {
+		#orc
+		bookmark_country = zorr_khanth
+		bookmark_country = thraal_kur
+		bookmark_easy_country = drog_khaal
+		
+		#hobgoblin
+		bookmark_country = ivin
+		bookmark_country = arkon
+		bookmark_easy_country = kroshva
+		
+		#demon
 	}
-	center = ivinfiel
+	center = urkathal
 	default = yes
 }
 new age first_century = {

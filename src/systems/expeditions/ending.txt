@@ -3,9 +3,9 @@ new named_effect end_expedition_effect = {
 	remove_expedition_modifiers
 	
 	owner = {
-		&survey_temp &= modifier:prestige_on_expedition_completion
-		while [&survey_temp > 0] {
-			&survey_temp -= 1
+		&temp &= modifier:prestige_on_expedition_completion
+		while [&temp > 0] {
+			&temp -= 1
 			add_prestige = 1
 		}
 	}

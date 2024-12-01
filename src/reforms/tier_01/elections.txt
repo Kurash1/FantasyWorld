@@ -5,7 +5,6 @@ on_actions:on_new_term_election += {
 }
 new named_effect death_election_events = {
 	elections.2
-	elections.3
 }
 on_actions:on_death_election += {
 	events = {
@@ -153,78 +152,5 @@ new country_event elections.2 = {
 			}
 			ai_chance = { factor = 20 }
 		}
-	}
-}
-new country_event elections.3 = {
-	title = "Harbringer Election!"
-	desc = "The unfortunate passing of $MONARCH$ forces us to hold a premature election. Three primary candidates have been nominated..."
-	picture = REPUBLICAN_DEBATES_eventPicture
-	
-	is_triggered_only = yes
-	trigger = {
-		has_reform = companion_remnant
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_country_flag = in_theocracy_heir_selection
-			
-			random_owned_province = {
-				save_event_target_as = es_theocracy_province
-			}
-			
-			random_neighbor_country = { 
-				limit = {
-					government = monarchy
-					has_regency = no
-					religion = ROOT
-				}
-				save_event_target_as = es_neighbor_country_for_theocracy
-			}
-		}
-	}
-	
-	options = {
-		{
-			name = "Wisest Harbringer"
-			effect = {
-				define_ruler = {
-					hide_skills = yes
-					adm = 4
-					claim = 85
-				}
-				add_adm_power = 10
-				add_dip_power = 10
-				add_mil_power = 10
-			}
-			ai_chance = { factor = 20 }
-		}
-		{
-			name = "Most Popular Harbringer"
-			effect = {
-				define_ruler = {
-					hide_skills = yes
-					dip = 4
-					claim = 100
-				}
-			}
-			ai_chance = { factor = 20 }
-		}
-		{
-			name = "Strongest Harbringer"
-			effect = {
-				define_ruler = {
-					hide_skills = yes
-					mil = 4
-					claim = 85
-				}
-				convert_ruler_to_general = 75
-			}
-			ai_chance = { factor = 20 }
-		}
-	}
-	
-	after = {
-		clr_country_flag = in_theocracy_heir_selection
 	}
 }

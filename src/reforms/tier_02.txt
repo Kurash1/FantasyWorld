@@ -204,23 +204,3 @@ new government_reform tier_2_battlemages = {
 		fire_damage = 0.1
 	}
 }
-new government_reform tier_2_lunar_smithing = {
-	name = "Lunar Smithing"
-	desc = ""
-	icon = "lunar_smithing"
-	allow_normal_conversion = yes
-	potential = {
-		owns = silent_moons
-	}
-	trigger = {
-		provinces:silent_moons = {
-			has_great_project = {
-				type = lunar_forge
-				tier = 1
-			}
-		}
-	}
-	modifiers = {
-		infantry_shock = 0.5
-	}
-}

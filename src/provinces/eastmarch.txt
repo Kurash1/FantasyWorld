@@ -1,0 +1,88 @@
+
+
+
+
+new area windhelm = {
+	name = "Windhelm"
+	region = eastmarch
+}
+new province evetsta = {
+	position = {
+		1948.000 1990.000 1948.000 1990.000 1948.000 1990.000 1952.000 1986.000 1948.000 1990.000 1948.000 1990.000 1948.000 1990.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.698 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = coastline
+	name = "Evetsta"
+	color = {
+		234 158 242
+	}
+	area = windhelm
+	history = {
+		culture = hobgoblin
+		religion = red_code
+		hre = yes
+		history_trade_goods = c_metals
+	
+		is_city = yes
+		history_owner = windhelm
+	}
+}
+new province windhelm = {
+	position = {
+		1936.000 1985.000 1936.000 1985.000 1936.000 1985.000 1943.000 1978.000 1936.000 1985.000 1936.000 1985.000 1936.000 1985.000
+	}
+	rotation = {
+		0.000 0.000 0.000 -0.873 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	base_development = 22
+	name = "Windhelm"
+	color = {
+		228 146 220
+	}
+	area = windhelm
+	terrain = hills
+	history = {
+		center_of_trade = 3
+		culture = hobgoblin
+		religion = red_code
+		hre = yes
+		history_trade_goods = arms
+	
+		is_city = yes
+		history_owner = windhelm
+	}
+}
+new province freanna = {
+	position = {
+		1925.000 1979.000 1925.000 1979.000 1925.000 1979.000 1929.000 1974.000 1925.000 1979.000 1925.000 1979.000 1925.000 1979.000
+	}
+	rotation = {
+		0.000 0.000 0.000 0.000 0.000 0.000 0.000
+	}
+	height = {
+		0.365 0.365 0.365 0.365 0.365 0.365 0.365
+	}
+	terrain = coastline
+	name = "Freanna"
+	color = {
+		131 106 195
+	}
+	area = windhelm
+	history = {
+		culture = hobgoblin
+		religion = red_code
+		hre = yes
+		history_trade_goods = c_metals
+	
+		is_city = yes
+		history_owner = windhelm
+	}
+}
