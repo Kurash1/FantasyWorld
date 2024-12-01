@@ -26,7 +26,6 @@ new country sea_wing = {
 			}
 		}
 	}
-	capital = morwath
 }
 new country storm_hawk = {
 	inherit = nordic_country
@@ -74,7 +73,6 @@ new country lone_band = {
 			}
 		}
 	}
-	capital = lone_isle
 }
 new country valtheim = {
 	inherit = nordic_country
@@ -138,7 +136,6 @@ new country solitude = {
 	color = {
 		255 55 55
 	}
-	capital = red_port
 	history += {
 		add_historical_friend = dawn_star
 		add_historical_rival = snow_hawk
@@ -164,28 +161,6 @@ new country solitude = {
 				faction = nc_red_wolf
 				influence = 15
 			}
-			
-			on_initialize += {
-				countries:solitude = {
-					disband_all_units = yes
-					provinces:esjuberg = { #Army
-						create_infantry = 10
-						create_artillery = 1
-					}
-					provinces:skalavik = { #Fleet
-						create_heavy_ship = 1
-						if [has_dlc = "Domination"] {
-							create_galleass_galley = 4
-						}
-						else {
-							create_galley = 4
-						}
-						create_galley = 2
-						create_light_ship = 3
-						create_transport = 4
-					}
-				}
-			}
 		}
 	}
 }
@@ -198,7 +173,6 @@ new country cascabel = {
 	color = {
 		200 0 0
 	}
-	capital = cascabel_hall
 }
 new country rock_hammer = {
 	inherit = nordic_country
@@ -209,7 +183,6 @@ new country rock_hammer = {
 	color = {
 		110 70 70
 	}
-	capital = esjuberg
 }
 new country storm_galley = {
 	inherit = nordic_country
@@ -220,7 +193,6 @@ new country storm_galley = {
 	color = {
 		65 100 165
 	}
-	capital = skalavik
 }
 new country red_wolf = {
 	inherit = nordic_country
@@ -231,7 +203,6 @@ new country red_wolf = {
 	color = {
 		175 0 0
 	}
-	capital = wolfs_eye
 }
 new country pine_frost = {
 	inherit = nordic_country
@@ -242,7 +213,6 @@ new country pine_frost = {
 	color = {
 		158 255 194
 	}
-	capital = pinefrost
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -305,7 +275,6 @@ new country dragon_bridge = {
 	color = {
 		156 84 84
 	}
-	capital = dragon_bridge
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -366,7 +335,6 @@ new country pine_hill = {
 	color = {
 		158 255 102
 	}
-	capital = falconstar
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -389,7 +357,6 @@ new country rime_rock = {
 	color = {
 		133 175 175
 	}
-	capital = northwatch
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -420,7 +387,6 @@ new country raven_scar = {
 	color = {
 		122 122 122
 	}
-	capital = ravenscar
 }
 new country iron_back = {
 	inherit = nordic_country
@@ -431,7 +397,6 @@ new country iron_back = {
 	color = {
 		196 121 84
 	}
-	capital = ironback_hideout
 }
 new country wolf_skull = {
 	inherit = nordic_country
@@ -442,7 +407,6 @@ new country wolf_skull = {
 	color = {
 		196 62 165
 	}
-	capital = hraggstad
 }
 new country chill_wind = {
 	inherit = nordic_country
@@ -1409,7 +1373,6 @@ new country shadow_green = {
 	color = {
 		0 50 0
 	}
-	capital = shadowgreen
 }
 new country eddard = {
 	inherit = nordic_country
@@ -1567,7 +1530,6 @@ new country hawk_eye = {
 	color = {
 		122 71 30
 	}
-	capital = gold_isle
 	history += {
 		2568.1.1 = {
 			starting_ruler = {

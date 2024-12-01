@@ -16,15 +16,6 @@ new tradenode test = {
 	outgoings = {
 	}
 }
-new tradenode solitude = {
-	name = "Solitude"
-	location = solitude
-	areas = {
-		solitude dragon_bridge rivers_horn twin_bridges drajkmyr_marsh snowhawk
-	}
-	outgoings = {
-	}
-}
 new tradenode stonehills = {
 	name = "Stonehills"
 	location = stonehills
@@ -32,15 +23,6 @@ new tradenode stonehills = {
 		ustengrav stonehills myrwatch morthal bromjunaar
 	}
 	outgoings = {
-		{
-			node = solitude
-			path = {
-				kjenstag coast_of_verglas red_port solitude
-			}
-			control = {
-				1719.000000 2010.000000 1704.000000 2008.000000 1689.000000 2012.000000 1672.000000 2009.000000 1657.000000 2021.000000 1658.000000 2031.000000 1653.000000 2036.000000 1646.000000 2041.000000 1637.000000 2044.000000 1637.000000 2053.000000 1639.000000 2061.000000
-			}
-		}
 	}
 }
 new tradenode hjaal = {
@@ -50,15 +32,6 @@ new tradenode hjaal = {
 		hamvirs_rest greenspring_hollow swindler talking_stone hjaals_teeth hjaal_river_passage
 	}
 	outgoings = {
-		{
-			node = solitude
-			path = {
-				coast_of_morthal coast_of_solitude red_port solitude
-			}
-			control = {
-				1626.000000 1988.000000 1616.000000 1993.000000 1613.000000 1999.000000 1606.000000 2009.000000 1606.000000 2019.000000 1610.000000 2029.000000 1619.000000 2038.000000 1621.000000 2044.000000 1631.000000 2045.000000 1633.000000 2054.000000 1638.000000 2063.000000
-			}
-		}
 		{
 			node = stonehills
 			path = {
@@ -84,15 +57,6 @@ new tradenode dawnstar = {
 			}
 			control = {
 				1773.000000 2054.000000 1757.000000 2052.000000 1744.000000 2047.000000 1743.000000 2030.000000
-			}
-		}
-		{
-			node = solitude
-			path = {
-				softta olavnir pale_camp imp_26 windstad coast_of_verglas red_port solitude
-			}
-			control = {
-				1780.000000 2075.000000 1775.000000 2079.000000 1738.000000 2092.000000 1725.000000 2098.000000 1702.000000 2088.000000 1674.000000 2072.000000 1653.000000 2056.000000 1643.000000 2061.000000
 			}
 		}
 	}
@@ -201,24 +165,6 @@ new tradenode yorgrim = {
 			}
 			control = {
 				1789.000000 2002.000000 1795.000000 1993.000000 1799.000000 1984.000000 1798.000000 1966.000000 1790.000000 1948.000000
-			}
-		}
-	}
-}
-new tradenode northwatch = {
-	name = "Northwatch"
-	location = northwatch
-	areas = {
-		wolfs_eye shadowgreen ravenscar northwatch volkihar_isles lone_isle deepwood hraggstad kilkreath pinefrost kynes_isles icereach
-	}
-	outgoings = {
-		{
-			node = solitude
-			path = {
-				lower_steepfall_burrow northern_mine imp_30 ironback_hideout imp_28 solitude
-			}
-			control = {
-				1530.000000 2089.000000 1527.000000 2099.000000 1547.000000 2106.000000 1584.000000 2121.000000 1615.000000 2125.000000 1632.000000 2130.000000 1649.000000 2125.000000 1670.000000 2114.000000 1680.000000 2099.000000 1674.000000 2091.000000 1672.000000 2084.000000 1670.000000 2075.000000 1657.000000 2062.000000 1645.000000 2062.000000
 			}
 		}
 	}

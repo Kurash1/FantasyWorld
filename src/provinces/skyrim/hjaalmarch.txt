@@ -1275,12 +1275,6 @@ new adjacency hjaal_bridge = {
 	through = hjaal_river
 	type = sea
 }
-new adjacency dragon_bridge = {
-	from = dragon_bridge
-	to = rivers_road
-	through = coast_of_solitude
-	type = sea
-}
 new adjacency drajkmyr_cold_strait = {
 	from = central_drajkmyr
 	to = isle_of_sorrow
