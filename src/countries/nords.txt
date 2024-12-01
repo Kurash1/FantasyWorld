@@ -1372,7 +1372,6 @@ new country eddard = {
 	color = {
 		87 124 27
 	}
-	capital = eddard
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1395,7 +1394,6 @@ new country bloodskal = {
 	color = {
 		124 0 10
 	}
-	capital = bloodskal
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1426,7 +1424,6 @@ new country frosselmane = {
 	color = {
 		36 111 124
 	}
-	capital = frosselmane
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1457,7 +1454,6 @@ new country valbrandr = {
 	color = {
 		76 0 255
 	}
-	capital = valbrandr
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1488,7 +1484,6 @@ new country gyldenhul = {
 	color = {
 		255 194 64
 	}
-	capital = skaalara
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
