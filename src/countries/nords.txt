@@ -36,7 +36,6 @@ new country storm_hawk = {
 	color = {
 		0 0 50
 	}
-	capital = folgunthur
 }
 new country kjenstag = {
 	inherit = nordic_country
@@ -48,7 +47,6 @@ new country kjenstag = {
 	color = {
 		124 94 73
 	}
-	capital = kjenstag
 }
 new country lone_band = {
 	inherit = nordic_country
@@ -417,7 +415,6 @@ new country chill_wind = {
 	color = {
 		80 192 196
 	}
-	capital = rivers_road
 }
 new country snow_hawk = {
 	inherit = nordic_country
@@ -428,7 +425,6 @@ new country snow_hawk = {
 	color = {
 		40 40 150
 	}
-	capital = snowhawk
 	history += {
 		add_historical_rival = solitude
 		2566.4.5 = { #Treaty of Horga Hills
@@ -445,7 +441,6 @@ new country morthal = {
 	color = {
 		110 180 80
 	}
-	capital = morthal
 	starting_reform = tier_1_thanedom
 }
 new country high_gate = {
@@ -482,7 +477,6 @@ new country stone_hill = {
 	color = {
 		255 205 168
 	}
-	capital = stonehills
 }
 new country myrwatch = {
 	inherit = nordic_country
@@ -493,7 +487,6 @@ new country myrwatch = {
 	color = {
 		122 8 145
 	}
-	capital = myrwatch
 	government = republic
 	starting_reform = tier_1_mage_tower
 }
@@ -540,7 +533,6 @@ new country wind_caller = {
 	color = {
 		255 255 255
 	}
-	capital = ustengrav
 }
 new country hjaal = {
 	inherit = nordic_country
@@ -552,7 +544,6 @@ new country hjaal = {
 	color = {
 		200 150 0
 	}
-	capital = hjaals_tooth
 	history += {
 		2566.4.5 = { #Treaty of Horga Hills
 			add_manpower = -5.5
@@ -1138,7 +1129,6 @@ new country rannveig = {
 	color = {
 		0 0 25
 	}
-	capital = rannveigs_fast
 }
 new country shearpoint = {
 	inherit = nordic_country
@@ -1164,7 +1154,6 @@ new country skyborn = {
 		200 200 255
 	}
 	religion = the_old_ways
-	capital = skyborn_altar
 }
 new country yorgrim = {
 	inherit = nordic_country

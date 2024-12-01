@@ -16,33 +16,6 @@ new tradenode test = {
 	outgoings = {
 	}
 }
-new tradenode stonehills = {
-	name = "Stonehills"
-	location = stonehills
-	areas = {
-		ustengrav stonehills myrwatch morthal bromjunaar
-	}
-	outgoings = {
-	}
-}
-new tradenode hjaal = {
-	name = "Hjaal"
-	location = hjaals_tooth
-	areas = {
-		hamvirs_rest greenspring_hollow swindler talking_stone hjaals_teeth hjaal_river_passage
-	}
-	outgoings = {
-		{
-			node = stonehills
-			path = {
-				upper_hjaal_river greenspring_hollow imp_24 bromjunaar_approach fyrthirth stonehills
-			}
-			control = {
-				1638.000000 1991.000000 1648.000000 1994.000000 1657.000000 1995.000000 1664.000000 2002.000000 1675.000000 2005.000000 1688.000000 2003.000000 1707.000000 1999.000000 1721.000000 2004.000000
-			}
-		}
-	}
-}
 new tradenode dawnstar = {
 	name = "Dawnstar"
 	location = dawnstar
@@ -50,15 +23,6 @@ new tradenode dawnstar = {
 		red_road dawnstar dawn_sanctuary pale_coast high_gate north_isles
 	}
 	outgoings = {
-		{
-			node = stonehills
-			path = {
-				windward mzinchaleft snow_trail stonehills
-			}
-			control = {
-				1773.000000 2054.000000 1757.000000 2052.000000 1744.000000 2047.000000 1743.000000 2030.000000
-			}
-		}
 	}
 }
 new tradenode windhelm = {
@@ -113,15 +77,6 @@ new tradenode greymoor = {
 		bleakwind greymoor granitehill sleeping_tree gjukar rorikstead halted_stream silent_moons
 	}
 	outgoings = {
-		{
-			node = hjaal
-			path = {
-				imp_4 liesekke swindlers_den upper_hjaal_river hjaals_tooth
-			}
-			control = {
-				1694.000000 1907.000000 1676.000000 1912.000000 1657.000000 1923.000000 1640.000000 1930.000000 1626.000000 1935.000000 1617.000000 1949.000000 1613.000000 1958.000000 1622.000000 1967.000000 1629.000000 1977.000000
-			}
-		}
 		{
 			node = white_river
 			path = {
