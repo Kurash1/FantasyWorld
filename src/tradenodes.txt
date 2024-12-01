@@ -97,78 +97,6 @@ new tradenode dawnstar = {
 		}
 	}
 }
-new tradenode saarthal = {
-	name = "Saarthal"
-	location = saarthal
-	areas = {
-		alftand saarthal ysgramoors_tomb pilgrims_coast yngvild anthor sightless_hills north_wayward
-	}
-	outgoings = {
-		{
-			node = dawnstar
-			path = {
-				tower_stone yngvild_coast dawn_sanctuary dawnstar
-			}
-			control = {
-				1852.000000 2072.000000 1833.000000 2095.000000 1792.000000 2077.000000
-			}
-		}
-	}
-}
-new tradenode winterhold = {
-	name = "Winterhold"
-	location = winterhold
-	areas = {
-		bleak_coast whistling_mine winterhold japhets_folly skytemple the_chill olenveld iron_coast
-	}
-	outgoings = {
-		{
-			node = saarthal
-			path = {
-				helasine saarthal
-			}
-			control = {
-				1886.000000 2057.000000
-			}
-		}
-	}
-}
-new tradenode bleakrock = {
-	name = "Bleackrock"
-	location = bleakrock_isle
-	areas = {
-		holly_frost dunmeth_pass eastfield snow_veil bleakrock_isle stillborn_cave kastav
-	}
-	outgoings = {
-		{
-			node = winterhold
-			path = {
-				coast_of_bleakrock herkevi reydis journeymans_nook brylana winterhold
-			}
-			control = {
-				2006.000000 2030.000000 1972.000000 2040.000000 1955.000000 2047.000000 1937.000000 2051.000000 1923.000000 2062.000000
-			}
-		}
-	}
-}
-new tradenode solstheim = {
-	name = "Solstheim"
-	location = raven_rock
-	areas = {
-		mortrag lower_moesring raven_rock gronn frostmoth skogsdrake thirsk skaal
-	}
-	outgoings = {
-		{
-			node = bleakrock
-			path = {
-				raven_rock far_japhet_sea coast_of_bleakrock bleakrock_isle
-			}
-			control={
-				2064.000000 2079.000000 2044.000000 2056.000000 2033.359985 2035.630005 
-			}
-		}
-	}
-}
 new tradenode windhelm = {
 	name = "Windhelm"
 	location = windhelm
@@ -176,15 +104,6 @@ new tradenode windhelm = {
 		cronvangr mixwater gallows_rock angas_mill brandy-mug windhelm kynesgrove narzulbur steamcrag mzulft
 	}
 	outgoings = {
-		{
-			node = bleakrock
-			path = {
-				evetsta oriekke driena aegilgeth coast_of_bleakrock bleakrock_isle
-			}
-			control = {
-				1948.000000 1990.000000 1953.000000 2003.000000 1965.000000 2013.000000 1974.000000 2024.000000 2006.000000 2030.000000
-			}
-		}
 	}
 }
 new tradenode amol = {
@@ -254,7 +173,7 @@ new tradenode yorgrim = {
 	name = "Yorgrim"
 	location = dunstad
 	areas = {
-		old_yorgrim dunstad fellhammer nightcaller driftshade lord_hill volunruud loreius nightgate silverdrift long_road shearpoint irkngthand
+		old_yorgrim dunstad fellhammer nightcaller lord_hill volunruud loreius nightgate silverdrift long_road shearpoint irkngthand
 	}
 	outgoings = {
 		{

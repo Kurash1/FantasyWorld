@@ -3,6 +3,7 @@ new inheritable nordic_country = {
 	religion = nordic_pantheon
 	graphical_culture = greekgfx
 	starting_reform = tier_1_nord_clan
+	capital = dornkeep
 }
 new country sea_wing = {
 	inherit = nordic_country
@@ -107,7 +108,6 @@ new country olenveld = {
 	color = {
 		30 30 30
 	}
-	capital = hrudnaldaf
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -336,7 +336,6 @@ new country blue_axe = {
 	color = {
 		73 101 255
 	}
-	capital = ysgramoors_tomb
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -966,7 +965,6 @@ new country frost_flow = {
 	color = {
 		93 176 211
 	}
-	capital = frostflow
 }
 new country silver_drift = {
 	inherit = nordic_country
@@ -1325,7 +1323,6 @@ new country yngvild = {
 	color = {
 		100 0 50
 	}
-	capital = yngvild
 }
 new country cragwallow = {
 	inherit = nordic_country
@@ -1350,7 +1347,6 @@ new country anthor = {
 	color = {
 		183 100 75
 	}
-	capital = anthor_peak
 }
 new country saarthal = {
 	inherit = nordic_country
@@ -1362,7 +1358,6 @@ new country saarthal = {
 	color = {
 		255 255 255
 	}
-	capital = saarthal
 }
 new country snow_veil = {
 	inherit = nordic_country
@@ -1373,7 +1368,6 @@ new country snow_veil = {
 	color = {
 		0 100 150
 	}
-	capital = snow_veil_sanctum
 }
 new country bleak_coast = {
 	inherit = nordic_country
@@ -1384,7 +1378,6 @@ new country bleak_coast = {
 	color = {
 		0 40 51
 	}
-	capital = bleakcoast
 }
 new country sky_temple = {
 	inherit = nordic_country
@@ -1395,7 +1388,6 @@ new country sky_temple = {
 	color = {
 		179 255 229
 	}
-	capital = skytemple
 }
 new country winterhold = {
 	inherit = nordic_country
@@ -1407,7 +1399,6 @@ new country winterhold = {
 	color = {
 		0 213 255
 	}
-	capital = winterhold
 }
 new country shadow_green = {
 	inherit = nordic_country
@@ -1638,7 +1629,6 @@ new country wave_crusher = {
 	color = {
 		122 20 0
 	}
-	capital = japhets_folly
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1697,7 +1687,6 @@ new country ice_sword = {
 	color = {
 		35 120 206
 	}
-	capital = snowpoint
 }
 new country frozen_sentinels = {
 	inherit = nordic_country
@@ -1762,7 +1751,6 @@ new country bear_warriors = {
 	color = {
 		86 47 29
 	}
-	capital = kastav
 }
 new country jojoland = {
 	inherit = nordic_country
