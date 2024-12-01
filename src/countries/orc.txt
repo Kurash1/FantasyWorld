@@ -1,0 +1,298 @@
+new inheritable orc_country = {
+	technology_group = nord
+	primary_culture = sword_orc
+	religion = red_code
+	graphical_culture = greekgfx
+	government = tribal
+	starting_reform = tier_1_orc_stronghold
+}
+new country grul_khaar = {
+	inherit = orc_country
+	tag = GRU
+	name = "Grul'khaar"
+	adj = "Gruli"
+	color = {
+		2 78 47
+	}
+	capital = dornkeep
+}
+new country zarak_thul = {
+	inherit = orc_country
+	tag = ZAR
+	name = "Zarak'Thul"
+	adj = "Zaraki"
+	color = {
+		195 107 215
+	}
+	capital = dornkeep
+}
+new country morgothra = {
+	inherit = orc_country
+	tag = MOR
+	name = "Morgothra"
+	adj = "Morgothran"
+	color = {
+		58 41 209
+	}
+	capital = dornkeep
+}
+new country druk_makra = {
+	inherit = orc_country
+	tag = DRU
+	name = "Druk'Makra"
+	adj = "Druki"
+	color = {
+		72 241 75
+	}
+	capital = dornkeep
+}
+new country thraal_kur = {
+	inherit = orc_country
+	tag = THR
+	name = "Thraal'Kur"
+	adj = "Thraal"
+	color = {
+		238 196 21
+	}
+	capital = dornkeep
+}
+new country var_ghram = {
+	inherit = orc_country
+	tag = VRG
+	name = "Var'Ghram"
+	adj = "Vari"
+	color = {
+		212 123 68
+	}
+	capital = dornkeep
+}
+new country korr_dazhn = {
+	inherit = orc_country
+	tag = KOR
+	name = "Korr'Dazhn"
+	adj = "Korre"
+	color = {
+		221 216 249
+	}
+	capital = dornkeep
+}
+new country uthrak_zor = {
+	inherit = orc_country
+	tag = UTH
+	name = "Uthrak'Zor"
+	adj = "Uthraki"
+	color = {
+		36 25 62
+	}
+	capital = dornkeep
+}
+new country ghrash_tan = {
+	inherit = orc_country
+	tag = GHR
+	name = "Ghrash'Tan"
+	adj = "Ghrashi"
+	color = {
+		32 6 8
+	}
+	capital = dornkeep
+}
+new country zar_vurth = {
+	inherit = orc_country
+	tag = ZRV
+	name = "Zar'Vurth"
+	adj = "Zari"
+	color = {
+		221 20 55
+	}
+	capital = dornkeep
+}
+new country kragh_dor = {
+	inherit = orc_country
+	tag = KRG
+	name = "Kragh'Dor"
+	adj = "Kraghi"
+	color = {
+		4 233 207
+	}
+	capital = dornkeep
+}
+new country malthrugra = {
+	inherit = orc_country
+	tag = MAL
+	name = "Malthrugra"
+	adj = "Malthrugra"
+	color = {
+		67 156 246
+	}
+	capital = dornkeep
+}
+new country drog_khaal = {
+	inherit = orc_country
+	tag = DRO
+	name = "Drog'Khaal"
+	adj = "Drogi"
+	color = {
+		27 6 78
+	}
+	capital = dornkeep
+}
+new country nathrak_zir = {
+	inherit = orc_country
+	tag = NTH
+	name = "Nathrak'Zir"
+	adj = "Nathraki"
+	color = {
+		194 33 43
+	}
+	capital = dornkeep
+}
+new country gol_thurn = {
+	inherit = orc_country
+	tag = GOL
+	name = "Gol'Thurn"
+	adj = "Goli"
+	color = {
+		207 58 244
+	}
+	capital = dornkeep
+}
+new country brakk_zul = {
+	inherit = orc_country
+	tag = BRA
+	name = "Brakk'Zul"
+	adj = "Brakke"
+	color = {
+		16 200 121
+	}
+	capital = dornkeep
+}
+new country thrazh_gul = {
+	inherit = orc_country
+	tag = THA
+	name = "Thrazh'Gul"
+	adj = "Thrazhi"
+	color = {
+		96 180 19
+	}
+	capital = dornkeep
+}
+new country zorr_khanth = {
+	inherit = orc_country
+	tag = ZRR
+	name = "Zorr'Khanth"
+	adj = "Zorri"
+	color = {
+		151 70 12
+	}
+	capital = dornkeep
+}
+new country vuur_tarak = {
+	inherit = orc_country
+	tag = VUU
+	name = "Vuur'Tarak"
+	adj = "Vuuri"
+	color = {
+		203 122 8
+	}
+	capital = dornkeep
+}
+new country khaarth_mal = {
+	inherit = orc_country
+	tag = HAA
+	name = "Khaarth'Mal"
+	adj = "Khaarth"
+	color = {
+		184 45 21
+	}
+	capital = dornkeep
+}
+new country ral_ghron = {
+	inherit = orc_country
+	tag = RAL
+	name = "Ral'Ghron"
+	adj = "Rale"
+	color = {
+		161 47 7
+	}
+	capital = dornkeep
+}
+new country gron_vashn = {
+	inherit = orc_country
+	tag = GVA
+	name = "Gron'Vashn"
+	adj = "Grone"
+	color = {
+		8 109 149
+	}
+	capital = dornkeep
+}
+new country darr_kuzak = {
+	inherit = orc_country
+	tag = DKU
+	name = "Darr'Kuzak"
+	adj = "Kuzer"
+	color = {
+		28 41 211
+	}
+	capital = dornkeep
+}
+new country xor_thull = {
+	inherit = orc_country
+	tag = XTH
+	name = "Xor'Thull"
+	adj = "Xor"
+	color = {
+		236 17 218
+	}
+	capital = dornkeep
+}
+new country krash_nal = {
+	inherit = orc_country
+	tag = KRN
+	name = "Krash'Nal"
+	adj = "Krashi"
+	color = {
+		56 232 242
+	}
+	capital = dornkeep
+}
+new country thorr_makul = {
+	inherit = orc_country
+	tag = THM
+	name = "Thorr'Makul"
+	adj = "Thorri"
+	color = {
+		1 152 95
+	}
+	capital = dornkeep
+}
+new country zhol_varn = {
+	inherit = orc_country
+	tag = ZHO
+	name = "Zhol'Varn"
+	adj = "Zholi"
+	color = {
+		224 9 6
+	}
+	capital = dornkeep
+}
+new country ulth_karaz = {
+	inherit = orc_country
+	tag = ULT
+	name = "Ulth'Karaz"
+	adj = "Ulth"
+	color = {
+		152 6 2
+	}
+	capital = dornkeep
+}
+new country nar_kazhrun = {
+	inherit = orc_country
+	tag = NAR
+	name = "Nar'Kazhrun"
+	adj = "Nari"
+	color = {
+		39 254 60
+	}
+	capital = dornkeep
+}
