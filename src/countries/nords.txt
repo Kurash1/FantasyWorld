@@ -452,7 +452,6 @@ new country high_gate = {
 	color = {
 		109 28 56
 	}
-	capital = verglas
 }
 new country dawn_star = {
 	inherit = nordic_country
@@ -463,7 +462,6 @@ new country dawn_star = {
 	color = {
 		255 203 84
 	}
-	capital = dawnstar
 	history += {
 		add_historical_friend = solitude
 	}
@@ -499,7 +497,6 @@ new country wind_ward = {
 	color = {
 		117 130 142
 	}
-	capital = windward
 }
 new country frostmere = {
 	inherit = nordic_country
@@ -510,7 +507,6 @@ new country frostmere = {
 	color = {
 		0 200 200
 	}
-	capital = frostmere
 }
 new country dunstad = {
 	inherit = nordic_country
@@ -522,7 +518,6 @@ new country dunstad = {
 	color = {
 		255 204 206
 	}
-	capital = dunstad
 }
 new country wind_caller = {
 	inherit = nordic_country
@@ -909,7 +904,6 @@ new country hill_hammer = {
 	color = {
 		84 51 34
 	}
-	capital = fellhammer
 }
 new country frost_flow = {
 	inherit = nordic_country
@@ -930,7 +924,6 @@ new country silver_drift = {
 	color = {
 		190 190 190
 	}
-	capital = freaold
 }
 new country nightgate = {
 	inherit = nordic_country
@@ -942,7 +935,6 @@ new country nightgate = {
 	color = {
 		136 63 112
 	}
-	capital = nightgate
 }
 new country white_watch = {
 	inherit = nordic_country
@@ -965,7 +957,6 @@ new country heljarchen = {
 	color = {
 		255 158 48
 	}
-	capital = heljarchen
 }
 new country storm_fist = {
 	inherit = nordic_country
@@ -1116,7 +1107,6 @@ new country volunruud = {
 			}
 		}
 	}
-	capital = volunruud
 }
 new country rannveig = {
 	inherit = nordic_country
@@ -1141,7 +1131,6 @@ new country shearpoint = {
 	color = {
 		100 255 255
 	}
-	capital = shearpoint
 }
 new country skyborn = {
 	inherit = nordic_country
@@ -1164,7 +1153,6 @@ new country yorgrim = {
 	color = {
 		100 100 255
 	}
-	capital = shrouded_grove
 }
 new country fell_glow = {
 	inherit = nordic_country
@@ -1175,7 +1163,6 @@ new country fell_glow = {
 	color = {
 		0 100 0
 	}
-	capital = fellglow
 }
 new country hillgrund = {
 	inherit = nordic_country
@@ -1264,7 +1251,6 @@ new country iron_bind = {
 	color = {
 		255 180 220
 	}
-	capital = ironbind_barrow
 }
 new country yngvild = {
 	inherit = nordic_country
@@ -1544,7 +1530,6 @@ new country whale_song = {
 	color = {
 		64 20 122
 	}
-	capital = mundall
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -1645,7 +1630,6 @@ new country frozen_sentinels = {
 	color = {
 		134 204 206
 	}
-	capital = frozen_outpost
 }
 new country lone_dragons = {
 	inherit = nordic_country
