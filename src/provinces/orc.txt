@@ -762,3 +762,8 @@ new province orc_43 = {
 		history_owner = ulth_karaz
 	}
 }
+quick_strait = {
+	from = orc_1
+	to = orc_2
+	through = orc_3
+}

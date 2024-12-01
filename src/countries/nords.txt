@@ -81,7 +81,6 @@ new country valtheim = {
 	color = {
 		63 75 82
 	}
-	capital = valtheim
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -241,7 +240,6 @@ new country holly_frost = {
 	color = {
 		0 255 255
 	}
-	capital = holly_frost
 	history += {
 		2568.1.1 = {
 			starting_ruler = {
@@ -554,7 +552,6 @@ new country rorikstead = {
 	color = {
 		188 133 88
 	}
-	capital = rorikstead
 }
 new country river_runner = {
 	inherit = nordic_country
@@ -565,7 +562,6 @@ new country river_runner = {
 	color = {
 		0 203 255
 	}
-	capital = swindlers_den
 }
 new country hrothgar = {
 	inherit = nordic_country
@@ -576,7 +572,6 @@ new country hrothgar = {
 	color = {
 		127 0 0
 	}
-	capital = hrothgar_camp
 	government = remnant
 	history += {
 		2568.1.1 = {
@@ -612,7 +607,6 @@ new country broken_fang = {
 			}
 		}
 	}
-	capital = gjukar
 }
 new country jorrvaskr = {
 	inherit = nordic_country
@@ -625,7 +619,6 @@ new country jorrvaskr = {
 	}
 	government = remnant
 	starting_reform = companion_remnant
-	capital = whiterun
 	history += {
 		historical_friend = WND
 		2568.1.1 = {
@@ -945,7 +938,6 @@ new country white_watch = {
 	color = {
 		255 255 255
 	}
-	capital = white_watch
 }
 new country heljarchen = {
 	inherit = nordic_country
@@ -967,7 +959,6 @@ new country storm_fist = {
 	color = {
 		25 25 100
 	}
-	capital = silent_moons
 }
 new country black_moor = {
 	inherit = nordic_country
@@ -991,7 +982,6 @@ new country black_moor = {
 			add_ruler_personality = infertile
 		}
 	}
-	capital = greymoor
 }
 new country shield_shade = {
 	inherit = nordic_country
@@ -1014,7 +1004,6 @@ new country shield_shade = {
 			}
 		}
 	}
-	capital = granitehill
 }
 new country bleak_wind = {
 	inherit = nordic_country
@@ -1025,7 +1014,6 @@ new country bleak_wind = {
 	color = {
 		80 100 125
 	}
-	capital = halted_stream
 }
 new country volunruud = {
 	inherit = nordic_country
@@ -1173,7 +1161,6 @@ new country hillgrund = {
 	color = {
 		255 140 25
 	}
-	capital = hillgrunds_steading
 }
 new country cradlecrush = {
 	inherit = nordic_country
@@ -1185,7 +1172,6 @@ new country cradlecrush = {
 	color = {
 		153 0 0
 	}
-	capital = cradlecrush
 }
 new country dark_water = {
 	inherit = nordic_country
@@ -1196,7 +1182,6 @@ new country dark_water = {
 	color = {
 		25 25 50
 	}
-	capital = darkwater_crossing
 }
 new country mist_watch = {
 	inherit = nordic_country
@@ -1207,7 +1192,6 @@ new country mist_watch = {
 	color = {
 		255 251 230
 	}
-	capital = mistwatch
 }
 new country north_wind = {
 	inherit = nordic_country
@@ -1218,7 +1202,6 @@ new country north_wind = {
 	color = {
 		200 220 220
 	}
-	capital = ansilvund
 }
 new country cronvangr = {
 	inherit = nordic_country
@@ -1229,7 +1212,6 @@ new country cronvangr = {
 	color = {
 		102 0 34
 	}
-	capital = cronvangr
 }
 new country kynesgrove = {
 	inherit = nordic_country
@@ -1240,7 +1222,6 @@ new country kynesgrove = {
 	color = {
 		128 212 255
 	}
-	capital = kynesgrove
 }
 new country iron_bind = {
 	inherit = nordic_country
@@ -1273,7 +1254,6 @@ new country cragwallow = {
 	color = {
 		225 255 77
 	}
-	capital = cragwallow
 }
 new country anthor = {
 	inherit = nordic_country
@@ -1642,7 +1622,6 @@ new country lone_dragons = {
 	color = {
 		255 240 210
 	}
-	capital = dragonpoint
 }
 new country red_house = {
 	inherit = nordic_country
@@ -1655,7 +1634,6 @@ new country red_house = {
 	color = {
 		200 0 0
 	}
-	capital = morvunskar
 }
 new country sons_of_stuhn = {
 	inherit = nordic_country
@@ -1668,7 +1646,6 @@ new country sons_of_stuhn = {
 	color = {
 		255 139 86
 	}
-	capital = valtheim
 }
 new country bear_warriors = {
 	inherit = nordic_country
