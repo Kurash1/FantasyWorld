@@ -184,10 +184,6 @@ ai_personalities:ai_militarist := {
 			is_elector = yes
 		}
 		modifier = {
-			factor = 2
-			culture_group = nord
-		}
-		modifier = {
 			factor = 3
 			government = native
 		}

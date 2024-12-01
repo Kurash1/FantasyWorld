@@ -1,0 +1,19 @@
+governments:tribal:reform_levels:1 += new tier_1_warband = {
+	name = "Warband"
+	desc = ""
+	icon = "hero"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = tier_1_warband
+	}
+	trigger = {
+		has_reform = tier_1_warband
+	}
+	modifiers = {
+		
+	}
+	ai = {
+		factor = 1
+	}
+
+}

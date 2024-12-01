@@ -23,8 +23,8 @@ new province evetsta = {
 	}
 	area = windhelm
 	history = {
-		religion = nordic_pantheon
-		culture = eastmarcher
+		culture = hobgoblin
+		religion = red_code
 		hre = yes
 		history_trade_goods = c_metals
 	
@@ -51,8 +51,8 @@ new province windhelm = {
 	terrain = hills
 	history = {
 		center_of_trade = 3
-		religion = nordic_pantheon
-		culture = eastmarcher
+		culture = hobgoblin
+		religion = red_code
 		hre = yes
 		history_trade_goods = arms
 	
@@ -77,8 +77,8 @@ new province freanna = {
 	}
 	area = windhelm
 	history = {
-		religion = nordic_pantheon
-		culture = eastmarcher
+		culture = hobgoblin
+		religion = red_code
 		hre = yes
 		history_trade_goods = c_metals
 	

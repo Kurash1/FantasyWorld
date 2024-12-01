@@ -34,8 +34,8 @@ new province black_mountain = {
 	}
 	history = {
 		history_owner = black_mountain
-		culture = eastmarcher
-		religion = nordic_pantheon
+		culture = hobgoblin
+		religion = red_code
 		hre = no
 		history_trade_goods = c_metals
 	

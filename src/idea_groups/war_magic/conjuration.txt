@@ -40,12 +40,6 @@ new spell dremora_general = {
 				global_unrest = 1
 			}
 		}
-		
-		create_general = {
-			tradition = 100
-			add_shock = 2
-			culture = dremora
-		}
 	}
 }
 new spell summon_fortress = {
