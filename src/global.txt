@@ -214,12 +214,17 @@ new bookmark claimants_of_the_sword = {
 	desc = ""
 	date = 2568.1.1
 	countries = {
-		ivin
-		drog_khaal
-		arkon
-	}
-	easy_countries = {
-		kroshva
+		#orc
+		bookmark_country = zorr_khanth
+		bookmark_country = thraal_kur
+		bookmark_easy_country = drog_khaal
+		
+		#hobgoblin
+		bookmark_country = ivin
+		bookmark_country = arkon
+		bookmark_easy_country = kroshva
+		
+		#demon
 	}
 	center = urkathal
 	default = yes

@@ -1,3 +1,14 @@
+new effect bookmark_country = {
+	args = country
+	transpile = `country = {args}`
+}
+new effect bookmark_easy_country = {
+	args = country
+	transpile = {
+		`country = {args}`
+		`easy_country = {args}`
+	}
+}
 new class bookmark = {
 	list = bookmarks
 	args = {
@@ -5,8 +16,7 @@ new class bookmark = {
 		string desc
 		string date
 		province center
-		list<country> countries = { }
-		list<country> easy_countries = { }
+		named_effect countries = { }
 		bool default = no
 		named_effect effect = { }
 	}
@@ -20,13 +30,7 @@ new class bookmark = {
 					desc = `{$:id}_desc`
 					date = $:date
 					center = $:center
-					foreach $c in $:countries {
-						country = $c
-					}
-					foreach $ec in $:easy_countries {
-						country = $ec
-						easy_country = $ec
-					}
+					$:countries
 					default = $:default
 					effect = {
 						$:effect
