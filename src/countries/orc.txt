@@ -303,3 +303,55 @@ new country nar_kazhrun = {
 	}
 	capital = thrungar
 }
+new country brulg_zarok = {
+	inherit = orc_country
+	tag = BRU
+	name = "Brulg'Zarok"
+	adj = "Brulgi"
+	color = {
+		184 82 15
+	}
+	capital = krulzar
+}
+new country khorr_drakash = {
+	inherit = orc_country
+	tag = KHO
+	name = "Khorr'Drakash"
+	adj = "Khorri"
+	color = {
+		3 70 179
+	}
+	capital = thragmul
+}
+new country zarv_norak = {
+	inherit = orc_country
+	tag = ZRN
+	name = "Zarv'Norak"
+	adj = "Zarvi"
+	color = {
+		224 74 85
+	}
+	capital = grathrog
+}
+new country luth_narzak = {
+	inherit = orc_country
+	tag = LUT
+	name = "Luth'Narzak"
+	adj = "Luth"
+	color = {
+		236 152 16
+	}
+	capital = zulthag
+}
+
+# orcish formable
+new country ork_narzul = {
+	inherit = orc_country
+	tag = ORK
+	name = "Ork'Narzul"
+	adj = "Orcish"
+	color = {
+		109 186 3
+	}
+	capital = thraxxor
+}
