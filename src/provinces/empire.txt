@@ -1,0 +1,512 @@
+new inheritable empire_province = {
+	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	history = {
+		hre = yes
+	}
+}
+
+new province empire_1 = {
+    inherit = empire_province
+    color = { 212 152 230 }
+    name = "empire 1"
+}
+
+new province empire_2 = {
+    inherit = empire_province
+    color = { 207 185 182 }
+    name = "empire 2"
+}
+
+new province empire_3 = {
+    inherit = empire_province
+    color = { 156 116 250 }
+    name = "empire 3"
+}
+
+new province empire_4 = {
+    inherit = empire_province
+    color = { 242 228 187 }
+    name = "empire 4"
+}
+
+new province empire_5 = {
+    inherit = empire_province
+    color = { 128 148 215 }
+    name = "empire 5"
+}
+
+new province empire_6 = {
+    inherit = empire_province
+    color = { 178 201 237 }
+    name = "empire 6"
+}
+
+new province empire_7 = {
+    inherit = empire_province
+    color = { 112 156 122 }
+    name = "empire 7"
+}
+
+new province empire_8 = {
+    inherit = empire_province
+    color = { 159 101 170 }
+    name = "empire 8"
+}
+
+new province empire_9 = {
+    inherit = empire_province
+    color = { 227 136 115 }
+    name = "empire 9"
+}
+
+new province chesstown = {
+    inherit = empire_province
+    color = { 142 156 201 }
+    name = "Chesstown"
+}
+
+new province dicetown = {
+    inherit = empire_province
+    color = { 129 177 121 }
+    name = "Dicetown"
+}
+
+new province cardtown = {
+    inherit = empire_province
+    color = { 233 133 254 }
+    name = "Cardtown"
+}
+
+new province nightgate = {
+    inherit = empire_province
+    color = { 220 171 198 }
+    name = "Nightgate"
+}
+
+new province empire_11 = {
+    inherit = empire_province
+    color = { 229 249 172 }
+    name = "empire 11"
+}
+
+new province empire_12 = {
+    inherit = empire_province
+    color = { 209 187 104 }
+    name = "empire 12"
+}
+
+new province empire_13 = {
+    inherit = empire_province
+    color = { 130 128 193 }
+    name = "empire 13"
+}
+
+new province steamford = {
+    inherit = empire_province
+    color = { 149 174 175 }
+    name = "Steamford"
+}
+
+new province empire_15 = {
+    inherit = empire_province
+    color = { 238 130 122 }
+    name = "empire 15"
+}
+
+new province hamburrow = {
+    inherit = empire_province
+    color = { 219 193 103 }
+    name = "Hamburrow"
+}
+
+new province tinkerton = {
+    inherit = empire_province
+    color = { 165 113 232 }
+    name = "Tinkerton"
+}
+
+new province rosegarden = {
+    inherit = empire_province
+    color = { 192 228 209 }
+    name = "Rosegarden"
+}
+
+new province keepstone = {
+    inherit = empire_province
+    color = { 154 165 254 }
+    name = "Keepstone"
+}
+
+new province greenrock = {
+    inherit = empire_province
+    color = { 204 135 243 }
+    name = "Greenrock"
+}
+
+new province bittergate = {
+    inherit = empire_province
+    color = { 144 129 175 }
+    name = "Bittergate"
+}
+
+new province novenhaven = {
+    inherit = empire_province
+    color = { 186 176 180 }
+    name = "Novenhaven"
+}
+
+new province empire_23 = {
+    inherit = empire_province
+    color = { 153 209 191 }
+    name = "empire 23"
+}
+
+new province empire_24 = {
+    inherit = empire_province
+    color = { 198 162 162 }
+    name = "empire 24"
+}
+
+new province empire_25 = {
+    inherit = empire_province
+    color = { 177 218 252 }
+    name = "empire 25"
+}
+
+new province empire_26 = {
+    inherit = empire_province
+    color = { 100 212 132 }
+    name = "empire 26"
+}
+
+new province empire_27 = {
+    inherit = empire_province
+    color = { 149 241 172 }
+    name = "empire 27"
+}
+
+new province empire_28 = {
+    inherit = empire_province
+    color = { 230 125 147 }
+    name = "empire 28"
+}
+
+new province empire_29 = {
+    inherit = empire_province
+    color = { 104 137 113 }
+    name = "empire 29"
+}
+
+new province empire_30 = {
+    inherit = empire_province
+    color = { 167 106 135 }
+    name = "empire 30"
+}
+
+new province empire_31 = {
+    inherit = empire_province
+    color = { 166 175 252 }
+    name = "empire 31"
+}
+
+new province empire_32 = {
+    inherit = empire_province
+    color = { 197 107 124 }
+    name = "empire 32"
+}
+
+new province empire_33 = {
+    inherit = empire_province
+    color = { 231 230 251 }
+    name = "empire 33"
+}
+
+new province empire_34 = {
+    inherit = empire_province
+    color = { 213 190 111 }
+    name = "empire 34"
+}
+
+new province empire_35 = {
+    inherit = empire_province
+    color = { 137 169 128 }
+    name = "empire 35"
+}
+
+new province empire_36 = {
+    inherit = empire_province
+    color = { 155 116 236 }
+    name = "empire 36"
+}
+
+new province empire_37 = {
+    inherit = empire_province
+    color = { 244 121 253 }
+    name = "empire 37"
+}
+
+new province empire_38 = {
+    inherit = empire_province
+    color = { 234 197 123 }
+    name = "empire 38"
+}
+
+new province empire_39 = {
+    inherit = empire_province
+    color = { 218 101 243 }
+    name = "empire 39"
+}
+
+new province empire_40 = {
+    inherit = empire_province
+    color = { 101 140 196 }
+    name = "empire 40"
+}
+
+new province empire_41 = {
+    inherit = empire_province
+    color = { 225 216 166 }
+    name = "empire 41"
+}
+
+new province empire_42 = {
+    inherit = empire_province
+    color = { 224 225 139 }
+    name = "empire 42"
+}
+
+new province empire_43 = {
+    inherit = empire_province
+    color = { 232 150 125 }
+    name = "empire 43"
+}
+
+new province empire_44 = {
+    inherit = empire_province
+    color = { 149 220 209 }
+    name = "empire 44"
+}
+
+new province empire_45 = {
+    inherit = empire_province
+    color = { 123 168 208 }
+    name = "empire 45"
+}
+
+new province empire_46 = {
+    inherit = empire_province
+    color = { 217 125 173 }
+    name = "empire 46"
+}
+
+new province empire_47 = {
+    inherit = empire_province
+    color = { 186 110 154 }
+    name = "empire 47"
+}
+
+new province empire_48 = {
+    inherit = empire_province
+    color = { 194 210 223 }
+    name = "empire 48"
+}
+
+new province empire_49 = {
+    inherit = empire_province
+    color = { 253 108 255 }
+    name = "empire 49"
+}
+
+new province empire_50 = {
+    inherit = empire_province
+    color = { 121 171 215 }
+    name = "empire 50"
+}
+
+new province empire_51 = {
+    inherit = empire_province
+    color = { 132 182 163 }
+    name = "empire 51"
+}
+
+new province empire_52 = {
+    inherit = empire_province
+    color = { 136 215 206 }
+    name = "empire 52"
+}
+
+new province empire_53 = {
+    inherit = empire_province
+    color = { 130 138 140 }
+    name = "empire 53"
+}
+
+new province empire_54 = {
+    inherit = empire_province
+    color = { 154 179 198 }
+    name = "empire 54"
+}
+
+new province empire_55 = {
+    inherit = empire_province
+    color = { 136 139 234 }
+    name = "empire 55"
+}
+
+new province empire_56 = {
+    inherit = empire_province
+    color = { 220 130 222 }
+    name = "empire 56"
+}
+
+new province empire_57 = {
+    inherit = empire_province
+    color = { 229 234 215 }
+    name = "empire 57"
+}
+
+new province empire_58 = {
+    inherit = empire_province
+    color = { 182 150 105 }
+    name = "empire 58"
+}
+
+new province empire_59 = {
+    inherit = empire_province
+    color = { 239 176 113 }
+    name = "empire 59"
+}
+
+new province empire_60 = {
+    inherit = empire_province
+    color = { 119 194 231 }
+    name = "empire 60"
+}
+
+new province empire_61 = {
+    inherit = empire_province
+    color = { 166 206 245 }
+    name = "empire 61"
+}
+
+new province empire_62 = {
+    inherit = empire_province
+    color = { 245 127 192 }
+    name = "empire 62"
+}
+
+new province empire_63 = {
+    inherit = empire_province
+    color = { 148 104 191 }
+    name = "empire 63"
+}
+
+new province empire_64 = {
+    inherit = empire_province
+    color = { 239 116 170 }
+    name = "empire 64"
+}
+
+new province empire_65 = {
+    inherit = empire_province
+    color = { 217 199 103 }
+    name = "empire 65"
+}
+
+new province empire_66 = {
+    inherit = empire_province
+    color = { 227 206 240 }
+    name = "empire 66"
+}
+
+new province ash_tower = {
+    inherit = empire_province
+    color = { 234 212 105 }
+    name = "Ash Tower"
+}
+
+new province yew_tower = {
+    inherit = empire_province
+    color = { 118 177 158 }
+    name = "Yew Tower"
+}
+
+new province empire_69 = {
+    inherit = empire_province
+    color = { 211 242 202 }
+    name = "empire 69"
+}
+
+new province empire_70 = {
+    inherit = empire_province
+    color = { 155 146 251 }
+    name = "empire 70"
+}
+
+new province empire_71 = {
+    inherit = empire_province
+    color = { 151 128 133 }
+    name = "empire 71"
+}
+
+new province empire_72 = {
+    inherit = empire_province
+    color = { 104 237 125 }
+    name = "empire 72"
+}
+
+new province empire_73 = {
+    inherit = empire_province
+    color = { 243 151 246 }
+    name = "empire 73"
+}
+
+new province empire_74 = {
+    inherit = empire_province
+    color = { 213 192 138 }
+    name = "empire 74"
+}
+
+new province empire_75 = {
+    inherit = empire_province
+    color = { 218 189 137 }
+    name = "empire 75"
+}
+
+new province empire_76 = {
+    inherit = empire_province
+    color = { 173 179 250 }
+    name = "empire 76"
+}
+
+new province empire_77 = {
+    inherit = empire_province
+    color = { 162 179 114 }
+    name = "empire 77"
+}
+
+new province empire_78 = {
+    inherit = empire_province
+    color = { 184 215 166 }
+    name = "empire 78"
+}
+
+new province empire_79 = {
+    inherit = empire_province
+    color = { 243 186 239 }
+    name = "empire 79"
+}
+
+new province empire_80 = {
+    inherit = empire_province
+    color = { 150 115 219 }
+    name = "empire 80"
+}
+
+new province empire_81 = {
+    inherit = empire_province
+    color = { 201 161 155 }
+    name = "empire 81"
+}
