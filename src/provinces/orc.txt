@@ -287,7 +287,7 @@ new province kravdokk = {
 	area = urkathal
 	history += {
 		history_trade_goods = c_metals
-		history_owner = kragh_dor
+		history_owner = krav_dro
 	}
 }
 
@@ -303,7 +303,7 @@ new province droghar = {
 	area = zorgrim
 	history += {
 		history_trade_goods = livestock
-		history_owner = kragh_dor
+		history_owner = krav_dro
 	}
 }
 new province malkrath = {
@@ -423,7 +423,7 @@ new province gortharok = {
 	area = gortharok
 	history += {
 		history_trade_goods = c_metals
-		history_owner = nathrak_zir
+		history_owner = brakk_zul
 	}
 }
 new province thogrun = {
@@ -434,7 +434,7 @@ new province thogrun = {
 	area = gortharok
 	history += {
 		history_trade_goods = gold
-		history_owner = gol_thurn
+		history_owner = brakk_zul
 	}
 }
 new province krasshul = {
@@ -1000,6 +1000,66 @@ new province zulthag = {
 	history += {
 		history_trade_goods = c_metals
 		history_owner = luth_narzak
+	}
+}
+
+new area vrakthar = {
+	name = "Vrakthar"
+	region = konner
+}
+new province drokmagh = {
+    inherit = orc_province
+    color = { 109 138 204 }
+    name = "Drokmagh"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = c_metals
+		history_owner = krav_dro
+	}
+}
+new province karghuun = {
+    inherit = orc_province
+    color = { 117 187 222 }
+    name = "Karghuun"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = r_metals
+		history_owner = krav_dro
+	}
+}
+new province vrakthar = {
+    inherit = orc_province
+    color = { 146 241 135 }
+    name = "Vrakthar"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = gold
+		history_owner = krav_dro
+	}
+}
+new province gorazhul = {
+    inherit = orc_province
+    color = { 233 186 246 }
+    name = "Gorazhul"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = livestock
+		history_owner = brakk_zul
+	}
+}
+new province makrogg = {
+    inherit = orc_province
+    color = { 131 209 164 }
+    name = "Makrogg"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = c_metals
+		history_owner = brakk_zul
 	}
 }
 

@@ -215,8 +215,9 @@ new bookmark claimants_of_the_sword = {
 	date = 2568.1.1
 	countries = {
 		#orc
-		bookmark_country = zorr_khanth
+		bookmark_country = brakk_zul
 		bookmark_country = thraal_kur
+		bookmark_country = krav_dro
 		bookmark_easy_country = drog_khaal
 		
 		#hobgoblin

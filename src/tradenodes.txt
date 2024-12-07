@@ -7,59 +7,56 @@ new tradenode black_mountain = {
 	outgoings = {
 	}
 }
-new tradenode test = {
-	name = "Test"
-	location = dornkeep
+new tradenode grondha = {
+	name = "Grondha River"
+	location = krathrak
 	areas = {
-		malgarthis
-		zorvakkar
-		nalthorax
-		vrexathal
-		drakshur
-		xalvorran
-		khazrithul
-		vorna_pass
-		throzzark
-		urvakkis
-		kralthagg
-		shadraxil
-		zelgorrak
-		braxzhul
-		dorn
-		ivin
-		ishtor
-		arkon_pass
-		tosher_hills
-		shanter_peak
-		tullen_hills
-		morzkaal
-		durmathak
-		vrakthu
-		torgaldin
-		drakstarn
-		kalthru
-		volkhadrek
-		zharnokh
-		kroshva
-		zurvakhol
-		gralthok
-		zarhallan
-		drok_pass
-		kraghzul
-		broghkar
-		urkathal
-		zorgrim
-		thraxxor
-		gortharok
-		vraghol
-		kharrdun
-		rukpas
-		drazkul
-		skarvok
-		zolthar
-		kravzhor
-		thrungar
+		rukpas drazkul skarvok zolthar kravzhor thrungar morgulth grathrog zulthag
 	}
 	outgoings = {
+	}
+}
+new tradenode konner = {
+	name = "Konner River"
+	location = gralthok
+	areas = {
+		gralthok zarhallan drok_pass weshell
+	}
+	outgoings = {
+		{
+			node = grondha
+			path = { uzgark brogzum krulzar volzkath drogmur }
+		}
+	}
+}
+new tradenode ivin = {
+	name = "Ivin River"
+	location = dornkeep
+	areas = {
+		malgarthis zorvakkar nalthorax vrexathal drakshur xalvorran khazrithul vorna_pass throzzark urvakkis kralthagg shadraxil zelgorrak braxzhul dorn ivin ishtor arkon_pass tosher_hills
+	}
+	outgoings = {
+	}
+}
+new tradenode ziren = {
+	name = "Ziren River"
+	location = durmathak
+	areas = {
+		shanter_peak tullen_hills morzkaal durmathak vrakthu torgaldin drakstarn kalthru volkhadrek
+	}
+	outgoings = {
+	}
+}
+new tradenode deep_valley = {
+	name = "Deep Valley"
+	location = zorzhakk
+	areas = {
+		kraghzul broghkar urkathal zorgrim thraxxor gortharok vraghol kharrdun vrakthar zharnokh kroshva zurvakhol
+	}
+	outgoings = {
+		{
+			node = konner
+			path = { malkrath zorlokk broghor kraghzul thranggor karhath droknir vulkrad brogzar }
+		}
 	}
 }

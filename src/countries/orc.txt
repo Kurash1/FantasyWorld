@@ -113,11 +113,11 @@ new country zar_vurth = {
 	}
 	capital = tharnukk
 }
-new country kragh_dor = {
+new country krav_dro = {
 	inherit = orc_country
-	tag = KRG
-	name = "Kragh'Dor"
-	adj = "Kraghi"
+	tag = KRD
+	name = "Krav'Dro"
+	adj = "Krav'Dro"
 	color = {
 		4 233 207
 	}
