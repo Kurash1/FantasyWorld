@@ -84,7 +84,11 @@ new class dig_level = {
 new modifier dig_scaled = {
 	args = int
 	transpile = {
-		local_defender_dice_roll_bonus = (args / 3 - ((args / 3) % 1))
+		new named_int $i = (args / 3)
+		when [$i >= 1] {
+			local_defender_dice_roll_bonus = $i
+		}
+		delete = $i
 		fort_level = args
 		local_garrison_size = (args * 0.15)
 		local_garrison_damage = (args * 0.1)
@@ -257,9 +261,7 @@ new custom_text_box dig_level_text = {
 	tooltip = "[GetDigDesc]"
 }
 new custom_button dig_button = {
-	potential = {
-		NOT->has_construction = digging_operations
-	}
+	tooltip = "Digging Operations"
 	trigger = {
 		NOT->has_construction = any
 		for i as 0 to 15 {
@@ -346,6 +348,7 @@ new modifier_definition digging_speed = {
 }
 new modifier_definition max_dig_level = {
 	name = "Max Dig Level"
+	base_value = 16
 }
 
 new script_variable dig_cost = {
@@ -484,6 +487,9 @@ new named_effect adjust_local_cost_modifier = {
 	}
 }
 
+new named_effect add_dig_site = {
+	set_province_flag = dig_site
+}
 new effect add_dig_level = {
 	args = int
 	transpile = {

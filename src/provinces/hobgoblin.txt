@@ -1400,5 +1400,6 @@ new province zurvakhol = {
 	history += {
 		history_trade_goods	= potions
 		history_owner = zurvakhol
+		add_dig_site
 	}
 }
