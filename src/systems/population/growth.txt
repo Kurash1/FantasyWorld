@@ -1,0 +1,145 @@
+new named_effect population_tick = {
+	&development &= development
+	&development *= 0.01
+	
+	&devastation &= trigger_value:devastation
+	&devastation *= 5
+	
+	&var_pop_growth_modifier := { who = ROOT }
+	&var_pop_growth_modifier += 100
+	&var_pop_growth_modifier += local_pop_growth_modifier
+	&var_pop_growth_modifier -= devastation
+	
+	&var_pop_growth_rate := development
+	&var_pop_growth_rate += local_pop_boost
+	
+	&temp := var_pop_growth_modifier
+	&temp *= 0.01
+	&var_pop_growth_rate *= temp
+	
+	&population_progress += var_pop_growth_rate
+	
+	&pop_growth_per_year := var_pop_growth_rate
+	&pop_growth_per_year -= local_pop_boost
+	&pop_growth_per_year *= 12
+	&pop_growth_per_year /= 100
+	
+	&pop_growth_per_decade := pop_growth_per_year
+	&pop_growth_per_decade *= 10
+	
+	&pop_growth_per_century := pop_growth_per_year
+	&pop_growth_per_century *= 100
+	
+	&temp &= trigger_value:is_year
+	&temp -= 2998
+	&temp *= -1
+	
+	&pop_growth_to_end := pop_growth_per_year
+	&pop_growth_to_end *= temp
+	
+	if [&population_progress >= 100] {
+		&population_progress -= 100
+		
+		if [&local_pop_boost >= 1] {
+			&local_pop_boost -= 1
+		}
+		
+		&q_tot := q_adm
+		&q_tot += q_dip
+		&q_tot += q_mil
+		
+		random_variable = {
+			which = temp
+			which = q_tot
+		}
+		
+		if [&temp > q_adm] {
+			&temp -= q_adm
+			if [&temp > q_dip] {
+				&q_dip -= 1
+				if [&q_dip <= 1] {
+					&q_dip := 1
+				}
+				add_base_production = 1
+			}
+			else {
+				&q_mil -= 1
+				if [&q_mil <= 1] {
+					&q_mil := 1
+				}
+				add_base_manpower = 1
+			}
+		}
+		else {
+			&q_adm -= 1
+			if [&q_adm <= 1] {
+				&q_adm := 1
+			}
+			add_base_tax = 1
+		}
+	}
+	else_if [&population_progress <= -100] {
+		&population_progress += 100
+		
+		&q_tot := q_adm
+		&q_tot += q_dip
+		&q_tot += q_mil
+		
+		random_variable = {
+			which = temp
+			which = q_tot
+		}
+		
+		if [&temp > q_adm] {
+			&temp -= q_adm
+			if [&temp > q_dip] {
+				&q_dip -= 1
+				if [&q_dip <= 1] {
+					&q_dip := 1
+				}
+				add_base_production = -1
+			}
+			else {
+				&q_mil -= 1
+				if [&q_mil <= 1] {
+					&q_mil := 1
+				}
+				add_base_manpower = -1
+			}
+		}
+		else {
+			&q_adm -= 1
+			if [&q_adm <= 1] {
+				&q_adm := 1
+			}
+			add_base_tax = -1
+		}
+	}
+}
+
+on_initialize += {
+	every_country = {
+		&var_pop_growth_modifier &= modifier:pop_growth_modifier
+		&var_pop_growth_modifier *= 100
+		
+		every_owned_province = {
+			&local_pop_growth_modifier := 0
+			&local_pop_boost := 0
+			
+			&q_tot := 3
+			&q_adm := 1
+			&q_dip := 1
+			&q_mil := 1
+			
+			population_tick
+		}
+	}
+}
+on_actions:on_monthly_pulse += {
+	&var_pop_growth_modifier &= modifier:pop_growth_modifier
+	&var_pop_growth_modifier *= 100
+	
+	every_owned_province = {
+		population_tick
+	}
+}

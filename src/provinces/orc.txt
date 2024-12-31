@@ -383,6 +383,7 @@ new province thraxxor = {
     name = "Thraxxor"
 	terrain = red_plains
 	area = thraxxor
+	base_development = 110
 	history += {
 		history_trade_goods = grain
 		history_owner = drog_khaal
@@ -1062,10 +1063,3 @@ new province makrogg = {
 		history_owner = brakk_zul
 	}
 }
-
-quick_strait = {
-	from = zolthar
-	to = kravzhor
-	through = thrungar
-}
-

@@ -1,0 +1,205 @@
+new inheritable empire_country = {
+	technology_group = nord
+	primary_culture = imperial
+	religion = orcish_pantheon
+	graphical_culture = greekgfx
+	government = monarchy
+	starting_reform = tier_1_warband
+	history = {
+		1.1.1 = {
+			Tamriel = {
+				discover_country = $tag
+			}
+		}
+	}
+}
+new country dicetown = {
+	inherit = empire_country
+	tag = DIC
+	name = "Dicetown"
+	adj = "Rolled"
+	color = {
+		47 212 181
+	}
+	capital = gralthok
+}
+new country chesstown = {
+	inherit = empire_country
+	tag = CHE
+	name = "Chesstown"
+	adj = "Check"
+	color = {
+		98 135 32
+	}
+	capital = gralthok
+}
+new country cardtown = {
+	inherit = empire_country
+	tag = CAR
+	name = "Cardtown"
+	adj = "Card"
+	color = {
+		137 162 168
+	}
+	capital = gralthok
+}
+new country the_towers = {
+	inherit = empire_country
+	tag = TOW
+	name = "The Towers"
+	adj = "Tall"
+	color = {
+		212 47 194
+	}
+	capital = gralthok
+}
+new country papal_state = {
+	inherit = empire_country
+	tag = PAP
+	name = "Papal State"
+	adj = "Papal"
+	color = {
+		255 255 255
+	}
+	capital = gralthok
+}
+new country novenhaven = {
+	inherit = empire_country
+	tag = NVE
+	name = "Novenhaven"
+	adj = "Novenhavenean"
+	color = {
+		0 255 234
+	}
+	capital = gralthok
+}
+new country rosegarden = {
+	inherit = empire_country
+	tag = NOV
+	name = "Rosegarden"
+	adj = "Rose"
+	color = {
+		163 44 44
+	}
+	capital = gralthok
+}
+new country nightgate = {
+	inherit = empire_country
+	tag = NIG
+	name = "Nightgate"
+	adj = "Dark"
+	color = {
+		25 25 25
+	}
+	capital = gralthok
+}
+new country greenrock = {
+	inherit = empire_country
+	tag = GRE
+	name = "Greenrock"
+	adj = "Green"
+	color = {
+		0 64 12
+	}
+	capital = gralthok
+}
+new country bittergate = {
+	inherit = empire_country
+	tag = BIT
+	name = "Bittergate"
+	adj = "Bitter"
+	color = {
+		135 108 32
+	}
+	capital = gralthok
+}
+new country steamford = {
+	inherit = empire_country
+	tag = STE
+	name = "Steamford"
+	adj = "Steamfordian"
+	color = {
+		135 62 32
+	}
+	capital = gralthok
+}
+new country tinkerton = {
+	inherit = empire_country
+	tag = TIN
+	name = "Tinkerton"
+	adj = "Tinkertonean"
+	color = {
+		245 192 153
+	}
+	capital = gralthok
+}
+new country keepstone = {
+	inherit = empire_country
+	tag = KEE
+	name = "Keepstone"
+	adj = "Keepstonean"
+	color = {
+		200 200 200
+	}
+	capital = gralthok
+}
+new country hamburrow = {
+	inherit = empire_country
+	tag = HAM
+	name = "Hamburrow"
+	adj = "Hamburrowean"
+	color = {
+		90 80 13
+	}
+	capital = gralthok
+}
+new country silkenglade = {
+	inherit = empire_country
+	tag = SIL
+	name = "Silkenglade"
+	adj = "Silkengladean"
+	color = {
+		74 115 70
+	}
+	capital = gralthok
+}
+new country marshtead = {
+	inherit = empire_country
+	tag = MAR
+	name = "Marshtead"
+	adj = "Marshteadean"
+	color = {
+		115 83 68
+	}
+	capital = gralthok
+}
+new country astviel = {
+	inherit = empire_country
+	tag = AST
+	name = "Astviel"
+	adj = "Tyller"
+	color = {
+		106 68 115
+	}
+	capital = gralthok
+}
+new country thornen = {
+	inherit = empire_country
+	tag = THO
+	name = "Thornen"
+	adj = "Thornean"
+	color = {
+		84 43 55
+	}
+	capital = gralthok
+}
+new country rotka = {
+	inherit = empire_country
+	tag = ROT
+	name = "Rotka"
+	adj = "Rotkan"
+	color = {
+		99 22 22
+	}
+	capital = gralthok
+}

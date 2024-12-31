@@ -208,24 +208,36 @@ new province chesstown = {
 	inherit = empire_province
 	color = { 142 156 201 }
 	name = "Chesstown"
+	history += {
+		history_owner = chesstown
+	}
 }
 
 new province dicetown = {
 	inherit = empire_province
 	color = { 129 177 121 }
 	name = "Dicetown"
+	history += {
+		history_owner = dicetown
+	}
 }
 
 new province cardtown = {
 	inherit = empire_province
 	color = { 233 133 254 }
 	name = "Cardtown"
+	history += {
+		history_owner = cardtown
+	}
 }
 
 new province nightgate = {
 	inherit = empire_province
 	color = { 220 171 198 }
 	name = "Nightgate"
+	history += {
+		history_owner = nightgate
+	}
 }
 
 new province empire_11 = {
@@ -250,72 +262,108 @@ new province steamford = {
 	inherit = empire_province
 	color = { 149 174 175 }
 	name = "Steamford"
+	history += {
+		history_owner = steamford
+	}
 }
 
 new province empire_15 = {
 	inherit = empire_province
 	color = { 238 130 122 }
 	name = "empire 15"
+	history += {
+		history_owner = papal_state
+	}
 }
 
 new province hamburrow = {
 	inherit = empire_province
 	color = { 219 193 103 }
 	name = "Hamburrow"
+	history += {
+		history_owner = hamburrow
+	}
 }
 
 new province tinkerton = {
 	inherit = empire_province
 	color = { 165 113 232 }
 	name = "Tinkerton"
+	history += {
+		history_owner = tinkerton
+	}
 }
 
 new province rosegarden = {
 	inherit = empire_province
 	color = { 192 228 209 }
 	name = "Rosegarden"
+	history += {
+		history_owner = rosegarden
+	}
 }
 
 new province keepstone = {
 	inherit = empire_province
 	color = { 154 165 254 }
 	name = "Keepstone"
+	history += {
+		history_owner = keepstone
+	}
 }
 
 new province greenrock = {
 	inherit = empire_province
 	color = { 204 135 243 }
 	name = "Greenrock"
+	history += {
+		history_owner = greenrock
+	}
 }
 
 new province bittergate = {
 	inherit = empire_province
 	color = { 144 129 175 }
 	name = "Bittergate"
+	history += {
+		history_owner = bittergate
+	}
 }
 
 new province novenhaven = {
 	inherit = empire_province
 	color = { 186 176 180 }
 	name = "Novenhaven"
+	history += {
+		history_owner = novenhaven
+	}
 }
 
 new province empire_23 = {
 	inherit = empire_province
 	color = { 153 209 191 }
 	name = "empire 23"
+	history += {
+		history_owner = bittergate
+	}
 }
 
 new province empire_24 = {
 	inherit = empire_province
 	color = { 198 162 162 }
 	name = "empire 24"
+	history += {
+		history_owner = greenrock
+	}
 }
 
 new province empire_25 = {
 	inherit = empire_province
 	color = { 177 218 252 }
 	name = "empire 25"
+	history += {
+		history_owner = bittergate
+	}
 }
 
 new province empire_26 = {
@@ -328,6 +376,9 @@ new province empire_27 = {
 	inherit = empire_province
 	color = { 149 241 172 }
 	name = "empire 27"
+	history += {
+		history_owner = greenrock
+	}
 }
 
 new province empire_28 = {
@@ -406,6 +457,9 @@ new province empire_40 = {
 	inherit = empire_province
 	color = { 101 140 196 }
 	name = "empire 40"
+	history += {
+		history_owner = novenhaven
+	}
 }
 
 new province empire_41 = {
@@ -472,6 +526,9 @@ new province empire_51 = {
 	inherit = empire_province
 	color = { 132 182 163 }
 	name = "empire 51"
+	history += {
+		history_owner = nightgate
+	}
 }
 
 new province empire_52 = {
@@ -568,12 +625,18 @@ new province ash_tower = {
 	inherit = empire_province
 	color = { 234 212 105 }
 	name = "Ash Tower"
+	history += {
+		history_owner = the_towers
+	}
 }
 
 new province yew_tower = {
 	inherit = empire_province
 	color = { 118 177 158 }
 	name = "Yew Tower"
+	history += {
+		history_owner = the_towers
+	}
 }
 
 new province empire_69 = {
@@ -586,6 +649,9 @@ new province empire_70 = {
 	inherit = empire_province
 	color = { 155 146 251 }
 	name = "empire 70"
+	history += {
+		history_owner = novenhaven
+	}
 }
 
 new province empire_71 = {
@@ -628,6 +694,9 @@ new province empire_77 = {
 	inherit = empire_province
 	color = { 162 179 114 }
 	name = "empire 77"
+	history += {
+		history_owner = greenrock
+	}
 }
 
 new province empire_78 = {
@@ -652,4 +721,10 @@ new province empire_81 = {
 	inherit = empire_province
 	color = { 201 161 155 }
 	name = "empire 81"
+}
+
+quick_strait = {
+	from = ash_tower
+	to = yew_tower
+	through = wasteland_1
 }

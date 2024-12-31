@@ -1,0 +1,72 @@
+new named_effect clear_scaling_boost = {
+	for i as 6 to -1 {
+		remove_province_modifier = `LDC{i}`
+	}
+}
+new named_effect add_scaling_boost = {
+	for i as 6 to -1 {
+		if [&temp >= (0.05 * (2 ^ i))] {
+			&temp -= (0.05 * (2 ^ i))
+			quick_province_modifier = {
+				name = "LDC {i}"
+				id = `LDC{i}`
+				modifier = {
+					local_development_cost = (0.05 * (2 ^ i))
+				}
+			}
+		}
+	}
+}
+new effect queue_development = {
+	args = {
+		type = string
+		value = int
+	}
+	transpile = {
+		&ldc += 0.05
+		&temp := ldc
+		clear_scaling_boost
+		add_scaling_boost
+		
+		&`q_{args:type}` += (args:value * 2)
+		&local_pop_boost += args:value
+		&local_pop_growth_modifier += 1
+	}
+}
+
+on_actions:on_adm_development += {
+	if [has_province_flag = cd] {
+		clear_province_flag = cd
+	}
+	else {
+		`add_base_tax = -1`
+		queue_development = {
+			type = adm
+			value = 1
+		}
+	}
+}
+on_actions:on_dip_development += {
+	if [has_province_flag = cd] {
+		clear_province_flag = cd
+	}
+	else {
+		`add_base_production = -1`
+		queue_development = {
+			type = dip
+			value = 1
+		}
+	}
+}
+on_actions:on_mil_development += {
+	if [has_province_flag = cd] {
+		clear_province_flag = cd
+	}
+	else {
+		`add_base_manpower = -1`
+		queue_development = {
+			type = mil
+			value = 1
+		}
+	}
+}

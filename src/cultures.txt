@@ -1,5 +1,5 @@
-new culture_group goblinoid = {
-	name = "Goblinoid Race"
+new culture_group goblin = {
+	name = "Goblin"
 	graphical_culture = greekgfx
 	male_names = { }
 	female_names = { }
@@ -7,8 +7,9 @@ new culture_group goblinoid = {
 }
 new culture hobgoblin = {
 	name = "Hobgoblin"
-	culture_group = goblinoid
+	culture_group = goblin
 }
+
 new culture_group orc = {
 	name = "Orc Race"
 	graphical_culture = africangfx
@@ -19,6 +20,18 @@ new culture_group orc = {
 new culture sword_orc = {
 	name = "Sword Orc"
 	culture_group = orc
+}
+
+new culture_group human = {
+	name = "Human"
+	graphical_culture = greekgfx
+	male_names = { }
+	female_names = { }
+	dynasty_names = { }
+}
+new culture imperial = {
+	name = "Imperial"
+	culture_group = human
 }
 
 special_units:galleass:name := "Longship"

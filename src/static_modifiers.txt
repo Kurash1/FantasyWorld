@@ -212,7 +212,7 @@ new static_modifier development = {
 	province_trade_power_value = 0.2
 }
 new static_modifier development_scaled = {
-	local_development_cost = 0.03
+	
 }
 new static_modifier capital_city = {
 	fort_level = 1
