@@ -1,4 +1,4 @@
-new named_effect population_tick = {
+new named_effect population_tick = {	
 	&development &= development
 	&development *= 0.01
 	
@@ -37,7 +37,7 @@ new named_effect population_tick = {
 	&pop_growth_to_end := pop_growth_per_year
 	&pop_growth_to_end *= temp
 	
-	if [&population_progress >= 100] {
+	while [&population_progress >= 100] {
 		&population_progress -= 100
 		
 		if [&local_pop_boost >= 1] {
@@ -78,7 +78,7 @@ new named_effect population_tick = {
 			add_base_tax = 1
 		}
 	}
-	else_if [&population_progress <= -100] {
+	while [&population_progress <= -100] {
 		&population_progress += 100
 		
 		&q_tot := q_adm
@@ -115,6 +115,19 @@ new named_effect population_tick = {
 			add_base_tax = -1
 		}
 	}
+	
+	&p_adm &= trigger_value:base_tax
+	&p_adm *= 10
+	
+	&p_dip &= trigger_value:base_production
+	&p_dip *= 100
+	
+	&p_mil &= trigger_value:base_manpower
+	&p_mil *= 1000
+	
+	&p_tot := p_adm
+	&p_tot += p_dip
+	&p_tot += p_mil
 }
 
 on_initialize += {
@@ -123,6 +136,20 @@ on_initialize += {
 		&var_pop_growth_modifier *= 100
 		
 		every_owned_province = {
+			# add between 0 and 55k population to all provinces. For testing purposes.
+			random_variable = {
+				which = temp
+				value = 16
+			}
+			&temp += 1
+			
+			&temp *= temp
+			
+			while [&temp > 0] {
+				add_random_development = 1
+				&temp -= 1
+			}
+		
 			&local_pop_growth_modifier := 0
 			&local_pop_boost := 0
 			

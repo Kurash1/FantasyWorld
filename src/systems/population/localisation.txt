@@ -1,0 +1,24 @@
+/replace @ with localisation
+new @ BASE_TAX = "Upper Class Pops"
+new @ BASE_PRODUCTION = "Middle Class Pops"
+new @ BASE_MANPOWER = "Lower Class Pops"
+new @ PP_BASE_TAX_VALUE2 = "This province has $VAL|Y$ Upper Class Pops, with each pop giving:
+$EACH$"
+new @ PP_BASE_PROD_VALUE = "This province has $VAL|Y$ Middle Class Pops, with each pop giving:
+$EACH$"
+new @ PP_BASE_MP_VALUE = "This province has $VAL|Y$ Lower Class Pops, with each pop giving:
+ Maximum Manpower: §G+$EACH$§!
+$PROV$"
+new @ PP_DEVELOPMENT = "§YPops§!
+This is the total amount of pops in this province."
+new @ IMP_BASE_TAX = "Boost Upper Class Growth"
+new @ IMP_BASE_PROD = "Boost Middle Class Growth"
+new @ IMP_BASE_MP = "Boost Lower Class Growth"
+new @ provincial_tax_income = "Upper Class Pops"
+new @ provincial_production_size = "Middle Class Pops"
+new @ manpower = "Lower Class Pops"
+new @ IMPPR_NOT_ENOUGH_POWER = "§RYou do not have the $POWER|Y$ $TYPE$ Power required to $ACTION$ in $NAME$.§!"
+new @ IMPPR_DO = "Spend $COST|Y$ $TYPE$ Power to $ACTION$ by §G+$AMOUNT$§! in $NAME$ giving:
+	+1 Temporary Pop Growth Rate
+	+2 Pop Growth Weight
+	Crownland: $CROWNLAND|+=&1$"

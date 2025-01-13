@@ -51,6 +51,19 @@ new script_variable q_mil = {
 	name = "Lower Class Growth Weight"
 }
 
+new script_variable p_tot = {
+	name = "Total Population"
+}
+new script_variable p_adm = {
+	name = "Upper Class Population"
+}
+new script_variable p_dip = {
+	name = "Middle Class Population"
+}
+new script_variable p_mil = {
+	name = "Lower Class Population"
+}
+
 new effect add_base_tax = {
 	args = int
 	transpile = {

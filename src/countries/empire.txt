@@ -113,11 +113,11 @@ new country bittergate = {
 	}
 	capital = gralthok
 }
-new country steamford = {
+new country streamford = {
 	inherit = empire_country
 	tag = STE
-	name = "Steamford"
-	adj = "Steamfordian"
+	name = "Streamford"
+	adj = "Streamfordian"
 	color = {
 		135 62 32
 	}
@@ -163,11 +163,11 @@ new country silkenglade = {
 	}
 	capital = gralthok
 }
-new country marshtead = {
+new country marshstead = {
 	inherit = empire_country
 	tag = MAR
-	name = "Marshtead"
-	adj = "Marshteadean"
+	name = "Marshstead"
+	adj = "Marshsteadean"
 	color = {
 		115 83 68
 	}
@@ -179,7 +179,7 @@ new country astviel = {
 	name = "Astviel"
 	adj = "Tyller"
 	color = {
-		106 68 115
+		98 1 168
 	}
 	capital = gralthok
 }
@@ -189,17 +189,37 @@ new country thornen = {
 	name = "Thornen"
 	adj = "Thornean"
 	color = {
-		84 43 55
+		224 135 20
 	}
 	capital = gralthok
 }
-new country rotka = {
+new country veshni = {
 	inherit = empire_country
-	tag = ROT
-	name = "Rotka"
-	adj = "Rotkan"
+	tag = VES
+	name = "Veshni"
+	adj = "Veshnean"
 	color = {
-		99 22 22
+		150 0 0
+	}
+	capital = gralthok
+}
+new country maidenkeep = {
+	inherit = empire_country
+	tag = MAI
+	name = "Maidenkeep"
+	adj = "Virgin"
+	color = {
+		234 247 183
+	}
+	capital = gralthok
+}
+new country ironmound = {
+	inherit = empire_country
+	tag = IRO
+	name = "Ironmound"
+	adj = "Wrought"
+	color = {
+		2 100 200
 	}
 	capital = gralthok
 }

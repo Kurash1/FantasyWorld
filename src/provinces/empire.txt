@@ -258,12 +258,12 @@ new province empire_13 = {
 	name = "empire 13"
 }
 
-new province steamford = {
+new province streamford = {
 	inherit = empire_province
 	color = { 149 174 175 }
-	name = "Steamford"
+	name = "Streamford"
 	history += {
-		history_owner = steamford
+		history_owner = streamford
 	}
 }
 
@@ -339,10 +339,10 @@ new province novenhaven = {
 	}
 }
 
-new province empire_23 = {
+new province olderod = {
 	inherit = empire_province
 	color = { 153 209 191 }
-	name = "empire 23"
+	name = "Olderod"
 	history += {
 		history_owner = bittergate
 	}
@@ -353,14 +353,14 @@ new province empire_24 = {
 	color = { 198 162 162 }
 	name = "empire 24"
 	history += {
-		history_owner = greenrock
+		history_owner = veshni
 	}
 }
 
-new province empire_25 = {
+new province holden = {
 	inherit = empire_province
 	color = { 177 218 252 }
-	name = "empire 25"
+	name = "Holden"
 	history += {
 		history_owner = bittergate
 	}
@@ -370,12 +370,15 @@ new province empire_26 = {
 	inherit = empire_province
 	color = { 100 212 132 }
 	name = "empire 26"
+	history += {
+		history_owner = veshni
+	}
 }
 
-new province empire_27 = {
+new province brigerton = {
 	inherit = empire_province
 	color = { 149 241 172 }
-	name = "empire 27"
+	name = "Brigerton"
 	history += {
 		history_owner = greenrock
 	}
@@ -385,36 +388,54 @@ new province empire_28 = {
 	inherit = empire_province
 	color = { 230 125 147 }
 	name = "empire 28"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_29 = {
 	inherit = empire_province
 	color = { 104 137 113 }
 	name = "empire 29"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_30 = {
 	inherit = empire_province
 	color = { 167 106 135 }
 	name = "empire 30"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_31 = {
 	inherit = empire_province
 	color = { 166 175 252 }
 	name = "empire 31"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_32 = {
 	inherit = empire_province
 	color = { 197 107 124 }
 	name = "empire 32"
+	history += {
+		history_owner = thornen
+	}
 }
 
 new province empire_33 = {
 	inherit = empire_province
 	color = { 231 230 251 }
 	name = "empire 33"
+	history += {
+		history_owner = thornen
+	}
 }
 
 new province empire_34 = {
@@ -433,12 +454,18 @@ new province empire_36 = {
 	inherit = empire_province
 	color = { 155 116 236 }
 	name = "empire 36"
+	history += {
+		history_owner = thornen
+	}
 }
 
 new province empire_37 = {
 	inherit = empire_province
 	color = { 244 121 253 }
 	name = "empire 37"
+	history += {
+		history_owner = thornen
+	}
 }
 
 new province empire_38 = {
@@ -658,42 +685,60 @@ new province empire_71 = {
 	inherit = empire_province
 	color = { 151 128 133 }
 	name = "empire 71"
+	history += {
+		history_owner = astviel
+	}
 }
 
 new province empire_72 = {
 	inherit = empire_province
 	color = { 104 237 125 }
 	name = "empire 72"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_73 = {
 	inherit = empire_province
 	color = { 243 151 246 }
 	name = "empire 73"
+	history += {
+		history_owner = astviel
+	}
 }
 
 new province empire_74 = {
 	inherit = empire_province
 	color = { 213 192 138 }
 	name = "empire 74"
+	history += {
+		history_owner = astviel
+	}
 }
 
 new province empire_75 = {
 	inherit = empire_province
 	color = { 218 189 137 }
 	name = "empire 75"
+	history += {
+		history_owner = ironmound
+	}
 }
 
 new province empire_76 = {
 	inherit = empire_province
 	color = { 173 179 250 }
 	name = "empire 76"
+	history += {
+		history_owner = astviel
+	}
 }
 
-new province empire_77 = {
+new province stonewell = {
 	inherit = empire_province
 	color = { 162 179 114 }
-	name = "empire 77"
+	name = "Stonewell"
 	history += {
 		history_owner = greenrock
 	}
@@ -703,18 +748,27 @@ new province empire_78 = {
 	inherit = empire_province
 	color = { 184 215 166 }
 	name = "empire 78"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_79 = {
 	inherit = empire_province
 	color = { 243 186 239 }
 	name = "empire 79"
+	history += {
+		history_owner = veshni
+	}
 }
 
 new province empire_80 = {
 	inherit = empire_province
 	color = { 150 115 219 }
 	name = "empire 80"
+	history	+= {
+		history_owner = maidenkeep
+	}
 }
 
 new province empire_81 = {

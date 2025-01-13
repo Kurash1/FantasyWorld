@@ -1,0 +1,24 @@
+new define NDefines.NGraphics.CITY_SPRAWL_AMOUNT = 0.5
+new define NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.05
+
+static_modifiers:development := { }
+static_modifiers:provincial_tax_income := {
+	tax_income = -80%
+}
+static_modifiers:provincial_production_size := {
+	trade_goods_size = 0.05
+	province_trade_power_value = 0.1
+	
+	land_forcelimit = 0.5%
+	naval_forcelimit = 0.5%
+	local_sailors = 0.4%
+}
+static_modifiers:manpower := {
+	local_missionary_strength = -0.1%
+	trade_goods_size = 0.02
+	supply_limit_modifier = 1%
+	
+	land_forcelimit = 5%
+	naval_forcelimit = 5%
+	local_sailors = 4%
+}

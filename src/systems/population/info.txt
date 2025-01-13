@@ -36,5 +36,14 @@ Pop Growth Modifier: [This.var_pop_growth_modifier.GetValue]%
 Upper Class Growth Weight: [q_adm.GetValue]
 Middle Class Growth Weight: [q_dip.GetValue]
 Lower Class Growth Weight: [q_mil.GetValue]
+
+Upper Class population: [p_adm.GetValue]
+Middle Class population: [p_dip.GetValue]
+Lower class population: [p_mil.GetValue]
+Total population: [p_tot.GetValue]
+
+Upper Class People per Pop: 10
+Middle Class People per Pop: 100
+Lower Class People per Pop: 1000
 "
 }

@@ -1,10 +1,10 @@
 new named_effect clear_scaling_boost = {
-	for i as 6 to -1 {
+	for i as 10 to -1 {
 		remove_province_modifier = `LDC{i}`
 	}
 }
 new named_effect add_scaling_boost = {
-	for i as 6 to -1 {
+	for i as 10 to -1 {
 		if [&temp >= (0.05 * (2 ^ i))] {
 			&temp -= (0.05 * (2 ^ i))
 			quick_province_modifier = {
