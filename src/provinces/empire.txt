@@ -777,6 +777,88 @@ new province empire_81 = {
 	name = "empire 81"
 }
 
+new province empire_82 = {
+    inherit = empire_province
+    color = { 247 181 118 }
+    name = "empire 82"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_83 = {
+    inherit = empire_province
+    color = { 211 253 126 }
+    name = "empire 83"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_84 = {
+    inherit = empire_province
+    color = { 146 222 255 }
+    name = "empire 84"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_85 = {
+    inherit = empire_province
+    color = { 162 236 165 }
+    name = "empire 85"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_86 = {
+    inherit = empire_province
+    color = { 175 149 236 }
+    name = "empire 86"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_87 = {
+    inherit = empire_province
+    color = { 107 225 165 }
+    name = "empire 87"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_88 = {
+    inherit = empire_province
+    color = { 110 233 121 }
+    name = "empire 88"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province empire_89 = {
+    inherit = empire_province
+    color = { 200 120 119 }
+    name = "empire 89"
+	history += {
+		history_owner = veshni
+	}
+}
+
+new province ireiveshni = {
+    inherit = empire_province
+    color = { 122 110 216 }
+    name = "Ireiveshni"
+	history += {
+		history_owner = veshni
+	}
+}
+
+
 quick_strait = {
 	from = ash_tower
 	to = yew_tower
