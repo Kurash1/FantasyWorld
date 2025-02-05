@@ -1,0 +1,10 @@
+new effect new_attribute = {
+	args = {
+		string title
+		string key
+	}
+	transpile = {
+		new localisation `mechanic_{args:key}_yes` = `{args:title}`
+		args:key = yes
+	}
+}

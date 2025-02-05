@@ -4,6 +4,17 @@ governments:monarchy:reform_levels:1 += new appointment = {
 	inherit = default_reform
 	icon = paper_with_seal
 	modifiers = {
-		
+		heir_chance = 50%
+		legitimacy = -0.25
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "Less penalties for disinheriting your heir."
+			key = less_disinherit_cost
+		}
+		new_attribute = {
+			title = "Less penalties for introducing a new heir."
+			key = less_new_heir_cost
+		}
 	}
 }
