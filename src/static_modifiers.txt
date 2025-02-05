@@ -839,7 +839,6 @@ new static_modifier bought_indulgence = {
 	papal_influence = 1
 }
 new static_modifier religious_unity = {
-	monthly_fanaticism_power = -2
 	max_absolutism = 5
 	yearly_harmony = 1
 	monthly_fervor_increase = 1

@@ -59,6 +59,5 @@ new idea_group theocracy_ideas = {
 	}
 	bonus = {
 		global_unrest = -2
-		monthly_fanaticism_power = 1.0
 	}
 }

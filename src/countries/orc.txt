@@ -4,7 +4,6 @@ new inheritable orc_country = {
 	religion = orcish_pantheon
 	graphical_culture = greekgfx
 	government = tribal
-	starting_reform = tier_1_warband
 	history = {
 		1.1.1 = {
 			Tamriel = {

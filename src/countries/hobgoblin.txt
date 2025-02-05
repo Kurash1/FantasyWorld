@@ -4,7 +4,6 @@ new inheritable hobgoblin_country = {
 	religion = red_code
 	graphical_culture = greekgfx
 	government = theocracy
-	starting_reform = tier_1_host
 	history = {
 		1.1.1 = {
 			Tamriel = {

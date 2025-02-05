@@ -13,7 +13,6 @@ new country windhelm = {
 	color = {
 		45 53 206
 	}
-	starting_reform = tier_1_host
 	capital = windhelm
 	history += {
 		elector = yes
