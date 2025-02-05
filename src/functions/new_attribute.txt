@@ -1,4 +1,4 @@
-new effect new_attribute = {
+new command new_attribute = {
 	args = {
 		string title
 		string key
