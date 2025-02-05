@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:1 += new appointment = {
+	name = "Appointment"
+	desc = "The ruler chooses his successor by appointing them. A quite simple system that allows for the ruler to more easily dispose of heirs that dissapoint them."
+	inherit = default_reform
+	icon = paper_with_seal
+	modifiers = {
+		
+	}
+}

@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:1 += new royal_elective = {
+	name = "Royal Elective"
+	desc = "In this system the heir is chosen by a vote amongst the royal family members, usually within the royal family, but this is not always the case."
+	inherit = default_reform
+	icon = man_and_children
+	modifiers = {
+		
+	}
+}

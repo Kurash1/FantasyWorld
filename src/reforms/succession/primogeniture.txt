@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:1 += new primogeniture = {
+	name = "Primogeniture"
+	desc = "Primogeniture is the right of the firstborn legitimate child to inherit the entirety of the parents estate. In the case of countries this means that the ruleship passes from parent to child in a predictable manner. In this form of succession the future ruler can be groomed for the position from birth."
+	inherit = default_reform
+	icon = crown
+	modifiers = {
+		monthly_heir_claim_increase_modifier = 0.25
+	}
+}
