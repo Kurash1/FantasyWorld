@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:1 += new ultimogeniture = {
+	name = "Ultimogeniture"
+	desc = "In this system, the youngest child inherits the throne. Often, this form of succession aims to ensure that the heir is still young enough to continue the family legacy. It can prevent the older children from gaining too much power and allow for fresh leadership, but may also create tension between siblings."
+	inherit = default_reform
+	modifiers = {
+		
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "Even if you have an heir you can still gain a new younger heir."
+			key = young_replace_heir
+		}
+	}
+}

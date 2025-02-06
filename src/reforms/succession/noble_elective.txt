@@ -1,6 +1,6 @@
 governments:monarchy:reform_levels:1 += new noble_elective = {
 	name = "Noble Elective"
-	desc = "In some monarchies the heir of the country is chosen by a vote amongst the nobility. They may propose candidates amongst themselves, from foreign dynasties, or from the royal family."
+	desc = "In some monarchies, the heir is chosen by a vote among the nobility. They may propose candidates within the royal family, from other noble families, or even foreign dynasties, but the selection is ultimately based on what benefits the nobility and their own interests the most."
 	inherit = default_reform
 	icon = ballot_box
 	conditional = {

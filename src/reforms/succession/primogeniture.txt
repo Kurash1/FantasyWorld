@@ -4,6 +4,6 @@ governments:monarchy:reform_levels:1 += new primogeniture = {
 	inherit = default_reform
 	icon = crown
 	modifiers = {
-		monthly_heir_claim_increase_modifier = 0.25
+		stability_cost_modifier = -0.15
 	}
 }

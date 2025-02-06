@@ -1,0 +1,8 @@
+governments:monarchy:reform_levels:1 += new right_by_might = {
+	name = "Right by Might"
+	desc = "Succession is determined not by birthright, but by power. The one who has the strength or military prowess to take the throne becomes the ruler. This system can lead to frequent power struggles and a constant state of conflict as claimants vie for the throne, often backed by armies or alliances."
+	inherit = default_reform
+	modifiers = {
+		
+	}
+}
