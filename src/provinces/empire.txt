@@ -856,6 +856,65 @@ new province ireiveshni = {
 	}
 }
 
+new province empire_90 = {
+    inherit = empire_province
+    color = { 158 124 159 }
+    name = "empire 90"
+}
+
+new province empire_91 = {
+    inherit = empire_province
+    color = { 166 243 110 }
+    name = "empire 91"
+}
+
+new province empire_92 = {
+    inherit = empire_province
+    color = { 112 130 249 }
+    name = "empire 92"
+}
+
+new province empire_93 = {
+    inherit = empire_province
+    color = { 153 176 197 }
+    name = "empire 93"
+}
+
+new province empire_94 = {
+    inherit = empire_province
+    color = { 143 225 170 }
+    name = "empire 94"
+}
+
+new province empire_95 = {
+    inherit = empire_province
+    color = { 130 196 215 }
+    name = "empire 95"
+}
+
+new province empire_96 = {
+    inherit = empire_province
+    color = { 255 191 203 }
+    name = "empire 96"
+}
+
+new province empire_97 = {
+    inherit = empire_province
+    color = { 184 223 145 }
+    name = "empire 97"
+}
+
+new province empire_98 = {
+    inherit = empire_province
+    color = { 150 107 150 }
+    name = "empire 98"
+}
+
+new province empire_99 = {
+    inherit = empire_province
+    color = { 146 180 107 }
+    name = "empire 99"
+}
 
 quick_strait = {
 	from = ash_tower
