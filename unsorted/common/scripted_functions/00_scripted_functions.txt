@@ -3,6 +3,9 @@
 # Note that most functions use unique mechanics
 
 # ROOT = country
+can_remove_seat_in_parliament = {
+}
+
 can_join_hre_league = {
 	condition = {
 		tooltip = "CANNOT_JOIN_LEAGUE_AT_WAR"

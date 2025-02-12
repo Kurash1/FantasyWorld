@@ -2,7 +2,7 @@ governments:monarchy:reform_levels:1 += new appointment = {
 	name = "Appointment"
 	desc = "The ruler chooses his successor by appointing them. A quite simple system that allows for the ruler to more easily dispose of heirs that dissapoint them."
 	inherit = default_reform
-	icon = paper_with_seal
+	icon = paper_with_seal_3
 	modifiers = {
 		heir_chance = 50%
 		legitimacy = -0.25
@@ -15,6 +15,80 @@ governments:monarchy:reform_levels:1 += new appointment = {
 		new_attribute = {
 			title = "Less penalties for introducing a new heir."
 			key = less_new_heir_cost
+		}
+	}
+}
+interface_files:countrycourtview:countrycourtview += {
+	guiButtonType = {
+		name = "custom_disinherit_button"
+		position = { x = 486 y = 203 }
+		quadTextureSprite = "GFX_disinherit_button"
+		tooltip = ""
+		tooltipText = ""
+		delayedTooltipText = ""
+		buttonFont = "vic_18"
+		clicksound = back_click
+		scripted = yes
+	}
+	guiButtonType = {
+		name = "custom_assign_heir_button"
+		position = { x = 486	y = 203 }
+		quadTextureSprite = "GFX_assign_heir_button"	
+		tooltip = ""
+		tooltipText = ""
+		delayedTooltipText = ""
+		buttonFont = "vic_18"
+		clicksound = back_click
+		scripted = yes
+	}
+}
+new custom_button custom_disinherit_button = {
+	tooltip = "Disinherit §Y[Root.Heir.GetName]§!, and hope for a more capable heir."
+	potential = {
+		has_heir = yes
+	}
+	trigger = {
+		prestige = 0
+	}
+	effect = {
+		remove_heir = { allow_new_heir = no }
+		if [has_government_attribute = less_disinherit_cost] {
+			add_prestige = -25
+		}
+		else {
+			add_prestige = -50
+		}
+	}
+}
+on_actions:on_heir_disinherited := {
+	if [has_government_attribute = less_disinherit_cost] {
+		hidden_effect->add_prestige = 25
+	}
+}
+new custom_button custom_assign_heir_button = {
+	tooltip = "§YIntroduce New Heir§!"
+	potential = {
+		has_heir = no
+	}
+	trigger = {
+		has_regency = no
+		is_at_war = no
+		prestige = 0
+		legitimacy = 90
+	}
+	effect = {
+		tooltip->define_heir = { hide_skills = yes }
+		hidden_effect->random_list = {
+			1->define_heir = { }
+			1->define_heir = { female = yes }
+		}
+		if [has_government_attribute = less_new_heir_cost] {
+			add_prestige = -10
+			add_legitimacy = -10
+		}
+		else {
+			add_prestige = -20
+			add_legitimacy = -20
 		}
 	}
 }

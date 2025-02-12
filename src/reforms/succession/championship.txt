@@ -2,13 +2,20 @@ governments:monarchy:reform_levels:1 += new championship = {
 	name = "Championship"
 	desc = "The heir is determined through a contest, often a series of trials or duels, where the strongest and most skilled individual earns the right to rule. This system prizes personal ability and military prowess, with the monarch's successor proven in the heat of competition. It’s a rule by the strongest, where might and skill shape the future of the kingdom."
 	inherit = default_reform
+	icon = holy_state_reform
 	modifiers = {
-		
+		army_tradition = 0.25
+		land_morale = 0.05
 	}
 	custom_attributes = {
 		new_attribute = {
-			title = "Your heirs will start with +1 military skill"
+			title = "Your heirs will start with higher military skill"
 			key = better_heir_mil
 		}
+	}
+}
+on_actions:on_new_heir += {
+	if [has_government_attribute = better_heir_mil] {
+		change_heir_mil = 1
 	}
 }

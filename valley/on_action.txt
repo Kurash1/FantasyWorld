@@ -231,6 +231,7 @@ new on_action on_institution_embracement = { }
 new on_action on_national_focus_change = { }
 new on_action on_capital_moved = { }
 new on_action on_expanded_infrastructure = { }
+new on_action on_expanded_infrastructure_removed = { }
 new on_action on_centralized_state = { }
 new on_action monarch_on_shipwreck = { }
 new on_action heir_on_shipwreck = { }

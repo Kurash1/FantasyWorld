@@ -8,6 +8,9 @@ new estate_interaction seize_land = {
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
         is_at_war = no
+		if [has_government_attribute = can_not_seize_land] {
+			NOT->has_government_attribute_short_desc = can_not_seize_land
+		}
     }
     effect = {
         custom_tooltip = ESTATES_SEIZE_LAND_DESC

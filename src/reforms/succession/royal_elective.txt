@@ -4,6 +4,17 @@ governments:monarchy:reform_levels:1 += new royal_elective = {
 	inherit = default_reform
 	icon = man_and_children
 	modifiers = {
-		
+		legitimacy = 1.0
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "Your heirs will start with higher diplomatic skill"
+			key = better_heir_dip
+		}
+	}
+}
+on_actions:on_new_heir += {
+	if [has_government_attribute = better_heir_dip] {
+		change_heir_dip = 1
 	}
 }

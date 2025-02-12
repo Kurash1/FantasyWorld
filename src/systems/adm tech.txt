@@ -13,7 +13,6 @@ new custom_transpile adm_technology = {
 			#may_force_march = yes
 			allowed_idea_groups = 1
 			
-			cleansing = yes
 			coastal_defence = yes
 			
 			fort_15th = yes

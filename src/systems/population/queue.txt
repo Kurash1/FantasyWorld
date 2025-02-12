@@ -36,7 +36,7 @@ new effect queue_development = {
 
 on_actions:on_adm_development += {
 	if [has_province_flag = cd] {
-		clear_province_flag = cd
+		clr_province_flag = cd
 	}
 	else {
 		`add_base_tax = -1`
@@ -48,7 +48,7 @@ on_actions:on_adm_development += {
 }
 on_actions:on_dip_development += {
 	if [has_province_flag = cd] {
-		clear_province_flag = cd
+		clr_province_flag = cd
 	}
 	else {
 		`add_base_production = -1`
@@ -60,7 +60,7 @@ on_actions:on_dip_development += {
 }
 on_actions:on_mil_development += {
 	if [has_province_flag = cd] {
-		clear_province_flag = cd
+		clr_province_flag = cd
 	}
 	else {
 		`add_base_manpower = -1`

@@ -1,0 +1,35 @@
+new custom_transpile base_countries = {
+	write_file "common/countries/REB.txt" = {	
+		graphical_culture = westerngfx
+		color = {
+			30 30 30
+		}
+		historical_idea_groups = { }
+		monarch_names = { "Corneles @HASHTAG@0" = 10 "Moise @HASHTAG@0" = 10 "Mahieu @HASHTAG@0" = 10 "Daniel @HASHTAG@0" = 10 "Jacob @HASHTAG@0" = 10 "Piet @HASHTAG@0" = 10 "Hendrik @HASHTAG@0" = 10 "David @HASHTAG@0" = 10 "John @HASHTAG@0" = 10 "Eric @HASHTAG@0" = 10 "Boel @HASHTAG@0" = -1 "Alexandra @HASHTAG@0" = -1 "Regina @HASHTAG@0" = -1 "Miriam @HASHTAG@0" = -1 }
+		leader_names = { Lowther Quelch Condent Spriggs Condon Angre Anstis Chivers Searle Hout Coxon Vynne Vane Worley Dalzeel }
+		ship_names = { "Captain's Horror" "Death" "Disgraceful Strumpet" "Dragon's Gold" "Executioner" "Killer's Fearful Storm" "Privateer's Strumpet" "The Damned Killer" "The Dark Dagger" "The Dirty Blade" "The Dirty Scream" "The Doom of the Ocean" "The Dreaming Demon" "The Fallen Raider" "The Fear of the Demon" "The Foul Whore" "The Gold Cutlass" "The Hell-born" "The Horrid Compass" "The Horrible Raider" "The Howling Wolf" "The Lustful Hangman" "The Nightmare" "The Poison Death" "The Serpent" "The Vicious Murderer" "The Vile Saber" }
+	}
+	write_file "common/countries/NAT.txt" = {	
+		graphical_culture = westerngfx
+		color = {
+			203 164 103
+		}
+		historical_idea_groups = { }
+		monarch_names = { "Corneles @HASHTAG@0" = 10 "Moise @HASHTAG@0" = 10 "Mahieu @HASHTAG@0" = 10 "Daniel @HASHTAG@0" = 10 "Jacob @HASHTAG@0" = 10 "Piet @HASHTAG@0" = 10 "Hendrik @HASHTAG@0" = 10 "David @HASHTAG@0" = 10 "John @HASHTAG@0" = 10 "Eric @HASHTAG@0" = 10 "Boel @HASHTAG@0" = -1 "Alexandra @HASHTAG@0" = -1 "Regina @HASHTAG@0" = -1 "Miriam @HASHTAG@0" = -1 }
+		leader_names = { Lowther Quelch Condent Spriggs Condon Angre Anstis Chivers Searle Hout Coxon Vynne Vane Worley Dalzeel }
+		ship_names = { "Captain's Horror" "Death" "Disgraceful Strumpet" "Dragon's Gold" "Executioner" "Killer's Fearful Storm" "Privateer's Strumpet" "The Damned Killer" "The Dark Dagger" "The Dirty Blade" "The Dirty Scream" "The Doom of the Ocean" "The Dreaming Demon" "The Fallen Raider" "The Fear of the Demon" "The Foul Whore" "The Gold Cutlass" "The Hell-born" "The Horrid Compass" "The Horrible Raider" "The Howling Wolf" "The Lustful Hangman" "The Nightmare" "The Poison Death" "The Serpent" "The Vicious Murderer" "The Vile Saber" }
+	}
+	write_file "common/countries/PIR.txt" = {	
+		graphical_culture = westerngfx
+		color = {
+			10 10 10
+		}
+		historical_idea_groups = { }
+		monarch_names = { "Corneles @HASHTAG@0" = 10 "Moise @HASHTAG@0" = 10 "Mahieu @HASHTAG@0" = 10 "Daniel @HASHTAG@0" = 10 "Jacob @HASHTAG@0" = 10 "Piet @HASHTAG@0" = 10 "Hendrik @HASHTAG@0" = 10 "David @HASHTAG@0" = 10 "John @HASHTAG@0" = 10 "Eric @HASHTAG@0" = 10 "Boel @HASHTAG@0" = -1 "Alexandra @HASHTAG@0" = -1 "Regina @HASHTAG@0" = -1 "Miriam @HASHTAG@0" = -1 }
+		leader_names = { Lowther Quelch Condent Spriggs Condon Angre Anstis Chivers Searle Hout Coxon Vynne Vane Worley Dalzeel }
+		ship_names = { "Captain's Horror" "Death" "Disgraceful Strumpet" "Dragon's Gold" "Executioner" "Killer's Fearful Storm" "Privateer's Strumpet" "The Damned Killer" "The Dark Dagger" "The Dirty Blade" "The Dirty Scream" "The Doom of the Ocean" "The Dreaming Demon" "The Fallen Raider" "The Fear of the Demon" "The Foul Whore" "The Gold Cutlass" "The Hell-born" "The Horrid Compass" "The Horrible Raider" "The Howling Wolf" "The Lustful Hangman" "The Nightmare" "The Poison Death" "The Serpent" "The Vicious Murderer" "The Vile Saber" }
+	}
+	write_file "history/countries/REB.txt" = { technology_group = nord_tg }
+	write_file "history/countries/NAT.txt" = { technology_group = nord_tg }
+	write_file "history/countries/PIR.txt" = { technology_group = nord_tg }
+}

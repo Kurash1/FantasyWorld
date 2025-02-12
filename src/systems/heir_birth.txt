@@ -1,0 +1,41 @@
+new define NDefines.NCountry.BASE_HEIR_BIRTH = 0
+
+new named_int BASE_HEIR_BIRTH = 2
+
+new effect random_heir_birth = {
+	args = bool
+	transpile = {
+		random_list = {
+			1->define_heir = { dynasty = ROOT }
+			1->define_heir = { female = yes dynasty = ROOT }
+		}
+	}
+}
+on_actions:on_monthly_pulse += {
+	if [
+		has_government_attribute = has_birth_heir
+		OR = {
+			has_heir = no
+			has_government_attribute = young_replace_heir
+		}
+	] {
+		&temp &= modifier:heir_chance
+		&temp += 1
+		&temp *= BASE_HEIR_BIRTH
+		if [has_heir = yes] {
+			&temp *= 0.1
+		}
+		if [&temp < 0.1] {
+			&temp := 0.1
+		}
+		
+		random_variable = {
+			which = temp_2
+			value = 100
+		}
+		
+		if [&temp_2 < temp] {
+			random_heir_birth = yes
+		}
+	}
+}

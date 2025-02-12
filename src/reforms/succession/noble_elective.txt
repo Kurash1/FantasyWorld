@@ -8,6 +8,8 @@ governments:monarchy:reform_levels:1 += new noble_elective = {
 		is_elective = yes
 	}
 	modifiers = {
-		#nobles_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.2
+		yearly_corruption = 0.05
 	}
 }

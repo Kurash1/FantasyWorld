@@ -1,0 +1,32 @@
+new estate nobles = {
+	name = "Nobles"
+	desc = "This estate represents the families of landed aristocrats in your country. Their privileges are guaranteed by old traditions and most have originally been won through performing great services to the state. Their traditional responsibility is to fight and protect the realm against outside dangers as well as help the ruler keep the peace."
+	icon = 2
+	
+	trigger = {
+		always = yes
+	}
+	
+	country_modifier_happy = {
+		manpower_recovery_speed = 0.2 
+		land_maintenance_modifier = -0.1
+	}
+	country_modifier_neutral = {
+		manpower_recovery_speed = 0.2 
+	}	
+	country_modifier_angry = {
+		manpower_recovery_speed = -0.1
+		land_maintenance_modifier = 0.1
+		monthly_support_heir_gain = -0.2
+		global_unrest = 2
+	}
+	
+	land_ownership_modifier = {
+		nobles_loyalty_modifier = 0.2
+	}
+	base_influence = 10
+	
+	color = { 200 0 50 }
+	
+	influence_from_dev_modifier = 1.0
+}

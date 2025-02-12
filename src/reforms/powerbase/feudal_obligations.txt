@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:2 += new feudal_obligations = {
+	name = "Feudal Obligations"
+	desc = "The state is founded on an interconnected web of feudal obligations and oaths, that together end up with a primary actor serving as the state. As long as you can keep your feudal vassals happy, so will you have the power of the state."
+	inherit = default_reform
+	icon = king
+	modifiers = {
+		nobles_influence_modifier = 0.05
+		global_autonomy = 0.025
+		state_maintenance_modifier = -0.2
+		vassal_income = 0.2
+	}
+}

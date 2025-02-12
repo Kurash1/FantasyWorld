@@ -10,6 +10,10 @@ new inheritable empire_country = {
 				discover_country = $tag
 			}
 		}
+		apply_government = {
+			primogeniture
+			military_backing
+		}
 	}
 }
 new country dicetown = {

@@ -15,6 +15,9 @@ new define NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
 
 new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25
 
+new define NDefines.NCountry.ALLOW_FEMALE_GENERALS = 1
+new define NDefines.NCountry.FEMALE_ADVISOR_CHANCE = 50
+
 new named_effect free_merc_company_list = {
 	
 }

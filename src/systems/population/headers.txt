@@ -67,28 +67,28 @@ new script_variable p_mil = {
 new effect add_base_tax = {
 	args = int
 	transpile = {
-		add_province_flag = cd
+		set_province_flag = cd
 		`add_base_tax = {args}`
 	}
 }
 new effect add_base_production = {
 	args = int
 	transpile = {
-		add_province_flag = cd
+		set_province_flag = cd
 		`add_base_production = {args}`
 	}
 }
 new effect add_base_manpower = {
 	args = int
 	transpile = {
-		add_province_flag = cd
+		set_province_flag = cd
 		`add_base_manpower = {args}`
 	}
 }
 new effect add_random_development = {
 	args = int
 	transpile = {
-		add_province_flag = cd
+		set_province_flag = cd
 		`add_random_development = {args}`
 	}
 }

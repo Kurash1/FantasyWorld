@@ -1,0 +1,34 @@
+new estate church = {
+	name = "Church"
+	desc = "This estate represents the educated priests of your state religion. They have a long tradition of serving in the administration of your country and their traditional responsibility is to care for the spiritual well-being of it and your people. Over the centuries they have acquired both land properties and privileges from former rulers as well as pious individuals."
+	icon = 1
+	
+	trigger = {
+		always = yes
+	}
+	
+	country_modifier_happy = {
+		global_tax_modifier = 0.2
+		devotion = 0.5
+		stability_cost_modifier = -0.1
+	}
+	country_modifier_neutral = {
+		global_tax_modifier = 0.2
+	}	
+	country_modifier_angry = {
+		global_tax_modifier = -0.1
+		devotion = -0.5
+		stability_cost_modifier = 0.1
+		global_unrest = 2
+	}
+	
+	land_ownership_modifier = {
+		church_loyalty_modifier = 0.2
+	}
+	base_influence = 10
+	
+	contributes_to_curia_treasury = yes
+	color = { 200 150 0 }
+	
+	influence_from_dev_modifier = 1.0
+}

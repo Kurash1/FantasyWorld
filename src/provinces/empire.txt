@@ -790,9 +790,7 @@ new province empire_83 = {
     inherit = empire_province
     color = { 211 253 126 }
     name = "empire 83"
-	history += {
-		history_owner = veshni
-	}
+	lake = yes
 }
 
 new province empire_84 = {

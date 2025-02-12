@@ -43,7 +43,4 @@ new named_effect on_initialize = {
 			days = (365*50)
 		}
 	}
-	every_country [NOT = { tag = REB }] {
-		esb_change_opinion = yes
-	}
 }

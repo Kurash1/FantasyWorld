@@ -19,6 +19,9 @@ new government monarchy = {
 		valid_for_nation_designer = no
 		is_eligible_for_hre_emperor = yes
 		modifiers = { }
+		custom_attributes = {
+			has_birth_heir = yes
+		}
 	}
 	reform_levels = {
 		1 = "Succession"
@@ -133,6 +136,10 @@ new government tribal = {
 		heir = yes
 		queen = yes
 		modifiers = { }
+		
+		custom_attributes = {
+			has_birth_heir = yes
+		}
 	}
 	reform_levels = {
 		1 = "Tribal Government"

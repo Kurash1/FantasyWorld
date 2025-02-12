@@ -1029,8 +1029,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1052,8 +1050,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1075,8 +1071,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1098,8 +1092,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1121,8 +1113,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1144,8 +1134,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1167,8 +1155,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 			
 			iconType =
@@ -1190,8 +1176,6 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
-				
-				scale = 0.75
 			}
 		}
 		
