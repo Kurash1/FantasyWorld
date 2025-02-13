@@ -8,13 +8,13 @@ governments:monarchy:reform_levels:1 += new magical_rulership = {
 	}
 	custom_attributes = {
 		new_attribute = {
-			title = "Your heirs will always have the '§YMage§!' personality."
+			title = "Your heirs will always have the '§YMage§!' modifier."
 			key = better_heir_magic
 		}
 	}
 }
 on_actions:on_new_heir += {
 	if [has_government_attribute = better_heir_magic] {
-		add_heir_personality = mage
+		set_heir_flag = mage
 	}
 }
