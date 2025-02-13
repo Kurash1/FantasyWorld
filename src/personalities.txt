@@ -330,12 +330,12 @@ new personality_trait immortal = {
 	nation_designer_cost = 800
 }
 
-run_effect = {
-	foreach $ in personality_traits {
-		arc_log = "**{$:name}**
-*{$:desc}*
-```
-{$:modifier}
-```"
-	}
-}
+#run_effect = {
+#	foreach $ in personality_traits {
+#		arc_log = "**{$:name}**
+#*{$:desc}*
+#```
+#{modifier_to_unformatted_string = $:modifier}
+#```"
+#	}
+#}
