@@ -210,7 +210,7 @@ new province zorlokk = {
 	terrain = red_hills
 	area = kraghzul
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = uthrak_zor
 	}
 }
@@ -445,7 +445,7 @@ new province krasshul = {
 	terrain = red_hills
 	area = gortharok
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = gol_thurn
 	}
 }
@@ -554,7 +554,7 @@ new province karnvorr = {
 	terrain = red_hills
 	area = kharrdun
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = drog_khaal
 	}
 }
@@ -695,7 +695,7 @@ new province uzhmak = {
 	terrain = red_hills
 	area = zolthar
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = krash_nal
 	}
 }

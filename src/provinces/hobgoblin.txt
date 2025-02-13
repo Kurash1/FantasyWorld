@@ -499,7 +499,7 @@ new province zurenkir = {
 	terrain = red_plains
 	area = shanter_peak
 	history += {
-		history_trade_goods	= ebony
+		history_trade_goods	= gods_blood
 		history_owner = turn
 	}
 }

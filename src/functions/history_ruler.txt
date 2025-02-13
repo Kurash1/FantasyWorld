@@ -20,3 +20,44 @@ new effect history_ruler = {
 		}
 	}
 }
+new effect define_character = {
+	args = {
+		string type
+		text name
+		text dynasty
+		list<int> stats
+		int age
+		string birth_day
+		bool female
+		int claim = 90
+	}
+	transpile = {
+		2568.1.1 = {
+			when [args:type == ruler] {
+				monarch
+			}
+			when [args:type == consort] {
+				queen
+			}
+			when [args:type == heir] {
+				heir
+			}
+			
+			= {
+				name = args:name
+				dynasty = args:dynasty
+				adm = args:stats:1
+				dip = args:stats:2
+				mil = args:stats:3
+				birth_date = `{(2568-args:age)}.{args:birth_day}`
+				female = args:female
+				death_date = 9999.1.1 #we don't do bookmarks so this is fine
+				
+				when [args:type == heir] {
+					claim = args:claim
+					monarch_name = args:name
+				}
+			}
+		}
+	}
+}

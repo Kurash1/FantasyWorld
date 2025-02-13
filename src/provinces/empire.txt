@@ -149,6 +149,11 @@ new province wasteland_27 = {
 	color = { 12 5 8 }
 	name = "wasteland 27"
 }
+new province wasteland_28 = {
+    inherit = wasteland_province
+    color = { 10 10 14 }
+    name = "wasteland 28"
+}
 
 new province empire_1 = {
 	inherit = empire_province
@@ -420,21 +425,23 @@ new province empire_31 = {
 	}
 }
 
-new province empire_32 = {
+new province watargate = {
 	inherit = empire_province
 	color = { 197 107 124 }
-	name = "empire 32"
+	name = "Watargate"
 	history += {
 		history_owner = thornen
+		history_trade_goods = wood
 	}
 }
 
-new province empire_33 = {
+new province roseria = {
 	inherit = empire_province
 	color = { 231 230 251 }
-	name = "empire 33"
+	name = "Roseria"
 	history += {
 		history_owner = thornen
+		history_trade_goods = paper
 	}
 }
 
@@ -450,21 +457,23 @@ new province empire_35 = {
 	name = "empire 35"
 }
 
-new province empire_36 = {
+new province elfgarden = {
 	inherit = empire_province
 	color = { 155 116 236 }
-	name = "empire 36"
+	name = "Elfgarden"
 	history += {
 		history_owner = thornen
+		history_trade_goods = alcohol
 	}
 }
 
-new province empire_37 = {
+new province arkenrod = {
 	inherit = empire_province
 	color = { 244 121 253 }
-	name = "empire 37"
+	name = "Arkenrod"
 	history += {
 		history_owner = thornen
+		history_trade_goods = wood
 	}
 }
 
@@ -717,10 +726,10 @@ new province empire_74 = {
 	}
 }
 
-new province empire_75 = {
+new province ironmound = {
 	inherit = empire_province
 	color = { 218 189 137 }
-	name = "empire 75"
+	name = "Ironmound"
 	history += {
 		history_owner = ironmound
 	}
@@ -762,10 +771,10 @@ new province empire_79 = {
 	}
 }
 
-new province empire_80 = {
+new province maidenkeep = {
 	inherit = empire_province
 	color = { 150 115 219 }
-	name = "empire 80"
+	name = "Maidenkeep"
 	history	+= {
 		history_owner = maidenkeep
 	}
@@ -856,64 +865,134 @@ new province ireiveshni = {
 	}
 }
 
-new province empire_90 = {
+new province thorn_keep = {
     inherit = empire_province
     color = { 158 124 159 }
-    name = "empire 90"
+    name = "Thorn Keep"
+	history += {
+		history_owner = thornen
+		history_trade_goods = salt
+	}
 }
 
-new province empire_91 = {
+new province grenfield = {
     inherit = empire_province
     color = { 166 243 110 }
-    name = "empire 91"
+    name = "Grenfield"
+	history += {
+		history_owner = thornen
+		history_trade_goods = wool
+	}
 }
 
-new province empire_92 = {
-    inherit = empire_province
-    color = { 112 130 249 }
-    name = "empire 92"
-}
-
-new province empire_93 = {
-    inherit = empire_province
-    color = { 153 176 197 }
-    name = "empire 93"
-}
-
-new province empire_94 = {
+new province drakonaire = {
     inherit = empire_province
     color = { 143 225 170 }
-    name = "empire 94"
+    name = "Drakonaire"
+	history += {
+		history_owner = thornen
+		history_trade_goods = silver
+	}
 }
 
-new province empire_95 = {
-    inherit = empire_province
-    color = { 130 196 215 }
-    name = "empire 95"
-}
-
-new province empire_96 = {
+new province nomstad = {
     inherit = empire_province
     color = { 255 191 203 }
-    name = "empire 96"
+    name = "Nomstad"
+	history += {
+		history_owner = thornen
+		history_trade_goods = r_metals
+	}
 }
 
-new province empire_97 = {
+new province veshen_place = {
     inherit = empire_province
     color = { 184 223 145 }
-    name = "empire 97"
+    name = "Veshen Place"
+	history += {
+		history_owner = thornen
+		history_trade_goods = grain
+	}
 }
 
-new province empire_98 = {
+new province oudwae = {
     inherit = empire_province
     color = { 150 107 150 }
-    name = "empire 98"
+    name = "Oudwae"
+	history += {
+		history_owner = thornen
+		history_trade_goods = grain
+	}
 }
 
-new province empire_99 = {
+new province rose_bridge = {
     inherit = empire_province
     color = { 146 180 107 }
-    name = "empire 99"
+    name = "Rose Bridge"
+	history += {
+		history_owner = thornen
+		history_trade_goods = livestock
+	}
+}
+
+new province rowan_tower = {
+    inherit = empire_province
+    color = { 239 228 214 }
+    name = "Rowan Tower"
+	history += {
+		history_owner = thornen
+		history_trade_goods = mag_goods
+	}
+}
+
+new province thornwoods = {
+    inherit = empire_province
+    color = { 188 233 220 }
+    name = "Thornwoods"
+	history += {
+		history_owner = thornen
+		history_trade_goods = fur
+	}
+}
+
+new province quarwaine_ford = {
+    inherit = empire_province
+    color = { 133 102 152 }
+    name = "Quarwaine Ford"
+	history += {
+		history_owner = thornen
+		history_trade_goods = gems
+	}
+}
+
+new province port_rosen = {
+    inherit = empire_province
+    color = { 206 237 206 }
+    name = "Port Rosen"
+	history += {
+		history_owner = thornen
+		history_trade_goods = cloth
+	}
+}
+
+new province rosen_forest = {
+    inherit = empire_province
+    color = { 220 101 220 }
+    name = "Rosen Forest"
+	history += {
+		history_owner = thornen
+		history_trade_goods = naval_supplies
+	}
+}
+
+new province dragons_landing = {
+    inherit = empire_province
+    color = { 229 134 144 }
+    name = "Dragon's Landing"
+	history += {
+		history_owner = thornen
+		history_trade_goods = c_metals
+	}
 }
 
 quick_strait = {

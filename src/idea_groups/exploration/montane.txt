@@ -1,7 +1,7 @@
 new owned_province_modifier montane_ideas_prospectors =  {
 	name = "Prospectors"
 	trigger_tooltip = "producing Gems, Common Ores, Rare Ores, Gold, Silver, or Ebony"
-	tradegoods = { gems c_metals r_metals gold silver ebony }
+	tradegoods = { gems c_metals r_metals gold silver gods_blood }
 	province = {
 		local_development_cost = -0.1
 	}

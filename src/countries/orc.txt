@@ -21,6 +21,35 @@ new country grul_khaar = {
 		2 78 47
 	}
 	capital = gralthok
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gorash"
+			dynasty = "Bloodmaw"
+			stats = { 4 2 5 }
+			age = 38
+			birth_day = 3.15
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Grunk"
+			dynasty = "Bloodmaw"
+			stats = { 3 3 4 }
+			age = 20
+			birth_day = 6.12
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Uglak"
+			dynasty = "Bloodmaw"
+			stats = { 2 4 3 }
+			age = 22
+			birth_day = 10.8
+			female = yes
+		}
+	}
 }
 new country zarak_thul = {
 	inherit = orc_country
@@ -31,6 +60,35 @@ new country zarak_thul = {
 		195 107 215
 	}
 	capital = zarhammor
+	history += {
+		define_character = {
+			type = ruler
+			name = "Throg"
+			dynasty = "Ironfist"
+			stats = { 5 1 6 }
+			age = 42
+			birth_day = 5.22
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Krog"
+			dynasty = "Ironfist"
+			stats = { 4 2 5 }
+			age = 18
+			birth_day = 11.9
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Gorkil"
+			dynasty = "Ironfist"
+			stats = { 3 3 3 }
+			age = 26
+			birth_day = 2.5
+			female = yes
+		}
+	}
 }
 new country morgothra = {
 	inherit = orc_country
@@ -41,6 +99,35 @@ new country morgothra = {
 		58 41 209
 	}
 	capital = muldrokk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Drogar"
+			dynasty = "Stonejaw"
+			stats = { 6 3 4 }
+			age = 45
+			birth_day = 4.1
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Urgh"
+			dynasty = "Stonejaw"
+			stats = { 4 4 3 }
+			age = 22
+			birth_day = 7.19
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Grimka"
+			dynasty = "Stonejaw"
+			stats = { 2 5 2 }
+			age = 27
+			birth_day = 8.3
+			female = yes
+		}
+	}
 }
 new country druk_makra = {
 	inherit = orc_country
@@ -51,6 +138,35 @@ new country druk_makra = {
 		72 241 75
 	}
 	capital = vulkrad
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ruk"
+			dynasty = "Darkhammer"
+			stats = { 4 4 5 }
+			age = 40
+			birth_day = 1.4
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mograk"
+			dynasty = "Darkhammer"
+			stats = { 3 5 4 }
+			age = 25
+			birth_day = 6.10
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Horgra"
+			dynasty = "Darkhammer"
+			stats = { 2 4 3 }
+			age = 28
+			birth_day = 9.11
+			female = yes
+		}
+	}
 }
 new country thraal_kur = {
 	inherit = orc_country
@@ -61,6 +177,35 @@ new country thraal_kur = {
 		238 196 21
 	}
 	capital = droknir
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ghor"
+			dynasty = "Blackfang"
+			stats = { 5 3 6 }
+			age = 47
+			birth_day = 7.2
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Sharn"
+			dynasty = "Blackfang"
+			stats = { 3 4 5 }
+			age = 19
+			birth_day = 2.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Druka"
+			dynasty = "Blackfang"
+			stats = { 4 2 4 }
+			age = 23
+			birth_day = 5.12
+			female = yes
+		}
+	}
 }
 new country var_ghram = {
 	inherit = orc_country
@@ -71,6 +216,35 @@ new country var_ghram = {
 		212 123 68
 	}
 	capital = thranggor
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gorash"
+			dynasty = "Bloodmaw"
+			stats = { 4 2 5 }
+			age = 38
+			birth_day = 3.15
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Grunk"
+			dynasty = "Bloodmaw"
+			stats = { 3 3 4 }
+			age = 20
+			birth_day = 6.12
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Uglak"
+			dynasty = "Bloodmaw"
+			stats = { 2 4 3 }
+			age = 22
+			birth_day = 10.8
+			female = yes
+		}
+	}
 }
 new country korr_dazhn = {
 	inherit = orc_country
@@ -81,6 +255,35 @@ new country korr_dazhn = {
 		221 216 249
 	}
 	capital = kraghzul
+	history += {
+		define_character = {
+			type = ruler
+			name = "Throg"
+			dynasty = "Ironfist"
+			stats = { 5 1 6 }
+			age = 42
+			birth_day = 5.22
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Krog"
+			dynasty = "Ironfist"
+			stats = { 4 2 5 }
+			age = 18
+			birth_day = 11.9
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Gorkil"
+			dynasty = "Ironfist"
+			stats = { 3 3 3 }
+			age = 26
+			birth_day = 2.5
+			female = yes
+		}
+	}
 }
 new country uthrak_zor = {
 	inherit = orc_country
@@ -91,6 +294,35 @@ new country uthrak_zor = {
 		36 25 62
 	}
 	capital = zorlokk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Drogar"
+			dynasty = "Stonejaw"
+			stats = { 6 3 4 }
+			age = 45
+			birth_day = 4.1
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Urgh"
+			dynasty = "Stonejaw"
+			stats = { 4 4 3 }
+			age = 22
+			birth_day = 7.19
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Grimka"
+			dynasty = "Stonejaw"
+			stats = { 2 5 2 }
+			age = 27
+			birth_day = 8.3
+			female = yes
+		}
+	}
 }
 new country ghrash_tan = {
 	inherit = orc_country
@@ -101,6 +333,35 @@ new country ghrash_tan = {
 		32 6 8
 	}
 	capital = broghkar
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ruk"
+			dynasty = "Darkhammer"
+			stats = { 4 4 5 }
+			age = 40
+			birth_day = 1.4
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mograk"
+			dynasty = "Darkhammer"
+			stats = { 3 5 4 }
+			age = 25
+			birth_day = 6.10
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Horgra"
+			dynasty = "Darkhammer"
+			stats = { 2 4 3 }
+			age = 28
+			birth_day = 9.11
+			female = yes
+		}
+	}
 }
 new country zar_vurth = {
 	inherit = orc_country
@@ -111,6 +372,35 @@ new country zar_vurth = {
 		221 20 55
 	}
 	capital = tharnukk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ghor"
+			dynasty = "Blackfang"
+			stats = { 5 3 6 }
+			age = 47
+			birth_day = 7.2
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Sharn"
+			dynasty = "Blackfang"
+			stats = { 3 4 5 }
+			age = 19
+			birth_day = 2.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Druka"
+			dynasty = "Blackfang"
+			stats = { 4 2 4 }
+			age = 23
+			birth_day = 5.12
+			female = yes
+		}
+	}
 }
 new country krav_dro = {
 	inherit = orc_country
@@ -121,6 +411,35 @@ new country krav_dro = {
 		4 233 207
 	}
 	capital = droghar
+	history += {
+		define_character = {
+			type = ruler
+			name = "Varg"
+			dynasty = "Stormclaw"
+			stats = { 5 2 5 }
+			age = 39
+			birth_day = 9.3
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Ugar"
+			dynasty = "Stormclaw"
+			stats = { 4 3 4 }
+			age = 22
+			birth_day = 11.17
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Grusha"
+			dynasty = "Stormclaw"
+			stats = { 3 4 3 }
+			age = 25
+			birth_day = 4.14
+			female = yes
+		}
+	}
 }
 new country malthrugra = {
 	inherit = orc_country
@@ -131,6 +450,35 @@ new country malthrugra = {
 		67 156 246
 	}
 	capital = zorgrim
+	history += {
+		define_character = {
+			type = ruler
+			name = "Krogath"
+			dynasty = "Thunderfury"
+			stats = { 6 1 6 }
+			age = 48
+			birth_day = 8.8
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Lashok"
+			dynasty = "Thunderfury"
+			stats = { 3 4 5 }
+			age = 19
+			birth_day = 5.20
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Zugra"
+			dynasty = "Thunderfury"
+			stats = { 4 3 3 }
+			age = 27
+			birth_day = 12.1
+			female = yes
+		}
+	}
 }
 new country drog_khaal = {
 	inherit = orc_country
@@ -141,6 +489,64 @@ new country drog_khaal = {
 		27 6 78
 	}
 	capital = thraxxor
+	history += {
+		define_character = {
+			type = ruler
+			name = "Magdur"
+			dynasty = "Ironbender"
+			stats = { 4 3 6 }
+			age = 46
+			birth_day = 10.10
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Rogar"
+			dynasty = "Ironbender"
+			stats = { 2 4 4 }
+			age = 21
+			birth_day = 7.23
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Gralga"
+			dynasty = "Ironbender"
+			stats = { 3 5 2 }
+			age = 24
+			birth_day = 9.6
+			female = yes
+		}
+	}
+	history += {
+		define_character = {
+			type = ruler
+			name = "Kharok"
+			dynasty = "Skullsplitter"
+			stats = { 5 2 5 }
+			age = 40
+			birth_day = 6.14
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Urk"
+			dynasty = "Skullsplitter"
+			stats = { 4 3 4 }
+			age = 19
+			birth_day = 8.29
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Throga"
+			dynasty = "Skullsplitter"
+			stats = { 2 4 3 }
+			age = 28
+			birth_day = 1.11
+			female = yes
+		}
+	}
 }
 new country nathrak_zir = {
 	inherit = orc_country
@@ -151,6 +557,35 @@ new country nathrak_zir = {
 		194 33 43
 	}
 	capital = morglur
+	history += {
+		define_character = {
+			type = ruler
+			name = "Zoktar"
+			dynasty = "Blightbringer"
+			stats = { 6 2 6 }
+			age = 44
+			birth_day = 12.4
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Ruzak"
+			dynasty = "Blightbringer"
+			stats = { 4 3 5 }
+			age = 20
+			birth_day = 3.15
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Korga"
+			dynasty = "Blightbringer"
+			stats = { 3 4 2 }
+			age = 26
+			birth_day = 11.6
+			female = yes
+		}
+	}
 }
 new country gol_thurn = {
 	inherit = orc_country
@@ -161,6 +596,35 @@ new country gol_thurn = {
 		207 58 244
 	}
 	capital = thogrun
+	history += {
+		define_character = {
+			type = ruler
+			name = "Grash"
+			dynasty = "Hellfang"
+			stats = { 5 3 5 }
+			age = 41
+			birth_day = 1.18
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Drog"
+			dynasty = "Hellfang"
+			stats = { 3 4 4 }
+			age = 23
+			birth_day = 4.21
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Horkha"
+			dynasty = "Hellfang"
+			stats = { 2 5 3 }
+			age = 25
+			birth_day = 7.25
+			female = yes
+		}
+	}
 }
 new country brakk_zul = {
 	inherit = orc_country
@@ -171,6 +635,35 @@ new country brakk_zul = {
 		16 200 121
 	}
 	capital = zul_thrak
+	history += {
+		define_character = {
+			type = ruler
+			name = "Thok"
+			dynasty = "Fireblood"
+			stats = { 4 4 6 }
+			age = 39
+			birth_day = 6.30
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Vokh"
+			dynasty = "Fireblood"
+			stats = { 3 5 4 }
+			age = 21
+			birth_day = 3.9
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Ruka"
+			dynasty = "Fireblood"
+			stats = { 2 3 3 }
+			age = 24
+			birth_day = 8.13
+			female = yes
+		}
+	}
 }
 new country thrazh_gul = {
 	inherit = orc_country
@@ -181,6 +674,35 @@ new country thrazh_gul = {
 		96 180 19
 	}
 	capital = volgrath
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ugor"
+			dynasty = "Mightfist"
+			stats = { 5 2 6 }
+			age = 47
+			birth_day = 4.25
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Groth"
+			dynasty = "Mightfist"
+			stats = { 4 3 4 }
+			age = 19
+			birth_day = 10.19
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Sharnak"
+			dynasty = "Mightfist"
+			stats = { 3 4 3 }
+			age = 26
+			birth_day = 11.22
+			female = yes
+		}
+	}
 }
 new country zorr_khanth = {
 	inherit = orc_country
@@ -191,6 +713,35 @@ new country zorr_khanth = {
 		151 70 12
 	}
 	capital = varkhul
+	history += {
+		define_character = {
+			type = ruler
+			name = "Drogak"
+			dynasty = "Wyrmfang"
+			stats = { 6 1 5 }
+			age = 44
+			birth_day = 2.6
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Zok"
+			dynasty = "Wyrmfang"
+			stats = { 4 2 6 }
+			age = 18
+			birth_day = 7.7
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Zagra"
+			dynasty = "Wyrmfang"
+			stats = { 3 4 4 }
+			age = 22
+			birth_day = 9.30
+			female = yes
+		}
+	}
 }
 new country vuur_tarak = {
 	inherit = orc_country
@@ -201,6 +752,35 @@ new country vuur_tarak = {
 		203 122 8
 	}
 	capital = rukpas
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gruk"
+			dynasty = "Stormfang"
+			stats = { 5 3 4 }
+			age = 43
+			birth_day = 3.3
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Lark"
+			dynasty = "Stormfang"
+			stats = { 4 2 5 }
+			age = 21
+			birth_day = 10.9
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Jorga"
+			dynasty = "Stormfang"
+			stats = { 3 3 3 }
+			age = 25
+			birth_day = 5.18
+			female = yes
+		}
+	}
 }
 new country khaarth_mal = {
 	inherit = orc_country
@@ -211,6 +791,35 @@ new country khaarth_mal = {
 		184 45 21
 	}
 	capital = krathrak
+	history += {
+		define_character = {
+			type = ruler
+			name = "Borok"
+			dynasty = "Ironjaw"
+			stats = { 6 2 6 }
+			age = 49
+			birth_day = 7.13
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Krath"
+			dynasty = "Ironjaw"
+			stats = { 3 5 5 }
+			age = 19
+			birth_day = 9.8
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Groka"
+			dynasty = "Ironjaw"
+			stats = { 4 4 4 }
+			age = 26
+			birth_day = 11.1
+			female = yes
+		}
+	}
 }
 new country ral_ghron = {
 	inherit = orc_country
@@ -221,6 +830,35 @@ new country ral_ghron = {
 		161 47 7
 	}
 	capital = drogvorr
+	history += {
+		define_character = {
+			type = ruler
+			name = "Brakk"
+			dynasty = "Bonecrusher"
+			stats = { 4 3 6 }
+			age = 41
+			birth_day = 10.21
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Karg"
+			dynasty = "Bonecrusher"
+			stats = { 2 4 5 }
+			age = 22
+			birth_day = 5.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Roka"
+			dynasty = "Bonecrusher"
+			stats = { 3 3 3 }
+			age = 24
+			birth_day = 1.25
+			female = yes
+		}
+	}
 }
 new country gron_vashn = {
 	inherit = orc_country
@@ -231,6 +869,35 @@ new country gron_vashn = {
 		8 109 149
 	}
 	capital = vulgrokk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Thruk"
+			dynasty = "Coldheart"
+			stats = { 5 2 6 }
+			age = 46
+			birth_day = 8.9
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Durk"
+			dynasty = "Coldheart"
+			stats = { 4 3 5 }
+			age = 20
+			birth_day = 11.14
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Kulka"
+			dynasty = "Coldheart"
+			stats = { 3 4 3 }
+			age = 27
+			birth_day = 3.30
+			female = yes
+		}
+	}
 }
 new country darr_kuzak = {
 	inherit = orc_country
@@ -241,6 +908,35 @@ new country darr_kuzak = {
 		28 41 211
 	}
 	capital = skarvok
+	history += {
+		define_character = {
+			type = ruler
+			name = "Krog"
+			dynasty = "Stonefury"
+			stats = { 6 1 6 }
+			age = 50
+			birth_day = 9.2
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mogak"
+			dynasty = "Stonefury"
+			stats = { 4 5 4 }
+			age = 22
+			birth_day = 2.18
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Grungar"
+			dynasty = "Stonefury"
+			stats = { 3 3 2 }
+			age = 26
+			birth_day = 12.9
+			female = yes
+		}
+	}
 }
 new country xor_thull = {
 	inherit = orc_country
@@ -251,6 +947,35 @@ new country xor_thull = {
 		236 17 218
 	}
 	capital = thulkurz
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ruzg"
+			dynasty = "Deathblade"
+			stats = { 5 3 5 }
+			age = 40
+			birth_day = 4.15
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Kark"
+			dynasty = "Deathblade"
+			stats = { 3 4 4 }
+			age = 19
+			birth_day = 7.21
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Horgra"
+			dynasty = "Deathblade"
+			stats = { 2 3 3 }
+			age = 25
+			birth_day = 8.27
+			female = yes
+		}
+	}
 }
 new country krash_nal = {
 	inherit = orc_country
@@ -261,6 +986,35 @@ new country krash_nal = {
 		56 232 242
 	}
 	capital = grozzhull
+	history += {
+		define_character = {
+			type = ruler
+			name = "Throk"
+			dynasty = "Deepstrike"
+			stats = { 4 5 6 }
+			age = 39
+			birth_day = 10.2
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Bolg"
+			dynasty = "Deepstrike"
+			stats = { 3 3 5 }
+			age = 22
+			birth_day = 6.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Kraza"
+			dynasty = "Deepstrike"
+			stats = { 2 4 4 }
+			age = 24
+			birth_day = 1.8
+			female = yes
+		}
+	}
 }
 new country thorr_makul = {
 	inherit = orc_country
@@ -271,6 +1025,35 @@ new country thorr_makul = {
 		1 152 95
 	}
 	capital = gorrathor
+	history += {
+		define_character = {
+			type = ruler
+			name = "Grakk"
+			dynasty = "Doomhammer"
+			stats = { 6 2 5 }
+			age = 44
+			birth_day = 5.19
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Rok"
+			dynasty = "Doomhammer"
+			stats = { 4 3 6 }
+			age = 18
+			birth_day = 7.10
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Ulga"
+			dynasty = "Doomhammer"
+			stats = { 3 4 3 }
+			age = 27
+			birth_day = 11.4
+			female = yes
+		}
+	}
 }
 new country zhol_varn = {
 	inherit = orc_country
@@ -281,6 +1064,35 @@ new country zhol_varn = {
 		224 9 6
 	}
 	capital = kravrok
+	history += {
+		define_character = {
+			type = ruler
+			name = "Bork"
+			dynasty = "Wildfury"
+			stats = { 5 3 5 }
+			age = 42
+			birth_day = 12.25
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Gorak"
+			dynasty = "Wildfury"
+			stats = { 4 2 5 }
+			age = 19
+			birth_day = 8.17
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Norga"
+			dynasty = "Wildfury"
+			stats = { 3 4 3 }
+			age = 23
+			birth_day = 2.11
+			female = yes
+		}
+	}
 }
 new country ulth_karaz = {
 	inherit = orc_country
@@ -291,6 +1103,35 @@ new country ulth_karaz = {
 		152 6 2
 	}
 	capital = gralzur
+	history += {
+		define_character = {
+			type = ruler
+			name = "Zork"
+			dynasty = "Swiftclaw"
+			stats = { 6 2 5 }
+			age = 48
+			birth_day = 6.3
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mog"
+			dynasty = "Swiftclaw"
+			stats = { 4 4 4 }
+			age = 20
+			birth_day = 1.12
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Grina"
+			dynasty = "Swiftclaw"
+			stats = { 3 3 2 }
+			age = 25
+			birth_day = 9.1
+			female = yes
+		}
+	}
 }
 new country nar_kazhrun = {
 	inherit = orc_country
@@ -301,6 +1142,35 @@ new country nar_kazhrun = {
 		39 254 60
 	}
 	capital = thrungar
+	history += {
+		define_character = {
+			type = ruler
+			name = "Thruk"
+			dynasty = "Blackstone"
+			stats = { 5 3 6 }
+			age = 43
+			birth_day = 5.20
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Drogath"
+			dynasty = "Blackstone"
+			stats = { 3 4 5 }
+			age = 22
+			birth_day = 8.7
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Gurka"
+			dynasty = "Blackstone"
+			stats = { 2 5 3 }
+			age = 26
+			birth_day = 11.19
+			female = yes
+		}
+	}
 }
 new country brulg_zarok = {
 	inherit = orc_country
@@ -311,6 +1181,35 @@ new country brulg_zarok = {
 		184 82 15
 	}
 	capital = krulzar
+	history += {
+		define_character = {
+			type = ruler
+			name = "Zug"
+			dynasty = "Skullcrusher"
+			stats = { 4 2 6 }
+			age = 44
+			birth_day = 7.15
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Bolg"
+			dynasty = "Skullcrusher"
+			stats = { 3 4 4 }
+			age = 19
+			birth_day = 4.10
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Ruga"
+			dynasty = "Skullcrusher"
+			stats = { 2 5 3 }
+			age = 25
+			birth_day = 12.22
+			female = yes
+		}
+	}
 }
 new country khorr_drakash = {
 	inherit = orc_country
@@ -321,6 +1220,35 @@ new country khorr_drakash = {
 		3 70 179
 	}
 	capital = thragmul
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gruk"
+			dynasty = "Stonefist"
+			stats = { 5 2 5 }
+			age = 39
+			birth_day = 9.27
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Lorg"
+			dynasty = "Stonefist"
+			stats = { 4 3 4 }
+			age = 20
+			birth_day = 6.3
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Nokha"
+			dynasty = "Stonefist"
+			stats = { 3 4 3 }
+			age = 28
+			birth_day = 10.18
+			female = yes
+		}
+	}
 }
 new country zarv_norak = {
 	inherit = orc_country
@@ -331,6 +1259,35 @@ new country zarv_norak = {
 		224 74 85
 	}
 	capital = grathrog
+	history += {
+		define_character = {
+			type = ruler
+			name = "Bok"
+			dynasty = "Ironclaw"
+			stats = { 6 1 6 }
+			age = 50
+			birth_day = 3.8
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Korg"
+			dynasty = "Ironclaw"
+			stats = { 4 2 5 }
+			age = 21
+			birth_day = 5.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Druka"
+			dynasty = "Ironclaw"
+			stats = { 3 3 3 }
+			age = 27
+			birth_day = 11.10
+			female = yes
+		}
+	}
 }
 new country luth_narzak = {
 	inherit = orc_country
@@ -341,6 +1298,35 @@ new country luth_narzak = {
 		236 152 16
 	}
 	capital = zulthag
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gragh"
+			dynasty = "Redeye"
+			stats = { 4 3 6 }
+			age = 42
+			birth_day = 1.24
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Rokh"
+			dynasty = "Redeye"
+			stats = { 3 4 5 }
+			age = 23
+			birth_day = 8.9
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Kroka"
+			dynasty = "Redeye"
+			stats = { 2 5 2 }
+			age = 25
+			birth_day = 4.19
+			female = yes
+		}
+	}
 }
 
 # orcish formable
