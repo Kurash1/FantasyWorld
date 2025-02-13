@@ -329,3 +329,13 @@ new personality_trait immortal = {
 	can_be_ancestor = no
 	nation_designer_cost = 800
 }
+
+run_effect = {
+	foreach $ in personality_traits {
+		arc_log = "**{$:name}**
+*{$:desc}*
+```
+{$:modifier}
+```"
+	}
+}
