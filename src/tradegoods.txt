@@ -388,19 +388,19 @@ new tradegood livestock = {
 		factor = 0
 	}
 }
-new tradegood dungeon_materials = {
-	name = "Dungeon Materials"
-	desc = "Dungeon Materials are used to describe all the byproducts of the permanent dungeons scattered across the world. These dungeons have a never ending amount of treasures and monsters created inside. While individual dungeons vary in their resulting treasures, most common are infused gems, rare metals, and magical items."
+new tradegood salt = {
+	name = "Salt"
+	desc = "Salt is useful as a preservative and either mined deep under the earth, harvested out of the sea via evaporation or directly cooked out of saline waters. It is one of the most expensive necessities for civil and military use alike and therefore highly valued. In the empire for example the emperor imposed a strict salt monopoly that only the marches at the very east bordering the centaurs are exempt from. Whole wars are fought over who controlls the salt."
 	color = {
-		42 42 42
+		0.999 0.999 0.999
 	}
 	modifier = {
-		administrative_efficiency = 5%
+		land_maintenance_modifier = -0.05
 	}
 	province = {
-		local_unrest = 2
+		local_defensiveness = 0.15
 	}
-	base_price = 6
+	base_price = 3
 	is_gold = no
 	chance = {
 		factor = 0
@@ -539,21 +539,21 @@ new tradegood wool = {
 		factor = 0
 	}
 }
-new tradegood salt = {
-	name = "Salt"
-	desc = "Salt is useful as a preservative and either mined deep under the earth, harvested out of the sea via evaporation or directly cooked out of saline waters. It is one of the most expensive necessities for civil and military use alike and therefore highly valued. In the empire for example the emperor imposed a strict salt monopoly that only the marches at the very east bordering the centaurs are exempt from. Whole wars are fought over who controlls the salt."
-	color = {
-		0.999 0.999 0.999
-	}
-	modifier = {
-		land_maintenance_modifier = -0.05
-	}
-	province = {
-		local_defensiveness = 0.15
-	}
-	base_price = 3
-	is_gold = no
-	chance = {
-		factor = 0
-	}
-}
+#new tradegood dungeon_materials = {
+#	name = "Dungeon Materials"
+#	desc = "Dungeon Materials are used to describe all the byproducts of the permanent dungeons scattered across the world. These dungeons have a never ending amount of treasures and monsters created inside. While individual dungeons vary in their resulting treasures, most common are infused gems, rare metals, and magical items."
+#	color = {
+#		42 42 42
+#	}
+#	modifier = {
+#		administrative_efficiency = 5%
+#	}
+#	province = {
+#		local_unrest = 2
+#	}
+#	base_price = 6
+#	is_gold = no
+#	chance = {
+#		factor = 0
+#	}
+#}

@@ -11,6 +11,17 @@
 # ⠀⠈⠉⠉⠉⠀⠀⠀⠀⢟⠒⠒⢊⣹⡀⠀⠀⠈⠢⣀⡀⣀⣠⣯⡎⠀⠀⠀⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠯⢍⣁⠤⠅⠀⠀⠀⠀⠀⠘⠛⠓⠉⠀⠀⠀⠀⠀⠀⠀
 
+new define NDefines.NCountry.REVOLT_SIZE_BASE = 1
+new define NDefines.NCountry.REVOLT_TECH_IMPACT = 0
+new define NDefines.NCountry.REVOLT_TECH_MORALE = 0
+new define NDefines.NCountry.REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.1
+#new define NDefines.NCountry.STATE_MAINTENANCE_DEV_FACTOR = 0.007
+#new define NDefines.NCountry.COUNTRY_DEVELOPMENT_SCALE = 4000
+#new define NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 1000
+#new define NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 10000
+
+new define NDefines.NDiplomacy.AE_PROVINCE_CAP = 10000
+
 new define NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
 
 new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25

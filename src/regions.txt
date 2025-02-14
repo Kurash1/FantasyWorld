@@ -18,6 +18,16 @@ new region grondha = {
 	name = "Grondha River"
 	superregion = sword_valley
 }
+
+new region tyller_hills = {
+	name = "Tyller Hills"
+	superregion = heartlands
+}
+new region heartlands = {
+	name = "Heartlands"
+	superregion = heartlands
+}
+
 new region eastmarch = {
 	name = "Eastmarch"
 	superregion = skyrim

@@ -176,16 +176,7 @@ new country marshstead = {
 	}
 	capital = gralthok
 }
-new country astviel = {
-	inherit = empire_country
-	tag = AST
-	name = "Astviel"
-	adj = "Tyller"
-	color = {
-		98 1 168
-	}
-	capital = gralthok
-}
+
 new country thornen = {
 	inherit = empire_country
 	tag = THO

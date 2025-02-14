@@ -407,7 +407,7 @@ new static_modifier base_values = {
 	tolerance_heathen = -3
 	tolerance_heretic = -2
 	global_missionary_strength = 0.02
-	global_manpower = 10.0
+	global_manpower = 1.0
 	advisor_pool = 3
 	colonist_placement_chance = 0.1
 	free_leader_pool = 1
@@ -438,8 +438,6 @@ new static_modifier base_values = {
 	
 	cav_to_inf_ratio = 0.2
 	max_absolutism = 30
-	
-	global_unrest = -1000
 }
 new static_modifier ai_nation = {
 	fort_maintenance_modifier = -1
@@ -943,13 +941,11 @@ new static_modifier daimyo_subject = {
 }
 new static_modifier all_nations = {
 	global_tax_income = 12
-	land_forcelimit	= 6
-	naval_forcelimit = 12
+	land_forcelimit	= 1
+	naval_forcelimit = 1
 }
 new static_modifier subject_nation = {
 	global_tax_income = -6
-	land_forcelimit	= -3
-	naval_forcelimit = -6
 }
 new static_modifier union_subject = {
 	legitimacy = 0.25

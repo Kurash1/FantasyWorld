@@ -398,10 +398,7 @@ new inheritable default_tribal_names = {
 new government_names default_monarchy = {
 	inherit = default_monarchy_names
 	trigger = {
-		OR = {
-			government = remnant
-			government = monarchy
-		}
+		government = monarchy
 	}
 }
 new government_names default_republic = {

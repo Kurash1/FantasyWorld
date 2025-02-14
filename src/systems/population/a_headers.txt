@@ -1,0 +1,59 @@
+# Constants
+new named_int POPULATION_PER_POP = 10_000
+new named_float POPULATION_MONTHLY_GROWTH_RATE = 0.001
+
+# Evaluated Values
+new named_float POP_MULT = ( POPULATION_PER_POP / 1000 )
+
+new script_variable devastation = {
+	name = "Devastation"
+}
+
+new modifier_definition pop_growth_modifier = {
+	name = "Pop Growth Modifier"
+	is_percentage = yes
+}
+new script_variable var_pop_growth_modifier = {
+	name = "Pop Growth Modifier"
+}
+new script_variable var_pop_growth_rate = {
+	name = "Pop Growth Rate"
+}
+
+new script_variable local_pop_growth_modifier = {
+	name = "Local Pop Growth Modifier"
+}
+new script_variable pop_growth_per_year = {
+	name = "Pop Growth Per Year"
+}
+new script_variable pop_growth_per_decade = {
+	name = "Pop Growth Per Decade"
+}
+new script_variable pop_growth_per_century = {
+	name = "Pop Growth Per Century"
+}
+new script_variable pop_growth_to_end = {
+	name = "Pop Growth To End"
+}
+
+new script_variable pops = {
+	name = "Pops"
+}
+new script_variable population = {
+	name = "Population"
+}
+
+new effect starting_population = {
+	args = float #in thousands
+	transpile = {
+		new named_int $ = (args / POP_MULT)
+		base_tax = 0
+		base_production = $
+		base_manpower = 0
+		
+		&pops &= args
+		&population := pops
+		&population *= 1000
+		delete = $
+	}
+}

@@ -1,0 +1,160 @@
+new inheritable tyller_hilly_country = {
+	technology_group = nord
+	primary_culture = imperial
+	religion = orcish_pantheon
+	graphical_culture = greekgfx
+	government = monarchy
+	capital = drekkyn
+	history = {
+		1.1.1 = {
+			Tamriel = {
+				discover_country = $tag
+			}
+		}
+		apply_government = {
+			primogeniture
+			military_backing
+		}
+	}
+}
+
+new country viltdrak = {
+	inherit = tyller_hilly_country
+	tag = WDR
+	name = "Viltdrak"
+	adj = "White"
+	color = { 255 255 255 }
+}
+new country ekadrak = {
+	inherit = tyller_hilly_country
+	tag = GDR
+	name = "Ekadrak"
+	adj = "Green"
+	color = { 0 255 0 }
+}
+new country urtdrak = {
+	inherit = tyller_hilly_country
+	tag = RDR
+	name = "Urtdrak"
+	adj = "Red"
+	color = { 255 0 0 }
+}
+new country hashdrak = {
+	inherit = tyller_hilly_country
+	tag = BDR
+	name = "Hashdrak"
+	adj = "Blue"
+	color = { 0 0 255 }
+}
+
+new country askdrak = {
+	inherit = tyller_hilly_country
+	tag = PDR
+	name = "Askdrak"
+	adj = "Purple"
+	capital = askgat
+	color = { 30 0 100 }
+}
+new country kredrak = {
+	inherit = tyller_hilly_country
+	tag = KDR
+	name = "Kredrak"
+	adj = "Black"
+	capital = drekkyn
+	color = { 50 50 50 }
+}
+new country veyldrak = {
+	inherit = tyller_hilly_country
+	tag = YDR
+	name = "Veyldrak"
+	adj = "Yellow"
+	capital = veylirk
+	color = { 255 200 0 }
+}
+
+new government_names tyll_drak = {
+	inherit = default_monarchy_names
+	trigger = {
+		OR = {
+			tag = viltdrak
+			tag = ekadrak
+			tag = urtdrak
+			tag = hashdrak
+			
+			tag = askdrak
+			tag = kredrak
+			tag = veyldrak
+		}
+	}
+	rank = {
+		1 = "Tylldrakedom"
+		2 = "Kingdom"
+		3 = "Empire"
+	}
+	ruler_male = {
+		1 = "Tylldrak"
+		2 = "Drak-King"
+		3 = "Drak-Emperor"
+	}
+}
+
+new country astviel = {
+	inherit = tyller_hilly_country
+	tag = AST
+	name = "Astviel"
+	adj = "Tyller"
+	color = {
+		98 1 168
+	}
+	capital = drekkyn
+	government_rank = 2
+	history += {
+		define_character = {
+			type = ruler
+			name = "Anton"
+			dynasty = "Arkor Astviel"
+			stats = { 5 3 6 }
+			age = 45
+			birth_day = 12.12
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Anton"
+			dynasty = "Arkor Astviel"
+			stats = { 5 3 6 }
+			age = 19
+			birth_day = 12.12
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Honviel"
+			dynasty = "Tyllseir"
+			stats = { 5 5 5 }
+			age = 38
+			birth_day = 12.12
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = content
+			add_ruler_personality = paranoid
+			
+			add_heir_personality = diligent
+			
+			add_queen_personality = lustful
+		}
+	}
+}
+new government_names elk_kingdom = {
+	inherit = default_monarchy_names
+	trigger = {
+		tag = astviel
+	}
+	ruler_male = {
+		1 = "Elk-Duke"
+		2 = "Elk-King"
+		3 = "Elk-Emperor"
+	}
+}

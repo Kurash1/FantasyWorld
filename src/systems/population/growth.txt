@@ -1,7 +1,17 @@
-new named_effect population_tick = {	
-	&development &= development
-	&development *= 0.01
+new named_effect population_tick = {
+	# Base:
+	#	+ Pops * POPULATION_MONTHLY_GROWTH_RATE
+	#
+	&development := pops
+	&development *= POPULATION_MONTHLY_GROWTH_RATE
 	
+	&var_pop_growth_rate := development
+	
+	# Modifier:
+	#	- Devastation * 5
+	#	+ Pop Growth Modifier
+	#	+ Local Pop Growth Modifier
+	#
 	&devastation &= trigger_value:devastation
 	&devastation *= 5
 	
@@ -10,19 +20,24 @@ new named_effect population_tick = {
 	&var_pop_growth_modifier += local_pop_growth_modifier
 	&var_pop_growth_modifier -= devastation
 	
-	&var_pop_growth_rate := development
-	&var_pop_growth_rate += local_pop_boost
-	
+	# Final:
+	#	Base * Modifier
+	#
 	&temp := var_pop_growth_modifier
 	&temp *= 0.01
 	&var_pop_growth_rate *= temp
 	
-	&population_progress += var_pop_growth_rate
+	# Add growth to Pops
+	&pops += var_pop_growth_rate
 	
+	# Calculate
+	#	Per Year
+	#	Per Decade
+	#	Per Century
+	#	Till End Date
+	#
 	&pop_growth_per_year := var_pop_growth_rate
-	&pop_growth_per_year -= local_pop_boost
 	&pop_growth_per_year *= 12
-	&pop_growth_per_year /= 100
 	
 	&pop_growth_per_decade := pop_growth_per_year
 	&pop_growth_per_decade *= 10
@@ -37,97 +52,43 @@ new named_effect population_tick = {
 	&pop_growth_to_end := pop_growth_per_year
 	&pop_growth_to_end *= temp
 	
-	while [&population_progress >= 100] {
-		&population_progress -= 100
+	# Calculate Population Numbers
+	&population := pops
+	&population *= 1000
+	
+	# Adjust Development
+	&temp &= development
+	&temp += 1
+	&temp *= POP_MULT
+	while [&pops >= temp] {
+		set_province_flag = cd
+		`add_base_production = 1`
 		
-		if [&local_pop_boost >= 1] {
-			&local_pop_boost -= 1
-		}
-		
-		&q_tot := q_adm
-		&q_tot += q_dip
-		&q_tot += q_mil
-		
-		random_variable = {
-			which = temp
-			which = q_tot
-		}
-		
-		if [&temp > q_adm] {
-			&temp -= q_adm
-			if [&temp > q_dip] {
-				&q_dip -= 1
-				if [&q_dip <= 1] {
-					&q_dip := 1
-				}
-				add_base_production = 1
-			}
-			else {
-				&q_mil -= 1
-				if [&q_mil <= 1] {
-					&q_mil := 1
-				}
-				add_base_manpower = 1
-			}
-		}
-		else {
-			&q_adm -= 1
-			if [&q_adm <= 1] {
-				&q_adm := 1
-			}
-			add_base_tax = 1
-		}
-	}
-	while [&population_progress <= -100] {
-		&population_progress += 100
-		
-		&q_tot := q_adm
-		&q_tot += q_dip
-		&q_tot += q_mil
-		
-		random_variable = {
-			which = temp
-			which = q_tot
-		}
-		
-		if [&temp > q_adm] {
-			&temp -= q_adm
-			if [&temp > q_dip] {
-				&q_dip -= 1
-				if [&q_dip <= 1] {
-					&q_dip := 1
-				}
-				add_base_production = -1
-			}
-			else {
-				&q_mil -= 1
-				if [&q_mil <= 1] {
-					&q_mil := 1
-				}
-				add_base_manpower = -1
-			}
-		}
-		else {
-			&q_adm -= 1
-			if [&q_adm <= 1] {
-				&q_adm := 1
-			}
-			add_base_tax = -1
-		}
+		&temp &= development
+		&temp += 1
+		&temp *= POP_MULT
 	}
 	
-	&p_adm &= trigger_value:base_tax
-	&p_adm *= 10
+	&temp &= development
+	&temp -= 2
+	&temp *= POP_MULT
+	while [&pops < temp] {
+		set_province_flag = cd
+		`add_base_production = -1`
+		
+		&temp &= development
+		&temp -= 2
+		&temp *= POP_MULT
+	}
 	
-	&p_dip &= trigger_value:base_production
-	&p_dip *= 100
+	# Make numbers human readable
+	&pop_growth_per_year *= 1000
+	&pop_growth_per_decade *= 1000
+	&pop_growth_per_century *= 1000
+	&pop_growth_to_end *= 1000
 	
-	&p_mil &= trigger_value:base_manpower
-	&p_mil *= 1000
-	
-	&p_tot := p_adm
-	&p_tot += p_dip
-	&p_tot += p_mil
+	&development /= POPULATION_MONTHLY_GROWTH_RATE
+	&var_pop_growth_rate *= 1000
 }
 
 on_initialize += {
@@ -136,27 +97,7 @@ on_initialize += {
 		&var_pop_growth_modifier *= 100
 		
 		every_owned_province = {
-			# add between 0 and 55k population to all provinces. For testing purposes.
-			random_variable = {
-				which = temp
-				value = 16
-			}
-			&temp += 1
-			
-			&temp *= temp
-			
-			while [&temp > 0] {
-				add_random_development = 1
-				&temp -= 1
-			}
-		
 			&local_pop_growth_modifier := 0
-			&local_pop_boost := 0
-			
-			&q_tot := 3
-			&q_adm := 1
-			&q_dip := 1
-			&q_mil := 1
 			
 			population_tick
 		}

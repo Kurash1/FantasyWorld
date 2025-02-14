@@ -332,6 +332,11 @@ new province bittergate = {
 	name = "Bittergate"
 	history += {
 		history_owner = bittergate
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 
@@ -442,6 +447,7 @@ new province roseria = {
 	history += {
 		history_owner = thornen
 		history_trade_goods = paper
+		starting_population = 40.711
 	}
 }
 
@@ -690,15 +696,6 @@ new province empire_70 = {
 	}
 }
 
-new province empire_71 = {
-	inherit = empire_province
-	color = { 151 128 133 }
-	name = "empire 71"
-	history += {
-		history_owner = astviel
-	}
-}
-
 new province empire_72 = {
 	inherit = empire_province
 	color = { 104 237 125 }
@@ -708,39 +705,12 @@ new province empire_72 = {
 	}
 }
 
-new province empire_73 = {
-	inherit = empire_province
-	color = { 243 151 246 }
-	name = "empire 73"
-	history += {
-		history_owner = astviel
-	}
-}
-
-new province empire_74 = {
-	inherit = empire_province
-	color = { 213 192 138 }
-	name = "empire 74"
-	history += {
-		history_owner = astviel
-	}
-}
-
 new province ironmound = {
 	inherit = empire_province
 	color = { 218 189 137 }
 	name = "Ironmound"
 	history += {
 		history_owner = ironmound
-	}
-}
-
-new province empire_76 = {
-	inherit = empire_province
-	color = { 173 179 250 }
-	name = "empire 76"
-	history += {
-		history_owner = astviel
 	}
 }
 
@@ -768,15 +738,6 @@ new province empire_79 = {
 	name = "empire 79"
 	history += {
 		history_owner = veshni
-	}
-}
-
-new province maidenkeep = {
-	inherit = empire_province
-	color = { 150 115 219 }
-	name = "Maidenkeep"
-	history	+= {
-		history_owner = maidenkeep
 	}
 }
 
@@ -972,6 +933,7 @@ new province port_rosen = {
 	history += {
 		history_owner = thornen
 		history_trade_goods = cloth
+		starting_population = 23.951
 	}
 }
 
@@ -992,6 +954,436 @@ new province dragons_landing = {
 	history += {
 		history_owner = thornen
 		history_trade_goods = c_metals
+	}
+}
+
+new event_modifier darklands = {
+	name = "Darklands"
+	desc = "Lands clouded over by gloomy dark clouds."
+	modifier = {
+		picture = "darklands"
+		
+		local_hostile_attrition = 2
+		local_defender_dice_roll_bonus = 1
+		local_defensiveness = 25%
+		local_hostile_movement_speed = -50%
+	}
+}
+new event_modifier riven_road = {
+	name = "Riven Road"
+	desc = "An ancient dwarven-gnome road."
+	modifier = {
+		picture = "good_road"
+		
+		local_state_maintenance_modifier = 50%
+		
+		local_friendly_movement_speed = 100%
+		local_hostile_movement_speed = 100%
+		
+		local_institution_spread = 50%
+		province_trade_power_modifier = 25%
+	}
+}
+
+new area keshveyr = {
+	name = "Keshveyr"
+	region = tyller_hills
+}
+new province kornache = {
+	inherit = empire_province
+	color = { 213 192 138 }
+	name = "Kornache"
+	area = keshveyr
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = fish
+		starting_population = 40.888
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province sovcur = {
+	inherit = empire_province
+	color = { 173 179 250 }
+	name = "Sovcur"
+	area = keshveyr
+	history += {
+		history_owner = astviel
+		history_trade_goods = livestock
+		starting_population = 52.831
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province wastcit = {
+    inherit = empire_province
+    color = { 250 221 121 }
+    name = "Wastcit"
+	area = keshveyr
+	history += {
+		history_owner = astviel
+		history_trade_goods = grain
+		starting_population = 121.372
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+
+new area jymeilmont = {
+	name = "Jymeilmont"
+	region = tyller_hills
+}
+new province jokilly = {
+    inherit = empire_province
+    color = { 249 173 126 }
+    name = "Jokilly"
+	area = jymeilmont
+	history += {
+		history_owner = astviel
+		history_trade_goods = stone
+		starting_population = 35.580
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province vekmont = {
+    inherit = empire_province
+    color = { 109 222 179 }
+    name = "Vekmont"
+	area = jymeilmont
+	history += {
+		history_owner = astviel
+		add_core = kredrak
+		history_trade_goods = c_metals
+		starting_population = 42.743
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province swokgat = {
+	inherit = empire_province
+	color = { 151 128 133 }
+	name = "Swokgat"
+	area = jymeilmont
+	history += {
+		history_owner = astviel
+		history_trade_goods = arms
+		starting_population = 19.491
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+
+new area kallmont = {
+	name = "Kallmont"
+	region = tyller_hills
+}
+new province drekeyr = {
+    inherit = empire_province
+    color = { 102 245 161 }
+    name = "Drekeyr"
+	area = kallmont
+	history += {
+		history_owner = astviel
+		add_core = kredrak
+		history_trade_goods = c_metals
+		starting_population = 33.535
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province aksmal = {
+    inherit = empire_province
+    color = { 204 176 195 }
+    name = "Aksmal"
+	area = kallmont
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = r_metals
+		starting_population = 17.796
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province veylirk = {
+    inherit = empire_province
+    color = { 144 203 116 }
+    name = "Veylirk"
+	area = kallmont
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = stone
+		starting_population = 20.234
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+
+new area drekkyn = {
+	name = "Drekkyn"
+	region = tyller_hills
+}
+new province drekkyn = {
+    inherit = empire_province
+    color = { 102 171 111 }
+    name = "Drekkyn"
+	area = drekkyn
+	history += {
+		history_owner = astviel
+		add_core = kredrak
+		history_trade_goods = arms
+		starting_population = 209.357
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province veylkeil = {
+    inherit = empire_province
+    color = { 155 198 191 }
+    name = "Veylkeil"
+	area = drekkyn
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = fish
+		starting_population = 66.486
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province olbrend = {
+    inherit = empire_province
+    color = { 136 197 177 }
+    name = "Olbrend"
+	area = drekkyn
+	history += {
+		history_owner = astviel
+		add_core = kredrak
+		history_trade_goods = fish
+		starting_population = 142.336
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province shannach = {
+    inherit = empire_province
+    color = { 253 251 179 }
+    name = "Shannach"
+	area = drekkyn
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = fish
+		starting_population = 103.692
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+
+new area huveyrmont = {
+	name = "Huveyrmont"
+	region = tyller_hills
+}
+new province doveyr = {
+    inherit = empire_province
+    color = { 132 196 107 }
+    name = "Doveyr"
+	area = huveyrmont
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = stone
+		starting_population = 8.958
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province askgat = {
+    inherit = empire_province
+    color = { 159 118 166 }
+    name = "Askgat"
+	area = huveyrmont
+	history += {
+		history_owner = astviel
+		add_core = askdrak
+		history_trade_goods = c_metals
+		starting_population = 7.242
+	}
+}
+new province ireyveil = {
+    inherit = empire_province
+    color = { 159 229 154 }
+    name = "Ireyveil"
+	area = huveyrmont
+	history += {
+		history_owner = astviel
+		add_core = veyldrak
+		history_trade_goods = alcohol
+		starting_population = 13.827
+	}
+}
+new province maidenkeep = {
+	inherit = empire_province
+	color = { 150 115 219 }
+	name = "Maidenkeep"
+	area = huveyrmont
+	history	+= {
+		history_owner = maidenkeep
+		history_trade_goods = arms
+	}
+}
+
+new area cetryveir = {
+	name = "Cetryveir"
+	region = tyller_hills
+}
+new province olkash = {
+    inherit = empire_province
+    color = { 142 161 208 }
+    name = "Olkash"
+	area = cetryveir
+	history += {
+		history_owner = astviel
+		add_core = askdrak
+		history_trade_goods = fish
+		starting_population = 96.656
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province ahhelveyl = {
+    inherit = empire_province
+    color = { 191 221 183 }
+    name = "Ahhelveyl"
+	area = cetryveir
+	history += {
+		history_owner = astviel
+		add_core = askdrak
+		history_trade_goods = fish
+		starting_population = 70.726
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province omayrk = {
+    inherit = empire_province
+    color = { 250 222 220 }
+    name = "Omayrk"
+	area = cetryveir
+	history += {
+		history_owner = astviel
+		add_core = askdrak
+		history_trade_goods = c_metals
+		starting_population = 70.848
+		
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
+	}
+}
+new province dakgat = {
+    inherit = empire_province
+    color = { 180 144 175 }
+    name = "Dakgat"
+	area = cetryveir
+	history += {
+		history_owner = astviel
+		add_core = askdrak
+		history_trade_goods = salt
+		starting_population = 54.673
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+		2155.1.1->add_permanent_province_modifier = {
+			name = darklands
+			duration = -1
+		}
 	}
 }
 
