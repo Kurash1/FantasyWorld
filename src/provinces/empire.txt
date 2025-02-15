@@ -155,104 +155,6 @@ new province wasteland_28 = {
     name = "wasteland 28"
 }
 
-new area mornatha = {
-	name = "Mornatha"
-	region = watar_forest
-}
-new province mornatha = {
-	inherit = empire_province
-	color = { 212 152 230 }
-	name = "Mornatha"
-	area = mornatha
-}
-new province talyara = {
-	inherit = empire_province
-	color = { 227 136 115 }
-	name = "Talyara"
-	area = mornatha
-}
-new province cathanwynd = {
-	inherit = empire_province
-	color = { 137 169 128 }
-	name = "Cathanwynd"
-	area = mornatha
-}
-
-new area watar_lake = {
-	name = "Watar Lake"
-	region = watar_forest
-}
-new province breochal = {
-	inherit = empire_province
-	color = { 207 185 182 }
-	name = "Breochal"
-	area = watar_lake
-}
-new province ash_tower = {
-	inherit = empire_province
-	color = { 234 212 105 }
-	name = "Ash Tower"
-	area = watar_lake
-	history += {
-		history_owner = the_towers
-	}
-}
-new province yew_tower = {
-	inherit = empire_province
-	color = { 118 177 158 }
-	name = "Yew Tower"
-	area = watar_lake
-	history += {
-		history_owner = the_towers
-	}
-}
-
-new area rothwyn = {
-	name = "Rothwyn"
-	region = watar_forest
-}
-new province glenmareth = {
-	inherit = empire_province
-	color = { 156 116 250 }
-	name = "Glenmareth"
-	area = rothwyn
-}
-new province druimlach = {
-	inherit = empire_province
-	color = { 242 228 187 }
-	name = "Druimlach"
-	area = rothwyn
-}
-new province rothwyn = {
-	inherit = empire_province
-	color = { 128 148 215 }
-	name = "Rothwyn"
-	area = rothwyn
-}
-
-new area kelvaran = {
-	name = "Kelvaran"
-	region = watar_forest
-}
-new province kelvaran = {
-	inherit = empire_province
-	color = { 178 201 237 }
-	name = "Kelvaran"
-	area = kelvaran
-}
-new province luthgwen = {
-	inherit = empire_province
-	color = { 112 156 122 }
-	name = "Luthgwen"
-	area = kelvaran
-}
-new province cairnvoe = {
-	inherit = empire_province
-	color = { 159 101 170 }
-	name = "Cairnvoe"
-	area = kelvaran
-}
-
 new province chesstown = {
 	inherit = empire_province
 	color = { 142 156 201 }
@@ -350,6 +252,279 @@ new province novenhaven = {
 	history += {
 		history_owner = novenhaven
 	}
+}
+
+new province empire_40 = {
+	inherit = empire_province
+	color = { 101 140 196 }
+	name = "empire 40"
+	history += {
+		history_owner = novenhaven
+	}
+}
+
+new province empire_41 = {
+	inherit = empire_province
+	color = { 225 216 166 }
+	name = "empire 41"
+}
+
+new province empire_42 = {
+	inherit = empire_province
+	color = { 224 225 139 }
+	name = "empire 42"
+}
+
+new province empire_43 = {
+	inherit = empire_province
+	color = { 232 150 125 }
+	name = "empire 43"
+}
+
+new province empire_45 = {
+	inherit = empire_province
+	color = { 123 168 208 }
+	name = "empire 45"
+}
+
+new province empire_46 = {
+	inherit = empire_province
+	color = { 217 125 173 }
+	name = "empire 46"
+}
+
+new province empire_47 = {
+	inherit = empire_province
+	color = { 186 110 154 }
+	name = "empire 47"
+}
+
+new province empire_48 = {
+	inherit = empire_province
+	color = { 194 210 223 }
+	name = "empire 48"
+}
+
+new province empire_49 = {
+	inherit = empire_province
+	color = { 253 108 255 }
+	name = "empire 49"
+}
+
+new province empire_54 = {
+	inherit = empire_province
+	color = { 154 179 198 }
+	name = "empire 54"
+}
+
+new province empire_55 = {
+	inherit = empire_province
+	color = { 136 139 234 }
+	name = "empire 55"
+}
+
+new province empire_56 = {
+	inherit = empire_province
+	color = { 220 130 222 }
+	name = "empire 56"
+}
+
+new province empire_57 = {
+	inherit = empire_province
+	color = { 229 234 215 }
+	name = "empire 57"
+}
+
+new province empire_58 = {
+	inherit = empire_province
+	color = { 182 150 105 }
+	name = "empire 58"
+}
+
+new province empire_59 = {
+	inherit = empire_province
+	color = { 239 176 113 }
+	name = "empire 59"
+}
+
+new province empire_60 = {
+	inherit = empire_province
+	color = { 119 194 231 }
+	name = "empire 60"
+}
+
+new province empire_61 = {
+	inherit = empire_province
+	color = { 166 206 245 }
+	name = "empire 61"
+}
+
+new province empire_62 = {
+	inherit = empire_province
+	color = { 245 127 192 }
+	name = "empire 62"
+}
+
+new province empire_63 = {
+	inherit = empire_province
+	color = { 148 104 191 }
+	name = "empire 63"
+}
+
+new province empire_64 = {
+	inherit = empire_province
+	color = { 239 116 170 }
+	name = "empire 64"
+}
+
+new province empire_65 = {
+	inherit = empire_province
+	color = { 217 199 103 }
+	name = "empire 65"
+}
+
+new province empire_69 = {
+	inherit = empire_province
+	color = { 211 242 202 }
+	name = "empire 69"
+}
+
+new province empire_70 = {
+	inherit = empire_province
+	color = { 155 146 251 }
+	name = "empire 70"
+	history += {
+		history_owner = novenhaven
+	}
+}
+
+new province empire_81 = {
+	inherit = empire_province
+	color = { 201 161 155 }
+	name = "empire 81"
+}
+
+new province empire_83 = {
+    inherit = empire_province
+    color = { 211 253 126 }
+    name = "empire 83"
+	lake = yes
+}
+
+new province empire_104 = {
+    inherit = empire_province
+    color = { 100 251 137 }
+    name = "empire 104"
+}
+
+new province empire_112 = {
+    inherit = empire_province
+    color = { 103 225 255 }
+    name = "empire 112"
+}
+
+new province empire_113 = {
+    inherit = empire_province
+    color = { 148 136 131 }
+    name = "empire 113"
+}
+
+new area mornatha = {
+	name = "Mornatha"
+	region = watar_forest
+}
+new province mornatha = {
+	inherit = empire_province
+	color = { 212 152 230 }
+	name = "Mornatha"
+	area = mornatha
+}
+new province talyara = {
+	inherit = empire_province
+	color = { 227 136 115 }
+	name = "Talyara"
+	area = mornatha
+}
+new province cathanwynd = {
+	inherit = empire_province
+	color = { 137 169 128 }
+	name = "Cathanwynd"
+	area = mornatha
+}
+
+new area watar_lake = {
+	name = "Watar Lake"
+	region = watar_forest
+}
+new province breochal = {
+	inherit = empire_province
+	color = { 207 185 182 }
+	name = "Breochal"
+	area = watar_lake
+}
+new province ash_tower = {
+	inherit = empire_province
+	color = { 234 212 105 }
+	name = "Ash Tower"
+	area = watar_lake
+	history += {
+		history_owner = the_towers
+	}
+}
+new province yew_tower = {
+	inherit = empire_province
+	color = { 118 177 158 }
+	name = "Yew Tower"
+	area = watar_lake
+	history += {
+		history_owner = the_towers
+	}
+}
+
+new area rothwyn = {
+	name = "Rothwyn"
+	region = watar_forest
+}
+new province glenmareth = {
+	inherit = empire_province
+	color = { 156 116 250 }
+	name = "Glenmareth"
+	area = rothwyn
+}
+new province druimlach = {
+	inherit = empire_province
+	color = { 242 228 187 }
+	name = "Druimlach"
+	area = rothwyn
+}
+new province rothwyn = {
+	inherit = empire_province
+	color = { 128 148 215 }
+	name = "Rothwyn"
+	area = rothwyn
+}
+
+new area kelvaran = {
+	name = "Kelvaran"
+	region = watar_forest
+}
+new province kelvaran = {
+	inherit = empire_province
+	color = { 178 201 237 }
+	name = "Kelvaran"
+	area = kelvaran
+}
+new province luthgwen = {
+	inherit = empire_province
+	color = { 112 156 122 }
+	name = "Luthgwen"
+	area = kelvaran
+}
+new province cairnvoe = {
+	inherit = empire_province
+	color = { 159 101 170 }
+	name = "Cairnvoe"
+	area = kelvaran
 }
 
 new area konnack = {
@@ -564,33 +739,6 @@ new province inisfell = {
 	area = inisfell
 }
 
-new province empire_40 = {
-	inherit = empire_province
-	color = { 101 140 196 }
-	name = "empire 40"
-	history += {
-		history_owner = novenhaven
-	}
-}
-
-new province empire_41 = {
-	inherit = empire_province
-	color = { 225 216 166 }
-	name = "empire 41"
-}
-
-new province empire_42 = {
-	inherit = empire_province
-	color = { 224 225 139 }
-	name = "empire 42"
-}
-
-new province empire_43 = {
-	inherit = empire_province
-	color = { 232 150 125 }
-	name = "empire 43"
-}
-
 new area rosegarden = {
 	name = "Rosegarden"
 	region = watar_forest
@@ -634,150 +782,6 @@ new province torrveyl = {
 	area = estwyn
 }
 
-new province empire_45 = {
-	inherit = empire_province
-	color = { 123 168 208 }
-	name = "empire 45"
-}
-
-new province empire_46 = {
-	inherit = empire_province
-	color = { 217 125 173 }
-	name = "empire 46"
-}
-
-new province empire_47 = {
-	inherit = empire_province
-	color = { 186 110 154 }
-	name = "empire 47"
-}
-
-new province empire_48 = {
-	inherit = empire_province
-	color = { 194 210 223 }
-	name = "empire 48"
-}
-
-new province empire_49 = {
-	inherit = empire_province
-	color = { 253 108 255 }
-	name = "empire 49"
-}
-
-new province empire_50 = {
-	inherit = empire_province
-	color = { 121 171 215 }
-	name = "empire 50"
-}
-
-new province empire_51 = {
-	inherit = empire_province
-	color = { 132 182 163 }
-	name = "empire 51"
-	history += {
-		history_owner = nightgate
-	}
-}
-
-new province empire_52 = {
-	inherit = empire_province
-	color = { 136 215 206 }
-	name = "empire 52"
-}
-
-new province empire_53 = {
-	inherit = empire_province
-	color = { 130 138 140 }
-	name = "empire 53"
-}
-
-new province empire_54 = {
-	inherit = empire_province
-	color = { 154 179 198 }
-	name = "empire 54"
-}
-
-new province empire_55 = {
-	inherit = empire_province
-	color = { 136 139 234 }
-	name = "empire 55"
-}
-
-new province empire_56 = {
-	inherit = empire_province
-	color = { 220 130 222 }
-	name = "empire 56"
-}
-
-new province empire_57 = {
-	inherit = empire_province
-	color = { 229 234 215 }
-	name = "empire 57"
-}
-
-new province empire_58 = {
-	inherit = empire_province
-	color = { 182 150 105 }
-	name = "empire 58"
-}
-
-new province empire_59 = {
-	inherit = empire_province
-	color = { 239 176 113 }
-	name = "empire 59"
-}
-
-new province empire_60 = {
-	inherit = empire_province
-	color = { 119 194 231 }
-	name = "empire 60"
-}
-
-new province empire_61 = {
-	inherit = empire_province
-	color = { 166 206 245 }
-	name = "empire 61"
-}
-
-new province empire_62 = {
-	inherit = empire_province
-	color = { 245 127 192 }
-	name = "empire 62"
-}
-
-new province empire_63 = {
-	inherit = empire_province
-	color = { 148 104 191 }
-	name = "empire 63"
-}
-
-new province empire_64 = {
-	inherit = empire_province
-	color = { 239 116 170 }
-	name = "empire 64"
-}
-
-new province empire_65 = {
-	inherit = empire_province
-	color = { 217 199 103 }
-	name = "empire 65"
-}
-
-new province empire_69 = {
-	inherit = empire_province
-	color = { 211 242 202 }
-	name = "empire 69"
-}
-
-new province empire_70 = {
-	inherit = empire_province
-	color = { 155 146 251 }
-	name = "empire 70"
-	history += {
-		history_owner = novenhaven
-	}
-}
-
 new area aramant = {
 	name = "Aramant"
 	region = tyller_hills
@@ -808,19 +812,6 @@ new province keepstone = {
 	history += {
 		history_owner = keepstone
 	}
-}
-
-new province empire_81 = {
-	inherit = empire_province
-	color = { 201 161 155 }
-	name = "empire 81"
-}
-
-new province empire_83 = {
-    inherit = empire_province
-    color = { 211 253 126 }
-    name = "empire 83"
-	lake = yes
 }
 
 new area olyvren = {
@@ -1688,13 +1679,259 @@ new province teyrloch = {
 		history_owner = ekadrak
 	}
 }
+
+new area vynkmont = {
+	name = vynkmont
+	region = tyller_hills
+}
 new province vynmorn = {
     inherit = empire_province
     color = { 235 207 191 }
     name = "Vynmorn"
-	area = teyrloch
+	area = vynkmont
 	history += {
 		history_owner = ekadrak
+	}
+}
+new province vynkro = {
+    inherit = empire_province
+    color = { 216 252 146 }
+    name = "Vynkro"
+	area = vynkmont
+	history += {
+	}
+}
+
+new area drevnaya = {
+	name = "Drevnaya"
+	region = riven_river
+}
+new province velkovec = {
+    inherit = empire_province
+    color = { 215 252 122 }
+    name = "Velkovec"
+	area = drevnaya
+	history += {
+	}
+}
+new province drevnaya = {
+    inherit = empire_province
+    color = { 180 127 223 }
+    name = "Drevnaya"
+	area = drevnaya
+	history += {
+	}
+}
+new province mirograd = {
+    inherit = empire_province
+    color = { 146 205 220 }
+    name = "Mirograd"
+	area = drevnaya
+	history += {
+	}
+}
+
+new area zlatoryev = {
+	name = "Zlatoryev"
+	region = riven_river
+}
+new province zlatoryev = {
+    inherit = empire_province
+    color = { 137 243 136 }
+    name = "Zlatoryev"
+	area = zlatoryev
+	history += {
+	}
+}
+new province roshkovo = {
+    inherit = empire_province
+    color = { 176 230 174 }
+    name = "Roshkovo"
+	area = zlatoryev
+	history += {
+	}
+}
+new province vasylivka = {
+    inherit = empire_province
+    color = { 232 179 196 }
+    name = "Vasylivka"
+	area = zlatoryev
+	history += {
+	}
+}
+
+new area tarnopol = {
+	name = "Tarnopol"
+	region = riven_river
+}
+new province prydnova = {
+    inherit = empire_province
+    color = { 249 178 109 }
+    name = "Prydnova"
+	area = tarnopol
+	history += {
+	}
+}
+new province tarnopol = {
+    inherit = empire_province
+    color = { 120 188 243 }
+    name = "Tarnopol"
+	area = tarnopol
+	history += {
+	}
+}
+new province ostrovets = {
+    inherit = empire_province
+    color = { 104 118 102 }
+    name = "Ostrovets"
+	area = tarnopol
+	history += {
+	}
+}
+
+new area kolomyr = {
+	name = "Kolomyr"
+	region = riven_river
+}
+new province lazovka = {
+    inherit = empire_province
+    color = { 145 105 119 }
+    name = "Lazovka"
+	area = kolomyr
+	history += {
+	}
+}
+new province kolomyr = {
+    inherit = empire_province
+    color = { 249 184 192 }
+    name = "Kolomyr"
+	area = kolomyr
+	history += {
+	}
+}
+new province novorytsk = {
+    inherit = empire_province
+    color = { 211 130 161 }
+    name = "Novorytsk"
+	area = kolomyr
+	history += {
+	}
+}
+new province zelenograd = {
+    inherit = empire_province
+    color = { 245 207 100 }
+    name = "Zelenograd"
+	area = kolomyr
+	history += {
+	}
+}
+
+new area kornyshiv = {
+	name = "Kornyshiv"
+	region = riven_river
+}
+new province kornyshiv = {
+    inherit = empire_province
+    color = { 214 223 171 }
+    name = "Kornyshiv"
+	area = kornyshiv
+	history += {
+	}
+}
+new province dubryans = {
+    inherit = empire_province
+    color = { 122 203 138 }
+    name = "Dubryans"
+	area = kornyshiv
+	history += {
+	}
+}
+new province orlivets = {
+    inherit = empire_province
+    color = { 200 240 248 }
+    name = "Orlivest"
+	area = kornyshiv
+	history += {
+	}
+}
+
+new area chervynsk = {
+	name = "Chervynsk"
+	region = riven_river
+}
+new province chervynsk = {
+    inherit = empire_province
+    color = { 159 126 175 }
+    name = "Chervynsk"
+	area = chervynsk
+	history += {
+	}
+}
+new province staryvolk = {
+    inherit = empire_province
+    color = { 180 114 249 }
+    name = "Staryvolk"
+	area = chervynsk
+	history += {
+	}
+}
+new province dobrovo = {
+    inherit = empire_province
+    color = { 124 129 173 }
+    name = "Dobrovo"
+	area = chervynsk
+	history += {
+	}
+}
+
+new area radomyrsk = {
+	name = "Radomyrsk"
+	region = riven_river
+}
+new province perelyev = {
+	inherit = empire_province
+	color = { 132 182 163 }
+	name = "Perelyev"
+	area = radomyrsk
+	history += {
+		history_owner = nightgate
+	}
+}
+new province radomyrsk = {
+	inherit = empire_province
+	color = { 136 215 206 }
+	name = "Radomyrsk"
+	area = radomyrsk
+	history += {
+	}
+}
+new province zernograd = {
+    inherit = empire_province
+    color = { 155 127 102 }
+    name = "Zernograd"
+	area = radomyrsk
+	history += {
+	}
+}
+
+new area slavych = {
+	name = "Slavych"
+	region = riven_river
+}
+new province slavych = {
+	inherit = empire_province
+	color = { 130 138 140 }
+	name = "Slavych"
+	area = slavych
+	history += {
+	}
+}
+new province sirokovo = {
+	inherit = empire_province
+	color = { 121 171 215 }
+	name = "Sirokovo"
+	area = slavych
+	history += {
 	}
 }
 
@@ -1808,6 +2045,35 @@ define_census = { population = {
 	{ val = 58.674  prov = meylthorne }
 	{ val = 44.555  prov = tovrek }
 	{ val = 40.730  prov = braykash }
+} }
+
+# Riven Grain Lands
+define_census = { population = {
+	{ val = 309.760 prov = slavych }
+	{ val = 235.658 prov = kornyshiv }
+	{ val = 183.826 prov = kolomyr }
+	{ val = 153.318 prov = drevnaya }
+	{ val = 127.016 prov = tarnopol }
+	{ val = 119.721 prov = dubryans }
+	{ val = 96.191  prov = novorytsk }
+	{ val = 93.467  prov = zlatoryev }
+	{ val = 86.191  prov = mirograd }
+	{ val = 83.436  prov = lazovka }
+	{ val = 70.079  prov = prydnova }
+	{ val = 64.680  prov = sirokovo }
+	{ val = 69.967  prov = radomyrsk }
+	{ val = 53.232  prov = perelyev }
+	{ val = 45.569  prov = orlivets }
+	{ val = 55.292  prov = zernograd }
+	{ val = 47.762  prov = ostrovets }
+	{ val = 48.276  prov = vasylivka }
+	{ val = 44.679  prov = zelenograd }
+	{ val = 41.578  prov = velkovec }
+	{ val = 38.995  prov = roshkovo }
+	{ val = 37.102  prov = vynkro }
+	{ val = 38.426  prov = dobrovo }
+	{ val = 35.521  prov = chervynsk }
+	{ val = 39.879  prov = staryvolk }
 } }
 
 quick_strait = {
