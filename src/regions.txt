@@ -27,6 +27,14 @@ new region heartlands = {
 	name = "Heartlands"
 	superregion = heartlands
 }
+new region riven_river = {
+	name = "Riven River"
+	superregion = heartlands
+}
+new region watar_forest = {
+	name = "Watar Forest"
+	superregion = heartlands
+}
 
 new region eastmarch = {
 	name = "Eastmarch"

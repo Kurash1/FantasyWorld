@@ -185,7 +185,7 @@ new country thornen = {
 	color = {
 		224 135 20
 	}
-	capital = gralthok
+	capital = roseria
 }
 new country veshni = {
 	inherit = empire_country
@@ -195,7 +195,7 @@ new country veshni = {
 	color = {
 		150 0 0
 	}
-	capital = gralthok
+	capital = ireiveshni
 }
 new country maidenkeep = {
 	inherit = empire_country
@@ -207,10 +207,10 @@ new country maidenkeep = {
 	}
 	capital = gralthok
 }
-new country ironmound = {
+new country aramant = {
 	inherit = empire_country
 	tag = IRO
-	name = "Ironmound"
+	name = "Aramant"
 	adj = "Wrought"
 	color = {
 		2 100 200

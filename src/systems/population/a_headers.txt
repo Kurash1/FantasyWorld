@@ -57,3 +57,20 @@ new effect starting_population = {
 		delete = $
 	}
 }
+
+new struct census = {
+	province prov
+	float val
+}
+new effect define_census = {
+	args = {
+		population = list<census>
+	}
+	transpile = {
+		foreach $1 in args:population {
+			$1:prov:history +=! {
+				starting_population = $1:val
+			}
+		}
+	}
+}
