@@ -1,0 +1,10 @@
+governments:monarchy:reform_levels:3 += new church_state = {
+	name = "Church State"
+	desc = "Religion and governance are so utterly entertwined in our country that it is impossible to tell them apart."
+	inherit = default_reform
+	icon = kingdom_of_god
+	modifiers = {
+		church_influence_modifier = 0.15
+		global_missionary_strength = 0.01
+	}
+}

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:3 += new secular_state = {
+	name = "Secular State"
+	desc = "The state does not meddle in the affairs of the clergy in our country and in return the clergy abstains largely from politics. Although some minor cultural impact may remain this is accepted as a necessary evil. The government also ensures that religious freedom and the expression of religion remain free for every citizien as long as it does not harm anyone else."
+	inherit = default_reform
+	icon = constitution
+	modifiers = {
+		church_influence_modifier = -0.15
+		no_religion_penalty = yes
+		can_not_build_missionaries = yes
+	}
+}
