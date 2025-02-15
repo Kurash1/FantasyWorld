@@ -1470,6 +1470,234 @@ new province dakgat = {
 	}
 }
 
+new area drakketh = {
+	name = "Drakketh"
+	region = tyller_hills
+}
+new province drakketh = {
+    inherit = empire_province
+    color = { 171 135 116 }
+    name = "Drakketh"
+	area = drakketh
+	history += {
+		history_owner = hashdrak
+	}
+}
+new province veyrnell = {
+    inherit = empire_province
+    color = { 194 218 177 }
+    name = "Veyrnell"
+	area = drakketh
+	history += {
+		history_owner = hashdrak
+	}
+}
+new province olmash = {
+    inherit = empire_province
+    color = { 228 103 113 }
+    name = "Olmash"
+	area = drakketh
+	history += {
+		history_owner = hashdrak
+	}
+}
+
+new area korrmont = {
+	name = "Korrmont"
+	region = tyller_hills
+}
+new province korrveil = {
+    inherit = empire_province
+    color = { 211 215 149 }
+    name = "Korrveil"
+	area = korrmont
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province shalketh = {
+    inherit = empire_province
+    color = { 183 107 171 }
+    name = "Shalketh"
+	area = korrmont
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province jorrveil = {
+    inherit = empire_province
+    color = { 193 213 133 }
+    name = "Jorrveil"
+	area = korrmont
+	history += {
+		history_owner = ekadrak
+	}
+}
+new province sornich = {
+    inherit = empire_province
+    color = { 147 207 161 }
+    name = "Sornich"
+	area = korrmont
+	history += {
+		history_owner = ekadrak
+	}
+}
+
+new area askirn = {
+	name = "Askirn"
+	region = tyller_hills
+}
+new province jovrek = {
+    inherit = empire_province
+    color = { 164 121 226 }
+    name = "Jovrek"
+	area = askirn
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province skovairn = {
+    inherit = empire_province
+    color = { 178 136 198 }
+    name = "Skovairn"
+	area = askirn
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province askirn = {
+    inherit = empire_province
+    color = { 123 100 198 }
+    name = "Askirn"
+	area = askirn
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province drelgath = {
+    inherit = empire_province
+    color = { 162 138 133 }
+    name = "Drelgath"
+	area = askirn
+	history += {
+		history_owner = urtdrak
+	}
+}
+
+new area arkveil = {
+	name = "Arkveil"
+	region = tyller_hills
+}
+new province thallisk = {
+    inherit = empire_province
+    color = { 156 103 166 }
+    name = "Thallisk"
+	area = arkveil
+	history += {
+		history_owner = urtdrak
+	}
+}
+new province arkveil = {
+    inherit = empire_province
+    color = { 186 234 116 }
+    name = "Arkveil"
+	area = arkveil
+	history += {
+		history_owner = viltdrak
+	}
+}
+new province tovrek = {
+    inherit = empire_province
+    color = { 170 224 216 }
+    name = "Tovrek"
+	area = arkveil
+	history += {
+		history_owner = viltdrak
+	}
+}
+
+new area zhendrik = {
+	name = "Zhendrik"
+	region = tyller_hills
+}
+new province braykash = {
+    inherit = empire_province
+    color = { 130 139 206 }
+    name = "Braykash"
+	area = zhendrik
+	history += {
+		history_owner = viltdrak
+	}
+}
+new province oskveil = {
+    inherit = empire_province
+    color = { 231 174 214 }
+    name = "Oskveil"
+	area = zhendrik
+	history += {
+		history_owner = viltdrak
+	}
+}
+new province zhendrik = {
+    inherit = empire_province
+    color = { 215 203 240 }
+    name = "Zhendrik"
+	area = zhendrik
+	history += {
+		history_owner = viltdrak
+	}
+}
+new province meylthorne = {
+    inherit = empire_province
+    color = { 199 196 212 }
+    name = "Meylthorne"
+	area = zhendrik
+	history += {
+		history_owner = viltdrak
+	}
+}
+
+new area teyrloch = {
+	name = "Teyrloch"
+	region = tyller_hills
+}
+new province iskmor = {
+    inherit = empire_province
+    color = { 117 107 220 }
+    name = "Iskmor"
+	area = teyrloch
+	history += {
+		history_owner = ekadrak
+	}
+}
+new province dorrikash = {
+    inherit = empire_province
+    color = { 139 116 253 }
+    name = "Dorrikash"
+	area = teyrloch
+	history += {
+		history_owner = ekadrak
+	}
+}
+new province teyrloch = {
+    inherit = empire_province
+    color = { 178 155 141 }
+    name = "Teyrloch"
+	area = teyrloch
+	history += {
+		history_owner = ekadrak
+	}
+}
+new province vynmorn = {
+    inherit = empire_province
+    color = { 235 207 191 }
+    name = "Vynmorn"
+	area = teyrloch
+	history += {
+		history_owner = ekadrak
+	}
+}
+
 # Astveil
 define_census = { population = {
 	{ val = 416.692 prov = drekkyn }
@@ -1550,6 +1778,36 @@ define_census = { population = {
 	{ val = 220.300 prov = aramant }
 	{ val = 230.502 prov = keepstone }
 	{ val = 226.842 prov = maidenkeep }
+} }
+
+# Tyllerdrakes
+define_census = { population = {
+	# Hashdrak
+	{ val = 106.874 prov = olmash }
+	{ val = 58.366  prov = drakketh }
+	{ val = 37.457  prov = veyrnell }
+	# Urtdrak
+	{ val = 268.887 prov = askirn }
+	{ val = 132.661 prov = drelgath }
+	{ val = 93.995  prov = skovairn }
+	{ val = 61.355  prov = thallisk }
+	{ val = 54.738  prov = jovrek }
+	{ val = 48.312  prov = korrveil }
+	{ val = 34.513  prov = shalketh }
+	# Ekadrak
+	{ val = 248.662 prov = iskmor }
+	{ val = 131.377 prov = teyrloch }
+	{ val = 85.851  prov = dorrikash }
+	{ val = 64.911  prov = sornich }
+	{ val = 43.231  prov = jorrveil }
+	{ val = 40.464  prov = vynmorn }
+	# Viltdrak
+	{ val = 224.384 prov = arkveil }
+	{ val = 120.248 prov = oskveil }
+	{ val = 81.606  prov = zhendrik }
+	{ val = 58.674  prov = meylthorne }
+	{ val = 44.555  prov = tovrek }
+	{ val = 40.730  prov = braykash }
 } }
 
 quick_strait = {

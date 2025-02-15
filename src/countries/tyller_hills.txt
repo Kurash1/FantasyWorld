@@ -30,21 +30,21 @@ new country ekadrak = {
 	tag = GDR
 	name = "Ekadrak"
 	adj = "Green"
-	color = { 0 255 0 }
+	color = { 0 150 0 }
 }
 new country urtdrak = {
 	inherit = tyller_hilly_country
 	tag = RDR
 	name = "Urtdrak"
 	adj = "Red"
-	color = { 255 0 0 }
+	color = { 150 0 0 }
 }
 new country hashdrak = {
 	inherit = tyller_hilly_country
 	tag = BDR
 	name = "Hashdrak"
 	adj = "Blue"
-	color = { 0 0 255 }
+	color = { 0 0 150 }
 }
 
 new country askdrak = {
