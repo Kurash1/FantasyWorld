@@ -1,0 +1,5 @@
+new modifier_definition arcane_caster_modifier = {
+	name = "Arcane Caster Modifier"
+	is_percentage = yes
+	base_value = 1
+}

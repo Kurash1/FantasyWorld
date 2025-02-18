@@ -1,5 +1,5 @@
 new script_variable development = {
-	name = "Development"
+	name = "Population"
 }
 new script_variable target_development = {
 	name = "Target Development"

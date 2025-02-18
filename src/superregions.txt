@@ -4,6 +4,9 @@ new superregion black_mountain = {
 new superregion sword_valley = {
 	name = "Sword-Valley"
 }
+new superregion heartlands = {
+	name = "Heartlands"
+}
 new superregion skyrim = {
 	name = "Skyrim"
 }

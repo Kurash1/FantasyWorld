@@ -1,0 +1,36 @@
+governments:monarchy:reform_levels:1 += new gavelkind = {
+	name = "Gavelkind"
+	desc = "Under Gavelkind, the estate and power of the monarch are divided among their heirs, with land and titles being distributed to multiple successors. This system can prevent the concentration of power in a single heir, though it often leads to a fragmentation of authority, making it difficult to maintain unity across the realm."
+	inherit = default_reform
+	icon = judge
+	modifiers = {
+		legitimacy = 0.5
+		global_autonomy = 0.05
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "You §RLose§! §Y50%§! of your §YCrownland§! upon succession."
+			key = gavelkind_nobles
+		}
+	}
+}
+on_actions:on_new_monarch += {
+	if [has_government_attribute = gavelkind_nobles] {
+		&temp &= trigger_value:crown_land_share
+		&temp *= 0.5
+		while [&temp >= 1] {
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 1
+			}
+			&temp -= 1
+		}
+		while [&temp >= 0.001] {
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 0.001
+			}
+			&temp -= 0.001
+		}
+	}
+}

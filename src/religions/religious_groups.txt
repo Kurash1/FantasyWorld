@@ -10,6 +10,10 @@ new religious_group orcish_group = {
 	name = "Orcish Group"
 	center_of_religion = thraxxor
 }
+new religious_group mortal_group = {
+	name = "Mortal Group"
+	center_of_religion = thraxxor
+}
 new religious_group khajiit_group = { #Here only so papacy doesn't cause crashes
 	name = "Khajiit Group"
 	center_of_religion = black_mountain

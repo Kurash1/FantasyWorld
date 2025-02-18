@@ -1,0 +1,477 @@
+new inheritable empire_country = {
+	technology_group = nord
+	primary_culture = imperial
+	religion = orcish_pantheon
+	graphical_culture = greekgfx
+	government = monarchy
+	capital = ireiveshni
+	history = {
+		1.1.1 = {
+			Tamriel = {
+				discover_country = $tag
+			}
+		}
+		apply_government = {
+			primogeniture
+			military_backing
+		}
+	}
+}
+new country dicetown = {
+	inherit = empire_country
+	tag = DIC
+	name = "Dicetown"
+	adj = "Rolled"
+	color = {
+		47 212 181
+	}
+	capital = gralthok
+}
+new country chesstown = {
+	inherit = empire_country
+	tag = CHE
+	name = "Chesstown"
+	adj = "Check"
+	color = {
+		98 135 32
+	}
+	capital = gralthok
+}
+new country cardtown = {
+	inherit = empire_country
+	tag = CAR
+	name = "Cardtown"
+	adj = "Card"
+	color = {
+		137 162 168
+	}
+	capital = gralthok
+}
+new country the_towers = {
+	inherit = empire_country
+	tag = TOW
+	name = "The Towers"
+	adj = "Tall"
+	color = {
+		212 47 194
+	}
+	capital = gralthok
+}
+new country papal_state = {
+	inherit = empire_country
+	tag = PAP
+	name = "Papal State"
+	adj = "Papal"
+	color = {
+		255 255 255
+	}
+	capital = gralthok
+}
+new country novenhaven = {
+	inherit = empire_country
+	tag = NVE
+	name = "Novenhaven"
+	adj = "Novenhavenean"
+	color = {
+		0 255 234
+	}
+	capital = gralthok
+}
+new country rosegarden = {
+	inherit = empire_country
+	tag = NOV
+	name = "Rosegarden"
+	adj = "Rose"
+	color = {
+		163 44 44
+	}
+	capital = rosegarden
+}
+new country nightgate = {
+	inherit = empire_country
+	tag = NIG
+	name = "Nightgate"
+	adj = "Dark"
+	color = {
+		25 25 25
+	}
+	capital = gralthok
+}
+new country greenrock = {
+	inherit = empire_country
+	tag = GRE
+	name = "Greenrock"
+	adj = "Green"
+	color = {
+		0 64 12
+	}
+	capital = greenrock
+}
+new country bittergate = {
+	inherit = empire_country
+	tag = BIT
+	name = "Bittergate"
+	adj = "Bitter"
+	color = {
+		135 108 32
+	}
+	capital = bittergate
+}
+new country streamford = {
+	inherit = empire_country
+	tag = STE
+	name = "Streamford"
+	adj = "Streamfordian"
+	color = {
+		135 62 32
+	}
+	capital = gralthok
+}
+new country tinkerton = {
+	inherit = empire_country
+	tag = TIN
+	name = "Tinkerton"
+	adj = "Tinkertonean"
+	color = {
+		245 192 153
+	}
+	capital = gralthok
+}
+new country keepstone = {
+	inherit = empire_country
+	tag = KEE
+	name = "Keepstone"
+	adj = "Keepstonean"
+	color = {
+		200 200 200
+	}
+	capital = keepstone
+}
+new country hamburrow = {
+	inherit = empire_country
+	tag = HAM
+	name = "Hamburrow"
+	adj = "Hamburrowean"
+	color = {
+		90 80 13
+	}
+	capital = hamburrow
+}
+new country silkenglade = {
+	inherit = empire_country
+	tag = SIL
+	name = "Silkenglade"
+	adj = "Silkengladean"
+	color = {
+		74 115 70
+	}
+	capital = caerwynn
+}
+new country marshstead = {
+	inherit = empire_country
+	tag = MAR
+	name = "Marshstead"
+	adj = "Marshsteadean"
+	color = {
+		115 83 68
+	}
+	capital = gralthok
+}
+
+new country thornen = {
+	inherit = empire_country
+	tag = THO
+	name = "Thornen"
+	adj = "Thornean"
+	color = {
+		224 135 20
+	}
+	capital = roseria
+}
+new country veshni = {
+	inherit = empire_country
+	tag = VES
+	name = "Veshni"
+	adj = "Veshnean"
+	color = {
+		150 0 0
+	}
+	capital = ireiveshni
+}
+new country maidenkeep = {
+	inherit = empire_country
+	tag = MAI
+	name = "Maidenkeep"
+	adj = "Virgin"
+	color = {
+		234 247 183
+	}
+	capital = maidenkeep
+}
+new country aramant = {
+	inherit = empire_country
+	tag = IRO
+	name = "Aramant"
+	adj = "Wrought"
+	color = {
+		2 100 200
+	}
+	capital = aramant
+}
+
+new country watar = {
+	inherit = empire_country
+	tag = WAT
+	name = "Watar"
+	adj = "Watari"
+	color = {
+		0 150 0 
+	}
+	capital = kelgwyth
+}
+new country talyara = {
+	inherit = empire_country
+	tag = TAL
+	name = "Talyara"
+	adj = "Talyan"
+	color = { 96 79 255 }
+	capital = talyara
+}
+new country glenmareth = {
+	inherit = empire_country
+	tag = GLE
+	name = "Glenmareth"
+	adj = "Glenmarethi"
+	color = { 255 149 43 }
+	capital = glenmareth
+}
+new country breochal = {
+	inherit = empire_country
+	tag = BRC
+	name = "Breochal"
+	adj = "Breochali"
+	color = { 255 0 0 }
+	capital = breochal
+}
+new country dunbriach = {
+	inherit = empire_country
+	tag = DNB
+	name = "Dunbriach"
+	adj = "Dunbriachan"
+	color = {
+		180 90 45
+	}
+	capital = druimlach
+}
+new country lothvryn = {
+	inherit = empire_country
+	tag = LTV
+	name = "Lothvryn"
+	adj = "Lothvrynic"
+	color = {
+		255 120 70
+	}
+	capital = cairwych
+}
+new country caerloth = {
+	inherit = empire_country
+	tag = CRL
+	name = "Caerloth"
+	adj = "Caerlothian"
+	color = {
+		70 140 200
+	}
+	capital = torvean
+}
+new country galdovael = {
+	inherit = empire_country
+	tag = GLD
+	name = "Galdovael"
+	adj = "Galdovaeli"
+	color = {
+		220 180 90
+	}
+	capital = glenvraith
+}
+
+new country vyreholm = {
+	inherit = empire_country
+	tag = VYR
+	name = "Vyreholm"
+	adj = "Vyreholmic"
+	color = {
+		120 60 20
+	}
+	capital = drevnaya
+}
+new country zelenec = {
+	inherit = empire_country
+	tag = ZEL
+	name = "Zelenec"
+	adj = "Zelenecian"
+	color = {
+		50 140 40
+	}
+	capital = mirograd
+}
+new country ostovar = {
+	inherit = empire_country
+	tag = OST
+	name = "Ostovar"
+	adj = "Ostovari"
+	color = {
+		100 100 100
+	}
+	capital = zlatoryev
+}
+new country vaszoria = {
+	inherit = empire_country
+	tag = VAS
+	name = "Vaszoria"
+	adj = "Vaszorian"
+	color = {
+		180 140 50
+	}
+	capital = prydnova
+}
+new country rovensmark = {
+	inherit = empire_country
+	tag = ROV
+	name = "Rovensmark"
+	adj = "Rovensmarker"
+	color = {
+		200 180 90
+	}
+	capital = kornyshiv
+}
+new country kamenaria = {
+	inherit = empire_country
+	tag = KAM
+	name = "Kamenaria"
+	adj = "Kamenarian"
+	color = {
+		150 60 30
+	}
+	capital = ostrovets
+}
+new country dzydria = {
+	inherit = empire_country
+	tag = DZY
+	name = "Dzydria"
+	adj = "Dzydrian"
+	color = {
+		30 120 200
+	}
+	capital = novorytsk
+}
+new country ternovya = {
+	inherit = empire_country
+	tag = TER
+	name = "Ternovya"
+	adj = "Ternovyan"
+	color = {
+		220 210 150
+	}
+	capital = kolomyr
+}
+new country dobrynia = {
+	inherit = empire_country
+	tag = DOB
+	name = "Dobrynia"
+	adj = "Dobrynian"
+	color = {
+		90 150 40
+	}
+	capital = zelenograd
+}
+new country velmira = {
+	inherit = empire_country
+	tag = VEL
+	name = "Velmira"
+	adj = "Velmiran"
+	color = {
+		210 120 50
+	}
+	capital = orlivest
+}
+new country brennland = {
+	inherit = empire_country
+	tag = BRE
+	name = "Brennland"
+	adj = "Brennlander"
+	color = {
+		180 100 40
+	}
+	capital = radomyrsk
+}
+new country volzeburg = {
+	inherit = empire_country
+	tag = VLZ
+	name = "Volzeburg"
+	adj = "Volzeburger"
+	color = {
+		140 110 50
+	}
+	capital = volzeburg
+}
+
+new country koskova = {
+	inherit = empire_country
+	tag = KSK
+	name = "Koskova"
+	adj = "Koskovan"
+	color = {
+		80 220 70
+	}
+	capital = sovliska
+}
+new country jorvaska = {
+	inherit = empire_country
+	tag = JRV
+	name = "Jorvaska"
+	adj = "Jorvaskan"
+	color = {
+		190 70 40
+	}
+	capital = velyranta
+}
+new country myrvelin = {
+	inherit = empire_country
+	tag = MVL
+	name = "Myrvelin"
+	adj = "Myrvelish"
+	color = {
+		85 95 165
+	}
+	capital = myrkyla
+}
+new country zoryashiv = {
+	inherit = empire_country
+	tag = ZRY
+	name = "Zoryashiv"
+	adj = "Zoryashivi"
+	color = {
+		100 185 160
+	}
+	capital = kelmorov
+}
+new country tovrien = {
+	inherit = empire_country
+	tag = TVR
+	name = "Tovrien"
+	adj = "Tovrieni"
+	color = {
+		5 80 50
+	}
+	capital = ylivesh
+}
+new country velmorya = {
+	inherit = empire_country
+	tag = VLM
+	name = "Velmorya"
+	adj = "Velmoryan"
+	color = {
+		200 190 60
+	}
+	capital = askervir
+}

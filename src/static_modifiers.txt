@@ -212,7 +212,7 @@ new static_modifier development = {
 	province_trade_power_value = 0.2
 }
 new static_modifier development_scaled = {
-	local_development_cost = 0.03
+	
 }
 new static_modifier capital_city = {
 	fort_level = 1
@@ -407,7 +407,7 @@ new static_modifier base_values = {
 	tolerance_heathen = -3
 	tolerance_heretic = -2
 	global_missionary_strength = 0.02
-	global_manpower = 10.0
+	global_manpower = 1.0
 	advisor_pool = 3
 	colonist_placement_chance = 0.1
 	free_leader_pool = 1
@@ -428,8 +428,6 @@ new static_modifier base_values = {
 	num_of_parliament_issues = 10
 	has_marines = yes
 	
-	orcs_loyalty_modifier = -0.1
-	
 	tax_line = 1
 	road_line = 1
 	global_expedition_speed = 1
@@ -440,8 +438,6 @@ new static_modifier base_values = {
 	
 	cav_to_inf_ratio = 0.2
 	max_absolutism = 30
-	
-	may_recruit_female_generals = yes
 }
 new static_modifier ai_nation = {
 	fort_maintenance_modifier = -1
@@ -605,7 +601,6 @@ new static_modifier army_tradition = {
 	land_morale = 0.25
 	manpower_recovery_speed = 0.10
 	siege_ability = 0.05
-	monthly_haafingar_mil_power = 1
 }
 new static_modifier navy_tradition = {
 	recover_navy_morale_speed = 0.1
@@ -699,8 +694,6 @@ new static_modifier devotion = {
 	prestige = 2
 	global_tax_modifier = 0.50
 	reform_progress_growth = 0.5
-	
-	priests_loyalty_modifier = 0.05
 }
 new static_modifier meritocracy = {
 	global_spy_defence = 1.0
@@ -810,7 +803,6 @@ new static_modifier prestige = {
 	ae_impact = -0.10
 	embracement_cost = -0.1
 	monthly_heir_claim_increase = 0.05
-	monthly_haafingar_dip_power = 1
 	monthly_fervor_increase = 1
 }
 new static_modifier no_debate_in_parliament = {
@@ -839,7 +831,6 @@ new static_modifier bought_indulgence = {
 	papal_influence = 1
 }
 new static_modifier religious_unity = {
-	monthly_fanaticism_power = -2
 	max_absolutism = 5
 	yearly_harmony = 1
 	monthly_fervor_increase = 1
@@ -950,13 +941,11 @@ new static_modifier daimyo_subject = {
 }
 new static_modifier all_nations = {
 	global_tax_income = 12
-	land_forcelimit	= 6
-	naval_forcelimit = 12
+	land_forcelimit	= 1
+	naval_forcelimit = 1
 }
 new static_modifier subject_nation = {
 	global_tax_income = -6
-	land_forcelimit	= -3
-	naval_forcelimit = -6
 }
 new static_modifier union_subject = {
 	legitimacy = 0.25
@@ -1584,45 +1573,15 @@ new static_modifier carnation_school_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	warscore_cost_vs_other_religion = -0.1
 }
-new static_modifier banner_regiment = {
-	land_maintenance_modifier = -0.25
-	discipline = 0.15
-	reinforce_speed = -0.5
-	
-	regiment_manpower_usage = -0.75
-}
-new static_modifier streltsy_regiment = {
-    fire_damage = 0.1
-}
-new static_modifier cossacks_regiment = {
-    shock_damage = 0.1
-}
-new static_modifier carolean_regiment = {
-	morale_damage = 0.1
-	fire_damage = 1.0
-	shock_damage = 0.50
-	reinforce_speed = -0.75
-	land_maintenance_modifier = 1.0
-}
-new static_modifier janissary_regiment = {
-	fire_damage_received = -0.15
-	shock_damage_received = -0.15
-	drill_gain_modifier = 1.5
-	reinforce_cost_modifier = 1.5
-	reinforce_speed = -0.50
-}
-new static_modifier cawa_regiment = {
-	morale_damage = 0.1
-	shock_damage_received = -0.15
-	land_attrition = -0.25
-	reinforce_cost_modifier = 1.0
-	reinforce_speed = -0.25
-}
-new static_modifier revolutionary_guard_regiment = {
-	fire_damage_received = -0.15
-	shock_damage_received = -0.15
-	drill_gain_modifier = 1.5
-}
+new static_modifier banner_regiment = { }
+new static_modifier streltsy_regiment = { }
+new static_modifier cossacks_regiment = { }
+new static_modifier carolean_regiment = { }
+new static_modifier janissary_regiment = { }
+new static_modifier cawa_regiment = { }
+new static_modifier revolutionary_guard_regiment = { }
+new static_modifier musketeer_regiment = { }
+new static_modifier rajput_regiment = { }
 new static_modifier marine_regiment = {
     shock_damage_received = 0.1
 	fire_damage = 0.10

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:2 += new clan_unity = {
+	name = "Clan Unity"
+	desc = "Clan and kin mean everything to this society. If you respect your clan your clan will respect you and never abandon you. Clan membership is also a deeply hereditary thing with marriages outside the clan structure being viewed as deeply problematic. This type of government can be found in many tribal as well as non tribal societies and is one of the earliest forms of a complex societal institution."
+	inherit = default_reform
+	icon = tribal_council
+	modifiers = {
+		global_unrest = -1
+		global_autonomy = -0.05
+		governing_capacity_modifier = -0.1
+	}
+}

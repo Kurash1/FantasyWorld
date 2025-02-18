@@ -1,0 +1,258 @@
+new inheritable free_province = {
+	position = { 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 1971.000 2409.000 }
+	rotation = { 0.000 0.000 0.000 0.000 0.000 0.000 0.000 }
+	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
+	history = { }
+}
+
+new area thallag = {
+	name = "Thallag"
+	region = watar_forest
+}
+new province caerwyn = {
+    inherit = free_province
+    color = { 112 146 145 }
+    name = "Caerwyn"
+	area = thallag
+	history += {
+		history_owner = watar
+	}
+}
+new province luthbrae = {
+    inherit = free_province
+    color = { 178 210 252 }
+    name = "Luthbrae"
+	area = thallag
+	history += {
+		history_owner = watar
+	}
+}
+new province torvaen = {
+    inherit = free_province
+    color = { 163 128 208 }
+    name = "Torvaen"
+	area = thallag
+	history += {
+		history_owner = watar
+	}
+}
+new province trelagh = {
+    inherit = free_province
+    color = { 108 196 220 }
+    name = "Trelagh"
+	area = thallag
+	history += {
+		history_owner = watar
+	}
+}
+
+new area dunvaloch = {
+	name = "Dunvaloch"
+	region = watar_forest
+}
+new province brynmore = {
+    inherit = free_province
+    color = { 190 227 150 }
+    name = "Brynmore"
+	area = dunvaloch
+	history += {
+		history_owner = watar
+	}
+}
+new province dunvaloch = {
+    inherit = free_province
+    color = { 246 185 128 }
+    name = "Dunvaloch"
+	area = dunvaloch
+	history += {
+		history_owner = watar
+	}
+}
+new province fennadraig = {
+    inherit = free_province
+    color = { 250 177 207 }
+    name = "Fennadraig"
+	area = dunvaloch
+	history += {
+		history_owner = watar
+	}
+}
+
+new area watarcaen = {
+	name = "Watarcaen"
+	region = watar_forest
+}
+new province breckvaen = {
+    inherit = free_province
+    color = { 175 137 172 }
+    name = "Breckvaen"
+	area = watarcaen
+	history += {
+		history_owner = watar
+	}
+}
+new province carnodwyn = {
+    inherit = free_province
+    color = { 112 198 145 }
+    name = "Carnodwyn"
+	area = watarcaen
+	history += {
+		history_owner = watar
+	}
+}
+new province rhydmar = {
+    inherit = free_province
+    color = { 217 177 228 }
+    name = "Rhydmar"
+	area = watarcaen
+	history += {
+		history_owner = watar
+	}
+}
+new province kelgwyth = {
+    inherit = free_province
+    color = { 188 203 246 }
+    name = "Kelgwyth"
+	area = watarcaen
+	history += {
+		history_owner = watar
+	}
+}
+
+
+new area invergat = {
+	name = "Invergat"
+	region = watar_forest
+}
+new province culdrith = {
+    inherit = free_province
+    color = { 221 219 234 }
+    name = "Culdrith"
+	area = invergat
+	history += {
+		history_owner = watar
+	}
+}
+new province invercaen = {
+    inherit = free_province
+    color = { 130 235 241 }
+    name = "Invercaen"
+	area = invergat
+	history += {
+		history_owner = watar
+	}
+}
+new province drystanford = {
+    inherit = free_province
+    color = { 233 172 110 }
+    name = "Drystanford"
+	area = invergat
+	history += {
+		history_owner = watar
+	}
+}
+
+new area talygat = {
+	name = "Talygat"
+	region = watar_forest
+}
+new province caermoryn = {
+    inherit = free_province
+    color = { 190 122 191 }
+    name = "Caermoryn"
+	area = talygat
+	history += {
+		history_owner = watar
+	}
+}
+new province ardosan = {
+    inherit = free_province
+    color = { 229 239 148 }
+    name = "Ardosan"
+	area = talygat
+	history += {
+		history_owner = watar
+	}
+}
+new province talysharn = {
+    inherit = free_province
+    color = { 174 100 220 }
+    name = "Talysharn"
+	area = talygat
+	history += {
+		history_owner = watar
+	}
+}
+
+new area glengat = {
+	name = "Glengat"
+	region = watar_forest
+}
+new province ballyveagh = {
+    inherit = free_province
+    color = { 225 230 103 }
+    name = "Ballyveagh"
+	area = glengat
+	history += {
+		history_owner = watar
+	}
+}
+new province lochranish = {
+    inherit = free_province
+    color = { 203 141 173 }
+    name = "Lochranish"
+	area = glengat
+	history += {
+		history_owner = watar
+	}
+}
+new province kernavren = {
+    inherit = free_province
+    color = { 194 206 136 }
+    name = "Kernavren"
+	area = glengat
+	history += {
+		history_owner = watar
+	}
+}
+new province glenwyth = {
+    inherit = free_province
+    color = { 214 169 174 }
+    name = "Glenwyth"
+	area = glengat
+	history += {
+		history_owner = watar
+	}
+}
+
+new area dunbratha = {
+	name = "Dunbratha"
+	region = watar_forest
+}
+new province tirneach = {
+    inherit = free_province
+    color = { 248 127 102 }
+    name = "Tirneach"
+	area = dunbratha
+	history += {
+		history_owner = watar
+	}
+}
+new province morvaith = {
+    inherit = free_province
+    color = { 208 172 237 }
+    name = "Morvaith"
+	area = dunbratha
+	history += {
+		history_owner = watar
+	}
+}
+new province dunbratha = {
+    inherit = free_province
+    color = { 199 179 204 }
+    name = "Dunbratha"
+	area = dunbratha
+	history += {
+		history_owner = watar
+	}
+}

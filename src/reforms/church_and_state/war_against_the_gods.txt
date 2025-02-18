@@ -1,0 +1,17 @@
+governments:monarchy:reform_levels:3 += new war_against_the_gods = {
+	name = "War Against the gods"
+	desc = "We acknowledge that the gods are real but they are also awful rulers and behaving like tyrants. Henceforth we decided that they must be ripped out of the very soil of the earth and be removed from power once and for all. To the weapons!"
+	inherit = default_reform
+	icon = rioting_burning
+	custom_attributes = {
+		no_church_estate = yes
+	}
+	modifiers = {
+		land_morale = 0.1
+		cb_on_religious_enemies = yes
+		global_missionary_strength = 0.01
+	}
+	effect = {
+		change_religion = mortalism
+	}
+}

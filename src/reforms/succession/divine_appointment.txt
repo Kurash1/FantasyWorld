@@ -1,0 +1,10 @@
+governments:monarchy:reform_levels:1 += new divine_appointment = {
+	name = "Divine Appointment"
+	desc = "In this system, the heir to the throne is chosen by the church or a spiritual authority, believed to be the voice of the divine. The process may involve prophetic signs, visions, or sacred rituals. The monarch’s succession is determined by what is seen as divine will, offering the ruler a legitimacy beyond mere bloodline."
+	inherit = default_reform
+	icon = religious_leader
+	modifiers = {
+		church_influence_modifier = 0.15
+		church_loyalty_modifier = 0.1
+	}
+}

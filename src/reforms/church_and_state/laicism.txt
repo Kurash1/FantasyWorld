@@ -1,0 +1,15 @@
+governments:monarchy:reform_levels:3 += new laicism = {
+	name = "Laicism"
+	desc = "This country does not acknowledge religion in governance at all. Religious practices and symbols are largely prohibited in practice. While the state still guarantees freedom of religion it forces it to be a deeply private matter and all religious ceremonies in public must be allowed by the government prior to the event."
+	inherit = default_reform
+	icon = states_general
+	custom_attributes = {
+		new_attribute = {
+			title = "Disables §YChurch§! estate."
+			key = no_church_estate
+		}
+	}
+	modifiers = {
+		can_not_build_missionaries = yes
+	}
+}

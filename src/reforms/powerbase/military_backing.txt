@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:2 += new military_backing = {
+	name = "Military Backing"
+	desc = "The state in inexorably linked to the military that it commands and, though not one and the same, are greatly intertwined. Officers of rank are also officers of law, while high ranking state officials can call upon entire squads of soldiers without oversight. This makes the system and the state able to enforce its will quickly, efficiently, and ruthlessly to dissenters while being hard to fight back against, but should generals and officers grow disloyal, the close ties between them will shatter the government and be replaced with another just as efficiently."
+	inherit = default_reform
+	icon = soldiers_3
+	modifiers = {
+		army_tradition = 0.5
+		land_forcelimit_modifier = 0.05
+		land_maintenance_modifier = 0.05
+	}
+}

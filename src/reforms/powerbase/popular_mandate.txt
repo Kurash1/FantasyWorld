@@ -1,0 +1,10 @@
+governments:monarchy:reform_levels:2 += new popular_mandate = {
+	name = "Popular Mandate"
+	desc = "Your state is backed by the populace. Be it for cultural, religious or another reason, your people believe that your state ought to exist. As long as you hold this popular mandate, your people will support you."
+	inherit = default_reform
+	icon = peasant_republic
+	modifiers = {
+		global_unrest = -1
+		harsh_treatment_cost = 0.25
+	}
+}

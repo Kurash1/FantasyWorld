@@ -39,6 +39,6 @@ new policy court_system = {
 	group_2 = jurisprudence_ideas
 	modifier = {
 		global_unrest = -1
-		all_estates_loyalty_equilibrium = 5%
+		all_estate_loyalty_equilibrium = 0.05
 	}
 }

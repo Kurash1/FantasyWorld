@@ -147,3 +147,6 @@ new effect add_ruler_personality = {
 new effect add_heir_personality = {
 	args = personality_trait
 }
+new effect add_queen_personality = {
+	args = personality_trait
+}

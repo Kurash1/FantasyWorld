@@ -1,0 +1,8 @@
+new effect apply_government = {
+	args = list<government_reform>
+	transpile = {
+		foreach $reform in args {
+			add_government_reform = $reform
+		}
+	}
+}

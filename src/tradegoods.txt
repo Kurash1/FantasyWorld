@@ -271,7 +271,7 @@ new tradegood silver = {
 		}
 	}
 }
-new tradegood ebony = {
+new tradegood gods_blood = {
 	name = "God's Blood"
 	desc = "The Sword-Valley has been fought over for milennia by various forces, and much blood has been shed, even divine blood. The blood of the gods descended from heaven is a supernatural substance that can be used for alchemical purposes or to smith great artifacts."
 	color = {
@@ -388,19 +388,19 @@ new tradegood livestock = {
 		factor = 0
 	}
 }
-new tradegood slaves = {
-	name = "Slaves"
-	desc = "Although not as common anymore as in ancient times slavery is still existant. People are often captured to serve as cheap unpaid labour which often is found in mines or on farms. Only few luckier individuals who became slaves find themselves doing household or administrative jobs. In some cultures there are even slave armies that fight with an outmost loyalty for their ruler for whatever reason. Many cultures such as the human cultures in the east, the elves and the gnomes however utterly despise slavery with gnomes and elves straight out banning it all together within their realms."
+new tradegood salt = {
+	name = "Salt"
+	desc = "Salt is useful as a preservative and either mined deep under the earth, harvested out of the sea via evaporation or directly cooked out of saline waters. It is one of the most expensive necessities for civil and military use alike and therefore highly valued. In the empire for example the emperor imposed a strict salt monopoly that only the marches at the very east bordering the centaurs are exempt from. Whole wars are fought over who controlls the salt."
 	color = {
-		42 42 42
+		0.999 0.999 0.999
 	}
 	modifier = {
-		global_trade_goods_size_modifier = 0.10
+		land_maintenance_modifier = -0.05
 	}
 	province = {
-		local_missionary_strength = 0.01
+		local_defensiveness = 0.15
 	}
-	base_price = 2
+	base_price = 3
 	is_gold = no
 	chance = {
 		factor = 0
@@ -539,3 +539,21 @@ new tradegood wool = {
 		factor = 0
 	}
 }
+#new tradegood dungeon_materials = {
+#	name = "Dungeon Materials"
+#	desc = "Dungeon Materials are used to describe all the byproducts of the permanent dungeons scattered across the world. These dungeons have a never ending amount of treasures and monsters created inside. While individual dungeons vary in their resulting treasures, most common are infused gems, rare metals, and magical items."
+#	color = {
+#		42 42 42
+#	}
+#	modifier = {
+#		administrative_efficiency = 5%
+#	}
+#	province = {
+#		local_unrest = 2
+#	}
+#	base_price = 6
+#	is_gold = no
+#	chance = {
+#		factor = 0
+#	}
+#}

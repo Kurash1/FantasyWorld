@@ -1,0 +1,33 @@
+governments:monarchy:reform_levels:1 += new seniority = {
+	name = "Seniority"
+	desc = "In this system, the throne passes to the oldest living member of the royal family, regardless of their birth order. This form of succession values the wisdom and experience that comes with age, and often results in a more experienced ruler taking the throne."
+	inherit = default_reform
+	icon = senior
+	modifiers = {
+		legitimacy = 0.5
+		idea_cost = 0.05
+		all_power_cost = -0.025
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "The oldest person in your family is your heir."
+			key = senior_heir
+		}
+	}
+}
+on_actions:on_new_monarch += {
+	if [has_government_attribute = senior_heir] {
+		random_list = {
+			1->define_heir = { age = 50 }
+			1->define_heir = { age = 50 female = yes }
+		}
+	}
+}
+on_actions:on_heir_death += {
+	if [has_government_attribute = senior_heir] {
+		random_list = {
+			1->define_heir = { age = 50 }
+			1->define_heir = { age = 50 female = yes }
+		}
+	}
+}

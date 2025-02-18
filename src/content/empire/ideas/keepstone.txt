@@ -1,0 +1,64 @@
+new idea_group keepstone_ideas = {
+	name = "Keepstone"
+	category = national
+	start = {
+		
+	}
+	bonus = {
+		
+	}
+	trigger = {
+		tag = keepstone
+	}
+	ideas = {
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = "Dwarven Teachings"
+			desc = "In exchange for the empire sponsoring their reconquest of the sword-valley, one of the consessions the dwarves had to give, was to teach the architects of Keepstone how to create, maintain, and mine a hold-city, like that of the dwarves."
+			modifier = {
+				max_dig_level = 3
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+	}
+}

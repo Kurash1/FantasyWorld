@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:2 += new divine_right = {
+	name = "Divine Right"
+	desc = "The state derives power from a divine, or perceived divine entity, with the claim that the ruler acts on their behalf in the mortal world, a very powerful title. However considering the nature of belief, which is to say fickle, the common people may lose this consideration, or the nobility, or any other group with even the slightest change or defect, an heir born with a defect, or the ruler falling ill, anything and everything could be considered divine punishment, so the ruling class must always do their best to maintain an ideal image."
+	inherit = default_reform
+	icon = divine_guidance_reform
+	has_devotion = yes
+	modifiers = {
+		church_loyalty_modifier = 0.1
+		tolerance_own = 1
+	}
+}

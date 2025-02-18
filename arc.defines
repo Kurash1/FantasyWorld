@@ -39,3 +39,4 @@ load_order = {
 	src/ai_personalities.txt
 }
 headers = "/replace NAND with NOT->AND"
+use_base_development = no

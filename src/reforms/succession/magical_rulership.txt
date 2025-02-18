@@ -1,0 +1,20 @@
+governments:monarchy:reform_levels:1 += new magical_rulership = {
+	name = "Magical Rulership"
+	desc = "In some monarchies, the throne is tied to magical power, and the heir must possess the magical qualities deemed necessary to rule. These monarchs are often chosen or born with an innate connection to magic, with their power being seen as a divine or mystical blessing. Their heirs are expected to carry the same arcane abilities, ensuring a continued link between the throne and magical forces."
+	inherit = default_reform
+	icon = indian_crown
+	modifiers = {
+		arcane_caster_modifier = 0.1
+	}
+	custom_attributes = {
+		new_attribute = {
+			title = "Your heirs will always have the '§YMage§!' modifier."
+			key = better_heir_magic
+		}
+	}
+}
+on_actions:on_new_heir += {
+	if [has_government_attribute = better_heir_magic] {
+		set_heir_flag = mage
+	}
+}

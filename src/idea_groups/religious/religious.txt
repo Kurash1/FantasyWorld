@@ -50,7 +50,6 @@ new idea_group religious_ideas = {
 			desc = "Join the battle cry and crush the infidels."
 			modifier = {
 				cb_on_religious_enemies = yes
-				monthly_fanaticism_power = 1.0
 			}
 		}
 	}

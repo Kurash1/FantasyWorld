@@ -1,0 +1,31 @@
+new estate burghers = {
+	name = "Burghers"
+	desc = "This estate represents the urban population of your country such as Artisans, Merchants or others that reside inside city walls. Their traditional responsibility is to work to keep the economy going and in order to do so efficiently they expect to be granted special rights and privileges for themselves and the cities they represent."
+	icon = 3
+	
+	trigger = {
+		always = yes
+	}
+	
+	country_modifier_happy = {
+		trade_efficiency = 0.2
+		development_cost = -0.1
+	}
+	country_modifier_neutral = {
+		trade_efficiency = 0.2
+	}	
+	country_modifier_angry = {
+		trade_efficiency = -0.1
+		development_cost = 0.1
+		global_unrest = 2
+	}
+	
+	land_ownership_modifier = {
+		burghers_loyalty_modifier = 0.2
+	}
+	base_influence = 10
+	
+	color = { 35 35 150 }
+	
+	influence_from_dev_modifier = 1.0
+}

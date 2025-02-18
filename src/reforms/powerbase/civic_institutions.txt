@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:2 += new civic_institutions = {
+	name = "Civic Institutions"
+	desc = "Your state is backed by the belief of the people that the institutions you provide are worth the cost in taxes you take. You might provide your populace protection from foreign threats, provide healthcare, education, rule of law or other institutions that benefit your people. As long as you continue to provide these civic institutions, your state will continue to be supported."
+	inherit = default_reform
+	icon = paper_money_map
+	modifiers = {
+		state_maintenance_modifier = 0.25
+		production_efficiency = 0.05
+		global_unrest = -0.5
+	}
+}

@@ -1,24 +1,37 @@
-new culture_group goblinoid = {
-	name = "Goblinoid Race"
+new culture_group goblin = {
+	name = "Goblin"
 	graphical_culture = greekgfx
-	male_names = { }
-	female_names = { }
-	dynasty_names = { }
+	male_names = { "Grizzletongue" "Grumbletoad" "Rumblebelly" "Rumblestomp" "Noggleblight" "Goblintide" "Glimmergob" "Wretchwhisker" "Fangsnarl" "Snagglewort" "Sludgegrip" "Snickersnatch" "Gloomclaw" "Sliverfang" "Wartnose" "Muckspindle" "Thistleknob" "Moldfinger" "Gnarltooth" "Slimefoot" "Grumblegrim" "Snickergrin" "Fizzlefingers" "Bogbelch" "Slurgtail" "Sludgeclaw" "Miregaze" "Grumblegut" "Wretchling" "Nibblesnatch" "Slithergrub" "Snaggleclaw" "Sludgefist" "Slurpblight" "Grizzleknob" "Wartbelly" "Sludgejaw" "Nogglegrin" "Moldywhisk" "Rumblemuck" "Fazefoot" "Glimmerwart" "Snaktongue" "Gnarlbelly" "Thistlefang" "Wobblewart" "Snikernose" "Goblintooth" }
+	female_names = { "Nettlegrin" "Gloomshadow" "Sludgejaw" "Snickerwart" "Rumblefoot" "Gobsmudge" "Sludgebelle" "Golintid" "Nogglebelly" "Mosswhisk" "Grizzletooth" "Wartnibble" "Wretchfang" "Slitherclaw" "Grumbleclaw" "Grumblethorn" "Wobblethumb" "Snaggletoad" "Thistlenose" "Sludgebelch" "Fizzlefoot" "Sliverclaw" "Nibblesnarl" "Glimmerbelly" "Snagglenose" "Slurpgrub" "Slimegob" "Wretchwhisk" "Thistlejaw" "Snickersnarl" "Sludgepaw" "Gobblefist" "Grizzlegrin" "Bogbelch" "Slitherjaw" "Slurpnose" "Gnarlclaw" "Wartbelly" "Thistletide" "Slurptongue" "Moldywhisk" "Gontongue" "Glimmergrim" "Snickergaze" "Grumblefoot" "Fizzlegob" "Rumblenose" "Grumblegaze" }
+	dynasty_names = { "Ags" "Bebkuird" "Bisiolmea" "Blyts" "Bruivor" "Ceel" "Charbazz" "Chor" "Cigonk" "Craang" "Derigz" "Drarm" "Drionvogz" "Dyrd" "Erm" "Fralk" "Frold" "Furliarm" "Gliosb" "Glymzogs" "GoldaGoblin" "Grikveeld" "Harzokx" "Huntero" "Jact" "Jykeegs" "Klolbort" "Kruic" "Lodvel" "Lysdiez" "Obur" "Onk" "Pheattung" "Plekniesb" "Pradfoic" "Prizokx" "Prysvoikx" "Qiang" "Reenk" "Roztiokz" "Silkeqia" "Slek" "Srats" "Sroisvuq" "Strild" "Tes" "Tribuiq" "Uiheald" "Ux" "Vaming" "Voguz" "Vregroqai" "Vrur" "Wags" "Wukx" "Xeebboq" "Ygs" "Zear" "Zoz"  }
 }
 new culture hobgoblin = {
 	name = "Hobgoblin"
-	culture_group = goblinoid
+	culture_group = goblin
 }
+
 new culture_group orc = {
 	name = "Orc Race"
 	graphical_culture = africangfx
-	male_names = { }
-	female_names = { }
-	dynasty_names = { }
+	male_names = { Atulg Azuk Bagamul Bakh Baronk Bashag Bazgulub Bogakh Bologra Borug Both Bugdul Bugharz Bugrash Bugrol Bumbub Burul Dul Dular Duluk Duma Dumbuk Dumburz Dur Durbul Durgash Durz Durzol Durzub Durzum Garothmuk Garzonk Gashna Ghamborz Ghamonk Ghoragdush Ghorlorz Glush Grat Gruzgob Guarg Gurak Khadba Khagra Khargol Koffutto Largakh Lorbumol Lorzub Lugdum Lugrub Lurog Mash Matuk Mauhul Mazorn Mol Morbash Mug Mugdul Muk Murag Murkub Murzol Muzgonk Nag Nar Nash Ogrul Ogrumbu Olfin Olumba Orakh Rogdul Shakh Shamar Shamob Shargam Sharkub Shat Shazgob Shulong Shura Shurkul Shuzug Snaglak Snakha Snat Ugdumph Ughash Ulam Umug Uram Urim Urul Urzog Ushamph Ushat Yadba Yagak Yak Yam Yambagorn Yambul Yargol Yashnarz Yatur }
+	female_names = { Agrob Badbog Bashuk Bogdub Bugdurash Bula Bulak Bulfim Bum Burub Burzob Dura Durgat Durz Gashnakh Ghob Glasha Glob Gluronk Gonk Grat Grazob Gulfim Kharzug Lagakh Lambug Lazgar Mogak Morn Murob Murzush Nargol Orbul Ragash Rolfish Rulfim Shadbak Shagar Shagdub Sharn Sharog Shelur Sloomalah Uloth Ulumpha Urzoth Urzul Ushug Yazgash }
+	dynasty_names = { Agadbu Aglakh Agum Atumph Azorku Badbu Bagrat Bagul Bamog Bar Bargamph Bashnag Bat Batul Boga Bogamakh Bogharz Bogla Boglar Bogrol Boguk Bol Bolak Borbog Borbul Bug Bugarn Bulag Bularz Bulfish Burbug Burish Burol Buzga Dugul Dul Dula Dulob Dumul Dumulg Durga Durog Durug Dush Gar Gashel Gat Ghash Ghasharzol Gholfim Gholob Ghorak Gilgar Glorzuf Gluk Glurkub Gorzog Grambak Gulfim Gurakh Gurub Kashug Khagdum Kharbush Kharz Khash Khashnar Khatub Khazor Lag Lagdub Largum Lazgarn Loghash Logob Logrob Lorga Lumbuk Lumob Lurkul Lurn Luzgan Magar Magrish Mar Marob Mashnar Mogduk Moghakh Mughol Muk Mulakh Murgol Murug Murz Muzgob Muzgub Muzgur Ogar Ogdub Ogdum Olor Olurba Orbuma Rimph Rugob Rush Rushub Shadbuk Shagdub Shagdulg Shagrak Shagramph Shak Sham Shamub Sharbag Sharga Sharob Sharolg Shat Shatub Shazog Shug Shugarz Shugham Shula Shulor Shumba Shuzgub Skandar Snagarz Snagdu Ufthamph Uftharz Ugruma Ular Ulfimph Urgak Ushar Ushug Ushul Uzgurn Uzuk Yagarz Yak Yargul Yarzol }
 }
 new culture sword_orc = {
 	name = "Sword Orc"
 	culture_group = orc
+}
+
+new culture_group human = {
+	name = "Human"
+	graphical_culture = greekgfx
+	male_names = { Aebondeius Afer Albecius Allian Antonius Apelles Ariulcabor Arius Arlowe Arrinis Astius Attelivupis Audenian Augurius Aunius Bacola Baro Benunius Burcanius Caccian Caius Calvario Calvus Canctunian Capiton Cassius Carnius Cavortius Cidius Cimber Clagius Clasomo Clecentor Clibergus Cocistian Codus Coirtene Constans Corrudus Crassius Crottus Crulius Cunius Darius Depusanis Drusus Dunius Durus Duvianus Ertius Esdrufus Falco Falx Fandus Frinnius Furius Ganciele Gergio Glallian Granius Gratian Gualtierus Hasphat Ignatius Ildogesto Ilnori Iratian Iulus Jonus Larisus Larrius Letreius Levus Linus Lucan Lucretinaus Lurius Luspinian Luven Malpenix Manilian Marsus Masque Matus Mecilvus Miles Molvirian Moris Murberius Murudius Mus Namanian Naspis Natalinus Nirtunus Nitterius Nolus Oritius Percius Pilper Pilus Plitinius Processus Procyon Pustula Raxle Reberio Rufinus Sabinus Saenus Saprius Sauleius Scelian Segunivus Seliulus Sellus Senilias Silius Sirollus Sitialius Somutis Stentus Stlubo Strillian Surus Synnolian Tappius Tasellis Ticemius Tienius Tininnus Trebonius Turedus Tyronius Vala Valgus Valvius Vantustius Varian Varus Vasesius Vertilvius Vinnus Vodunius Wulf Zeno }
+	female_names = { Adraria Agrippina Ahetotis Alcedonia Apronia Arenara Audania Blatta Cania Canodia Catia Cinda Cinia Clilias Coventina Craetia Eloe Emelia Eponis Ettiene Fallaise Fammana Fentula Flacassia Flaenia Fralvia Fruscia Gaea Germia Horulia Idonea Isobel Ladia Lalaine Lalatia Larienna Lassinia Laurina Leone Livia Lunia Maesa Marara Moria Nebia Pallia Pania Pelena Pellecia Peregrina Pritia Raesa Ruccia Sabrina Sarmosia Selvia Severa Severia Solea Syloria Thraccenia Vala Vianis Viatrix Viccia Vilbia Volrina }
+	dynasty_names = { Abitius Acicius Acilius Aerius Afronia Agrudilius Albarnian Albuttian Alfena Alleius Amatius Amiulusus Amnis Amphia Angius Antabolis Apinia Artoria Artorius Aurrus Autrus Baenius Berne Blonia Burtilius Caerellius Callonus Carbo Caro Carius Catanius Catius Catraso Cedus Celata Ceno Cerunia Cines Claevius Clanler Closcius Cnisia Colollius Conciatius Conician Cosades Crunus Cullian Curio Delitian Denian Dergius Douar Duronia Egnatius Entius Esdrecus Essagan Facian Famalius Fauseius Felannus Flaeus Flarugrius Flavonius Fulbenus Fulcinius Furotis Gabenagus Gabinia Galenus Gloriosus Gratius Gratus Gravius Hanotepelus Harmevus Harsinia Hateria Herennius Hers Hertarian Horatius Iulus Jannus Jucanis Jullalian Laecinnius Laenius Lalelius Leontiulonus Liore Lusius Macrina Macro Magia Magius Mantedius Maraennius Maria Marius Maro Matius Maximus Menanius Mercius Mero Mevureius Mico Mido Muco Munia Musilchiotus Muspidius Mussillius Nigilius Nuccius Nuccusius Nuncius Olcinius Oranius Ostorius Otiustiris Palenix Pelelius Petilia Pevengius Plalocius Platorius Plebo Ponius Pontanian Popillius Posuceius Pundus Puruseius Quarra Quaspus Rato Roscius Rulician Saccus Scerius Scinia Secunia Sialius Sibassius Siruliulus Sosia Spurius Statlilius Talanian Tiragrius Truptor Tunifus Urgelian Urgusiso Urtius Uulentanus Valerius Valius Valodius Vandacia Vant Vantinius Varian Varo Varro Velvus Viciulus Vinipter Vitellia Vitellius Vunnis }
+}
+new culture imperial = {
+	name = "Imperial"
+	culture_group = human
 }
 
 special_units:galleass:name := "Longship"

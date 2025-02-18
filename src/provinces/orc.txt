@@ -32,6 +32,11 @@ new province drog_thar = {
 	history += {
 		history_trade_goods = grain
 		history_owner = grul_khaar
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province uzgark = {
@@ -53,6 +58,22 @@ new province gralthok = {
 	area = gralthok
 	history += {
 		history_trade_goods = grain
+		history_owner = grul_khaar
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
+	}
+}
+new province brogzar = {
+    inherit = orc_province
+    color = { 102 182 161 }
+    name = "Brogzar"
+	terrain = red_hills
+	area = gralthok
+	history += {
+		history_trade_goods = c_metals
 		history_owner = grul_khaar
 	}
 }
@@ -199,7 +220,7 @@ new province zorlokk = {
 	terrain = red_hills
 	area = kraghzul
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = uthrak_zor
 	}
 }
@@ -276,7 +297,7 @@ new province kravdokk = {
 	area = urkathal
 	history += {
 		history_trade_goods = c_metals
-		history_owner = kragh_dor
+		history_owner = krav_dro
 	}
 }
 
@@ -292,7 +313,7 @@ new province droghar = {
 	area = zorgrim
 	history += {
 		history_trade_goods = livestock
-		history_owner = kragh_dor
+		history_owner = krav_dro
 	}
 }
 new province malkrath = {
@@ -372,6 +393,7 @@ new province thraxxor = {
     name = "Thraxxor"
 	terrain = red_plains
 	area = thraxxor
+	base_development = 110
 	history += {
 		history_trade_goods = grain
 		history_owner = drog_khaal
@@ -412,7 +434,7 @@ new province gortharok = {
 	area = gortharok
 	history += {
 		history_trade_goods = c_metals
-		history_owner = nathrak_zir
+		history_owner = brakk_zul
 	}
 }
 new province thogrun = {
@@ -423,7 +445,7 @@ new province thogrun = {
 	area = gortharok
 	history += {
 		history_trade_goods = gold
-		history_owner = gol_thurn
+		history_owner = brakk_zul
 	}
 }
 new province krasshul = {
@@ -433,7 +455,7 @@ new province krasshul = {
 	terrain = red_hills
 	area = gortharok
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = gol_thurn
 	}
 }
@@ -542,7 +564,7 @@ new province karnvorr = {
 	terrain = red_hills
 	area = kharrdun
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = drog_khaal
 	}
 }
@@ -627,17 +649,6 @@ new area skarvok = {
 	name = "Skarvok"
 	region = grondha
 }
-new province malharg = {
-    inherit = orc_province
-    color = { 200 201 254 }
-    name = "Malharg"
-	terrain = red_hills
-	area = skarvok
-	history += {
-		history_trade_goods = c_metals
-		history_owner = gron_vashn
-	}
-}
 new province zulgrath = {
     inherit = orc_province
     color = { 237 119 249 }
@@ -694,7 +705,7 @@ new province uzhmak = {
 	terrain = red_hills
 	area = zolthar
 	history += {
-		history_trade_goods = ebony
+		history_trade_goods = gods_blood
 		history_owner = krash_nal
 	}
 }
@@ -829,8 +840,236 @@ new province brozhukk = {
 	}
 }
 
-quick_strait = {
-	from = zolthar
-	to = kravzhor
-	through = thrungar
+new area weshell = {
+	name = "Weshell"
+	region = grondha
+}
+new province drogmur = {
+    inherit = orc_province
+    color = { 171 213 176 }
+    name = "Drogmur"
+	terrain = red_hills
+	area = weshell
+	history += {
+		history_trade_goods = livestock
+		history_owner = darr_kuzak
+	}
+}
+new province volzkath = {
+    inherit = orc_province
+    color = { 136 210 185 }
+    name = "Volzkath"
+	terrain = red_hills
+	area = weshell
+	history += {
+		history_trade_goods = fur
+		history_owner = brulg_zarok
+	}
+}
+new province krulzar = {
+    inherit = orc_province
+    color = { 149 126 224 }
+    name = "Krulzar"
+	terrain = red_hills
+	area = weshell
+	history += {
+		history_trade_goods = livestock
+		history_owner = brulg_zarok
+	}
+}
+new province brogzum = {
+    inherit = orc_province
+    color = { 186 120 177 }
+    name = "Brogzum"
+	terrain = red_hills
+	area = weshell
+	history += {
+		history_trade_goods = livestock
+		history_owner = grul_khaar
+	}
+}
+
+new area morgulth = {
+	name = "Morgulth"
+	region = grondha
+}
+new province zarzugh = {
+    inherit = orc_province
+    color = { 242 189 176 }
+    name = "Zarzugh"
+	terrain = red_hills
+	area = morgulth
+	history += {
+		history_trade_goods = stone
+		history_owner = khorr_drakash
+	}
+}
+new province thragmul = {
+    inherit = orc_province
+    color = { 124 184 197 }
+    name = "Thragmul"
+	terrain = red_hills
+	area = morgulth
+	history += {
+		history_trade_goods = livestock
+		history_owner = khorr_drakash
+	}
+}
+new province morgulth = {
+    inherit = orc_province
+    color = { 186 100 126 }
+    name = "Morgulth"
+	terrain = red_hills
+	area = morgulth
+	history += {
+		history_trade_goods = c_metals
+		history_owner = khorr_drakash
+	}
+}
+new province malharg = {
+    inherit = orc_province
+    color = { 200 201 254 }
+    name = "Malharg"
+	terrain = red_hills
+	area = morgulth
+	history += {
+		history_trade_goods = c_metals
+		history_owner = gron_vashn
+	}
+}
+
+new area grathrog = {
+	name = "Grathrog"
+	region = grondha
+}
+new province grathrog = {
+    inherit = orc_province
+    color = { 246 178 233 }
+    name = "Grathrog"
+	terrain = red_hills
+	area = grathrog
+	history += {
+		history_trade_goods = livestock
+		history_owner = zarv_norak
+	}
+}
+new province vuldrak = {
+    inherit = orc_province
+    color = { 166 126 104 }
+    name = "Vuldrak"
+	terrain = red_hills
+	area = grathrog
+	history += {
+		history_trade_goods = fur
+		history_owner = zarv_norak
+	}
+}
+new province uzgoth = {
+    inherit = orc_province
+    color = { 252 254 205 }
+    name = "Uzgoth"
+	terrain = red_hills
+	area = grathrog
+	history += {
+		history_trade_goods = r_metals
+		history_owner = zarv_norak
+	}
+}
+
+new area zulthag = {
+	name = "Zulthag"
+	region = grondha
+}
+new province malvur = {
+    inherit = orc_province
+    color = { 109 219 218 }
+    name = "Malvur"
+	terrain = red_hills
+	area = zulthag
+	history += {
+		history_trade_goods = silver
+		history_owner = luth_narzak
+	}
+}
+new province grondhul = {
+    inherit = orc_province
+    color = { 219 228 234 }
+    name = "Grondhul"
+	terrain = red_hills
+	area = zulthag
+	history += {
+		history_trade_goods = livestock
+		history_owner = luth_narzak
+	}
+}
+new province zulthag = {
+    inherit = orc_province
+    color = { 132 193 131 }
+    name = "Zulthag"
+	terrain = red_hills
+	area = zulthag
+	history += {
+		history_trade_goods = c_metals
+		history_owner = luth_narzak
+	}
+}
+
+new area vrakthar = {
+	name = "Vrakthar"
+	region = konner
+}
+new province drokmagh = {
+    inherit = orc_province
+    color = { 109 138 204 }
+    name = "Drokmagh"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = c_metals
+		history_owner = krav_dro
+	}
+}
+new province karghuun = {
+    inherit = orc_province
+    color = { 117 187 222 }
+    name = "Karghuun"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = r_metals
+		history_owner = krav_dro
+	}
+}
+new province vrakthar = {
+    inherit = orc_province
+    color = { 146 241 135 }
+    name = "Vrakthar"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = gold
+		history_owner = krav_dro
+	}
+}
+new province gorazhul = {
+    inherit = orc_province
+    color = { 233 186 246 }
+    name = "Gorazhul"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = livestock
+		history_owner = brakk_zul
+	}
+}
+new province makrogg = {
+    inherit = orc_province
+    color = { 131 209 164 }
+    name = "Makrogg"
+	terrain = red_hills
+	area = vrakthar
+	history += {
+		history_trade_goods = c_metals
+		history_owner = brakk_zul
+	}
 }

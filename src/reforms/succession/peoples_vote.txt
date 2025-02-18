@@ -1,0 +1,24 @@
+governments:monarchy:reform_levels:1 += new peoples_vote = {
+	name = "People's Vote"
+	desc = "In this system, the monarch’s successor is chosen through a vote of the people, whether directly or through appointed representatives. It is a system that puts the power of succession in the hands of the populace, allowing them to select the ruler they believe will serve them best, with the future monarch gaining legitimacy through popular consent."
+	inherit = default_reform
+	icon = self_governing_colony_government
+	modifiers = {
+		burghers_loyalty_modifier = 0.1
+		burghers_influence_modifier = 0.1
+		global_unrest = -1
+	}
+	election_on_death = yes
+	heir = no
+	custom_attributes = {
+		new_attribute = {
+			title = "Your heirs will start with higher administrative skill"
+			key = better_heir_adm
+		}
+	}
+}
+on_actions:on_new_heir += {
+	if [has_government_attribute = better_heir_adm] {
+		change_heir_adm = 1
+	}
+}

@@ -757,12 +757,12 @@ new interface_file provinceview = {
 			iconType = {
 				name = "improve_icon"
 				spriteType = "GFX_extra_development_icon"
-				position = { x = 384 y = 63 }
+				position = { x = -2384 y = 63 }
 			}
 
 			instantTextBoxType = {
 				name = "improve_value"
-				position = { x = 405 y = 68}
+				position = { x = -2405 y = 68}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}

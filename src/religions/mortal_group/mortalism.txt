@@ -1,0 +1,18 @@
+new religion mortalism = {
+	name = "Mortalism"
+	desc = "The gods are tyrrannical, callous, and unjust in their rule over the mortal world. This faith states that it is the duty of all people to oppose the divine."
+	icon = 2
+	color = {
+		0 0 0
+	}
+	heretic = {
+		OLD_GODS_CULT_HERETIC
+	}
+	country = {
+		relation_with_heathens = -50
+		reverse_relation_with_heathen_religion = -50
+	}
+	province = { }
+	religious_group = mortal_group
+	declare_war_in_regency = yes
+}

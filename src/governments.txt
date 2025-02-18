@@ -1,3 +1,12 @@
+new inheritable default_reform = {
+	icon = "empty"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = no
+	ai = {
+		factor = 1
+	}
+}
+
 new government monarchy = {
 	name = "Monarchy"
 	color = { 179 25 25 }
@@ -10,20 +19,32 @@ new government monarchy = {
 		valid_for_nation_designer = no
 		is_eligible_for_hre_emperor = yes
 		modifiers = { }
+		custom_attributes = {
+			has_birth_heir = yes
+		}
 	}
 	reform_levels = {
-		1 = "Government Policy"
-		2 = "Backbone of the Army"
-		3 = "Backbone of the Navy"
-		4 = "Position of Magic"
-		5 = "State and Religion"
-		6 = "Rulers Powers"
-		7 = "Bureaucracy"
-		8 = "Diplomacy"
-		9 = "Espionage"
-		10 = "Campaign Doctrine"
-		11 = "Advisors"
-		12 = "Trade Policy"
+		1 = "Succession"
+		2 = "Powerbase"
+		3 = "Church and State"
+		4 = "Nobility"
+		5 = "Bureaucracy"
+		6 = "Army Model"
+		7 = "Navy Model"
+		8 = "Military Doctrine"
+		9 = "Economic Policy"
+		10 = "Trade Policy"
+		11 = "Tax System"
+		12 = "Foreign Policy"
+		13 = "Colonization"
+		14 = "Policing"
+		15 = "Education"
+		16 = "Healthcare"
+		17 = "Welfare"
+		18 = "Mages"
+		19 = "Representation"
+		20 = "Legal System"
+		21 = "Governmental Quirk"
 	}
 }
 new government republic = {
@@ -48,78 +69,27 @@ new government republic = {
 		valid_for_nation_designer = no
 	}
 	reform_levels = {
-		1 = "Government Policy"
-		2 = "Backbone of the Army"
-		3 = "Backbone of the Navy"
-		4 = "Position of Magic"
-		5 = "State and Religion"
-		6 = "Rulers Powers"
-		7 = "Bureaucracy"
-		8 = "Diplomacy"
-		9 = "Espionage"
-		10 = "Campaign Doctrine"
-		11 = "Advisors"
-		12 = "Trade Policy"
-	}
-}
-new government tribal = {
-	name = "Tribal"
-	color = { 220 165 95 }
-	basic_reform = {
-		basic_reform = yes
-	
-		tribal = yes
-		monarchy = yes
-		valid_for_nation_designer = no
-		heir = yes
-		queen = yes
-		modifiers = { }
-	}
-	reform_levels = {
-		1 = "Government Policy"
-		2 = "Backbone of the Army"
-		3 = "Backbone of the Navy"
-		4 = "Position of Magic"
-		5 = "State and Religion"
-		6 = "Rulers Powers"
-		7 = "Bureaucracy"
-		8 = "Diplomacy"
-		9 = "Espionage"
-		10 = "Campaign Doctrine"
-		11 = "Advisors"
-		12 = "Trade Policy"
-	}
-}
-new government native = {
-	name = "Native"
-	color = { 194 127 209 }
-	basic_reform = {
-		basic_reform = yes
-	
-		native_mechanic = yes
-		allow_migration = yes
-		valid_for_new_country = yes
-		allow_convert = yes
-		republican_name = yes
-		royal_marriage = no
-		fixed_rank = 1
-		modifiers = { }
-		valid_for_nation_designer = yes
-		nation_designer_cost = 0
-	}
-	reform_levels = {
-		1 = "Government Policy"
-		2 = "Backbone of the Army"
-		3 = "Backbone of the Navy"
-		4 = "Position of Magic"
-		5 = "State and Religion"
-		6 = "Rulers Powers"
-		7 = "Bureaucracy"
-		8 = "Diplomacy"
-		9 = "Espionage"
-		10 = "Campaign Doctrine"
-		11 = "Advisors"
-		12 = "Trade Policy"
+		1 = "Elections"
+		2 = "Powerbase"
+		3 = "Church and State"
+		4 = "Nobility"
+		5 = "Bureaucracy"
+		6 = "Army Model"
+		7 = "Navy Model"
+		8 = "Military Doctrine"
+		9 = "Economic Policy"
+		10 = "Trade Policy"
+		11 = "Tax System"
+		12 = "Foreign Policy"
+		13 = "Colonization"
+		14 = "Policing"
+		15 = "Education"
+		16 = "Healthcare"
+		17 = "Welfare"
+		18 = "Mages"
+		19 = "Representation"
+		20 = "Legal System"
+		21 = "Governmental Quirk"
 	}
 }
 new government theocracy = {
@@ -140,38 +110,69 @@ new government theocracy = {
 		modifiers = { }
 	}
 	reform_levels = {
-		1 = "Government Policy"
-		2 = "Backbone of the Army"
-		3 = "Backbone of the Navy"
-		4 = "Position of Magic"
-		5 = "State and Religion"
-		6 = "Rulers Powers"
-		7 = "Bureaucracy"
-		8 = "Diplomacy"
-		9 = "Espionage"
-		10 = "Campaign Doctrine"
-		11 = "Advisors"
-		12 = "Trade Policy"
+		1 = "Leadership"
+		2 = "Powerbase"
+		3 = "Divine Cause"
+		4 = "Nobility"
+		5 = "Bureaucracy"
+		6 = "Army Model"
+		7 = "Navy Model"
+		8 = "Military Doctrine"
+		9 = "Economic Policy"
+		10 = "Trade Policy"
+		11 = "Tax System"
+		12 = "Foreign Policy"
+		13 = "Colonization"
+		14 = "Policing"
+		15 = "Education"
+		16 = "Healthcare"
+		17 = "Welfare"
+		18 = "Mages"
+		19 = "Representation"
+		20 = "Legal System"
+		21 = "Governmental Quirk"
 	}
 }
-new government remnant = {
-	name = "Remnant"
-	color = { 50 0 0 }
+new government tribal = {
+	name = "Tribal"
+	color = { 220 165 95 }
 	basic_reform = {
 		basic_reform = yes
 	
+		tribal = yes
 		monarchy = yes
+		valid_for_nation_designer = no
 		heir = yes
 		queen = yes
-		valid_for_nation_designer = no
 		modifiers = { }
+		
+		custom_attributes = {
+			has_birth_heir = yes
+		}
 	}
 	reform_levels = {
-		1 = "Government Policy"
-		2 = "Reform Military"
-		3 = "Reform Economy"
-		4 = "Reform Administration"
-		5 = "Reform Government"
+		1 = "Tribal Government"
+	}
+}
+new government native = {
+	name = "Native"
+	color = { 194 127 209 }
+	basic_reform = {
+		basic_reform = yes
+	
+		native_mechanic = yes
+		allow_migration = yes
+		valid_for_new_country = yes
+		allow_convert = yes
+		republican_name = yes
+		royal_marriage = no
+		fixed_rank = 1
+		modifiers = { }
+		valid_for_nation_designer = yes
+		nation_designer_cost = 0
+	}
+	reform_levels = {
+		1 = "Native Government"
 	}
 }
 
@@ -406,10 +407,7 @@ new inheritable default_tribal_names = {
 new government_names default_monarchy = {
 	inherit = default_monarchy_names
 	trigger = {
-		OR = {
-			government = remnant
-			government = monarchy
-		}
+		government = monarchy
 	}
 }
 new government_names default_republic = {

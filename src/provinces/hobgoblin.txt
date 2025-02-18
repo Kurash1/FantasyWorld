@@ -499,7 +499,7 @@ new province zurenkir = {
 	terrain = red_plains
 	area = shanter_peak
 	history += {
-		history_trade_goods	= ebony
+		history_trade_goods	= gods_blood
 		history_owner = turn
 	}
 }
@@ -1353,9 +1353,11 @@ new province tharzga = {
     name = "Tharzga"
 	area = zurvakhol
 	terrain = red_hills
-	history += {
+	history = {
+		religion = orcish_pantheon
+		culture = sword_orc
 		history_trade_goods	= livestock
-		history_owner = zurvakhol
+		history_owner = thrazh_gul
 	}
 }
 new province mazgothu = {
@@ -1373,9 +1375,11 @@ new province mazgothu = {
     name = "Mazgothu"
 	area = zurvakhol
 	terrain = red_hills
-	history += {
+	history = {
+		religion = orcish_pantheon
+		culture = sword_orc
 		history_trade_goods	= stone
-		history_owner = zurvakhol
+		history_owner = brakk_zul
 	}
 }
 new province zurvakhol = {
@@ -1396,5 +1400,6 @@ new province zurvakhol = {
 	history += {
 		history_trade_goods	= potions
 		history_owner = zurvakhol
+		add_dig_site
 	}
 }

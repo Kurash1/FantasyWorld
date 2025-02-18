@@ -1,0 +1,36 @@
+interface_files:provinceview:provinceview:province_window += {
+	instantTextBoxType = {
+		name = "population_progress_text"
+		position = { x = 384 y = 68 }
+		textureFile = ""
+		font = "vic_18"
+		borderSize = { x = 2 y = 2 }
+		text = "123"
+		maxWidth = 61
+		maxHeight = 20
+		format = centre
+		fixedsize = yes
+		scripted = yes
+	}
+}
+
+new custom_text_box population_progress_text = {
+	name = "[population.GetValue]"
+	tooltip = "Each {POPULATION_PER_POP} population grants the following modifier:
+	{modifier_to_string = static_modifiers:development}
+
+Pop Growth Per Year: [This.pop_growth_per_year.GetValue]
+Pop Growth Per Decade: [This.pop_growth_per_decade.GetValue]
+Pop Growth Per Century: [This.pop_growth_per_century.GetValue]
+Pop Growth To End: [This.pop_growth_to_end.GetValue]
+
+Pop Growth Rate: [This.var_pop_growth_rate.GetValue]
+	+[This.development.GetValue] (population)
+
+Pop Growth Modifier: [This.var_pop_growth_modifier.GetValue]%
+	+100% (base)
+	+[This.Owner.var_pop_growth_modifier.GetValue]% (country)
+	+[This.local_pop_growth_modifier.GetValue]% (local)
+	-[This.devastation.GetValue]% (devastation)
+"
+}

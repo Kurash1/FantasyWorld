@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:2 += new constitution = {
+	name = "Constitution"
+	desc = "In our country the law is absolute. A codified legal code guarantees the rights and responsiblities of every citizien. Rights and responsibilities are therefore enforceable at courts."
+	inherit = default_reform
+	icon = paper_with_seal
+	custom_attributes = {
+		can_not_seize_land = yes
+	}
+	modifiers = {
+		stability_cost_modifier = -0.15
+		harsh_treatment_cost = 0.5
+	}
+}

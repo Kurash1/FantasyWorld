@@ -1,6 +1,33 @@
+# ⠀⠀⠀⠀⠀⠀⣀⡤⠤⠖⣒⠒⠦⠤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+# ⠀⠀⠀⢀⡔⠫⠔⡠⢍⢒⣤⠽⠒⠛⠉⠉⠙⠒⠠⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+# ⠀⠀⠀⡞⡄⢣⠑⣌⠶⠋⠀⢀⡠⠔⠒⠉⠉⠉⠉⠉⠙⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀
+# ⠀⢀⡴⢳⡱⡈⢦⠟⠀⠀⡠⠊⠁⠀⠀⠀⠀⠀⠀⠀⡔⠉⠉⠒⡄⠀⠀⠀⠀⠀⠀
+# ⡰⢋⠰⠹⣍⣳⡏⠀⢀⠎⠀⢀⡤⠤⠤⢄⡀⠀⠀⢸⢰⣿⢱⡀⠈⡄⠀⠀⠀⠀⠀
+# ⠛⠋⢹⣿⣷⣿⡇⠀⢸⠀⡰⣡⣶⠦⡀⠀⠙⡄⠀⠘⡜⢿⡿⠁⢀⠇⠀⢀⣀⡀⠀
+# ⠀⠀⠈⢮⡛⠿⣧⠀⢸⠀⢇⣿⣿⣶⡇⠀⠀⡹⠀⠀⠈⠒⠤⡔⠁⠀⠀⠘⡜⡜⡄
+# ⠀⠀⢠⠺⣝⣳⣮⣇⠀⢣⠘⢮⡙⠉⠀⣀⠴⠁⠀⠀⣀⡼⡙⡍⢢⣀⣀⣠⠇⣴⠃
+# ⢀⢴⡉⠓⠤⠤⡔⠁⢑⠢⠵⠦⢬⡭⣭⠥⡞⢏⠹⣭⠥⣗⣿⠘⡌⣇⣈⠥⠔⠁⠀
+# ⠸⡈⠑⠢⢤⠔⠁⠀⠘⡤⠤⠤⠚⣷⣻⠀⠣⡈⠢⣙⠶⣛⡽⢀⢣⠋⠉⠀⠀⠀⠀
+# ⠀⠈⠉⠉⠉⠀⠀⠀⠀⢟⠒⠒⢊⣹⡀⠀⠀⠈⠢⣀⡀⣀⣠⣯⡎⠀⠀⠀⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠯⢍⣁⠤⠅⠀⠀⠀⠀⠀⠘⠛⠓⠉⠀⠀⠀⠀⠀⠀⠀
+
+new define NDefines.NCountry.REVOLT_SIZE_BASE = 1
+new define NDefines.NCountry.REVOLT_TECH_IMPACT = 0
+new define NDefines.NCountry.REVOLT_TECH_MORALE = 0
+new define NDefines.NCountry.REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.1
+#new define NDefines.NCountry.STATE_MAINTENANCE_DEV_FACTOR = 0.007
+#new define NDefines.NCountry.COUNTRY_DEVELOPMENT_SCALE = 4000
+#new define NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 1000
+#new define NDefines.NCountry.MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 10000
+
+new define NDefines.NDiplomacy.AE_PROVINCE_CAP = 10000
+
 new define NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
 
 new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25
+
+new define NDefines.NCountry.ALLOW_FEMALE_GENERALS = 1
+new define NDefines.NCountry.FEMALE_ADVISOR_CHANCE = 50
 
 new named_effect free_merc_company_list = {
 	
@@ -215,8 +242,9 @@ new bookmark claimants_of_the_sword = {
 	date = 2568.1.1
 	countries = {
 		#orc
-		bookmark_country = zorr_khanth
+		bookmark_country = brakk_zul
 		bookmark_country = thraal_kur
+		bookmark_country = krav_dro
 		bookmark_easy_country = drog_khaal
 		
 		#hobgoblin

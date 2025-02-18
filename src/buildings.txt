@@ -601,6 +601,6 @@ new building mine_manufactory = {
 	cost = 500
 	time = 60
 	manufactory = {
-		gems c_metals r_metals ebony
+		gems c_metals r_metals gods_blood
 	}
 }
