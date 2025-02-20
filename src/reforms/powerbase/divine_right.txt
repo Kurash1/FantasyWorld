@@ -9,3 +9,5 @@ governments:monarchy:reform_levels:2 += new divine_right = {
 		tolerance_own = 1
 	}
 }
+governments:republic:reform_levels:2 += divine_right
+governments:theocracy:reform_levels:2 += divine_right

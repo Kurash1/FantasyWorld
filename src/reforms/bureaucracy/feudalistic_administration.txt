@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new feudalistic_administration = {
+	name = "Feudalistic Administration"
+	desc = "The country is divided into fiefdoms that are handed out by the ruler to the next highest level of nobility. This continues down to the lowest rank nobles in the country. This system makes the nobility in such a country quite powerful as they govern vast estates in name of the ruler."
+	inherit = default_reform
+	icon = nobleman
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:13 += feudalistic_administration
+governments:theocracy:reform_levels:13 += feudalistic_administration

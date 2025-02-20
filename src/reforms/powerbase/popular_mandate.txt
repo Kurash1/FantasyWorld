@@ -8,3 +8,5 @@ governments:monarchy:reform_levels:2 += new popular_mandate = {
 		harsh_treatment_cost = 0.25
 	}
 }
+governments:republic:reform_levels:2 += popular_mandate
+governments:theocracy:reform_levels:2 += popular_mandate

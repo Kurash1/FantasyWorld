@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:18 += new civil_law = {
+	name = "Civil Law"
+	desc = "The law is absolute in this country nothing it says is up for debate everything is codified. Precedent is a thing unknown in this country. Most countries like this do not know jury trials either."
+	inherit = default_reform
+	icon = arabic_scripture
+	trigger = {
+		has_reform = constitution
+	}
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:18 += civil_law
+governments:theocracy:reform_levels:18 += civil_law

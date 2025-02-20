@@ -1,0 +1,42 @@
+governments:monarchy:reform_levels:5 += new aristocracy_monarchy = {
+	name = "Aristocracy"
+	desc = "This realm outright replaced its former ruler with a system of elected nobles that now govern the state as a noble republic. Power is carefully arranged to keep one family from dominating and rival houses constantly vie for controll over key institutions of the government."
+	inherit = default_reform
+	icon = nobleman
+	modifiers = {
+		
+	}
+	effect = {
+		hidden_effect = {
+			foreach $tier in governments:monarchy:reform_levels {
+				foreach $reform in $tier:reforms {
+					if [has_reform = $reform] {
+						set_country_flag = $reform
+					}
+				}
+			}
+		}
+		
+		change_government = republic
+		
+		hidden_effect = {
+			foreach $tier in governments:republic:reform_levels {
+				foreach $reform in $tier:reforms {
+					if [has_country_flag = $reform] {
+						add_government_reform = $reform
+					}
+				}
+			}
+			foreach $tier in governments:monarchy:reform_levels {
+				foreach $reform in $tier:reforms {
+					if [has_country_flag = $reform] {
+						clr_country_flag = $reform
+					}
+				}
+			}
+		}
+		
+		add_government_reform = aristocracy_republic
+		add_government_reform = empowered_nobility
+	}
+}

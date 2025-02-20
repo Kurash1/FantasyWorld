@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:3 += new privileged_clergy = {
+governments:monarchy:reform_levels:4 += new privileged_clergy = {
 	name = "Privileged Clergy"
 	desc = "While the church is not in full control of the government they are still vastly influential in this realm. Their ancient rights and privilegia cannot be denied."
 	inherit = default_reform
@@ -8,3 +8,4 @@ governments:monarchy:reform_levels:3 += new privileged_clergy = {
 		church_loyalty_modifier = 0.10
 	}
 }
+governments:republic:reform_levels:4 += privileged_clergy

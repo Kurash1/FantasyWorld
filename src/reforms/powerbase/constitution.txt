@@ -11,3 +11,5 @@ governments:monarchy:reform_levels:2 += new constitution = {
 		harsh_treatment_cost = 0.5
 	}
 }
+governments:republic:reform_levels:2 += constitution
+governments:theocracy:reform_levels:2 += constitution

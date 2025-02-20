@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new hereditary_bureaucrats = {
+	name = "Hereditary Bureaucrats"
+	desc = "Bureaucracial positions are hereditary in this country no prior qualification needed. The oldest child of any given bureaucrat inherits their position."
+	inherit = default_reform
+	icon = man_and_children
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:13 += hereditary_bureaucrats
+governments:theocracy:reform_levels:13 += hereditary_bureaucrats

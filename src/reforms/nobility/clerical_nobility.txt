@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:5 += new clerical_nobility = {
+	name = "Clerical Nobility"
+	desc = "Originally developing out of the divine right to rule this country spun the idea further making the clergy itself the only true source of nobility. The clergy in this country is henceforth vastly influencial in secular matters as well."
+	inherit = default_reform
+	icon = clergyman
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:5 += clerical_nobility
+governments:theocracy:reform_levels:5 += clerical_nobility

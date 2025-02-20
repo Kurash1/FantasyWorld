@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new religious_law = {
+	name = "Religious Law"
+	desc = "Law in this country is defined by divine decree, holy scripture or some other form of god given law. Positive law, that means law made by people still finds effect here but it is seen as inferior to the natural law as decreed by the god(s)."
+	inherit = default_reform
+	icon = warrior_monks_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:18 += religious_law
+governments:theocracy:reform_levels:18 += religious_law

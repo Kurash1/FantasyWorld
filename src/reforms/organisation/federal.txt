@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:3 += new federalism = {
+	name = "Federalism"
+	desc = "The country is divided into semi sovereign entities known as states. Those states hold vast power of their own and the federal government cannot govern without them. Many countries with strong regional identities use this system to reduce the stress of governing. In return the states expect the federal government to care for them and a say in national politics."
+	inherit = default_reform
+	icon = tribal_centralize_power
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:3 += federalism
+governments:theocracy:reform_levels:3 += federalism

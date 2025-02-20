@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:5 += new empowered_nobility = {
+	name = "Empowered Nobility"
+	desc = "For one reason or the other the nobility of this realm positioned itself as the center piece of governance. Their lands and wealth are vast and nothing can be done against their will. They demand special treatment and privilegia from every ruler that is allowed to serf under them."
+	inherit = default_reform
+	icon = austrian_archduchy_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:5 += empowered_nobility
+governments:theocracy:reform_levels:5 += empowered_nobility

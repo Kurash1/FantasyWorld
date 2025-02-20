@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:5 += new abolishment_of_the_nobility = {
+	name = "Abolishment of the Nobility"
+	desc = "Too long thieves and robbers pretending to be of noble blood have acted as parasites upon our very progress. Their time is over now. Their land, that they illegally acquired and their wealth will be confiscated and redistributed by alotment to the farmers. Their ancient privileges and special rights denied and those that call themselves noble prosecuted."
+	inherit = default_reform
+	icon = fist_in_air
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:5 += abolishment_of_the_nobility
+governments:theocracy:reform_levels:5 += abolishment_of_the_nobility

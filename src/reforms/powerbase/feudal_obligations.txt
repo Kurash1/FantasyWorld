@@ -10,3 +10,5 @@ governments:monarchy:reform_levels:2 += new feudal_obligations = {
 		vassal_income = 0.2
 	}
 }
+governments:republic:reform_levels:2 += feudal_obligations
+governments:theocracy:reform_levels:2 += feudal_obligations

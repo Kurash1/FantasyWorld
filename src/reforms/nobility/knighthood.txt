@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:5 += new knighthood = {
+	name = "Knighthood"
+	desc = "Our nobles are expected to lead the army by example. They are supposed to be the first to charge into battle be it mounted or on foot. They fight and die for the glory of the state, their dynasties and their self. The state often grants castles and plots of lands to those knights who in peace time administer the land in name of their liege. In return they are bound to rally to their lord's or lady's banner."
+	inherit = default_reform
+	icon = soldiers_6
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:5 += knighthood
+governments:theocracy:reform_levels:5 += knighthood

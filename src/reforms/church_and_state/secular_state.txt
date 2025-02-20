@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:3 += new secular_state = {
+governments:monarchy:reform_levels:4 += new secular_state = {
 	name = "Secular State"
 	desc = "The state does not meddle in the affairs of the clergy in our country and in return the clergy abstains largely from politics. Although some minor cultural impact may remain this is accepted as a necessary evil. The government also ensures that religious freedom and the expression of religion remain free for every citizien as long as it does not harm anyone else."
 	inherit = default_reform
@@ -9,3 +9,4 @@ governments:monarchy:reform_levels:3 += new secular_state = {
 		can_not_build_missionaries = yes
 	}
 }
+governments:republic:reform_levels:4 += secular_state

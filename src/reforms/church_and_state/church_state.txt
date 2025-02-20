@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:3 += new church_state = {
+governments:monarchy:reform_levels:4 += new church_state = {
 	name = "Church State"
 	desc = "Religion and governance are so utterly entertwined in our country that it is impossible to tell them apart."
 	inherit = default_reform
@@ -8,3 +8,4 @@ governments:monarchy:reform_levels:3 += new church_state = {
 		global_missionary_strength = 0.01
 	}
 }
+governments:republic:reform_levels:4 += church_state

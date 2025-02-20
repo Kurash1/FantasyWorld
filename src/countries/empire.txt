@@ -13,7 +13,14 @@ new inheritable empire_country = {
 		}
 		apply_government = {
 			primogeniture
-			military_backing
+			feudal_obligations
+			unitarism
+			privileged_clergy
+			empowered_nobility
+			
+			feudalistic_administration
+			
+			common_law
 		}
 	}
 }

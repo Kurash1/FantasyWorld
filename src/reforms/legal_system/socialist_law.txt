@@ -1,0 +1,17 @@
+governments:monarchy:reform_levels:18 += new socialist_law = {
+	name = "Socialist Law"
+	desc = "Like civil law but here everything is state owned private ownership is acknowledged only in a very very limited scope."
+	inherit = default_reform
+	icon = revolutionary_republic
+	potential = {
+		has_reform = socialist_law
+	}
+	trigger = {
+		has_reform = socialist_law
+	}
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:18 += socialist_law
+governments:theocracy:reform_levels:18 += socialist_law

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new customary_law = {
+	name = "Customary Law"
+	desc = "This system relies on ancient behavorial patterns and can therefore vary wildly in whatever form or shape it takes. It also requires every relevant person involved with it to be acknowlding that this practice is indeed the law."
+	inherit = default_reform
+	icon = tribal_lip_service
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:18 += customary_law
+governments:theocracy:reform_levels:18 += customary_law

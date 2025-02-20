@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:3 += new unitarism = {
+	name = "Unitarism"
+	desc = "The central government is the sole sovereign government in this country and enforces all the laws. Provinces have only minimal rights and always have to answer to the central government."
+	inherit = default_reform
+	icon = parliament
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:3 += unitarism
+governments:theocracy:reform_levels:3 += unitarism

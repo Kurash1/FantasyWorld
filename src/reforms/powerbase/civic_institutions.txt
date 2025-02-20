@@ -9,3 +9,5 @@ governments:monarchy:reform_levels:2 += new civic_institutions = {
 		global_unrest = -0.5
 	}
 }
+governments:republic:reform_levels:2 += civic_institutions
+governments:theocracy:reform_levels:2 += civic_institutions

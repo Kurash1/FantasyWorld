@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:13 += new devolution = {
+	name = "Devolution"
+	desc = "The central government devolved some powers of policing and governing down to the provinces who can now enforce them as they see fit. This severly reduces the strain of the central government and makes the regions feel more important. Potentially however cries for more autonomy will be heard out of the provinces. Regardless the central government retains the power of the ultimate decision should the regions fail to uphold their task."
+	inherit = default_reform
+	icon = dutch_republic
+	trigger = {
+		has_reform = federacy
+	}
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:13 += devolution
+governments:theocracy:reform_levels:13 += devolution

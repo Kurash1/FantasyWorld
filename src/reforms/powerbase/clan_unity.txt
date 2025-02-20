@@ -9,3 +9,5 @@ governments:monarchy:reform_levels:2 += new clan_unity = {
 		governing_capacity_modifier = -0.1
 	}
 }
+governments:republic:reform_levels:2 += clan_unity
+governments:theocracy:reform_levels:2 += clan_unity

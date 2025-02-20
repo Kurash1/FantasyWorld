@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new political_appointment = {
+	name = "Political Appointment"
+	desc = "Any given government appoints those who are in line with their political view of things. In republics this means short before elections appointments often skyrocket in large numbers. In monarchies and theocracies new rulers sometimes try to outmaneuver old bureaucrats to place people more agreeable with them into such positions."
+	inherit = default_reform
+	icon = egalite_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:13 += political_appointment
+governments:theocracy:reform_levels:13 += political_appointment
