@@ -2261,7 +2261,7 @@ new province eldrisc = {
 
 # Astveil
 define_census = { population = {
-	{ val = 416.692 prov = drekkyn }
+	{ val = 316.692 prov = drekkyn }
 	{ val = 204.722 prov = wastcit }
 	{ val = 141.949 prov = shannach }
 	{ val = 108.712 prov = veylkeil }
@@ -2285,7 +2285,7 @@ define_census = { population = {
 
 # Thornen
 define_census = { population = {
-	{ val = 430.892 prov = port_rosen }
+	{ val = 330.892 prov = port_rosen }
 	{ val = 212.127 prov = roseria }
 	{ val = 135.789 prov = veshen_place }
 	{ val = 105.508 prov = nomstad }
@@ -2306,7 +2306,7 @@ define_census = { population = {
 
 # Veshni
 define_census = { population = {
-	{ val = 579.709 prov = ireiveshni }
+	{ val = 379.709 prov = ireiveshni }
 	{ val = 295.396 prov = veshni_konnack }
 	{ val = 195.083 prov = shakmyr }
 	{ val = 145.589 prov = velstaya }
@@ -2328,17 +2328,17 @@ define_census = { population = {
 # Western Minors
 define_census = { population = {
 	# Bittergate
-	{ val = 185.669 prov = bittergate }
+	{ val = 125.669 prov = bittergate }
 	{ val = 97.264 prov = olderod }
 	{ val = 54.751 prov = holden }
 	# Greenrock
-	{ val = 203.883 prov = greenrock }
+	{ val = 123.883 prov = greenrock }
 	{ val = 100.229 prov = stonewell }
 	{ val = 68.691 prov = brigerton }
 	# One Province Minors
-	{ val = 220.300 prov = aramant }
-	{ val = 230.502 prov = keepstone }
-	{ val = 226.842 prov = maidenkeep }
+	{ val = 110.300 prov = aramant }
+	{ val = 100.502 prov = keepstone }
+	{ val = 126.842 prov = maidenkeep }
 } }
 
 # Tyllerdrakes
@@ -2348,7 +2348,7 @@ define_census = { population = {
 	{ val = 58.366  prov = drakketh }
 	{ val = 37.457  prov = veyrnell }
 	# Urtdrak
-	{ val = 268.887 prov = askirn }
+	{ val = 188.887 prov = askirn }
 	{ val = 132.661 prov = drelgath }
 	{ val = 93.995  prov = skovairn }
 	{ val = 61.355  prov = thallisk }
@@ -2356,14 +2356,14 @@ define_census = { population = {
 	{ val = 48.312  prov = korrveil }
 	{ val = 34.513  prov = shalketh }
 	# Ekadrak
-	{ val = 248.662 prov = iskmor }
+	{ val = 178.662 prov = iskmor }
 	{ val = 131.377 prov = teyrloch }
 	{ val = 85.851  prov = dorrikash }
 	{ val = 64.911  prov = sornich }
 	{ val = 43.231  prov = jorrveil }
 	{ val = 40.464  prov = vynmorn }
 	# Viltdrak
-	{ val = 224.384 prov = arkveil }
+	{ val = 154.384 prov = arkveil }
 	{ val = 120.248 prov = oskveil }
 	{ val = 81.606  prov = zhendrik }
 	{ val = 58.674  prov = meylthorne }
@@ -2373,7 +2373,7 @@ define_census = { population = {
 
 # Riven Grain Lands
 define_census = { population = {
-	{ val = 309.760 prov = volzeburg }
+	{ val = 259.760 prov = volzeburg }
 	{ val = 235.658 prov = kornyshiv }
 	{ val = 183.826 prov = kolomyr }
 	{ val = 153.318 prov = drevnaya }
