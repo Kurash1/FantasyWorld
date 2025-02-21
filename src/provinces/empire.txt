@@ -2261,68 +2261,68 @@ new province eldrisc = {
 
 # Astveil
 define_census = { population = {
-	{ val = 316.692 prov = drekkyn }
-	{ val = 204.722 prov = wastcit }
-	{ val = 141.949 prov = shannach }
-	{ val = 108.712 prov = veylkeil }
-	{ val = 80.889  prov = olbrend }
-	{ val = 70.577  prov = sovcur }
-	{ val = 62.340  prov = kornache }
-	{ val = 59.776  prov = olkash }
-	{ val = 46.452  prov = ahhelveyl }
-	{ val = 37.964  prov = omayrk }
-	{ val = 42.674  prov = dakgat }
-	{ val = 33.493  prov = doveyr }
-	{ val = 31.683  prov = drekeyr }
-	{ val = 31.363  prov = vekmont }
-	{ val = 32.067  prov = swokgat }
-	{ val = 24.080  prov = aksmal }
-	{ val = 31.607  prov = veylirk }
-	{ val = 22.422  prov = jokilly }
-	{ val = 16.229  prov = ireyveil }
-	{ val = 20.350  prov = askgat }
+	{ val = 323.292 prov = drekkyn }
+	{ val = 211.753 prov = wastcit }
+	{ val = 156.806 prov = shannach }
+	{ val = 128.447 prov = veylkeil }
+	{ val = 101.571 prov = olbrend }
+	{ val = 96.975  prov = sovcur }
+	{ val = 80.267  prov = kornache }
+	{ val = 66.540  prov = olkash }
+	{ val = 61.547  prov = ahhelveyl }
+	{ val = 63.263  prov = omayrk }
+	{ val = 55.871  prov = dakgat }
+	{ val = 52.448  prov = doveyr }
+	{ val = 47.549  prov = drekeyr }
+	{ val = 42.931  prov = vekmont }
+	{ val = 38.291  prov = swokgat }
+	{ val = 42.637  prov = aksmal }
+	{ val = 33.012  prov = veylirk }
+	{ val = 32.176  prov = jokilly }
+	{ val = 30.363  prov = ireyveil }
+	{ val = 33.147  prov = askgat }
 } }
 
 # Thornen
 define_census = { population = {
-	{ val = 330.892 prov = port_rosen }
-	{ val = 212.127 prov = roseria }
-	{ val = 135.789 prov = veshen_place }
-	{ val = 105.508 prov = nomstad }
-	{ val = 80.951  prov = quarwaine_ford }
-	{ val = 67.983  prov = rose_bridge }
-	{ val = 64.806  prov = grenfield }
-	{ val = 52.434  prov = thorn_keep }
-	{ val = 49.959  prov = rowan_tower }
-	{ val = 42.234  prov = rosen_forest }
-	{ val = 39.389  prov = elfgarden }
-	{ val = 34.246  prov = watargate }
-	{ val = 29.434  prov = thornwoods }
-	{ val = 30.500  prov = arkenrod }
-	{ val = 20.764  prov = dragons_landing }
-	{ val = 30.252  prov = drakonaire }
-	{ val = 23.320  prov = oudwae }
+	{ val = 321.568 prov = port_rosen }
+	{ val = 212.211 prov = roseria }
+	{ val = 163.376 prov = veshen_place }
+	{ val = 125.287 prov = nomstad }
+	{ val = 105.767 prov = quarwaine_ford }
+	{ val = 91.114  prov = rose_bridge }
+	{ val = 83.458  prov = grenfield }
+	{ val = 71.460  prov = thorn_keep }
+	{ val = 68.064  prov = rowan_tower }
+	{ val = 54.522  prov = rosen_forest }
+	{ val = 50.123  prov = elfgarden }
+	{ val = 56.771  prov = watargate }
+	{ val = 44.026  prov = thornwoods }
+	{ val = 43.668  prov = arkenrod }
+	{ val = 45.025  prov = dragons_landing }
+	{ val = 38.218  prov = drakonaire }
+	{ val = 38.132  prov = oudwae }
 } }
 
 # Veshni
 define_census = { population = {
-	{ val = 379.709 prov = ireiveshni }
-	{ val = 295.396 prov = veshni_konnack }
-	{ val = 195.083 prov = shakmyr }
-	{ val = 145.589 prov = velstaya }
-	{ val = 117.413 prov = zovrakin }
-	{ val = 91.431  prov = olyvren }
-	{ val = 77.640  prov = haldrak }
-	{ val = 70.117  prov = veshkaya }
-	{ val = 61.936  prov = morysha }
-	{ val = 52.410  prov = tarovesh }
-	{ val = 47.334  prov = orlyvek }
-	{ val = 49.550  prov = askoven }
-	{ val = 43.101  prov = sovrekh }
-	{ val = 36.362  prov = olshad }
-	{ val = 40.721  prov = myrvekh }
-	{ val = 30.760  prov = soryvek }
-	{ val = 34.912  prov = konnack }
+	{ val = 365.847 prov = ireiveshni }
+	{ val = 249.657 prov = veshni_konnack }
+	{ val = 191.545 prov = shakmyr }
+	{ val = 148.121 prov = velstaya }
+	{ val = 119.993 prov = zovrakin }
+	{ val = 111.484 prov = olyvren }
+	{ val = 93.916  prov = haldrak }
+	{ val = 88.503  prov = veshkaya }
+	{ val = 74.470  prov = morysha }
+	{ val = 65.076  prov = tarovesh }
+	{ val = 57.305  prov = orlyvek }
+	{ val = 54.758  prov = askoven }
+	{ val = 54.150  prov = sovrekh }
+	{ val = 41.121  prov = olshad }
+	{ val = 40.475  prov = myrvekh }
+	{ val = 40.575  prov = soryvek }
+	{ val = 41.558  prov = konnack }
 } }
 
 # Western Minors
