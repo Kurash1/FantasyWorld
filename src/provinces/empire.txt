@@ -2400,6 +2400,7 @@ define_census = { population = {
 	{ val = 39.879  prov = staryvolk }
 } }
 
+# Riven Swamp Lands
 define_census = { population = {
 	{ val = 70.255 prov = sovliska }
 	{ val = 53.043 prov = askervir }
@@ -2415,6 +2416,36 @@ define_census = { population = {
 	{ val = 15.391 prov = drelmora }
 	{ val = 19.547 prov = miroshka }
 	{ val = 18.461 prov = iskorva }
+} }
+
+# Imperial Watar
+define_census = { population = {
+	{ val = 152.264 prov = glenmareth }
+	{ val = 118.992 prov = breochal }
+	{ val = 99.958  prov = talyara }
+	{ val = 80.075  prov = yew_tower }
+	{ val = 64.861  prov = ash_tower }
+	{ val = 62.911  prov = rosegarden }
+	{ val = 60.324  prov = cairnvoe }
+	{ val = 47.738  prov = kelvaran }
+	{ val = 46.185  prov = rothwyn }
+	{ val = 45.590  prov = mornatha }
+	{ val = 41.909  prov = druimlach }
+	{ val = 30.627  prov = cathanwynd }
+	{ val = 31.087  prov = caerwynn }
+	{ val = 34.869  prov = dunavon }
+	{ val = 25.102  prov = luthgwen }
+	{ val = 23.754  prov = torrveyl }
+	{ val = 28.136  prov = caltrith }
+	{ val = 25.337  prov = inisfell }
+	{ val = 19.037  prov = cairwych }
+	{ val = 21.338  prov = torvean }
+	{ val = 21.266  prov = marnocairn }
+	{ val = 19.278  prov = eldrisc }
+	{ val = 19.354  prov = estwyn }
+	{ val = 22.347  prov = oronsay }
+	{ val = 16.223  prov = glenvraith }
+	{ val = 14.277  prov = llynbreck }
 } }
 
 quick_strait = {
