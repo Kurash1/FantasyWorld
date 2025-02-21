@@ -4,6 +4,7 @@ new inheritable demon_province = {
 	height = { 0.365 0.365 0.365 0.365 0.365 0.365 0.365 }
 	history = {
 	}
+	impassible = yes
 }
 
 new area malgarthis = {

@@ -3,6 +3,7 @@ new inheritable undersea_province = {
 	rotation = { }
 	height = { }
 	history = { }
+	impassible = yes
 }
 
 new province vost = {
