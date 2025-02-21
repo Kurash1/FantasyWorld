@@ -2,6 +2,8 @@ new region black_mountain = {
 	name = "Black Mountain"
 	superregion = black_mountain
 }
+
+# Sword-Valley
 new region ivin = {
 	name = "Ivin River"
 	superregion = sword_valley
@@ -19,6 +21,7 @@ new region grondha = {
 	superregion = sword_valley
 }
 
+# Heartlands
 new region tyller_hills = {
 	name = "Tyller Hills"
 	superregion = heartlands
@@ -27,13 +30,19 @@ new region heartlands = {
 	name = "Heartlands"
 	superregion = heartlands
 }
-new region riven_river = {
-	name = "Riven River"
-	superregion = heartlands
-}
 new region watar_forest = {
 	name = "Watar Forest"
 	superregion = heartlands
+}
+
+# Viltlans
+new region riven_river = {
+	name = "Riven River"
+	superregion = viltlands
+}
+new region gellerthal = {
+	name = "Gellerthal"
+	superregion = viltlands
 }
 
 new region eastmarch = {

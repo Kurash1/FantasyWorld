@@ -155,63 +155,6 @@ new province wasteland_28 = {
     name = "wasteland 28"
 }
 
-new province chesstown = {
-	inherit = empire_province
-	color = { 142 156 201 }
-	name = "Chesstown"
-	history += {
-		history_owner = chesstown
-	}
-}
-
-new province dicetown = {
-	inherit = empire_province
-	color = { 129 177 121 }
-	name = "Dicetown"
-	history += {
-		history_owner = dicetown
-	}
-}
-
-new province cardtown = {
-	inherit = empire_province
-	color = { 233 133 254 }
-	name = "Cardtown"
-	history += {
-		history_owner = cardtown
-	}
-}
-
-new province nightgate = {
-	inherit = empire_province
-	color = { 220 171 198 }
-	name = "Nightgate"
-	history += {
-		history_owner = nightgate
-	}
-}
-
-new province empire_11 = {
-	inherit = empire_province
-	color = { 229 249 172 }
-	name = "empire 11"
-	history += { }
-}
-
-new province empire_12 = {
-	inherit = empire_province
-	color = { 209 187 104 }
-	name = "empire 12"
-	history += { }
-}
-
-new province empire_13 = {
-	inherit = empire_province
-	color = { 130 128 193 }
-	name = "empire 13"
-	history += { }
-}
-
 new province streamford = {
 	inherit = empire_province
 	color = { 149 174 175 }
@@ -230,196 +173,12 @@ new province empire_15 = {
 	}
 }
 
-new province hamburrow = {
+new province nightgate = {
 	inherit = empire_province
-	color = { 219 193 103 }
-	name = "Hamburrow"
+	color = { 220 171 198 }
+	name = "Nightgate"
 	history += {
-		history_owner = hamburrow
-	}
-}
-
-new province tinkerton = {
-	inherit = empire_province
-	color = { 165 113 232 }
-	name = "Tinkerton"
-	history += {
-		history_owner = tinkerton
-	}
-}
-
-new province novenhaven = {
-	inherit = empire_province
-	color = { 186 176 180 }
-	name = "Novenhaven"
-	history += {
-		history_owner = novenhaven
-	}
-}
-
-new province empire_40 = {
-	inherit = empire_province
-	color = { 101 140 196 }
-	name = "empire 40"
-	history += {
-		history_owner = novenhaven
-	}
-}
-
-new province empire_41 = {
-	inherit = empire_province
-	color = { 225 216 166 }
-	name = "empire 41"
-	history += { }
-}
-
-new province empire_42 = {
-	inherit = empire_province
-	color = { 224 225 139 }
-	name = "empire 42"
-	history += { }
-}
-
-new province empire_43 = {
-	inherit = empire_province
-	color = { 232 150 125 }
-	name = "empire 43"
-	history += { }
-}
-
-new province empire_45 = {
-	inherit = empire_province
-	color = { 123 168 208 }
-	name = "empire 45"
-	history += { }
-}
-
-new province empire_46 = {
-	inherit = empire_province
-	color = { 217 125 173 }
-	name = "empire 46"
-	history += { }
-}
-
-new province empire_47 = {
-	inherit = empire_province
-	color = { 186 110 154 }
-	name = "empire 47"
-	history += { }
-}
-
-new province empire_48 = {
-	inherit = empire_province
-	color = { 194 210 223 }
-	name = "empire 48"
-	history += { }
-}
-
-new province empire_49 = {
-	inherit = empire_province
-	color = { 253 108 255 }
-	name = "empire 49"
-	history += { }
-}
-
-new province empire_54 = {
-	inherit = empire_province
-	color = { 154 179 198 }
-	name = "empire 54"
-	history += { }
-}
-
-new province empire_55 = {
-	inherit = empire_province
-	color = { 136 139 234 }
-	name = "empire 55"
-	history += { }
-}
-
-new province empire_56 = {
-	inherit = empire_province
-	color = { 220 130 222 }
-	name = "empire 56"
-	history += { }
-}
-
-new province empire_57 = {
-	inherit = empire_province
-	color = { 229 234 215 }
-	name = "empire 57"
-	history += { }
-}
-
-new province empire_58 = {
-	inherit = empire_province
-	color = { 182 150 105 }
-	name = "empire 58"
-	history += { }
-}
-
-new province empire_59 = {
-	inherit = empire_province
-	color = { 239 176 113 }
-	name = "empire 59"
-	history += { }
-}
-
-new province empire_60 = {
-	inherit = empire_province
-	color = { 119 194 231 }
-	name = "empire 60"
-	history += { }
-}
-
-new province empire_61 = {
-	inherit = empire_province
-	color = { 166 206 245 }
-	name = "empire 61"
-	history += { }
-}
-
-new province empire_62 = {
-	inherit = empire_province
-	color = { 245 127 192 }
-	name = "empire 62"
-	history += { }
-}
-
-new province empire_63 = {
-	inherit = empire_province
-	color = { 148 104 191 }
-	name = "empire 63"
-	history += { }
-}
-
-new province empire_64 = {
-	inherit = empire_province
-	color = { 239 116 170 }
-	name = "empire 64"
-	history += { }
-}
-
-new province empire_65 = {
-	inherit = empire_province
-	color = { 217 199 103 }
-	name = "empire 65"
-	history += { }
-}
-
-new province empire_69 = {
-	inherit = empire_province
-	color = { 211 242 202 }
-	name = "empire 69"
-	history += { }
-}
-
-new province empire_70 = {
-	inherit = empire_province
-	color = { 155 146 251 }
-	name = "empire 70"
-	history += { }
-	history += {
-		history_owner = novenhaven
+		history_owner = nightgate
 	}
 }
 
@@ -430,35 +189,363 @@ new province empire_81 = {
 	history += { }
 }
 
-new province lake_veller = {
-    color = { 211 253 126 }
-    name = "Lake Veller"
-	lake = yes
-	history = { }
-	position = { }
-	rotation = { }
-	height = { }
+new area hamburrow = {
+	name = "Hamburrow"
+	region = gellerthal
 }
-
-new province empire_104 = {
+new province hamburrow = {
+	inherit = empire_province
+	color = { 219 193 103 }
+	name = "Hamburrow"
+	area = hamburrow
+	history += {
+		history_owner = hamburrow
+	}
+}
+new province nordstrand = {
+	inherit = empire_province
+	color = { 194 210 223 }
+	name = "Nordstrand"
+	area = hamburrow
+	history += {
+		history_owner = hamburrow
+	}
+}
+new province westerhaven = {
     inherit = empire_province
     color = { 100 251 137 }
-    name = "empire 104"
-	history += { }
+    name = "Westerhaven"
+	area = hamburrow
+	history += {
+		history_owner = hamburrow
+	}
+}
+new province dunkmarsh = {
+	inherit = empire_province
+	color = { 186 110 154 }
+	name = "Dunkmarsh"
+	area = hamburrow
+	history += {
+		history_owner = nordmark
+	}
 }
 
-new province empire_112 = {
+new area gametown = {
+	name = "Gametown"
+	region = gellerthal
+}
+new province chesstown = {
+	inherit = empire_province
+	color = { 142 156 201 }
+	name = "Chesstown"
+	area = gametown
+	history += {
+		history_owner = chesstown
+	}
+}
+new province dicetown = {
+	inherit = empire_province
+	color = { 129 177 121 }
+	name = "Dicetown"
+	area = gametown
+	history += {
+		history_owner = dicetown
+	}
+}
+new province cardtown = {
+	inherit = empire_province
+	color = { 233 133 254 }
+	name = "Cardtown"
+	area = gametown
+	history += {
+		history_owner = cardtown
+	}
+}
+new province checkerstown = {
+	inherit = empire_province
+	color = { 229 249 172 }
+	name = "Checkerstown"
+	area = gametown
+	history += {
+		history_owner = checkerstown
+	}
+}
+new province riesenhafen = {
+	inherit = empire_province
+	color = { 209 187 104 }
+	name = "Riesenhafen"
+	area = gametown
+	history += {
+		history_owner = checkerstown
+	}
+}
+
+new area tinkercoast = {
+	name = "Tinkercoast"
+	region = gellerthal
+}
+new province tinkerton = {
+	inherit = empire_province
+	color = { 165 113 232 }
+	name = "Tinkerton"
+	area = tinkercoast
+	history += {
+		history_owner = tinkerton
+	}
+}
+new province brechtholm = {
+	inherit = empire_province
+	color = { 130 128 193 }
+	name = "Brechtholm"
+	area = tinkercoast
+	history += {
+		history_owner = eisenwald
+	}
+}
+new province hohenmark = {
+	inherit = empire_province
+	color = { 211 242 202 }
+	name = "Hohenmark"
+	area = tinkercoast
+	history += {
+		history_owner = stralhofen
+	}
+}
+
+new area kraghaven = {
+	name = "Kraghaven"
+	region = gellerthal
+}
+new province stralswey = {
+	inherit = empire_province
+	color = { 253 108 255 }
+	name = "Stralswey"
+	area = kraghaven
+	history += {
+		history_owner = dunkelmeer
+	}
+}
+new province kraghaven = {
+	inherit = empire_province
+	color = { 217 199 103 }
+	name = "Kraghaven"
+	area = kraghaven
+	history += {
+		history_owner = hohenfeld
+	}
+}
+new province blaukuste = {
     inherit = empire_province
     color = { 103 225 255 }
-    name = "empire 112"
-	history += { }
+    name = "Blaukuste"
+	area = kraghaven
+	history += {
+		history_owner = hohenfeld
+	}
 }
-
-new province empire_113 = {
+new province rabenhugel = {
     inherit = empire_province
     color = { 148 136 131 }
-    name = "empire 113"
-	history += { }
+    name = "Rabenhugel"
+	area = kraghaven
+	history += {
+		history_owner = hohenfeld
+	}
+}
+
+new area seeburgen = {
+	name = "Seeburgen"
+	region = gellerthal
+}
+new province wellenstein = {
+	inherit = empire_province
+	color = { 182 150 105 }
+	name = "Wellenstein"
+	area = seeburgen
+	history += {
+		history_owner = brechthavn
+	}
+}
+new province seeburgen = {
+	inherit = empire_province
+	color = { 119 194 231 }
+	name = "Seeburgen"
+	area = seeburgen
+	history += {
+		history_owner = brechthavn
+	}
+}
+new province kustermark = {
+	inherit = empire_province
+	color = { 245 127 192 }
+	name = "Kustermark"
+	area = seeburgen
+	history += {
+		history_owner = dunkelmeer
+	}
+}
+new province nebelwacht = {
+	inherit = empire_province
+	color = { 148 104 191 }
+	name = "Nebelwacht"
+	area = seeburgen
+	history += {
+		history_owner = brechthavn
+	}
+}
+
+new area eisenmeer = {
+	name = "Eisenmeer"
+	region = gellerthal
+}
+new province brackwasser = {
+	inherit = empire_province
+	color = { 229 234 215 }
+	name = "Brackwasser"
+	area = eisenmeer
+	history += {
+		history_owner = graubucht
+	}
+}
+new province flutheim = {
+	inherit = empire_province
+	color = { 239 176 113 }
+	name = "Flutheim"
+	area = eisenmeer
+	history += {
+		history_owner = falkenheim
+	}
+}
+new province eisenmeer = {
+	inherit = empire_province
+	color = { 166 206 245 }
+	name = "Eisenmeer"
+	area = eisenmeer
+	history += {
+		history_owner = graubucht
+	}
+}
+new province sturmfels = {
+	inherit = empire_province
+	color = { 239 116 170 }
+	name = "Sturmfels"
+	area = eisenmeer
+	history += {
+		history_owner = wittelsund
+	}
+}
+
+new area licherhafen = {
+	name = "Licherhafen"
+	region = gellerthal
+}
+new province licherhafen = {
+	inherit = empire_province
+	color = { 123 168 208 }
+	name = "Licherhafen"
+	area = licherhafen
+	history += {
+		history_owner = lichtenwald
+	}
+}
+new province rotenkliff = {
+	inherit = empire_province
+	color = { 217 125 173 }
+	name = "Rotenkliff"
+	area = licherhafen
+	history += {
+		history_owner = stralhofen
+	}
+}
+new province graufurt = {
+	inherit = empire_province
+	color = { 154 179 198 }
+	name = "Graufurt"
+	area = licherhafen
+	history += {
+		history_owner = lichtenwald
+	}
+}
+new province falkensund = {
+	inherit = empire_province
+	color = { 220 130 222 }
+	name = "Falkensund"
+	area = licherhafen
+	history += {
+		history_owner = eisenhafen
+	}
+}
+
+new area rheinsmund = {
+	name = "Rheinsmund"
+	region = gellerthal
+}
+new province eberhafen = {
+	inherit = empire_province
+	color = { 225 216 166 }
+	name = "Eberhafen"
+	area = rheinsmund
+	history += {
+		history_owner = drachenmark
+	}
+}
+new province reinsgat = {
+	inherit = empire_province
+	color = { 224 225 139 }
+	name = "Reinsgat"
+	area = rheinsmund
+	history += {
+		history_owner = schwarzburg
+	}
+}
+new province norderburg = {
+	inherit = empire_province
+	color = { 232 150 125 }
+	name = "Norderburg"
+	area = rheinsmund
+	history += {
+		history_owner = schwarzburg
+	}
+}
+new province ziegenholm = {
+	inherit = empire_province
+	color = { 136 139 234 }
+	name = "Ziegenholm"
+	area = rheinsmund
+	history += {
+		history_owner = schwarzburg
+	}
+}
+
+new area novenhaven = {
+	name = "Novenhaven"
+	region = gellerthal
+}
+new province novenhaven = {
+	inherit = empire_province
+	color = { 186 176 180 }
+	area = novenhaven
+	history += {
+		history_owner = novenhaven
+	}
+}
+new province lunaria = {
+	inherit = empire_province
+	color = { 155 146 251 }
+	name = "Lunaria"
+	area = novenhaven
+	history += {
+		history_owner = novenhaven
+	}
+}
+new province dornthal = {
+	inherit = empire_province
+	color = { 101 140 196 }
+	name = "Dornthal"
+	area = novenhaven
+	history += {
+		history_owner = novenhaven
+	}
 }
 
 new area mornatha = {
@@ -753,6 +840,15 @@ new province veshni_konnack = {
 	history += {
 		history_owner = veshni
 	}
+}
+new province lake_veller = {
+    color = { 211 253 126 }
+    name = "Lake Veller"
+	lake = yes
+	history = { }
+	position = { }
+	rotation = { }
+	height = { }
 }
 
 new area roseria = {

@@ -24,6 +24,8 @@ new inheritable empire_country = {
 		}
 	}
 }
+
+# Capital
 new country dicetown = {
 	inherit = empire_country
 	tag = DIC
@@ -32,7 +34,7 @@ new country dicetown = {
 	color = {
 		47 212 181
 	}
-	capital = gralthok
+	capital = dicetown
 }
 new country chesstown = {
 	inherit = empire_country
@@ -42,7 +44,17 @@ new country chesstown = {
 	color = {
 		98 135 32
 	}
-	capital = gralthok
+	capital = chesstown
+}
+new country checkerstown = {
+	inherit = empire_country
+	tag = CHC
+	name = "Checkerstown"
+	adj = "Checker"
+	color = {
+		242 23 50
+	}
+	capital = checkerstown
 }
 new country cardtown = {
 	inherit = empire_country
@@ -52,27 +64,19 @@ new country cardtown = {
 	color = {
 		137 162 168
 	}
-	capital = gralthok
+	capital = cardtown
 }
-new country the_towers = {
+
+# Gellerthal
+new country tinkerton = {
 	inherit = empire_country
-	tag = TOW
-	name = "The Towers"
-	adj = "Tall"
+	tag = TIN
+	name = "Tinkerton"
+	adj = "Tinkertonean"
 	color = {
-		212 47 194
+		245 192 153
 	}
-	capital = gralthok
-}
-new country papal_state = {
-	inherit = empire_country
-	tag = PAP
-	name = "Papal State"
-	adj = "Papal"
-	color = {
-		255 255 255
-	}
-	capital = gralthok
+	capital = tinkerton
 }
 new country novenhaven = {
 	inherit = empire_country
@@ -82,18 +86,140 @@ new country novenhaven = {
 	color = {
 		0 255 234
 	}
-	capital = gralthok
+	capital = novenhaven
 }
-new country rosegarden = {
+new country nordmark = {
 	inherit = empire_country
-	tag = NOV
-	name = "Rosegarden"
-	adj = "Rose"
+	tag = NDM
+	name = "Nordmark"
+	adj = "Nordmarker"
 	color = {
-		163 44 44
+		50 100 200
 	}
-	capital = rosegarden
+	capital = dunkmarsh
 }
+new country eisenwald = {
+	inherit = empire_country
+	tag = ESW
+	name = "Eisenwald"
+	adj = "Eisenwalder"
+	color = {
+		80 60 40
+	}
+	capital = brechtholm
+}
+new country stralhofen = {
+	inherit = empire_country
+	tag = SRH
+	name = "Stralhofen"
+	adj = "Stralhofener"
+	color = {
+		110 90 70
+	}
+	capital = hohenmark
+}
+new country dunkelmeer = {
+	inherit = empire_country
+	tag = DKM
+	name = "Dunkelmeer"
+	adj = "Dunkelmeerian"
+	color = {
+		30 30 120
+	}
+	capital = stralswey
+}
+new country hohenfeld = {
+	inherit = empire_country
+	tag = HNF
+	name = "Hohenfeld"
+	adj = "Hohenfelder"
+	color = {
+		100 50 20
+	}
+	capital = kraghaven
+}
+new country brechthavn = {
+	inherit = empire_country
+	tag = BRH
+	name = "Brechthavn"
+	adj = "Brechthavner"
+	color = {
+		90 140 60
+	}
+	capital = wellenstein
+}
+new country lichtenwald = {
+	inherit = empire_country
+	tag = LCH
+	name = "Lichtenwald"
+	adj = "Lichtenwalder"
+	color = {
+		180 140 90
+	}
+	capital = licherhafen
+}
+new country graubucht = {
+	inherit = empire_country
+	tag = GRB
+	name = "Graubucht"
+	adj = "Graubuchter"
+	color = {
+		70 110 180
+	}
+	capital = brackwasser
+}
+new country falkenheim = {
+	inherit = empire_country
+	tag = FKH
+	name = "Falkenheim"
+	adj = "Falkenheimer"
+	color = {
+		200 100 50
+	}
+	capital = flutheim
+}
+new country wittelsund = {
+	inherit = empire_country
+	tag = WTS
+	name = "Wittelsund"
+	adj = "Wittelsunder"
+	color = {
+		50 200 90
+	}
+	capital = sturmfels
+}
+new country eisenhafen = {
+	inherit = empire_country
+	tag = EHF
+	name = "Eisenhafen"
+	adj = "Eisenhafener"
+	color = {
+		40 90 255
+	}
+	capital = falkensund
+}
+new country schwarzburg = {
+	inherit = empire_country
+	tag = SWB
+	name = "Schwarzburg"
+	adj = "Schwarzburger"
+	color = {
+		60 50 40
+	}
+	capital = norderburg
+}
+new country drachenmark = {
+	inherit = empire_country
+	tag = DRM
+	name = "Drachenmark"
+	adj = "Drachenmarker"
+	color = {
+		120 50 50
+	}
+	capital = eberhafen
+}
+
+# Holy Forest
 new country nightgate = {
 	inherit = empire_country
 	tag = NIG
@@ -102,28 +228,20 @@ new country nightgate = {
 	color = {
 		25 25 25
 	}
-	capital = gralthok
+	capital = nightgate
 }
-new country greenrock = {
+new country papal_state = {
 	inherit = empire_country
-	tag = GRE
-	name = "Greenrock"
-	adj = "Green"
+	tag = PAP
+	name = "Papal State"
+	adj = "Papal"
 	color = {
-		0 64 12
+		255 255 255
 	}
-	capital = greenrock
+	capital = empire_15
 }
-new country bittergate = {
-	inherit = empire_country
-	tag = BIT
-	name = "Bittergate"
-	adj = "Bitter"
-	color = {
-		135 108 32
-	}
-	capital = bittergate
-}
+
+# Noble Hills
 new country streamford = {
 	inherit = empire_country
 	tag = STE
@@ -132,47 +250,7 @@ new country streamford = {
 	color = {
 		135 62 32
 	}
-	capital = gralthok
-}
-new country tinkerton = {
-	inherit = empire_country
-	tag = TIN
-	name = "Tinkerton"
-	adj = "Tinkertonean"
-	color = {
-		245 192 153
-	}
-	capital = gralthok
-}
-new country keepstone = {
-	inherit = empire_country
-	tag = KEE
-	name = "Keepstone"
-	adj = "Keepstonean"
-	color = {
-		200 200 200
-	}
-	capital = keepstone
-}
-new country hamburrow = {
-	inherit = empire_country
-	tag = HAM
-	name = "Hamburrow"
-	adj = "Hamburrowean"
-	color = {
-		90 80 13
-	}
-	capital = hamburrow
-}
-new country silkenglade = {
-	inherit = empire_country
-	tag = SIL
-	name = "Silkenglade"
-	adj = "Silkengladean"
-	color = {
-		74 115 70
-	}
-	capital = caerwynn
+	capital = streamford
 }
 new country marshstead = {
 	inherit = empire_country
@@ -185,6 +263,7 @@ new country marshstead = {
 	capital = gralthok
 }
 
+# Major West
 new country thornen = {
 	inherit = empire_country
 	tag = THO
@@ -225,7 +304,38 @@ new country aramant = {
 	}
 	capital = aramant
 }
+new country greenrock = {
+	inherit = empire_country
+	tag = GRE
+	name = "Greenrock"
+	adj = "Green"
+	color = {
+		0 64 12
+	}
+	capital = greenrock
+}
+new country bittergate = {
+	inherit = empire_country
+	tag = BIT
+	name = "Bittergate"
+	adj = "Bitter"
+	color = {
+		135 108 32
+	}
+	capital = bittergate
+}
+new country keepstone = {
+	inherit = empire_country
+	tag = KEE
+	name = "Keepstone"
+	adj = "Keepstonean"
+	color = {
+		200 200 200
+	}
+	capital = keepstone
+}
 
+# Watar Forest
 new country watar = {
 	inherit = empire_country
 	tag = WAT
@@ -300,7 +410,38 @@ new country galdovael = {
 	}
 	capital = glenvraith
 }
+new country the_towers = {
+	inherit = empire_country
+	tag = TOW
+	name = "The Towers"
+	adj = "Tall"
+	color = {
+		212 47 194
+	}
+	capital = yew_tower
+}
+new country rosegarden = {
+	inherit = empire_country
+	tag = NOV
+	name = "Rosegarden"
+	adj = "Rose"
+	color = {
+		163 44 44
+	}
+	capital = rosegarden
+}
+new country silkenglade = {
+	inherit = empire_country
+	tag = SIL
+	name = "Silkenglade"
+	adj = "Silkengladean"
+	color = {
+		74 115 70
+	}
+	capital = caerwynn
+}
 
+# Riven Grain Area
 new country vyreholm = {
 	inherit = empire_country
 	tag = VYR
@@ -397,7 +538,7 @@ new country velmira = {
 	name = "Velmira"
 	adj = "Velmiran"
 	color = {
-		210 120 50
+		255 100 50
 	}
 	capital = orlivest
 }
@@ -421,7 +562,18 @@ new country volzeburg = {
 	}
 	capital = volzeburg
 }
+new country hamburrow = {
+	inherit = empire_country
+	tag = HAM
+	name = "Hamburrow"
+	adj = "Hamburrowean"
+	color = {
+		90 80 13
+	}
+	capital = hamburrow
+}
 
+# Riven Swamp Area
 new country koskova = {
 	inherit = empire_country
 	tag = KSK

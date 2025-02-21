@@ -7,6 +7,9 @@ new superregion sword_valley = {
 new superregion heartlands = {
 	name = "Heartlands"
 }
+new superregion viltlands = {
+	name = "Viltlands"
+}
 new superregion skyrim = {
 	name = "Skyrim"
 }
