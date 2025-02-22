@@ -1076,102 +1076,117 @@ new province makrogg = {
 }
 
 # Grondha River
-define_census = { population = {
-	{ val = 199.318 prov = thrungar }
-	{ val = 165.576 prov = grozzhull }
-	{ val = 134.738 prov = vulgrokk }
-	{ val = 107.725 prov = zolthar }
-	{ val = 100.083 prov = thulkurz }
-	{ val = 96.633  prov = skarvok }
-	{ val = 83.443  prov = krathrak }
-	{ val = 77.028  prov = brozhukk }
-	{ val = 60.109  prov = kravrok }
-	{ val = 67.470  prov = malharg }
-	{ val = 60.101  prov = drogmur }
-	{ val = 58.096  prov = zaroghur }
-	{ val = 48.889  prov = volzkath }
-	{ val = 47.176  prov = ulzaggor }
-	{ val = 50.954  prov = gralzur }
-	{ val = 42.698  prov = zulmahg }
-	{ val = 38.924  prov = zulgrath }
-	{ val = 42.247  prov = drazkul }
-	{ val = 36.159  prov = uzhmak }
-	{ val = 40.095  prov = rukpas }
-	{ val = 34.419  prov = morgulth }
-	{ val = 31.330  prov = kravzhor }
-	{ val = 23.312  prov = gorrathor }
-	{ val = 23.364  prov = krulvorr }
-	{ val = 35.805  prov = drogvorr }
-	{ val = 28.114  prov = grathrog }
-	{ val = 23.819  prov = malvur }
-	{ val = 25.328  prov = thragmul }
-	{ val = 28.543  prov = zarzugh }
-	{ val = 29.251  prov = vuldrak }
-	{ val = 28.666  prov = uzgoth }
-	{ val = 16.229  prov = grondhul }
-	{ val = 22.395  prov = zulthag }
-	{ val = 17.911  prov = thraggum }
-} }
+generate_population = {
+	desired = 3500
+	weight = 0.1
+	seed = 18178384
+	provinces = {
+		thrungar
+		grozzhull
+		vulgrokk
+		zolthar
+		thulkurz
+		skarvok
+		krathrak
+		brozhukk
+		kravrok
+		malharg
+		drogmur
+		zaroghur
+		volzkath
+		ulzaggor
+		gralzur
+		zulmahg
+		zulgrath
+		drazkul
+		uzhmak
+		rukpas
+		morgulth
+		kravzhor
+		gorrathor
+		krulvorr
+		drogvorr
+		grathrog
+		malvur
+		thragmul
+		zarzugh
+		vuldrak
+		uzgoth
+		grondhul
+		zulthag
+		thraggum
+	}
+}
 
 # Konner River
-define_census = { population = {
-	{ val = 187.364 prov = gralthok }
-	{ val = 145.682 prov = brogzar }
-	{ val = 120.756 prov = drog_thar }
-	{ val = 110.310 prov = vulkrad }
-	{ val = 84.746  prov = droknir }
-	{ val = 76.965  prov = zarhallan }
-	{ val = 65.697  prov = thral_vur }
-	{ val = 69.367  prov = gorzum }
-	{ val = 55.113  prov = kravholl }
-	{ val = 61.426  prov = muldrokk }
-	{ val = 51.423  prov = karhath }
-	{ val = 56.762  prov = zarhammor }
-	{ val = 48.443  prov = brogzum }
-	{ val = 43.348  prov = krulzar }
-	{ val = 47.238  prov = uzgark }
-} }
+generate_population = {
+	desired = 1500
+	weight = 0.1
+	seed = 36251149
+	provinces = {
+		gralthok
+		brogzar
+		drog_thar
+		vulkrad
+		droknir
+		zarhallan
+		thral_vur
+		gorzum
+		kravholl
+		muldrokk
+		karhath
+		zarhammor
+		brogzum
+		krulzar
+		uzgark
+	}
+}
 
 # Deep Valley
-define_census = { population = {
-	{ val = 253.533 prov = thraxxor }
-	{ val = 208.705 prov = zorzhakk }
-	{ val = 171.484 prov = urkathal }
-	{ val = 145.735 prov = vroldar }
-	{ val = 126.551 prov = broghkar }
-	{ val = 113.089 prov = karnvorr }
-	{ val = 94.948  prov = vraghol }
-	{ val = 95.505  prov = malkrath }
-	{ val = 87.376  prov = tharnukk }
-	{ val = 74.546  prov = broghor }
-	{ val = 73.023  prov = morglur }
-	{ val = 62.282  prov = volgrath }
-	{ val = 60.990  prov = varkhul }
-	{ val = 52.239  prov = zorgrim }
-	{ val = 48.563  prov = zarothal }
-	{ val = 53.696  prov = grumvarg }
-	{ val = 42.403  prov = kharrdun }
-	{ val = 44.516  prov = grullash }
-	{ val = 49.319  prov = zul_thrak }
-	{ val = 34.965  prov = brozgar }
-	{ val = 41.230  prov = thogrun }
-	{ val = 33.396  prov = krasshul }
-	{ val = 33.946  prov = durnholl }
-	{ val = 32.738  prov = gortharok }
-	{ val = 41.215  prov = droghar }
-	{ val = 36.898  prov = kravdokk }
-	{ val = 30.340  prov = zorlokk }
-	{ val = 24.653  prov = thranggor }
-	{ val = 31.475  prov = daggurz }
-	{ val = 30.445  prov = kraghzul }
-	{ val = 25.460  prov = drozthol }
-	{ val = 22.755  prov = ulkrahm }
-	{ val = 30.923  prov = gorazhul }
-	{ val = 30.811  prov = makrogg }
-	{ val = 30.271  prov = vrakthar }
-	{ val = 24.217  prov = karghuun }
-	{ val = 22.633  prov = drokmagh }
-} }
+generate_population = {
+	desired = 4000
+	weight = 0.1
+	seed = 11483720
+	provinces = {
+		thraxxor
+		zorzhakk
+		urkathal
+		vroldar
+		broghkar
+		karnvorr
+		vraghol
+		malkrath
+		tharnukk
+		broghor
+		morglur
+		volgrath
+		varkhul
+		zorgrim
+		zarothal
+		grumvarg
+		kharrdun
+		grullash
+		zul_thrak
+		brozgar
+		thogrun
+		krasshul
+		durnholl
+		gortharok
+		droghar
+		kravdokk
+		zorlokk
+		thranggor
+		daggurz
+		kraghzul
+		drozthol
+		ulkrahm
+		gorazhul
+		makrogg
+		vrakthar
+		karghuun
+		drokmagh
+	}
+}
 
 
 

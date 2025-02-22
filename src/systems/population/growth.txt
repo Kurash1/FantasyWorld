@@ -83,7 +83,6 @@ on_initialize += {
 }
 new named_effect adjust_development = {
 	&temp &= development
-	&temp += 1
 	&temp *= POP_MULT
 	while [&pops >= temp] {
 		set_province_flag = cd
@@ -95,7 +94,6 @@ new named_effect adjust_development = {
 	}
 	
 	&temp &= development
-	&temp -= 2
 	&temp *= POP_MULT
 	while [&pops < temp] {
 		set_province_flag = cd

@@ -1404,70 +1404,75 @@ new province zurvakhol = {
 	}
 }
 
-define_census = { population = {
-	{ val = 314.259 prov = ivinfiel }
-	{ val = 290.502 prov = kroshva }
-	{ val = 264.491 prov = durmathak }
-	{ val = 244.114 prov = dornkeep }
-	{ val = 220.528 prov = zurvakhol }
-	{ val = 203.291 prov = voraktha }
-	{ val = 192.365 prov = tyvilshen }
-	{ val = 187.954 prov = torsan }
-	{ val = 171.683 prov = antvill }
-	{ val = 160.572 prov = careal }
-	{ val = 155.868 prov = zurenkir }
-	{ val = 155.844 prov = inirsarm }
-	{ val = 137.572 prov = tossvi }
-	{ val = 131.449 prov = tolrbech }
-	{ val = 133.126 prov = zurmokho }
-	{ val = 123.517 prov = tzokrandir }
-	{ val = 122.492 prov = koneax }
-	{ val = 114.987 prov = ishtor_pass }
-	{ val = 106.362 prov = karnde }
-	{ val = 113.294 prov = konzeir }
-	{ val = 111.436 prov = kralthor }
-	{ val = 104.226 prov = branzuthir }
-	{ val = 95.461  prov = zharnokh }
-	{ val = 93.254  prov = vrakthu }
-	{ val = 95.598  prov = drovashk }
-	{ val = 89.884  prov = drakstarn }
-	{ val = 87.218  prov = torgaldin }
-	{ val = 84.010  prov = karathzul }
-	{ val = 79.102  prov = halkasir }
-	{ val = 79.191  prov = throzkaal }
-	{ val = 82.888  prov = baskorath }
-	{ val = 73.027  prov = kalthru }
-	{ val = 80.672  prov = tharzga }
-	{ val = 70.214  prov = mazgothu }
-	{ val = 80.171  prov = thrungral }
-	{ val = 73.782  prov = tarkozhul }
-	{ val = 70.448  prov = frothern }
-	{ val = 62.675  prov = tullen }
-	{ val = 65.640  prov = ahmaton }
-	{ val = 71.249  prov = tolokso }
-	{ val = 65.554  prov = toshion }
-	{ val = 54.007  prov = morzkaal }
-	{ val = 60.686  prov = shyrenk }
-	{ val = 56.564  prov = tallkern }
-	{ val = 58.815  prov = tarnkeir }
-	{ val = 54.515  prov = solorn }
-	{ val = 58.543  prov = arkon_tower }
-	{ val = 52.618  prov = kriklax_mine }
-	{ val = 63.243  prov = koroan_cave }
-	{ val = 58.115  prov = shyrlan_hills }
-	{ val = 51.954  prov = drakhma }
-	{ val = 48.654  prov = murgothir }
-	{ val = 50.636  prov = skolvarth }
-	{ val = 55.215  prov = vograthun }
-	{ val = 40.466  prov = volkhadrek }
-	{ val = 45.792  prov = vrudhar }
-	{ val = 45.815  prov = zhunsho_mine }
-	{ val = 51.886  prov = sharnagoth }
-	{ val = 53.313  prov = kharzadur }
-	{ val = 36.714  prov = shanter_peak }
-	{ val = 48.773  prov = konnervir }
-	{ val = 44.529  prov = tuskpasser }
-	{ val = 48.322  prov = balkiir_mine }
-	{ val = 41.595  prov = gromaksi }
-	{ val = 45.178  prov = thakmorun }
-} }
+generate_population = {
+	desired = 6500
+	weight = 0.1
+	seed = 27658724
+	provinces = {
+		ivinfiel
+		kroshva
+		durmathak
+		dornkeep
+		zurvakhol
+		voraktha
+		tyvilshen
+		torsan
+		antvill
+		careal
+		zurenkir
+		inirsarm
+		tossvi
+		tolrbech
+		zurmokho
+		tzokrandir
+		koneax
+		ishtor_pass
+		karnde
+		konzeir
+		kralthor
+		branzuthir
+		zharnokh
+		vrakthu
+		drovashk
+		drakstarn
+		torgaldin
+		karathzul
+		halkasir
+		throzkaal
+		baskorath
+		kalthru
+		tharzga
+		mazgothu
+		thrungral
+		tarkozhul
+		frothern
+		tullen
+		ahmaton
+		tolokso
+		toshion
+		morzkaal
+		shyrenk
+		tallkern
+		tarnkeir
+		solorn
+		arkon_tower
+		kriklax_mine
+		koroan_cave
+		shyrlan_hills
+		drakhma
+		murgothir
+		skolvarth
+		vograthun
+		volkhadrek
+		vrudhar
+		zhunsho_mine
+		sharnagoth
+		kharzadur
+		shanter_peak
+		konnervir
+		tuskpasser
+		balkiir_mine
+		gromaksi
+		thakmorun
+	}
+}

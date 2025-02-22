@@ -257,29 +257,34 @@ new province dunbratha = {
 }
 
 # Watar
-define_census = { population = {
-	{ val = 249.326 prov = kelgwyth }
-	{ val = 184.164 prov = dunvaloch }
-	{ val = 148.135 prov = carnodwyn }
-	{ val = 126.355 prov = rhydmar }
-	{ val = 104.356 prov = breckvaen }
-	{ val = 94.995  prov = caerwyn }
-	{ val = 80.447  prov = morvaith }
-	{ val = 74.256  prov = dunbratha }
-	{ val = 69.223  prov = tirneach }
-	{ val = 58.696  prov = kernavren }
-	{ val = 56.400  prov = luthbrae }
-	{ val = 52.189  prov = fennadraig }
-	{ val = 48.533  prov = ballyveagh }
-	{ val = 46.277  prov = lochranish }
-	{ val = 38.444  prov = invercaen }
-	{ val = 49.099  prov = brynmore }
-	{ val = 44.499  prov = glenwyth }
-	{ val = 39.393  prov = trelagh }
-	{ val = 39.903  prov = torvaen }
-	{ val = 31.429  prov = talysharn}
-	{ val = 27.413  prov = ardosan }
-	{ val = 23.303  prov = caermoryn }
-	{ val = 33.150  prov = drystanford }
-	{ val = 21.507  prov = culdrith }
-} }
+generate_population = {
+	desired = 1750
+	weight = 0.1
+	seed = 57390364
+	provinces = {
+		kelgwyth
+		dunvaloch
+		carnodwyn
+		rhydmar
+		breckvaen
+		caerwyn
+		morvaith
+		dunbratha
+		tirneach
+		kernavren
+		luthbrae
+		fennadraig
+		ballyveagh
+		lochranish
+		invercaen
+		brynmore
+		glenwyth
+		trelagh
+		torvaen
+		talysharn
+		ardosan
+		caermoryn
+		drystanford
+		culdrith
+	}
+}

@@ -1663,6 +1663,11 @@ new province drakketh = {
 	area = drakketh
 	history += {
 		history_owner = hashdrak
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province veyrnell = {
@@ -1681,6 +1686,11 @@ new province olmash = {
 	area = drakketh
 	history += {
 		history_owner = hashdrak
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 
@@ -1754,6 +1764,11 @@ new province askirn = {
 	area = askirn
 	history += {
 		history_owner = urtdrak
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province drelgath = {
@@ -1763,6 +1778,11 @@ new province drelgath = {
 	area = askirn
 	history += {
 		history_owner = urtdrak
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 
@@ -1914,6 +1934,11 @@ new province drevnaya = {
 	area = drevnaya
 	history += {
 		history_owner = vyreholm
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province mirograd = {
@@ -1923,6 +1948,11 @@ new province mirograd = {
 	area = drevnaya
 	history += {
 		history_owner = zelenec
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 
@@ -2001,6 +2031,11 @@ new province lazovka = {
 	area = kolomyr
 	history += {
 		history_owner = dzydria
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province kolomyr = {
@@ -2010,6 +2045,11 @@ new province kolomyr = {
 	area = kolomyr
 	history += {
 		history_owner = ternovya
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province novorytsk = {
@@ -2019,6 +2059,11 @@ new province novorytsk = {
 	area = kolomyr
 	history += {
 		history_owner = dzydria
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province zelenograd = {
@@ -2042,6 +2087,11 @@ new province kornyshiv = {
 	area = kornyshiv
 	history += {
 		history_owner = rovensmark
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province dubryans = {
@@ -2051,6 +2101,11 @@ new province dubryans = {
 	area = kornyshiv
 	history += {
 		history_owner = rovensmark
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province orlivest = {
@@ -2138,6 +2193,11 @@ new province volzeburg = {
 	area = slavych
 	history += {
 		history_owner = volzeburg
+		
+		1988.1.1->add_permanent_province_modifier = {
+			name = riven_road
+			duration = -1
+		}
 	}
 }
 new province sirokovo = {
@@ -2356,116 +2416,134 @@ new province eldrisc = {
 }
 
 # Astveil
-define_census = { population = {
-	{ val = 323.292 prov = drekkyn }
-	{ val = 211.753 prov = wastcit }
-	{ val = 156.806 prov = shannach }
-	{ val = 128.447 prov = veylkeil }
-	{ val = 101.571 prov = olbrend }
-	{ val = 96.975  prov = sovcur }
-	{ val = 80.267  prov = kornache }
-	{ val = 66.540  prov = olkash }
-	{ val = 61.547  prov = ahhelveyl }
-	{ val = 63.263  prov = omayrk }
-	{ val = 55.871  prov = dakgat }
-	{ val = 52.448  prov = doveyr }
-	{ val = 47.549  prov = drekeyr }
-	{ val = 42.931  prov = vekmont }
-	{ val = 38.291  prov = swokgat }
-	{ val = 42.637  prov = aksmal }
-	{ val = 33.012  prov = veylirk }
-	{ val = 32.176  prov = jokilly }
-	{ val = 30.363  prov = ireyveil }
-	{ val = 33.147  prov = askgat }
-} }
+generate_population = {
+	desired = 1700
+	weight = 0.25
+	seed = 42302039
+	provinces = {
+		drekkyn
+		wastcit
+		shannach
+		veylkeil
+		olbrend
+		sovcur
+		kornache
+		olkash
+		ahhelveyl
+		omayrk
+		dakgat
+		doveyr
+		drekeyr
+		vekmont
+		swokgat
+		aksmal
+		veylirk
+		jokilly
+		ireyveil
+		askgat
+	}
+}
 
 # Thornen
-define_census = { population = {
-	{ val = 321.568 prov = port_rosen }
-	{ val = 212.211 prov = roseria }
-	{ val = 163.376 prov = veshen_place }
-	{ val = 125.287 prov = nomstad }
-	{ val = 105.767 prov = quarwaine_ford }
-	{ val = 91.114  prov = rose_bridge }
-	{ val = 83.458  prov = grenfield }
-	{ val = 71.460  prov = thorn_keep }
-	{ val = 68.064  prov = rowan_tower }
-	{ val = 54.522  prov = rosen_forest }
-	{ val = 50.123  prov = elfgarden }
-	{ val = 56.771  prov = watargate }
-	{ val = 44.026  prov = thornwoods }
-	{ val = 43.668  prov = arkenrod }
-	{ val = 45.025  prov = dragons_landing }
-	{ val = 38.218  prov = drakonaire }
-	{ val = 38.132  prov = oudwae }
-} }
+generate_population = {
+	desired = 1600
+	weight = 0.25
+	seed = 90620135
+	provinces = {
+		port_rosen
+		roseria
+		veshen_place
+		nomstad
+		quarwaine_ford
+		rose_bridge
+		grenfield
+		thorn_keep
+		rowan_tower
+		rosen_forest
+		elfgarden
+		watargate
+		thornwoods
+		arkenrod
+		dragons_landing
+		drakonaire
+		oudwae
+	}
+}
 
 # Veshni
-define_census = { population = {
-	{ val = 365.847 prov = ireiveshni }
-	{ val = 249.657 prov = veshni_konnack }
-	{ val = 191.545 prov = shakmyr }
-	{ val = 148.121 prov = velstaya }
-	{ val = 119.993 prov = zovrakin }
-	{ val = 111.484 prov = olyvren }
-	{ val = 93.916  prov = haldrak }
-	{ val = 88.503  prov = veshkaya }
-	{ val = 74.470  prov = morysha }
-	{ val = 65.076  prov = tarovesh }
-	{ val = 57.305  prov = orlyvek }
-	{ val = 54.758  prov = askoven }
-	{ val = 54.150  prov = sovrekh }
-	{ val = 41.121  prov = olshad }
-	{ val = 40.475  prov = myrvekh }
-	{ val = 40.575  prov = soryvek }
-	{ val = 41.558  prov = konnack }
-} }
+generate_population = {
+	desired = 1800
+	weight = 0.25
+	seed = 80501279
+	provinces = {
+		ireiveshni
+		veshni_konnack
+		shakmyr
+		velstaya
+		zovrakin
+		olyvren
+		haldrak
+		veshkaya
+		morysha
+		tarovesh
+		orlyvek
+		askoven
+		sovrekh
+		olshad
+		myrvekh
+		soryvek
+		konnack
+	}
+}
 
 # Western Minors
-define_census = { population = {
-	# Bittergate
-	{ val = 125.669 prov = bittergate }
-	{ val = 97.264 prov = olderod }
-	{ val = 54.751 prov = holden }
-	# Greenrock
-	{ val = 123.883 prov = greenrock }
-	{ val = 100.229 prov = stonewell }
-	{ val = 68.691 prov = brigerton }
-	# One Province Minors
-	{ val = 110.300 prov = aramant }
-	{ val = 100.502 prov = keepstone }
-	{ val = 126.842 prov = maidenkeep }
-} }
+generate_population = {
+	desired = 800
+	weight = 0.25
+	seed = 48261288
+	provinces = {
+		maidenkeep
+		aramant
+		keepstone
+		bittergate
+		greenrock
+		stonewell
+		olderod
+		brigerton
+		holden
+	}
+}
 
 # Tyllerdrakes
-define_census = { population = {
-	# Hashdrak
-	{ val = 106.874 prov = olmash }
-	{ val = 58.366  prov = drakketh }
-	{ val = 37.457  prov = veyrnell }
-	# Urtdrak
-	{ val = 188.887 prov = askirn }
-	{ val = 132.661 prov = drelgath }
-	{ val = 93.995  prov = skovairn }
-	{ val = 61.355  prov = thallisk }
-	{ val = 54.738  prov = jovrek }
-	{ val = 48.312  prov = korrveil }
-	{ val = 34.513  prov = shalketh }
-	# Ekadrak
-	{ val = 178.662 prov = iskmor }
-	{ val = 131.377 prov = teyrloch }
-	{ val = 85.851  prov = dorrikash }
-	{ val = 64.911  prov = sornich }
-	{ val = 43.231  prov = jorrveil }
-	{ val = 40.464  prov = vynmorn }
-	# Viltdrak
-	{ val = 154.384 prov = arkveil }
-	{ val = 120.248 prov = oskveil }
-	{ val = 81.606  prov = zhendrik }
-	{ val = 58.674  prov = meylthorne }
-	{ val = 44.555  prov = tovrek }
-	{ val = 40.730  prov = braykash }
-} }
+generate_population = {
+	desired = 1800
+	weight = 0.1
+	seed = 88487447
+	provinces = {
+		askirn
+		iskmor
+		arkveil
+		drelgath
+		teyrloch
+		oskveil
+		olmash
+		skovairn
+		dorrikash
+		zhendrik
+		sornich
+		thallisk
+		meylthorne
+		drakketh
+		jovrek
+		korrveil
+		tovrek
+		jorrveil
+		braykash
+		vynmorn
+		veyrnell
+		shalketh
+	}
+}
 
 # Riven Grain Lands
 generate_population = {
@@ -2525,34 +2603,39 @@ generate_population = {
 }
 
 # Imperial Watar
-define_census = { population = {
-	{ val = 152.264 prov = glenmareth }
-	{ val = 118.992 prov = breochal }
-	{ val = 99.958  prov = talyara }
-	{ val = 80.075  prov = yew_tower }
-	{ val = 64.861  prov = ash_tower }
-	{ val = 62.911  prov = rosegarden }
-	{ val = 60.324  prov = cairnvoe }
-	{ val = 47.738  prov = kelvaran }
-	{ val = 46.185  prov = rothwyn }
-	{ val = 45.590  prov = mornatha }
-	{ val = 41.909  prov = druimlach }
-	{ val = 30.627  prov = cathanwynd }
-	{ val = 31.087  prov = caerwynn }
-	{ val = 34.869  prov = dunavon }
-	{ val = 25.102  prov = luthgwen }
-	{ val = 23.754  prov = torrveyl }
-	{ val = 28.136  prov = caltrith }
-	{ val = 25.337  prov = inisfell }
-	{ val = 19.037  prov = cairwych }
-	{ val = 21.338  prov = torvean }
-	{ val = 21.266  prov = marnocairn }
-	{ val = 19.278  prov = eldrisc }
-	{ val = 19.354  prov = estwyn }
-	{ val = 22.347  prov = oronsay }
-	{ val = 16.223  prov = glenvraith }
-	{ val = 14.277  prov = llynbreck }
-} }
+generate_population = {
+	desired = 1500
+	weight = 0.1
+	seed = 11656204
+	provinces = {
+		glenmareth
+		breochal
+		talyara
+		yew_tower
+		ash_tower
+		rosegarden
+		cairnvoe
+		kelvaran
+		rothwyn
+		mornatha
+		druimlach
+		cathanwynd
+		caerwynn
+		dunavon
+		luthgwen
+		torrveyl
+		caltrith
+		inisfell
+		cairwych
+		torvean
+		marnocairn
+		eldrisc
+		estwyn
+		oronsay
+		glenvraith
+		llynbreck
+	}
+}
 
 # Gellerthal Exterior
 generate_population = {
