@@ -51,10 +51,20 @@ new effect starting_population = {
 		base_production = $
 		base_manpower = 0
 		
-		&pops &= args
+		&pops := args
 		&population := pops
 		&population *= 1000
 		delete = $
+	}
+}
+new effect set_population = {
+	args = float #in thousands
+	transpile = {
+		&pops := args
+		&population := pops
+		&population *= 1000
+		
+		adjust_development
 	}
 }
 
@@ -71,6 +81,57 @@ new effect define_census = {
 			$1:prov:history +=! {
 				starting_population = $1:val
 			}
+			census_setter +=! {
+				$1:prov = {
+					set_population = $1:val
+				}
+			}
 		}
+	}
+}
+
+new named_effect census_setter = {
+	log = "Census Reset"
+}
+new effect generate_population = {
+	args = {
+		float desired # in thousands
+		float weight # how uniform the development is, 0 is completely uniform
+		random seed # for random population numbers
+		list<province> provinces # ordered list from most populous to least
+	}
+	transpile = {
+		new named_float $f_sum = 0
+		new named_float $f_weight = 1
+		
+		foreach $prov in args:provinces {
+			$f_sum += ( 1 / $f_weight )
+			$f_weight += args:weight
+		}
+		
+		$f_weight := 1
+		
+		foreach $prov in args:provinces {
+			new named_float $population = ( ( 1 / $f_weight ) / $f_sum * args:desired + args:seed * 2 - 1 )
+			$prov:history +=! {
+				starting_population = $population
+			}
+			census_setter +=! {
+				$prov = {
+					set_population = $population
+				}
+			}
+			
+			$f_weight += args:weight
+			delete = $population
+		}
+		
+		delete = $f_sum
+		delete = $f_weight
+	}
+}
+new custom_transpile census_reset = {
+	write_file "census_reset.txt" = {
+		census_setter
 	}
 }

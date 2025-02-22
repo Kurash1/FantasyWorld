@@ -2468,51 +2468,61 @@ define_census = { population = {
 } }
 
 # Riven Grain Lands
-define_census = { population = {
-	{ val = 259.760 prov = volzeburg }
-	{ val = 235.658 prov = kornyshiv }
-	{ val = 183.826 prov = kolomyr }
-	{ val = 153.318 prov = drevnaya }
-	{ val = 127.016 prov = tarnopol }
-	{ val = 119.721 prov = dubryans }
-	{ val = 96.191  prov = novorytsk }
-	{ val = 93.467  prov = zlatoryev }
-	{ val = 86.191  prov = mirograd }
-	{ val = 83.436  prov = lazovka }
-	{ val = 70.079  prov = prydnova }
-	{ val = 64.680  prov = sirokovo }
-	{ val = 69.967  prov = radomyrsk }
-	{ val = 53.232  prov = perelyev }
-	{ val = 45.569  prov = orlivest }
-	{ val = 55.292  prov = zernograd }
-	{ val = 47.762  prov = ostrovets }
-	{ val = 48.276  prov = vasylivka }
-	{ val = 44.679  prov = zelenograd }
-	{ val = 41.578  prov = velkovec }
-	{ val = 38.995  prov = roshkovo }
-	{ val = 37.102  prov = vynkro }
-	{ val = 38.426  prov = dobrovo }
-	{ val = 35.521  prov = chervynsk }
-	{ val = 39.879  prov = staryvolk }
-} }
+generate_population = {
+	desired = 2100
+	weight = 0.1
+	seed = 22901863
+	provinces = {
+		volzeburg
+		kornyshiv
+		kolomyr
+		drevnaya
+		tarnopol
+		dubryans
+		novorytsk
+		zlatoryev
+		mirograd
+		lazovka
+		prydnova
+		sirokovo
+		radomyrsk
+		perelyev
+		orlivest
+		zernograd
+		ostrovets
+		vasylivka
+		zelenograd
+		velkovec
+		roshkovo
+		vynkro
+		dobrovo
+		chervynsk
+		staryvolk
+	}
+}
 
 # Riven Swamp Lands
-define_census = { population = {
-	{ val = 70.255 prov = sovliska }
-	{ val = 53.043 prov = askervir }
-	{ val = 36.794 prov = kelmorov }
-	{ val = 37.966 prov = myrkyla }
-	{ val = 36.614 prov = tarnovesh }
-	{ val = 24.947 prov = ylivesh }
-	{ val = 18.388 prov = lohkava }
-	{ val = 15.719 prov = jorvainka }
-	{ val = 20.217 prov = rautashiv }
-	{ val = 18.656 prov = kolmirev }
-	{ val = 19.541 prov = velyranta }
-	{ val = 15.391 prov = drelmora }
-	{ val = 19.547 prov = miroshka }
-	{ val = 18.461 prov = iskorva }
-} }
+generate_population = {
+	desired = 500
+	weight = 0.1
+	seed = 74547162
+	provinces = {
+		sovliska
+		askervir
+		kelmorov
+		myrkyla
+		tarnovesh
+		ylivesh
+		lohkava
+		jorvainka
+		rautashiv
+		kolmirev
+		velyranta
+		drelmora
+		miroshka
+		iskorva 
+	}
+}
 
 # Imperial Watar
 define_census = { population = {
@@ -2543,6 +2553,60 @@ define_census = { population = {
 	{ val = 16.223  prov = glenvraith }
 	{ val = 14.277  prov = llynbreck }
 } }
+
+# Gellerthal Exterior
+generate_population = {
+	desired = 3000
+	weight = 0.1
+	seed = 66568067
+	provinces = {
+		chesstown
+		dicetown
+		cardtown
+		checkerstown
+		tinkerton
+		hamburrow
+		novenhaven
+		
+		nordstrand
+		dunkmarsh
+		hohenmark
+		licherhafen
+		brechtholm
+		dornthal
+		rotenkliff
+		lunaria
+	}
+}
+
+# Gellerthal Interior
+generate_population = {
+	desired = 1000
+	weight = 0.1
+	seed = 18991050
+	provinces = {
+		kraghaven
+		riesenhafen
+		stralswey
+		kustermark
+		wellenstein
+		eberhafen
+		graufurt
+		seeburgen
+		brackwasser
+		falkensund
+		reinsgat
+		nebelwacht
+		norderburg
+		ziegenholm
+		eisenmeer
+		flutheim
+		sturmfels
+		westerhaven
+		blaukuste
+		rabenhugel
+	}
+}
 
 quick_strait = {
 	from = ash_tower

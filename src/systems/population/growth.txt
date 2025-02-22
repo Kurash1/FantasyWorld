@@ -57,6 +57,31 @@ new named_effect population_tick = {
 	&population *= 1000
 	
 	# Adjust Development
+	adjust_development
+	
+	# Make numbers human readable
+	&pop_growth_per_year *= 1000
+	&pop_growth_per_decade *= 1000
+	&pop_growth_per_century *= 1000
+	&pop_growth_to_end *= 1000
+	
+	&development /= POPULATION_MONTHLY_GROWTH_RATE
+	&var_pop_growth_rate *= 1000
+}
+
+on_initialize += {
+	every_country = {
+		&var_pop_growth_modifier &= modifier:pop_growth_modifier
+		&var_pop_growth_modifier *= 100
+		
+		every_owned_province = {
+			&local_pop_growth_modifier := 0
+			
+			population_tick
+		}
+	}
+}
+new named_effect adjust_development = {
 	&temp &= development
 	&temp += 1
 	&temp *= POP_MULT
@@ -79,28 +104,6 @@ new named_effect population_tick = {
 		&temp &= development
 		&temp -= 2
 		&temp *= POP_MULT
-	}
-	
-	# Make numbers human readable
-	&pop_growth_per_year *= 1000
-	&pop_growth_per_decade *= 1000
-	&pop_growth_per_century *= 1000
-	&pop_growth_to_end *= 1000
-	
-	&development /= POPULATION_MONTHLY_GROWTH_RATE
-	&var_pop_growth_rate *= 1000
-}
-
-on_initialize += {
-	every_country = {
-		&var_pop_growth_modifier &= modifier:pop_growth_modifier
-		&var_pop_growth_modifier *= 100
-		
-		every_owned_province = {
-			&local_pop_growth_modifier := 0
-			
-			population_tick
-		}
 	}
 }
 on_actions:on_monthly_pulse += {
