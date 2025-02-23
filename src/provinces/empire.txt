@@ -2605,7 +2605,7 @@ generate_population = {
 # Imperial Watar
 generate_population = {
 	desired = 1500
-	weight = 0.1
+	weight = 0.2
 	seed = 11656204
 	provinces = {
 		glenmareth
@@ -2613,26 +2613,35 @@ generate_population = {
 		talyara
 		yew_tower
 		ash_tower
-		rosegarden
-		cairnvoe
-		kelvaran
 		rothwyn
 		mornatha
 		druimlach
 		cathanwynd
-		caerwynn
-		dunavon
-		luthgwen
-		torrveyl
 		caltrith
 		inisfell
 		cairwych
 		torvean
 		marnocairn
 		eldrisc
-		estwyn
 		oronsay
 		glenvraith
+	}
+}
+
+generate_population = {
+	desired = 1000
+	weight = 0.1
+	seed = 53800480
+	provinces = {
+		rosegarden
+		cairnvoe
+		kelvaran
+		rothwyn
+		caerwynn
+		dunavon
+		luthgwen
+		torrveyl
+		estwyn
 		llynbreck
 	}
 }
@@ -2664,7 +2673,7 @@ generate_population = {
 
 # Gellerthal Interior
 generate_population = {
-	desired = 1000
+	desired = 2000
 	weight = 0.1
 	seed = 18991050
 	provinces = {
