@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new austerity = {
+	name = "Subventions"
+	desc = "The state finds itself in a costly spiral of debt by introducing a strict austerity policy the sheer amount of debt can likely be reduced. By making deals with the debtors we can in return expect lower interest rates on our debt thus making it easier to pay them back. Austerity however also severly tanks the economy as public spending plummets and infrastructure will suffer likewise."
+	inherit = default_reform
+	icon = parliament_hall
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += austerity
+governments:theocracy:reform_levels:13 += austerity

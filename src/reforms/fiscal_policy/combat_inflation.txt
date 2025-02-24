@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new combat_inflation = {
+	name = "Combat Inflation"
+	desc = "The government decided that the national bank will have to increase interest rates in order to slow down the overheated economy thus fighting the rising inflation. While economically viable this will also make our own debt taking much more costly as interest rates on our government bonds will also rise. Likewise private loans handed out by banks to companies will also become rarer crippling economic growth in the country. The Burgher estates naturally hate that. But they also loathe the high inflation too."
+	inherit = default_reform
+	icon = paper_with_seal
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += combat_inflation
+governments:theocracy:reform_levels:13 += combat_inflation
