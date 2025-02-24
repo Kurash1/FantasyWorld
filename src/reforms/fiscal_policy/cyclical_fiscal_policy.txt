@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new cyclical_fiscal_policy = {
+	name = "Cyclical Fiscal Policy"
+	desc = "Aligns with the economic cycle, amplifying the ups and downs of the economy, often increasing deficits during downturns and surpluses during booms."
+	inherit = default_reform
+	icon = liberte_reform
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += cyclical_fiscal_policy
+governments:theocracy:reform_levels:13 += cyclical_fiscal_policy

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new structural_fiscal_policy = {
+	name = "Structural Fiscal Policy"
+	desc = "A fiscal rule that limits the amount of government borrowing, allowing for temporary deficits during recessions but requiring balanced budgets over the economic cycle."
+	inherit = default_reform
+	icon = indian_palace
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += structural_fiscal_policy
+governments:theocracy:reform_levels:13 += structural_fiscal_policy

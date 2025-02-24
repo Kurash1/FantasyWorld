@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new targeted_fiscal_policy = {
+	name = "Targeted Fiscal Policy"
+	desc = "Focuses on specific sectors or groups, like subsidies for industries or tax credits for low-income households, to address economic or social imbalances."
+	inherit = default_reform
+	icon = indian_crown
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += targeted_fiscal_policy
+governments:theocracy:reform_levels:13 += targeted_fiscal_policy

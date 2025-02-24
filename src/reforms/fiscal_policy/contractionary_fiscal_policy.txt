@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new contractionary_fiscal_policy = {
+	name = "Contractionary Fiscal Policy"
+	desc = "Involves decreasing government spending or increasing taxes to slow down economic activity, typically used during periods of high inflation or an overheated economy."
+	inherit = default_reform
+	icon = monastic_breweries_reform
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += contractionary_fiscal_policy
+governments:theocracy:reform_levels:13 += contractionary_fiscal_policy

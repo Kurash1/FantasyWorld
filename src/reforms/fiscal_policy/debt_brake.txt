@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new debt_brake = {
+	name = "Debt Brake"
+	desc = "A fiscal rule that limits the amount of government borrowing, allowing for temporary deficits during recessions but requiring balanced budgets over the economic cycle."
+	inherit = default_reform
+	icon = rajput_kingdom
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += debt_brake
+governments:theocracy:reform_levels:13 += debt_brake

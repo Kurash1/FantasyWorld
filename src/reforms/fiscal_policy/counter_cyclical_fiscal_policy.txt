@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new counter_cyclical_fiscal_policy = {
+	name = "Counter-Cyclical Fiscal Policy"
+	desc = "Uses automatic stabilizers, like unemployment benefits or progressive taxes, to smooth out economic fluctuations without additional policy intervention."
+	inherit = default_reform
+	icon = examination_system_reform
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += counter_cyclical_fiscal_policy
+governments:theocracy:reform_levels:13 += counter_cyclical_fiscal_policy

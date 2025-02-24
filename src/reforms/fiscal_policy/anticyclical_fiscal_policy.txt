@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:13 += new anticyclical_fiscal_policy = {
+	name = "Anticyclical Fiscal Policy"
+	desc = "Aims to counteract the economic cycle by increasing spending or cutting taxes during downturns and reducing spending or raising taxes during booms to stabilize the economy."
+	inherit = default_reform
+	icon = national_constituent_reform
+	modifiers = {
+			
+	}
+}
+governments:republic:reform_levels:13 += anticyclical_fiscal_policy
+governments:theocracy:reform_levels:13 += anticyclical_fiscal_policy
