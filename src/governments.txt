@@ -41,36 +41,37 @@ new government monarchy = {
 		10 = "Economic Policy"
 		11 = "Tax System"
 		12 = "Trade Policy"
+		13 = "Fiscal Policy"
 		
 		# State Matters
-		13 = "Bureaucracy"
-		14 = "Education"
-		15 = "Healthcare"
-		16 = "Welfare"
-		17 = "Representation"
+		14 = "Bureaucracy"
+		15 = "Education"
+		16 = "Healthcare"
+		17 = "Welfare"
+		18 = "Representation"
 		
 		# Legal Matters
-		18 = "Legal System"
-		19 = "Court System"
-		20 = "Policing"
-		21 = "Prison System"
-		22 = "Popular Right"
+		19 = "Legal System"
+		20 = "Court System"
+		21 = "Policing"
+		22 = "Prison System"
+		23 = "Popular Right"
 		
 		# Foreign Matters
-		23 = "Army Model"
-		24 = "Navy Model"
-		25 = "Military Doctrine"
-		26 = "Foreign Policy"
-		27 = "Colonization"
-		28 = "Espionage"
+		24 = "Army Model"
+		25 = "Navy Model"
+		26 = "Military Doctrine"
+		27 = "Foreign Policy"
+		28 = "Colonization"
+		29 = "Espionage"
 		
 		# Cultural Matters
-		29 = "Art Support"
-		30 = "Scientific Support"
+		30 = "Art Support"
+		31 = "Scientific Support"
 		
 		# Special
-		31 = "Governmental Quirk"
-		32 = "Tooltip"
+		32 = "Governmental Quirk"
+		33 = "Tooltip"
 	}
 }
 new government republic = {

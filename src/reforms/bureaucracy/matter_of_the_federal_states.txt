@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:13 += new matter_of_the_federal_states = {
+governments:monarchy:reform_levels:14 += new matter_of_the_federal_states = {
 	name = "Matter of the Federal States"
 	desc = "The federal states in this country hold more power in policing and every day governing than the central government. It falls to them to enforce the law. The states also controll the police."
 	inherit = default_reform
@@ -10,5 +10,5 @@ governments:monarchy:reform_levels:13 += new matter_of_the_federal_states = {
 		
 	}
 }
-governments:republic:reform_levels:13 += matter_of_the_federal_states
-governments:theocracy:reform_levels:13 += matter_of_the_federal_states
+governments:republic:reform_levels:14 += matter_of_the_federal_states
+governments:theocracy:reform_levels:14 += matter_of_the_federal_states

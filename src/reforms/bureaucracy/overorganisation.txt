@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:13 += new overorganisation = {
+governments:monarchy:reform_levels:14 += new overorganisation = {
 	name = "Overorganisation"
 	desc = "Whatever system has been used prior it evolved into a complete mess. The bureaucracy seems to by now function only for its own sake. The population is weary and even the politicians are standing with fear in front of the incomprehensible mess they created over the decades. Reforming out of it seems almost impossible as the bureaucratic rules are by now fully calcified."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:13 += new overorganisation = {
 		
 	}
 }
-governments:republic:reform_levels:13 += overorganisation
-governments:theocracy:reform_levels:13 += overorganisation
+governments:republic:reform_levels:14 += overorganisation
+governments:theocracy:reform_levels:14 += overorganisation

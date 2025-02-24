@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:13 += new bureaucratical_elections = {
+governments:monarchy:reform_levels:14 += new bureaucratical_elections = {
 	name = "Bureaucratical Elections"
 	desc = "Elections are held for many if not all bureaucratical positions in this realm. This ranges from clerks, to judges and even government ministers."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:13 += new bureaucratical_elections = {
 		
 	}
 }
-governments:republic:reform_levels:13 += bureaucratical_elections
-governments:theocracy:reform_levels:13 += bureaucratical_elections
+governments:republic:reform_levels:14 += bureaucratical_elections
+governments:theocracy:reform_levels:14 += bureaucratical_elections

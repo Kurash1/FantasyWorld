@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:13 += new meritocratic_appointment = {
+governments:monarchy:reform_levels:14 += new meritocratic_appointment = {
 	name = "Meritocratic Appointment"
 	desc = "Only the best qualified persons are elected to be bureaucrats in this nation as it is believed that they will do their job more thoroughly."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:13 += new meritocratic_appointment = {
 		
 	}
 }
-governments:republic:reform_levels:13 += meritocratic_appointment
-governments:theocracy:reform_levels:13 += meritocratic_appointment
+governments:republic:reform_levels:14 += meritocratic_appointment
+governments:theocracy:reform_levels:14 += meritocratic_appointment
