@@ -14,10 +14,26 @@ new inheritable wasteland_province = {
 	impassible = yes
 }
 
-new province wasteland_1 = {
+new event_modifier deepwoods = {
+	name = "Deepwoods"
+	desc = "Infested by horrors unimaginable by most, these woods are completely impenetrable by the common peoples. Even the bravest of adventurers and strongest of mages are only a step away from death at all times inside. There is no hope of passing through this area, it will never be claimed by mortals."
+	modifier = {
+		picture = "skull"
+		
+		province_trade_power_modifier = 1%
+	}
+}
+
+new province uthbreh_deep = {
 	inherit = wasteland_province
 	color = { 8 26 11 }
-	name = "wasteland 1"
+	name = "Uthbreh Deep"
+	history = {
+		1.1.1->add_permanent_province_modifier = {
+			name = deepwoods
+			duration = -1
+		}
+	}
 }
 new province wasteland_2 = {
 	inherit = wasteland_province
@@ -2703,15 +2719,15 @@ generate_population = {
 quick_strait = {
 	from = ash_tower
 	to = yew_tower
-	through = wasteland_1
+	through = uthbreh_deep
 }
 quick_strait = {
 	from = mornatha
 	to = yew_tower
-	through = wasteland_1
+	through = uthbreh_deep
 }
 quick_strait = {
 	from = breochal
 	to = cairnvoe
-	through = wasteland_1
+	through = uthbreh_deep
 }
