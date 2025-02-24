@@ -11,6 +11,8 @@
 # ⠀⠈⠉⠉⠉⠀⠀⠀⠀⢟⠒⠒⢊⣹⡀⠀⠀⠈⠢⣀⡀⣀⣠⣯⡎⠀⠀⠀⠀⠀⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠯⢍⣁⠤⠅⠀⠀⠀⠀⠀⠘⠛⠓⠉⠀⠀⠀⠀⠀⠀⠀
 
+new named_float MOVEMENT_COST_MULTIPLIER = 2
+
 new define NDefines.NCountry.REVOLT_SIZE_BASE = 1
 new define NDefines.NCountry.REVOLT_TECH_IMPACT = 0
 new define NDefines.NCountry.REVOLT_TECH_MORALE = 0
@@ -28,6 +30,12 @@ new define NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25
 
 new define NDefines.NCountry.ALLOW_FEMALE_GENERALS = 1
 new define NDefines.NCountry.FEMALE_ADVISOR_CHANCE = 50
+
+run_effect = {
+	foreach $ in terrains {
+		$:movement_cost *= MOVEMENT_COST_MULTIPLIER
+	}
+}
 
 new named_effect free_merc_company_list = {
 	
