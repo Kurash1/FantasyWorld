@@ -50,13 +50,3 @@ new policy grand_temple = {
 		church_loyalty_modifier = 0.15
 	}
 }
-new policy republican_palace = {
-	name = "Republican Palace"
-	desc = "The republican palace is the heart of our capital and country."
-	monarch_power = ADM
-	group_1 = centralization_ideas
-	group_2 = republic_ideas
-	modifier = {
-		republican_tradition = 0.5
-	}
-}
