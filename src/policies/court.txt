@@ -1,0 +1,44 @@
+new policy holy_orders_in_the_diet = {
+	name = "Holy orders in the diet"
+	desc = "The holy orders ought to be represented in the diet as well."
+	monarch_power = ADM
+	group_1 = court_ideas
+	group_2 = crusader_ideas
+	modifier = {
+		establish_order_cost = -0.25
+		church_loyalty_modifier = 0.1
+	}
+}
+new policy nobility_integration_act = {
+	name = "Nobility integration act"
+	desc = "We cut a deal with the nobility so they become more loyal and supportive in the diet."
+	monarch_power = ADM
+	group_1 = court_ideas
+	group_2 = feudal_ideas
+	modifier = {
+		nobles_loyalty_modifier = 0.1
+	}
+}
+new policy the_commoners_representation = {
+	name = "The Commoners Representation"
+	desc = "Rich commoners and the lower nobility should be represented in the diet too as they actually have some influence."
+	monarch_power = ADM
+	group_1 = court_ideas
+	group_2 = knightly_ideas
+	modifier = {
+		global_unrest = -1
+		burghers_loyalty_modifier = 0.05
+	}
+}
+new policy court_of_splendor = {
+	name = "Court of splendor"
+	desc = "Our court is such a place of awe-inspiring glory that it heavily improves our reputation."
+	monarch_power = DIP
+	group_1 = court_ideas
+	group_2 = prestigious_ideas
+	modifier = {
+		monthly_splendor = 1
+		prestige = 0.5
+		diplomatic_reputation = 0.5
+	}
+}
