@@ -1,0 +1,62 @@
+new policy permanent_capitals = {
+	name = "Permanent Capitals"
+	desc = "Our capital is now at a permanent location we will no longer travel around the country to hold court."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = court_ideas
+	modifier = {
+		move_capital_cost_modifier = 1.5
+		administrative_efficiency = 0.05
+	}
+}
+new policy federalization = {
+	name = "Federalization"
+	desc = "By blending the benefits of both centralization and decentralization we achieved a new type of government. This government lends a great chunk of responsibility to the singular states in return they get a say in the politics of the country as a whole as well. All in all the country itself decentralized and the states themselves centralized."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = decentralization_ideas
+	modifier = {
+		governing_capacity_modifier = 0.1
+		global_unrest = -1
+	}
+}
+new policy one_country_one_law = {
+	name = "One country One law"
+	desc = "The whole country has the same laws. This makes it easier to hold trials. People will know what is legal and illegal at all times. It is a stark contrast to the mess of regional laws we had to uphold before."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = jurisprudence_ideas
+	modifier = {
+		state_maintenance_modifier = -0.2
+	}
+}
+new policy residential_palace = {
+	name = "Residential palace"
+	desc = "A residential palace in the capital will serve as our seat of government."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = monarchy_ideas
+	modifier = {
+		prestige = 1
+	}
+}
+new policy grand_temple = {
+	name = "Grand Temple"
+	desc = "A grand temple in the capital will serve as our seat of government."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = theocracy_ideas
+	modifier = {
+		church_loyalty_modifier = 0.15
+	}
+}
+new policy republican_palace = {
+	name = "Republican Palace"
+	desc = "The republican palace is the heart of our capital and country."
+	monarch_power = PENDING
+	group_1 = centralization_ideas
+	group_2 = republic_ideas
+	modifier = {
+		republican_tradition = 0.5
+	}
+}
