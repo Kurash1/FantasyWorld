@@ -42,3 +42,13 @@ new policy court_system = {
 		all_estate_loyalty_equilibrium = 0.05
 	}
 }
+new policy bureaucratic_corps = {
+	name = "Bureaucratic Corps"
+	desc = "A proper bureaucratic corps will help us govern our country in an effective manner."
+	monarch_power = ADM
+	group_1 = administrative_ideas
+	group_2 = state_administration_ideas
+	modifier = {
+		governing_cost = -0.1
+	}
+}
