@@ -1,0 +1,95 @@
+new policy crusader_castles = {
+	name = "Crusader Castles"
+	desc = "The crusaders build secure up to date castles in recently conquered territories."
+	monarch_power = MIL
+	group_1 = crusader_ideas
+	group_2 = defensive_ideas
+	modifier = {
+		defensiveness = 0.25
+	}
+}
+new policy spread_the_faith = {
+	name = "Spread the Faith"
+	desc = "The ultimate goal of any crusade must be pursued even harder."
+	monarch_power = ADM
+	group_1 = crusader_ideas
+	group_2 = expansion_ideas
+	modifier = {
+		global_missionary_strength = 0.02
+	}
+}
+new policy holy_order_banking_monopoly = {
+	name = "Holy Order Banking Monopoly"
+	desc = "The holy orders now have the sole banking rights in our country."
+	monarch_power = ADM
+	group_1 = crusader_ideas
+	group_2 = economic_ideas
+	modifier = {
+		interest = -1
+	}
+}
+new policy paladin_armies  = {
+	name = "Paladin Armies"
+	desc = "Legions of mounted knights are fighting for the righteous cause."
+	monarch_power = MIL
+	group_1 = crusader_ideas
+	group_2 = knightly_ideas
+	modifier = {
+		cavalry_shock = 1
+	}
+}
+new policy battlefield_sermons = {
+	name = "Battlefield Sermons"
+	desc = "Crusaders keep chanting and praying on the battlefield."
+	monarch_power = MIL
+	group_1 = crusader_ideas
+	group_2 = religious_ideas
+	modifier = {
+		land_morale = 0.1
+	}
+}
+new policy orders_in_government = {
+	name = "Orders in Government"
+	desc = "As a theocracy it was only natural to integrate the orders so much that they are now basically indistinguishable from the clergy in charge."
+	monarch_power = ADM
+	group_1 = crusader_ideas
+	group_2 = theocracy_ideas
+	modifier = {
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.15
+	}
+}
+new policy crusader_territories = {
+	name = "Crusader Territories"
+	desc = "Like all estates the crusaders should also hold land and titles."
+	monarch_power = ADM
+	group_1 = crusader_ideas
+	group_2 = feudal_ideas
+	modifier = {
+		church_influence_modifier = 0.05
+		church_loyalty_modifier = 0.1
+		fort_maintenance_modifier = -0.15
+	}
+}
+new policy fortress_monasteries = {
+	name = "Fortress Monasteries"
+	desc = "A place to hone the skills of any would be paladin sounds like a good place to have"
+	monarch_power = MIL
+	group_1 = crusader_ideas
+	group_2 = monastic_ideas
+	modifier = {
+		church_loyalty_modifier = 0.05
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.2
+	}
+}
+new policy war_clerics = {
+	name = "War Clerics"
+	desc = "War Clerics now accompany the paladins on their crusades. They can both heal and destroy."
+	monarch_power = MIL
+	group_1 = crusader_ideas
+	group_2 = war_magic_ideas
+	modifier = {
+		cavalry_fire = 0.5
+	}
+}
