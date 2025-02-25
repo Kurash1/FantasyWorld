@@ -1,0 +1,101 @@
+new policy logisticianers = {
+	name = "Logisticianers"
+	desc = "One of our mages had a brilliant idea why not just summon needed supplies and teleport in reinforcements? The general idea is to employ a new kind of mage a so called logisticianer. They will march with the army and conjure supplies as needed."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = conjuration_ideas
+	modifier = {
+		land_attrition = -0.1
+	}
+}
+new policy expansive_stockpiles = {
+	name = "Expansive stockpiles"
+	desc = "Our fortifications have an enormous stockpile in repair material, supplies, weapons and food. Allowing for bigger garrisons to be fielded and sieges to be endured much longer."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = defensive_ideas
+	modifier = {
+		garrison_size = 0.15
+		global_garrison_growth = 0.25
+	}
+}
+new policy better_supply_carts = {
+	name = "Better Supply Carts"
+	desc = "Our engineers greatly improved our supply wagons so they can ship more stocks to our armies in the field now."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = engineering_ideas
+	modifier = {
+		global_supply_limit_modifier = 0.2
+	}
+}
+new policy depravation_of_supplies = {
+	name = "Depravation of supplies"
+	desc = "Our farmers are soldiers in disguise they harvest crops ripe or not just shortly before a hostile army is due to arrive. They will find nothing of use in the countryside. Our own fortified stocks will be filled. Their armies however will be deprived of anything of value. You cannot eat loot after all."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = guerilla_ideas
+	modifier = {
+		hostile_attrition = 1
+	}
+}
+new policy protected_convoys = {
+	name = "Protected convoys"
+	desc = "Having mastered both logistics and military commissioning we realized how to make supplies a regular and safe endeavour. The reinforcements of the army will serve a guards for the supplies."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = logistic_ideas
+	modifier = {
+		land_attrition = -0.15
+	}
+}
+new policy reserve_battallions = {
+	name = "Reserve battallions"
+	desc = "Holding some regiments behind the battlefield back in reserve allows us to quickly fill any gap that may arise."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = mobility_ideas
+	modifier = {
+		reinforce_speed = 0.5
+	}
+}
+new policy blitzkrieg_logistics = {
+	name = "Blitzkrieg logistics"
+	desc = "Often our armies advance far faster than our actual supplies. This cannot do not only does it not allow us to exploit a gap we made in the enemy frontline but it also puts our own units at risk. We came up with ideas to make the supplies keep up with the army."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = offensive_ideas
+	modifier = {
+		movement_speed = 0.1
+	}
+}
+new policy requisitioning = {
+	name = "Requisitioning"
+	desc = "Our armies are ordered to requisition food even from locals. If the commanders can pay for it great if they have to take it by force fine. We still prefer option 1 as it leaves us with less risk but the supplies are too important to be neglected."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = scouting_ideas
+	modifier = {
+		land_attrition = -0.1
+	}
+}
+new policy cooking_hours = {
+	name = "Cooking hours"
+	desc = "Our generals in the field have been commanded to give their soldiers time to cook some prepared meals for themselves. That will not only heighten morale but will also improve the general fitness of our soldiers as compared to that hard tack they keep having to eat until now."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = strategic_ideas
+	modifier = {
+		land_morale = 0.1
+	}
+}
+new policy commissionary_bread = {
+	name = "Commissionary Bread"
+	desc = "Hard, sturdy and durable commissionary bread tastes awful but fills a stomach really well. It is also a cuboid so it means it can be stacked."
+	monarch_power = MIL
+	group_1 = commission_ideas
+	group_2 = agricultural_ideas
+	modifier = {
+		land_maintenance_modifier = -0.05
+	}
+}
