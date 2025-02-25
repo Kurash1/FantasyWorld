@@ -1,0 +1,70 @@
+new policy many_seats_of_governance = {
+	name = "Many Seats of Governance"
+	desc = "Having a decentralised approach to governance makes it really hard for spies to uncover things in our country."
+	monarch_power = DIP
+	group_1 = decentralization_ideas
+	group_2 = spy_ideas
+	modifier = {
+		global_spy_defence = 0.15
+	}
+}
+new policy minority_representation = {
+	name = "Minority Representation"
+	desc = "Our minorities need to be represented and protected. Their culture is not to be changed."
+	monarch_power = ADM
+	group_1 = decentralization_ideas
+	group_2 = humanist_ideas
+	modifier = {
+		num_accepted_cultures = 2
+	}
+}
+new policy satrapies = {
+	name = "Satrapies"
+	desc = "Appointed local rulers with far reaching authority govern our regions in our stead."
+	monarch_power = ADM
+	group_1 = decentralization_ideas
+	group_2 = imperialism_ideas
+	modifier = {
+		territories_governing_cost = -0.15
+	}
+}
+new policy vassal_placation_act = {
+	name = "Vassal Placation Act"
+	desc = "What is good for our vassals is also good for us. We need to be as friendly as possible to our vassals."
+	monarch_power = DIP
+	group_1 = decentralization_ideas
+	group_2 = influence_ideas
+	modifier = {
+		reduced_liberty_desire = 15
+	}
+}
+new policy one_country_many_laws = {
+	name = "One country Many laws"
+	desc = "A one fits all solution is often not the best idea. It is also like this in the matter of the law."
+	monarch_power = ADM
+	group_1 = decentralization_ideas
+	group_2 = jurisprudence_ideas
+	modifier = {
+		global_unrest = -1
+	}
+}
+new policy university_landscape = {
+	name = "University Landscape"
+	desc = "Our country does not possess only one university but many that interact in an intricate web with one another."
+	monarch_power = ADM
+	group_1 = decentralization_ideas
+	group_2 = scholastic_ideas
+	modifier = {
+		idea_cost = -0.025
+	}
+}
+new policy branch_offices = {
+	name = "Branch Offices"
+	desc = "Our people should be able to do every government interaction close to their home."
+	monarch_power = ADM
+	group_1 = decentralization_ideas
+	group_2 = state_administration_ideas
+	modifier = {
+		global_unrest = -1
+	}
+}
