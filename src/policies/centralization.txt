@@ -9,17 +9,6 @@ new policy permanent_capitals = {
 		administrative_efficiency = 0.05
 	}
 }
-new policy federalization = {
-	name = "Federalization"
-	desc = "By blending the benefits of both centralization and decentralization we achieved a new type of government. This government lends a great chunk of responsibility to the singular states in return they get a say in the politics of the country as a whole as well. All in all the country itself decentralized and the states themselves centralized."
-	monarch_power = ADM
-	group_1 = centralization_ideas
-	group_2 = decentralization_ideas
-	modifier = {
-		governing_capacity_modifier = 0.1
-		global_unrest = -1
-	}
-}
 new policy one_country_one_law = {
 	name = "One country One law"
 	desc = "The whole country has the same laws. This makes it easier to hold trials. People will know what is legal and illegal at all times. It is a stark contrast to the mess of regional laws we had to uphold before."
