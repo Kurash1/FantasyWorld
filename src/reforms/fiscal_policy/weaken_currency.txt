@@ -1,10 +1,14 @@
 governments:monarchy:reform_levels:13 += new weaken_currency = {
 	name = "Weaken Currency"
-	desc = "A weak currency is useful if the state wants to export lots of goods but it also hampers domestic consumption and can lead to rising inflation. Buying goods out of other countries also becomes much more costly."
+	desc = "Weakening our currency provides us with export opportunities as our goods will be cheaper for foreigner merchants to buy. While this results in a rise in foreign trade it also means our domestic currency will likely face severe inflation. Weakening our currency also has the affect of making loans easier to payback though."
 	inherit = default_reform
 	icon = smugglers_haven
 	modifiers = {
-			
+		global_foreign_trade_power = 10%
+		interest = -0.5
+		
+		inflation_reduction = -0.05
+		monthly_gold_inflation_modifier = 25%
 	}
 }
 governments:republic:reform_levels:13 += weaken_currency

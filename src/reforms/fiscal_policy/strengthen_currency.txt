@@ -1,10 +1,13 @@
 governments:monarchy:reform_levels:13 += new strengthen_currency = {
 	name = "Strengthen Currency"
-	desc = "A strong currency is necessary to cheaply import goods and strengthen the domestic economy. It does however also mean that our goods are likewise harder to export. We can also expect a higher tax income from this."
+	desc = "Strengthening our Currency makes the domestic market of our country far more viable but also comes with the downside of making our goods harder to sell on the international market."
 	inherit = default_reform
 	icon = paper_with_seal_3
 	modifiers = {
-			
+		production_efficiency = 5%
+		global_prosperity_growth = 0.05
+		
+		global_foreign_trade_power = -5%
 	}
 }
 governments:republic:reform_levels:13 += strengthen_currency

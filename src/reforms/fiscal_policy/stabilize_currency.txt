@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:13 += new stabilize_currency = {
+	name = "Stabilize Currency"
+	desc = "By keeping our currency stable we can avoid inflatory price spikes. This is a safe option but also does not allow us any of the benefits of currency manipulation."
+	inherit = default_reform
+	icon = paper_with_seal
+	modifiers = {
+		inflation_reduction = 0.05
+		monthly_gold_inflation_modifier = -25%
+		
+		trade_efficiency = -5%
+	}
+}
+governments:republic:reform_levels:13 += stabilize_currency
+governments:theocracy:reform_levels:13 += stabilize_currency
