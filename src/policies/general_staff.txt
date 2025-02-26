@@ -1,0 +1,115 @@
+new policy well_educated_generals_and_admirals = {
+	name = "Well educated generals and admirals"
+	desc = "Our admirals and generals are educated to not fail even in long wars."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = extended_campaign_ideas
+	modifier = {
+		army_tradition = 1
+	}
+}
+new policy military_bureaucracy = {
+	name = "Military bureaucracy"
+	desc = "Like the civil society administration the military must also be properly administered."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = commission_ideas
+	modifier = {
+		land_maintenance_modifier = -0.05
+		naval_maintenance_modifier = -0.05
+	}
+}
+new policy marshalls = {
+	name = "Marshalls"
+	desc = "Marshalls led the army from the front on horse back."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = large_army_ideas
+	modifier = {
+		morale_damage_received = -0.1
+	}
+}
+new policy mission_type_tactics = {
+	name = "Mission-type tactics"
+	desc = "We only give our officers at the frontline generic commands. Take this city for example. How they do it is left to their own devices however. But if something goes wrong the soldiers will blame the leading officers of Course..."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = mobility_ideas
+	modifier = {
+		movement_speed = 0.1
+		army_tradition = 0.5
+	}
+}
+new policy military_academies = {
+	name = "Military Academies"
+	desc = "Our generals spent countless years in military academies learning from books what others learn from spilt blood."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = professionalism_ideas
+	modifier = {
+		military_tactics = 0.1
+	}
+}
+new policy scouting_reports = {
+	name = "Scouting reports"
+	desc = "Our scouts write detailed reports for the high command and our generals in the field."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = scouting_ideas
+	modifier = {
+		land_attrition = -0.1
+	}
+}
+new policy camp_prefect = {
+	name = "Camp prefect"
+	desc = "A long served soldier who knows the ins and outs of the legion they got attached to. They rose up through the ranks from the lowest foot soldier to this esteemed position at the end of their career."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = standing_army_ideas
+	modifier = {
+		global_supply_limit_modifier = 0.2
+	}
+}
+new policy war_council = {
+	name = "War council"
+	desc = "During war time civil government ceases to exist and a war council is established in their stead. The entire power of the country is thrown into the war effort ."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = state_administration_ideas
+	modifier = {
+		war_exhaustion = -0.02
+		advisor_pool = 1
+	}
+}
+new policy war_chest = {
+	name = "War chest"
+	desc = "War taxes are now properly legislated and can be enacted more effectively."
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = treasury_ideas
+	modifier = {
+		war_exhaustion = -0.03
+	}
+}
+new policy mage_generals = {
+	name = "Mage generals"
+	desc = "Our army also uses mages as generals"
+	monarch_power = MIL
+	group_1 = general_staff_ideas
+	group_2 = war_magic_ideas
+	modifier = {
+		siege_ability = 0.15
+		army_tradition = 0.5
+	}
+}
+new policy war_treatises = {
+	name = "War treatises"
+	desc = "Many of our generals wrote famous and lengthy books about war and how to wage it."
+	monarch_power = ADM
+	group_1 = general_staff_ideas
+	group_2 = strategic_ideas
+	modifier = {
+		possible_mil_policy = 1
+		free_mil_policy = 1
+	}
+}
