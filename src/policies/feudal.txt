@@ -1,0 +1,42 @@
+new policy fief = {
+	name = "Fief"
+	desc = "We grant land and protection to the nobility in exchange we expect military service or scutage."
+	monarch_power = MIL
+	group_1 = feudal_ideas
+	group_2 = knightly_ideas
+	modifier = {
+		cavalry_cost = -0.1
+	}
+}
+new policy church_fiefs = {
+	name = "Church fiefs"
+	desc = "We grant land to the church in exchange we want to get the aid the clerical bureaucracy."
+	monarch_power = ADM
+	group_1 = feudal_ideas
+	group_2 = religious_ideas
+	modifier = {
+		church_influence-modifier = 0.1
+		governing_capacity_modifier = 0.15
+	}
+}
+new policy chancellor = {
+	name = "Chancellor"
+	desc = "We appointed a chancellor to take care of the treasury."
+	monarch_power = ADM
+	group_1 = feudal_ideas
+	group_2 = treasury_ideas
+	modifier = {
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+}
+new policy feudal_society = {
+	name = "Feudal society"
+	desc = "Our society is categorized into variying estates first comes the monarch themselves, followed by the clergy and nobility than the burghers and lastly the mass of peasants that has no representation in the diet."
+	monarch_power = ADM
+	group_1 = feudal_ideas
+	group_2 = society_ideas
+	modifier = {
+		all_estate_possible_privileges = 2
+	}
+}
