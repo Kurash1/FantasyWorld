@@ -1,0 +1,145 @@
+new policy enchanted_fortresses = {
+	name = "Enchanted fortresses"
+	desc = "Our fortresses are covered in protective runes and wards. Enormous mage shields envelop them."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = enchanting_ideas
+	modifier = {
+		defensiveness = 0.15
+	}
+}
+new policy counter_siege_design_schematics = {
+	name = "Counter siege design schematics"
+	desc = "Siegecraft becomes ever more elaborate with the rise of engineering. We need to counter this by building our fortresses that directly counter the modern siege tactics."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = engineering_ideas
+	modifier = {
+		defensiveness = 0.2
+		fort_maintenance_modifier = 0.1
+	}
+}
+new policy fortresses_to_mountains_act = {
+	name = "Fortresses to mountains act"
+	desc = "Our fortresses must be as strong as the very bones of the earth only then will they withstand the constant bombardement of the besieger."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = fortress_ideas
+	modifier = {
+		defensiveness = 0.25
+	}
+}
+new policy tiny_castles = {
+	name = "Tiny castles"
+	desc = "We constructed tiny castles all over the countryside. The garrisons are often only a handful of people from local militias but every second they buy us is valuable to us."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = guerilla_ideas
+	modifier = {
+		defensiveness = 0.1
+		garrison_damage = 0.15
+	}
+}
+new policy floodable_surrroundings  = {
+	name = "Floodable surrroundings "
+	desc = "Sluices have been constructed to fill up the castle moats and turn the surrounding area into an enormous swamp."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = hydrology_ideas
+	modifier = {
+		hostile_attrition = 1
+	}
+}
+new owned_province_modifier illusionary_defenses_modifier = {
+	name = "Illusionary Defenses"
+	trigger_tooltip = "owned by you."
+	province = {
+		local_hostile_movement_speed = -0.25
+	}
+}
+new policy illusionary_defenses = {
+	name = "Illusionary defenses"
+	desc = "Not everything in our fortresses is real some things are just illusions. But we will not complain if our enemy wastes expensive powder, lives or magicka at those imaginary targets."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = illusion_ideas
+	modifier = {
+		defensiveness = 0.05
+	}
+	effect = {
+		add_owned_province_modifier = illusionary_defenses_modifier
+	}
+	remove_effect = {
+		remove_owned_province_modifier = illusionary_defenses_modifier 
+	}
+}
+new policy tunnel_network = {
+	name = "Tunnel Network"
+	desc = "Fortifications are connected by an intricate network of tunnels. That way reinforcements and supplies can be secretly moved in."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = infrastructure_ideas
+	modifier = {
+		garrison_size = 0.2
+	}
+}
+new policy bestresses = {
+	name = "Bestresses"
+	desc = "Our fortresses are the best hence they are called bestresses right?"
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = quality_ideas
+	modifier = {
+		defensiveness = 0.25
+	}
+}
+new policy enormous_garrisons = {
+	name = "Enormous garrisons"
+	desc = "Our garrisons are armies in themselves."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = quantity_ideas
+	modifier = {
+		garrison_size = 0.5
+	}
+}
+new policy turtling = {
+	name = "Turtling"
+	desc = "A strategy that aims to bring down the enemy by exhausting themselves at our defenses."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = strategic_ideas
+	modifier = {
+		hostile_attrition = 1
+	}
+}
+new policy war_wizard_turrets = {
+	name = "War wizard turrets"
+	desc = "Our fortresses have turrets for war wizards to stand in and let spellfire rain upon our enemies."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = war_magic_ideas
+	modifier = {
+		hostile_attrition = 1
+	}
+}
+new policy the_best_stones = {
+	name = "The best stones"
+	desc = "Our masons know which types of stone are the best for fortress constructions let us use those types exclusively."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = masonry_ideas
+	modifier = {
+		defensiveness = 0.15
+	}
+}
+new policy improved_armour = {
+	name = "Improved armour"
+	desc = "Our armour has been greatly enhanced."
+	monarch_power = MIL
+	group_1 = defensive_ideas
+	group_2 = smithing_ideas
+	modifier = {
+		shock_damage_received = -0.1
+	}
+}
