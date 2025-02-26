@@ -1,0 +1,72 @@
+new policy dikes_and_dams = {
+	name = "Dikes and Dams"
+	desc = "Dikes protect our coastlines from severe floodings while dams function as water reservoirs and make our water mills more efficient."
+	monarch_power = ADM
+	group_1 = engineering_ideas
+	group_2 = hydrology_ideas
+	modifier = {
+		global_monthly_devastation = -0.1
+		production_efficiency = 0.05
+	}
+}
+new policy bucketwheels = {
+	name = "Bucketwheels "
+	desc = "Having a line of buckets on a chain with a pulley system makes it so much easier to get the rocks out of the quarries."
+	monarch_power = ADM
+	group_1 = engineering_ideas
+	group_2 = masonry_ideas
+	modifier = {
+		production_efficiency = 0.1
+	}
+}
+new policy lifts_and_pulley_systems = {
+	name = "Lifts and pulley systems"
+	desc = "With lifts and a pulley system we can quickly get miners as well as ores in and out of the mine."
+	monarch_power = ADM
+	group_1 = engineering_ideas
+	group_2 = montane_ideas
+	modifier = {
+		production_efficiency = 0.15
+	}
+}
+new policy professional_cannoneers = {
+	name = "Professional cannoneers"
+	desc = "Sappers are professionals at handling artillery. "
+	monarch_power = MIL
+	group_1 = engineering_ideas
+	group_2 = quality_ideas
+	modifier = {
+		siege_ability = 0.15
+	}
+}
+new policy mass_produced_cannons = {
+	name = "Mass produced cannons"
+	desc = "Cannons are now no longer forged but smelted in form. It is not too different of a process to producing bells so we already have the infrastructure for it anyways. Another side effect is that cannons produced this way also last longer."
+	monarch_power = MIL
+	group_1 = engineering_ideas
+	group_2 = quantity_ideas
+	modifier = {
+		artillery_cost = -0.1
+	}
+}
+new policy smaller_cannons = {
+	name = "Smaller cannons"
+	desc = "The enormous cannons we used to have in the beginning were imposing yes and they also dealt damage like nothing else. However the reload time was so long that the defenders were able to repair the walls to such a point that it barely mattered. It is probably wiser too build smaller, guns that can fire far more often."
+	monarch_power = MIL
+	group_1 = engineering_ideas
+	group_2 = siegecraft_ideas
+	modifier = {
+		artillery_level_modifier = 0.2
+		artillery_levels_available_vs_fort = 1
+	}
+}
+new policy mill_powered_bellows = {
+	name = "Mill powered bellows"
+	desc = "If the smith's apprentice does not has to move the bellows anymore they can perform more important tasks."
+	monarch_power = ADM
+	group_1 = engineering_ideas
+	group_2 = smithing_ideas
+	modifier = {
+		production_efficiency = 0.1
+	}
+}
