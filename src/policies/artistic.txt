@@ -131,3 +131,23 @@ new policy elaborate_furniture = {
 		prestige = 0.5
 	}
 }
+new policy music_corps = {
+	name = "Music corps"
+	desc = "A dedicated music corps will keep the spirit of our army high"
+	monarch_power = MIL
+	group_1 = artistic_ideas
+	group_2 = standing_army_ideas
+	modifier = {
+		land_morale = 0.1
+	}
+}
+new policy church_music  = {
+	name = "Church Music "
+	desc = "One of the seven liberal arts. Focuses mostly on the heavenly kind of music that sung the world into existance."
+	monarch_power = ADM
+	group_1 = artistic_ideas
+	group_2 = scholastic_ideas
+	modifier = {
+		tolerance_own = 2
+	}
+}
