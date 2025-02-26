@@ -1,0 +1,10 @@
+new policy market_days = {
+	name = "Market days"
+	desc = "Market days are granted to cities as a special privilege."
+	monarch_power = ADM
+	group_1 = economic_ideas
+	group_2 = state_administration_ideas
+	modifier = {
+		center_of_trade_upgrade_cost = -0.5
+	}
+}
