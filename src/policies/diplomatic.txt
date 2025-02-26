@@ -1,0 +1,10 @@
+new policy rhetory = {
+	name = "Rhetory"
+	desc = "One of the seven liberal arts. It mainly focuses on how to convince people and how to present your point of view in the best way possible."
+	monarch_power = DIP
+	group_1 = diplomatic_ideas
+	group_2 = scholastic_ideas
+	modifier = {
+		ae_impact = -0.1
+	}
+}
