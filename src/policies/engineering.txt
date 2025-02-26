@@ -70,3 +70,13 @@ new policy mill_powered_bellows = {
 		production_efficiency = 0.1
 	}
 }
+new policy geometry = {
+	name = "Geometry"
+	desc = "One of the seven liberal arts. Focuses mostly on the inherent dimensional make-up of the mundane world."
+	monarch_power = ADM
+	group_1 = engineering_ideas
+	group_2 = scholastic_ideas
+	modifier = {
+		global_allowed_num_of_buildings = 1
+	}
+}
