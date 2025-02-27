@@ -1,39 +1,53 @@
 # Constants
 new named_int POPULATION_PER_POP = 10_000
-new named_float POPULATION_MONTHLY_GROWTH_RATE = 0.001
+new named_float POPULATION_MONTHLY_BIRTH_RATE = 0.3%
+new named_float POPULATION_MONTHLY_DEATH_RATE = 0.2%
 
 # Evaluated Values
 new named_float POP_MULT = ( POPULATION_PER_POP / 1000 )
 
-new script_variable devastation = {
-	name = "Devastation"
-}
-
-new modifier_definition pop_growth_modifier = {
-	name = "Pop Growth Modifier"
+new modifier_definition global_birth_modifier = {
+	name = "Birth Modifier"
 	is_percentage = yes
 }
-new script_variable var_pop_growth_modifier = {
-	name = "Pop Growth Modifier"
+new modifier_definition local_birth_modifier = {
+	name = "Local Birth Modifier"
+	is_percentage = yes
 }
-new script_variable var_pop_growth_rate = {
-	name = "Pop Growth Rate"
+new modifier_definition global_death_reduction = {
+	name = "Death Reduction"
+	is_percentage = yes
+}
+new modifier_definition local_death_reduction = {
+	name = "Local Death Reduction"
+	is_percentage = yes
 }
 
-new script_variable local_pop_growth_modifier = {
-	name = "Local Pop Growth Modifier"
+new script_variable growth_rate = {
+	name = "Growth Rate"
 }
-new script_variable pop_growth_per_year = {
-	name = "Pop Growth Per Year"
+
+new script_variable birth_rate = {
+	name = "Birth Rate"
 }
-new script_variable pop_growth_per_decade = {
-	name = "Pop Growth Per Decade"
+new script_variable base_birth_rate = {
+	name = "Base Birth Rate"
 }
-new script_variable pop_growth_per_century = {
-	name = "Pop Growth Per Century"
+new script_variable birth_modifier = {
+	name = "Birth Modifier"
 }
-new script_variable pop_growth_to_end = {
-	name = "Pop Growth To End"
+new script_variable birth_size_restriction = {
+	name = "Size Restriction"
+}
+
+new script_variable death_rate = {
+	name = "Death Rate"
+}
+new script_variable base_death_rate = {
+	name = "Base Death Rate"
+}
+new script_variable death_modifier = {
+	name = "Death Modifier"
 }
 
 new script_variable pops = {

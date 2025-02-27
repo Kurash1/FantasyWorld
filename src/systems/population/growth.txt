@@ -1,82 +1,84 @@
 new named_effect population_tick = {
-	# Base:
-	#	+ Pops * POPULATION_MONTHLY_GROWTH_RATE
 	#
-	&development := pops
-	&development *= POPULATION_MONTHLY_GROWTH_RATE
-	
-	&var_pop_growth_rate := development
-	
-	# Modifier:
-	#	- Devastation * 5
-	#	+ Pop Growth Modifier
-	#	+ Local Pop Growth Modifier
+	# Birth Rate
 	#
-	&devastation &= trigger_value:devastation
-	&devastation *= 5
 	
-	&var_pop_growth_modifier := { who = ROOT }
-	&var_pop_growth_modifier += 100
-	&var_pop_growth_modifier += local_pop_growth_modifier
-	&var_pop_growth_modifier -= devastation
+	#	Base: Pops * POPULATION_MONTHLY_BIRTH_RATE
+	&base_birth_rate := pops
+	&base_birth_rate *= POPULATION_MONTHLY_BIRTH_RATE
 	
-	# Final:
-	#	Base * Modifier
+	#	Modifier: 1 + Birth Modifier + Local Birth Modifier
+	&birth_modifier := 0
+	&birth_modifier &= modifier:local_birth_rate
+	&birth_modifier += owner
+	&birth_modifier += 1
+	
+	#	Size Restriction: Province Size / Pops
+	&birth_size_restriction &= trigger_value:province_size
+	if [&pops > birth_size_restriction] {
+		&birth_size_restriction /= pops
+	}
+	else {
+		&birth_size_restriction := 1
+	}
+	
+	#	Final: Base * Modifier * Size Restriction
+	&birth_rate := base_birth_rate
+	&birth_rate *= birth_modifier
+	&birth_rate *= birth_size_restriction
+	
 	#
-	&temp := var_pop_growth_modifier
-	&temp *= 0.01
-	&var_pop_growth_rate *= temp
-	
-	# Add growth to Pops
-	&pops += var_pop_growth_rate
-	
-	# Calculate
-	#	Per Year
-	#	Per Decade
-	#	Per Century
-	#	Till End Date
+	# Death Rate
 	#
-	&pop_growth_per_year := var_pop_growth_rate
-	&pop_growth_per_year *= 12
 	
-	&pop_growth_per_decade := pop_growth_per_year
-	&pop_growth_per_decade *= 10
+	#	Base: Pops * POPULATION_MONTHLY_DEATH_RATE
+	&base_death_rate := pops
+	&base_death_rate *= POPULATION_MONTHLY_DEATH_RATE
+	#	Modifier: 1 + Death Modifier + Local Death Modifier
+	&death_modifier := 0
+	&death_modifier &= modifier:local_death_reduction
+	&death_modifier += owner
+	&death_modifier += 1
+	#	Final: Base / Modifier
+	&death_rate := base_death_rate
+	&death_rate /= death_modifier
 	
-	&pop_growth_per_century := pop_growth_per_year
-	&pop_growth_per_century *= 100
+	#
+	# Growth Rate
+	#
 	
-	&temp &= trigger_value:is_year
-	&temp -= 2998
-	&temp *= -1
+	#	Base: Birth Rate - Death Rate
+	&growth_rate := birth_rate
+	&growth_rate -= death_rate
 	
-	&pop_growth_to_end := pop_growth_per_year
-	&pop_growth_to_end *= temp
-	
-	# Calculate Population Numbers
-	&population := pops
-	&population *= 1000
+	&pops += growth_rate
 	
 	# Adjust Development
 	adjust_development
 	
-	# Make numbers human readable
-	&pop_growth_per_year *= 1000
-	&pop_growth_per_decade *= 1000
-	&pop_growth_per_century *= 1000
-	&pop_growth_to_end *= 1000
+	# Tooltip Generation
+	&population := pops
+	&population *= 1000
 	
-	&development /= POPULATION_MONTHLY_GROWTH_RATE
-	&var_pop_growth_rate *= 1000
+	&birth_rate *= 1000
+	&base_birth_rate *= 1000
+	&death_rate *= 1000
+	&base_death_rate *= 1000
+	&growth_rate *= 1000
+	
+	&birth_modifier *= 100
+	&birth_size_restriction *= 100
+	&death_modifier *= 100
 }
 
 on_initialize += {
 	every_country = {
-		&var_pop_growth_modifier &= modifier:pop_growth_modifier
-		&var_pop_growth_modifier *= 100
+		&birth_modifier := 0
+		&birth_modifier &= modifier:global_birth_rate
+		&death_modifier := 0
+		&death_modifier &= modifier:global_death_reduction
 		
 		every_owned_province = {
-			&local_pop_growth_modifier := 0
-			
 			population_tick
 		}
 	}
@@ -105,8 +107,10 @@ new named_effect adjust_development = {
 	}
 }
 on_actions:on_monthly_pulse += {
-	&var_pop_growth_modifier &= modifier:pop_growth_modifier
-	&var_pop_growth_modifier *= 100
+	&birth_modifier := 0
+	&birth_modifier &= modifier:global_birth_rate
+	&death_modifier := 0
+	&death_modifier &= modifier:global_death_reduction
 	
 	every_owned_province = {
 		population_tick
