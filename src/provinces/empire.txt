@@ -198,11 +198,89 @@ new province nightgate = {
 	}
 }
 
-new province empire_81 = {
+new area vakholk = {
+	name = "Vakholk"
+	region = tyller_hills
+}
+new province vakholk = {
+    inherit = empire_province
+    color = { 103 197 209 }
+    name = "Vakholk"
+	area = vakholk
+	history += {
+		history_owner = dir_holk
+	}
+}
+new province az_kohol = {
+    inherit = empire_province
+    color = { 204 140 234 }
+    name = "Az'Kohol"
+	area = vakholk
+	history += {
+		history_owner = dir_holk
+	}
+}
+new province olplans = {
+    inherit = empire_province
+    color = { 149 240 164 }
+    name = "Olplans"
+	area = vakholk
+	history += {
+		history_owner = dir_holk
+	}
+}
+
+new area dir_holk = {
+	name = "Dir'Holk"
+	region = tyller_hills
+}
+new province dir_noz = {
+    inherit = empire_province
+    color = { 166 109 113 }
+    name = "Dir'noz"
+	area = dir_holk
+	history += {
+		history_owner = dir_holk
+	}
+}
+new province dir_holk = {
+    inherit = empire_province
+    color = { 150 208 183 }
+    name = "Dir'Holk"
+	area = dir_holk
+	history += {
+		history_owner = dir_holk
+	}
+}
+new province eknack = {
 	inherit = empire_province
 	color = { 201 161 155 }
-	name = "empire 81"
-	history += { }
+	name = "Eknack"
+	area = dir_holk
+	history += {
+		history_owner = dir_holk
+	}
+}
+
+generate_population = {
+	desired = 600
+	weight = 0.2
+	seed = 23740849
+	provinces = {
+		dir_holk
+		vakholk
+	}
+}
+generate_population = {
+	desired = 300
+	weight = 0.1
+	seed = 76732862
+	provinces = {
+		olplans
+		az_kohol
+		dir_noz
+		eknack
+	}
 }
 
 new area hamburrow = {

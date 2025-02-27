@@ -25,6 +25,18 @@ new inheritable empire_country = {
 	}
 }
 
+# Imperial Dwarves
+new country dir_holk = {
+	inherit = empire_country
+	tag = AHO
+	name = "Dir'Holk"
+	adj = "Dir"
+	color = {
+		150 50 0
+	}
+	capital = dir_holk
+}
+
 # Capital
 new country dicetown = {
 	inherit = empire_country
