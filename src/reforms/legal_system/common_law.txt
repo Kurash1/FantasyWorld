@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:18 += new common_law = {
+governments:monarchy:reform_levels:19 += new common_law = {
 	name = "Common Law"
 	desc = "In this country precedence and trial by peers are held up in high regards. Laws do not try to be all encompassing and a constitution is not a requirement either. Judges have great powers in interpretating the law and advocates seem to fight more each other than actually try to win by stating facts towards the judge."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:18 += new common_law = {
 		
 	}
 }
-governments:republic:reform_levels:18 += common_law
-governments:theocracy:reform_levels:18 += common_law
+governments:republic:reform_levels:19 += common_law
+governments:theocracy:reform_levels:19 += common_law
