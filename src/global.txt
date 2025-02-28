@@ -146,25 +146,7 @@ new localisation empty_line_tt = "	"
 new localisation  HAS_CAPITAL_FORT = "Has a non-influencing fort."
 new localisation IDEA_TAKEN_EFFECT = "$EFFECT$"
 new localisation IDEA_GROUP_REMOVED_EFFECT = "$EFFECT$"
-new custom_icon custom_mechanic_overlay = {
-	potential = {
-		NOT = {
-			open_custom_mechanic
-		}
-	}
-}
-new custom_button toggle_custom_mechanic_overlay = {
-	tooltip = "Toggle Technology Screen"
-	effect = {
-		if [has_country_flag = show_technology] {
-			clr_country_flag = show_technology
-		}
-		else {
-			set_country_flag = show_technology
-		}
-	}
-}
-new localisation HEADER_TECHNOLOGY = "Custom Mechanics"
+
 new event_modifier just_lost_to_rebels = {
 	name = "Rebel Victory"
 	modifier = { }
