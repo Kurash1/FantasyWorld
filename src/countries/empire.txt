@@ -401,6 +401,45 @@ new country lothvryn = {
 		255 120 70
 	}
 	capital = cairwych
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ashun"
+			dynasty = "Lothvryn"
+			stats = { 4 6 1 }
+			age = 32
+			birth_day = 11.2
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Aviel"
+			dynasty = "Lothvryn"
+			stats = { 3 3 2 }
+			age = 11
+			birth_day = 11.5
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Kemna"
+			dynasty = "Decshun"
+			stats = { 5 5 5 }
+			age = 31
+			birth_day = 7.6
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = lustful
+			add_ruler_personality = eccentric
+			add_ruler_personality = compassionate
+			
+			add_heir_personality = patient
+			
+			add_queen_personality = shy
+		}
+	}
 }
 new country caerloth = {
 	inherit = empire_country
