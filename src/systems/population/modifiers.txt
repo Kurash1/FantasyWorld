@@ -22,10 +22,3 @@ static_modifiers:development := {
 static_modifiers:provincial_tax_income := { }
 static_modifiers:provincial_production_size := { }
 static_modifiers:manpower := { }
-static_modifiers:land_province += {
-	migration_attraction = 1
-	emigration_modifier = 1
-}
-static_modifiers:capital_city += {
-	migration_attraction = 10
-}

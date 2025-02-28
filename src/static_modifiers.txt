@@ -69,6 +69,8 @@ new static_modifier city = {
 	garrison_growth = 0.05
 	allowed_num_of_manufactories = 1
 	local_has_musketeers = yes
+	migration_attraction = 1
+	emigration_modifier = 1
 }
 new static_modifier port = {
 	local_has_man_of_war = yes
@@ -77,11 +79,13 @@ new static_modifier in_state = {
 }
 new static_modifier in_capital_state = {
 	local_state_maintenance_modifier = -0.5
-	local_governing_cost = -1.0						
+	local_governing_cost = -1.0
+	migration_attraction = 5
 }
 new static_modifier coastal = {
 	supply_limit_modifier = 0.5
 	province_trade_power_modifier = 0.25
+	local_birth_modifier = 0.1
 }
 new static_modifier seat_in_parliament = {
 	local_manpower_modifier = 0.1
@@ -176,25 +180,14 @@ new static_modifier blockaded = {
 	ship_recruit_speed = 0.2
 	local_monthly_devastation = 0.25
 	province_trade_power_modifier = -1
+	local_death_reduction = -0.1
 }
 new static_modifier no_adjacent_controlled = {
 	local_colonial_growth = -5
 }
-new static_modifier provincial_tax_income = {
-	regiment_recruit_speed = -0.02
-	local_great_project_upgrade_time = -0.01
-	local_build_time = -0.01
-}
-new static_modifier provincial_production_size = {
-	trade_goods_size = 0.2
-	ship_recruit_speed = -0.01
-}
 new static_modifier knowledge_sharing = {
 }
 new static_modifier cardinals_spread_institution = {
-}
-new static_modifier manpower = {
-	garrison_growth = 0.01					
 }
 new static_modifier horde_development = {
 
@@ -202,20 +195,18 @@ new static_modifier horde_development = {
 new static_modifier province_razed = {
 	picture = "province_razed"
 }
-new static_modifier development = {
-	allowed_num_of_buildings = 0.25
-	supply_limit_modifier = 0.02
-	local_missionary_strength = -0.001
-	land_forcelimit	= 0.1			
-	naval_forcelimit = 0.1
-	local_sailors = 60
-	province_trade_power_value = 0.2
-}
-new static_modifier development_scaled = {
-	
-}
+
+# Development Disabled
+new static_modifier provincial_tax_income = { }
+new static_modifier provincial_production_size = { }
+new static_modifier manpower = { }
+new static_modifier development = { }
+new static_modifier development_scaled = { }
+
 new static_modifier capital_city = {
 	fort_level = 1
+	
+	migration_attraction = 5
 }
 new static_modifier patriarch_state = {
 	local_state_maintenance_modifier = 0.1
@@ -303,12 +294,15 @@ new static_modifier occupied = {
 	local_sailors_modifier = -0.5
 
 	local_monthly_devastation = 0.2
+	local_birth_modifier = -0.2
 }
 new static_modifier under_siege = {
 	trade_goods_size_modifier = -0.25
 	province_trade_power_modifier = -0.25
 
 	local_monthly_devastation = 0.1
+	local_death_reduction = -0.2
+	migration_attraction = -1000
 }
 new static_modifier devastation = {
 	trade_goods_size_modifier = -2
@@ -318,6 +312,8 @@ new static_modifier devastation = {
 	local_sailors_modifier = -2.0
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
+	local_death_reduction = -0.5
+	migration_attraction = -10
 }
 new static_modifier prosperity = {
 	local_development_cost = -0.1
@@ -449,10 +445,12 @@ new static_modifier war_taxes = {
 	land_maintenance_modifier = -0.15
 	naval_maintenance_modifier = -0.15
 	merc_maintenance_modifier = -0.05
+	global_birth_modifier = -0.1
 }
 new static_modifier stability = {
 	global_trade_power = 0.01
 	global_spy_defence = 0.05
+	global_birth_modifier = 0.05
 }
 new static_modifier positive_stability = {
 	global_unrest = -1				
