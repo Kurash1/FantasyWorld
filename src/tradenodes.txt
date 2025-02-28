@@ -16,11 +16,63 @@ new tradenode grondha = {
 	outgoings = {
 	}
 }
+new tradenode deep_riven = {
+	name = "Deep Riven"
+	location = port_rosen
+	areas = {
+		# Heartlands
+		shakmyr olyvren veshni patterk viltwatar olskill kasgorn
+		
+		# Tyller Hills
+		huveyrmont drakketh askirn
+		
+		# Riven River
+		port_rosen roseria nomstad drevnaya
+		
+		# Watar Forest
+		nyrthor
+	}
+}
+new tradenode shallow_riven = {
+	name = "Shallow Riven"
+	location = kornyshiv
+	areas = {
+		jarvelisk olimyrsk virkonmaa kolomyr zlatoryev korrmont zhendrik arkveil teyrloch vynkmont tarnopol kornyshiv chervynsk
+	}
+}
+new tradenode lake_divinum = {
+	name = "Lake Divinum"
+	location = empire_15
+	areas = {
+		radomyrsk slavych hamburrow gametown kraghaven seeburgen
+	}
+}
+new tradenode estelcost = {
+	name = "Estelcost"
+	location = novenhaven
+	areas = {
+		tinkercoast eisenmeer licherhafen rheinsmund novenhaven
+	}
+}
+new tradenode watar_forest = {
+	name = "Watar Forest"
+	location = kelgwyth
+	areas = {
+		inisfell calgat ekwatar estwyn rosegarden kelvaran rothwyn mornatha watar_lake dunbratha talygat glengat watarcaen dunvaloch thallag invergat
+	}
+}
 new tradenode konner = {
-	name = "Konner River"
+	name = "Konner Mountains"
 	location = gralthok
 	areas = {
+		# Sword-Valley
 		gralthok zarhallan drok_pass weshell
+		
+		# Tyller Hills
+		vakholk dir_holk bittergate keshveyr jymeilmont drekkyn kallmont cetryveir aramant
+		
+		# Heartlands
+		konnack
 	}
 	outgoings = {
 		{
