@@ -3,13 +3,18 @@ new named_effect population_tick = {
 	&birth_modifier := 0
 	&birth_modifier &= modifier:global_birth_modifier
 	&death_modifier := 0
-	&death_modifier &= modifier:global_death_reduction
+	&death_modifier &= modifier:global_death_modifier
 	
 	&emigration := 0
 	&immigration := 0
 	&attraction := 0
 	
-	every_owned_province = {
+	every_owned_province [is_city = no] {
+		&pops &= trigger_value:colonysize
+		&pops /= 1000
+	}
+	
+	every_owned_province [is_city = yes] {		
 		# Birth Rate
 		calculate_birth_rate
 		
@@ -30,7 +35,7 @@ new named_effect population_tick = {
 	&immigration := emigration #moving variables
 	&temp := attraction #moving variables
 	
-	every_owned_province = {
+	every_owned_province [is_city = yes] {
 		# Immigration
 		calculate_immigration
 		
@@ -109,14 +114,14 @@ new named_effect calculate_death_rate = {
 	&base_death_rate /= 12
 	#	Modifier: 1 + Death Modifier + Local Death Modifier
 	&death_modifier := 0
-	&death_modifier &= modifier:local_death_reduction
+	&death_modifier &= modifier:local_death_modifier
 	&death_modifier += owner
 	if [&death_modifier < 0.1] {
 		&death_modifier := 0.1
 	}
-	#	Final: Base / Modifier
+	#	Final: Base * Modifier
 	&death_rate := base_death_rate
-	&death_rate /= death_modifier
+	&death_rate *= death_modifier
 }
 new named_effect adjust_development = {
 	&temp &= development
@@ -139,6 +144,10 @@ new named_effect adjust_development = {
 		&temp &= development
 		&temp -= 2
 		&temp *= POP_MULT
+	}
+	
+	if [&pops < 0.9] {
+		decolonize = THIS
 	}
 }
 new named_effect generate_tooltip_values = {
@@ -165,4 +174,7 @@ on_initialize += {
 }
 on_actions:on_monthly_pulse += {
 	population_tick
+}
+on_actions:on_colony_finished += {
+	&pops := 1
 }
