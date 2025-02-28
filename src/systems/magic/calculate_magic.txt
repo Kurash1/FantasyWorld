@@ -1,25 +1,33 @@
 new named_effect calculate_magic = {
 	&local_mages := 0
 	
+	&base_mages &= modifier:global_mages
+	&mage_modifier &= modifier:global_mages_modifier
+	&mage_modifier += 1
+	
 	every_owned_province = {
 		&local_mages &= modifier:local_mages
 		&local_mages += pops
-		&temp &= modifier:local_mages_modifier
-		&temp += 1
+		&mage_modifier &= modifier:local_mages_modifier
+		&mage_modifier += prev
+		if [&mage_modifier < 0] {
+			&mage_modifier := 0
+		}
 		&local_mages *= temp
 		
 		owner->&local_mages += prev
 		&local_mages := 0
 	}
 	
-	&base_mages &= modifier:global_mages
-	&mage_modifier &= modifier:global_mages_modifier
-	&mage_modifier += 1
 	&local_mages .= 0
 	
+	if [&mage_modifier < 0] {
+		&mage_modifier := 0
+	}
+	
 	&total_mages += base_mages
-	&total_mages += local_mages
 	&total_mages *= mage_modifier
+	&total_mages += local_mages
 	&total_mages .= 0
 }
 on_initialize += {
