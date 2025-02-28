@@ -38,9 +38,11 @@ new tradegood fish = {
 	}
 	modifier = {
 		global_sailors_modifier = 0.25
+		global_birth_modifier = 0.05
 	}
 	province = {
 		local_sailors_modifier = 0.25
+		local_birth_modifier = 0.1
 	}
 	base_price = 2
 	is_gold = no
@@ -62,9 +64,11 @@ new tradegood grain = {
 	}
 	modifier = {
 		land_forcelimit_modifier = 0.20
+		global_birth_modifier = 0.1
 	}
 	province = {
 		land_forcelimit = 0.5
+		local_birth_modifier = 0.2
 	}
 	base_price = 2
 	is_gold = no
@@ -121,9 +125,11 @@ new tradegood alchemical_ingredients = {
 	}
 	modifier = {
 		hostile_attrition = 1
+		local_death_reduction = 0.05
 	}
 	province = {
 		local_hostile_attrition = 1
+		local_death_reduction = 0.1
 	}
 	base_price = 3.5
 	is_gold = no
@@ -148,9 +154,11 @@ new tradegood potions = {
 	}
 	modifier = {
 		manpower_recovery_speed = 0.25
+		local_death_reduction = 0.1
 	}
 	province = {
 		local_development_cost = -0.1
+		local_death_reduction = 0.2
 	}
 	base_price = 6.5
 	is_gold = no
@@ -226,6 +234,7 @@ new tradegood gold = {
 	modifier = {
 	}
 	province = {
+		migration_attraction = 5
 	}
 	base_price = 0
 	is_gold = yes
@@ -378,9 +387,11 @@ new tradegood livestock = {
 	}
 	modifier = {
 		cavalry_cost = -0.1
+		global_birth_modifier = 0.05
 	}
 	province = {
 		supply_limit_modifier = 0.5
+		local_birth_modifier = 0.1
 	}
 	base_price = 2
 	is_gold = no
@@ -450,9 +461,11 @@ new tradegood fruits = {
 	}
 	modifier = {
 		global_supply_limit_modifier = 0.10
+		global_birth_modifier = 0.05
 	}
 	province = {
 		supply_limit = 5
+		local_birth_modifier = 0.1
 	}
 	base_price = 2
 	is_gold = no
