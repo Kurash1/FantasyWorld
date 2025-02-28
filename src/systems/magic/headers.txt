@@ -1,0 +1,19 @@
+new modifier_definition global_mages = {
+	name = "Mages"
+}
+new modifier_definition global_mages_modifier = {
+	name = "Mages Modifier"
+	is_percentage = yes
+}
+new modifier_definition local_mages = {
+	name = "Mages"
+}
+new modifier_definition local_mages_modifier = {
+	name = "Mages Modifier"
+	is_percentage = yes
+}
+
+new script_variable base_mages = { tag = "magic" }
+new script_variable local_mages = { tag = "magic" }
+new script_variable mage_modifier = { tag = "magic" }
+new script_variable total_mages = { tag = "magic" }

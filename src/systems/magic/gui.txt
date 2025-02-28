@@ -1,0 +1,31 @@
+new localisation HEADER_TECHNOLOGY = "Magic"
+new named_ui_node magic_window = interface_files:countrytechnologyview:countrytechnologyview:magic_window
+magic_window += {
+	iconType = {
+		name = "magic_window_overlay"
+		spriteType = "GFX_custom_mechanic_overlay"
+		position = { x = -7 y = 76 }
+	}
+	instantTextBoxType = {
+		name = "magic_info"
+		position = { x = 100 y = 300 }
+		font = "vic_18"
+		maxWidth = 500
+		maxHeight = 500
+		scripted = yes
+	}
+}
+
+new custom_window magic_window = {
+	potential = {
+		NOT->has_country_flag = show_technology
+	}
+}
+new custom_text_box magic_info = {
+	name = "Magic Information
+Total Mages: §G[total_mages.GetValue]§!
+	+§G[base_mages.GetValue]§! (Base)
+	+§G[local_mages.GetValue]§! (Local)
+	*§G[mage_modifier.GetValue]§! (Modifier)
+"
+}

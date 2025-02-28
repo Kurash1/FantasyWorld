@@ -1,0 +1,34 @@
+new named_effect calculate_magic = {
+	&local_mages := 0
+	
+	every_owned_province = {
+		&local_mages &= modifier:local_mages
+		&local_mages += pops
+		&temp &= modifier:local_mages_modifier
+		&temp += 1
+		&local_mages *= temp
+		
+		owner->&local_mages += prev
+		&local_mages := 0
+	}
+	
+	&base_mages &= modifier:global_mages
+	&mage_modifier &= modifier:global_mages_modifier
+	&mage_modifier += 1
+	&local_mages .= 0
+	
+	&total_mages += base_mages
+	&total_mages += local_mages
+	&total_mages *= mage_modifier
+	&total_mages .= 0
+}
+on_initialize += {
+	every_country [ai = no] {
+		calculate_magic
+	}
+}
+on_actions:on_monthly_pulse += {
+	if [ai = no] {
+		calculate_magic
+	}
+}

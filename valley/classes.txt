@@ -277,18 +277,17 @@ new class naval_doctrine = {
 }
 new class script_variable = {
 	list = variables
-	default = {
-		tag = ""
-	}
 	args = {
-		initial_value = float?
-		calculate = named_effect?
-		tag = string
-		name = string
+		float? initial_value
+		named_effect? calculate
+		string tag = ""
+		string? name
 	}
 	simple_transpile = {
 		foreach $ in variables {
-			new localisation `{$:id}` = `{$:name}`
+			when [exists = $:name] {
+				new localisation `{$:id}` = `{$:name}`
+			}
 		}
 	}
 	init = {

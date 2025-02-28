@@ -4,7 +4,7 @@ governments:monarchy:reform_levels:1 += new magical_rulership = {
 	inherit = default_reform
 	icon = indian_crown
 	modifiers = {
-		arcane_caster_modifier = 0.1
+		
 	}
 	custom_attributes = {
 		new_attribute = {
