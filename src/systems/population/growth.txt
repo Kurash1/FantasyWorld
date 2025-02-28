@@ -1,7 +1,7 @@
 new named_effect population_tick = {
 	# Modifiers
 	&birth_modifier := 0
-	&birth_modifier &= modifier:global_birth_rate
+	&birth_modifier &= modifier:global_birth_modifier
 	&death_modifier := 0
 	&death_modifier &= modifier:global_death_reduction
 	
@@ -17,19 +17,13 @@ new named_effect population_tick = {
 		calculate_death_rate
 		
 		# Emigration
-		&emigration := pops
-		&emigration *= POPULATION_MIGRATION_RATE
-		&emigration /= 12
-		
-		owner->&emigration += prev
+		calculate_emigration
 		
 		# Attraction
-		&attraction &= modifier:migration_attraction
-		&attraction *= birth_size_restriction
-		if [&attraction < 1] {
-			&attraction := 1
-		}
+		calculate_attraction
 		
+		# Get Total Emigration and Attraction
+		owner->&emigration += prev
 		owner->&attraction += prev
 	}
 	
@@ -38,11 +32,7 @@ new named_effect population_tick = {
 	
 	every_owned_province = {
 		# Immigration
-		&immigration := owner
-		&immigration *= attraction
-		
-		&temp := owner
-		&immigration /= temp
+		calculate_immigration
 		
 		# Growth Rate
 		&growth_rate := birth_rate
@@ -60,6 +50,30 @@ new named_effect population_tick = {
 	}
 }
 
+new named_effect calculate_attraction = {
+	&attraction &= modifier:migration_attraction
+	&attraction *= birth_size_restriction
+	if [&attraction < 1] {
+		&attraction := 1
+	}
+}
+new named_effect calculate_emigration = {
+	&emigration := pops
+	&emigration *= POPULATION_MIGRATION_RATE
+	&emigration /= 12
+	&temp &= modifier:emigration_modifier
+	if [&temp < 0.1] {
+		&temp := 0.1
+	}
+	&emigration *= temp
+}
+new named_effect calculate_immigration = {
+	&immigration := owner
+	&immigration *= attraction
+	
+	&temp := owner
+	&immigration /= temp
+}
 new named_effect calculate_birth_rate = {
 	#	Base: Pops * POPULATION_BIRTH_RATE
 	&base_birth_rate := pops
@@ -68,9 +82,11 @@ new named_effect calculate_birth_rate = {
 	
 	#	Modifier: 1 + Birth Modifier + Local Birth Modifier
 	&birth_modifier := 0
-	&birth_modifier &= modifier:local_birth_rate
+	&birth_modifier &= modifier:local_birth_modifier
 	&birth_modifier += owner
-	&birth_modifier += 1
+	if [&birth_modifier < 0.1] {
+		&birth_modifier := 0.1
+	}
 	
 	#	Size Restriction: Province Size / Pops
 	&birth_size_restriction &= trigger_value:province_size
@@ -95,7 +111,9 @@ new named_effect calculate_death_rate = {
 	&death_modifier := 0
 	&death_modifier &= modifier:local_death_reduction
 	&death_modifier += owner
-	&death_modifier += 1
+	if [&death_modifier < 0.1] {
+		&death_modifier := 0.1
+	}
 	#	Final: Base / Modifier
 	&death_rate := base_death_rate
 	&death_rate /= death_modifier
