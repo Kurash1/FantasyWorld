@@ -1,11 +1,70 @@
 new named_effect population_tick = {
-	#
-	# Birth Rate
-	#
+	# Modifiers
+	&birth_modifier := 0
+	&birth_modifier &= modifier:global_birth_rate
+	&death_modifier := 0
+	&death_modifier &= modifier:global_death_reduction
 	
-	#	Base: Pops * POPULATION_MONTHLY_BIRTH_RATE
+	&emigration := 0
+	&immigration := 0
+	&attraction := 0
+	
+	every_owned_province = {
+		# Birth Rate
+		calculate_birth_rate
+		
+		# Death Rate
+		calculate_death_rate
+		
+		# Emigration
+		&emigration := pops
+		&emigration *= POPULATION_MIGRATION_RATE
+		&emigration /= 12
+		
+		owner->&emigration += prev
+		
+		# Attraction
+		&attraction &= modifier:migration_attraction
+		&attraction *= birth_size_restriction
+		if [&attraction < 1] {
+			&attraction := 1
+		}
+		
+		owner->&attraction += prev
+	}
+	
+	&immigration := emigration #moving variables
+	&temp := attraction #moving variables
+	
+	every_owned_province = {
+		# Immigration
+		&immigration := owner
+		&immigration *= attraction
+		
+		&temp := owner
+		&immigration /= temp
+		
+		# Growth Rate
+		&growth_rate := birth_rate
+		&growth_rate -= death_rate
+		&growth_rate -= emigration
+		&growth_rate += immigration
+		
+		&pops += growth_rate
+		
+		# Adjust Development
+		adjust_development
+		
+		# Tooltip Generation
+		generate_tooltip_values
+	}
+}
+
+new named_effect calculate_birth_rate = {
+	#	Base: Pops * POPULATION_BIRTH_RATE
 	&base_birth_rate := pops
-	&base_birth_rate *= POPULATION_MONTHLY_BIRTH_RATE
+	&base_birth_rate *= POPULATION_BIRTH_RATE
+	&base_birth_rate /= 12
 	
 	#	Modifier: 1 + Birth Modifier + Local Birth Modifier
 	&birth_modifier := 0
@@ -26,14 +85,12 @@ new named_effect population_tick = {
 	&birth_rate := base_birth_rate
 	&birth_rate *= birth_modifier
 	&birth_rate *= birth_size_restriction
-	
-	#
-	# Death Rate
-	#
-	
-	#	Base: Pops * POPULATION_MONTHLY_DEATH_RATE
+}
+new named_effect calculate_death_rate = {
+	#	Base: Pops * POPULATION_DEATH_RATE
 	&base_death_rate := pops
-	&base_death_rate *= POPULATION_MONTHLY_DEATH_RATE
+	&base_death_rate *= POPULATION_DEATH_RATE
+	&base_death_rate /= 12
 	#	Modifier: 1 + Death Modifier + Local Death Modifier
 	&death_modifier := 0
 	&death_modifier &= modifier:local_death_reduction
@@ -42,46 +99,6 @@ new named_effect population_tick = {
 	#	Final: Base / Modifier
 	&death_rate := base_death_rate
 	&death_rate /= death_modifier
-	
-	#
-	# Growth Rate
-	#
-	
-	#	Base: Birth Rate - Death Rate
-	&growth_rate := birth_rate
-	&growth_rate -= death_rate
-	
-	&pops += growth_rate
-	
-	# Adjust Development
-	adjust_development
-	
-	# Tooltip Generation
-	&population := pops
-	&population *= 1000
-	
-	&birth_rate *= 1000
-	&base_birth_rate *= 1000
-	&death_rate *= 1000
-	&base_death_rate *= 1000
-	&growth_rate *= 1000
-	
-	&birth_modifier *= 100
-	&birth_size_restriction *= 100
-	&death_modifier *= 100
-}
-
-on_initialize += {
-	every_country = {
-		&birth_modifier := 0
-		&birth_modifier &= modifier:global_birth_rate
-		&death_modifier := 0
-		&death_modifier &= modifier:global_death_reduction
-		
-		every_owned_province = {
-			population_tick
-		}
-	}
 }
 new named_effect adjust_development = {
 	&temp &= development
@@ -106,13 +123,28 @@ new named_effect adjust_development = {
 		&temp *= POP_MULT
 	}
 }
-on_actions:on_monthly_pulse += {
-	&birth_modifier := 0
-	&birth_modifier &= modifier:global_birth_rate
-	&death_modifier := 0
-	&death_modifier &= modifier:global_death_reduction
+new named_effect generate_tooltip_values = {
+	&population := pops
+	&population *= 1000
 	
-	every_owned_province = {
+	&birth_rate *= 1000
+	&base_birth_rate *= 1000
+	&death_rate *= 1000
+	&base_death_rate *= 1000
+	&growth_rate *= 1000
+	&emigration *= 1000
+	&immigration *= 1000
+	
+	&birth_modifier *= 100
+	&birth_size_restriction *= 100
+	&death_modifier *= 100
+}
+
+on_initialize += {
+	every_country = {
 		population_tick
 	}
+}
+on_actions:on_monthly_pulse += {
+	population_tick
 }

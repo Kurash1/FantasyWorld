@@ -19,15 +19,19 @@ new custom_text_box population_progress_text = {
 	tooltip = "Each {POPULATION_PER_POP} population grants the following modifier:
 	{modifier_to_string = static_modifiers:development}
 
-Birth Rate: [birth_rate.GetValue]
+Birth Rate: §G[birth_rate.GetValue]§!
 	+[base_birth_rate.GetValue] (Base)
 	*[birth_modifier.GetValue]% (Modifier)
 	*[birth_size_restriction.GetValue]% (Size Restriction)
 
-Death Rate: [death_rate.GetValue]
+Death Rate: §R[death_rate.GetValue]§!
 	+[base_death_rate.GetValue] (Base)
 	/[death_modifier.GetValue]% (Modifier)
 
-Growth Rate: [growth_rate.GetValue]
+Emigration: §R[emigration.GetValue]§!
+Immigration: §G[immigration.GetValue]§!
+Migration Attraction: §G[attraction.GetValue]§!
+
+Growth Rate: §G[growth_rate.GetValue]§!
 "
 }

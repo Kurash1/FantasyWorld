@@ -1,7 +1,8 @@
 # Constants
 new named_int POPULATION_PER_POP = 10_000
-new named_float POPULATION_MONTHLY_BIRTH_RATE = 0.3%
-new named_float POPULATION_MONTHLY_DEATH_RATE = 0.2%
+new named_float POPULATION_BIRTH_RATE = 3.8%
+new named_float POPULATION_DEATH_RATE = 3.1%
+new named_float POPULATION_MIGRATION_RATE = 0.4%
 
 # Evaluated Values
 new named_float POP_MULT = ( POPULATION_PER_POP / 1000 )
@@ -21,6 +22,9 @@ new modifier_definition global_death_reduction = {
 new modifier_definition local_death_reduction = {
 	name = "Local Death Reduction"
 	is_percentage = yes
+}
+new modifier_definition migration_attraction = {
+	name = "Migration Attraction"
 }
 
 new script_variable growth_rate = {
@@ -48,6 +52,16 @@ new script_variable base_death_rate = {
 }
 new script_variable death_modifier = {
 	name = "Death Modifier"
+}
+
+new script_variable emigration = {
+	name = "Emigration"
+}
+new script_variable immigration = {
+	name = "Immigration"
+}
+new script_variable attraction = {
+	name = "Attraction"
 }
 
 new script_variable pops = {
