@@ -91,17 +91,6 @@ new event_modifier expedition_merc_mod = {
 		}
 	}
 }
-new event_modifier expedition_mage_mod = {
-	name = "Expedition: Mages"
-	modifier = {
-		picture = "monthly_magicka_opposite"
-		monthly_magicka = -0.25
-		monthly_expedition_progress = {
-			amount = 0.5
-			modifier = expedition_mage_mod
-		}
-	}
-}
 new event_modifier expedition_sponsor_mod = {
 	name = "Expedition: Sponsorship"
 	modifier = {
