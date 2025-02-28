@@ -6,8 +6,22 @@ new effect random_heir_birth = {
 	args = bool
 	transpile = {
 		random_list = {
-			1->define_heir = { dynasty = ROOT }
-			1->define_heir = { female = yes dynasty = ROOT }
+			1 = {
+				define_heir = { dynasty = ROOT }
+				
+				modifier = {
+					factor = 0
+					has_government_attribute = all_female_heirs
+				}
+			}
+			1 = {
+				define_heir = { female = yes dynasty = ROOT }
+				
+				modifier = {
+					factor = 0
+					has_government_attribute = all_male_heirs
+				}
+			}
 		}
 	}
 }
