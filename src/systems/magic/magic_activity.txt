@@ -8,25 +8,31 @@ new magic_activity military_service = {
 	occult = yes
 	
 	modifier_name = mage_army_mod
-	base_weight = 25
+	base_weight = 100
 	modifier = {
-		land_morale = 1
+		infantry_fire = 5
+		fire_damage_received = -0.5
+		movement_speed = 1
+		siege_ability = 2.5
 	}
 }
-new magic_activity scrying = {
-	name = "Scrying"
+new magic_activity divining = {
+	name = "Divining"
 	desc = ""
 	
 	arcane = yes
 	occult = yes
 	
 	modifier_name = mage_spy_mod
+	base_weight = 25
 	modifier = {
 		spy_offence = 1
+		yearly_corruption = -1
+		all_power_cost = -0.1
 	}
 }
-new magic_activity construction = {
-	name = "Construction"
+new magic_activity help_with_construction = {
+	name = "Help with Construction"
 	desc = ""
 	
 	arcane = yes
@@ -34,9 +40,17 @@ new magic_activity construction = {
 	primal = yes
 	
 	modifier_name = mage_build_mod
+	base_weight = 25
 	modifier = {
 		build_cost = -0.5
 		build_time = -0.5
+		great_project_upgrade_cost = -0.5
+		great_project_upgrade_time = -0.5
+		global_ship_cost = -0.5
+		global_ship_recruit_speed = -0.5
+		global_ship_repair = 1
+		center_of_trade_upgrade_cost = -0.5
+		trade_company_investment_cost = -0.5
 	}
 }
 new magic_activity research = {
@@ -46,35 +60,34 @@ new magic_activity research = {
 	arcane = yes
 	
 	modifier_name = mage_tech_mod
+	base_weight = 50
 	modifier = {
 		idea_cost = -0.2
+		global_institution_spread = 1
+		embracement_cost = -0.5
+		innovativeness_gain = 1
+		yearly_innovativeness = 0.5
 	}
 }
 new magic_activity healing = {
-	name = "Healing"
+	name = "Provide Healing"
 	desc = ""
 	
 	divine = yes
 	primal = yes
 	
 	modifier_name = mage_heal_mod
+	base_weight = 75
 	modifier = {
-		global_birth_modifier = 0.5
+		global_unrest = -5
+		global_birth_modifier = 1
+		manpower_recovery_speed = 1
+		sailors_recovery_speed = 1
+		global_monthly_devastation = -2
 	}
 }
-new magic_activity plant_growth = {
-	name = "Plant Growth"
-	desc = ""
-	
-	primal = yes
-	
-	modifier_name = mage_goods_mod
-	modifier = {
-		global_trade_goods_size_modifier = 1
-	}
-}
-new magic_activity trap_borders = {
-	name = "Trap Borders"
+new magic_activity fortify = {
+	name = "Fortify Lands"
 	desc = ""
 	
 	arcane = yes
@@ -82,8 +95,11 @@ new magic_activity trap_borders = {
 	primal = yes
 	occult = yes
 	
-	modifier_name = mage_trap_mod
+	modifier_name = mage_defense_mod
+	base_weight = 25
 	modifier = {
+		defensiveness = 5
+		max_hostile_attrition = 10
 		hostile_attrition = 10
 	}
 }
@@ -95,12 +111,16 @@ new magic_activity teleportation = {
 	occult = yes
 	
 	modifier_name = mage_teleport_mod
+	base_weight = 25
 	modifier = {
-		
+		global_trade_power = 0.5
+		envoy_travel_time = -1
+		administrative_efficiency = 0.2
+		state_maintenance_modifier = -1
 	}
 }
-new magic_activity create_undead = {
-	name = "Create Undead"
+new magic_activity raise_the_dead = {
+	name = "Raise the Dead"
 	desc = ""
 	
 	arcane = yes
@@ -110,18 +130,13 @@ new magic_activity create_undead = {
 	modifier_name = mage_undead_mod
 	base_modifier = 0
 	modifier = {
-		manpower_recovery_speed = 1
-	}
-}
-new magic_activity public_resurrections = {
-	name = "Public Resurrections"
-	desc = ""
-	
-	divine = yes
-	
-	modifier_name = mage_resurrect_mod
-	base_modifier = 0
-	modifier = {
+		morale_damage = 0.5
+		morale_damage_received = -0.5
+		manpower_recovery_speed = 2
+		manpower_from_casualties_caused = 1
+		manpower_from_battle_losses = 1
 		
+		global_unrest = 10
+		diplomatic_reputation = -10
 	}
 }
