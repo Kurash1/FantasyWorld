@@ -310,7 +310,7 @@ new province cathnoquey = {
 	}
 	history = {
 	}
-	impassible = yes
+	sea = yes
 }
 new province ka_po_tun = {
 	position = {
