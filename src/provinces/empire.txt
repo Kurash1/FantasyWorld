@@ -209,6 +209,7 @@ new province vakholk = {
 	area = vakholk
 	history += {
 		history_owner = dir_holk
+		add_dig_site
 	}
 }
 new province az_kohol = {
@@ -250,6 +251,7 @@ new province dir_holk = {
 	area = dir_holk
 	history += {
 		history_owner = dir_holk
+		add_dig_site
 	}
 }
 new province eknack = {
