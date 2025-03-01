@@ -8,12 +8,12 @@ new named_float POPULATION_MIGRATION_RATE = 0.4%
 new named_float POP_MULT = ( POPULATION_PER_POP / 1000 )
 
 new modifier_definition global_birth_modifier = {
-	name = "Birth Modifier"
+	name = "Birth Rate Modifier"
 	is_percentage = yes
 	base_value = 1
 }
 new modifier_definition local_birth_modifier = {
-	name = "Local Birth Modifier"
+	name = "Local Birth Rate Modifier"
 	is_percentage = yes
 }
 new modifier_definition global_death_modifier = {
