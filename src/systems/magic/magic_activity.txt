@@ -1,0 +1,127 @@
+new magic_activity military_service = {
+	name = "Military Service"
+	desc = ""
+	
+	arcane = yes
+	divine = yes
+	primal = yes
+	occult = yes
+	
+	modifier_name = mage_army_mod
+	base_weight = 25
+	modifier = {
+		land_morale = 1
+	}
+}
+new magic_activity scrying = {
+	name = "Scrying"
+	desc = ""
+	
+	arcane = yes
+	occult = yes
+	
+	modifier_name = mage_spy_mod
+	modifier = {
+		spy_offence = 1
+	}
+}
+new magic_activity construction = {
+	name = "Construction"
+	desc = ""
+	
+	arcane = yes
+	divine = yes
+	primal = yes
+	
+	modifier_name = mage_build_mod
+	modifier = {
+		build_cost = -0.5
+		build_time = -0.5
+	}
+}
+new magic_activity research = {
+	name = "Research"
+	desc = ""
+	
+	arcane = yes
+	
+	modifier_name = mage_tech_mod
+	modifier = {
+		idea_cost = -0.2
+	}
+}
+new magic_activity healing = {
+	name = "Healing"
+	desc = ""
+	
+	divine = yes
+	primal = yes
+	
+	modifier_name = mage_heal_mod
+	modifier = {
+		global_birth_modifier = 0.5
+	}
+}
+new magic_activity plant_growth = {
+	name = "Plant Growth"
+	desc = ""
+	
+	primal = yes
+	
+	modifier_name = mage_goods_mod
+	modifier = {
+		global_trade_goods_size_modifier = 1
+	}
+}
+new magic_activity trap_borders = {
+	name = "Trap Borders"
+	desc = ""
+	
+	arcane = yes
+	divine = yes
+	primal = yes
+	occult = yes
+	
+	modifier_name = mage_trap_mod
+	modifier = {
+		hostile_attrition = 10
+	}
+}
+new magic_activity teleportation = {
+	name = "Teleportation Network"
+	desc = ""
+	
+	arcane = yes
+	occult = yes
+	
+	modifier_name = mage_teleport_mod
+	modifier = {
+		
+	}
+}
+new magic_activity create_undead = {
+	name = "Create Undead"
+	desc = ""
+	
+	arcane = yes
+	divine = yes
+	occult = yes
+	
+	modifier_name = mage_undead_mod
+	base_modifier = 0
+	modifier = {
+		manpower_recovery_speed = 1
+	}
+}
+new magic_activity public_resurrections = {
+	name = "Public Resurrections"
+	desc = ""
+	
+	divine = yes
+	
+	modifier_name = mage_resurrect_mod
+	base_modifier = 0
+	modifier = {
+		
+	}
+}

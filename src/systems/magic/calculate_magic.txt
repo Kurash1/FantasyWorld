@@ -1,5 +1,8 @@
-new named_effect calculate_magic = {
+new named_effect calculate_total_mages = {
+	&base_mages := 0
 	&local_mages := 0
+	&mage_modifier := 0
+	&total_mages := 0
 	
 	&base_mages &= modifier:global_mages
 	&mage_modifier &= modifier:global_mages_modifier
@@ -7,20 +10,19 @@ new named_effect calculate_magic = {
 	
 	every_owned_province = {
 		&local_mages &= modifier:local_mages
-		&local_mages += pops
+		
 		&mage_modifier &= modifier:local_mages_modifier
 		&mage_modifier += prev
 		if [&mage_modifier < 0] {
 			&mage_modifier := 0
 		}
-		&local_mages *= temp
+		
+		&local_mages *= mage_modifier
 		
 		owner->&local_mages += prev
-		&local_mages := 0
 	}
 	
 	&local_mages .= 0
-	
 	if [&mage_modifier < 0] {
 		&mage_modifier := 0
 	}
@@ -30,13 +32,95 @@ new named_effect calculate_magic = {
 	&total_mages += local_mages
 	&total_mages .= 0
 }
+
+new named_effect magic_calculations = {
+	calculate_total_mages
+	
+	&magic_weight := 0
+	foreach $ in magic_activities {
+		&magic_weight += `{$:id}_weight`
+	}
+	
+	foreach $ in magic_activities {
+		# Calculate Magic Mod
+		&`{$:id}_mod` &= modifier:all_magic_modifier
+		
+		when [$:arcane == yes] {
+			&temp &= modifier:arcane_magic_modifier
+			&`{$:id}_mod` += temp
+		}
+		when [$:divine == yes] {
+			&temp &= modifier:divine_magic_modifier
+			&`{$:id}_mod` += temp
+		}
+		when [$:primal == yes] {
+			&temp &= modifier:primal_magic_modifier
+			&`{$:id}_mod` += temp
+		}
+		when [$:occult == yes] {
+			&temp &= modifier:occult_magic_modifier
+			&`{$:id}_mod` += temp
+		}
+		&temp &= `modifier:{$:modifier_name}`
+		&`{$:id}_mod` += temp
+		
+		# Calculate Relative Weight
+		&temp := `{$:id}_weight`
+		if [&magic_weight == 0] {
+			&temp := 0
+		}
+		else {
+			&temp /= magic_weight
+		}
+		
+		# Calculate Total amount of mages
+		&`{$:id}_total` := total_mages
+		&`{$:id}_total` *= temp
+		&`{$:id}_total` .= 0
+		
+		
+		# Calculate the final modifier
+		&`{$:id}_real` := `{$:id}_total`
+		&temp &= trigger_value:total_development
+		&`{$:id}_real` /= temp
+		&`{$:id}_real` *= `{$:id}_mod`
+		
+		# Calculate Magic Modifier Difference
+		&magic_mod := `{$:id}_real`
+		&temp &= `modifier:{$:id}_power_mod`
+		&magic_mod -= temp
+		
+		# Adjust Magic Modifier
+		while [&magic_mod > 0] {
+			`add_government_power` = {
+				mechanic_type = magic_mechanic
+				power_type = `{$:id}_power`
+				value = 0.001
+			}
+			&magic_mod -= 0.001
+		}
+		while [&magic_mod < 0] {
+			`add_government_power` = {
+				mechanic_type = magic_mechanic
+				power_type = `{$:id}_power`
+				value = -0.001
+			}
+			&magic_mod += 0.001
+		}
+	}
+}
+
 on_initialize += {
 	every_country [ai = no] {
-		calculate_magic
+		magic_calculations
+		
+		foreach $ in magic_activities {
+			&`{$:id}_weight` := $:base_weight
+		}
 	}
 }
 on_actions:on_monthly_pulse += {
 	if [ai = no] {
-		calculate_magic
+		magic_calculations
 	}
 }

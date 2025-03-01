@@ -8,11 +8,44 @@ magic_window += {
 	}
 	instantTextBoxType = {
 		name = "magic_info"
-		position = { x = 100 y = 300 }
+		position = { x = 20 y = 150 }
 		font = "vic_18"
 		maxWidth = 500
 		maxHeight = 500
 		scripted = yes
+	}
+	
+	instantTextBoxType = {
+		name = "magical_activity_weight"
+		text = "Weight"
+		position = { x = 315 y = 198 }
+		font = "vic_18"
+		maxWidth = 50
+		format = right
+	}
+	instantTextBoxType = {
+		name = "magical_activity_modifier"
+		text = "Mod"
+		position = { x = 365 y = 198 }
+		font = "vic_18"
+		maxWidth = 50
+		format = right
+	}
+	instantTextBoxType = {
+		name = "magical_activity_total"
+		text = "Mages"
+		position = { x = 415 y = 198 }
+		font = "vic_18"
+		maxWidth = 50
+		format = right
+	}
+	instantTextBoxType = {
+		name = "magical_activity_real"
+		text = "Real"
+		position = { x = 465 y = 198 }
+		font = "vic_18"
+		maxWidth = 50
+		format = right
 	}
 }
 
@@ -26,6 +59,5 @@ new custom_text_box magic_info = {
 Total Mages: §G[total_mages.GetValue]§!
 	+§G[base_mages.GetValue]§! (Base)
 	+§G[local_mages.GetValue]§! (Local)
-	*§G[mage_modifier.GetValue]§! (Modifier)
-"
+	*§G[mage_modifier.GetValue]§! (Modifier)"
 }

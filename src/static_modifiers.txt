@@ -352,6 +352,7 @@ new static_modifier local_autonomy_multiplicative = {
 	naval_forcelimit_modifier = -1.0 
 }
 new static_modifier local_autonomy = {
+	local_mages_modifier = -1.0
 }
 new static_modifier local_autonomy_trade_company_multiplicative = {
 	local_manpower_modifier = -1.0
