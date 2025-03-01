@@ -112,11 +112,11 @@ new named_effect magic_calculations = {
 
 on_initialize += {
 	every_country [ai = no] {
-		magic_calculations
-		
 		foreach $ in magic_activities {
 			&`{$:id}_weight` := $:base_weight
 		}
+		
+		magic_calculations
 	}
 }
 on_actions:on_monthly_pulse += {

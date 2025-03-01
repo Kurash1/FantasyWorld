@@ -159,16 +159,16 @@ new class magic_activity = {
 			}
 		}
 		new custom_text_box `{this:id}iw` = {
-			name = "§Y[{this:id}_weight.GetValue]§!"
+			name = "§Y[From.{this:id}_weight.GetValue]§!"
 		}
 		new custom_text_box `{this:id}im` = {
-			name = "§G[{this:id}_mod.GetValue]§!"
+			name = "§G[From.{this:id}_mod.GetValue]§!"
 		}
 		new custom_text_box `{this:id}it` = {
-			name = "§G[{this:id}_total.GetValue]§!"
+			name = "§G[From.{this:id}_total.GetValue]§!"
 		}
 		new custom_text_box `{this:id}ir` = {
-			name = "§Y[{this:id}_real.GetValue]§!"
+			name = "§Y[From.{this:id}_real.GetValue]§!"
 		}
 		
 		#

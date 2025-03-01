@@ -55,9 +55,8 @@ new custom_window magic_window = {
 	}
 }
 new custom_text_box magic_info = {
-	name = "Magic Information
-Total Mages: §G[total_mages.GetValue]§!
-	+§G[base_mages.GetValue]§! (Base)
-	+§G[local_mages.GetValue]§! (Local)
-	*§G[mage_modifier.GetValue]§! (Modifier)"
+	name = "Total Mages: §G[From.total_mages.GetValue]§!
+	+§G[From.base_mages.GetValue]§! (Base)
+	+§G[From.local_mages.GetValue]§! (Local)
+	*§G[From.mage_modifier.GetValue]§! (Modifier)"
 }
