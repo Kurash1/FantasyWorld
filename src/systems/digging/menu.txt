@@ -250,14 +250,14 @@ new custom_window digging_window = {
 	}
 }
 new custom_icon dig_background = {
-	tooltip = "Dig Level: §Y[dig_level.GetValue]§!
+	tooltip = "Dig Level: §Y[This.dig_level.GetValue]§!
 [GetDigModifier]"
 }
 new custom_icon dig_terrain_background = {
 	frame_variable = dig_level_image
 }
 new custom_text_box dig_level_text = {
-	name = "[dig_level.GetValue]: [GetDigName]"
+	name = "[This.dig_level.GetValue]: [GetDigName]"
 	tooltip = "[GetDigDesc]"
 }
 new custom_button dig_button = {
@@ -284,9 +284,15 @@ new custom_button dig_button = {
 
 new province_event digging.1 = {
 	title = "Digging Operations"
-	desc = "Current Dig Level: [dig_level.GetValue]
-Base Cost: §Y[base_dig_cost.GetValue]§! Dig Efficiency: §Y[var_dig_efficiency.GetValue]§! Build Cost: §Y[var_build_cost.GetValue]§! Total Efficiency: §Y[dig_total_efficiency.GetValue]§!
-Base Time: §Y[base_dig_time.GetValue]§! Dig Speed: §Y[var_dig_speed.GetValue]§! Build Time: §Y[var_build_time.GetValue]§! Total Speed: §Y[dig_total_speed.GetValue]§!"
+	desc = "Current Dig Level: [This.dig_level.GetValue]
+Base Cost: §Y[This.base_dig_cost.GetValue]§!
+Dig Efficiency: §Y[This.var_dig_efficiency.GetValue]§!
+Build Cost: §Y[This.var_build_cost.GetValue]§!
+Total Efficiency: §Y[This.dig_total_efficiency.GetValue]§!
+Base Time: §Y[This.base_dig_time.GetValue]§!
+Dig Speed: §Y[This.var_dig_speed.GetValue]§!
+Build Time: §Y[This.var_build_time.GetValue]§!
+Total Speed: §Y[This.dig_total_speed.GetValue]§!"
 	picture = dwarven_desk_eventPicture
 	immediate = {
 		hidden_effect = {
@@ -313,7 +319,7 @@ Base Time: §Y[base_dig_time.GetValue]§! Dig Speed: §Y[var_dig_speed.GetValue]
 						speed = 1
 					}
 				}
-				new_custom_tooltip = "This dig will cost §Y[dig_cost.GetValue]§! ducats, and take §Y[dig_time.GetValue]§! years to complete."
+				new_custom_tooltip = "This dig will cost §Y[This.dig_cost.GetValue]§! ducats, and take §Y[This.dig_time.GetValue]§! years to complete."
 			}
 		}
 		{

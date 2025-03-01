@@ -15,23 +15,23 @@ interface_files:provinceview:provinceview:province_window += {
 }
 
 new custom_text_box population_progress_text = {
-	name = "[population.GetValue]"
+	name = "[This.population.GetValue]"
 	tooltip = "Each {POPULATION_PER_POP} population grants the following modifier:
 	{modifier_to_string = static_modifiers:development}
 
-Birth Rate: §G[birth_rate.GetValue]§!
-	+[base_birth_rate.GetValue] (Base)
-	*[birth_modifier.GetValue]% (Modifier)
-	*[birth_size_restriction.GetValue]% (Size Restriction)
+Birth Rate: §G[This.birth_rate.GetValue]§!
+	+[This.base_birth_rate.GetValue] (Base)
+	*[This.birth_modifier.GetValue]% (Modifier)
+	*[This.birth_size_restriction.GetValue]% (Size Restriction)
 
-Death Rate: §R[death_rate.GetValue]§!
-	+[base_death_rate.GetValue] (Base)
-	/[death_modifier.GetValue]% (Modifier)
+Death Rate: §R[This.death_rate.GetValue]§!
+	+[This.base_death_rate.GetValue] (Base)
+	/[This.death_modifier.GetValue]% (Modifier)
 
-Emigration: §R[emigration.GetValue]§!
-Immigration: §G[immigration.GetValue]§!
-Migration Attraction: §G[attraction.GetValue]§!
+Emigration: §R[This.emigration.GetValue]§!
+Immigration: §G[This.immigration.GetValue]§!
+Migration Attraction: §G[This.attraction.GetValue]§!
 
-Growth Rate: §G[growth_rate.GetValue]§!
+Growth Rate: §G[This.growth_rate.GetValue]§!
 "
 }

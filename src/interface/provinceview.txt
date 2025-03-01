@@ -568,13 +568,6 @@ new interface_file provinceview = {
 			moveable = 0
 			Orientation = "UPPER_LEFT"
 
-			guiButtonType = {
-				name = cast_spell_province
-				position = { x = 447 y = 52 }
-				quadTextureSprite = "GFX_actions_button"
-				scripted = yes
-			}
-
 			### Core
 
 

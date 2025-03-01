@@ -42,7 +42,7 @@ new effect pick_random_country = {
 				}
 				
 				&weight ?= weight
-				when [PICK_RANDOM_COUNTRY_LOGGING] `log = "Random number is [weight.GetValue]"`
+				when [PICK_RANDOM_COUNTRY_LOGGING] `log = "Random number is [This.weight.GetValue]"`
 				
 				every_country [
 					PREV->&weight >= 0
