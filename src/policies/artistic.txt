@@ -1,14 +1,3 @@
-new policy illusionary_theater = {
-	name = "Illusionary theater"
-	desc = "Our artists utilise illusions in the theater to enhance the experience of the viewer."
-	monarch_power = DIP
-	group_1 = artistic_ideas
-	group_2 = illusion_ideas
-	modifier = {
-		prestige = 0.5
-		monthly_splendor = 1
-	}
-}
 new policy ornamentalism = {
 	name = "Ornamentalism"
 	desc = "The list of ornaments is sheer endless our buildings however show many of them at once."

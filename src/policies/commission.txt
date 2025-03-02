@@ -1,13 +1,3 @@
-new policy logisticianers = {
-	name = "Logisticianers"
-	desc = "One of our mages had a brilliant idea why not just summon needed supplies and teleport in reinforcements? The general idea is to employ a new kind of mage a so called logisticianer. They will march with the army and conjure supplies as needed."
-	monarch_power = MIL
-	group_1 = commission_ideas
-	group_2 = conjuration_ideas
-	modifier = {
-		land_attrition = -0.1
-	}
-}
 new policy expansive_stockpiles = {
 	name = "Expansive stockpiles"
 	desc = "Our fortifications have an enormous stockpile in repair material, supplies, weapons and food. Allowing for bigger garrisons to be fielded and sieges to be endured much longer."

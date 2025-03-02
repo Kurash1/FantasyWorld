@@ -183,17 +183,6 @@ new effect add_to_tree = {
 			x = args:x
 			y = args:y
 		}
-		
-		IDEA_TREE_DRAWIO += `
-				<mxCell id="{args:group:id}" value="{args:group:name}" parent="1" vertex="1"`
-		
-		when [args:group:category == ADM] { IDEA_TREE_DRAWIO += ` style="whiteSpace=wrap;fillColor=@HASHTAG@003300;"` }
-		when [args:group:category == DIP] { IDEA_TREE_DRAWIO += ` style="whiteSpace=wrap;fillColor=@HASHTAG@001933;"` }
-		when [args:group:category == MIL] { IDEA_TREE_DRAWIO += ` style="whiteSpace=wrap;fillColor=@HASHTAG@330000;"` }
-		
-		IDEA_TREE_DRAWIO += `>
-					<mxGeometry x="{(args:x*160)}" y="{(args:y*160)}" width="80" height="80" as="geometry" />
-				</mxCell>`
 	}
 }
 new named_int idea_tree_line_count = 0
@@ -228,21 +217,6 @@ new effect draw_line = {
 			}
 		}
 		
-		IDEA_TREE_DRAWIO += `<mxCell id="Line-{idea_tree_line_count}" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;" edge="1" parent="1">
-			<mxGeometry relative="1" as="geometry">
-				<mxPoint
-					x="{(args:1 * 160 + 40 - ((args:1 - args:3) * 40))}"
-					y="{(args:2 * 160 + 40 - ((args:2 - args:4) * 40))}"
-					as="sourcePoint"
-				/>
-				<mxPoint
-					x="{(args:3 * 160 + 40 - ((args:3 - args:1) * 40))}"
-					y="{(args:4 * 160 + 40 - ((args:4 - args:2) * 40))}"
-					as="targetPoint"
-				/>
-			</mxGeometry>
-        </mxCell>`
-		
 		idea_tree_line_count += 1
 	}
 }
@@ -257,14 +231,6 @@ new effect draw_line_between = {
 		}
 	}
 }
-
-new named_string IDEA_TREE_DRAWIO = `<mxfile>
-	<diagram name="Page-1" id="Zo3QJTysN1019aY4DarP">
-		<mxGraphModel dx="1793" dy="1068" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-			<root>
-				<mxCell id="0" />
-				<mxCell id="1" parent="0" />
-`
 
 new named_effect create_idea_tree = {
 	#did this so it gets loaded later on
@@ -447,41 +413,6 @@ new named_effect create_idea_tree = {
 	draw_line_between = { exploration_ideas scouting_ideas }
 	
 	#
-	# Arcane Ideas
-	#
-	add_to_tree = { group = arcane_ideas x = 1 y = 8 }
-	
-	add_to_tree = { group = enchanting_ideas x = 2 y = 7 }
-	draw_line_between = { arcane_ideas enchanting_ideas }
-	
-	add_to_tree = { group = illusion_ideas x = 0 y = 8 }
-	draw_line_between = { arcane_ideas illusion_ideas }
-	
-	add_to_tree = { group = mysticism_ideas x = 2 y = 8 }
-	draw_line_between = { arcane_ideas mysticism_ideas }
-	
-	#
-	# War Magic Ideas
-	#
-	add_to_tree = { group = war_magic_ideas x = 1 y = 6 }
-	
-	add_to_tree = { group = restoration_ideas x = 0 y = 6 }
-	draw_line_between = { war_magic_ideas restoration_ideas }
-	
-	add_to_tree = { group = conjuration_ideas x = 2 y = 6 }
-	draw_line_between = { war_magic_ideas conjuration_ideas }
-	
-	add_to_tree = { group = necromancy_ideas x = 3 y = 7 }
-	draw_line_between = { conjuration_ideas necromancy_ideas }
-	
-	add_to_tree = { group = destruction_ideas x = 1 y = 7 }
-	draw_line_between = { war_magic_ideas destruction_ideas }
-	
-	add_to_tree = { group = alteration_ideas x = 0 y = 7 }
-	draw_line_between = { war_magic_ideas alteration_ideas }
-	draw_line_between = { arcane_ideas alteration_ideas }
-	
-	#
 	# Diplomatic Ideas
 	#
 	add_to_tree = { group = diplomatic_ideas x = 4 y = 8 }
@@ -554,13 +485,4 @@ new named_effect create_idea_tree = {
 	
 	add_to_tree = { group = mobility_ideas x = 3 y = 6 }
 	draw_line_between = { offensive_ideas mobility_ideas }
-	
-	IDEA_TREE_DRAWIO += `			</root>
-		</mxGraphModel>
-	</diagram>
-</mxfile>`
-	
-	write_unformatted_file "idea_tree.drawio" = {
-		IDEA_TREE_DRAWIO
-	}
 }

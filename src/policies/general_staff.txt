@@ -91,17 +91,6 @@ new policy war_chest = {
 		war_exhaustion = -0.03
 	}
 }
-new policy mage_generals = {
-	name = "Mage generals"
-	desc = "Our army also uses mages as generals"
-	monarch_power = MIL
-	group_1 = general_staff_ideas
-	group_2 = war_magic_ideas
-	modifier = {
-		siege_ability = 0.15
-		army_tradition = 0.5
-	}
-}
 new policy war_treatises = {
 	name = "War treatises"
 	desc = "Many of our generals wrote famous and lengthy books about war and how to wage it."

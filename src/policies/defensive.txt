@@ -1,13 +1,3 @@
-new policy enchanted_fortresses = {
-	name = "Enchanted fortresses"
-	desc = "Our fortresses are covered in protective runes and wards. Enormous mage shields envelop them."
-	monarch_power = MIL
-	group_1 = defensive_ideas
-	group_2 = enchanting_ideas
-	modifier = {
-		defensiveness = 0.15
-	}
-}
 new policy counter_siege_design_schematics = {
 	name = "Counter siege design schematics"
 	desc = "Siegecraft becomes ever more elaborate with the rise of engineering. We need to counter this by building our fortresses that directly counter the modern siege tactics."
@@ -50,29 +40,6 @@ new policy floodable_surrroundings  = {
 		hostile_attrition = 1
 	}
 }
-new owned_province_modifier illusionary_defenses_modifier = {
-	name = "Illusionary Defenses"
-	trigger_tooltip = "owned by you."
-	province = {
-		local_hostile_movement_speed = -0.25
-	}
-}
-new policy illusionary_defenses = {
-	name = "Illusionary defenses"
-	desc = "Not everything in our fortresses is real some things are just illusions. But we will not complain if our enemy wastes expensive powder, lives or magicka at those imaginary targets."
-	monarch_power = MIL
-	group_1 = defensive_ideas
-	group_2 = illusion_ideas
-	modifier = {
-		defensiveness = 0.05
-	}
-	effect = {
-		add_owned_province_modifier = illusionary_defenses_modifier
-	}
-	remove_effect = {
-		remove_owned_province_modifier = illusionary_defenses_modifier 
-	}
-}
 new policy tunnel_network = {
 	name = "Tunnel Network"
 	desc = "Fortifications are connected by an intricate network of tunnels. That way reinforcements and supplies can be secretly moved in."
@@ -109,16 +76,6 @@ new policy turtling = {
 	monarch_power = MIL
 	group_1 = defensive_ideas
 	group_2 = strategic_ideas
-	modifier = {
-		hostile_attrition = 1
-	}
-}
-new policy war_wizard_turrets = {
-	name = "War wizard turrets"
-	desc = "Our fortresses have turrets for war wizards to stand in and let spellfire rain upon our enemies."
-	monarch_power = MIL
-	group_1 = defensive_ideas
-	group_2 = war_magic_ideas
 	modifier = {
 		hostile_attrition = 1
 	}
