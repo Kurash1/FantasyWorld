@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:11 += new feudal_taxation = {
+	name = "Feudal Taxation"
+	desc = "Local vassals and the church are required to require the tax and the tithe themselves. The vassals are also required to distribute a portion of their fiefdom's income to their liege. While this system is bereft with inefficiencies the estates defend it eagerly."
+	inherit = default_reform
+	icon = man_and_children
+	modifiers = {
+		global_tax_modifier = -0.1
+		min_autonomy = 5
+
+		all_estate_loyalty_equilibrium = 0.1
+	}
+}
+governments:republic:reform_levels:11 += feudal_taxation
+governments:theocracy:reform_levels:11 += feudal_taxation

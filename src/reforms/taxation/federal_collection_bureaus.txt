@@ -1,0 +1,26 @@
+governments:monarchy:reform_levels:11 += new federal_collection_bureaus = {
+	name = "Federal Collection Bureaus"
+	desc = "By outsourcing our tax collection to the states we can surely keep the same efficiency as with a centralised approach but severly reduce the strain on the central government. The states can also surely keep a fraction of it for their own government needs reducing the need to give them money."
+	inherit = default_reform
+	icon = people_walking
+	trigger = {
+		OR = {
+			has_reform = federacy
+			has_reform = federalism
+		}
+		OR = {
+			has_reform = matter_of_the_federal_states
+			has_reform = devolution
+		}
+	}
+	modifiers = {
+		global_autonomy = 0.05
+
+		governing_cost = -0.05
+		state_maintenance_modifier = -0.25
+		global_tax_modifier = -0.15
+		global_unrest = -0.5
+	}
+}
+governments:republic:reform_levels:11 += federal_collection_bureaus
+governments:theocracy:reform_levels:11 += federal_collection_bureaus

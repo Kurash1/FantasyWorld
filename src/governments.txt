@@ -39,7 +39,7 @@ new government monarchy = {
 		
 		# Economic Matters
 		10 = "Economic Policy"
-		11 = "Tax System"
+		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
 		
@@ -111,7 +111,7 @@ new government republic = {
 		
 		# Economic Matters
 		10 = "Economic Policy"
-		11 = "Tax System"
+		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
 		
@@ -179,7 +179,7 @@ new government theocracy = {
 		
 		# Economic Matters
 		10 = "Economic Policy"
-		11 = "Tax System"
+		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
 		

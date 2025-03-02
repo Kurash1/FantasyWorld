@@ -1,0 +1,21 @@
+governments:monarchy:reform_levels:11 += new bureau_of_tax_collection = {
+	name = "Bureau of Tax Collection"
+	desc = "Real bureaucrats with proper government oversight collect taxes. The oversight ensures that taxation remains fair and transparent to everyone. It is also a system devoid of the inefficiencies and corruption of simpler systems but comes with the cost of a higher strain of governing."
+	inherit = default_reform
+	icon = parliament
+	trigger = {
+		OR = {
+			has_reform = meritocratic_appointment
+			has_reform = bureaucratical_elections
+		}
+	}
+	modifiers = {
+		governing_cost = 0.1
+		state_maintenance_modifier = 0.5
+
+		global_tax_modifier = 0.25
+		global_unrest = 0.5
+	}
+}
+governments:republic:reform_levels:11 += bureau_of_tax_collection
+governments:theocracy:reform_levels:11 += bureau_of_tax_collection

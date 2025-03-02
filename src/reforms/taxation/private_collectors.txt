@@ -1,0 +1,17 @@
+governments:monarchy:reform_levels:11 += new private_collectors = {
+	name = "Private Collectors"
+	desc = "The state completly outsourced tax collection to private companies. So called tax farmers now collect the tax instead of the government. While more effiicent than the feudal system of taxation the complete lack of government oversight opens the door for corruption. But it also reduces the strain of governing."
+	inherit = default_reform
+	icon = military_dictatorship_reform
+	trigger = {
+		has_reform = political_appointment
+	}
+	modifiers = {
+		yearly_corruption = 0.05
+
+		state_maintenance_modifier = 0.2
+		governing_cost = 0.05
+	}
+}
+governments:republic:reform_levels:11 += private_collectors
+governments:theocracy:reform_levels:11 += private_collectors
