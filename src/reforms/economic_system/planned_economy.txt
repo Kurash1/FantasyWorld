@@ -4,7 +4,8 @@ governments:monarchy:reform_levels:10 += new planned_economy = {
 	inherit = default_reform
 	icon = assembly_hall
 	modifiers = {
-		
+		global_autonomy = -0.1
+		state_maintenance_modifier = 0.5
 	}
 }
 governments:republic:reform_levels:10 += planned_economy

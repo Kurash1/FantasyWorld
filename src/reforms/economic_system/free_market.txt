@@ -3,8 +3,11 @@ governments:monarchy:reform_levels:10 += new free_market = {
 	desc = "Almost all economic assets are owned by private owners and are run on a capitalistic system with only very limited government oversight."
 	inherit = default_reform
 	icon = merchant
+	trigger = {
+		NOT->has_reform = socialist_law
+	}
 	modifiers = {
-		
+		production_efficiency = 0.1
 	}
 }
 governments:republic:reform_levels:10 += free_market
