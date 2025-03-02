@@ -4,7 +4,7 @@ new named_int IDEA_LEFT = 5
 interface_files:countryideasview:countryideasview:window_holder += {
 	windowType = {
 		name = "idea_tree_menu"
-		position = { x = 550 y = 150 }
+		position = { x = 550 y = 15 }
 		scripted = yes
 		
 		iconType = {
@@ -17,7 +17,7 @@ interface_files:countryideasview:countryideasview:window_holder += {
 	guiButtonType = {
 		name = "toggle_idea_tree"
 		spriteType = "GFX_idea_tree_pop_button"
-		position = { x = 550 y = 150 }
+		position = { x = 550 y = 15 }
 		scripted = yes
 	}
 }
@@ -111,6 +111,24 @@ new effect add_to_tree = {
 					name = `custom_mechanic_idea_tree_shadow_{args:group:id}`
 					position = { x = (IDEA_LEFT + args:x * 78) y = (IDEA_TOP + args:y * 78) }
 					quadTextureSprite = "GFX_idea_shadow"
+					scripted = yes
+				}
+			}
+			
+			new custom_icon `custom_mechanic_idea_tree_shadow_{args:group:id}` = {
+				frames = {
+					{
+						frame = 1
+						trigger = {
+							args:group:trigger
+						}
+					}
+					{
+						frame = 2
+						trigger = {
+							always = yes
+						}
+					}
 				}
 			}
 		}
@@ -196,7 +214,7 @@ new effect draw_line = {
 					x = (IDEA_LEFT + (args:1 + args:3) * 78 / 2 + 16)
 					y = (IDEA_TOP + (args:2 + args:4) * 78 / 2 + 16)
 				}
-				quadTextureSprite = `"GFX_tut_arrows_strip"`
+				quadTextureSprite = `"GFX_idea_arrows_strip"`
 				frame = `{
 					when [args:1 < args:3] {
 						when [args:2 < args:4] 7

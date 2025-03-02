@@ -1,5 +1,15 @@
 spriteTypes = {
 	spriteType = { 
+		name = "GFX_idea_shadow" 
+		texturefile = "gfx/special/GFX_idea_shadow.dds"
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_idea_arrows_strip" 
+		texturefile = "gfx/special/GFX_idea_arrows_strip.dds"
+		noOfFrames = 8
+	}
+	spriteType = { 
 		name = "GFX_dig_images" 
 		texturefile = "gfx/special/GFX_dig_images.dds"
 		noOfFrames = 16
