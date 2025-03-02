@@ -1,5 +1,7 @@
 new named_int IDEA_TOP = 40
 new named_int IDEA_LEFT = 5
+new named_int IDEA_WIDTH = 78
+new named_int IDEA_HEIGHT = 72
 
 interface_files:countryideasview:countryideasview:window_holder += {
 	windowType = {
@@ -11,6 +13,22 @@ interface_files:countryideasview:countryideasview:window_holder += {
 			name = "background"
 			spriteType = "GFX_idea_tree_pop_out"
 			position = { x = 0 y = 0 }
+		}
+		
+		windowType = {
+			name = "idea_shadows_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+		}
+		windowType = {
+			name = "idea_arrows_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
+		}
+		windowType = {
+			name = "idea_groups_window"
+			position = { x = 0 y = 0 }
+			scripted = yes
 		}
 	}
 	
@@ -37,6 +55,9 @@ new custom_window idea_tree_menu = {
 		has_country_flag = show_idea_tree
 	}
 }
+new custom_window idea_shadows_window = { }
+new custom_window idea_arrows_window = { }
+new custom_window idea_groups_window = { }
 new named_ui_node idea_tree_node = interface_files:countryideasview:countryideasview:window_holder:idea_tree_menu
 
 new effect qq_tooltip_idea = {
@@ -106,10 +127,10 @@ new effect add_to_tree = {
 	}
 	transpile = {
 		when [args:shadow] {
-			idea_tree_node += {
+			idea_tree_node:idea_shadows_window += {
 				iconType = {
 					name = `custom_mechanic_idea_tree_shadow_{args:group:id}`
-					position = { x = (IDEA_LEFT + args:x * 78) y = (IDEA_TOP + args:y * 78) }
+					position = { x = (IDEA_LEFT + args:x * IDEA_WIDTH - 32) y = (IDEA_TOP + args:y * IDEA_HEIGHT - 32) }
 					quadTextureSprite = "GFX_idea_shadow"
 					scripted = yes
 				}
@@ -132,16 +153,16 @@ new effect add_to_tree = {
 				}
 			}
 		}
-		idea_tree_node += {
+		idea_tree_node:idea_groups_window += {
 			guiButtonType = {
 				name = `custom_mechanic_idea_tree_{args:group:id}`
-				position = { x = (IDEA_LEFT + args:x * 78) y = (IDEA_TOP + args:y * 78) }
+				position = { x = (IDEA_LEFT + args:x * IDEA_WIDTH) y = (IDEA_TOP + args:y * IDEA_HEIGHT) }
 				quadTextureSprite = `"GFX_idea_{args:group:id}"`
 				scripted = yes
 			}
 			guiButtonType = {
 				name = `custom_mechanic_idea_tree_{args:group:id}_yes`
-				position = { x = (IDEA_LEFT + args:x * 78) y = (IDEA_TOP + args:y * 78) }
+				position = { x = (IDEA_LEFT + args:x * IDEA_WIDTH) y = (IDEA_TOP + args:y * IDEA_HEIGHT) }
 				quadTextureSprite = "GFX_idea_glow_overlay"
 				scripted = yes
 			}
@@ -205,47 +226,75 @@ new effect add_to_tree = {
 }
 new named_int idea_tree_line_count = 0
 new effect draw_line = {
-	args = list<int>
+	args = {
+		list<int> pos
+		idea_group group_1
+		idea_group group_2
+	}
 	transpile = {
-		idea_tree_node += {
+		new named_int i = 0
+		when [args:pos:1 < args:pos:3] {
+			when [args:pos:2 < args:pos:4] { i := 4 }
+			when [args:pos:2 == args:pos:4] { i := 2 }
+			when [args:pos:2 > args:pos:4] { i := 1 }
+		}
+		when [args:pos:1 == args:pos:3] {
+			when [args:pos:2 > args:pos:4] { i := 3 }
+			when [args:pos:2 == args:pos:4] { i := 0 }
+			when [args:pos:2 < args:pos:4] { i := 3 }
+		}
+		when [args:pos:1 > args:pos:3] {
+			when [args:pos:2 < args:pos:4] { i := 1 }
+			when [args:pos:2 == args:pos:4] { i := 2 }
+			when [args:pos:2 > args:pos:4] { i := 4 }
+		}
+		
+		idea_tree_node:idea_arrows_window += {
 			iconType = {
 				name = `custom_mechanic_idea_tree_line_{idea_tree_line_count}`
 				position = {
-					x = (IDEA_LEFT + (args:1 + args:3) * 78 / 2 + 16)
-					y = (IDEA_TOP + (args:2 + args:4) * 78 / 2 + 16)
+					x = (IDEA_LEFT + (args:pos:1 + args:pos:3) * IDEA_WIDTH / 2 + 16)
+					y = (IDEA_TOP + (args:pos:2 + args:pos:4) * IDEA_HEIGHT / 2 + 16)
 				}
 				quadTextureSprite = `"GFX_idea_arrows_strip"`
-				frame = `{
-					when [args:1 < args:3] {
-						when [args:2 < args:4] 7
-						when [args:2 == args:4] 6
-						when [args:2 > args:4] 1
+				scripted = yes
+			}
+		}
+		
+		new custom_icon `custom_mechanic_idea_tree_line_{idea_tree_line_count}` = {
+			frames = {
+				{
+					frame = (i)
+					trigger = {
+						OR = {
+							full_idea_group = args:group_1
+							full_idea_group = args:group_2
+						}
 					}
-					when [args:1 == args:3] {
-						when [args:2 > args:4] 5
-						when [args:2 == args:4] 0
-						when [args:2 < args:4] 4
+				}
+				{
+					frame = (i + 4)
+					trigger = {
+						always = yes
 					}
-					when [args:1 > args:3] {
-						when [args:2 < args:4] 2
-						when [args:2 == args:4] 3
-						when [args:2 > args:4] 8
-					}
-				}`
+				}
 			}
 		}
 		
 		idea_tree_line_count += 1
+		delete = i
 	}
 }
 new effect draw_line_between = {
 	args = list<idea_tree_node>
 	transpile = {
 		draw_line = {
-			args:1:x
-			args:1:y
-			args:2:x
-			args:2:y
+			pos = {
+				args:1:x args:1:y
+				args:2:x args:2:y
+			}
+			group_1 = args:1
+			group_2 = args:2
 		}
 	}
 }
