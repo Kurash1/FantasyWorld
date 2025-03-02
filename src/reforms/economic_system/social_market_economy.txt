@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:10 += new social_market_economy = {
+	name = "Social Market Economy"
+	desc = "The economy is privately owned but expected to provide for the goods of the people as well. Companies are organised in a democratic manner and are required to uphold certain social and ethical standards."
+	inherit = default_reform
+	icon = united_cantons_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:10 += social_market_economy
+governments:theocracy:reform_levels:10 += social_market_economy

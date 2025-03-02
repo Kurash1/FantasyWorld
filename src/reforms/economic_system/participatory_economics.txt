@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:10 += new participatory_economics = {
+	name = "Participatory Economics"
+	desc = "Council's of workers have ceased the means of production and now find themselves regulating the companies they have taken over. Those worker councils now democratically vote on company policy."
+	inherit = default_reform
+	icon = revolutionary_republic
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:10 += participatory_economics
+governments:theocracy:reform_levels:10 += participatory_economics

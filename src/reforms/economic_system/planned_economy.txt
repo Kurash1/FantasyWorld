@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:10 += new planned_economy = {
+	name = "Planned Economy"
+	desc = "Almost all economical assets are controlled by the state. Economy is planned ahead for years. Production targets and quotas are handed out and expected to at least be met if not even exceeded. Supply and demand play no role in this. If the state mandates the economy has to provide."
+	inherit = default_reform
+	icon = assembly_hall
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:10 += planned_economy
+governments:theocracy:reform_levels:10 += planned_economy
