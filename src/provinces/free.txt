@@ -15,6 +15,7 @@ new province caerwyn = {
     name = "Caerwyn"
 	area = thallag
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -24,6 +25,7 @@ new province luthbrae = {
     name = "Luthbrae"
 	area = thallag
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -33,6 +35,7 @@ new province torvaen = {
     name = "Torvaen"
 	area = thallag
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -42,6 +45,7 @@ new province trelagh = {
     name = "Trelagh"
 	area = thallag
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -56,6 +60,7 @@ new province brynmore = {
     name = "Brynmore"
 	area = dunvaloch
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -65,6 +70,7 @@ new province dunvaloch = {
     name = "Dunvaloch"
 	area = dunvaloch
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -74,6 +80,7 @@ new province fennadraig = {
     name = "Fennadraig"
 	area = dunvaloch
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -88,6 +95,7 @@ new province breckvaen = {
     name = "Breckvaen"
 	area = watarcaen
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -97,6 +105,7 @@ new province carnodwyn = {
     name = "Carnodwyn"
 	area = watarcaen
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -106,6 +115,7 @@ new province rhydmar = {
     name = "Rhydmar"
 	area = watarcaen
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -115,6 +125,7 @@ new province kelgwyth = {
     name = "Kelgwyth"
 	area = watarcaen
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -129,6 +140,7 @@ new province culdrith = {
     name = "Culdrith"
 	area = invergat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -138,6 +150,7 @@ new province invercaen = {
     name = "Invercaen"
 	area = invergat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -147,6 +160,7 @@ new province drystanford = {
     name = "Drystanford"
 	area = invergat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -161,6 +175,7 @@ new province caermoryn = {
     name = "Caermoryn"
 	area = talygat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -170,6 +185,7 @@ new province ardosan = {
     name = "Ardosan"
 	area = talygat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -179,6 +195,7 @@ new province talysharn = {
     name = "Talysharn"
 	area = talygat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -193,6 +210,7 @@ new province ballyveagh = {
     name = "Ballyveagh"
 	area = glengat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -202,6 +220,7 @@ new province lochranish = {
     name = "Lochranish"
 	area = glengat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -211,6 +230,7 @@ new province kernavren = {
     name = "Kernavren"
 	area = glengat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -220,6 +240,7 @@ new province glenwyth = {
     name = "Glenwyth"
 	area = glengat
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -234,6 +255,7 @@ new province tirneach = {
     name = "Tirneach"
 	area = dunbratha
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -243,6 +265,7 @@ new province morvaith = {
     name = "Morvaith"
 	area = dunbratha
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }
@@ -252,6 +275,7 @@ new province dunbratha = {
     name = "Dunbratha"
 	area = dunbratha
 	history += {
+		culture = west_watar
 		history_owner = watar
 	}
 }

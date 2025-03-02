@@ -304,6 +304,7 @@ new province nordstrand = {
 	name = "Nordstrand"
 	area = hamburrow
 	history += {
+		culture = thal
 		history_owner = hamburrow
 	}
 }
@@ -313,6 +314,7 @@ new province westerhaven = {
     name = "Westerhaven"
 	area = hamburrow
 	history += {
+		culture = thal
 		history_owner = hamburrow
 	}
 }
@@ -322,6 +324,7 @@ new province dunkmarsh = {
 	name = "Dunkmarsh"
 	area = hamburrow
 	history += {
+		culture = thal
 		history_owner = nordmark
 	}
 }
@@ -336,6 +339,7 @@ new province chesstown = {
 	name = "Chesstown"
 	area = gametown
 	history += {
+		culture = thal
 		history_owner = chesstown
 	}
 }
@@ -345,6 +349,7 @@ new province dicetown = {
 	name = "Dicetown"
 	area = gametown
 	history += {
+		culture = thal
 		history_owner = dicetown
 	}
 }
@@ -354,6 +359,7 @@ new province cardtown = {
 	name = "Cardtown"
 	area = gametown
 	history += {
+		culture = thal
 		history_owner = cardtown
 	}
 }
@@ -363,6 +369,7 @@ new province checkerstown = {
 	name = "Checkerstown"
 	area = gametown
 	history += {
+		culture = thal
 		history_owner = checkerstown
 	}
 }
@@ -372,6 +379,7 @@ new province riesenhafen = {
 	name = "Riesenhafen"
 	area = gametown
 	history += {
+		culture = thal
 		history_owner = checkerstown
 	}
 }
@@ -395,6 +403,7 @@ new province brechtholm = {
 	name = "Brechtholm"
 	area = tinkercoast
 	history += {
+		culture = thal
 		history_owner = eisenwald
 	}
 }
@@ -404,6 +413,7 @@ new province hohenmark = {
 	name = "Hohenmark"
 	area = tinkercoast
 	history += {
+		culture = geller
 		history_owner = stralhofen
 	}
 }
@@ -418,6 +428,7 @@ new province stralswey = {
 	name = "Stralswey"
 	area = kraghaven
 	history += {
+		culture = thal
 		history_owner = dunkelmeer
 	}
 }
@@ -427,6 +438,7 @@ new province kraghaven = {
 	name = "Kraghaven"
 	area = kraghaven
 	history += {
+		culture = thal
 		history_owner = hohenfeld
 	}
 }
@@ -436,6 +448,7 @@ new province blaukuste = {
     name = "Blaukuste"
 	area = kraghaven
 	history += {
+		culture = thal
 		history_owner = hohenfeld
 	}
 }
@@ -445,6 +458,7 @@ new province rabenhugel = {
     name = "Rabenhugel"
 	area = kraghaven
 	history += {
+		culture = thal
 		history_owner = hohenfeld
 	}
 }
@@ -459,6 +473,7 @@ new province wellenstein = {
 	name = "Wellenstein"
 	area = seeburgen
 	history += {
+		culture = geller
 		history_owner = brechthavn
 	}
 }
@@ -468,6 +483,7 @@ new province seeburgen = {
 	name = "Seeburgen"
 	area = seeburgen
 	history += {
+		culture = geller
 		history_owner = brechthavn
 	}
 }
@@ -477,6 +493,7 @@ new province kustermark = {
 	name = "Kustermark"
 	area = seeburgen
 	history += {
+		culture = thal
 		history_owner = dunkelmeer
 	}
 }
@@ -486,6 +503,7 @@ new province nebelwacht = {
 	name = "Nebelwacht"
 	area = seeburgen
 	history += {
+		culture = geller
 		history_owner = brechthavn
 	}
 }
@@ -500,6 +518,7 @@ new province brackwasser = {
 	name = "Brackwasser"
 	area = eisenmeer
 	history += {
+		culture = geller
 		history_owner = graubucht
 	}
 }
@@ -509,6 +528,7 @@ new province flutheim = {
 	name = "Flutheim"
 	area = eisenmeer
 	history += {
+		culture = geller
 		history_owner = falkenheim
 	}
 }
@@ -518,6 +538,7 @@ new province eisenmeer = {
 	name = "Eisenmeer"
 	area = eisenmeer
 	history += {
+		culture = geller
 		history_owner = graubucht
 	}
 }
@@ -527,6 +548,7 @@ new province sturmfels = {
 	name = "Sturmfels"
 	area = eisenmeer
 	history += {
+		culture = geller
 		history_owner = wittelsund
 	}
 }
@@ -541,6 +563,7 @@ new province licherhafen = {
 	name = "Licherhafen"
 	area = licherhafen
 	history += {
+		culture = geller
 		history_owner = lichtenwald
 	}
 }
@@ -550,6 +573,7 @@ new province rotenkliff = {
 	name = "Rotenkliff"
 	area = licherhafen
 	history += {
+		culture = geller
 		history_owner = stralhofen
 	}
 }
@@ -559,6 +583,7 @@ new province graufurt = {
 	name = "Graufurt"
 	area = licherhafen
 	history += {
+		culture = geller
 		history_owner = lichtenwald
 	}
 }
@@ -568,6 +593,7 @@ new province falkensund = {
 	name = "Falkensund"
 	area = licherhafen
 	history += {
+		culture = geller
 		history_owner = eisenhafen
 	}
 }
@@ -582,6 +608,7 @@ new province eberhafen = {
 	name = "Eberhafen"
 	area = rheinsmund
 	history += {
+		culture = geller
 		history_owner = drachenmark
 	}
 }
@@ -591,6 +618,7 @@ new province reinsgat = {
 	name = "Reinsgat"
 	area = rheinsmund
 	history += {
+		culture = geller
 		history_owner = schwarzburg
 	}
 }
@@ -600,6 +628,7 @@ new province norderburg = {
 	name = "Norderburg"
 	area = rheinsmund
 	history += {
+		culture = geller
 		history_owner = schwarzburg
 	}
 }
@@ -609,6 +638,7 @@ new province ziegenholm = {
 	name = "Ziegenholm"
 	area = rheinsmund
 	history += {
+		culture = geller
 		history_owner = schwarzburg
 	}
 }
@@ -640,6 +670,7 @@ new province dornthal = {
 	name = "Dornthal"
 	area = novenhaven
 	history += {
+		culture = geller
 		history_owner = novenhaven
 	}
 }
@@ -654,6 +685,7 @@ new province mornatha = {
 	name = "Mornatha"
 	area = mornatha
 	history += {
+		culture = north_watar
 		history_owner = the_towers
 	}
 }
@@ -663,6 +695,7 @@ new province talyara = {
 	name = "Talyara"
 	area = mornatha
 	history += {
+		culture = north_watar
 		history_owner = talyara
 	}
 }
@@ -672,6 +705,7 @@ new province cathanwynd = {
 	name = "Cathanwynd"
 	area = mornatha
 	history += {
+		culture = north_watar
 		history_owner = lothvryn
 	}
 }
@@ -686,6 +720,7 @@ new province breochal = {
 	name = "Breochal"
 	area = watar_lake
 	history += {
+		culture = north_watar
 		history_owner = breochal
 	}
 }
@@ -718,6 +753,7 @@ new province glenmareth = {
 	name = "Glenmareth"
 	area = rothwyn
 	history += {
+		culture = north_watar
 		history_owner = glenmareth
 	}
 }
@@ -727,6 +763,7 @@ new province druimlach = {
 	name = "Druimlach"
 	area = rothwyn
 	history += {
+		culture = north_watar
 		history_owner = dunbriach
 	}
 }
@@ -736,6 +773,7 @@ new province rothwyn = {
 	name = "Rothwyn"
 	area = rothwyn
 	history += {
+		culture = north_watar
 		history_owner = silkenglade
 	}
 }
@@ -782,6 +820,7 @@ new province konnack = {
 	name = "Konnack"
 	area = konnack
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -791,6 +830,7 @@ new province brigerton = {
 	name = "Brigerton"
 	area = konnack
 	history += {
+		culture = veshni
 		history_owner = greenrock
 	}
 }
@@ -800,6 +840,7 @@ new province greenrock = {
 	name = "Greenrock"
 	area = konnack
 	history += {
+		culture = veshni
 		history_owner = greenrock
 	}
 }
@@ -809,6 +850,7 @@ new province stonewell = {
 	name = "Stonewell"
 	area = konnack
 	history += {
+		culture = veshni
 		history_owner = greenrock
 	}
 }
@@ -823,6 +865,7 @@ new province holden = {
 	name = "Holden"
 	area = bittergate
 	history += {
+		culture = west_tyller
 		history_owner = bittergate
 	}
 }
@@ -832,6 +875,7 @@ new province bittergate = {
 	name = "Bittergate"
 	area = bittergate
 	history += {
+		culture = west_tyller
 		history_owner = bittergate
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -846,6 +890,7 @@ new province olderod = {
 	name = "Olderod"
 	area = bittergate
 	history += {
+		culture = west_tyller
 		history_owner = bittergate
 	}
 }
@@ -860,6 +905,7 @@ new province watargate = {
 	name = "Watargate"
 	area = viltwatar
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = wood
 	}
@@ -870,6 +916,7 @@ new province soryvek = {
 	name = "Soryvek"
 	area = viltwatar
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -879,6 +926,7 @@ new province morysha = {
 	name = "Morysha"
 	area = viltwatar
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -893,6 +941,7 @@ new province shakmyr = {
 	name = "Shakmyr"
 	area = shakmyr
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -902,6 +951,7 @@ new province tarovesh = {
 	name = "Tarovesh"
 	area = shakmyr
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -911,6 +961,7 @@ new province haldrak = {
     name = "Haldrak"
 	area = shakmyr
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -925,6 +976,7 @@ new province ireiveshni = {
     name = "Ireiveshni"
 	area = veshni
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -934,6 +986,7 @@ new province veshni_konnack = {
 	name = "Veshni-Konnack"
 	area = veshni
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -957,6 +1010,7 @@ new province roseria = {
 	name = "Roseria"
 	area = roseria
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = paper
 	}
@@ -967,6 +1021,7 @@ new province dragons_landing = {
     name = "Dragon's Landing"
 	area = roseria
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = c_metals
 	}
@@ -977,6 +1032,7 @@ new province drakonaire = {
     name = "Drakonaire"
 	area = roseria
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = silver
 	}
@@ -992,6 +1048,7 @@ new province inisfell = {
 	name = "Inisfell"
 	area = inisfell
 	history += {
+		culture = north_watar
 		history_owner = lothvryn
 	}
 }
@@ -1001,6 +1058,7 @@ new province marnocairn = {
     name = "Marnocairn"
 	area = inisfell
 	history += {
+		culture = north_watar
 		history_owner = lothvryn
 	}
 }
@@ -1010,6 +1068,7 @@ new province cairwych = {
     name = "Cairwych"
 	area = inisfell
 	history += {
+		culture = north_watar
 		history_owner = lothvryn
 	}
 }
@@ -1079,6 +1138,7 @@ new province sovrekh = {
 	name = "Sovrekh"
 	area = aramant
 	history += {
+		culture = west_tyller
 		history_owner = veshni
 	}
 }
@@ -1088,6 +1148,7 @@ new province aramant = {
 	name = "Aramant"
 	area = aramant
 	history += {
+		culture = west_tyller
 		history_owner = aramant
 	}
 }
@@ -1097,6 +1158,7 @@ new province keepstone = {
 	name = "Keepstone"
 	area = aramant
 	history += {
+		culture = west_tyller
 		history_owner = keepstone
 	}
 }
@@ -1111,6 +1173,7 @@ new province veshkaya = {
     name = "Veshkaya"
 	area = olyvren
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1120,6 +1183,7 @@ new province olyvren = {
     name = "Olyvren"
 	area = olyvren
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1129,6 +1193,7 @@ new province myrvekh = {
     name = "Myrvekh"
 	area = olyvren
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1143,6 +1208,7 @@ new province velstaya = {
     name = "Velstaya"
 	area = patterk
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1152,6 +1218,7 @@ new province zovrakin = {
 	name = "Zovrakin"
 	area = patterk
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1161,6 +1228,7 @@ new province orlyvek = {
     name = "Orlyvek"
 	area = patterk
 	history += {
+		culture = veshni
 		history_owner = veshni
 	}
 }
@@ -1175,6 +1243,7 @@ new province askoven = {
 	name = "Askoven"
 	area = kasgorn
 	history += {
+		culture = thorner
 		history_owner = veshni
 	}
 }
@@ -1184,6 +1253,7 @@ new province veshen_place = {
     name = "Veshen Place"
 	area = kasgorn
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = grain
 	}
@@ -1194,6 +1264,7 @@ new province rowan_tower = {
     name = "Rowan Tower"
 	area = kasgorn
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = mag_goods
 	}
@@ -1209,6 +1280,7 @@ new province olshad = {
     name = "Olshad"
 	area = olskill
 	history += {
+		culture = thorner
 		history_owner = veshni
 	}
 }
@@ -1218,6 +1290,7 @@ new province oudwae = {
     name = "Oudwae"
 	area = olskill
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = grain
 	}
@@ -1233,6 +1306,7 @@ new province nomstad = {
     name = "Nomstad"
 	area = nomstad
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = r_metals
 	}
@@ -1243,6 +1317,7 @@ new province thorn_keep = {
     name = "Thorn Keep"
 	area = nomstad
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = salt
 	}
@@ -1253,6 +1328,7 @@ new province grenfield = {
     name = "Grenfield"
 	area = nomstad
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = wool
 	}
@@ -1263,6 +1339,7 @@ new province rose_bridge = {
     name = "Rose Bridge"
 	area = nomstad
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = livestock
 	}
@@ -1278,6 +1355,7 @@ new province thornwoods = {
     name = "Thornwoods"
 	area = nyrthor
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = fur
 	}
@@ -1288,6 +1366,7 @@ new province elfgarden = {
 	name = "Elfgarden"
 	area = nyrthor
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = alcohol
 	}
@@ -1298,6 +1377,7 @@ new province arkenrod = {
 	name = "Arkenrod"
 	area = nyrthor
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = wood
 	}
@@ -1313,6 +1393,7 @@ new province quarwaine_ford = {
     name = "Quarwaine Ford"
 	area = port_rosen
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = gems
 	}
@@ -1323,6 +1404,7 @@ new province port_rosen = {
     name = "Port Rosen"
 	area = port_rosen
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = cloth
 	}
@@ -1333,6 +1415,7 @@ new province rosen_forest = {
     name = "Rosen Forest"
 	area = port_rosen
 	history += {
+		culture = thorner
 		history_owner = thornen
 		history_trade_goods = naval_supplies
 	}
@@ -1376,6 +1459,7 @@ new province kornache = {
 	name = "Kornache"
 	area = keshveyr
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = fish
@@ -1396,6 +1480,7 @@ new province sovcur = {
 	name = "Sovcur"
 	area = keshveyr
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = livestock
 		
@@ -1415,6 +1500,7 @@ new province wastcit = {
     name = "Wastcit"
 	area = keshveyr
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = grain
 		
@@ -1439,6 +1525,7 @@ new province jokilly = {
     name = "Jokilly"
 	area = jymeilmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = stone
 		
@@ -1454,6 +1541,7 @@ new province vekmont = {
     name = "Vekmont"
 	area = jymeilmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = c_metals
@@ -1470,6 +1558,7 @@ new province swokgat = {
 	name = "Swokgat"
 	area = jymeilmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = arms
 		
@@ -1490,6 +1579,7 @@ new province drekeyr = {
     name = "Drekeyr"
 	area = kallmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = c_metals
@@ -1506,6 +1596,7 @@ new province aksmal = {
     name = "Aksmal"
 	area = kallmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = r_metals
@@ -1522,6 +1613,7 @@ new province veylirk = {
     name = "Veylirk"
 	area = kallmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = stone
@@ -1543,6 +1635,7 @@ new province drekkyn = {
     name = "Drekkyn"
 	area = drekkyn
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = arms
@@ -1563,6 +1656,7 @@ new province veylkeil = {
     name = "Veylkeil"
 	area = drekkyn
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = fish
@@ -1583,6 +1677,7 @@ new province olbrend = {
     name = "Olbrend"
 	area = drekkyn
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = fish
@@ -1599,6 +1694,7 @@ new province shannach = {
     name = "Shannach"
 	area = drekkyn
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = fish
@@ -1624,6 +1720,7 @@ new province doveyr = {
     name = "Doveyr"
 	area = huveyrmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = stone
@@ -1640,6 +1737,7 @@ new province askgat = {
     name = "Askgat"
 	area = huveyrmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = c_metals
@@ -1651,6 +1749,7 @@ new province ireyveil = {
     name = "Ireyveil"
 	area = huveyrmont
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = alcohol
@@ -1677,6 +1776,7 @@ new province olkash = {
     name = "Olkash"
 	area = cetryveir
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = fish
@@ -1697,6 +1797,7 @@ new province ahhelveyl = {
     name = "Ahhelveyl"
 	area = cetryveir
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = fish
@@ -1717,6 +1818,7 @@ new province omayrk = {
     name = "Omayrk"
 	area = cetryveir
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = c_metals
@@ -1733,6 +1835,7 @@ new province dakgat = {
     name = "Dakgat"
 	area = cetryveir
 	history += {
+		culture = west_tyller
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = salt
@@ -1758,6 +1861,7 @@ new province drakketh = {
     name = "Drakketh"
 	area = drakketh
 	history += {
+		culture = east_tyller
 		history_owner = hashdrak
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -1772,6 +1876,7 @@ new province veyrnell = {
     name = "Veyrnell"
 	area = drakketh
 	history += {
+		culture = east_tyller
 		history_owner = hashdrak
 	}
 }
@@ -1781,6 +1886,7 @@ new province olmash = {
     name = "Olmash"
 	area = drakketh
 	history += {
+		culture = east_tyller
 		history_owner = hashdrak
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -1800,6 +1906,7 @@ new province korrveil = {
     name = "Korrveil"
 	area = korrmont
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 	}
 }
@@ -1809,6 +1916,7 @@ new province shalketh = {
     name = "Shalketh"
 	area = korrmont
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 	}
 }
@@ -1818,6 +1926,7 @@ new province jorrveil = {
     name = "Jorrveil"
 	area = korrmont
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -1827,6 +1936,7 @@ new province sornich = {
     name = "Sornich"
 	area = korrmont
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -1841,6 +1951,7 @@ new province jovrek = {
     name = "Jovrek"
 	area = askirn
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 	}
 }
@@ -1850,6 +1961,7 @@ new province skovairn = {
     name = "Skovairn"
 	area = askirn
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 	}
 }
@@ -1859,6 +1971,7 @@ new province askirn = {
     name = "Askirn"
 	area = askirn
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -1873,6 +1986,7 @@ new province drelgath = {
     name = "Drelgath"
 	area = askirn
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -1892,6 +2006,7 @@ new province thallisk = {
     name = "Thallisk"
 	area = arkveil
 	history += {
+		culture = east_tyller
 		history_owner = urtdrak
 	}
 }
@@ -1901,6 +2016,7 @@ new province arkveil = {
     name = "Arkveil"
 	area = arkveil
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1910,6 +2026,7 @@ new province tovrek = {
     name = "Tovrek"
 	area = arkveil
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1924,6 +2041,7 @@ new province braykash = {
     name = "Braykash"
 	area = zhendrik
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1933,6 +2051,7 @@ new province oskveil = {
     name = "Oskveil"
 	area = zhendrik
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1942,6 +2061,7 @@ new province zhendrik = {
     name = "Zhendrik"
 	area = zhendrik
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1951,6 +2071,7 @@ new province meylthorne = {
     name = "Meylthorne"
 	area = zhendrik
 	history += {
+		culture = east_tyller
 		history_owner = viltdrak
 	}
 }
@@ -1965,6 +2086,7 @@ new province iskmor = {
     name = "Iskmor"
 	area = teyrloch
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -1974,6 +2096,7 @@ new province dorrikash = {
     name = "Dorrikash"
 	area = teyrloch
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -1983,6 +2106,7 @@ new province teyrloch = {
     name = "Teyrloch"
 	area = teyrloch
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -1997,6 +2121,7 @@ new province vynmorn = {
     name = "Vynmorn"
 	area = vynkmont
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -2006,6 +2131,7 @@ new province vynkro = {
     name = "Vynkro"
 	area = vynkmont
 	history += {
+		culture = east_tyller
 		history_owner = ekadrak
 	}
 }
@@ -2020,6 +2146,7 @@ new province velkovec = {
     name = "Velkovec"
 	area = drevnaya
 	history += {
+		culture = dzymark
 		history_owner = vyreholm
 	}
 }
@@ -2029,6 +2156,7 @@ new province drevnaya = {
     name = "Drevnaya"
 	area = drevnaya
 	history += {
+		culture = dzymark
 		history_owner = vyreholm
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2043,6 +2171,7 @@ new province mirograd = {
     name = "Mirograd"
 	area = drevnaya
 	history += {
+		culture = dzymark
 		history_owner = zelenec
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2062,6 +2191,7 @@ new province zlatoryev = {
     name = "Zlatoryev"
 	area = zlatoryev
 	history += {
+		culture = dzymark
 		history_owner = ostovar
 	}
 }
@@ -2071,6 +2201,7 @@ new province roshkovo = {
     name = "Roshkovo"
 	area = zlatoryev
 	history += {
+		culture = dzymark
 		history_owner = ostovar
 	}
 }
@@ -2080,6 +2211,7 @@ new province vasylivka = {
     name = "Vasylivka"
 	area = zlatoryev
 	history += {
+		culture = dzymark
 		history_owner = ostovar
 	}
 }
@@ -2094,6 +2226,7 @@ new province prydnova = {
     name = "Prydnova"
 	area = tarnopol
 	history += {
+		culture = dzymark
 		history_owner = vaszoria
 	}
 }
@@ -2103,6 +2236,7 @@ new province tarnopol = {
     name = "Tarnopol"
 	area = tarnopol
 	history += {
+		culture = dzymark
 		history_owner = rovensmark
 	}
 }
@@ -2112,6 +2246,7 @@ new province ostrovets = {
     name = "Ostrovets"
 	area = tarnopol
 	history += {
+		culture = dzymark
 		history_owner = kamenaria
 	}
 }
@@ -2126,6 +2261,7 @@ new province lazovka = {
     name = "Lazovka"
 	area = kolomyr
 	history += {
+		culture = dzymark
 		history_owner = dzydria
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2140,6 +2276,7 @@ new province kolomyr = {
     name = "Kolomyr"
 	area = kolomyr
 	history += {
+		culture = dzymark
 		history_owner = ternovya
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2154,6 +2291,7 @@ new province novorytsk = {
     name = "Novorytsk"
 	area = kolomyr
 	history += {
+		culture = dzymark
 		history_owner = dzydria
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2168,6 +2306,7 @@ new province zelenograd = {
     name = "Zelenograd"
 	area = kolomyr
 	history += {
+		culture = dzymark
 		history_owner = dobrynia
 	}
 }
@@ -2182,6 +2321,7 @@ new province kornyshiv = {
     name = "Kornyshiv"
 	area = kornyshiv
 	history += {
+		culture = dzymark
 		history_owner = rovensmark
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2196,6 +2336,7 @@ new province dubryans = {
     name = "Dubryans"
 	area = kornyshiv
 	history += {
+		culture = dzymark
 		history_owner = rovensmark
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2210,6 +2351,7 @@ new province orlivest = {
     name = "Orlivest"
 	area = kornyshiv
 	history += {
+		culture = dzymark
 		history_owner = velmira
 	}
 }
@@ -2224,6 +2366,7 @@ new province chervynsk = {
     name = "Chervynsk"
 	area = chervynsk
 	history += {
+		culture = dzymark
 		history_owner = velmira
 	}
 }
@@ -2233,6 +2376,7 @@ new province staryvolk = {
     name = "Staryvolk"
 	area = chervynsk
 	history += {
+		culture = dzymark
 		history_owner = hamburrow
 	}
 }
@@ -2242,6 +2386,7 @@ new province dobrovo = {
     name = "Dobrovo"
 	area = chervynsk
 	history += {
+		culture = dzymark
 		history_owner = velmira
 	}
 }
@@ -2256,6 +2401,7 @@ new province perelyev = {
 	name = "Perelyev"
 	area = radomyrsk
 	history += {
+		culture = dzymark
 		history_owner = nightgate
 	}
 }
@@ -2265,6 +2411,7 @@ new province radomyrsk = {
 	name = "Radomyrsk"
 	area = radomyrsk
 	history += {
+		culture = dzymark
 		history_owner = brennland
 	}
 }
@@ -2274,6 +2421,7 @@ new province zernograd = {
     name = "Zernograd"
 	area = radomyrsk
 	history += {
+		culture = dzymark
 		history_owner = brennland
 	}
 }
@@ -2288,6 +2436,7 @@ new province volzeburg = {
 	name = "Volzeburg"
 	area = slavych
 	history += {
+		culture = dzymark
 		history_owner = volzeburg
 		
 		1988.1.1->add_permanent_province_modifier = {
@@ -2302,6 +2451,7 @@ new province sirokovo = {
 	name = "Sirokovo"
 	area = slavych
 	history += {
+		culture = dzymark
 		history_owner = hamburrow
 	}
 }
@@ -2316,6 +2466,7 @@ new province sovliska = {
     name = "Sovliska"
 	area = virkonmaa
 	history += {
+		culture = virko_lisk
 		history_owner = koskova
 	}
 }
@@ -2325,6 +2476,7 @@ new province kolmirev = {
     name = "Kolmirev"
 	area = virkonmaa
 	history += {
+		culture = virko_lisk
 		history_owner = koskova
 	}
 }
@@ -2334,6 +2486,7 @@ new province rautashiv = {
     name = "Rautashiv"
 	area = virkonmaa
 	history += {
+		culture = virko_lisk
 		history_owner = koskova
 	}
 }
@@ -2343,6 +2496,7 @@ new province velyranta = {
     name = "Velyranta"
 	area = virkonmaa
 	history += {
+		culture = virko_lisk
 		history_owner = jorvaska
 	}
 }
@@ -2357,6 +2511,7 @@ new province iskorva = {
     name = "Iskorva"
 	area = olimyrsk
 	history += {
+		culture = virko_lisk
 		history_owner = myrvelin
 	}
 }
@@ -2366,6 +2521,7 @@ new province tarnovesh = {
     name = "Tarnovesh"
 	area = olimyrsk
 	history += {
+		culture = virko_lisk
 		history_owner = zoryashiv
 	}
 }
@@ -2375,6 +2531,7 @@ new province myrkyla = {
     name = "Myrkyla"
 	area = olimyrsk
 	history += {
+		culture = virko_lisk
 		history_owner = myrvelin
 	}
 }
@@ -2384,6 +2541,7 @@ new province kelmorov = {
     name = "Kelmorov"
 	area = olimyrsk
 	history += {
+		culture = virko_lisk
 		history_owner = zoryashiv
 	}
 }
@@ -2393,6 +2551,7 @@ new province lohkava = {
     name = "Lohkava"
 	area = olimyrsk
 	history += {
+		culture = virko_lisk
 		history_owner = zoryashiv
 	}
 }
@@ -2407,6 +2566,7 @@ new province miroshka = {
     name = "Miroshka"
 	area = jarvelisk
 	history += {
+		culture = virko_lisk
 		history_owner = tovrien
 	}
 }
@@ -2416,6 +2576,7 @@ new province drelmora = {
     name = "Drelmora"
 	area = jarvelisk
 	history += {
+		culture = virko_lisk
 		history_owner = tovrien
 	}
 }
@@ -2425,6 +2586,7 @@ new province ylivesh = {
     name = "Ylivesh"
 	area = jarvelisk
 	history += {
+		culture = virko_lisk
 		history_owner = tovrien
 	}
 }
@@ -2434,6 +2596,7 @@ new province jorvainka = {
     name = "Jorvainka"
 	area = jarvelisk
 	history += {
+		culture = virko_lisk
 		history_owner = velmorya
 	}
 }
@@ -2443,6 +2606,7 @@ new province askervir = {
     name = "Askervir"
 	area = jarvelisk
 	history += {
+		culture = virko_lisk
 		history_owner = velmorya
 	}
 }
@@ -2457,6 +2621,7 @@ new province llynbreck = {
     name = "Llynbreck"
 	area = ekwatar
 	history += {
+		culture = north_watar
 		history_owner = silkenglade
 	}
 }
@@ -2466,6 +2631,7 @@ new province glenvraith = {
     name = "Glenvraith"
 	area = ekwatar
 	history += {
+		culture = north_watar
 		history_owner = galdovael
 	}
 }
@@ -2475,6 +2641,7 @@ new province oronsay = {
     name = "Oronsay"
 	area = ekwatar
 	history += {
+		culture = north_watar
 		history_owner = galdovael
 	}
 }
@@ -2489,6 +2656,7 @@ new province torvean = {
     name = "Torvean"
 	area = calgat
 	history += {
+		culture = north_watar
 		history_owner = caerloth
 	}
 }
@@ -2498,6 +2666,7 @@ new province caltrith = {
     name = "Caltrith"
 	area = calgat
 	history += {
+		culture = north_watar
 		history_owner = dunbriach
 	}
 }
@@ -2507,6 +2676,7 @@ new province eldrisc = {
     name = "Eldrisc"
 	area = calgat
 	history += {
+		culture = north_watar
 		history_owner = lothvryn
 	}
 }

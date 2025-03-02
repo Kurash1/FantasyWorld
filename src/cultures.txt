@@ -33,6 +33,46 @@ new culture imperial = {
 	name = "Imperial"
 	culture_group = human
 }
+new culture veshni = {
+	name = "Veshni"
+	culture_group = human
+}
+new culture west_tyller = {
+	name = "West-Tyller"
+	culture_group = human
+}
+new culture east_tyller = {
+	name = "East-Tyller"
+	culture_group = human
+}
+new culture thorner = {
+	name = "Thorner"
+	culture_group = human
+}
+new culture dzymark = {
+	name = "Dzymark"
+	culture_group = human
+}
+new culture virko_lisk = {
+	name = "Virko-Lisk"
+	culture_group = human
+}
+new culture west_watar = {
+	name = "West-Watar"
+	culture_group = human
+}
+new culture north_watar = {
+	name = "North-Watar"
+	culture_group = human
+}
+new culture thal = {
+	name = "Thal"
+	culture_group = human
+}
+new culture geller = {
+	name = "Geller"
+	culture_group = human
+}
 
 special_units:galleass:name := "Longship"
 special_units:galleass:modifier := {
