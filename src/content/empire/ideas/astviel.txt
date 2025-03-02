@@ -1,0 +1,65 @@
+new idea_group astviel_ideas = {
+	name = "Astviel"
+	category = national
+	start = {
+		fort_maintenance_modifier = -0.5
+		own_territory_dice_roll_bonus = 1
+	}
+	bonus = {
+		
+	}
+	trigger = {
+		tag = astviel
+	}
+	ideas = {
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+		{
+			name = ""
+			desc = ""
+			modifier = {
+				
+			}
+		}
+	}
+}

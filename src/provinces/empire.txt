@@ -1503,6 +1503,7 @@ new province wastcit = {
 		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = grain
+		fort_15th = yes
 		
 		1988.1.1->add_permanent_province_modifier = {
 			name = riven_road
@@ -1528,6 +1529,7 @@ new province jokilly = {
 		culture = west_tyller
 		history_owner = astviel
 		history_trade_goods = stone
+		fort_15th = yes
 		
 		2155.1.1->add_permanent_province_modifier = {
 			name = darklands
@@ -1600,6 +1602,7 @@ new province aksmal = {
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = r_metals
+		fort_15th = yes
 		
 		2155.1.1->add_permanent_province_modifier = {
 			name = darklands
@@ -1639,6 +1642,7 @@ new province drekkyn = {
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = arms
+		fort_15th = yes
 		
 		1988.1.1->add_permanent_province_modifier = {
 			name = riven_road
@@ -1681,6 +1685,7 @@ new province olbrend = {
 		history_owner = astviel
 		add_core = kredrak
 		history_trade_goods = fish
+		fort_15th = yes
 		
 		2155.1.1->add_permanent_province_modifier = {
 			name = darklands
@@ -1724,6 +1729,7 @@ new province doveyr = {
 		history_owner = astviel
 		add_core = veyldrak
 		history_trade_goods = stone
+		fort_15th = yes
 		
 		2155.1.1->add_permanent_province_modifier = {
 			name = darklands
@@ -1741,6 +1747,7 @@ new province askgat = {
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = c_metals
+		fort_15th = yes
 	}
 }
 new province ireyveil = {
@@ -1763,6 +1770,7 @@ new province maidenkeep = {
 	history	+= {
 		history_owner = maidenkeep
 		history_trade_goods = arms
+		fort_15th = yes
 	}
 }
 
@@ -1839,6 +1847,7 @@ new province dakgat = {
 		history_owner = astviel
 		add_core = askdrak
 		history_trade_goods = salt
+		fort_15th = yes
 		
 		1988.1.1->add_permanent_province_modifier = {
 			name = riven_road
