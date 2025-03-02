@@ -50,16 +50,6 @@ new policy military_academies = {
 		military_tactics = 0.1
 	}
 }
-new policy scouting_reports = {
-	name = "Scouting reports"
-	desc = "Our scouts write detailed reports for the high command and our generals in the field."
-	monarch_power = MIL
-	group_1 = general_staff_ideas
-	group_2 = scouting_ideas
-	modifier = {
-		land_attrition = -0.1
-	}
-}
 new policy camp_prefect = {
 	name = "Camp prefect"
 	desc = "A long served soldier who knows the ins and outs of the legion they got attached to. They rose up through the ranks from the lowest foot soldier to this esteemed position at the end of their career."

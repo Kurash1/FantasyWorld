@@ -59,16 +59,6 @@ new policy blitzkrieg_logistics = {
 		movement_speed = 0.1
 	}
 }
-new policy requisitioning = {
-	name = "Requisitioning"
-	desc = "Our armies are ordered to requisition food even from locals. If the commanders can pay for it great if they have to take it by force fine. We still prefer option 1 as it leaves us with less risk but the supplies are too important to be neglected."
-	monarch_power = MIL
-	group_1 = commission_ideas
-	group_2 = scouting_ideas
-	modifier = {
-		land_attrition = -0.1
-	}
-}
 new policy cooking_hours = {
 	name = "Cooking hours"
 	desc = "Our generals in the field have been commanded to give their soldiers time to cook some prepared meals for themselves. That will not only heighten morale but will also improve the general fitness of our soldiers as compared to that hard tack they keep having to eat until now."

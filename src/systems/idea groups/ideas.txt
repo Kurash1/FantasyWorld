@@ -427,9 +427,6 @@ new named_effect create_idea_tree = {
 	add_to_tree = { group = smithing_ideas x = 2 y = 5 }
 	draw_line_between = { montane_ideas smithing_ideas }
 	
-	add_to_tree = { group = scouting_ideas x = 0 y = 5 }
-	draw_line_between = { exploration_ideas scouting_ideas }
-	
 	#
 	# Diplomatic Ideas
 	#
