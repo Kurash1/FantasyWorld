@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:12 += new strengthen_the_domestic_market = {
+	name = "Strengthen the Domestic Market"
+	desc = "The domestic market must be strengthened in order to ensure a prosperous and competitive economy."
+	inherit = default_reform
+	icon = dutch_flag
+	modifiers = {
+		global_foreign_trade_power = -0.2
+		global_trade_goods_size_modifier = 0.1
+		global_own_trade_power = 0.05
+	}
+}
+governments:republic:reform_levels:12 += strengthen_the_domestic_market
+governments:theocracy:reform_levels:12 += strengthen_the_domestic_market

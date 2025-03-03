@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:12 += new plunder_that_booty = {
+	name = "Plunder that Booty!"
+	desc = "Why should we trade ourselves arr? We could sur'ly seize that booty from other lad's ships swiftly easily."
+	inherit = default_reform
+	icon = pirate_republic
+	modifiers = {
+		capture_ship_chance = 0.1
+		privateer_efficiency = 0.25
+		coast_raid_range = 1
+	}
+}
+governments:republic:reform_levels:12 += plunder_that_booty
+governments:theocracy:reform_levels:12 += plunder_that_booty

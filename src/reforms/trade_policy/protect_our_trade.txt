@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:12 += new protect_our_trade = {
+	name = "Protect our Trade"
+	desc = "Pirates and other miscreants keep raiding our trade convoys we need to put a swift end to that. The might of our navy shall protect these vital life lines of our trade!"
+	inherit = default_reform
+	icon = politician
+	modifiers = {
+		naval_maintenance_modifier = 0.05
+		
+		ship_power_propagation = 0.25
+	}
+}
+governments:republic:reform_levels:12 += protect_our_trade
+governments:theocracy:reform_levels:12 += protect_our_trade

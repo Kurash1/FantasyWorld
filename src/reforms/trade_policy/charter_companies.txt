@@ -1,0 +1,16 @@
+governments:monarchy:reform_levels:12 += new charter_companies = {
+	name = "Charter Companies"
+	desc = "The wealth of the colonies is vast we do not need to think about trade with other powers any longer if we can just obtain everything we need out of our colonial holdings instead."
+	inherit = default_reform
+	icon = trading_city
+	modifiers = {
+		reduced_liberty_desire = -5
+		liberty_desire_from_subject_development = 0.05
+
+		trade_company_investment_cost = -0.2
+		global_tariffs = 0.1
+		treasure_fleet_income = 0.25
+	}
+}
+governments:republic:reform_levels:12 += charter_companies
+governments:theocracy:reform_levels:12 += charter_companies

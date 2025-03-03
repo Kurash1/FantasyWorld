@@ -1,0 +1,16 @@
+governments:monarchy:reform_levels:12 += new customs_union = {
+	name = "Strengthen the Domestic Market"
+	desc = "By signing mutually benefical treaties over trade with our neighbors we can trade far more easily with them and they with us."
+	inherit = default_reform
+	icon = dutch_republic
+	modifiers = {
+		mercantilism_cost = 0.1
+		embargo_efficiency = -0.2
+		trade_steering = -0.05
+
+		caravan_power = 0.25
+		merchants = 1
+	}
+}
+governments:republic:reform_levels:12 += customs_union
+governments:theocracy:reform_levels:12 += customs_union

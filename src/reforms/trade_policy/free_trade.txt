@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:12 += new free_trade = {
+	name = "Free Trade"
+	desc = "Our most intelligent minds say that this is the future of trade. It emphasizes a complete absence of any tarriffs and no restrictions on imports of fully legal goods."
+	inherit = default_reform
+	icon = merchant
+	modifiers = {
+		mercantilism_cost = 0.5
+		
+		global_trade_power = 0.1
+		trade_efficiency = 0.05
+	}
+}
+governments:republic:reform_levels:12 += free_trade
+governments:theocracy:reform_levels:12 += free_trade

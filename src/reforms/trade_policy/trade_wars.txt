@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:12 += new trade_wars = {
+	name = "Trade Wars"
+	desc = "Other countries for far too long have hampered our trade income. No more we will show them with the might of our forces that we must dominate the trade both domestic and foreign!"
+	inherit = default_reform
+	icon = people_walking
+	modifiers = {
+		diplomatic_reputation = -0.25
+
+		justify_trade_conflict_cost = -0.5
+		blockade_efficiency = 1
+	}
+}
+governments:republic:reform_levels:12 += trade_wars
+governments:theocracy:reform_levels:12 += trade_wars
