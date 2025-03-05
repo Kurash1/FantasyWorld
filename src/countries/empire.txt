@@ -35,6 +35,37 @@ new country dir_holk = {
 		150 50 0
 	}
 	capital = dir_holk
+	government_rank = 2
+	government = theocracy
+	 history += {
+        define_character = {
+            type = ruler
+            name = "Grardrorlim Bluntbringer"
+            dynasty = "Bluntbringer"
+            stats = { 3 1 6 }
+            age = 150
+            birth_day = 06.03
+            female = no
+        }
+        define_character = {
+            type = heir
+            name = "Bruzirra Ambershield"
+            dynasty = "Ambershield"
+            stats = { 4 3 2 }
+            age = 55
+            birth_day = 10.11
+            female = yes
+        }
+		elector = yes
+        
+        2568.1.1 = {
+            add_ruler_personality = zealous
+            add_ruler_personality = wrathful
+            add_ruler_personality = impatient
+            
+            add_heir_personality = ambitious
+		 }
+    }
 }
 
 # Capital
