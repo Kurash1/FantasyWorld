@@ -38,34 +38,33 @@ new country dir_holk = {
 	government_rank = 2
 	government = theocracy
 	 history += {
-        define_character = {
-            type = ruler
-            name = "Grardrorlim Bluntbringer"
-            dynasty = "Bluntbringer"
-            stats = { 3 1 6 }
-            age = 150
-            birth_day = 06.03
-            female = no
-        }
-        define_character = {
-            type = heir
-            name = "Bruzirra Ambershield"
-            dynasty = "Ambershield"
-            stats = { 4 3 2 }
-            age = 55
-            birth_day = 10.11
-            female = yes
-        }
+		define_character = {
+			type = ruler
+			name = "Grardrorlim Bluntbringer"
+			dynasty = ""
+			stats = { 3 1 6 }
+			age = 150
+			birth_day = 06.03
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Bruzirra Ambershield"
+			dynasty = ""
+			stats = { 4 3 2 }
+			age = 55
+			birth_day = 10.11
+			female = yes
+		}
 		elector = yes
-        
-        2568.1.1 = {
-            add_ruler_personality = zealous
-            add_ruler_personality = wrathful
-            add_ruler_personality = impatient
-            
-            add_heir_personality = ambitious
+		2568.1.1 = {
+			add_ruler_personality = zealous
+			add_ruler_personality = wrathful
+			add_ruler_personality = impatient
+			
+			add_heir_personality = ambitious
 		 }
-    }
+	}
 }
 
 # Capital
@@ -80,22 +79,22 @@ new country dicetown = {
 	capital = dicetown
 	government = republic
 	history += {
-        define_character = {
-            type = ruler
-            name = "William Gambleson"
-            dynasty = ""
-            stats = { 2 2 1 }
-            age = 45
-            birth_day = 08.05
-            female = no
-        }
+		define_character = {
+			type = ruler
+			name = "William Gambleson"
+			dynasty = ""
+			stats = { 2 2 1 }
+			age = 45
+			birth_day = 08.05
+			female = no
+		}
 		2568.1.1 = {
-            add_ruler_personality = lustful
-            add_ruler_personality = deceitful
-            add_ruler_personality = eccentric
+			add_ruler_personality = lustful
+			add_ruler_personality = deceitful
+			add_ruler_personality = eccentric
 		}
 		#add_government_reform = free_city
-    }
+	}
 }
 new country chesstown = {
 	inherit = empire_country
@@ -108,19 +107,19 @@ new country chesstown = {
 	capital = chesstown
 	government = republic
 	history += {
-        define_character = {
-            type = ruler
-            name = "Francis Menmover"
-            dynasty = ""
-            stats ={ 4 4 6 }
-            age = 23
-            birth_day = 01.01
-            female = no
-        }
+		define_character = {
+			type = ruler
+			name = "Francis Menmover"
+			dynasty = ""
+			stats ={ 4 4 6 }
+			age = 23
+			birth_day = 01.01
+			female = no
+		}
 		2568.1.1 = {
-            add_ruler_personality = diligent
-            add_ruler_personality = patient
-            add_ruler_personality = ambitious
+			add_ruler_personality = diligent
+			add_ruler_personality = patient
+			add_ruler_personality = ambitious
 		}
 		#add_government_reform = free_city
 	}
@@ -135,44 +134,43 @@ new country checkerstown = {
 	}
 	capital = checkerstown
 	history += {
-        define_character = {
-            type = ruler
-            name = "Hans Boardman"
-            dynasty = ""
-            stats = {3 1 5 }
-            age = 30
-            birth_day = 10.09
-            female = no
-        }
-        define_character = {
-            type = heir
-            name = "Mary Boardman"
-            dynasty = ""
-            stats = { 5 2 1 }
-            age = 4
-            birth_day = 03.01
-            female = yes
-        }
-        define_character = {
-            type = consort
-            name = " Anna Eisenhauer"
-            dynasty = ""
-            stats = { 5 5 5 }
-            age = 31
-            birth_day = 7.6
-            female = yes
-        }
-        
-        2568.1.1 = {
-            add_ruler_personality = greedy
-            add_ruler_personality = lazy
-            add_ruler_personality = arrogant
-            
-            add_heir_personality = honest
-            
-            add_queen_personality = gregarious
-        }
-    }
+		define_character = {
+			type = ruler
+			name = "Hans Boardman"
+			dynasty = ""
+			stats = {3 1 5 }
+			age = 30
+			birth_day = 10.09
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mary Boardman"
+			dynasty = ""
+			stats = { 5 2 1 }
+			age = 4
+			birth_day = 03.01
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = " Anna Eisenhauer"
+			dynasty = ""
+			stats = { 5 5 5 }
+			age = 31
+			birth_day = 7.6
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = greedy
+			add_ruler_personality = lazy
+			add_ruler_personality = arrogant
+			
+			add_heir_personality = honest
+			
+			add_queen_personality = gregarious
+		}
+	}
 }
 new country cardtown = {
 	inherit = empire_country
@@ -185,19 +183,19 @@ new country cardtown = {
 	capital = cardtown
 	government = republic
 	history += {
-        define_character = {
-            type = ruler
-            name = " Sybil Cardlayer"
-            dynasty = ""
-            stats ={ 6 6 6 }
-            age = 
-            birth_day = 
-            female = yes 
-        }
+		define_character = {
+			type = ruler
+			name = " Sybil Cardlayer"
+			dynasty = ""
+			stats ={ 6 6 6 }
+			age = 
+			birth_day = 
+			female = yes 
+		}
 		2568.1.1 = {
-            add_ruler_personality = diligent
-            add_ruler_personality = paranoid
-            add_ruler_personality = fickle
+			add_ruler_personality = diligent
+			add_ruler_personality = paranoid
+			add_ruler_personality = fickle
 		}
 		#add_government_reform = free_city
 	}
