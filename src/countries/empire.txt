@@ -634,8 +634,8 @@ new country graubucht = {
 			name = "Feodor von Waldestätt"
 			dynasty = ""
 			stats = {  }
-			age = 
-			birth_day = 
+			age = 30
+			birth_day = 03.09
 			female = no
 		}
 		2568.1.1 = {
