@@ -78,6 +78,24 @@ new country dicetown = {
 		47 212 181
 	}
 	capital = dicetown
+	government = republic
+	history += {
+        define_character = {
+            type = ruler
+            name = "William Gambleson"
+            dynasty = ""
+            stats = { 2 2 1 }
+            age = 45
+            birth_day = 08.05
+            female = no
+        }
+		2568.1.1 = {
+            add_ruler_personality = lustful
+            add_ruler_personality = deceitful
+            add_ruler_personality = eccentric
+		}
+		#add_government_reform = free_city
+    }
 }
 new country chesstown = {
 	inherit = empire_country
@@ -88,6 +106,24 @@ new country chesstown = {
 		98 135 32
 	}
 	capital = chesstown
+	government = republic
+	history += {
+        define_character = {
+            type = ruler
+            name = "Francis Menmover"
+            dynasty = ""
+            stats ={ 4 4 6 }
+            age = 23
+            birth_day = 01.01
+            female = no
+        }
+		2568.1.1 = {
+            add_ruler_personality = diligent
+            add_ruler_personality = patient
+            add_ruler_personality = ambitious
+		}
+		#add_government_reform = free_city
+	}
 }
 new country checkerstown = {
 	inherit = empire_country
@@ -98,6 +134,45 @@ new country checkerstown = {
 		242 23 50
 	}
 	capital = checkerstown
+	history += {
+        define_character = {
+            type = ruler
+            name = "Hans Boardman"
+            dynasty = ""
+            stats = {3 1 5 }
+            age = 30
+            birth_day = 10.09
+            female = no
+        }
+        define_character = {
+            type = heir
+            name = "Mary Boardman"
+            dynasty = ""
+            stats = { 5 2 1 }
+            age = 4
+            birth_day = 03.01
+            female = yes
+        }
+        define_character = {
+            type = consort
+            name = " Anna Eisenhauer"
+            dynasty = ""
+            stats = { 5 5 5 }
+            age = 31
+            birth_day = 7.6
+            female = yes
+        }
+        
+        2568.1.1 = {
+            add_ruler_personality = greedy
+            add_ruler_personality = lazy
+            add_ruler_personality = arrogant
+            
+            add_heir_personality = honest
+            
+            add_queen_personality = gregarious
+        }
+    }
 }
 new country cardtown = {
 	inherit = empire_country
@@ -108,6 +183,24 @@ new country cardtown = {
 		137 162 168
 	}
 	capital = cardtown
+	government = republic
+	history += {
+        define_character = {
+            type = ruler
+            name = " Sybil Cardlayer"
+            dynasty = ""
+            stats ={ 6 6 6 }
+            age = 
+            birth_day = 
+            female = yes 
+        }
+		2568.1.1 = {
+            add_ruler_personality = diligent
+            add_ruler_personality = paranoid
+            add_ruler_personality = fickle
+		}
+		#add_government_reform = free_city
+	}
 }
 
 # Gellerthal
