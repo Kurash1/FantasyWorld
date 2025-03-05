@@ -138,7 +138,7 @@ new country astviel = {
 		}
 		2568.1.1 = {
 			add_ruler_personality = diligent
-			add_ruler_personality = content
+			add_ruler_personality = eccentric
 			add_ruler_personality = paranoid
 			
 			add_heir_personality = diligent
