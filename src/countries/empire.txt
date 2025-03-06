@@ -296,6 +296,7 @@ new country veshni = {
 	}
 	capital = ireiveshni
 }
+hre_defines:emperor := veshni
 new country maidenkeep = {
 	inherit = empire_country
 	tag = MAI

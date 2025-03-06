@@ -18,4 +18,3 @@ new country windhelm = {
 		elector = yes
 	}
 }
-hre_defines:emperor := windhelm
