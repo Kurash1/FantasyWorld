@@ -1,38 +1,24 @@
 # Amounts
-new modifier_definition global_mages = {
-	name = "Mages"
+new modifier_definition local_arcane_casters = {
+	name = "Local Arcane Casters"
 }
-new modifier_definition global_mages_modifier = {
-	name = "Mages Modifier"
+new modifier_definition local_arcane_casters_modifier = {
+	name = "Local Arcane Casters Modifier"
 	is_percentage = yes
 }
-new modifier_definition local_mages = {
-	name = "Local Mages"
-}
-new modifier_definition local_mages_modifier = {
-	name = "Local Mages Modifier"
+new modifier_definition global_arcane_casters_modifier = {
+	name = "Arcane Casters Modifier"
+	base_value = 1
 	is_percentage = yes
 }
-
-# Skill
-new modifier_definition all_magic_modifier = {
-	name = "All Magic Modifier"
+new modifier_definition employed_arcane_casters = {
+	name = "Employed Arcane Casters"
+	base_value = 0.1
 	is_percentage = yes
 }
-new modifier_definition arcane_magic_modifier = {
-	name = "Arcane Magic Modifier"
-	is_percentage = yes
-}
-new modifier_definition divine_magic_modifier = {
-	name = "Divine Magic Modifier"
-	is_percentage = yes
-}
-new modifier_definition primal_magic_modifier = {
-	name = "Primal Magic Modifier"
-	is_percentage = yes
-}
-new modifier_definition occult_magic_modifier = {
-	name = "Occult Magic Modifier"
+new modifier_definition arcane_casting_ability = {
+	name = "Arcane Casting Ability"
+	base_value = 1
 	is_percentage = yes
 }
 
@@ -204,9 +190,6 @@ new class magic_activity = {
 	}
 }
 
-new script_variable base_mages = { tag = "magic" }
-new script_variable local_mages = { tag = "magic" }
-new script_variable mage_modifier = { tag = "magic" }
-new script_variable total_mages = { tag = "magic" }
-new script_variable magic_mod = { tag = "magic" }
-new script_variable magic_weight = { tag = "magic" }
+new script_variable arcane_casters = { tag = "magic" }
+new script_variable employed_arcane_casters = { tag = "magic" }
+new script_variable arcane_casting_ability = { tag = "magic" }

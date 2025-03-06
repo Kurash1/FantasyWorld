@@ -18,7 +18,7 @@ static_modifiers:development := {
 	province_trade_power_value = 0.1
 	
 	migration_attraction = 1
-	local_mages = 10
+	local_arcane_casters = 25
 }
 static_modifiers:provincial_tax_income := { }
 static_modifiers:provincial_production_size := { }

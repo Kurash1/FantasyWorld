@@ -55,8 +55,9 @@ new custom_window magic_window = {
 	}
 }
 new custom_text_box magic_info = {
-	name = "Total Mages: §G[From.total_mages.GetValue]§!
-	+§G[From.base_mages.GetValue]§! (Base)
-	+§G[From.local_mages.GetValue]§! (Local)
-	*§G[From.mage_modifier.GetValue]§! (Modifier)"
+	name = "
+Total Arcane Casters: §Y[From.arcane_casters.GetValue]§!
+Employed Arcane Casters: §Y[From.employed_arcane_casters.GetValue]§!
+Arcane Casting Ability: §Y[From.arcane_casting_ability.GetValue]§!
+"
 }
