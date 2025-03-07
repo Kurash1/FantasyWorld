@@ -2893,16 +2893,36 @@ new province empire_140 = {
     name = "empire 140"
 }
 
-new province empire_141 = {
+new area chantegrive = {
+	name = "Chantegrive"
+	region = hathkor_hills
+}
+new province chantegrive = {
     inherit = empire_province
     color = { 141 181 245 }
-    name = "empire 141"
+    name = "Chantegrive"
+	area = chantegrive
+	history += {
+		history_owner = beaumontier
+	}
 }
-
-new province empire_142 = {
+new province rocmarche = {
     inherit = empire_province
     color = { 132 221 111 }
-    name = "empire 142"
+    name = "Rocmarche"
+	area = chantegrive
+	history += {
+		history_owner = beaumontier
+	}
+}
+new province tourmontagne = {
+    inherit = empire_province
+    color = { 175 110 254 }
+    name = "Tourmontagne"
+	area = chantegrive
+	history += {
+		history_owner = beaumontier
+	}
 }
 
 new province empire_143 = {
@@ -2915,12 +2935,6 @@ new province empire_144 = {
     inherit = empire_province
     color = { 230 186 228 }
     name = "empire 144"
-}
-
-new province empire_145 = {
-    inherit = empire_province
-    color = { 175 110 254 }
-    name = "empire 145"
 }
 
 new province empire_146 = {

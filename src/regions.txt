@@ -22,10 +22,6 @@ new region grondha = {
 }
 
 # Heartlands
-new region tyller_hills = {
-	name = "Tyller Hills"
-	superregion = heartlands
-}
 new region heartlands = {
 	name = "Heartlands"
 	superregion = heartlands
@@ -42,6 +38,14 @@ new region riven_river = {
 }
 new region gellerthal = {
 	name = "Gellerthal"
+	superregion = viltlands
+}
+new region tyller_hills = {
+	name = "Tyller Hills"
+	superregion = viltlands
+}
+new region hathkor_hills = {
+	name = "Hathkor Hills"
 	superregion = viltlands
 }
 

@@ -686,3 +686,94 @@ new country velmorya = {
 	}
 	capital = askervir
 }
+
+# Agre-Divinum
+
+# Hathkor Hills
+new class hathkor_order = {
+	id = `hathkor_order_{this:id}`
+	list = hathkor_orders
+	args = {
+		string name
+		country tag
+		named_modifier modifier
+	}
+	on_create = {
+		this:tag:history +=! {
+			quick_country_modifier = {
+				id = "{this:id}"
+				name = "{this:name}"
+				desc = "During the times of the empires founding, the most elite of noble warriors founded a knightly order called the Hatikite Order. For their service the Emperor granted them holdings in Hathkor. The '{this:name}' is a descendant of that original knightly order."
+				modifier = this:modifier
+			}
+		}
+		new mercenary_company `{this:id}` ={
+			name = "{this:name}"
+			desc = "During the times of the empires founding, the most elite of noble warriors founded a knightly order called the Hatikite Order. For their service the Emperor granted them holdings in Hathkor. The '{this:name}' is a descendant of that original knightly order."
+			regiments_per_development = 0.04
+			modifier = this:modifier
+			cavalry_weight = 0.2
+			artillery_weight = 0.1
+			cost_modifier = 1.0
+			trigger =* {
+				NOT->`exists` = *this:tag:tag*
+			}
+		}
+	}
+}
+
+new country beaumontier = {
+	inherit = empire_country
+	tag = BEA
+	name = "Beaumontier"
+	adj = "Beaumontier"
+	color = {
+		255 65 40
+	}
+	capital = chantegrive
+	history += {
+		define_character = {
+			type = ruler
+			name = "Sylvaine"
+			dynasty = "Elodie"
+			stats = { 2 6 2 }
+			age = 21
+			birth_day = 12.12
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Severine"
+			dynasty = "Elodie"
+			stats = { 1 2 2 }
+			age = 2
+			birth_day = 3.1
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Corin"
+			dynasty = "Agrados"
+			stats = { 6 6 7 }
+			age = 20
+			birth_day = 1.1
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = gregarious
+			add_ruler_personality = lustful
+			add_ruler_personality = compassionate
+			
+			add_heir_personality = eccentric
+			
+			add_queen_personality = brave
+		}
+	}
+}
+new hathkor_order flower = {
+	name = "Hatikite of the Flower"
+	tag = beaumontier
+	modifier = {
+		land_morale = 0.1
+	}
+}
