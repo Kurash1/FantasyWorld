@@ -23,8 +23,18 @@ type={
 type={
 	type="solitude_arch"
 	use_animation=no
-	scale=2.100000
+	scale=3.000000
 	always_visible=yes
+	object={
+		name="solitude_arch"
+		hidden_on_start=no
+		position={
+			2925.000 25.500 2303.000 
+		}
+		rotation={
+			0.000 190.000 0.000 
+		}
+	}
 }
 type={
 	type="high_hrothgar"
