@@ -37,7 +37,7 @@ new country dir_holk = {
 	capital = dir_holk
 	government_rank = 2
 	government = theocracy
-	 history += {
+	history += {
 		define_character = {
 			type = ruler
 			name = "Grardrorlim Bluntbringer"
@@ -188,8 +188,8 @@ new country cardtown = {
 			name = "Sybil Cardlayer"
 			dynasty = ""
 			stats = { 6 6 6 }
-			age = 
-			birth_day = 
+			age = 32
+			birth_day = 09.20
 			female = yes
 		}
 		2568.1.1 = {
@@ -230,7 +230,7 @@ new country tinkerton = {
 		#add_government_reform = free_city
 	}
 }
-new. government_names res_ingenia = {
+new government_names res_ingenia = {
 	inherit = default_republic_names
 	trigger = {
 		tag = tinkerton
@@ -413,6 +413,7 @@ new country dunkelmeer = {
 			age = 25
 			birth_day = 09.09 
 			female = yes 
+			}
 		define_character = {
 			type = consort
 			name = " Philipp"
@@ -461,7 +462,7 @@ new country hohenfeld = {
 		}
 		define_character = {
 			type = consort
-			name = " Konstantine"
+			name = "Konstantine"
 			dynasty = "von und zu Falkenheim"
 			stats = { 2 6 1 }
 			age = 50
@@ -766,7 +767,7 @@ new country nightgate = {
 	history += {
 		define_character = {
 			type = ruler
-			name = "Beorthmaer "
+			name = "Beorthmaer"
 			dynasty = "of Nightgate"
 			stats = { 3 6 1 }
 			age = 35
@@ -845,7 +846,7 @@ new country streamford = {
 	 history += {
 		define_character = {
 			type = ruler
-			name = Ricard Crorft
+			name = "Ricard Crorft"
 			dynasty = ""
 			stats = { 2 3 2 }
 			age = 32
@@ -887,7 +888,7 @@ new country marshstead = {
 		}
 	}
 }
-new. government_names kritarchy = {
+new government_names kritarchy = {
 	inherit = default_republic_names
 	trigger = {
 		tag = marshstead
@@ -1002,13 +1003,13 @@ new country maidenkeep = {
 			birth_day = 10.10
 			female = yes
 		}
+	}
 		2568.1.1 = {
 			add_ruler_personality = temperate
 			add_ruler_personality = zealous
 			add_ruler_personality = patient
 		}
 		#add_government_reform = free_city
-
 }
 new country aramant = {
 	inherit = empire_country
@@ -1030,6 +1031,7 @@ new country aramant = {
 			birth_day = 08.07
 			female = no
 		}
+	}
 		2568.1.1 = {
 			add_ruler_personality = diligent
 			add_ruler_personality = greedy
@@ -1061,6 +1063,7 @@ new country greenrock = {
 			add_ruler_personality = brave
 			add_ruler_personality = patient
 		}
+	}
 }
 new country bittergate = {
 	inherit = empire_country
@@ -1086,6 +1089,7 @@ new country bittergate = {
 			add_ruler_personality = brave
 			add_ruler_personality = patient
 		}
+	}
 }
 new country keepstone = {
 	inherit = empire_country
@@ -1096,7 +1100,7 @@ new country keepstone = {
 		200 200 200
 	}
 	capital = keepstone
-	 history += {
+	history += {
 		define_character = {
 			type = ruler
 			name = "Ealhild" 
@@ -1111,6 +1115,7 @@ new country keepstone = {
 			add_ruler_personality = greedy
 			add_ruler_personality = shy
 		}
+	}
 }
 
 # Watar Forest
@@ -1162,6 +1167,7 @@ new country watar = {
 			
 			add_queen_personality = fickle
 		}
+	}
 }
 new country talyara = {
 	inherit = empire_country
@@ -1173,40 +1179,41 @@ new country talyara = {
 	history += {
 		define_character = {
 			type = ruler
-			name = ""
-			dynasty = ""
-			stats = {  }
-			age = 
-			birth_day = 
-			female = 
+			name = "Caoimhín"
+			dynasty = "Ó Conaill"
+			stats = { 5 4 4 }
+			age = 46
+			birth_day = 11.10
+			female = no
 		}
 		define_character = {
 			type = heir
-			name = " "
-			dynasty = ""
-			stats = {  }
-			age = 
+			name = "Fionnbharr"
+			dynasty = "Ó Conaill"
+			stats = { 3 2 4 }
+			age = 15
 			birth_day = 
 			female = yes
 		}
 		define_character = {
 			type = consort
-			name = ""
-			dynasty = ""
-			stats = {  }
-			age = 
-			birth_day = 
-			female = 
+			name = "Finneacht"
+			dynasty = "Nic Corbáin"
+			stats = { 4 1 2 }
+			age = 39
+			birth_day = 11.23
+			female = yes
 		}
 		2568.1.1 = {
-			add_ruler_personality = 
-			add_ruler_personality = 
-			add_ruler_personality = 
+			add_ruler_personality = generous
+			add_ruler_personality = gregarious
+			add_ruler_personality = content
 			
-			add_heir_personality = 
+			add_heir_personality = shy
 			
-			add_queen_personality = 
+			add_queen_personality = lustful
 		}
+	}
 }
 new country glenmareth = {
 	inherit = empire_country
@@ -1242,6 +1249,7 @@ new country glenmareth = {
 			
 			add_queen_personality = stubborn
 		}
+	}
 }
 new country breochal = {
 	inherit = empire_country
@@ -1276,6 +1284,7 @@ new country breochal = {
 			
 			add_heir_personality = compassionate
 		}
+	}
 }
 new country dunbriach = {
 	inherit = empire_country
@@ -1323,6 +1332,7 @@ new country dunbriach = {
 			
 			add_queen_personality = paranoid
 		}
+	}
 }
 new country lothvryn = {
 	inherit = empire_country
@@ -1391,6 +1401,7 @@ new country caerloth = {
 			age = 17
 			birth_day = 01.22
 			female = no
+		}
 		
 		2568.1.1 = {
 			add_ruler_personality = zealous
@@ -1446,6 +1457,7 @@ new country galdovael = {
 			
 			add_queen_personality = lustful
 		}
+	}
 }
 new country the_towers = {
 	inherit = empire_country
@@ -1475,7 +1487,8 @@ new country the_towers = {
 			add_ruler_personality = ambitious
 		}
 	}
-new. government_names mage_tower = {
+}
+new government_names mage_tower = {
 	inherit = default_republic_names
 	trigger = {
 		tag = the_towers
@@ -1518,7 +1531,8 @@ new country rosegarden = {
 		}
 		#add_government_reform = free_city
 	}
-new. government_names elven_temple = {
+}
+new government_names elven_temple = {
 	inherit = default_theocracy_names
 	trigger = {
 		tag = rosegarden
@@ -1570,7 +1584,9 @@ new country silkenglade = {
 			
 			add_queen_personality = honest
 		}
-new. government_names elf_realm = {
+	}
+}
+new government_names elf_realm = {
 	inherit = default_theocracy_names
 	trigger = {
 		tag = silkenglade
@@ -1635,7 +1651,7 @@ new country vyreholm = {
 			
 			add_queen_personality = deceitful
 		}
-
+	}
 }
 new country zelenec = {
 	inherit = empire_country
@@ -1662,6 +1678,7 @@ new country zelenec = {
 			add_ruler_personality = ambitious
 			add_ruler_personality = fickle
 		}
+	}
 }
 new country ostovar = {
 	inherit = empire_country
@@ -1688,6 +1705,7 @@ new country ostovar = {
 			add_ruler_personality = callous
 			add_ruler_personality = sadistic
 		}
+	}
 }
 new country vaszoria = {
 	inherit = empire_country
@@ -1736,6 +1754,7 @@ new country vaszoria = {
 			
 			add_queen_personality = compassionate
 		}
+	}
 }
 new country rovensmark = {
 	inherit = empire_country
@@ -1762,6 +1781,7 @@ new country rovensmark = {
 			add_ruler_personality = lustful
 			add_ruler_personality = compassionate
 		}
+	}
 }
 new country kamenaria = {
 	inherit = empire_country
@@ -1798,8 +1818,8 @@ new country kamenaria = {
 			add_ruler_personality = craven
 			
 			add_heir_personality = diligent
-
 		}
+	}
 }
 new country dzydria = {
 	inherit = empire_country
@@ -1848,6 +1868,7 @@ new country dzydria = {
 			
 			add_queen_personality = craven
 		}
+	}
 }
 new country ternovya = {
 	inherit = empire_country
@@ -1868,7 +1889,7 @@ new country ternovya = {
 			birth_day = 01.19
 			female = no
 		}
-
+	}
 		2568.1.1 = {
 			add_ruler_personality = diligent
 			add_ruler_personality = craven
@@ -1912,7 +1933,7 @@ new country dobrynia = {
 			birth_day = 06.30
 			female = yes
 		}
-		
+	}
 		2568.1.1 = {
 			add_ruler_personality = callous
 			add_ruler_personality = zealous
@@ -1946,6 +1967,7 @@ new country velmira = {
 		2568.1.1 = {
 			add_ruler_personality = trusting
 		}
+	}
 }
 new country brennland = {
 	inherit = empire_country
@@ -2017,6 +2039,7 @@ new country volzeburg = {
 			
 			add_queen_personality = trusting
 		}
+	}
 }
 new country hamburrow = {
 	inherit = empire_country
@@ -2045,6 +2068,7 @@ new country hamburrow = {
 			add_ruler_personality = deceitful
 			add_ruler_personality = greedy
 		}
+	}
 }
 
 # Riven Swamp Area
@@ -2084,6 +2108,7 @@ new country koskova = {
 			
 			add_queen_personality = impatient
 		}
+	}
 }
 new country jorvaska = {
 	inherit = empire_country
@@ -2132,6 +2157,7 @@ new country jorvaska = {
 			
 			add_queen_personality = zealous
 		}
+	}
 }
 new country myrvelin = {
 	inherit = empire_country
@@ -2156,6 +2182,7 @@ new country myrvelin = {
 		2568.1.1 = {
 			add_ruler_personality = compassionate
 		}
+	}
 }
 new country zoryashiv = {
 	inherit = empire_country
@@ -2204,6 +2231,7 @@ new country zoryashiv = {
 			
 			add_queen_personality = brave
 		}
+	}
 }
 new country tovrien = {
 	inherit = empire_country
@@ -2252,6 +2280,7 @@ new country tovrien = {
 			
 			add_queen_personality = wrathful
 		}
+	}
 }
 new country velmorya = {
 	inherit = empire_country
@@ -2278,4 +2307,5 @@ new country velmorya = {
 			add_ruler_personality = patient
 			add_ruler_personality = zealous
 		}
+	}
 }
