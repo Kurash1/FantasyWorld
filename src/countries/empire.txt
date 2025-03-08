@@ -474,7 +474,7 @@ new country hohenfeld = {
 			add_ruler_personality = cynical
 			add_ruler_personality = stubborn
 			
-			add_heir_personality = amibitious
+			add_heir_personality = ambitious
 			
 			add_queen_personality = forgiving
 		}
@@ -565,7 +565,7 @@ new country graubucht = {
 			type = heir
 			name = "Feodor von Waldestätt"
 			dynasty = ""
-			stats = {  }
+			stats = { 2 4 6 }
 			age = 30
 			birth_day = 03.09
 			female = no
@@ -780,13 +780,13 @@ new country nightgate = {
 			dynasty = "of Nightgate"
 			stats = { 2 4 4 }
 			age = 14
-			birth_day =08.21
+			birth_day = 08.21
 			female = no
 		}
 		define_character = {
 			type = consort
 			name = "Emma"
-			dynasty = "of steelkeep"
+			dynasty = "of Steelkeep"
 			stats = { 1 6 1 }
 			age = 29
 			birth_day = 12.24
@@ -874,7 +874,7 @@ new country marshstead = {
 	 history += {
 		define_character = {
 			type = ruler
-			name = Willem Martal
+			name = "Willem Martal"
 			dynasty = ""
 			stats = { 2 1 6 }
 			age = 45
@@ -1192,7 +1192,7 @@ new country talyara = {
 			dynasty = "Ó Conaill"
 			stats = { 3 2 4 }
 			age = 15
-			birth_day = 
+			birth_day = 06.19
 			female = yes
 		}
 		define_character = {
@@ -1442,7 +1442,7 @@ new country galdovael = {
 			type = consort
 			name = "Fayrhare"
 			dynasty = "Ballard"
-			stats = { 07.18 }
+			stats = { 4 5 3 }
 			age = 26
 			birth_day = 09.11
 			female = no
@@ -1991,6 +1991,7 @@ new country brennland = {
 		2568.1.1 = {
 			add_ruler_personality = brave
 		}
+	}
 }
 new country volzeburg = {
 	inherit = empire_country
