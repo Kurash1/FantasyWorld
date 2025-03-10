@@ -35,6 +35,36 @@ new country dir_holk = {
 		150 50 0
 	}
 	capital = dir_holk
+	government_rank = 2
+	government = theocracy
+	history += {
+		define_character = {
+			type = ruler
+			name = "Grardrorlim Bluntbringer"
+			dynasty = ""
+			stats = { 3 1 6 }
+			age = 150
+			birth_day = 06.03
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Bruzirra Ambershield"
+			dynasty = ""
+			stats = { 4 3 2 }
+			age = 55
+			birth_day = 10.11
+			female = yes
+		}
+		elector = yes
+		2568.1.1 = {
+			add_ruler_personality = zealous
+			add_ruler_personality = wrathful
+			add_ruler_personality = impatient
+			
+			add_heir_personality = ambitious
+		 }
+	}
 }
 
 # Capital
@@ -47,6 +77,24 @@ new country dicetown = {
 		47 212 181
 	}
 	capital = dicetown
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "William Gambleson"
+			dynasty = ""
+			stats = { 2 2 1 }
+			age = 45
+			birth_day = 08.05
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = lustful
+			add_ruler_personality = deceitful
+			add_ruler_personality = eccentric
+		}
+		#add_government_reform = free_city
+	}
 }
 new country chesstown = {
 	inherit = empire_country
@@ -57,6 +105,24 @@ new country chesstown = {
 		98 135 32
 	}
 	capital = chesstown
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "Francis Menmover"
+			dynasty = ""
+			stats = { 4 4 6 }
+			age = 23
+			birth_day = 01.01
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = patient
+			add_ruler_personality = ambitious
+		}
+		#add_government_reform = free_city
+	}
 }
 new country checkerstown = {
 	inherit = empire_country
@@ -67,6 +133,44 @@ new country checkerstown = {
 		242 23 50
 	}
 	capital = checkerstown
+	history += {
+		define_character = {
+			type = ruler
+			name = "Hans"
+			dynasty = "Boardman"
+			stats = { 3 1 5 }
+			age = 30
+			birth_day = 10.09
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Mary"
+			dynasty = "Boardman"
+			stats = { 5 2 1 }
+			age = 4
+			birth_day = 03.01
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Anna"
+			dynasty = "Eisenhauer"
+			stats = { 5 5 5 }
+			age = 31
+			birth_day = 7.6
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = greedy
+			add_ruler_personality = lazy
+			add_ruler_personality = arrogant
+			
+			add_heir_personality = honest
+			
+			add_queen_personality = gregarious
+		}
+	}
 }
 new country cardtown = {
 	inherit = empire_country
@@ -77,6 +181,24 @@ new country cardtown = {
 		137 162 168
 	}
 	capital = cardtown
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "Sybil Cardlayer"
+			dynasty = ""
+			stats = { 6 6 6 }
+			age = 32
+			birth_day = 09.20
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = paranoid
+			add_ruler_personality = fickle
+		}
+		#add_government_reform = free_city
+	}
 }
 
 # Gellerthal
@@ -89,6 +211,40 @@ new country tinkerton = {
 		245 192 153
 	}
 	capital = tinkerton
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "Thinboop Crafterman" #gnome
+			dynasty = ""
+			stats = { 3 1 6 }
+			age = 280
+			birth_day = 09.12
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = generous
+			add_ruler_personality = diligent
+			add_ruler_personality = eccentric
+		}
+		#add_government_reform = free_city
+	}
+}
+new government_names res_ingenia = {
+	inherit = default_republic_names
+	trigger = {
+		tag = tinkerton
+	}
+	ruler_male = {
+		1 = "Chief Engineer"
+		2 = "Grand Engineer"
+		3 = "Lord Artificer"
+	}
+	ruler_female = {
+		1 = "Chief Engineer"
+		2 = "Grand Engineer"
+		3 = "Lady Artificer"
+	}
 }
 new country novenhaven = {
 	inherit = empire_country
@@ -99,6 +255,23 @@ new country novenhaven = {
 		0 255 234
 	}
 	capital = novenhaven
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "Elyria Lunarthistle"
+			dynasty = ""
+			stats = { 1 4 3 }
+			age = 50
+			birth_day = 12.12
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = lustful
+			add_ruler_personality = gluttonous
+			add_ruler_personality = gregarious
+		}
+	}
 }
 new country nordmark = {
 	inherit = empire_country
@@ -109,6 +282,44 @@ new country nordmark = {
 		50 100 200
 	}
 	capital = dunkmarsh
+	history += {
+		define_character = {
+			type = ruler
+			name = "Friedrich Wilhelm"
+			dynasty = "von der Weide"
+			stats = { 2 3 2 }
+			age = 85
+			birth_day = 06.09
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Wilhelm Alexander"
+			dynasty = "von der Weide"
+			stats = { 3 4 1 }
+			age = 40
+			birth_day = 08.08
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Gizelda"
+			dynasty = "von Knepstedt"
+			stats = { 5 4 1 }
+			age = 78
+			birth_day = 05.04
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = chaste
+			add_ruler_personality = lazy
+			add_ruler_personality = humble
+			
+			add_heir_personality = arrogant
+			
+			add_queen_personality = craven
+		}
+	}
 }
 new country eisenwald = {
 	inherit = empire_country
@@ -119,6 +330,44 @@ new country eisenwald = {
 		80 60 40
 	}
 	capital = brechtholm
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gregor"
+			dynasty = "von Eisenhauer"
+			stats = { 1 4 2 }
+			age = 46
+			birth_day = 12.12
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Anasthasia"
+			dynasty = "von Eisenhauer"
+			stats = { 5 6 5 }
+			age = 12
+			birth_day = 01.04
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Annika"
+			dynasty = "von Waldesheim"
+			stats = { 4 6 1 }
+			age = 40
+			birth_day = 09.05
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = patient
+			add_ruler_personality = calm
+			add_ruler_personality = gluttonous
+			
+			add_heir_personality = impatient
+			
+			add_queen_personality = deceitful
+		}
+	}
 }
 new country stralhofen = {
 	inherit = empire_country
@@ -129,6 +378,22 @@ new country stralhofen = {
 		110 90 70
 	}
 	capital = hohenmark
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gunwald"
+			dynasty = "von und zu Stralingen"
+			stats = { 6 1 1 }
+			age = 29
+			birth_day = 24.10
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = craven
+			add_ruler_personality = shy
+		}
+	}
 }
 new country dunkelmeer = {
 	inherit = empire_country
@@ -139,6 +404,33 @@ new country dunkelmeer = {
 		30 30 120
 	}
 	capital = stralswey
+	history += {
+		define_character = {
+			type = ruler
+			name = "Feodora"
+			dynasty = "von Strahlen"
+			stats = { 3 3 3 }
+			age = 25
+			birth_day = 09.09 
+			female = yes 
+			}
+		define_character = {
+			type = consort
+			name = " Philipp"
+			dynasty = "von der Hütt"
+			stats = { 3 3 4 }
+			age = 27
+			birth_day =  12.01
+			female = no 
+		}
+		2568.1.1 = {
+			add_ruler_personality = generous
+			add_ruler_personality = calm
+			add_ruler_personality = content
+			
+			add_queen_personality = brave
+		}
+	}
 }
 new country hohenfeld = {
 	inherit = empire_country
@@ -149,6 +441,44 @@ new country hohenfeld = {
 		100 50 20
 	}
 	capital = kraghaven
+	history += {
+		define_character = {
+			type = ruler
+			name = "Georg Walter"
+			dynasty = "von Hohenfelde"
+			stats = { 4 2 3 }
+			age = 54
+			birth_day = 07.07
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Georg"
+			dynasty = "von Hohenfelde"
+			stats = { 2 5 2 }
+			age = 19
+			birth_day = 08.11
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Konstantine"
+			dynasty = "von und zu Falkenheim"
+			stats = { 2 6 1 }
+			age = 50
+			birth_day = 12.03
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = arbitrary
+			add_ruler_personality = cynical
+			add_ruler_personality = stubborn
+			
+			add_heir_personality = ambitious
+			
+			add_queen_personality = forgiving
+		}
+	}
 }
 new country brechthavn = {
 	inherit = empire_country
@@ -159,6 +489,33 @@ new country brechthavn = {
 		90 140 60
 	}
 	capital = wellenstein
+	history += {
+		define_character = {
+			type = ruler
+			name = "Antonia"
+			dynasty = "von Waldesheim"
+			stats = { 4 1 3 }
+			age = 35
+			birth_day = 09.07
+			female = yes 
+		}
+		define_character = {
+			type = consort
+			name = "Theodor"
+			dynasty = "von Waldesheim"
+			stats = { 6 6 1 }
+			age = 35
+			birth_day = 09.07
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = stubborn
+			add_ruler_personality = eccentric
+			add_ruler_personality = forgiving
+			
+			add_queen_personality = compassionate
+		}
+	}
 }
 new country lichtenwald = {
 	inherit = empire_country
@@ -169,6 +526,20 @@ new country lichtenwald = {
 		180 140 90
 	}
 	capital = licherhafen
+	history += {
+		define_character = {
+			type = ruler
+			name = "Amethysia"
+			dynasty = "von Strahlen"
+			stats = { 4 1 2 }
+			age = 16
+			birth_day = 09.30
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = just
+		}
+	}
 }
 new country graubucht = {
 	inherit = empire_country
@@ -179,6 +550,34 @@ new country graubucht = {
 		70 110 180
 	}
 	capital = brackwasser
+	government = theocracy
+	history += {
+		define_character = {
+			type = ruler
+			name = "Hildegard von Grauburg"
+			dynasty = ""
+			stats = { 2 5 1 }
+			age = 66
+			birth_day = 07.19
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Feodor von Waldestätt"
+			dynasty = ""
+			stats = { 2 4 6 }
+			age = 30
+			birth_day = 03.09
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = trusting
+			add_ruler_personality = zealous
+			add_ruler_personality = patient
+			
+			add_heir_personality = greedy
+		}
+	}
 }
 new country falkenheim = {
 	inherit = empire_country
@@ -189,6 +588,22 @@ new country falkenheim = {
 		200 100 50
 	}
 	capital = flutheim
+	history += {
+		define_character = {
+			type = ruler
+			name = "Widukind"
+			dynasty = "von Falkenheim"
+			stats = { 1 1 1 }
+			age = 24
+			birth_day = 01.31
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = forgiving
+			add_ruler_personality = trusting
+			add_ruler_personality = lazy
+		}
+	}
 }
 new country wittelsund = {
 	inherit = empire_country
@@ -199,6 +614,33 @@ new country wittelsund = {
 		50 200 90
 	}
 	capital = sturmfels
+	history += {
+		define_character = {
+			type = ruler
+			name = "Heinrich"
+			dynasty = "von Wittelsund"
+			stats = { 3 1 1 }
+			age = 36
+			birth_day = 10.28
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Friedrich"
+			dynasty = "von Wittelsund"
+			stats = { 2 4 2 }
+			age = 1
+			birth_day = 09.11
+			female = no 
+		}
+		2568.1.1 = {
+			add_ruler_personality = vengeful
+			add_ruler_personality = paranoid
+			add_ruler_personality = honest
+			
+			add_heir_personality = craven
+		}
+	}
 }
 new country eisenhafen = {
 	inherit = empire_country
@@ -209,6 +651,44 @@ new country eisenhafen = {
 		40 90 255
 	}
 	capital = falkensund
+	history += {
+		define_character = {
+			type = ruler
+			name = "Karl"
+			dynasty = "von Eisenhauer"
+			stats = { 6 4 5 }
+			age = 65
+			birth_day = 11.11
+			female = no 
+		}
+		define_character = {
+			type = heir
+			name = "Florina"
+			dynasty = "von Eisenhauer"
+			stats = { 3 5 6 }
+			age = 16
+			birth_day = 07.24
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Theodora"
+			dynasty = "von Grauburg"
+			stats = { 2 1 2 }
+			age = 63
+			birth_day = 10.19
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = brave
+			add_ruler_personality = wrathful
+			add_ruler_personality = chaste
+			
+			add_heir_personality = compassionate
+			
+			add_queen_personality = generous
+		}
+	}
 }
 new country schwarzburg = {
 	inherit = empire_country
@@ -219,6 +699,33 @@ new country schwarzburg = {
 		60 50 40
 	}
 	capital = norderburg
+	history += {
+		define_character = {
+			type = ruler
+			name = "Wilhelm Heinrich Alexander"
+			dynasty = "von und zu Schwarzburg"
+			stats = { 1 3 2 }
+			age = 32
+			birth_day = 05.22
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Anna"
+			dynasty = "von Neustedt"
+			stats = { 6 6 6 }
+			age = 24
+			birth_day = 07.09
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = lazy
+			add_ruler_personality = gregarious
+			add_ruler_personality = lustful
+			
+			add_queen_personality = ambitious
+		}
+	}
 }
 new country drachenmark = {
 	inherit = empire_country
@@ -229,6 +736,22 @@ new country drachenmark = {
 		120 50 50
 	}
 	capital = eberhafen
+	history += {
+		define_character = {
+			type = ruler
+			name = "Maximilian 'der Drache'"
+			dynasty = "von Greifenschweif"
+			stats = { 3 1 6 }
+			age = 33
+			birth_day = 01.02
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = ambitious
+			add_ruler_personality = zealous
+			add_ruler_personality = vengeful
+		}
+	}
 }
 
 # Holy Forest
@@ -241,6 +764,44 @@ new country nightgate = {
 		25 25 25
 	}
 	capital = nightgate
+	history += {
+		define_character = {
+			type = ruler
+			name = "Beorthmaer"
+			dynasty = "of Nightgate"
+			stats = { 3 6 1 }
+			age = 35
+			birth_day = 06.25
+			female = no 
+		}
+		define_character = {
+			type = heir
+			name = "Wulfgard"
+			dynasty = "of Nightgate"
+			stats = { 2 4 4 }
+			age = 14
+			birth_day = 08.21
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Emma"
+			dynasty = "of Steelkeep"
+			stats = { 1 6 1 }
+			age = 29
+			birth_day = 12.24
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = paranoid
+			add_ruler_personality = gregarious
+			add_ruler_personality = humble
+			
+			add_heir_personality = ambitious
+			
+			add_queen_personality = lustful
+		}
+	}
 }
 new country papal_state = {
 	inherit = empire_country
@@ -251,6 +812,24 @@ new country papal_state = {
 		255 255 255
 	}
 	capital = empire_15
+	government_rank = 2
+	government = theocracy
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Iohannis" #pope only gets first name because he or she is a special snow flake
+			dynasty = ""
+			stats = { 4 6 1 }
+			age = 44
+			birth_day = 12.30
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = calm
+			add_ruler_personality = just
+			add_ruler_personality = zealous
+		}
+	}
 }
 
 # Noble Hills
@@ -263,6 +842,24 @@ new country streamford = {
 		135 62 32
 	}
 	capital = streamford
+	government = republic
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Ricard Crorft"
+			dynasty = ""
+			stats = { 2 3 2 }
+			age = 32
+			birth_day = 11.07
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = gregarious
+			add_ruler_personality = lustful
+			add_ruler_personality = generous
+		}
+		#add_government_reform = free_city
+	}
 }
 new country marshstead = {
 	inherit = empire_country
@@ -273,6 +870,39 @@ new country marshstead = {
 		115 83 68
 	}
 	capital = gralthok
+	government = republic
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Willem Martal"
+			dynasty = ""
+			stats = { 2 1 6 }
+			age = 45
+			birth_day = 09.06
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = honest
+			add_ruler_personality = just
+			add_ruler_personality = ambitious
+		}
+	}
+}
+new government_names kritarchy = {
+	inherit = default_republic_names
+	trigger = {
+		tag = marshstead
+	}
+	ruler_male = {
+		1 = "Judge"
+		2 = "Grand Judge"
+		3 = "Supreme Arbiter"
+	}
+	ruler_female = {
+		1 = "Judge"
+		2 = "Grand Judge"
+		3 = "Supreme Arbiter"
+	}
 }
 
 # Major West
@@ -285,6 +915,24 @@ new country thornen = {
 		224 135 20
 	}
 	capital = roseria
+	government_rank = 2
+	history += {
+		define_character = {
+			type = ruler
+			name = "Rosyria" #half elf
+			dynasty = "Vesher"
+			stats = { 6 6 4 }
+			age = 19
+			birth_day = 07.09
+			female = yes
+		}
+		elector = yes
+		2568.1.1 = {
+			add_ruler_personality = ambitious
+			add_ruler_personality = just
+			add_ruler_personality = vengeful
+		}
+	}
 }
 new country veshni = {
 	inherit = empire_country
@@ -295,6 +943,45 @@ new country veshni = {
 		150 0 0
 	}
 	capital = ireiveshni
+	government_rank = 3
+	history += {
+		define_character = {
+			type = ruler
+			name = "Lothar"
+			dynasty = "Vesher"
+			stats = { 1 1 1 }
+			age = 32
+			birth_day = 07.07
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Chyria"
+			dynasty = "Vesher"
+			stats = { 5 6 5 }
+			age = 2
+			birth_day = 08.12
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Antonia"
+			dynasty = "Arkor Astviel"
+			stats = { 3 2 4 }
+			age = 30
+			birth_day = 04.05
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = craven
+			add_ruler_personality = lazy
+			add_ruler_personality = deceitful
+			
+			add_heir_personality = honest
+			
+			add_queen_personality = trusting
+		}
+	}
 }
 hre_defines:emperor := veshni
 new country maidenkeep = {
@@ -306,6 +993,24 @@ new country maidenkeep = {
 		234 247 183
 	}
 	capital = maidenkeep
+	government = theocracy
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Thulia of Maidenkeep" #this country is a matriarchy
+			dynasty = ""
+			stats = { 5 1 6 }
+			age = 20
+			birth_day = 10.10
+			female = yes
+		}
+	}
+		2568.1.1 = {
+			add_ruler_personality = temperate
+			add_ruler_personality = zealous
+			add_ruler_personality = patient
+		}
+		#add_government_reform = free_city
 }
 new country aramant = {
 	inherit = empire_country
@@ -316,6 +1021,24 @@ new country aramant = {
 		2 100 200
 	}
 	capital = aramant
+	government = republic
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Hans Smith"
+			dynasty = ""
+			stats = { 6 5 2 }
+			age = 67
+			birth_day = 08.07
+			female = no
+		}
+	}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = greedy
+			add_ruler_personality = ambitious
+		}
+		#add_government_reform = free_city
 }
 new country greenrock = {
 	inherit = empire_country
@@ -326,6 +1049,22 @@ new country greenrock = {
 		0 64 12
 	}
 	capital = greenrock
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Cragorn" #this guy is a twin brother of the guy below
+			dynasty = "Arkor Astviel"
+			stats = { 3 1 6 }
+			age = 43
+			birth_day = 02.27
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = brave
+			add_ruler_personality = patient
+		}
+	}
 }
 new country bittergate = {
 	inherit = empire_country
@@ -336,6 +1075,22 @@ new country bittergate = {
 		135 108 32
 	}
 	capital = bittergate
+	 history += {
+		define_character = {
+			type = ruler
+			name = "Cumbearth" #this guy is a twin brother of the guy above
+			dynasty = "Arkor Astviel"
+			stats = { 4 1 5 }
+			age = 43
+			birth_day = 02.27
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = brave
+			add_ruler_personality = patient
+		}
+	}
 }
 new country keepstone = {
 	inherit = empire_country
@@ -346,6 +1101,22 @@ new country keepstone = {
 		200 200 200
 	}
 	capital = keepstone
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ealhild" 
+			dynasty = "Vesher"
+			stats = { 6 2 3 }
+			age = 43
+			birth_day = 03.18
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = greedy
+			add_ruler_personality = shy
+		}
+	}
 }
 
 # Watar Forest
@@ -358,6 +1129,46 @@ new country watar = {
 		0 150 0 
 	}
 	capital = kelgwyth
+	government_rank = 2
+	history += {
+		define_character = {
+			type = ruler
+			name = "Fianait"
+			dynasty = "Ni Dalaigh"
+			stats = { 3 5 4 }
+			age = 65
+			birth_day = 06.14
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Faoiltighearna "
+			dynasty = "Ni Dalaigh"
+			stats = { 4 6 3 }
+			age = 27
+			birth_day = 07.29
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Cillian"
+			dynasty = "O Ruanaidh"
+			stats = { 3 4 2 }
+			age = 67
+			birth_day = 10.11
+			female = no
+		}
+		elector = yes
+		2568.1.1 = {
+			add_ruler_personality = generous
+			add_ruler_personality = arbitrary
+			add_ruler_personality = eccentric
+			
+			add_heir_personality = compassionate
+			
+			add_queen_personality = fickle
+		}
+	}
 }
 new country talyara = {
 	inherit = empire_country
@@ -366,6 +1177,44 @@ new country talyara = {
 	adj = "Talyan"
 	color = { 96 79 255 }
 	capital = talyara
+	history += {
+		define_character = {
+			type = ruler
+			name = "Caoimhin"
+			dynasty = "O Conaill"
+			stats = { 5 4 4 }
+			age = 46
+			birth_day = 11.10
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Fionnbharr"
+			dynasty = "O Conaill"
+			stats = { 3 2 4 }
+			age = 15
+			birth_day = 06.19
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Finneacht"
+			dynasty = "Nic Corbain"
+			stats = { 4 1 2 }
+			age = 39
+			birth_day = 11.23
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = generous
+			add_ruler_personality = gregarious
+			add_ruler_personality = content
+			
+			add_heir_personality = shy
+			
+			add_queen_personality = lustful
+		}
+	}
 }
 new country glenmareth = {
 	inherit = empire_country
@@ -374,6 +1223,34 @@ new country glenmareth = {
 	adj = "Glenmarethi"
 	color = { 255 149 43 }
 	capital = glenmareth
+	history += {
+		define_character = {
+			type = ruler
+			name = "Roibeard"
+			dynasty = "Mac Daibhéid"
+			stats = { 2 3 2 }
+			age = 38
+			birth_day = 06.16
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Saoirse"
+			dynasty = "Mhic Eoghain"
+			stats = { 3 2 1 }
+			age = 24
+			birth_day = 09.23
+			female = yes
+		}
+
+		2568.1.1 = {
+			add_ruler_personality = shy
+			add_ruler_personality = generous
+			add_ruler_personality = humble
+			
+			add_queen_personality = stubborn
+		}
+	}
 }
 new country breochal = {
 	inherit = empire_country
@@ -382,6 +1259,33 @@ new country breochal = {
 	adj = "Breochali"
 	color = { 255 0 0 }
 	capital = breochal
+	history += {
+		define_character = {
+			type = ruler
+			name = "Connor"
+			dynasty = "O Deaghaidh"
+			stats = { 6 5 6 }
+			age = 90
+			birth_day = 12.27 
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Feme"
+			dynasty = "O Deaghaidh"
+			stats = { 4 4 4 }
+			age = 45
+			birth_day = 12.28
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = callous
+			add_ruler_personality = sadistic
+			add_ruler_personality = eccentric
+			
+			add_heir_personality = compassionate
+		}
+	}
 }
 new country dunbriach = {
 	inherit = empire_country
@@ -392,6 +1296,44 @@ new country dunbriach = {
 		180 90 45
 	}
 	capital = druimlach
+	history += {
+		define_character = {
+			type = ruler
+			name = "Mairwen"
+			dynasty = "Gwynn"
+			stats = { 1 4 5 }
+			age = 37
+			birth_day = 02.26
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Maeryn"
+			dynasty = "Gwynn"
+			stats = { 3 3 3 }
+			age = 10
+			birth_day = 02.12
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Cai"
+			dynasty = "Sayer"
+			stats = { 3 1 4 }
+			age = 45
+			birth_day = 10.09
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = trusting
+			add_ruler_personality = gluttonous
+			add_ruler_personality = gregarious
+			
+			add_heir_personality = fickle
+			
+			add_queen_personality = paranoid
+		}
+	}
 }
 new country lothvryn = {
 	inherit = empire_country
@@ -406,7 +1348,7 @@ new country lothvryn = {
 		define_character = {
 			type = ruler
 			name = "Ashun"
-			dynasty = "Lothvryn"
+			dynasty = "Arkor Astviel"
 			stats = { 4 6 1 }
 			age = 32
 			birth_day = 11.2
@@ -415,7 +1357,7 @@ new country lothvryn = {
 		define_character = {
 			type = heir
 			name = "Aviel"
-			dynasty = "Lothvryn"
+			dynasty = "Arkor Astviel"
 			stats = { 3 3 2 }
 			age = 11
 			birth_day = 11.5
@@ -451,6 +1393,23 @@ new country caerloth = {
 		70 140 200
 	}
 	capital = torvean
+	history += {
+		define_character = {
+			type = ruler
+			name = "Islwyn"
+			dynasty = "Crowder"
+			stats = { 5 3 4 }
+			age = 17
+			birth_day = 01.22
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = zealous
+			add_ruler_personality = ambitious
+			add_ruler_personality = fickle
+		}
+	}
 }
 new country galdovael = {
 	inherit = empire_country
@@ -461,6 +1420,45 @@ new country galdovael = {
 		220 180 90
 	}
 	capital = glenvraith
+	history += {
+		define_character = {
+			type = ruler
+			name = "Cissolt"
+			dynasty = "Worthyngton"
+			stats = { 6 1 1 }
+			age = 27
+			birth_day = 03.19
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Fynlo"
+			dynasty = "Worthyngton"
+			stats = { 4 3 3 }
+			age = 3
+			birth_day = 09.13
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Fayrhare"
+			dynasty = "Ballard"
+			stats = { 4 5 3 }
+			age = 26
+			birth_day = 09.11
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = lustful
+			add_ruler_personality = eccentric
+			add_ruler_personality = gregarious
+			
+			add_heir_personality = lustful
+			
+			add_queen_personality = lustful
+		}
+	}
 }
 new country the_towers = {
 	inherit = empire_country
@@ -471,6 +1469,41 @@ new country the_towers = {
 		212 47 194
 	}
 	capital = yew_tower
+	government = republic
+	government_rank = 2
+	history += {
+		define_character = {
+			type = ruler
+			name = "Amethyria Shadowcloak" #elf
+			dynasty = ""
+			stats = { 6 6 6 }
+			age = 500
+			birth_day = 09.01
+			female = yes
+		}
+		elector = yes
+		2568.1.1 = {
+			add_ruler_personality = eccentric
+			add_ruler_personality = fickle
+			add_ruler_personality = ambitious
+		}
+	}
+}
+new government_names mage_tower = {
+	inherit = default_republic_names
+	trigger = {
+		tag = the_towers
+	}
+	ruler_male = {
+		1 = "Magister"
+		2 = "High Magister"
+		3 = "Lord Magister"
+	}
+	ruler_female = {
+		1 = "Magistress"
+		2 = "High Magistress"
+		3 = "Lady Magistress"
+	}
 }
 new country rosegarden = {
 	inherit = empire_country
@@ -481,6 +1514,40 @@ new country rosegarden = {
 		163 44 44
 	}
 	capital = rosegarden
+	government = theocracy
+	history += {
+		define_character = {
+			type = ruler
+			name = "Thyron Meadowglade" #elf
+			dynasty = ""
+			stats = { 4 2 3 }
+			age = 703
+			birth_day = 08.04
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = calm
+			add_ruler_personality = chaste
+			add_ruler_personality = forgiving
+		}
+		#add_government_reform = free_city
+	}
+}
+new government_names elven_temple = {
+	inherit = default_theocracy_names
+	trigger = {
+		tag = rosegarden
+	}
+	ruler_male = {
+		1 = "High Priest"
+		2 = "Votary"
+		3 = "Serene Votary"
+	}
+	ruler_female = {
+		1 = "High Priestess"
+		2 = "Votary"
+		3 = "Serene Votary"
+	}
 }
 new country silkenglade = {
 	inherit = empire_country
@@ -491,6 +1558,50 @@ new country silkenglade = {
 		74 115 70
 	}
 	capital = caerwynn
+	history += {
+		define_character = {
+			type = ruler
+			name = "Fynia" #elf
+			dynasty = "Moonlight"
+			stats = { 5 6 1 }
+			age = 127
+			birth_day = 01.09
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Tjoren" #elf
+			dynasty = "Starnight"
+			stats = { 4 3 1 }
+			age = 109
+			birth_day = 09.30
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = gregarious
+			add_ruler_personality = generous
+			
+			add_queen_personality = honest
+		}
+	}
+}
+new government_names elf_realm = {
+	inherit = default_theocracy_names
+	trigger = {
+		tag = silkenglade
+	}
+	ruler_male = {
+		1 = "Gladen Prince"
+		2 = "Gladen Lord"
+		3 = "Gladen King"
+	}
+	ruler_female = {
+		1 = "Gladen Princess"
+		2 = "Gladen Lady"
+		3 = "Gladen Queen"
+	}
 }
 
 # Riven Grain Area
@@ -503,6 +1614,45 @@ new country vyreholm = {
 		120 60 20
 	}
 	capital = drevnaya
+	history += {
+		define_character = {
+			type = ruler
+			name = "Jan-Hendrik"
+			dynasty = "Vredeveld"
+			stats = { 5 4 1 }
+			age = 34
+			birth_day = 05.05
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Hendrika"
+			dynasty = "Vredefeld"
+			stats = { 6 5 5 }
+			age = 8
+			birth_day = 07.19
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Anne-Marie"
+			dynasty = "van Stegeren"
+			stats = { 6 6 6 }
+			age = 29
+			birth_day = 09.07
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = brave
+			add_ruler_personality = wrathful
+			add_ruler_personality = arrogant
+			
+			add_heir_personality = arbitrary
+			
+			add_queen_personality = deceitful
+		}
+	}
 }
 new country zelenec = {
 	inherit = empire_country
@@ -513,6 +1663,23 @@ new country zelenec = {
 		50 140 40
 	}
 	capital = mirograd
+	history += {
+		define_character = {
+			type = ruler
+			name = "Saar"
+			dynasty = "van de Graaf"
+			stats = { 2 4 3 }
+			age = 21
+			birth_day = 10.21
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = compassionate
+			add_ruler_personality = ambitious
+			add_ruler_personality = fickle
+		}
+	}
 }
 new country ostovar = {
 	inherit = empire_country
@@ -523,6 +1690,23 @@ new country ostovar = {
 		100 100 100
 	}
 	capital = zlatoryev
+	history += {
+		define_character = {
+			type = ruler
+			name = "Blahoslav"
+			dynasty = "Kovar"
+			stats = { 5 6 6 }
+			age = 23
+			birth_day = 04.11
+			female = no 
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = craven
+			add_ruler_personality = callous
+			add_ruler_personality = sadistic
+		}
+	}
 }
 new country vaszoria = {
 	inherit = empire_country
@@ -533,6 +1717,45 @@ new country vaszoria = {
 		180 140 50
 	}
 	capital = prydnova
+	history += {
+		define_character = {
+			type = ruler
+			name = "Ferdynand"
+			dynasty = "Dudzinski"
+			stats = { 2 4 6 }
+			age = 39
+			birth_day = 07.11
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Aleksandra"
+			dynasty = "Dudzinski"
+			stats = { 4 3 4 }
+			age = 12
+			birth_day = 09.13
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Ilona"
+			dynasty = "Janas"
+			stats = { 2 3 3 }
+			age = 37
+			birth_day = 10.21
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = brave
+			add_ruler_personality = stubborn
+			add_ruler_personality = content
+			
+			add_heir_personality = fickle
+			
+			add_queen_personality = compassionate
+		}
+	}
 }
 new country rovensmark = {
 	inherit = empire_country
@@ -543,6 +1766,23 @@ new country rovensmark = {
 		200 180 90
 	}
 	capital = kornyshiv
+	history += {
+		define_character = {
+			type = ruler
+			name = "Kazimiera"
+			dynasty = "Wiacek"
+			stats = { 2 4 1 }
+			age = 20
+			birth_day = 03.01
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = ambitious
+			add_ruler_personality = lustful
+			add_ruler_personality = compassionate
+		}
+	}
 }
 new country kamenaria = {
 	inherit = empire_country
@@ -553,6 +1793,34 @@ new country kamenaria = {
 		150 60 30
 	}
 	capital = ostrovets
+	history += {
+		define_character = {
+			type = ruler
+			name = "Marian"
+			dynasty = "Zabawa"
+			stats = { 1 3 3 }
+			age = 78
+			birth_day = 09.02
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Janusz"
+			dynasty = "Zabawa"
+			stats = { 6 6 6 }
+			age = 45
+			birth_day = 08.07
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = stubborn
+			add_ruler_personality = fickle
+			add_ruler_personality = craven
+			
+			add_heir_personality = diligent
+		}
+	}
 }
 new country dzydria = {
 	inherit = empire_country
@@ -563,6 +1831,45 @@ new country dzydria = {
 		30 120 200
 	}
 	capital = novorytsk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Jarmila"
+			dynasty = "Fontikov"
+			stats = { 1 4 2 }
+			age = 29
+			birth_day = 09.24
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Bretka"
+			dynasty = "Fontikov"
+			stats = { 2 4 6 }
+			age = 0
+			birth_day = 09.24
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Roscislaw"
+			dynasty = "Podolan"
+			stats = { 6 5 1 }
+			age = 30
+			birth_day = 12.10
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = fickle
+			add_ruler_personality = compassionate
+			add_ruler_personality = lazy
+			
+			add_heir_personality = brave
+			
+			add_queen_personality = craven
+		}
+	}
 }
 new country ternovya = {
 	inherit = empire_country
@@ -573,6 +1880,22 @@ new country ternovya = {
 		220 210 150
 	}
 	capital = kolomyr
+	history += {
+		define_character = {
+			type = ruler
+			name = "Razvigor"
+			dynasty = "Vodenicarovic"
+			stats = { 6 1 1 }
+			age = 21
+			birth_day = 01.19
+			female = no
+		}
+	}
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = craven
+			add_ruler_personality = stubborn
+		}
 }
 new country dobrynia = {
 	inherit = empire_country
@@ -583,6 +1906,44 @@ new country dobrynia = {
 		90 150 40
 	}
 	capital = zelenograd
+	history += {
+		define_character = {
+			type = ruler
+			name = "Dragutin"
+			dynasty = "Lhotzky"
+			stats = { 6 4 5 }
+			age = 55
+			birth_day = 09.17
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Rados"
+			dynasty = "Lhotzky"
+			stats = { 5 4 4 }
+			age = 19
+			birth_day = 06.17
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Zoranna"
+			dynasty = "Mucibaba"
+			stats = { 3 2 2 }
+			age = 50
+			birth_day = 06.30
+			female = yes
+		}
+	}
+		2568.1.1 = {
+			add_ruler_personality = callous
+			add_ruler_personality = zealous
+			add_ruler_personality = cynical
+			
+			add_heir_personality = compassionate
+			
+			add_queen_personality = sadistic
+		}
 }
 new country velmira = {
 	inherit = empire_country
@@ -593,6 +1954,21 @@ new country velmira = {
 		255 100 50
 	}
 	capital = orlivest
+	history += {
+		define_character = {
+			type = ruler
+			name = "Milanka"
+			dynasty = "Bubnov"
+			stats = { 3 5 3 }
+			age = 18
+			birth_day = 07.07
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = trusting
+		}
+	}
 }
 new country brennland = {
 	inherit = empire_country
@@ -603,6 +1979,20 @@ new country brennland = {
 		180 100 40
 	}
 	capital = radomyrsk
+	history += {
+		define_character = {
+			type = ruler
+			name = "Karl August Ernst"
+			dynasty = "von Wallersbrecht"
+			stats = { 6 6 6 }
+			age = 16
+			birth_day = 05.19
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = brave
+		}
+	}
 }
 new country volzeburg = {
 	inherit = empire_country
@@ -613,6 +2003,45 @@ new country volzeburg = {
 		140 110 50
 	}
 	capital = volzeburg
+	history += {
+		define_character = {
+			type = ruler
+			name = "Gustav"
+			dynasty = "von Wallersbrecht"
+			stats = { 5 3 4 }
+			age = 52
+			birth_day = 01.03
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Annika"
+			dynasty = "von Wallersbrecht"
+			stats = { 6 6 6 }
+			age = 14
+			birth_day = 08.19
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Luise"
+			dynasty = "von Rosenthal"
+			stats = { 5 5 5 }
+			age = 45
+			birth_day = 07.28
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = paranoid
+			add_ruler_personality = impatient
+			
+			add_heir_personality = impatient
+			
+			add_queen_personality = trusting
+		}
+	}
 }
 new country hamburrow = {
 	inherit = empire_country
@@ -623,6 +2052,25 @@ new country hamburrow = {
 		90 80 13
 	}
 	capital = hamburrow
+	government_rank = 2
+	government = republic
+	history += {
+		define_character = {
+			type = ruler
+			name = "Bipnick Moneyman" #gnome
+			dynasty = ""
+			stats = { 6 6 1 }
+			age = 157
+			birth_day = 08.08
+			female = no
+		}
+		elector = yes
+		2568.1.1 = {
+			add_ruler_personality = arbitrary
+			add_ruler_personality = deceitful
+			add_ruler_personality = greedy
+		}
+	}
 }
 
 # Riven Swamp Area
@@ -635,6 +2083,34 @@ new country koskova = {
 		80 220 70
 	}
 	capital = sovliska
+	history += {
+		define_character = {
+			type = ruler
+			name = "Dimitry"
+			dynasty = "Kanevsky"
+			stats = { 4 1 2 }
+			age = 33
+			birth_day = 01.09
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Nadezda"
+			dynasty = "Minkowsky"
+			stats = { 1 3 3 }
+			age = 30
+			birth_day = 02.18
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = patient
+			add_ruler_personality = ambitious
+			add_ruler_personality = diligent
+			
+			add_queen_personality = impatient
+		}
+	}
 }
 new country jorvaska = {
 	inherit = empire_country
@@ -645,6 +2121,45 @@ new country jorvaska = {
 		190 70 40
 	}
 	capital = velyranta
+	history += {
+		define_character = {
+			type = ruler
+			name = "Harald"
+			dynasty = "Handfull"
+			stats = { 6 6 6 }
+			age = 60
+			birth_day = 06.06
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Hilfgarth"
+			dynasty = "Handfull"
+			stats = { 1 1 1 }
+			age = 25
+			birth_day =  08.16
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Hilde"
+			dynasty = "Ljotdottir"
+			stats = { 3 4 2 }
+			age = 59
+			birth_day = 07.23
+			female = yes
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = ambitious
+			add_ruler_personality = brave
+			
+			add_heir_personality = lazy
+			
+			add_queen_personality = zealous
+		}
+	}
 }
 new country myrvelin = {
 	inherit = empire_country
@@ -655,6 +2170,21 @@ new country myrvelin = {
 		85 95 165
 	}
 	capital = myrkyla
+	history += {
+		define_character = {
+			type = ruler
+			name = "Mojmir"
+			dynasty = "Sergeyev"
+			stats = { 3 4 5 }
+			age = 16
+			birth_day = 07.15
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = compassionate
+		}
+	}
 }
 new country zoryashiv = {
 	inherit = empire_country
@@ -665,6 +2195,45 @@ new country zoryashiv = {
 		100 185 160
 	}
 	capital = kelmorov
+	history += {
+		define_character = {
+			type = ruler
+			name = "Varavara"
+			dynasty = "Fedoruk"
+			stats = { 4 5 3 }
+			age = 29
+			birth_day = 07.27
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Velislava"
+			dynasty = "Fedoruk"
+			stats = { 5 4 1 }
+			age = 3
+			birth_day = 01.13
+			female = yes
+		}
+		define_character = {
+			type = consort
+			name = "Rostislav"
+			dynasty = "Soloviev"
+			stats = { 2 5 6 }
+			age = 32
+			birth_day = 05.19
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = diligent
+			add_ruler_personality = gregarious
+			add_ruler_personality = patient
+			
+			add_heir_personality = ambitious
+			
+			add_queen_personality = brave
+		}
+	}
 }
 new country tovrien = {
 	inherit = empire_country
@@ -675,6 +2244,45 @@ new country tovrien = {
 		5 80 50
 	}
 	capital = ylivesh
+	history += {
+		define_character = {
+			type = ruler
+			name = "Mira"
+			dynasty = "Hrdlik"
+			stats = { 4 3 2 }
+			age = 35
+			birth_day = 09.09
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Vatroslav"
+			dynasty = "Hrdlik"
+			stats = { 3 2 3 }
+			age = 5
+			birth_day = 08.17
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Hrvatin"
+			dynasty = "Wolinski"
+			stats = { 4 4 5 }
+			age = 37
+			birth_day = 01.29
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = patient
+			add_ruler_personality = shy
+			add_ruler_personality = chaste
+			
+			add_heir_personality = lustful
+			
+			add_queen_personality = wrathful
+		}
+	}
 }
 new country velmorya = {
 	inherit = empire_country
@@ -685,6 +2293,23 @@ new country velmorya = {
 		200 190 60
 	}
 	capital = askervir
+	history += {
+		define_character = {
+			type = ruler
+			name = "Bodislaw 'The Hammer'"
+			dynasty = "Kovalchuk"
+			stats = { 4 4 6 }
+			age = 22
+			birth_day = 09.17
+			female = no
+		}
+		
+		2568.1.1 = {
+			add_ruler_personality = brave
+			add_ruler_personality = patient
+			add_ruler_personality = zealous
+		}
+	}
 }
 
 # Agre-Divinum
