@@ -2791,10 +2791,10 @@ new province empire_116 = {
     name = "empire 116"
 }
 
-new province empire_117 = {
+new province groslier = {
     inherit = empire_province
     color = { 244 127 246 }
-    name = "empire 117"
+    name = "Groslier"
 }
 
 new province empire_118 = {
@@ -2827,16 +2827,17 @@ new province empire_122 = {
     name = "empire 122"
 }
 
-new province empire_130 = {
+new province cotefendue = {
     inherit = empire_province
     color = { 228 119 149 }
-    name = "empire 130"
+    name = "Cotefendue"
 }
 
-new province empire_131 = {
+new province valdargent = {
     inherit = empire_province
     color = { 106 113 246 }
-    name = "empire 131"
+    name = "Valdargent"
+	#silver
 }
 
 new province empire_132 = {
@@ -2851,22 +2852,46 @@ new province empire_133 = {
     name = "empire 133"
 }
 
-new province empire_134 = {
-    inherit = empire_province
-    color = { 192 162 130 }
-    name = "empire 134"
+new area montpeaks = {
+	name = "Montpeaks"
+	region = hathkor_hills
 }
-
-new province empire_135 = {
-    inherit = empire_province
-    color = { 202 132 166 }
-    name = "empire 135"
-}
-
-new province empire_136 = {
+new province montdefer = {
     inherit = empire_province
     color = { 150 209 185 }
-    name = "empire 136"
+    name = "Montdefer"
+	area = montpeaks
+	history += {
+		history_owner = valtranche
+	}
+}
+new province vauxmurailles = {
+    inherit = empire_province
+    color = { 192 162 130 }
+    name = "Vauxmurailles"
+	area = montpeaks
+	history += {
+		history_owner = valtranche
+	}
+}
+new province mornepierre = {
+    inherit = empire_province
+    color = { 202 132 166 }
+    name = "Mornepierre"
+	area = montpeaks
+	history += {
+		history_owner = valtranche
+	}
+}
+
+# move to centaur lands
+new province belombre = {
+    inherit = empire_province
+    color = { 150 102 220 }
+    name = "Belombre"
+	history += {
+		history_owner = valtranche
+	}
 }
 
 new province empire_137 = {
@@ -2881,16 +2906,45 @@ new province empire_138 = {
     name = "empire 138"
 }
 
-new province empire_139 = {
-    inherit = empire_province
-    color = { 150 102 220 }
-    name = "empire 139"
+new area montreval = {
+	name = "Montreval"
+	region = hathkor_hills
 }
-
-new province empire_140 = {
+new province epervieux = {
     inherit = empire_province
     color = { 118 140 245 }
-    name = "empire 140"
+    name = "Epervieux"
+	area = montreval
+	history += {
+		history_owner = valtranche
+	}
+}
+new province hautpre = {
+    inherit = empire_province
+    color = { 248 145 217 }
+    name = "Hautpre"
+	area = montreval
+	history += {
+		history_owner = gardeval
+	}
+}
+new province noirmarche = {
+    inherit = empire_province
+    color = { 107 128 147 }
+    name = "Noirmarche"
+	area = montreval
+	history += {
+		history_owner = gardeval
+	}
+}
+new province ravincourt = {
+    inherit = empire_province
+    color = { 237 197 145 }
+    name = "Ravincourt"
+	area = montreval
+	history += {
+		history_owner = gardeval
+	}
 }
 
 new area chantegrive = {
@@ -2931,52 +2985,35 @@ new province empire_143 = {
     name = "empire 143"
 }
 
-new province empire_144 = {
+new province hautechaume = {
     inherit = empire_province
     color = { 230 186 228 }
-    name = "empire 144"
+    name = "Hautechaume"
 }
 
-new province empire_146 = {
-    inherit = empire_province
-    color = { 248 145 217 }
-    name = "empire 146"
-}
-
-new province empire_147 = {
-    inherit = empire_province
-    color = { 107 128 147 }
-    name = "empire 147"
-}
-
-new province empire_148 = {
-    inherit = empire_province
-    color = { 237 197 145 }
-    name = "empire 148"
-}
-
-new province empire_149 = {
+new province pontclair = {
     inherit = empire_province
     color = { 213 108 169 }
-    name = "empire 149"
+    name = "Pontclair"
+	#add river
 }
 
-new province empire_150 = {
+new province froidfonds = {
     inherit = empire_province
     color = { 219 176 228 }
-    name = "empire 150"
+    name = "Froidfonds"
 }
 
-new province empire_151 = {
+new province ternelay = {
     inherit = empire_province
     color = { 161 254 192 }
-    name = "empire 151"
+    name = "Ternelay"
 }
 
-new province empire_152 = {
+new province montespee = {
     inherit = empire_province
     color = { 106 134 170 }
-    name = "empire 152"
+    name = "Montespee"
 }
 
 new province empire_153 = {
@@ -2985,22 +3022,22 @@ new province empire_153 = {
     name = "empire 153"
 }
 
-new province empire_154 = {
+new province durtroche = {
     inherit = empire_province
     color = { 140 211 137 }
-    name = "empire 154"
+    name = "Durtroche"
 }
 
-new province empire_155 = {
+new province mireval = {
     inherit = empire_province
     color = { 226 134 205 }
-    name = "empire 155"
+    name = "Mireval"
 }
 
-new province empire_156 = {
+new province hautespee = {
     inherit = empire_province
     color = { 153 248 177 }
-    name = "empire 156"
+    name = "Hautespee"
 }
 
 new province empire_157 = {
@@ -3093,10 +3130,10 @@ new province empire_194 = {
     name = "empire 194"
 }
 
-new province empire_195 = {
+new province bellescarpe = {
     inherit = empire_province
     color = { 107 207 225 }
-    name = "empire 195"
+    name = "Bellescarpe"
 }
 
 new province empire_196 = {
@@ -3111,10 +3148,10 @@ new province empire_197 = {
     name = "empire 197"
 }
 
-new province empire_199 = {
+new province baudrecourt = {
     inherit = empire_province
     color = { 117 199 127 }
-    name = "empire 199"
+    name = "Baudrecourt"
 }
 
 # Astveil

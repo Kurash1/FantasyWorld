@@ -2360,7 +2360,7 @@ new country beaumontier = {
 		define_character = {
 			type = ruler
 			name = "Sylvaine"
-			dynasty = "Elodie"
+			dynasty = "Beaumontier"
 			stats = { 2 6 2 }
 			age = 21
 			birth_day = 12.12
@@ -2369,7 +2369,7 @@ new country beaumontier = {
 		define_character = {
 			type = heir
 			name = "Severine"
-			dynasty = "Elodie"
+			dynasty = "Beaumontier"
 			stats = { 1 2 2 }
 			age = 2
 			birth_day = 3.1
@@ -2400,5 +2400,101 @@ new hathkor_order flower = {
 	tag = beaumontier
 	modifier = {
 		land_morale = 0.1
+	}
+}
+new country valtranche = {
+	inherit = empire_country
+	tag = TRA
+	name = "Valtranche"
+	adj = "Valtrancher"
+	color = {
+		45 45 45
+	}
+	capital = epervieux
+	history += {
+		define_character = {
+			type = ruler
+			name = "Narcisse"
+			dynasty = "Valtranche"
+			stats = { 1 3 4 }
+			age = 45
+			birth_day = 11.15
+			female = no
+		}
+		define_character = {
+			type = heir
+			name = "Marcel"
+			dynasty = "Valtranche"
+			stats = { 4 5 5 }
+			age = 19
+			birth_day = 4.4
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Nadege"
+			dynasty = "Vivianne"
+			stats = { 0 0 1 }
+			age = 44
+			birth_day = 2.14
+			female = yes
+		}
+		2568.1.1 = {
+			add_ruler_personality = ambitious
+			add_ruler_personality = zealous
+			add_ruler_personality = stubborn
+			
+			add_heir_personality = forgiving
+			
+			add_queen_personality = lazy
+		}
+	}
+}
+new country gardeval = {
+	inherit = empire_country
+	tag = GAR
+	name = "Gardeval"
+	adj = "Gardeval"
+	color = {
+		25 120 0
+	}
+	capital = ravincourt
+	history += {
+		define_character = {
+			type = ruler
+			name = "Astrid"
+			dynasty = "Gardeval"
+			stats = { 3 2 2 }
+			age = 61
+			birth_day = 5.24
+			female = yes
+		}
+		define_character = {
+			type = heir
+			name = "Eddy"
+			dynasty = "Gardeval"
+			stats = { 1 2 5 }
+			age = 29
+			birth_day = 1.5
+			female = no
+		}
+		define_character = {
+			type = consort
+			name = "Lionel"
+			dynasty = "Noham"
+			stats = { 1 2 1 }
+			age = 56
+			birth_day = 3.3
+			female = no
+		}
+		2568.1.1 = {
+			add_ruler_personality = wrathful
+			add_ruler_personality = impatient
+			add_ruler_personality = stubborn
+			
+			add_heir_personality = patient
+			
+			add_queen_personality = humble
+		}
 	}
 }
