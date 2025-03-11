@@ -2474,9 +2474,11 @@ new province sovliska = {
     color = { 137 122 127 }
     name = "Sovliska"
 	area = virkonmaa
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = koskova
+		history_trade_goods = fish
 	}
 }
 new province kolmirev = {
@@ -2484,9 +2486,11 @@ new province kolmirev = {
     color = { 223 144 226 }
     name = "Kolmirev"
 	area = virkonmaa
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = koskova
+		history_trade_goods = fish
 	}
 }
 new province rautashiv = {
@@ -2494,9 +2498,11 @@ new province rautashiv = {
     color = { 193 109 187 }
     name = "Rautashiv"
 	area = virkonmaa
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = koskova
+		history_trade_goods = fish
 	}
 }
 new province velyranta = {
@@ -2504,9 +2510,11 @@ new province velyranta = {
     color = { 238 216 113 }
     name = "Velyranta"
 	area = virkonmaa
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = jorvaska
+		history_trade_goods = fish
 	}
 }
 
@@ -2519,9 +2527,11 @@ new province iskorva = {
     color = { 101 186 233 }
     name = "Iskorva"
 	area = olimyrsk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = myrvelin
+		history_trade_goods = alchemical_ingredients
 	}
 }
 new province tarnovesh = {
@@ -2529,9 +2539,11 @@ new province tarnovesh = {
     color = { 241 187 241 }
     name = "Tarnovesh"
 	area = olimyrsk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = zoryashiv
+		history_trade_goods = wood
 	}
 }
 new province myrkyla = {
@@ -2539,9 +2551,11 @@ new province myrkyla = {
     color = { 102 102 157 }
     name = "Myrkyla"
 	area = olimyrsk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = myrvelin
+		history_trade_goods = alcohol
 	}
 }
 new province kelmorov = {
@@ -2549,9 +2563,11 @@ new province kelmorov = {
     color = { 103 180 220 }
     name = "Kelmorov"
 	area = olimyrsk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = zoryashiv
+		history_trade_goods = potions
 	}
 }
 new province lohkava = {
@@ -2559,9 +2575,11 @@ new province lohkava = {
     color = { 122 235 221 }
     name = "Lohkava"
 	area = olimyrsk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = zoryashiv
+		history_trade_goods = wood
 	}
 }
 
@@ -2574,9 +2592,11 @@ new province miroshka = {
     color = { 138 136 104 }
     name = "Miroshka"
 	area = jarvelisk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = tovrien
+		history_trade_goods = stone
 	}
 }
 new province drelmora = {
@@ -2584,9 +2604,11 @@ new province drelmora = {
     color = { 241 181 170 }
     name = "Drelmora"
 	area = jarvelisk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = tovrien
+		history_trade_goods = wood
 	}
 }
 new province ylivesh = {
@@ -2594,9 +2616,11 @@ new province ylivesh = {
     color = { 235 141 160 }
     name = "Ylivesh"
 	area = jarvelisk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = tovrien
+		history_trade_goods = alchemical_ingredients
 	}
 }
 new province jorvainka = {
@@ -2604,9 +2628,11 @@ new province jorvainka = {
     color = { 108 156 107 }
     name = "Jorvainka"
 	area = jarvelisk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = velmorya
+		history_trade_goods = fish
 	}
 }
 new province askervir = {
@@ -2614,9 +2640,11 @@ new province askervir = {
     color = { 122 216 197 }
     name = "Askervir"
 	area = jarvelisk
+	terrain = marsh
 	history += {
 		culture = virko_lisk
 		history_owner = velmorya
+		history_trade_goods = fish
 	}
 }
 
@@ -3318,7 +3346,7 @@ generate_population = {
 	}
 }
 
-# Riven Swamp Lands
+# Jarvemaa
 generate_population = {
 	desired = 500
 	weight = 0.1
