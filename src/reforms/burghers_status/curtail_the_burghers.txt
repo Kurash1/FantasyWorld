@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new curtail_the_burghers = {
+governments:monarchy:reform_levels:7 += new curtail_the_burghers = {
 	name = "Curtail the Burghers"
 	desc = "The burgher estates keep talking about representation but they lack the noble blood and the divine ordainment for that. We must curtail such excessess immediately before this dangerous thought spread further."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:6 += new curtail_the_burghers = {
 		
 	}
 }
-governments:republic:reform_levels:6 += curtail_the_burghers
-governments:theocracy:reform_levels:6 += curtail_the_burghers
+governments:republic:reform_levels:7 += curtail_the_burghers
+governments:theocracy:reform_levels:7 += curtail_the_burghers

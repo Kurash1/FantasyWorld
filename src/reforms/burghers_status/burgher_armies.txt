@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new burgher_armies = {
+governments:monarchy:reform_levels:7 += new burgher_armies = {
 	name = "Burgher Armies"
 	desc = "Last found in the ancient times whern the Gnomium ruled over a vast chunk of the earth, burgher armies are beholden to the state first and foremost. While being civilians in peace time they are called to arms in war time. Although they have to provide their own equipment they are a substantial force in sheer quantity."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:6 += new burgher_armies = {
 		
 	}
 }
-governments:republic:reform_levels:6 += burgher_armies
-governments:theocracy:reform_levels:6 += burgher_armies
+governments:republic:reform_levels:7 += burgher_armies
+governments:theocracy:reform_levels:7 += burgher_armies

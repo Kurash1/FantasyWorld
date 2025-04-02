@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new guild_rights = {
+governments:monarchy:reform_levels:7 += new guild_rights = {
 	name = "Guild Rights"
 	desc = "The ancient rights and customs of the guilds are acknowledged they always provided substantial support to the state's economy so this is the least the realm can do for them. Others however argue that guilds stall progress and rather see them abolished all together as they supposedly hamper innovation."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:6 += new guild_rights = {
 		
 	}
 }
-governments:republic:reform_levels:6 += guild_rights
-governments:theocracy:reform_levels:6 += guild_rights
+governments:republic:reform_levels:7 += guild_rights
+governments:theocracy:reform_levels:7 += guild_rights

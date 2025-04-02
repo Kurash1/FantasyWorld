@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new encourage_privateering = {
+governments:monarchy:reform_levels:7 += new encourage_privateering = {
 	name = "Encourage Privateering"
 	desc = "The fleet the rich burghers provide can surely also be used let us say involuntary trade. There are many ships ladden with riches in front of our shores and it would be a shame if something was to happen to their goods. So we get those for uhh safe keeping. And then we sell them for the owner in a safe manner. Surely they will be relieved that they do not have to worry about this goods anymore whose safety keeps them up at night!"
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:6 += new encourage_privateering = {
 		
 	}
 }
-governments:republic:reform_levels:6 += encourage_privateering
-governments:theocracy:reform_levels:6 += encourage_privateering
+governments:republic:reform_levels:7 += encourage_privateering
+governments:theocracy:reform_levels:7 += encourage_privateering

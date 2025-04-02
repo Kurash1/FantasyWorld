@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:2 += new job_sharing = {
+	name = "Job-Sharing"
+	desc = "The ruler has decided that their consort can help them with govern. This will severly reduce the strain on the execution of government to our country. Perhaps even the heir once old enough can serve as a co-regent learning valuable skills before they are becoming the monarch themselves."
+	inherit = default_reform
+	icon = ___
+	modifiers = {
+		
+	}
+}

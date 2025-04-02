@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:7 += new mandatory_arcane_education = {
+governments:monarchy:reform_levels:8 += new mandatory_arcane_education = {
 	name = "Mandatory Arcane Education "
 	desc = "You are a mage and you are a mage, everyone is a mage! Magic is about merit yes but also learnable by everyone. That means we can make every citizien in our country a mage. Imagine the power we would wield. Every soldier in our army for example not only being adept at weapons but also at spell casting too. Our enemies will crumble before our might.  "
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:7 += new mandatory_arcane_education = {
 		
 	}
 }
-governments:theocracy:reform_levels:7 += mandatory_arcane_education
-governments:republic:reform_levels:7 += mandatory_arcane_education
+governments:theocracy:reform_levels:8 += mandatory_arcane_education
+governments:republic:reform_levels:8 += mandatory_arcane_education

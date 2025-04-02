@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:9 += new state_adventurers = {
+	name = "State Adventurers"
+	desc = "Adventuring in our country is allowed but only within the frameworks provided by the government so no more random "accidents" but the usefulness surely stays. The state has to hand out an adventuring license to a would be adventurer if deemed worthy"
+	inherit = default_reform
+	icon = paper_with_seal_3
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:9 += state_adventurers
+governments:theocracy:reform_levels:9 += state_adventurers

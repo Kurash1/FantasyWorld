@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new empower_the_burghers = {
+governments:monarchy:reform_levels:7 += new empower_the_burghers = {
 	name = "Empower the Burghers"
 	desc = "The people of the cities in our country are rich very rich. Without them nothing would work at all. Giving them many privileges was inevitable and now they are very influential. Although they lack noble blood and divine ordainment there wealth makes them invaluable assets. "
 	inherit = default_reform
@@ -8,8 +8,8 @@ governments:monarchy:reform_levels:6 += new empower_the_burghers = {
 	}
 }
 
-governments:republic:reform_levels:6 += empower_the_burghers
-governments:theocracy:reform_levels:6 += empower_the_burghers
+governments:republic:reform_levels:7 += empower_the_burghers
+governments:theocracy:reform_levels:7 += empower_the_burghers
 
 
 

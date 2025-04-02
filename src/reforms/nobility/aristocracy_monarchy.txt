@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:5 += new aristocracy_monarchy = {
+governments:monarchy:reform_levels:6 += new aristocracy_monarchy = {
 	name = "Aristocracy"
 	desc = "This realm outright replaced its former ruler with a system of elected nobles that now govern the state as a noble republic. Power is carefully arranged to keep one family from dominating and rival houses constantly vie for controll over key institutions of the government."
 	inherit = default_reform

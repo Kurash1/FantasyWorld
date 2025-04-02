@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:2 += new involvement_with_the_nobility = {
+	name = "Involvement with the Nobility"
+	desc = "Many of our nobles are related to us if we involve them more in government they would become more loyal."
+	inherit = default_reform
+	icon = ___
+	modifiers = {
+		
+	}
+}

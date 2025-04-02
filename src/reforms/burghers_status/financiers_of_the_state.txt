@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:6 += new financiers_of_the_state = {
+governments:monarchy:reform_levels:7 += new financiers_of_the_state = {
 	name = "Financiers of the State"
 	desc = "With control of the banks and most of the economy falling under the burghers them becoming vital for our fiscal and economic policy became an inevitability. Although reluctant we had to acknowledge that our nobility seems far less eager to provide there wealth to the state than the burghers are not to even speak of the clergy that just sits on their money bags. This however led to the burghers being very powerful with almost unchecked power in the state."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:6 += new financiers_of_the_state = {
 		
 	}
 }
-governments:republic:reform_levels:6 += financiers_of_the_state
-governments:theocracy:reform_levels:6 += financiers_of_the_state
+governments:republic:reform_levels:7 += financiers_of_the_state
+governments:theocracy:reform_levels:7 += financiers_of_the_state

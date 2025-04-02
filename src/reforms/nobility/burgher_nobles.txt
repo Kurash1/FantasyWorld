@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:5 += new burgher_nobles = {
+governments:monarchy:reform_levels:6 += new burgher_nobles = {
 	name = "Burgher Nobles"
 	desc = "Money was always a good motivator and in this country even the status of nobility is up for sale if you can afford it ofc. Many rich merchants and burghers use this to buy their way into the ranks of the nobility."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:5 += new burgher_nobles = {
 		
 	}
 }
-governments:republic:reform_levels:5 += burgher_nobles
-governments:theocracy:reform_levels:5 += burgher_nobles
+governments:republic:reform_levels:6 += burgher_nobles
+governments:theocracy:reform_levels:6 += burgher_nobles
