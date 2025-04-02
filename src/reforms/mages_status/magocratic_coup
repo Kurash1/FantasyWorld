@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:7 += new magocratic_coup = {
+	name = "Magocratic Coup"
+	desc = "Well that was to be expected the mages after all already have a higher power level than the other estates. But by emboldening them they asked themselves why should we work with the others if we can rule ourselves."
+	inherit = default_reform
+	icon = monks
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:7 += magocratic_coup
+governments:republic:reform_levels:7 += magocratic_coup

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:7 += new empowered_mages = {
+	name = "Empowered Mages"
+	desc = "The mages proven to be far too valuable to ignore nto only as court or war mage but in all other aspects as well. Their usefulness had to be rewarded."
+	inherit = default_reform
+	icon = divine_guidance_reform
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:7 += empowered_mages
+governments:republic:reform_levels:7 += empowered_mages
