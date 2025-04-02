@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:6 += new country_for_sale = {
+	name = "Country for Sale"
+	desc = "For some reason the burghers managed to convince us to constantly sell crownland to them, why that is nobody really remembers anymore but now we are stuck between a rock and a hard place with the crownland domain becoming ever smaller we need to keep conquering new lands only to lose it to the estates again. If we will ever manage to end this cycle we do not know but we sure hope so."
+	inherit = default_reform
+	icon = paper_money_map
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:6 += country_for_sale
+governments:theocracy:reform_levels:6 += country_for_sale

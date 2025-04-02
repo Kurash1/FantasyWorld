@@ -110,7 +110,7 @@ new government republic = {
 		9 = "Interracial Relations"
 		
 		# Economic Matters
-		10 = "Economic Policy"
+		10 = "Economic System"
 		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"

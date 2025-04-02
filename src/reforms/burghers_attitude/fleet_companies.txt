@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:6 += new fleet_companies = {
+	name = "Fleet Companies"
+	desc = "While the nobility surely knows how to provide levies on land they have absolutely no idea of how to wage war on sea. But there is a solution to that problem the burghers already conduct a lot of naval trade their experienced sailors would also be useful for a military navy. We can even appoint rich burghers to become admirals thus becoming equal to the generals of the nobility. The nobility surely will dislike this but the burghers will love it."
+	inherit = default_reform
+	icon = trading_city
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:6 += fleet_companies
+governments:theocracy:reform_levels:6 += fleet_companies

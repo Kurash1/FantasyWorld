@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:6 += new abolish_guild_monopoly = {
+	name = "Abolish Guild Monopoly"
+	desc = "The guilds of the burghers have become far too rigid, opposed to progress and a general hindrance to society, it is time that we break up their monopolies and open up the economy. The guilds will be outlawed and government requirements will step into their place"
+	inherit = default_reform
+	icon = examination_system_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:6 += abolish_guild_monopoly
+governments:theocracy:reform_levels:6 += abolish_guild_monopoly
