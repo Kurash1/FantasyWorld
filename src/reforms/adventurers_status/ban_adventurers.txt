@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:8 += new ban_adventurers = {
+	name = "Ban Adventurers"
+	desc = "Adventurers are a nuisance they keep causing utter chaos by banning them from our country we can at least hope to not having to deal with that anymore."
+	inherit = default_reform
+	icon = soldiers_7
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:8 += ban_adventurers
+governments:theocracy:reform_levels:8 += ban_adventurers

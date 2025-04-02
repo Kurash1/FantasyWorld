@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:8 += new adventurer_realm = {
+	name = "Adventurer Realm"
+	desc = "This country is a center of adventurer bands from all over the world. Taverns and inns with no end in sight. guild halls and adventurer companies dotting the landscape providing vital services to either the one who pays the most or who is in  their eyes morally superior depending on any given adventurer party's personal philosophy."
+	inherit = default_reform
+	icon = revolutionary_republic
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:8 += adventurer_realm
+governments:theocracy:reform_levels:8 += adventurer_realm

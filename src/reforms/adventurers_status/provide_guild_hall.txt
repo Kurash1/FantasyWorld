@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:8 += new provide_guild_hall = {
+	name = "Provide Guild Hall"
+	desc = "The adventurers have long asked for a place to organise themselves. And now finally we grant them that will, that also means we can keep an eye over them. So no more tavern brawls sponatenously erupt every second day in our country."
+	inherit = default_reform
+	icon = uparaja_reform
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:8 += provide_guild_hall
+governments:theocracy:reform_levels:8 += provide_guild_hall
