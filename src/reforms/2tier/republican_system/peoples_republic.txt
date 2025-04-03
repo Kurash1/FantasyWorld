@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new peoples_republic = {
+	name = "People's Republic"
+	desc = "The Nobility and Burgeosie have been overthrown in this country. Now a tyranny of the masses have been established that quickly ceased the means of production."
+	inherit = default_reform
+	icon = become_rev_republic_reform
+	modifiers = {
+		
+	}
+}

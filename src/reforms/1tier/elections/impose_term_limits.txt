@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new impose_term_limits = {
+	name = "Impose Term Limits"
+	desc = "By imposing term limits we can avoid consolidation of power in a single ruler and avoid a potential tyranny."
+	inherit = default_reform
+	icon = constitution
+	modifiers = {
+		
+	}
+}

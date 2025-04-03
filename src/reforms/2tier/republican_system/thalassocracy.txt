@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new thalassocracy = {
+	name = "Thalassocracy"
+	desc = "The admirality controls this country as maritime matters are viewed as the utmost concern to this nation. Controll over the sea and vital shipping lanes is of unparalleled concern to this regime. Government likewise is controlled by a board of admirals."
+	inherit = default_reform
+	icon = admiralty_reform
+	modifiers = {
+		
+	}
+}
