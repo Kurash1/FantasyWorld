@@ -2,7 +2,7 @@ governments:monarchy:reform_levels:2 += new papal_submission = {
 	name = "Papal Submission"
 	desc = "By acknowleding the authority of the pope we can hope to access the papal bureaucracy more efficiently. However it is a severe hit to our authority and our secular estates may not be fully on board with this."
 	inherit = default_reform
-	icon = ___
+	icon = papacy
 	modifiers = {
 		
 	}
