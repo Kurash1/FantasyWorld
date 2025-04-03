@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new astrology = {
+	name = "Astrology"
+	desc = "The stars, the planets, the sun and the moon represent different heavenly domains. IThe research of this is what is most important to us. We are particularly interested about zodiac signs and planetary movements. Likewise the lunar phases play a big role especially in elven society."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:1 += new clerical_elections = {
+	name = "Clerical Elections"
+	desc = "Bishops, cardinals nuns or monks elect one of their own out of their ranks to be their new leader in this system."
+	inherit = default_reform
+	icon = monastic_elections_reform
+	modifiers = {
+		
+	}
+}

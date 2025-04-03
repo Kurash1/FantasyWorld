@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new destruction = {
+	name = "Destruction"
+	desc = "Destruction will happen eventually by accepting this reality we can find our peace with it. Perhaps we even want to accelerate this for some greater good. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

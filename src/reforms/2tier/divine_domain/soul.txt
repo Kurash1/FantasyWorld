@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new soul = {
+	name = "Soul"
+	desc = "Gifted by the divine to the mortals the soul is the connection of the profane to the divine. By focusing on cultivating it we can hope to get closer to the divine."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
