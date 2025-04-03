@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:8 += new curtailed_mages = {
+	name = "Curtailed Mages"
+	desc = "Mages are useful yes but we must be weary of emboldening them. They are far too powerful to let them near the controlls of the state after all."
+	inherit = default_reform
+	icon = daimyo
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:8 += curtailed_mages
+governments:republic:reform_levels:8 += curtailed_mages

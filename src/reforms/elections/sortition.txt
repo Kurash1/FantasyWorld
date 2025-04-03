@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new sortition = {
+	name = "Sortition"
+	desc = "Candidate names are put on lots and put into a box. With that system we can ensure a fair approach without having to fear a consolidation of power. "
+	inherit = default_reform
+	icon = paper_with_seal
+	modifiers = {
+		
+	}
+}

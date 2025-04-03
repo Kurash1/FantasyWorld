@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:2 += new popular_mandate = {
+governments:monarchy:reform_levels:3 += new popular_mandate = {
 	name = "Popular Mandate"
 	desc = "Your state is backed by the populace. Be it for cultural, religious or another reason, your people believe that your state ought to exist. As long as you hold this popular mandate, your people will support you."
 	inherit = default_reform
@@ -8,5 +8,5 @@ governments:monarchy:reform_levels:2 += new popular_mandate = {
 		harsh_treatment_cost = 0.25
 	}
 }
-governments:republic:reform_levels:2 += popular_mandate
-governments:theocracy:reform_levels:2 += popular_mandate
+governments:republic:reform_levels:3 += popular_mandate
+governments:theocracy:reform_levels:3 += popular_mandate

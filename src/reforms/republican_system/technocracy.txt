@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new technocracy = {
+	name = "Technocracy"
+	desc = "A government of experts. Gnomes are famous for having this type of government. Only people who have the proper education and skill set are placed in the right positions. The prime example of this would be the ancient but still existing Gnomium. "
+	inherit = default_reform
+	icon = judge
+	modifiers = {
+		
+	}
+}

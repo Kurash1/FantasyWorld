@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:5 += new meritocratic_nobility = {
+governments:monarchy:reform_levels:6 += new meritocratic_nobility = {
 	name = "Meritocratic Nobility"
 	desc = "Governance of our sub divisions is oridinarily not handed out to someone just because they are the child of the previous holder of the title. Instead the  state appoints an esteemed person to such a position someone who has proven their competence and worth to the title. This also means impeachment upon purposefully made wrond doings is possible. Likewise the diet is also staffed with such esteemed individuals that proved they are of value to the system."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:5 += new meritocratic_nobility = {
 		
 	}
 }
-governments:republic:reform_levels:5 += meritocratic_nobility
-governments:theocracy:reform_levels:5 += meritocratic_nobility
+governments:republic:reform_levels:6 += meritocratic_nobility
+governments:theocracy:reform_levels:6 += meritocratic_nobility

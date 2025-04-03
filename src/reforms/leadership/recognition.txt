@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:1 += new recognition = {
+	name = "Recognition"
+	desc = "We believe in reincarnation especially for important religious persons. We undertake major efforts to find this newly reincarnated leaders and let them be recognised via rigorous testing. "
+	inherit = default_reform
+	icon = revolutionary_council_reform
+	modifiers = {
+		
+	}
+}

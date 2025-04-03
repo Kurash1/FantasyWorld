@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:1 += new sacred_lineage = {
+	name = "Sacred Lineage"
+	desc = "A hereditary form of a theocracy in which a divinely ordained bloodline rules generation after generation."
+	inherit = default_reform
+	icon = tribal_lip_service
+	modifiers = {
+		
+	}
+}

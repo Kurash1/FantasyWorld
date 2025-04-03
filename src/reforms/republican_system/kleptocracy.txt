@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new kleptocracy = {
+	name = "Kleptocracy"
+	desc = "This country has become a victim. People only concerned with their own well being took over the country and now rob it blank. An enormous scary army hinders people from rebelling against their opressors. "
+	inherit = default_reform
+	icon = smugglers_haven
+	modifiers = {
+		
+	}
+}

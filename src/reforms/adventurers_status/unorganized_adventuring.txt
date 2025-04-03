@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:9 += new unorganized_adventuring = {
+	name = "Unorganized Adventuring"
+	desc = "Adventuring with all its ups and downs just happens in this realm. Many people complain about random tavern brawls erupting or missing certain belongings while other sing laurels over how an adventuring party saved them."
+	inherit = default_reform
+	icon = native_land_tradition_reform
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:9 += unorganized_adventuring
+governments:theocracy:reform_levels:9 += unorganized_adventuring

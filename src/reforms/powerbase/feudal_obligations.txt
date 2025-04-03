@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:2 += new feudal_obligations = {
+governments:monarchy:reform_levels:3 += new feudal_obligations = {
 	name = "Feudal Obligations"
 	desc = "The state is founded on an interconnected web of feudal obligations and oaths, that together end up with a primary actor serving as the state. As long as you can keep your feudal vassals happy, so will you have the power of the state."
 	inherit = default_reform
@@ -10,5 +10,5 @@ governments:monarchy:reform_levels:2 += new feudal_obligations = {
 		vassal_income = 0.2
 	}
 }
-governments:republic:reform_levels:2 += feudal_obligations
-governments:theocracy:reform_levels:2 += feudal_obligations
+governments:republic:reform_levels:3 += feudal_obligations
+governments:theocracy:reform_levels:3 += feudal_obligations

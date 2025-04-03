@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new guild_republic = {
+	name = "Guild Republic"
+	desc = "The Guilds in this country are so powerful that they alone sit in the councils of the state and vote on legislation and the appointment of both judiciary and executive."
+	inherit = default_reform
+	icon = rajput_kingdom
+	modifiers = {
+		
+	}
+}

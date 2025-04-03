@@ -1,0 +1,15 @@
+governments:republic:reform_levels:1 += new shorten_electoral_terms = {
+	name = "Shorten Electoral Terms"
+	desc = "Short electoral terms help us to change politics rapidly. But it also can lead to flip flop politics."
+	inherit = default_reform
+	icon = ballot_box
+	modifiers = {
+		
+	}
+}
+
+
+
+
+
+

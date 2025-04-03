@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new peace = {
+	name = "Peace"
+	desc = "Peace is what the gods always intended for the world. We shall hold true to this lesson and promote peace all over the world."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

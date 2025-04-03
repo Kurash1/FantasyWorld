@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:2 += new electoral_preparations = {
+	name = "Electoral Preparations"
+	desc = "Candidates in this elective monarchy are prepared with all the knowledge needed for governing our country properly."
+	inherit = default_reform
+	icon = equal_electorate_reform
+	modifiers = {
+		
+	}
+}

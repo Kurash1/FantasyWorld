@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new city_league = {
+	name = "City League"
+	desc = "This country encompasses several co-equal cities that bound together for mutual defense, trade and other interests they share."
+	inherit = default_reform
+	icon = free_city
+	modifiers = {
+		
+	}
+}

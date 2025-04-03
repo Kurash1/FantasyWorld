@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:1 += new absolute_primogeniture = {
+	name = "Absolute Primogeniture"
+	desc = "As opposed to regular primogeniture this country chose to go even a step further. The only eligible heir is the oldest child of the current ruler. No matter if they are a bastard or not. Siblings, cousins, nephews, nieces and so on all do not matter either. The only heir to the throne is the oldest child of the ruling monarch. For the succession system therefore only the oldest child is viewed as alive. This strengthens the symbol that our monarch is but it comes with the cost of making the obtainment of an heir more unlikely. "
+	inherit = default_reform
+	icon = enlightened_monarchy_reform
+	modifiers = {
+		heir_chance = -0.1
+		block_introduce_heir = yes
+		legitimacy = 1.5
+		monthly_heir_claim_increase = 0.05
+	}
+}
+

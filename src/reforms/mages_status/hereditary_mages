@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:8 += new hereditary_mages = {
+	name = "Hereditary Mages"
+	desc = "The only mages allowed in this country are part of ancient and privileged arcane bloodlines. All other practice of magic is forbidden. Those families also only marry with each other as to not dilute their arcane blood as they say. Their sense of entitlement is unendurable for anyone else in the country however and even the regular nobility thinks their behaviour and customs are beyond sanity by now."
+	inherit = default_reform
+	icon = clergyman
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:8 += hereditary_mages
+governments:republic:reform_levels:8 += hereditary_mages

@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new prolong_electoral_terms = {
+	name = "Prolong Electoral Terms"
+	desc = "With longer terms we can ensure greater stability to our system but it also makes direly needed reforms or change in government harder."
+	inherit = default_reform
+	icon = imperial_nobility_reform
+	modifiers = {
+		
+	}
+}

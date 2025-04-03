@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new democracy = {
+	name = "Democracy"
+	desc = "Government by the people, for the people and from the people. Decisions in this country have to be ratified by the entire population or its elected representatives to be effective."
+	inherit = default_reform
+	icon = parliament
+	modifiers = {
+		
+	}
+}

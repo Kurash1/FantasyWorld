@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new war = {
+	name = "War"
+	desc = "We follow the god of war and he commands that we shall fight for our ideals, for land and for survival. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
