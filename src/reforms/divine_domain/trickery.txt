@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new trickery = {
+	name = "Trickery"
+	desc = "Tricks, jokes and pranks are our domain. While this has a very hilarious public side it also comes with a less known side of subterfuge and secret plotting. Our clerics behave almost like bards but do not be mistaken the bigger the smile the bigger the knife."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:3 += new federacy = {
+governments:monarchy:reform_levels:4 += new federacy = {
 	name = "Federacy"
 	desc = "A hybrid system that has aspects of both a unitary and a federal state. How exactly this system looks differs greatly by country."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:3 += new federacy = {
 		
 	}
 }
-governments:republic:reform_levels:3 += federacy
-governments:theocracy:reform_levels:3 += federacy
+governments:republic:reform_levels:4 += federacy
+governments:theocracy:reform_levels:4 += federacy

@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new snap_elections = {
+	name = "Snap Elections"
+	desc = "We can call elections early if we want to. This system ensures that we can alter politics rapidly if we choose to do so. But we are not forced to do this after all."
+	inherit = default_reform
+	icon = articles_of_agreement
+	modifiers = {
+		
+	}
+}

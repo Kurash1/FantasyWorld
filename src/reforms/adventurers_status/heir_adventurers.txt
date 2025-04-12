@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:9 += new heir_adventurers = {
+	name = "Heir Adventurers"
+	desc = "The heirs of this country are adventurers setting out into the world to either prove themselves or save their country. The adventurer estates love it they are actually one of them! That also means that those heir are certainly a powerful individual in their own right."
+	inherit = default_reform
+	icon = soldiers_6
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:9 += heir_adventurers
+governments:theocracy:reform_levels:9 += heir_adventurers

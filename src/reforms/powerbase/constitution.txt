@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:2 += new constitution = {
+governments:monarchy:reform_levels:3 += new constitution = {
 	name = "Constitution"
 	desc = "In our country the law is absolute. A codified legal code guarantees the rights and responsiblities of every citizien. Rights and responsibilities are therefore enforceable at courts."
 	inherit = default_reform
@@ -11,5 +11,5 @@ governments:monarchy:reform_levels:2 += new constitution = {
 		harsh_treatment_cost = 0.5
 	}
 }
-governments:republic:reform_levels:2 += constitution
-governments:theocracy:reform_levels:2 += constitution
+governments:republic:reform_levels:3 += constitution
+governments:theocracy:reform_levels:3 += constitution

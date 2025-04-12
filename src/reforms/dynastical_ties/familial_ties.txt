@@ -1,0 +1,9 @@
+governments:monarchy:reform_levels:2 += new familial_ties = {
+	name = "Familial Ties"
+	desc = "We are related to many rulers in surrounding realms. By engaging with those foreign rulers we can improve our international standing and reputation."
+	inherit = default_reform
+	icon = conciliarism_reform
+	modifiers = {
+		
+	}
+}

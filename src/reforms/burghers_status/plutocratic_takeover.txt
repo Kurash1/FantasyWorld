@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:7 += new plutocratic_takeover = {
+	name = "Plutocratic Takeover"
+	desc = "The burghers in this realm grew so influential, rich and powerful they saw no need to deal with the monarch, the nobility nor the clergy for any longer. By financing an enormous mercenary army they stormed the royal palace and elected one of their own as something they call president. "
+	inherit = default_reform
+	icon = three_classes_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:7 += plutocratic_takeover
+governments:theocracy:reform_levels:7 += plutocratic_takeover

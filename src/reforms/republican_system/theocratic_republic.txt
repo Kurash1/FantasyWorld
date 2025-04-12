@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new theocratic_republic = {
+	name = "Theocratic Republic"
+	desc = "A hybird form of government in which the state itself is indeed secular but is majorly influenced by a powerful clergy and/or temples. They hold significant sway over day to day governance while also being unable to fully dominate decision making."
+	inherit = default_reform
+	icon = monastic_elections_reform
+	modifiers = {
+		
+	}
+}

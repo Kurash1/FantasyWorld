@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:2 += new civic_institutions = {
+governments:monarchy:reform_levels:3 += new civic_institutions = {
 	name = "Civic Institutions"
 	desc = "Your state is backed by the belief of the people that the institutions you provide are worth the cost in taxes you take. You might provide your populace protection from foreign threats, provide healthcare, education, rule of law or other institutions that benefit your people. As long as you continue to provide these civic institutions, your state will continue to be supported."
 	inherit = default_reform
@@ -9,5 +9,5 @@ governments:monarchy:reform_levels:2 += new civic_institutions = {
 		global_unrest = -0.5
 	}
 }
-governments:republic:reform_levels:2 += civic_institutions
-governments:theocracy:reform_levels:2 += civic_institutions
+governments:republic:reform_levels:3 += civic_institutions
+governments:theocracy:reform_levels:3 += civic_institutions

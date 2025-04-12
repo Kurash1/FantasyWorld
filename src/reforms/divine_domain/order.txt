@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new order = {
+	name = "Order"
+	desc = "The forces of chaos are hungring to tear this world of stability apart. We must ensure that they will not rip apart the carefully arranged order and bring quick juistice to this entropic forces."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

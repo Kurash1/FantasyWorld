@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new plutocracy = {
+	name = "Plutocracy"
+	desc = "Rich people are the sole source of governance here. For this very reason trade is to be viewed as paramount by this nation and everything else is a distant second concern."
+	inherit = default_reform
+	icon = plutocracy_reform
+	modifiers = {
+		
+	}
+}

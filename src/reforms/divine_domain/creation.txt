@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new creation = {
+	name = "Creation"
+	desc = "The imitation of the creation of the world finds itself in this domain. The world was created by utilising all 4 elements and likewise the smith is the greatest imitation of this also working with all 4 elements. But the other forms of creation should not be ignored either. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

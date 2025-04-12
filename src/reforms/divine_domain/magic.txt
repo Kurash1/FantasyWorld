@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new magic = {
+	name = "Magic"
+	desc = "The ultimate power of the universe is magic the source of all creation. Only by the pursuit of the arcane can we hope to unravel the mysteries of the universe."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

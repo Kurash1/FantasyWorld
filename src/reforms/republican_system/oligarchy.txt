@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new oligarchy = {
+	name = "Oligarchy"
+	desc = "Powerful individuals dictate what is to be done in this country. They solely hold power because of either their wealth, their expertise or some other crucial power factor."
+	inherit = default_reform
+	icon = dutch_republic
+	modifiers = {
+		
+	}
+}

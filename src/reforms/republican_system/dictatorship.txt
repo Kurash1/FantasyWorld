@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new dictatorship = {
+	name = "Dictatorship"
+	desc = "Whatever system existed priorly it has been overthrown by an overly amibitous individual. Now they govern the country for life with no checks and balances left in place. They are a king in all but name!"
+	inherit = default_reform
+	icon = consolidate_power_in_doge_reform
+	modifiers = {
+		
+	}
+}

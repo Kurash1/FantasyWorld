@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:9 += new adventurer_companies = {
+	name = "Adventurer Companies"
+	desc = "When you can fight Beholders and what not you can surely fight a regular soldier too! Those adventurers are tough as nails and have combat experience like nobody else in our country. We should not shove such a vital asset aside."
+	inherit = default_reform
+	icon = soldiers_4
+	modifiers = {
+		
+	}
+}
+
+governments:republic:reform_levels:9 += adventurer_companies
+governments:theocracy:reform_levels:9 += adventurer_companies
+

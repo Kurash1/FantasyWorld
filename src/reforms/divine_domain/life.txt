@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new life = {
+	name = "Life"
+	desc = "Healing, compassion and nurturing have been decreed to us and so we shall obey. We help the sick, the poor, the needy and the injured now and for all times."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

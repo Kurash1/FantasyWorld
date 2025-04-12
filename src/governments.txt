@@ -26,52 +26,51 @@ new government monarchy = {
 	reform_levels = {
 		# Basics
 		1 = "Succession"
-		2 = "Powerbase"
-		3 = "Organisation"
-		
+		2 = "Dynastical Ties"
+		3 = "Powerbase"
+		4 = "Organisation"
+		5 = "Church and State"
+
 		# Estates
-		4 = "Church and State"
-		5 = "Nobility"
-		6 = "Burghers"
-		7 = "Mages"
-		8 = "Adventurers"
-		9 = "Interracial Relations"
-		
+		6 = "Nobility"
+		7 = "Burghers"
+		8 = "Mages"
+		9 = "Adventurers"
+
 		# Economic Matters
 		10 = "Economic Policy"
 		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
-		
+	
 		# State Matters
 		14 = "Bureaucracy"
 		15 = "Education"
 		16 = "Healthcare"
 		17 = "Welfare"
 		18 = "Representation"
-		
+	
 		# Legal Matters
 		19 = "Legal System"
 		20 = "Court System"
-		21 = "Policing"
+		21 = "Civil Protection Services"
 		22 = "Prison System"
-		23 = "Popular Right"
-		
+
 		# Foreign Matters
-		24 = "Army Model"
-		25 = "Navy Model"
-		26 = "Military Doctrine"
-		27 = "Foreign Policy"
-		28 = "Colonization"
-		29 = "Espionage"
-		
+		23 = "Army Model"
+		24 = "Navy Model"
+		25 = "Military Doctrine"
+		26 = "Foreign Policy"
+		27 = "Espionage"
+	
 		# Cultural Matters
-		30 = "Art Support"
-		31 = "Scientific Support"
+		28 = "Art Support"
+		29 = "Scientific Support"
+		30 = "Cultural"
 		
 		# Special
-		32 = "Governmental Quirk"
-		33 = "Tooltip"
+		31 = "Governmental Quirk"
+		32 = "Tooltip"
 	}
 }
 new government republic = {
@@ -98,52 +97,50 @@ new government republic = {
 	reform_levels = {
 		# Basics
 		1 = "Elections"
-		2 = "Powerbase"
-		3 = "Organisation"
-		
+		2 = "Republican System"
+		3 = "Powerbase"
+		4 = "Organisation"
+		5 = "Church and State"
 		# Estates
-		4 = "Church and State"
-		5 = "Nobility"
-		6 = "Burghers"
-		7 = "Mages"
-		8 = "Adventurers"
-		9 = "Interracial Relations"
-		
+		6 = "Nobility"
+		7 = "Burghers"
+		8 = "Mages"
+		9 = "Adventurers"
+
 		# Economic Matters
 		10 = "Economic Policy"
 		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
-		
+
 		# State Matters
 		14 = "Bureaucracy"
 		15 = "Education"
 		16 = "Healthcare"
 		17 = "Welfare"
 		18 = "Representation"
-		
+	
 		# Legal Matters
 		19 = "Legal System"
 		20 = "Court System"
-		21 = "Policing"
+		21 = "Civil Protection Services"
 		22 = "Prison System"
-		23 = "Popular Right"
-		
+	
 		# Foreign Matters
-		24 = "Army Model"
-		25 = "Navy Model"
-		26 = "Military Doctrine"
-		27 = "Foreign Policy"
-		28 = "Colonization"
-		29 = "Espionage"
+		23 = "Army Model"
+		24 = "Navy Model"
+		25 = "Military Doctrine"
+		26 = "Foreign Policy"
+		27 = "Espionage"
 		
 		# Cultural Matters
-		30 = "Art Support"
-		31 = "Scientific Support"
-		
+		28 = "Art Support"
+		29 = "Scientific Support"
+		30 = "Cultural"
+
 		# Special
-		32 = "Governmental Quirk"
-		33 = "Tooltip"
+		31 = "Governmental Quirk"
+		32 = "Tooltip"
 	}
 }
 new government theocracy = {
@@ -166,52 +163,51 @@ new government theocracy = {
 	reform_levels = {
 		# Basics
 		1 = "Leadership"
-		2 = "Powerbase"
-		3 = "Organisation"
-		
+		2 = "Divine Domain"
+		3 = "Powerbase"
+		4 = "Organisation"
+		5 = "Divine Cause"
+
 		# Estates
-		4 = "Divine Cause"
-		5 = "Nobility"
-		6 = "Burghers"
-		7 = "Mages"
-		8 = "Adventurers"
-		9 = "Interracial Relations"
-		
+		6 = "Nobility"
+		7 = "Burghers"
+		8 = "Mages"
+		9 = "Adventurers"
+
 		# Economic Matters
 		10 = "Economic Policy"
 		11 = "Taxation"
 		12 = "Trade Policy"
 		13 = "Fiscal Policy"
-		
+
 		# State Matters
 		14 = "Bureaucracy"
 		15 = "Education"
 		16 = "Healthcare"
 		17 = "Welfare"
 		18 = "Representation"
-		
+
 		# Legal Matters
 		19 = "Legal System"
 		20 = "Court System"
-		21 = "Policing"
+		21 = "Civil Protection Services"
 		22 = "Prison System"
-		23 = "Popular Right"
-		
+
 		# Foreign Matters
-		24 = "Army Model"
-		25 = "Navy Model"
-		26 = "Military Doctrine"
-		27 = "Foreign Policy"
-		28 = "Colonization"
-		29 = "Espionage"
-		
+		23 = "Army Model"
+		24 = "Navy Model"
+		25 = "Military Doctrine"
+		26 = "Foreign Policy"
+		27 = "Espionage"
+	
 		# Cultural Matters
-		30 = "Art Support"
-		31 = "Scientific Support"
+		28 = "Art Support"
+		29 = "Scientific Support"
+		30 = "Cultural"
 		
 		# Special
-		32 = "Governmental Quirk"
-		33 = "Tooltip"
+		31 = "Governmental Quirk"
+		32 = "Tooltip"
 	}
 }
 new government tribal = {

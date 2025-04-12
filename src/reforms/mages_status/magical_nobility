@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:8 += new magical_nobility = {
+	name = "Magical Nobility"
+	desc = "Only those with magical skills are considered noble in this country. Just because you were born into nobility does not make you nobility no you need to be magically able as well. Likewise if you are born to commoner parents but are magically gifted you are a noble too!"
+	inherit = default_reform
+	icon = man_and_children
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:8 += magical_nobility
+governments:republic:reform_levels:8 += magical_nobility

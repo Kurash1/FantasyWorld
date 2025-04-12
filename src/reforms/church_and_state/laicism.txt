@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:4 += new laicism = {
+governments:monarchy:reform_levels:5 += new laicism = {
 	name = "Laicism"
 	desc = "This country does not acknowledge religion in governance at all. Religious practices and symbols are largely prohibited in practice. While the state still guarantees freedom of religion it forces it to be a deeply private matter and all religious ceremonies in public must be allowed by the government prior to the event."
 	inherit = default_reform
@@ -13,4 +13,4 @@ governments:monarchy:reform_levels:4 += new laicism = {
 		can_not_build_missionaries = yes
 	}
 }
-governments:republic:reform_levels:4 += laicism
+governments:republic:reform_levels:5 += laicism

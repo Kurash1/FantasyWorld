@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new life_time_appointment = {
+	name = "Life Time Appointment"
+	desc = "A ruler in this system is elected for their entire life time ensuring utmost stability. "
+	inherit = default_reform
+	icon = egalite_reform
+	modifiers = {
+		
+	}
+}

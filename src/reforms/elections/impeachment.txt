@@ -1,0 +1,9 @@
+governments:republic:reform_levels:1 += new impeachment = {
+	name = "Impeachment"
+	desc = "Sometimes a ruler is incapable of leading the country in this cases we can force a reelection."
+	inherit = default_reform
+	icon = black_market_consortium
+	modifiers = {
+		
+	}
+}

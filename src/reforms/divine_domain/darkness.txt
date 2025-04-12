@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:2 += new darkness = {
+	name = "Darkness"
+	desc = "Light is antithetical to the worldly order after all in the beginning there was only darkness an endless void devoid of everything. That is the natural state the universe should find itself in once more."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

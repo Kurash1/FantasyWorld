@@ -1,4 +1,4 @@
-governments:monarchy:reform_levels:5 += new arcane_education = {
+governments:monarchy:reform_levels:6 += new arcane_education = {
 	name = "Arcane Education"
 	desc = "Noble blood alone is not enough for us we demand that each noble studies the intricacies of the arcane arts as well. This system will ensure the honour and prestige of our most ancient and influential bloodlines."
 	inherit = default_reform
@@ -7,5 +7,5 @@ governments:monarchy:reform_levels:5 += new arcane_education = {
 		
 	}
 }
-governments:republic:reform_levels:5 += arcane_education
-governments:theocracy:reform_levels:5 += arcane_education
+governments:republic:reform_levels:6 += arcane_education
+governments:theocracy:reform_levels:6 += arcane_education

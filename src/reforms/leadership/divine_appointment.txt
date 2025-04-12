@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:1 += new divine_appointment_theocracy = {
+	name = "Divine Appointment"
+	desc = "Upon a leader's death or retirement the gods tell us who will succeed them out of our ranks. This will happen either by omen, vision or by a more direct message."
+	inherit = default_reform
+	icon = pope
+	modifiers = {
+		
+	}
+}

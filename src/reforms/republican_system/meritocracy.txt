@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new meritocracy = {
+	name = "Meritocracy"
+	desc = "Only the best people rule this country. And who is the best? Those who proved it after all. "
+	inherit = default_reform
+	icon = government_for_people_reform
+	modifiers = {
+		
+	}
+}

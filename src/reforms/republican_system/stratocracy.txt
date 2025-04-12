@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new stratocracy = {
+	name = "Stratocracy"
+	desc = "The Military leadership is also the civil administration of the country. Government is led by powerful generals who appoint one of their own to lead the state. "
+	inherit = default_reform
+	icon = feudal_theocracy
+	modifiers = {
+		
+	}
+}

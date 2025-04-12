@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new pirate_republic = {
+	name = "Pirate Republic"
+	desc = "Pirates vote for who leads them and when they manage to organise enough to form a full on pirate state they will extend this to not only their pirate ship captain but also to their pirate admiral. "
+	inherit = default_reform
+	icon = council_of_captains
+	modifiers = {
+		
+	}
+}

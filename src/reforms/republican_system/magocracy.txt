@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new magocracy = {
+	name = "Magocracy"
+	desc = "Magic is power and in this country this power also means the power to govern. Only spell casters are allowed to hold positions of power in this country."
+	inherit = default_reform
+	icon = signoria_reform
+	modifiers = {
+		
+	}
+}
