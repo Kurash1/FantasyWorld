@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new cavalry_warfare = {
+	name = "Cavalry Warfare"
+	desc = "We largely rely on horseback warfare for our war efforts. Horses are fast and can easily outflank the enemy after all. We are thus able to reign terror over our enemy with bow and blade alike while also covering great distances with speed."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += cavalry_warfare
+governments:republic:reform_levels:25 += cavalry_warfare

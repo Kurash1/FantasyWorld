@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:24 += new confiscation_of_naval_assets = {
+	name = "Confiscation of Naval Assets"
+	desc = "Ships in this realm are just confiscated if they are needed for war. Compensation for this act is not required but our burghers absolutely despise it. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:24 += confiscation_of_naval_assets
+governments:republic:reform_levels:24 += confiscation_of_naval_assets
+

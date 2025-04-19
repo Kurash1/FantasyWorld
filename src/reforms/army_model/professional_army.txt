@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:23 += new professional_army = {
+	name = "Professional Army"
+	desc = "Enormous masses of soldiers sure look effective but they are nothing compared to a professional army that spends their entire work in military things."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:23 += professional_army
+governments:republic:reform_levels:23 += professional_army

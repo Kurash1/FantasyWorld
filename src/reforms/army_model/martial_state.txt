@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:23 += new martial_state = {
+	name = "Martial State"
+	desc = "An entire country solely dedicated to war. Concepts such as honour, glory and chivalry have no place in this society. Military ethics however do play a role after all. Martial states focus on securing their objectives in the most sound manner with minimal casualities and collateral damages. Engaging an army from such a nation is a highly risky endeavour as they can mobilize an entire population of professional soldiers. Civilians do not exist in this society at all."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:23 += martial_state
+governments:republic:reform_levels:23 += martial_state

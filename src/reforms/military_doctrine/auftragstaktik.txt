@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new auftragstaktik = {
+	name = "Auftragstaktik"
+	desc = "Instead of giving our troops commands we issue broad objectives. Non commissioned officers are required for this system and they are encouraged to adapt to the operation on the ground. While this system is highly effective the sheer amount of officers and educated soldiers for it also makes it very expensive to maintain. On the plus side however this army can easily adapt to whatever is required from it."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += auftragstaktik
+governments:republic:reform_levels:25 += auftragstaktik

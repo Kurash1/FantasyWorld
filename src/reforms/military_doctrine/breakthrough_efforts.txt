@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new breakthrough_efforts = {
+	name = "Breakthrough Efforts"
+	desc = "Sieges become more and more important but field battles rarer and rarer. By focusing on taking fortresses quickly we can save valuable men, time and resources."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += breakthrough_efforts
+governments:republic:reform_levels:25 += breakthrough_efforts

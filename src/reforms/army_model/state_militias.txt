@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:23 += new state_militias = {
+	name = "State Militias"
+	desc = "States provide militias for a unified high command of the nation during war time."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:23 += state_militias
+governments:republic:reform_levels:23 += state_militias

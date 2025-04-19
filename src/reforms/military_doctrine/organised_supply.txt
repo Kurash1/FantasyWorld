@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new organised_supply = {
+	name = "Organised Supply"
+	desc = "While living of the land is easy for the short term we are also left with struggles in the mid to long term phases. At some point resources will dry up what then? We cannot go on anymore! By ensuring organised supplies by both land and sea we can far more easily sustain a long term campaign."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += organised_supply
+governments:republic:reform_levels:25 += organised_supply

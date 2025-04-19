@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new guerilla = {
+	name = "Guerilla"
+	desc = "Our population is small but very stubborn. While we cannot win a direct confrontation we can surely widdle the enemy down with attrition, ambushes, traps and occassional attacks in vulnerable moments. In essence we become so thorny that taking us is literally a living nightmare."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += guerilla
+governments:republic:reform_levels:25 += guerilla

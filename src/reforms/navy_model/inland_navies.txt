@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:24 += new inland_navies = {
+	name = "Inland Navies"
+	desc = "While having no proper coast we do have navigatable rivers and lakes. Those too are important to protect especially for trade. Likewise inland pirates are also a thing we have to guard against."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:24 += inland_navies
+governments:republic:reform_levels:24 += inland_navies
+
