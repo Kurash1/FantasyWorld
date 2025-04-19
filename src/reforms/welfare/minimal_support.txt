@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:17 += new minimal_support = {
+	name = "Minimal Support"
+	desc = "Alms only do not suffice some social safety net must be spun for unfortunate souls who found themselves in difficult situations to no fault of their own."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:17 += minimal_support
+governments:republic:reform_levels:17 += minimal_support
+
+

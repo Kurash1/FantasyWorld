@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:15 += new mess_schools = {
+	name = "Mess Schools "
+	desc = "Some education for the poor is required the clerics can surely handle that after the service. The children of commoners learn some maths, writing and reading but that will have to suffice."
+	inherit = default_reform
+	icon = asian_scripture
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += mess_schools
+governments:theocracy:reform_levels:15 += mess_schools

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:15 += new church_schools = {
+	name = "Church Schools "
+	desc = "Young acolytes and neophytes are educated following scholastic ideals. Thus they can serve the clerical bureaucracy the best way or also become doctors. "
+	inherit = default_reform
+	icon = monks
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += church_schools
+governments:theocracy:reform_levels:15 += church_schools

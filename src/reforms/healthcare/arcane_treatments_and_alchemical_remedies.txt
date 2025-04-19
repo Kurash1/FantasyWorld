@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:16 += new arcane_treatments_and_alchemical_remedies = {
+	name = "Arcane Treatments and Alchemical Remedies"
+	desc = "Magic and alchemy hold great potential at helping the ill and the injured."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += arcane_treatments_and_alchemical_remedies
+governments:republic:reform_levels:16 += arcane_treatments_and_alchemical_remedies

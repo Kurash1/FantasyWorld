@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:17 += new nanny_state = {
+	name = "Nanny State"
+	desc = "An all encompassing network of care is necessary to provide our citiziens with an adequate standard of living and bring them back into our job. Also this system ensures that our domestic consumption skyrockets as poor people spend almost all their money on consumption."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:17 += nanny_state
+governments:republic:reform_levels:17 += nanny_state
+
+

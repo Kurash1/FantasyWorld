@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:16 += new spa_culture = {
+	name = "Spa Culture"
+	desc = "Cures are  widespread in our country and are well received by noble and commoner alike. geothermal and saline springs are common in our country and used for all kinds of health treatments."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += spa_culture
+governments:republic:reform_levels:16 += spa_culture

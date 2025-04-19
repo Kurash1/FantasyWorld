@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:16 += new state_health_system = {
+	name = "State Health System"
+	desc = "The state controlls the entire health system and therefore neither a health insurance nor any private medical institutions are needed."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += state_health_system
+governments:republic:reform_levels:16 += state_health_system

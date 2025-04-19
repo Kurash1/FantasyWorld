@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:15 += new federal_state_schools = {
+	name = "Federal State Schools"
+	desc = "It is up to the states to see to education. The federal government only requires certain minimum criteria and that the education ministers of each state cooperate in a joint conference."
+	inherit = default_reform
+	icon = consolidate_power_in_cities_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += federal_state_schools
+governments:theocracy:reform_levels:15 += federal_state_schools
+
