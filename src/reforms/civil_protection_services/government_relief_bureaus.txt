@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:21 += new government_relief_bureaus = {
+	name = "Government Relief Bureaus"
+	desc = "A centralised approach to relief efforts ensures that we can push the entire power of our economy behind any disaster relief that might be needed. While it is completly expensive it is also really effective."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:21 += government_relief_bureaus
+governments:republic:reform_levels:21 += government_relief_bureaus

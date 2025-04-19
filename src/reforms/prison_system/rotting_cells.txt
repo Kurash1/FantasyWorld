@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:22 += new rotting_cells = {
+	name = "Rotting Cells"
+	desc = "Well sometimes mistakes are made so we do not kill our prisoners we just throw them into a cell and be done with it. That way we can correct mistakes but also punish the perpetrators."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:22 += rotting_cells
+governments:republic:reform_levels:22 += rotting_cells

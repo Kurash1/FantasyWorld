@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:20 += new federal_commissars = {
+	name = "Federal Commissars"
+	desc = "Justice is a matter of the states but if they themselves seem not capable of upholding the letter of the law or deliver swift justice a federal comissar may be sent out. Those federal commissars ensure that the proper procedures are upheld. The federal estates however absolutely despise them. They view them as an affront against their constitutionally guaranteed rights."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:20 += federal_commissars
+governments:republic:reform_levels:20 += federal_commissars

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:20 += new trial_by_peers = {
+	name = "Trial by Peers"
+	desc = "People have the right to be judged by a jury made up out of their peers. They will have to unanimously decide wheter an accused person is guilty or not."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:20 += trial_by_peers
+governments:republic:reform_levels:20 += trial_by_peers

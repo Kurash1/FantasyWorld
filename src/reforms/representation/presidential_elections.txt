@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new presidential_elections = {
+	name = "Presidential Elections"
+	desc = "A strong executive is important for day to day governance but as a republic we do not feel like absolutistic rule is something that should be done. It is tyrannical and counteracts our very tradtions as a republic. Henceforth we decided to let the people elect a strong president who can for a limited time govern like a monarch but is ultimately held accountable."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:18 += presidential_elections
+governments:republic:reform_levels:18 += presidential_elections

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:21 += new regional_organisation = {
+	name = "Regional Organisation"
+	desc = "Settlements themselves are responsible for organising civil protection services such as fire fighting, technical disaster relief and policing. While this saves us a lot of money it seems to have the downside of not being very efficient in what it is doing."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:21 += regional_organisation
+governments:republic:reform_levels:21 += regional_organisation

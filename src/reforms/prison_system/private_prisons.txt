@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:22 += new private_prisons = {
+	name = "Private Prisons"
+	desc = "Prisons are privatised so we do not have to spend money on them. Companies make their income by employing the prisoners."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:22 += private_prisons
+governments:republic:reform_levels:22 += private_prisons

@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:18 += new parliament = {
+	name = "Parliament"
+	desc = "The nation decided that legislative powers should rather be set aside from the executive. Holding both strengths of power in one position seems far too dangerous for the well being of the nation. By ensuring this proper checks and balances we can surely hope to stabilize our country. Likewise political parties are now expected to emerge as well."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:18 += parliament
+governments:republic:reform_levels:18 += parliament
+

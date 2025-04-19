@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:22 += new rehabilitation_centers = {
+	name = "Rehabilitation Centers"
+	desc = "Sure you can punish people but does that really help us as a society? By ensuring to make people realize what they did wrong we can ensure it will not happen again."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:22 += rehabilitation_centers
+governments:republic:reform_levels:22 += rehabilitation_centers

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:21 += new state_relief_efforts = {
+	name = "State Relief Efforts"
+	desc = "By giving reign over civil protection to the states protection of civilian life can be made far more efficient without having a one size fits all solution. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:21 += state_relief_efforts
+governments:republic:reform_levels:21 += state_relief_efforts

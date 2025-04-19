@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new temple_federation = {
+	name = "Temple Federation"
+	desc = "In this realm temples are very powerful the boundaries between the religious and the profane are nowhere to be seen anymore. The temples therefore rightfully so expect a say in a parliament staffed with people they appointed or elected."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:18 += temple_federation
+governments:republic:reform_levels:18 += temple_federation

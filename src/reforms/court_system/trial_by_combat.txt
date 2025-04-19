@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:20 += new trial_by_combat = {
+	name = "Trial by Combat"
+	desc = "Might makes right and so might must also prove who is in the right. Through a trial by combat the guilty party will be determined."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:20 += trial_by_combat
+governments:republic:reform_levels:20 += trial_by_combat

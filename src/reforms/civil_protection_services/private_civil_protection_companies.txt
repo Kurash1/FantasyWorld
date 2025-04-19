@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:21 += new private_civil_protection_companies = {
+	name = "Private Civil Protection Companies"
+	desc = "Protection of civilian life is privatised in our country and therefore a for profit operation. While that increases our tax income the population absolutely loathes it. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:21 += private_civil_protection_companies
+governments:republic:reform_levels:21 += private_civil_protection_companies
