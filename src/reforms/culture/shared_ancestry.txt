@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:30 += new shared_ancestry = {
+	name = "Shared Ancestry"
+	desc = "There are people closely related to us around us we need to emphasize our common origin as one people to better relations with them."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:30 += shared_ancestry
+governments:republic:reform_levels:30 += shared_ancestry

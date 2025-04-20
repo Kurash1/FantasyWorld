@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:30 += new minority_states = {
+	name = "Minority States"
+	desc = "By ensuring that each minority gets their own federal state to preserve their culture we can be one country of many people. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:30 += minority_states
+governments:republic:reform_levels:30 += minority_states

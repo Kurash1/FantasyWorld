@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:12 += new addict_them_to_our_goods = {
+	name = "Addict them to our Goods"
+	desc = "Our goods are in such high demand for their luxurious quality that each time one of our ships enters a port mass panic erupts. Our sailors do not even have the time to unload the ships chosing to sell from on board instead. It does not even seem to matter to the population what they are buying just that it is from our country. Surely we can streamline this more and make an enormous profit while also making foreign people more agreeable!"
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:12 += addict_them_to_our_goods
+governments:republic:reform_levels:12 += addict_them_to_our_goods

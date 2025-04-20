@@ -1,5 +1,5 @@
 governments:monarchy:reform_levels:12 += new customs_union = {
-	name = "Strengthen the Domestic Market"
+	name = "Customs Union"
 	desc = "By signing mutually benefical treaties over trade with our neighbors we can trade far more easily with them and they with us."
 	inherit = default_reform
 	icon = dutch_republic

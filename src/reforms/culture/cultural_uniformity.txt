@@ -1,0 +1,17 @@
+governments:monarchy:reform_levels:30 += new cultural_uniformity = {
+	name = "Cultural Uniformity"
+	desc = "Our nation needs a singular cultural identity to uphold cohesion. With such a uniform vision resentment is surely something of the past."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:30 += cultural_uniformity
+governments:republic:reform_levels:30 += cultural_uniformity
+
+
+
+
+
+

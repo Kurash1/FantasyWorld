@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:29 += new private_research = {
+	name = "Private Research"
+	desc = "The state will not have a hand in this so called experiments that so often go wrong. It is a money drain with oblivious outcomes. Not one ducat of our treasury will be spend of this. If people wanna do this let them but we as a state will not pursue such foolish notions, "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:29 += private_research
+governments:republic:reform_levels:29 += private_research
