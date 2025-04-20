@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:5 += new harmonial_spirit = {
+	name = "Harmonial Spirit"
+	desc = "All believes have some kind of value to us we just need to find it. By incorporating their believes into our own we can easily find those and avoid costly uprisings that are mutually destructive."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
