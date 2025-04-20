@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new technological_theft = {
+	name = "Technological Theft"
+	desc = "If people do not wanna share their recent innovations with us freely we must take them by force and the best way to do this is to simply rob them without them even noticing."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += technological_theft
+governments:republic:reform_levels:27 += technological_theft

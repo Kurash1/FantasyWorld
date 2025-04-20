@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:26 += new emphasize_mutual_interest = {
+	name = "Emphasize Mutual Interest"
+	desc = "A tit for tat approach so to say. By showing other people that we have a common ground on at least one issue we can surely find a mutually beneficial agreement. With such a kind of an agreeement that we are also upholding properly we can show the world that we are an honest and respectful country."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:26 += emphasize_mutual_interest
+governments:republic:reform_levels:26 += emphasize_mutual_interest

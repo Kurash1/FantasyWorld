@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:26 += new foreign_aid = {
+	name = "Foreign Aid"
+	desc = "Be it civil or military we will provide aid to any neutral or friendly country that asks or requires it. Likewise our agricultural and military industry love this. It means more income for them at the expense of our treasury of course. But we do hope that the soft power gained and the economic stimulation will more than make up for it."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:26 += foreign_aid
+governments:republic:reform_levels:26 += foreign_aid

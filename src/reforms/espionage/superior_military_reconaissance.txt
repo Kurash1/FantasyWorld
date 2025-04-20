@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new superior_military_reconaissance = {
+	name = "Superior Military Reconaissance"
+	desc = "We now every maneuver of the enemey in advance. Nothing goes unnoticed for our scouts. The enemy will not even know what hit them."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += superior_military_reconaissance
+governments:republic:reform_levels:27 += superior_military_reconaissance

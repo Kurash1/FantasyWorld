@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:28 += new icons_book_illumination_and_frescoes = {
+	name = "Icons, Book Illumination and Frescoes"
+	desc = "The common person may not be able to read or write but by providing images even they can understand what our religion is about. This will make conversion of people easier and enforce religious unity."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:28 += icons_book_illumination_and_frescoes
+governments:republic:reform_levels:28 += icons_book_illumination_and_frescoes

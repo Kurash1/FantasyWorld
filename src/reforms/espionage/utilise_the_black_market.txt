@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new utilise_the_black_market = {
+	name = "Utilise the Black Market "
+	desc = "By reigning in the black market to instead make them a legal shadow market we accomplish multiple goals. First we can trade our artificially limited goods that people are utterly desiring and get necessary information in return, second we can controll what they sell and to who they sell, and third we rid ourselves of the underground economy entirely making it just a second legal market to us and unknown to the wider population."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += utilise_the_black_market
+governments:republic:reform_levels:27 += utilise_the_black_market

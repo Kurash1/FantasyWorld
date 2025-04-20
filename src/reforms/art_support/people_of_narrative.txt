@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:28 += new people_of_narrative = {
+	name = "People of Narrative"
+	desc = "The world is a play and this people view themselves not as the actors but as the playwrights. They know how to construct a carefully constructed, cohesive narrative. People will be astonished and awe inspired by us. Our theaters are cathartic and teach lessons in philosophy and history. Our books are multifaceted presenting various different approaches and arguments towards any story or thesis. Our Art is equally telling, entertaining and full of symbolism. Even the way our population looks and dresses is completly steeped in narrative symbolism."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:28 += people_of_narrative
+governments:republic:reform_levels:28 += people_of_narrative

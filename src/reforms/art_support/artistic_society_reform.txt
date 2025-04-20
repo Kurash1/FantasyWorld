@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:28 += new artistic_society_reform = {
+	name = "Artistic Society"
+	desc = "Our society revels in art. Art therefore has a huge place in our society and our creativity is second to none."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:28 += artistic_society_reform
+governments:republic:reform_levels:28 += artistic_society_reform

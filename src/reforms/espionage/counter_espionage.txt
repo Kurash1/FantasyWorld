@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new counter_espionage = {
+	name = "Counter Espionage"
+	desc = "While we do not engage in much espionage ourselves there surely are spys and agents planted all over our country. We need to identify those individuals at once before they become a danger to our stability."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += counter_espionage
+governments:republic:reform_levels:27 += counter_espionage
