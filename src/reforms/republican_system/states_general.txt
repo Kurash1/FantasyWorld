@@ -1,0 +1,9 @@
+governments:republic:reform_levels:2 += new states_general = {
+	name = "States General"
+	desc = "We have powerful centralising monarchical forces in our country but also equally powerful federal republican forces. Instead of letting them tier us apart we came to an agreement to share power exactly in the middle. When a monarchical candidate wins the majority of the estate vote they rule for life but if a republican candidate wins they rule for a set amount of years triggering an election once their term expired."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

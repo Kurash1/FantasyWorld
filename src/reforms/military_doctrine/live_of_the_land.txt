@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new live_of_the_land = {
+	name = "Live of the Land"
+	desc = "it is not easy to supply a large army on the field with enough food, resources and money if we instead let the soldiers live of the land we can solve this problem. Territories will be utterly devastated but we can save a lot of money this way."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += live_of_the_land
+governments:republic:reform_levels:25 += live_of_the_land

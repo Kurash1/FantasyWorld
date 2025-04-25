@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new absolutistic_rule = {
+	name = "Absolutistic Rule"
+	desc = "The state that is me and therefore as ordained by divine decree I am also supposed to rule this. The estates nor parliament are needed to govern. Instead legions of minister and bureaucrats administer by royal decree. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:18 += absolutistic_rule
+governments:republic:reform_levels:18 += absolutistic_rule

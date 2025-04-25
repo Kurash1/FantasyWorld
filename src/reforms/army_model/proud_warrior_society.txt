@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:23 += new proud_warrior_society = {
+	name = "Proud Warrior Society"
+	desc = "People in this society are foremost warriors and beholden to their clan. Honour, tradition and personal glory are important for them. However this also leads to them not always fighting in the most effective way possible."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:23 += proud_warrior_society
+governments:republic:reform_levels:23 += proud_warrior_society

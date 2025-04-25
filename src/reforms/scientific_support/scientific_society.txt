@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:29 += new scientific_society = {
+	name = "Scientific Society"
+	desc = "Science is deeply ingrained in our society. People are knowledgable, educated and have a thirst to discover and innovate. Not being educated in this society is viewed as a disgrace and should not be tolerated. Workshops, laborataries and education facilities dot every settlement."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:29 += scientific_society
+governments:republic:reform_levels:29 += scientific_society

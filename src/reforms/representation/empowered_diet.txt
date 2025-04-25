@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:18 += new empowered_diet = {
+	name = "Empowered Diet"
+	desc = "The diet has proven useful in adressing the concerns of the population we should strengthen it."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:18 += empowered_diet
+governments:republic:reform_levels:18 += empowered_diet

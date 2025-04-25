@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new crusading = {
+	name = "Crusading "
+	desc = "Our enemies are many and our god(s) decreed that we shall take them on one after the other. Our soldiers know about the righteousness of our cause and that the divine forces march with them into battle. We will not lose against neither heathen nor heretic. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += crusading
+governments:republic:reform_levels:25 += crusading

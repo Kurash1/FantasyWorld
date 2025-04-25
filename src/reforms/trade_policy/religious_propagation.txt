@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:12 += new religious_propagation = {
+	name = "Religious Propagation "
+	desc = "Through trade we can spread our religion as well. Books and holy scriptures can be sold to make the people aware of our superior believes!"
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:12 += religious_propagation
+governments:republic:reform_levels:12 += religious_propagation

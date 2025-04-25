@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:23 += new mercenary_companies = {
+	name = "Mercenary Companies"
+	desc = "Armies are expensive but by hiring only mercenaries during war time we can safe a lot of money. No standing army that keeps seeping our income away."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:23 += mercenary_companies
+governments:republic:reform_levels:23 += mercenary_companies

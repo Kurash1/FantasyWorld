@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:15 += new mandatory_education = {
+	name = "Mandatory Education"
+	desc = "Everyone is required to be educated for a minimum amount of time following a strict curriculum."
+	inherit = default_reform
+	icon = examination_system_reform
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += mandatory_education
+governments:theocracy:reform_levels:15 += mandatory_education

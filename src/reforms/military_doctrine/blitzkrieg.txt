@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new blitzkrieg = {
+	name = "Blitzkrieg"
+	desc = "Marching so fast that the enemy cannot even react in time is the key to victory. Before the enemy can even properly reorganise we already occupied all strategic points in their country forcing them to surrender."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += blitzkrieg
+governments:republic:reform_levels:25 += blitzkrieg

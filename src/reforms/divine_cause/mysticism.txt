@@ -1,0 +1,9 @@
+governments:theocracy:reform_levels:5 += new mysticism = {
+	name = "Mysticism "
+	desc = "There are mysteries in this universe, deeply rooted ones and through meditation, contemplation, prayer and research we must attempt to uncover them as to better serve the will of the gods."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}

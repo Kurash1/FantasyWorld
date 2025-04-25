@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:17 += new put_them_to_work = {
+	name = "Put them to Work"
+	desc = "Rather than having to pay the poor we could put them to work for things like infastructure projects, cleaning cities and many more things. We pay them a small income for that and thus help them to get back on their feet while also obtaining something from them in return."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:17 += put_them_to_work
+governments:republic:reform_levels:17 += put_them_to_work

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new centralised_battle_plans = {
+	name = "Centralised Battle Plans"
+	desc = "The general staff decides on what course is currently to be taken. While this makes coordination easy this also means soldiers are slow to react to changing circumstances."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += centralised_battle_plans
+governments:republic:reform_levels:25 += centralised_battle_plans

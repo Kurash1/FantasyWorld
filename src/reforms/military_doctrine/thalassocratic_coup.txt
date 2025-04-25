@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new thalassocratic_coup = {
+	name = "Thalassocratic Coup"
+	desc = "It was a quiet night at first until 100s of marines stormed the palace and arrested the legitimate ruler of the nation. They yelled out this is treason but to no avail. Now the nation is governed by a board of admirals instead."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += thalassocratic_coup
+governments:republic:reform_levels:25 += thalassocratic_coup

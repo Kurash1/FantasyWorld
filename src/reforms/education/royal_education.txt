@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:15 += new royal_education = {
+	name = "Royal Education"
+	desc = "Only the heiress or heir to our country is required to be educated. If the nobility and clergy want to educate their children that is their concern not ours."
+	inherit = default_reform
+	icon = prussian_monarchy_2
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += royal_education
+governments:theocracy:reform_levels:15 += royal_education

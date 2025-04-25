@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:24 += new permanent_navy = {
+	name = "Permanent Navy"
+	desc = "Relying on estates for naval levies is utterly inefficient. Ships may not be there or are not given. Only by building a permanent fleet of warships can we handle such inefficiencies. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:24 += permanent_navy
+governments:republic:reform_levels:24 += permanent_navy
+

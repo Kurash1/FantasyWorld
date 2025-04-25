@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new naval_dominance = {
+	name = "Naval Dominance"
+	desc = "As a nation with a lot of coasts or even based on an island we decided that our navy is the first line of both offense and defense. For landbased combat we focus mostly on our marine corps."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += naval_dominance
+governments:republic:reform_levels:25 += naval_dominance

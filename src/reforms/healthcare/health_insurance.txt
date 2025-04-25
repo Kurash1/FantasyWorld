@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:16 += new health_insurance = {
+	name = "Health Insurance"
+	desc = "Many people cannot afford health care by creating a mandatory insurance for health we can make it so everyone is capable of receiving the aid they need no matter how much money they have."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += health_insurance
+governments:republic:reform_levels:16 += health_insurance

@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:17 += new church_alms_and_private_donations = {
+	name = "Church alms and private donations"
+	desc = "The church found itself willing to feed the poor and shelter them that should suffice. Private donations happen too occassionally. Anyway we as a state do not have to care for this."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:17 += church_alms_and_private_donations
+governments:republic:reform_levels:17 += church_alms_and_private_donations
+

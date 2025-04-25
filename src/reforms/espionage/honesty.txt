@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new honesty = {
+	name = "Honesty "
+	desc = "Espionage is not as efficient as people think. It only ruins our diplomatic reputation. By ensuring that we do not engage in such questionable activities we will show the world that we are a trustful people."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += honesty
+governments:republic:reform_levels:27 += honesty

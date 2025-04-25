@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new arcane_armies = {
+	name = "Arcane Armies"
+	desc = "Magic is power and where to better put power than in the army? Our soldiers are either mages or equipped with enchanted gear improving their combat capability by a lot."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += arcane_armies
+governments:republic:reform_levels:25 += arcane_armies

@@ -1,0 +1,14 @@
+governments:monarchy:reform_levels:16 += new private_healthcare = {
+	name = "Private Healthcare"
+	desc = "Healthcare is the responsibility of each indiviudal the state does not care for it. After all the individual should choose what is correct for them."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += private_healthcare
+governments:republic:reform_levels:16 += private_healthcare
+
+
+

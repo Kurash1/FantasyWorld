@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:16 += new monastical_care = {
+	name = "Monastical Care"
+	desc = "The clergy took it upon them to care for the sick and injured we are grateful for this and support them in any way possible."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:16 += monastical_care
+governments:republic:reform_levels:16 += monastical_care

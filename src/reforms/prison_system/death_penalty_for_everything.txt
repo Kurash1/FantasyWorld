@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:22 += new death_penalty_for_everything = {
+	name = "Death Penalty for Everything"
+	desc = "No prisons needed if every crime is punished by the death. After all the state is always right and therefore all convicted people must be utterly morally bankrupt."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:22 += death_penalty_for_everything
+governments:republic:reform_levels:22 += death_penalty_for_everything

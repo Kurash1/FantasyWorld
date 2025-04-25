@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:27 += new subterfuge = {
+	name = "Subterfuge"
+	desc = "People may believe that we do not engage in espionage but truth is our agents and assets are literally everywhere. From rulers to commoners far and near our information streams are vast and wide. Many of our assets do not even know that they are working for us. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:27 += subterfuge
+governments:republic:reform_levels:27 += subterfuge

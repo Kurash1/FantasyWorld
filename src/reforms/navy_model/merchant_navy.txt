@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:24 += new merchant_navy_reform = {
+	name = "Merchant Navy "
+	desc = "The only ships in our country are under burgher controll. If we want to use naval assets in a war we will have to ask them. "
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:24 += merchant_navy_reform
+governments:republic:reform_levels:24 += merchant_navy_reform
+

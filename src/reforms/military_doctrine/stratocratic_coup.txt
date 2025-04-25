@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new stratocratic_coup = {
+	name = "Stratocratic Coup"
+	desc = "The generals assembled the army to overthrow the government that they viewed as ineffective. Now the generals rule the nation as a heavily militarised type of republic."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += stratocratic_coup
+governments:republic:reform_levels:25 += stratocratic_coup

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:20 += new arbiter_system = {
+	name = "Arbiter System"
+	desc = "Professional arbiters decide on how to proceed in a trial. The exact procedures of course differ by country but those judges are supposed to be as impartial as possible and guarantee justice above all."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:20 += arbiter_system
+governments:republic:reform_levels:20 += arbiter_system

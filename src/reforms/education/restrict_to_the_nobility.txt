@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:15 += new restrict_to_the_nobility = {
+	name = "Restrict to the Nobility"
+	desc = "Peasants do not have to be educated after all how hard can ploughing a field even be? The nobility however surely has to be educated to run the country and the military. Likewise what the church does in education is not our concern as it operates separately from us."
+	inherit = default_reform
+	icon = man_on_podium
+	modifiers = {
+		
+	}
+}
+governments:republic:reform_levels:15 += restrict_to_the_nobility
+governments:theocracy:reform_levels:15 += restrict_to_the_nobility

@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:25 += new fortification_effort = {
+	name = "Fortification Effort"
+	desc = "Instead of advancing we have decided to focus on defending our realm. This comes with numerous and tough fortifications, traps and enormous garrisons that defend any fort we have."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:25 += fortification_effort
+governments:republic:reform_levels:25 += fortification_effort

@@ -1,0 +1,13 @@
+governments:monarchy:reform_levels:12 += new conquest_of_ideals = {
+	name = "Conquest of Ideals "
+	desc = "Knowledge spreads and most quickly it spreads through trade. We require merchants in our land to report on every new development they have witnessed or heard about."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:12 += conquest_of_ideals
+governments:republic:reform_levels:12 += conquest_of_ideals
+
+

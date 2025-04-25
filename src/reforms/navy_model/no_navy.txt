@@ -1,0 +1,11 @@
+governments:monarchy:reform_levels:24 += new no_navy = {
+	name = "No Navy"
+	desc = "Either out of a lack of navigatable water or general disinterest to ships this country posseses no navy."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:24 += no_navy
+governments:republic:reform_levels:24 += no_navy

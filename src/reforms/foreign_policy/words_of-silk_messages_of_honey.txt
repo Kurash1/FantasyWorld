@@ -1,0 +1,12 @@
+governments:monarchy:reform_levels:26 += new words_of_silk_messages_of_honey = {
+	name = "Words of Silk, Messages of Honey"
+	desc = "Never lie, never omit but always craft a proper narrative arond the content of any message. By sending only the most charismatic and pretty diplomats we can ensure such a deed is done. Any treaty we sign with other nations will look like it was always the ideal of the foreign government in the first place. No agreement we ever sign is to be broken at all or it would shatter the carefully constructed narrative in an instant. But we can refine this even further. By sending exactly the right diplomat to the right person in a foreign country we almost assure success."
+	inherit = default_reform
+	icon = govt_reform_icon_frame_current_overlay
+	modifiers = {
+		
+	}
+}
+governments:theocracy:reform_levels:26 += words_of_silk_messages_of_honey
+governments:republic:reform_levels:26 += words_of_silk_messages_of_honey
+
